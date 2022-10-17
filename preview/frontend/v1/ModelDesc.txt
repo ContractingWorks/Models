@@ -12,9 +12,9 @@ int                                             Address.EDokPlantId
 int                                             Address.EDokProjectId
 string (15)                                     Address.EDokProjectNumber
 string (50)                                     Address.GLN
-bool                                            Address.TestingDiffing
 decimal                                         Address.GPSPositionAccuracy
 decimal                                         Address.GPSPositionAltitude
+decimal                                         Address.GPSPositionLatitude
 decimal                                         Address.GPSPositionLongitude
 byte                                            Address.GPSPositionSourceType
 int                                             Address.LeaseholdUnitNumber
@@ -458,8 +458,8 @@ short                                           Employee_Competency.CompetencyId
 bool                                            Employee_Competency.Sys_Deactivated
 bool                                            Employee_Competency.Sys_Historic
 bool                                            Employee_Competency.Sys_Incomplete
-bool                                            Employee.TestingDiffing
 short                                           EmployeeAddress.EmployeeAddressId
+string                                          EmployeeAddress.AddressIdExternal
 string                                          EmployeeAddress.Owner_EmployeeIdExternal
 bool                                            EmployeeAddress.Sys_Deactivated
 bool                                            EmployeeAddress.Sys_Historic
@@ -883,8 +883,8 @@ bool                                            ExternalSystemSupplierInvoice.Sy
 bool                                            ExternalSystemSupplierInvoice.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemSupplierInvoice.Enum_SyncStatusId
 int                                             ExternalSystemSupplierInvoiceLine.ExternalSystemSupplierInvoiceLineId
-bool                                            ExternalSystemSupplierInvoiceLine.TestingDiffing
 string                                          ExternalSystemSupplierInvoiceLine.SupplierInvoiceLineIdExternal
+string (50)                                     ExternalSystemSupplierInvoiceLine.ExternalId
 short                                           ExternalSystemSupplierInvoiceLine.ExternalSystemId
 int                                             ExternalSystemSupplierInvoiceLine.LastTransferMilliseconds
 string [MultilineText](50)                      ExternalSystemSupplierInvoiceLine.StatusDescription
@@ -1543,8 +1543,8 @@ decimal                                         ProductNoteLineBatch.Quantity
 bool                                            ProductNoteLineBatch.Sys_Deactivated
 bool                                            ProductNoteLineBatch.Sys_Historic
 bool                                            ProductNoteLineBatch.Sys_Incomplete
-bool                                            ProductNoteLineBatch.TestingDiffing
 int                                             ProductSupplierIndustryType.ProductSupplierIndustryTypeId
+string                                          ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string                                          ProductSupplierIndustryType.ProductIdExternal
 string                                          ProductSupplierIndustryType.SupplierIndustryTypeIdExternal
 decimal                                         ProductSupplierIndustryType.CostPriceOverride
@@ -2243,8 +2243,8 @@ bool                                            WageCode.PieceworkActive
 bool                                            WageCode.PriceOnly
 bool                                            WageCode.QuantityOnly
 decimal                                         WageCode.SurchargePercent
-bool                                            WageCode.TestingDiffing
 bool                                            WageCode.Sys_Deactivated
+bool                                            WageCode.Sys_Historic
 bool                                            WageCode.Sys_Incomplete
 string [Name](100)                              WageCode.WageCodeName
 int                                             WageCode.WageCodeNumber
@@ -2341,5 +2341,4 @@ bool                                            WebhookSubscription.Sys_Historic
 bool                                            WebhookSubscription.Sys_Incomplete
 string (50)                                     WebhookSubscription.WebhookId
 string                                          WebhookSubscription.WebhookUrl
-
 
