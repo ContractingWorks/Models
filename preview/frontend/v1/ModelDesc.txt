@@ -832,6 +832,26 @@ bool                                            ExternalSystemStock.Sys_Deactiva
 bool                                            ExternalSystemStock.Sys_Historic
 bool                                            ExternalSystemStock.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemStock.Enum_SyncStatusId
+int                                             ExternalSystemStockCount.ExternalSystemStockCountId
+string                                          ExternalSystemStockCount.StockCountIdExternal
+string (50)                                     ExternalSystemStockCount.ExternalId
+short                                           ExternalSystemStockCount.ExternalSystemId
+int                                             ExternalSystemStockCount.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemStockCount.StatusDescription
+bool                                            ExternalSystemStockCount.Sys_Deactivated
+bool                                            ExternalSystemStockCount.Sys_Historic
+bool                                            ExternalSystemStockCount.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemStockCount.Enum_SyncStatusId
+int                                             ExternalSystemStockCountLine.ExternalSystemStockCountLineId
+string                                          ExternalSystemStockCountLine.StockCountLineIdExternal
+string (50)                                     ExternalSystemStockCountLine.ExternalId
+short                                           ExternalSystemStockCountLine.ExternalSystemId
+int                                             ExternalSystemStockCountLine.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemStockCountLine.StatusDescription
+bool                                            ExternalSystemStockCountLine.Sys_Deactivated
+bool                                            ExternalSystemStockCountLine.Sys_Historic
+bool                                            ExternalSystemStockCountLine.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemStockCountLine.Enum_SyncStatusId
 int                                             ExternalSystemStockTransaction.ExternalSystemStockTransactionId
 string                                          ExternalSystemStockTransaction.StockTransactionIdExternal
 string (50)                                     ExternalSystemStockTransaction.ExternalId
@@ -1479,7 +1499,7 @@ string                                          ProductNoteLine.Income_LedgerAcc
 string                                          ProductNoteLine.Income_ProjectAccountIdExternal
 string                                          ProductNoteLine.InvoiceIdExternal
 string                                          ProductNoteLine.InvoiceLineIdExternal
-string                                          ProductNoteLine.Parent_ProductNoteItemIdExternal
+string                                          ProductNoteLine.Parent_ProductNoteLineIdExternal
 string                                          ProductNoteLine.ProductAgreementIdExternal
 string                                          ProductNoteLine.ProductNoteIdExternal
 string                                          ProductNoteLine.ProductSupplierIndustryTypeIdExternal
@@ -1504,7 +1524,7 @@ int                                             ProductNoteLine.InvoiceSpecifica
 bool                                            ProductNoteLine.IsVarious
 decimal                                         ProductNoteLine.ListPrice
 decimal                                         ProductNoteLine.Override_QuantityInvoice
-int                                             ProductNoteLine.Parent_ProductNoteItemId
+int                                             ProductNoteLine.Parent_ProductNoteLineId
 bool                                            ProductNoteLine.PriceOnly
 short                                           ProductNoteLine.ProductAgreementId
 string [Name]                                   ProductNoteLine.ProductName
@@ -1967,6 +1987,52 @@ bool                                            Stock.Sys_Historic
 bool                                            Stock.Sys_Incomplete
 int                                             Stock.Sys_NextBatchSortOrder
 --> ExternalSystemStock[]                       Stock.ExternalSystemStocks
+int                                             StockCount.StockCountId
+string                                          StockCount.StockCountIdExternal
+string                                          StockCount.ApprovedBy_EmployeeIdExternal
+string                                          StockCount.EmployeeIdExternal
+string                                          StockCount.StockIdExternal
+string                                          StockCount.StorageIdExternal
+bool                                            StockCount.Approved
+int                                             StockCount.ApprovedBy_EmployeeId
+string [MultilineText](500)                     StockCount.Comment
+DateTime                                        StockCount.CountEndedUTC
+DateTime                                        StockCount.CountStartedUTC
+int                                             StockCount.EmployeeId
+bool                                            StockCount.FullCount
+int                                             StockCount.StockId
+short                                           StockCount.StorageId
+string (50)                                     StockCount.StorageNumberTxt
+bool                                            StockCount.Sys_Deactivated
+bool                                            StockCount.Sys_Historic
+bool                                            StockCount.Sys_Incomplete
+--> ExternalSystemStockCount[]                  StockCount.ExternalSystemStockCounts
+--> StockCountLine[]                            StockCount.StockCountLines
+int                                             StockCountLine.StockCountLineId
+string                                          StockCountLine.StockCountLineIdExternal
+string                                          StockCountLine.ApprovedBy_EmployeeIdExternal
+string                                          StockCountLine.EmployeeIdExternal
+string                                          StockCountLine.IndustryTypeIdExternal
+string                                          StockCountLine.ProductIdExternal
+string                                          StockCountLine.StockCountIdExternal
+bool                                            StockCountLine.Approved
+int                                             StockCountLine.ApprovedBy_EmployeeId
+string [MultilineText](250)                     StockCountLine.Comment
+DateTime                                        StockCountLine.CountDoneUTC
+bool                                            StockCountLine.CountSkipped
+int                                             StockCountLine.EmployeeId
+byte                                            StockCountLine.IndustryTypeId
+string (50)                                     StockCountLine.IndustryTypeTxt
+int                                             StockCountLine.ProductId
+string [Name](250)                              StockCountLine.ProductName
+string (50)                                     StockCountLine.ProductNumberTxt
+decimal                                         StockCountLine.Quantity
+short                                           StockCountLine.StorageId
+string (50)                                     StockCountLine.StorageNumberTxt
+bool                                            StockCountLine.Sys_Deactivated
+bool                                            StockCountLine.Sys_Historic
+bool                                            StockCountLine.Sys_Incomplete
+--> ExternalSystemStockCountLine[]              StockCountLine.ExternalSystemStockCountLines
 int                                             StockTransaction.StockTransactionId
 string                                          StockTransaction.StockTransactionIdExternal
 string                                          StockTransaction.AssignmentIdExternal
@@ -2341,4 +2407,5 @@ bool                                            WebhookSubscription.Sys_Historic
 bool                                            WebhookSubscription.Sys_Incomplete
 string (50)                                     WebhookSubscription.WebhookId
 string                                          WebhookSubscription.WebhookUrl
+
 
