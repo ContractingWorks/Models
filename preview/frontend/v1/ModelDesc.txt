@@ -782,6 +782,16 @@ bool                                            ExternalSystemProjectGroup.Sys_D
 bool                                            ExternalSystemProjectGroup.Sys_Historic
 bool                                            ExternalSystemProjectGroup.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemProjectGroup.Enum_SyncStatusId
+int                                             ExternalSystemProjectPeriod.ExternalSystemProjectPeriodId
+string                                          ExternalSystemProjectPeriod.ProjectPeriodIdExternal
+string (50)                                     ExternalSystemProjectPeriod.ExternalId
+short                                           ExternalSystemProjectPeriod.ExternalSystemId
+int                                             ExternalSystemProjectPeriod.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemProjectPeriod.StatusDescription
+bool                                            ExternalSystemProjectPeriod.Sys_Deactivated
+bool                                            ExternalSystemProjectPeriod.Sys_Historic
+bool                                            ExternalSystemProjectPeriod.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemProjectPeriod.Enum_SyncStatusId
 byte                                            ExternalSystemProjectType.ExternalSystemProjectTypeId
 string                                          ExternalSystemProjectType.ProjectTypeIdExternal
 string (50)                                     ExternalSystemProjectType.ExternalId
@@ -1149,6 +1159,7 @@ string                                          InvoiceLine.InvoiceLineRuleIdExt
 string                                          InvoiceLine.InvoicingDimensionValueIdExternal
 string                                          InvoiceLine.ProductAgreementIdExternal
 string                                          InvoiceLine.ProductSupplierIndustryTypeIdExternal
+string                                          InvoiceLine.ProjectPeriodIdExternal
 string                                          InvoiceLine.ServiceAgreementDetailIdExternal
 string                                          InvoiceLine.StorageIdExternal
 string                                          InvoiceLine.VATRateIdExternal
@@ -1503,6 +1514,7 @@ string                                          ProductNoteLine.Parent_ProductNo
 string                                          ProductNoteLine.ProductAgreementIdExternal
 string                                          ProductNoteLine.ProductNoteIdExternal
 string                                          ProductNoteLine.ProductSupplierIndustryTypeIdExternal
+string                                          ProductNoteLine.ProjectPeriodIdExternal
 string                                          ProductNoteLine.StorageIdExternal
 string                                          ProductNoteLine.SupplierInvoiceLineIdExternal
 short                                           ProductNoteLine.Cost_LedgerAccountId
@@ -1695,6 +1707,7 @@ bool                                            ProjectGroup.Sys_Historic
 bool                                            ProjectGroup.Sys_Incomplete
 --> ExternalSystemProjectGroup[]                ProjectGroup.ExternalSystemProjectGroups
 int                                             ProjectPeriod.ProjectPeriodId
+string                                          ProjectPeriod.ProjectPeriodIdExternal
 string [MultilineText](200)                     ProjectPeriod.Description
 DateTime                                        ProjectPeriod.EndDate
 byte                                            ProjectPeriod.PeriodNumber
@@ -1703,6 +1716,7 @@ DateTime                                        ProjectPeriod.StartDate
 bool                                            ProjectPeriod.Sys_Deactivated
 bool                                            ProjectPeriod.Sys_Historic
 bool                                            ProjectPeriod.Sys_Incomplete
+--> ExternalSystemProjectPeriod[]               ProjectPeriod.ExternalSystemProjectPeriods
 short                                           ProjectProductAgreement.ProjectProductAgreementId
 string                                          ProjectProductAgreement.ProductAgreementIdExternal
 string                                          ProjectProductAgreement.ProjectIdExternal
@@ -1789,6 +1803,7 @@ string                                          Service.InvoiceLineIdExternal
 string                                          Service.JobCategoryIdExternal
 string                                          Service.MovedFromAssignmentIdExternal
 string                                          Service.MovedToAssignmentIdExternal
+string                                          Service.ProjectPeriodIdExternal
 string                                          Service.WageCodeIdExternal
 string                                          Service.WageCodeReportCategoryIdExternal
 string                                          Service.WagePeriodIdExternal
@@ -2177,6 +2192,7 @@ string                                          SupplierInvoiceLine.SupplierInvo
 string                                          SupplierInvoiceLine.AssignmentIdExternal
 string                                          SupplierInvoiceLine.CustomerIdExternal
 string                                          SupplierInvoiceLine.DepartmentIdExternal
+string                                          SupplierInvoiceLine.DimensionValueId_1External
 string                                          SupplierInvoiceLine.LedgerAccountIdExternal
 string                                          SupplierInvoiceLine.ProductIdExternal
 string                                          SupplierInvoiceLine.ProductSupplierIndustryTypeIdExternal
@@ -2189,6 +2205,8 @@ int                                             SupplierInvoiceLine.CustomerId
 string (50)                                     SupplierInvoiceLine.CustomerNumberTxt
 short                                           SupplierInvoiceLine.DepartmentId
 string (50)                                     SupplierInvoiceLine.DepartmentNumberTxt
+int                                             SupplierInvoiceLine.DimensionValueId_1
+string (50)                                     SupplierInvoiceLine.DimensionValueTxt_1
 short                                           SupplierInvoiceLine.LedgerAccountId
 string (50)                                     SupplierInvoiceLine.LedgerAccountNumberTxt
 int                                             SupplierInvoiceLine.LineNumber
@@ -2350,6 +2368,7 @@ short [PositiveNumber]                          WageGroup.WageGroupNumber
 --> ExternalSystemWageGroup[]                   WageGroup.ExternalSystemWageGroups
 int                                             WagePeriod.WagePeriodId
 string                                          WagePeriod.WagePeriodIdExternal
+string                                          WagePeriod.ProjectPeriodIdExternal
 string [MultilineText](200)                     WagePeriod.Description
 DateTime                                        WagePeriod.EndDateUTC
 byte                                            WagePeriod.PeriodNumber
