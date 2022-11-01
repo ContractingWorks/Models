@@ -1918,6 +1918,7 @@ string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
+string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
 string (2)                                      Settings_Main.DefaultLanguage
@@ -2119,6 +2120,7 @@ string                                          SupplierIndustryType.SupplierInd
 string                                          SupplierIndustryType.IndustryTypeIdExternal
 string                                          SupplierIndustryType.SupplierIdExternal
 string (50)                                     SupplierIndustryType.CustomerNumber
+int                                             SupplierIndustryType.DefaultUnknown_ProductSupplierIndustryTypeId
 byte                                            SupplierIndustryType.IndustryTypeId
 bool                                            SupplierIndustryType.IsCustom
 bool                                            SupplierIndustryType.IsDefaultForIndustryType
