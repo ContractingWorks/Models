@@ -80,6 +80,7 @@ string (200)                                    Assignment.InternalReference
 string [MultilineText]                          Assignment.InvoiceComment
 int                                             Assignment.JobResponsible_EmployeeId
 bool                                            Assignment.JobResponsibleCompleted
+DateTime                                        Assignment.JobResponsibleCompletedUTC
 string (200)                                    Assignment.KeyInformation
 int                                             Assignment.LinkedAssignmentId
 decimal                                         Assignment.MarginPercent
@@ -1346,7 +1347,9 @@ bool                                            PaymentTerm.Sys_Incomplete
 --> ExternalSystemPaymentTerm[]                 PaymentTerm.ExternalSystemPaymentTerms
 short                                           Permission.PermissionId
 string (200)                                    Permission.Desciption
+bool                                            Permission.IsForFrontend
 string [Name](50)                               Permission.Name
+bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
@@ -1558,6 +1561,7 @@ bool                                            ProductNoteLine.SyncToMobileDevi
 decimal                                         ProductNoteLine.Sys_CostPriceAvgFIFO
 decimal                                         ProductNoteLine.Sys_CostPriceAvgUpdOnAdd
 decimal                                         ProductNoteLine.Sys_CostPriceDefault
+bool                                            ProductNoteLine.Sys_CostPriceLocked
 bool                                            ProductNoteLine.Sys_Deactivated
 bool                                            ProductNoteLine.Sys_Historic
 bool                                            ProductNoteLine.Sys_Incomplete
@@ -1997,6 +2001,7 @@ int                                             Stock.ProductId
 decimal                                         Stock.Quantity
 decimal                                         Stock.QuantityMax
 decimal                                         Stock.QuantityMin
+decimal                                         Stock.QuantityMOQ
 decimal                                         Stock.QuantityOnOrder
 bool                                            Stock.Sys_Deactivated
 bool                                            Stock.Sys_Historic
@@ -2006,17 +2011,15 @@ int                                             Stock.Sys_NextBatchSortOrder
 int                                             StockCount.StockCountId
 string                                          StockCount.StockCountIdExternal
 string                                          StockCount.ApprovedBy_EmployeeIdExternal
-string                                          StockCount.EmployeeIdExternal
-string                                          StockCount.StockIdExternal
+string                                          StockCount.Responsible_EmployeeIdExternal
 string                                          StockCount.StorageIdExternal
 bool                                            StockCount.Approved
 int                                             StockCount.ApprovedBy_EmployeeId
 string [MultilineText](500)                     StockCount.Comment
 DateTime                                        StockCount.CountEndedUTC
 DateTime                                        StockCount.CountStartedUTC
-int                                             StockCount.EmployeeId
 bool                                            StockCount.FullCount
-int                                             StockCount.StockId
+int                                             StockCount.Responsible_EmployeeId
 short                                           StockCount.StorageId
 string (50)                                     StockCount.StorageNumberTxt
 bool                                            StockCount.Sys_Deactivated
@@ -2031,6 +2034,7 @@ string                                          StockCountLine.EmployeeIdExterna
 string                                          StockCountLine.IndustryTypeIdExternal
 string                                          StockCountLine.ProductIdExternal
 string                                          StockCountLine.StockCountIdExternal
+string                                          StockCountLine.StockIdExternal
 bool                                            StockCountLine.Approved
 int                                             StockCountLine.ApprovedBy_EmployeeId
 string [MultilineText](250)                     StockCountLine.Comment
@@ -2043,6 +2047,7 @@ int                                             StockCountLine.ProductId
 string [Name](250)                              StockCountLine.ProductName
 string (50)                                     StockCountLine.ProductNumberTxt
 decimal                                         StockCountLine.Quantity
+int                                             StockCountLine.StockId
 short                                           StockCountLine.StorageId
 string (50)                                     StockCountLine.StorageNumberTxt
 bool                                            StockCountLine.Sys_Deactivated
@@ -2060,18 +2065,23 @@ string                                          StockTransaction.Sys_ProductNote
 int                                             StockTransaction.AssignmentId
 decimal                                         StockTransaction.AverageCostPrice
 decimal                                         StockTransaction.AverageCostPriceFIFO
-decimal                                         StockTransaction.CostPrice
+string [MultilineText](250)                     StockTransaction.Comment
 int                                             StockTransaction.CustomerId
 int                                             StockTransaction.ProductBatchId
 int                                             StockTransaction.ProductId
 int                                             StockTransaction.ProductSupplierIndustryTypeId
 decimal                                         StockTransaction.Quantity
+decimal                                         StockTransaction.Sys_CostPriceFIFO
+decimal                                         StockTransaction.Sys_CostPriceIncoming
+decimal                                         StockTransaction.Sys_CostPriceNotFIFO
+decimal                                         StockTransaction.Sys_CostPriceNotStock
 bool                                            StockTransaction.Sys_Deactivated
 bool                                            StockTransaction.Sys_Historic
 bool                                            StockTransaction.Sys_Incomplete
 int                                             StockTransaction.Sys_ProductNoteLineId
 decimal                                         StockTransaction.TotalStockQuantity
 StockTransactionOriginEnum                      StockTransaction.Enum_StockTransactionOriginId
+StorageModeEnum                                 StockTransaction.Sys_Enum_StorageModeId
 --> ExternalSystemStockTransaction[]            StockTransaction.ExternalSystemStockTransactions
 short                                           Storage.StorageId
 string                                          Storage.StorageIdExternal
@@ -2084,6 +2094,7 @@ string [MultilineText](100)                     Storage.Description
 short                                           Storage.ProfitAndLoss_LedgerAccountId
 int                                             Storage.ResponsibleEmployeeId
 short [PositiveNumber]                          Storage.StorageNumber
+int                                             Storage.SupplierInvoice_VirtualAssignmentNumber
 bool                                            Storage.SyncToMobileDevice
 bool                                            Storage.Sys_Deactivated
 bool                                            Storage.Sys_Historic
@@ -2200,6 +2211,7 @@ string                                          SupplierInvoiceLine.ProductIdExt
 string                                          SupplierInvoiceLine.ProductSupplierIndustryTypeIdExternal
 string                                          SupplierInvoiceLine.StorageIdExternal
 string                                          SupplierInvoiceLine.SupplierInvoiceIdExternal
+string                                          SupplierInvoiceLine.VATRateIdExternal
 int                                             SupplierInvoiceLine.AssignmentId
 string (50)                                     SupplierInvoiceLine.AssignmentNumberTxt
 decimal                                         SupplierInvoiceLine.CostPrice
@@ -2224,7 +2236,26 @@ decimal                                         SupplierInvoiceLine.SurchargePer
 bool                                            SupplierInvoiceLine.Sys_Deactivated
 bool                                            SupplierInvoiceLine.Sys_Historic
 bool                                            SupplierInvoiceLine.Sys_Incomplete
+byte                                            SupplierInvoiceLine.VATRateId
+string (50)                                     SupplierInvoiceLine.VatRateTxt
 --> ExternalSystemSupplierInvoiceLine[]         SupplierInvoiceLine.ExternalSystemSupplierInvoiceLines
+int                                             SupplierInvoiceProductMatch.SupplierInvoiceProductMatchId
+string                                          SupplierInvoiceProductMatch.IndustryTypeIdExternal
+string                                          SupplierInvoiceProductMatch.SupplierIdExternal
+string                                          SupplierInvoiceProductMatch.SupplierIndustryTypeIdExternal
+string                                          SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeIdExternal
+string                                          SupplierInvoiceProductMatch.VATRateIdExternal
+bool                                            SupplierInvoiceProductMatch.DoNotForwardInvoice
+byte                                            SupplierInvoiceProductMatch.IndustryTypeId
+string (50)                                     SupplierInvoiceProductMatch.ProductNumberTxt
+int                                             SupplierInvoiceProductMatch.SupplierId
+short                                           SupplierInvoiceProductMatch.SupplierIndustryTypeId
+bool                                            SupplierInvoiceProductMatch.Sys_Deactivated
+bool                                            SupplierInvoiceProductMatch.Sys_Historic
+bool                                            SupplierInvoiceProductMatch.Sys_Incomplete
+string [Name](100)                              SupplierInvoiceProductMatch.Target_ProductName
+int                                             SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
+byte                                            SupplierInvoiceProductMatch.VATRateId
 int                                             SystemMessage.SystemMessageId
 string (100)                                    SystemMessage.EditUrlTextId
 string (100)                                    SystemMessage.InternalErrorId
@@ -2249,6 +2280,21 @@ string [Name](50)                               SystemMessage.TableName
 string (200)                                    SystemMessage.TextId
 RowStateEnum                                    SystemMessage.Enum_RowStateId
 SystemMessageSourceEnum                         SystemMessage.Enum_SystemMessageSourceId
+int                                             SystemNotification.SystemNotificationId
+string [MultilineText](500)                     SystemNotification.DetailDescriptionURL
+string (500)                                    SystemNotification.EntityNavigationURL
+bool                                            SystemNotification.IsDone
+bool                                            SystemNotification.IsImportant
+bool                                            SystemNotification.IsReadByUser
+bool                                            SystemNotification.IsTask
+string                                          SystemNotification.Message
+DateTime                                        SystemNotification.ShowFromUTC
+DateTime                                        SystemNotification.ShowToUTC
+bool                                            SystemNotification.Sys_Deactivated
+bool                                            SystemNotification.Sys_Historic
+bool                                            SystemNotification.Sys_Incomplete
+string (100)                                    SystemNotification.Title
+NotificationTypeEnum                            SystemNotification.Enum_NotificationTypeId
 short                                           Team.TeamId
 string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
@@ -2286,16 +2332,6 @@ bool                                            UserCommand.Sys_Historic
 bool                                            UserCommand.Sys_Incomplete
 string (100)                                    UserCommand.ToolbarIcon
 CommandEnum                                     UserCommand.Enum_CommandId
-int                                             UserMessage.UserMessageId
-bool                                            UserMessage.IsImportant
-bool                                            UserMessage.IsResolved
-string                                          UserMessage.Message
-DateTime                                        UserMessage.ShowFromUTC
-DateTime                                        UserMessage.ShowToUTC
-bool                                            UserMessage.Sys_Deactivated
-bool                                            UserMessage.Sys_Historic
-bool                                            UserMessage.Sys_Incomplete
-string (100)                                    UserMessage.Title
 int                                             UserRole.UserRoleId
 short                                           UserRole.RoleId
 bool                                            UserRole.Sys_Deactivated
