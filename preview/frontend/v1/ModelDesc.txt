@@ -693,6 +693,16 @@ bool                                            ExternalSystemPaymentTerm.Sys_De
 bool                                            ExternalSystemPaymentTerm.Sys_Historic
 bool                                            ExternalSystemPaymentTerm.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemPaymentTerm.Enum_SyncStatusId
+short                                           ExternalSystemPermission.ExternalSystemPermissionId
+string                                          ExternalSystemPermission.PermissionIdExternal
+string (50)                                     ExternalSystemPermission.ExternalId
+short                                           ExternalSystemPermission.ExternalSystemId
+int                                             ExternalSystemPermission.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemPermission.StatusDescription
+bool                                            ExternalSystemPermission.Sys_Deactivated
+bool                                            ExternalSystemPermission.Sys_Historic
+bool                                            ExternalSystemPermission.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemPermission.Enum_SyncStatusId
 int                                             ExternalSystemProduct.ExternalSystemProductId
 string                                          ExternalSystemProduct.ProductIdExternal
 string (50)                                     ExternalSystemProduct.ExternalId
@@ -803,6 +813,26 @@ bool                                            ExternalSystemProjectType.Sys_De
 bool                                            ExternalSystemProjectType.Sys_Historic
 bool                                            ExternalSystemProjectType.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemProjectType.Enum_SyncStatusId
+short                                           ExternalSystemRole.ExternalSystemRoleId
+string                                          ExternalSystemRole.RoleIdExternal
+string (50)                                     ExternalSystemRole.ExternalId
+short                                           ExternalSystemRole.ExternalSystemId
+int                                             ExternalSystemRole.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemRole.StatusDescription
+bool                                            ExternalSystemRole.Sys_Deactivated
+bool                                            ExternalSystemRole.Sys_Historic
+bool                                            ExternalSystemRole.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemRole.Enum_SyncStatusId
+short                                           ExternalSystemRolePermission.ExternalSystemRolePermissionId
+string                                          ExternalSystemRolePermission.RolePermissionIdExternal
+string (50)                                     ExternalSystemRolePermission.ExternalId
+short                                           ExternalSystemRolePermission.ExternalSystemId
+int                                             ExternalSystemRolePermission.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemRolePermission.StatusDescription
+bool                                            ExternalSystemRolePermission.Sys_Deactivated
+bool                                            ExternalSystemRolePermission.Sys_Historic
+bool                                            ExternalSystemRolePermission.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemRolePermission.Enum_SyncStatusId
 int                                             ExternalSystemService.ExternalSystemServiceId
 string                                          ExternalSystemService.ServiceIdExternal
 string (50)                                     ExternalSystemService.ExternalId
@@ -923,6 +953,16 @@ bool                                            ExternalSystemSupplierInvoiceLin
 bool                                            ExternalSystemSupplierInvoiceLine.Sys_Historic
 bool                                            ExternalSystemSupplierInvoiceLine.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemSupplierInvoiceLine.Enum_SyncStatusId
+int                                             ExternalSystemUserRole.ExternalSystemUserRoleId
+string                                          ExternalSystemUserRole.UserRoleIdExternal
+string (50)                                     ExternalSystemUserRole.ExternalId
+short                                           ExternalSystemUserRole.ExternalSystemId
+int                                             ExternalSystemUserRole.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemUserRole.StatusDescription
+bool                                            ExternalSystemUserRole.Sys_Deactivated
+bool                                            ExternalSystemUserRole.Sys_Historic
+bool                                            ExternalSystemUserRole.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemUserRole.Enum_SyncStatusId
 byte                                            ExternalSystemVATRate.ExternalSystemVATRateId
 string                                          ExternalSystemVATRate.VATRateIdExternal
 string (50)                                     ExternalSystemVATRate.ExternalId
@@ -1346,6 +1386,7 @@ bool                                            PaymentTerm.Sys_Historic
 bool                                            PaymentTerm.Sys_Incomplete
 --> ExternalSystemPaymentTerm[]                 PaymentTerm.ExternalSystemPaymentTerms
 short                                           Permission.PermissionId
+string                                          Permission.PermissionIdExternal
 string (200)                                    Permission.Desciption
 bool                                            Permission.IsForFrontend
 string [Name](50)                               Permission.Name
@@ -1353,6 +1394,7 @@ bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
+--> ExternalSystemPermission[]                  Permission.ExternalSystemPermissions
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
@@ -1773,17 +1815,23 @@ bool                                            PurchaseAgreementDiscountProduct
 bool                                            PurchaseAgreementDiscountProduct.Sys_Historic
 bool                                            PurchaseAgreementDiscountProduct.Sys_Incomplete
 short                                           Role.RoleId
+string                                          Role.RoleIdExternal
 string [MultilineText](200)                     Role.Description
 string [Name](50)                               Role.Name
 bool                                            Role.Sys_Deactivated
 bool                                            Role.Sys_Historic
 bool                                            Role.Sys_Incomplete
+--> ExternalSystemRole[]                        Role.ExternalSystemRoles
 short                                           RolePermission.RolePermissionId
+string                                          RolePermission.RolePermissionIdExternal
+string                                          RolePermission.PermissionIdExternal
+string                                          RolePermission.RoleIdExternal
 short                                           RolePermission.PermissionId
 short                                           RolePermission.RoleId
 bool                                            RolePermission.Sys_Deactivated
 bool                                            RolePermission.Sys_Historic
 bool                                            RolePermission.Sys_Incomplete
+--> ExternalSystemRolePermission[]              RolePermission.ExternalSystemRolePermissions
 int                                             Service.ServiceId
 string                                          Service.ServiceIdExternal
 string                                          Service.ApprovedInvoice_EmployeeIdExternal
@@ -2333,11 +2381,14 @@ bool                                            UserCommand.Sys_Incomplete
 string (100)                                    UserCommand.ToolbarIcon
 CommandEnum                                     UserCommand.Enum_CommandId
 int                                             UserRole.UserRoleId
+string                                          UserRole.UserRoleIdExternal
+string                                          UserRole.RoleIdExternal
 short                                           UserRole.RoleId
 bool                                            UserRole.Sys_Deactivated
 bool                                            UserRole.Sys_Historic
 bool                                            UserRole.Sys_Incomplete
 int                                             UserRole.UserId
+--> ExternalSystemUserRole[]                    UserRole.ExternalSystemUserRoles
 byte                                            VATRate.VATRateId
 string                                          VATRate.VATRateIdExternal
 string (10)                                     VATRate.Code
