@@ -2269,6 +2269,8 @@ short                                           SupplierInvoiceLine.DepartmentId
 string (50)                                     SupplierInvoiceLine.DepartmentNumberTxt
 int                                             SupplierInvoiceLine.DimensionValueId_1
 string (50)                                     SupplierInvoiceLine.DimensionValueTxt_1
+bool                                            SupplierInvoiceLine.DoNotForwardInvoice
+bool                                            SupplierInvoiceLine.FallbackValueUsed
 short                                           SupplierInvoiceLine.LedgerAccountId
 string (50)                                     SupplierInvoiceLine.LedgerAccountNumberTxt
 int                                             SupplierInvoiceLine.LineNumber
