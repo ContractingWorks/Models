@@ -1086,6 +1086,7 @@ bool                                            IntegrationBlackList.Sys_Deactiv
 bool                                            IntegrationBlackList.Sys_Historic
 bool                                            IntegrationBlackList.Sys_Incomplete
 string [Name](50)                               IntegrationBlackList.TableName
+int                                             IntegrationStatus.IntegrationStatusId
 string                                          IntegrationStatus.AssignmentIdExternal
 int                                             IntegrationStatus.AssignmentId
 int                                             IntegrationStatus.AttemptCount
@@ -1108,6 +1109,8 @@ string [Name](50)                               IntegrationStatus.TableName
 string                                          IntegrationStatus.TechnicalMessage
 string (200)                                    IntegrationStatus.TextId
 string (100)                                    IntegrationStatus.TraceId
+string [MultilineText](100)                     IntegrationStatus.UserComment
+bool                                            IntegrationStatus.UserOk
 int                                             IntegrationStatus_Incoming.IntegrationStatus_IncomingId
 string                                          IntegrationStatus_Incoming.AssignmentIdExternal
 int                                             IntegrationStatus_Incoming.AssignmentId
@@ -1607,6 +1610,8 @@ bool                                            ProductNoteLine.Sys_CostPriceLoc
 bool                                            ProductNoteLine.Sys_Deactivated
 bool                                            ProductNoteLine.Sys_Historic
 bool                                            ProductNoteLine.Sys_Incomplete
+string (50)                                     ProductNoteLine.Sys_LastChangeOrigin
+bool                                            ProductNoteLine.Sys_PostProcessNeeded
 short                                           ProductNoteLine.Sys_PurchaseAgreementId
 bool                                            ProductNoteLine.UpdateAssignmentCost
 bool                                            ProductNoteLine.UpdateStock
@@ -1901,7 +1906,9 @@ bool                                            Service.SyncToMobileDevice
 bool                                            Service.Sys_Deactivated
 bool                                            Service.Sys_Historic
 bool                                            Service.Sys_Incomplete
+string (50)                                     Service.Sys_LastChangeOrigin
 bool                                            Service.Sys_NextWageCodeProcessed
+bool                                            Service.Sys_PostProcessNeeded
 short                                           Service.WageCodeId
 string [Name](100)                              Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
@@ -2069,7 +2076,6 @@ DateTime                                        StockCount.CountStartedUTC
 bool                                            StockCount.FullCount
 int                                             StockCount.Responsible_EmployeeId
 short                                           StockCount.StorageId
-string (50)                                     StockCount.StorageNumberTxt
 bool                                            StockCount.Sys_Deactivated
 bool                                            StockCount.Sys_Historic
 bool                                            StockCount.Sys_Incomplete
@@ -2079,7 +2085,6 @@ int                                             StockCountLine.StockCountLineId
 string                                          StockCountLine.StockCountLineIdExternal
 string                                          StockCountLine.ApprovedBy_EmployeeIdExternal
 string                                          StockCountLine.EmployeeIdExternal
-string                                          StockCountLine.IndustryTypeIdExternal
 string                                          StockCountLine.ProductIdExternal
 string                                          StockCountLine.StockCountIdExternal
 string                                          StockCountLine.StockIdExternal
@@ -2087,17 +2092,13 @@ bool                                            StockCountLine.Approved
 int                                             StockCountLine.ApprovedBy_EmployeeId
 string [MultilineText](250)                     StockCountLine.Comment
 DateTime                                        StockCountLine.CountDoneUTC
-bool                                            StockCountLine.CountSkipped
 int                                             StockCountLine.EmployeeId
-byte                                            StockCountLine.IndustryTypeId
-string (50)                                     StockCountLine.IndustryTypeTxt
 int                                             StockCountLine.ProductId
-string [Name](250)                              StockCountLine.ProductName
-string (50)                                     StockCountLine.ProductNumberTxt
 decimal                                         StockCountLine.Quantity
+decimal                                         StockCountLine.QuantityOnStock
+bool                                            StockCountLine.StockAdjustmentPerformed
 int                                             StockCountLine.StockId
 short                                           StockCountLine.StorageId
-string (50)                                     StockCountLine.StorageNumberTxt
 bool                                            StockCountLine.Sys_Deactivated
 bool                                            StockCountLine.Sys_Historic
 bool                                            StockCountLine.Sys_Incomplete
@@ -2115,6 +2116,8 @@ decimal                                         StockTransaction.AverageCostPric
 decimal                                         StockTransaction.AverageCostPriceFIFO
 string [MultilineText](250)                     StockTransaction.Comment
 int                                             StockTransaction.CustomerId
+short                                           StockTransaction.MovedFromStorageId
+short                                           StockTransaction.MovedToStorageId
 int                                             StockTransaction.ProductBatchId
 int                                             StockTransaction.ProductId
 int                                             StockTransaction.ProductSupplierIndustryTypeId
@@ -2235,6 +2238,7 @@ bool                                            SupplierInvoice.SyncRetry
 bool                                            SupplierInvoice.Sys_Deactivated
 bool                                            SupplierInvoice.Sys_Historic
 bool                                            SupplierInvoice.Sys_Incomplete
+bool                                            SupplierInvoice.Sys_PostProcessNeeded
 string (50)                                     SupplierInvoice.VoucherNumber
 SupplierInvoiceStatusEnum                       SupplierInvoice.Enum_SupplierInvoiceStatusId
 --> ExternalSystemSupplierInvoice[]             SupplierInvoice.ExternalSystemSupplierInvoices
