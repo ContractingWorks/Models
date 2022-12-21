@@ -1151,6 +1151,7 @@ string                                          Invoice.ParentInvoiceIdExternal
 string                                          Invoice.PaymentTermIdExternal
 string                                          Invoice.ProjectIdExternal
 int                                             Invoice.AssignmentId
+bool                                            Invoice.AttachServiceListAsPDF
 int                                             Invoice.CustomerId
 int                                             Invoice.DebtorCustomerId
 short                                           Invoice.DepartmentId
@@ -1390,7 +1391,7 @@ bool                                            PaymentTerm.Sys_Incomplete
 --> ExternalSystemPaymentTerm[]                 PaymentTerm.ExternalSystemPaymentTerms
 short                                           Permission.PermissionId
 string                                          Permission.PermissionIdExternal
-string (200)                                    Permission.Desciption
+string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForFrontend
 string [Name](50)                               Permission.Name
 bool                                            Permission.ReportIfMissing
@@ -1625,6 +1626,8 @@ int                                             ProductNoteLineBatch.ProductNote
 decimal                                         ProductNoteLineBatch.Quantity
 bool                                            ProductNoteLineBatch.Sys_Deactivated
 bool                                            ProductNoteLineBatch.Sys_Historic
+short                                           ProductNoteLineBatch.Sys_HistoricStorageId
+bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
 int                                             ProductSupplierIndustryType.ProductSupplierIndustryTypeId
 string                                          ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
@@ -2091,6 +2094,7 @@ string                                          StockCountLine.StockIdExternal
 bool                                            StockCountLine.Approved
 int                                             StockCountLine.ApprovedBy_EmployeeId
 string [MultilineText](250)                     StockCountLine.Comment
+decimal                                         StockCountLine.CostPrice
 DateTime                                        StockCountLine.CountDoneUTC
 int                                             StockCountLine.EmployeeId
 int                                             StockCountLine.ProductId
@@ -2122,6 +2126,7 @@ int                                             StockTransaction.ProductBatchId
 int                                             StockTransaction.ProductId
 int                                             StockTransaction.ProductSupplierIndustryTypeId
 decimal                                         StockTransaction.Quantity
+int                                             StockTransaction.SequenceNumber
 decimal                                         StockTransaction.Sys_CostPriceFIFO
 decimal                                         StockTransaction.Sys_CostPriceIncoming
 decimal                                         StockTransaction.Sys_CostPriceNotFIFO
