@@ -124,7 +124,7 @@ bool                                            AssignmentAttachment.Sys_Histori
 bool                                            AssignmentAttachment.Sys_Incomplete
 int                                             AssignmentCategory.AssignmentCategoryId
 string                                          AssignmentCategory.AssignmentCategoryIdExternal
-int [PositiveNumber]                            AssignmentCategory.AssignmentCategoryNumber
+int                                             AssignmentCategory.AssignmentCategoryNumber
 string [MultilineText](100)                     AssignmentCategory.Description
 decimal                                         AssignmentCategory.MarginPercent
 bool                                            AssignmentCategory.Sys_Deactivated
@@ -137,6 +137,16 @@ string                                          AssignmentContact.Owner_Assignme
 bool                                            AssignmentContact.Sys_Deactivated
 bool                                            AssignmentContact.Sys_Historic
 bool                                            AssignmentContact.Sys_Incomplete
+int                                             AssignmentMOM.AssignmentMOMId
+string                                          AssignmentMOM.AssignmentIdExternal
+string                                          AssignmentMOM.ProductIdExternal
+int                                             AssignmentMOM.AssignmentId
+int                                             AssignmentMOM.ProductId
+string (50)                                     AssignmentMOM.ProductNumber
+bool                                            AssignmentMOM.Selected
+bool                                            AssignmentMOM.Sys_Deactivated
+bool                                            AssignmentMOM.Sys_Historic
+bool                                            AssignmentMOM.Sys_Incomplete
 int                                             AssignmentParticipant.AssignmentParticipantId
 string                                          AssignmentParticipant.AssignmentParticipantIdExternal
 string                                          AssignmentParticipant.AssignmentIdExternal
@@ -165,11 +175,13 @@ bool                                            AssignmentPurchaseAgreement.Sys_
 bool                                            AssignmentPurchaseAgreement.Sys_Incomplete
 int                                             Attachment.AttachmentId
 string                                          Attachment.AttachmentIdExternal
+string                                          Attachment.ProductIdExternal
 short                                           Attachment.AttachmentCategoryId
 string (1024)                                   Attachment.AzureBlobId
 string [MultilineText](1024)                    Attachment.Description
 string (250)                                    Attachment.FileName
 bool                                            Attachment.Internal
+int                                             Attachment.ProductId
 short                                           Attachment.RevisionNumber
 short                                           Attachment.SourceExternalSystemId
 string (250)                                    Attachment.SourceType
@@ -178,6 +190,8 @@ bool                                            Attachment.Sys_Deactivated
 bool                                            Attachment.Sys_Historic
 bool                                            Attachment.Sys_Incomplete
 string (500)                                    Attachment.Uri
+bool                                            Attachment.UseCommonBlobStore
+IndustryTypeEnum                                Attachment.Enum_IndustryTypeId
 --> AssignmentAttachment[]                      Attachment.AssignmentAttachments
 --> ExternalSystemAttachment[]                  Attachment.ExternalSystemAttachments
 short                                           AttachmentCategory.AttachmentCategoryId
@@ -185,6 +199,7 @@ string [MultilineText](100)                     AttachmentCategory.Description
 bool                                            AttachmentCategory.Sys_Deactivated
 bool                                            AttachmentCategory.Sys_Historic
 bool                                            AttachmentCategory.Sys_Incomplete
+AttachmentCategoryEnum                          AttachmentCategory.Enum_AttachmentCategoryId
 int                                             BoligmappaAttachment.BoligmappaAttachmentId
 int                                             BoligmappaAttachment.BoligmappaFileId
 string (50)                                     BoligmappaAttachment.BoligmappaNumber
@@ -913,6 +928,16 @@ bool                                            ExternalSystemStorage.Sys_Deacti
 bool                                            ExternalSystemStorage.Sys_Historic
 bool                                            ExternalSystemStorage.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemStorage.Enum_SyncStatusId
+int                                             ExternalSystemStorageTransfer.ExternalSystemStorageTransferId
+string                                          ExternalSystemStorageTransfer.StorageTransferIdExternal
+string (50)                                     ExternalSystemStorageTransfer.ExternalId
+short                                           ExternalSystemStorageTransfer.ExternalSystemId
+int                                             ExternalSystemStorageTransfer.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemStorageTransfer.StatusDescription
+bool                                            ExternalSystemStorageTransfer.Sys_Deactivated
+bool                                            ExternalSystemStorageTransfer.Sys_Historic
+bool                                            ExternalSystemStorageTransfer.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemStorageTransfer.Enum_SyncStatusId
 int                                             ExternalSystemSupplier.ExternalSystemSupplierId
 string                                          ExternalSystemSupplier.SupplierIdExternal
 string (50)                                     ExternalSystemSupplier.ExternalId
@@ -1070,6 +1095,7 @@ bool                                            IndustryType.Sys_Deactivated
 bool                                            IndustryType.Sys_Historic
 bool                                            IndustryType.Sys_Incomplete
 BoligmappaIndustryTypeEnum                      IndustryType.Enum_BoligmappaIndustryTypeId
+IndustryTypeEnum                                IndustryType.Enum_IndustryTypeId
 --> ExternalSystemIndustryType[]                IndustryType.ExternalSystemIndustryTypes
 short                                           IntegratedSystemConfig.IntegratedSystemConfigId
 string (50)                                     IntegratedSystemConfig.Key
@@ -1994,11 +2020,13 @@ byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
+bool                                            Settings_Main.ProductNote_CostPrice_Edit
 bool                                            Settings_Main.ProjectPeriod_AutoCreate
 int                                             Settings_Main.ProjectPeriod_LastClosedYYYYPP
 short                                           Settings_Main.Standard_SupplierIndustryTypeId
 short                                           Settings_Main.StorageId
 short                                           Settings_Main.SupplierIndustryTypeId
+bool                                            Settings_Main.SupplierInvoice_ImportWhenApproved
 bool                                            Settings_Main.Sys_Deactivated
 bool                                            Settings_Main.Sys_Historic
 bool                                            Settings_Main.Sys_Incomplete
@@ -2091,6 +2119,7 @@ string                                          StockCountLine.EmployeeIdExterna
 string                                          StockCountLine.ProductIdExternal
 string                                          StockCountLine.StockCountIdExternal
 string                                          StockCountLine.StockIdExternal
+string                                          StockCountLine.StorageIdExternal
 bool                                            StockCountLine.Approved
 int                                             StockCountLine.ApprovedBy_EmployeeId
 string [MultilineText](250)                     StockCountLine.Comment
@@ -2113,6 +2142,7 @@ string                                          StockTransaction.AssignmentIdExt
 string                                          StockTransaction.CustomerIdExternal
 string                                          StockTransaction.ProductIdExternal
 string                                          StockTransaction.ProductSupplierIndustryTypeIdExternal
+string                                          StockTransaction.RegisteredBy_EmployeeIdExternal
 string                                          StockTransaction.StorageIdExternal
 string                                          StockTransaction.Sys_ProductNoteLineIdExternal
 int                                             StockTransaction.AssignmentId
@@ -2126,6 +2156,7 @@ int                                             StockTransaction.ProductBatchId
 int                                             StockTransaction.ProductId
 int                                             StockTransaction.ProductSupplierIndustryTypeId
 decimal                                         StockTransaction.Quantity
+int                                             StockTransaction.RegisteredBy_EmployeeId
 int                                             StockTransaction.SequenceNumber
 decimal                                         StockTransaction.Sys_CostPriceFIFO
 decimal                                         StockTransaction.Sys_CostPriceIncoming
@@ -2166,6 +2197,22 @@ bool                                            StorageDepartment.IsDefaultStora
 bool                                            StorageDepartment.Sys_Deactivated
 bool                                            StorageDepartment.Sys_Historic
 bool                                            StorageDepartment.Sys_Incomplete
+int                                             StorageTransfer.StorageTransferId
+string                                          StorageTransfer.StorageTransferIdExternal
+string                                          StorageTransfer.ProductIdExternal
+string                                          StorageTransfer.StorageId_FromExternal
+string                                          StorageTransfer.StorageId_ToExternal
+int                                             StorageTransfer.ProductId
+decimal                                         StorageTransfer.Quantity
+int                                             StorageTransfer.RegBy_EmployeeId
+DateTime                                        StorageTransfer.RegisteredTimeUTC
+short                                           StorageTransfer.StorageId_From
+short                                           StorageTransfer.StorageId_To
+bool                                            StorageTransfer.Sys_Deactivated
+bool                                            StorageTransfer.Sys_Historic
+bool                                            StorageTransfer.Sys_Incomplete
+bool                                            StorageTransfer.Sys_PostProcessNeeded
+--> ExternalSystemStorageTransfer[]             StorageTransfer.ExternalSystemStorageTransfers
 int                                             Supplier.SupplierId
 string                                          Supplier.SupplierIdExternal
 string (2)                                      Supplier.CountryId
