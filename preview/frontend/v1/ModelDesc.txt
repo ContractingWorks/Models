@@ -179,6 +179,7 @@ string                                          Attachment.ProductIdExternal
 short                                           Attachment.AttachmentCategoryId
 string (1024)                                   Attachment.AzureBlobId
 string [MultilineText](1024)                    Attachment.Description
+string (64)                                     Attachment.FileChecksum
 string (250)                                    Attachment.FileName
 bool                                            Attachment.Internal
 int                                             Attachment.ProductId
@@ -1987,12 +1988,14 @@ short                                           Settings_Assignment.Default_Prod
 int                                             Settings_Assignment.Default_ProjectId
 short                                           Settings_Assignment.Default_ServiceAgreementId
 bool                                            Settings_Assignment.Default_SyncToMobileDevice
+bool                                            Settings_Assignment.Invoice_SendImmediately
 bool                                            Settings_Assignment.MandatoryCaseHandler
 bool                                            Settings_Assignment.MandatoryCategory
 bool                                            Settings_Assignment.MandatoryHpcCategory
 bool                                            Settings_Assignment.MandatoryMatAgreement
 decimal                                         Settings_Assignment.MinimumCoveragePercent
 bool                                            Settings_Assignment.NoChangeCustomerAfterTimeMatInv
+bool                                            Settings_Assignment.ProductNote_CostPrice_Edit
 bool                                            Settings_Assignment.Sys_Deactivated
 bool                                            Settings_Assignment.Sys_Historic
 bool                                            Settings_Assignment.Sys_Incomplete
@@ -2282,6 +2285,7 @@ DateTime                                        SupplierInvoice.InvoiceDate
 string (50)                                     SupplierInvoice.InvoiceNumber
 bool                                            SupplierInvoice.IsCreditNote
 short                                           SupplierInvoice.LineCount
+bool                                            SupplierInvoice.Reviewed
 decimal                                         SupplierInvoice.Sum
 int                                             SupplierInvoice.SupplierId
 short                                           SupplierInvoice.SupplierIndustryTypeId
@@ -2319,6 +2323,7 @@ string                                          SupplierInvoiceLine.VATRateIdExt
 int                                             SupplierInvoiceLine.AssignmentId
 string (50)                                     SupplierInvoiceLine.AssignmentNumberTxt
 decimal                                         SupplierInvoiceLine.CostPrice
+decimal                                         SupplierInvoiceLine.CostPricePurchaseAgreement
 int                                             SupplierInvoiceLine.CustomerId
 string (50)                                     SupplierInvoiceLine.CustomerNumberTxt
 short                                           SupplierInvoiceLine.DepartmentId
