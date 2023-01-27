@@ -1195,6 +1195,7 @@ int                                             Invoice.ParentInvoiceId
 byte                                            Invoice.PaymentTermId
 int                                             Invoice.ProjectId
 DateTime                                        Invoice.RegisteredUTC
+decimal                                         Invoice.RemainingAmount
 DateTime                                        Invoice.SentUTC
 bool                                            Invoice.Sys_Deactivated
 bool                                            Invoice.Sys_Historic
