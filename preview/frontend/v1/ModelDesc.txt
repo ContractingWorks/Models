@@ -25,6 +25,7 @@ string (10)                                     Address.PostalNumber
 string (50)                                     Address.PostalPlace
 int                                             Address.PropertyUnitNumber
 int                                             Address.SectionUnitNumber
+string (50)                                     Address.SectionUnitText
 int                                             Address.ShareUnitNumber
 bool                                            Address.Sys_Deactivated
 bool                                            Address.Sys_Historic
@@ -386,17 +387,8 @@ DimensionLevelEnum                              Dimension.Enum_DimensionLevelId
 --> DimensionValue[]                            Dimension.DimensionValues
 --> ExternalSystemDimension[]                   Dimension.ExternalSystemDimensions
 int                                             DimensionUse.DimensionUseId
-string                                          DimensionUse.AssignmentIdExternal
-string                                          DimensionUse.DimensionIdExternal
-string                                          DimensionUse.ProjectIdExternal
-int                                             DimensionUse.AssignmentId
-int                                             DimensionUse.DimensionId
-byte                                            DimensionUse.DimensionIndex
-bool                                            DimensionUse.Invoice
-int                                             DimensionUse.ProjectId
-bool                                            DimensionUse.Sys_Deactivated
-bool                                            DimensionUse.Sys_Historic
-bool                                            DimensionUse.Sys_Incomplete
+string                                          DimensionUse.DimensionUseIdExternal
+--> ExternalSystemDimensionUse[]                DimensionUse.ExternalSystemDimensionUses
 int                                             DimensionValue.DimensionValueId
 string                                          DimensionValue.DimensionValueIdExternal
 string                                          DimensionValue.DimensionIdExternal
@@ -413,18 +405,8 @@ bool                                            DimensionValue.Sys_Historic
 bool                                            DimensionValue.Sys_Incomplete
 --> ExternalSystemDimensionValue[]              DimensionValue.ExternalSystemDimensionValues
 int                                             DimensionValueUse.DimensionValueUseId
-string                                          DimensionValueUse.DimensionValueIdExternal
-bool                                            DimensionValueUse.Completed
-int                                             DimensionValueUse.DimensionUseId
-int                                             DimensionValueUse.DimensionValueId
-DateTime                                        DimensionValueUse.EndDateTimeUTC
-decimal                                         DimensionValueUse.FixedPrice
-bool                                            DimensionValueUse.FixedPriceInvoiced
-string (1100)                                   DimensionValueUse.InvoiceText
-DateTime                                        DimensionValueUse.StartDateTimeUTC
-bool                                            DimensionValueUse.Sys_Deactivated
-bool                                            DimensionValueUse.Sys_Historic
-bool                                            DimensionValueUse.Sys_Incomplete
+string                                          DimensionValueUse.DimensionValueUseIdExternal
+--> ExternalSystemDimensionValueUse[]           DimensionValueUse.ExternalSystemDimensionValueUses
 int                                             DiscountGroup.DiscountGroupId
 string                                          DiscountGroup.SupplierIndustryTypeIdExternal
 string (50)                                     DiscountGroup.DiscountGroupCode
@@ -603,6 +585,16 @@ bool                                            ExternalSystemDimension.Sys_Deac
 bool                                            ExternalSystemDimension.Sys_Historic
 bool                                            ExternalSystemDimension.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemDimension.Enum_SyncStatusId
+int                                             ExternalSystemDimensionUse.ExternalSystemDimensionUseId
+string                                          ExternalSystemDimensionUse.DimensionUseIdExternal
+string (50)                                     ExternalSystemDimensionUse.ExternalId
+short                                           ExternalSystemDimensionUse.ExternalSystemId
+int                                             ExternalSystemDimensionUse.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemDimensionUse.StatusDescription
+bool                                            ExternalSystemDimensionUse.Sys_Deactivated
+bool                                            ExternalSystemDimensionUse.Sys_Historic
+bool                                            ExternalSystemDimensionUse.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemDimensionUse.Enum_SyncStatusId
 int                                             ExternalSystemDimensionValue.ExternalSystemDimensionValueId
 string                                          ExternalSystemDimensionValue.DimensionValueIdExternal
 string (50)                                     ExternalSystemDimensionValue.ExternalId
@@ -613,6 +605,16 @@ bool                                            ExternalSystemDimensionValue.Sys
 bool                                            ExternalSystemDimensionValue.Sys_Historic
 bool                                            ExternalSystemDimensionValue.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemDimensionValue.Enum_SyncStatusId
+int                                             ExternalSystemDimensionValueUse.ExternalSystemDimensionValueUseId
+string                                          ExternalSystemDimensionValueUse.DimensionValueUseIdExternal
+string (50)                                     ExternalSystemDimensionValueUse.ExternalId
+short                                           ExternalSystemDimensionValueUse.ExternalSystemId
+int                                             ExternalSystemDimensionValueUse.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemDimensionValueUse.StatusDescription
+bool                                            ExternalSystemDimensionValueUse.Sys_Deactivated
+bool                                            ExternalSystemDimensionValueUse.Sys_Historic
+bool                                            ExternalSystemDimensionValueUse.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemDimensionValueUse.Enum_SyncStatusId
 int                                             ExternalSystemEmployee.ExternalSystemEmployeeId
 string                                          ExternalSystemEmployee.EmployeeIdExternal
 string (50)                                     ExternalSystemEmployee.ExternalId
@@ -679,6 +681,16 @@ bool                                            ExternalSystemInvoiceLineRule.Sy
 bool                                            ExternalSystemInvoiceLineRule.Sys_Historic
 bool                                            ExternalSystemInvoiceLineRule.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemInvoiceLineRule.Enum_SyncStatusId
+short                                           ExternalSystemInvoiceLineRuleWageCodeType.ExternalSystemInvoiceLineRuleWageCodeTypeId
+string                                          ExternalSystemInvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeIdExternal
+string (50)                                     ExternalSystemInvoiceLineRuleWageCodeType.ExternalId
+short                                           ExternalSystemInvoiceLineRuleWageCodeType.ExternalSystemId
+int                                             ExternalSystemInvoiceLineRuleWageCodeType.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemInvoiceLineRuleWageCodeType.StatusDescription
+bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Deactivated
+bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Historic
+bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemInvoiceLineRuleWageCodeType.Enum_SyncStatusId
 short                                           ExternalSystemJobCategory.ExternalSystemJobCategoryId
 string                                          ExternalSystemJobCategory.JobCategoryIdExternal
 string (50)                                     ExternalSystemJobCategory.ExternalId
@@ -1345,11 +1357,13 @@ bool                                            InvoiceLineRuleTypeDetail.Sys_In
 InvoiceLineRuleTypeDetailEnum                   InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeDetailId
 InvoiceLineRuleTypeEnum                         InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeId
 short                                           InvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeId
+string                                          InvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeIdExternal
 string                                          InvoiceLineRuleWageCodeType.InvoiceLineRuleIdExternal
 bool                                            InvoiceLineRuleWageCodeType.Sys_Deactivated
 bool                                            InvoiceLineRuleWageCodeType.Sys_Historic
 bool                                            InvoiceLineRuleWageCodeType.Sys_Incomplete
 WageCodeTypeEnum                                InvoiceLineRuleWageCodeType.Enum_WageCodeTypeId
+--> ExternalSystemInvoiceLineRuleWageCodeType[] InvoiceLineRuleWageCodeType.ExternalSystemInvoiceLineRuleWageCodeTypes
 short                                           InvoiceTemplate.InvoiceTemplateId
 string [MultilineText](100)                     InvoiceTemplate.Description
 short                                           InvoiceTemplate.InvoiceTemplateNumber
