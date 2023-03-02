@@ -222,6 +222,55 @@ bool                                            BoligmappaTokens.Sys_Deactivated
 bool                                            BoligmappaTokens.Sys_Historic
 bool                                            BoligmappaTokens.Sys_Incomplete
 DateTime                                        BoligmappaTokens.TokensLastRefreshedUTC
+int                                             Budget.BudgetId
+string                                          Budget.BudgetIdExternal
+string                                          Budget.AssignmentIdExternal
+string                                          Budget.BudgetScenarioIdExternal
+string                                          Budget.ProjectIdExternal
+int                                             Budget.AssignmentId
+int                                             Budget.BudgetScenarioId
+string [MultilineText](200)                     Budget.Comment
+string [MultilineText](200)                     Budget.Description
+int                                             Budget.ProjectId
+bool                                            Budget.Sys_Deactivated
+bool                                            Budget.Sys_Historic
+bool                                            Budget.Sys_Incomplete
+--> ExternalSystemBudget[]                      Budget.ExternalSystemBudgets
+int                                             BudgetLine.BudgetLineId
+string                                          BudgetLine.BudgetLineIdExternal
+string                                          BudgetLine.BudgetIdExternal
+string                                          BudgetLine.ProjectAccountIdExternal
+string                                          BudgetLine.WageCodeReportCategoryIdExternal
+int                                             BudgetLine.BudgetId
+decimal                                         BudgetLine.BudgetValue
+string [MultilineText](200)                     BudgetLine.Comment
+int                                             BudgetLine.ProjectAccountId
+bool                                            BudgetLine.Sys_Deactivated
+bool                                            BudgetLine.Sys_Historic
+bool                                            BudgetLine.Sys_Incomplete
+int                                             BudgetLine.WageCodeReportCategoryId
+--> BudgetLinePeriod[]                          BudgetLine.BudgetLinePeriods
+--> ExternalSystemBudgetLine[]                  BudgetLine.ExternalSystemBudgetLines
+int                                             BudgetLinePeriod.BudgetLinePeriodId
+string                                          BudgetLinePeriod.BudgetLinePeriodIdExternal
+string                                          BudgetLinePeriod.BudgetLineIdExternal
+string                                          BudgetLinePeriod.ProjectPeriodIdExternal
+decimal                                         BudgetLinePeriod.BudgetValue
+string [MultilineText](200)                     BudgetLinePeriod.Comment
+int                                             BudgetLinePeriod.ProjectPeriodId
+bool                                            BudgetLinePeriod.Sys_Deactivated
+bool                                            BudgetLinePeriod.Sys_Historic
+bool                                            BudgetLinePeriod.Sys_Incomplete
+--> ExternalSystemBudgetLinePeriod[]            BudgetLinePeriod.ExternalSystemBudgetLinePeriods
+int                                             BudgetScenario.BudgetScenarioId
+string                                          BudgetScenario.BudgetScenarioIdExternal
+string [MultilineText](200)                     BudgetScenario.Comment
+string [MultilineText](200)                     BudgetScenario.Description
+bool                                            BudgetScenario.IsDefault
+bool                                            BudgetScenario.Sys_Deactivated
+bool                                            BudgetScenario.Sys_Historic
+bool                                            BudgetScenario.Sys_Incomplete
+--> ExternalSystemBudgetScenario[]              BudgetScenario.ExternalSystemBudgetScenarios
 short                                           Competency.CompetencyId
 byte                                            Competency.CompetencyGroupId
 string [MultilineText](450)                     Competency.Description
@@ -546,6 +595,46 @@ bool                                            ExternalSystemAttachment.Sys_Dea
 bool                                            ExternalSystemAttachment.Sys_Historic
 bool                                            ExternalSystemAttachment.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemAttachment.Enum_SyncStatusId
+int                                             ExternalSystemBudget.ExternalSystemBudgetId
+string                                          ExternalSystemBudget.BudgetIdExternal
+string (50)                                     ExternalSystemBudget.ExternalId
+short                                           ExternalSystemBudget.ExternalSystemId
+int                                             ExternalSystemBudget.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemBudget.StatusDescription
+bool                                            ExternalSystemBudget.Sys_Deactivated
+bool                                            ExternalSystemBudget.Sys_Historic
+bool                                            ExternalSystemBudget.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemBudget.Enum_SyncStatusId
+int                                             ExternalSystemBudgetLine.ExternalSystemBudgetLineId
+string                                          ExternalSystemBudgetLine.BudgetLineIdExternal
+string (50)                                     ExternalSystemBudgetLine.ExternalId
+short                                           ExternalSystemBudgetLine.ExternalSystemId
+int                                             ExternalSystemBudgetLine.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemBudgetLine.StatusDescription
+bool                                            ExternalSystemBudgetLine.Sys_Deactivated
+bool                                            ExternalSystemBudgetLine.Sys_Historic
+bool                                            ExternalSystemBudgetLine.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemBudgetLine.Enum_SyncStatusId
+int                                             ExternalSystemBudgetLinePeriod.ExternalSystemBudgetLinePeriodId
+string                                          ExternalSystemBudgetLinePeriod.BudgetLinePeriodIdExternal
+string (50)                                     ExternalSystemBudgetLinePeriod.ExternalId
+short                                           ExternalSystemBudgetLinePeriod.ExternalSystemId
+int                                             ExternalSystemBudgetLinePeriod.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemBudgetLinePeriod.StatusDescription
+bool                                            ExternalSystemBudgetLinePeriod.Sys_Deactivated
+bool                                            ExternalSystemBudgetLinePeriod.Sys_Historic
+bool                                            ExternalSystemBudgetLinePeriod.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemBudgetLinePeriod.Enum_SyncStatusId
+int                                             ExternalSystemBudgetScenario.ExternalSystemBudgetScenarioId
+string                                          ExternalSystemBudgetScenario.BudgetScenarioIdExternal
+string (50)                                     ExternalSystemBudgetScenario.ExternalId
+short                                           ExternalSystemBudgetScenario.ExternalSystemId
+int                                             ExternalSystemBudgetScenario.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemBudgetScenario.StatusDescription
+bool                                            ExternalSystemBudgetScenario.Sys_Deactivated
+bool                                            ExternalSystemBudgetScenario.Sys_Historic
+bool                                            ExternalSystemBudgetScenario.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemBudgetScenario.Enum_SyncStatusId
 int                                             ExternalSystemContact.ExternalSystemContactId
 string                                          ExternalSystemContact.ContactIdExternal
 string (50)                                     ExternalSystemContact.ExternalId
@@ -2061,10 +2150,12 @@ int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
 bool                                            Settings_Main.ProjectPeriod_AutoCreate
 int                                             Settings_Main.ProjectPeriod_LastClosedYYYYPP
+bool                                            Settings_Main.Require2FAForAllUsers
 short                                           Settings_Main.Standard_SupplierIndustryTypeId
 short                                           Settings_Main.StorageId
 short                                           Settings_Main.SupplierIndustryTypeId
 bool                                            Settings_Main.SupplierInvoice_ImportWhenApproved
+string [Email](100)                             Settings_Main.SupportEmail_Partner
 bool                                            Settings_Main.Sys_Deactivated
 bool                                            Settings_Main.Sys_Historic
 bool                                            Settings_Main.Sys_Incomplete
