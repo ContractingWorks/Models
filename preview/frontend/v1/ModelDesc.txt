@@ -781,6 +781,26 @@ bool                                            ExternalSystemInvoiceLineRuleWag
 bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Historic
 bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemInvoiceLineRuleWageCodeType.Enum_SyncStatusId
+short                                           ExternalSystemInvoiceTemplate.ExternalSystemInvoiceTemplateId
+string                                          ExternalSystemInvoiceTemplate.InvoiceTemplateIdExternal
+string (50)                                     ExternalSystemInvoiceTemplate.ExternalId
+short                                           ExternalSystemInvoiceTemplate.ExternalSystemId
+int                                             ExternalSystemInvoiceTemplate.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemInvoiceTemplate.StatusDescription
+bool                                            ExternalSystemInvoiceTemplate.Sys_Deactivated
+bool                                            ExternalSystemInvoiceTemplate.Sys_Historic
+bool                                            ExternalSystemInvoiceTemplate.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemInvoiceTemplate.Enum_SyncStatusId
+short                                           ExternalSystemInvoiceTemplateDetail.ExternalSystemInvoiceTemplateDetailId
+string                                          ExternalSystemInvoiceTemplateDetail.InvoiceTemplateDetailIdExternal
+string (50)                                     ExternalSystemInvoiceTemplateDetail.ExternalId
+short                                           ExternalSystemInvoiceTemplateDetail.ExternalSystemId
+int                                             ExternalSystemInvoiceTemplateDetail.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemInvoiceTemplateDetail.StatusDescription
+bool                                            ExternalSystemInvoiceTemplateDetail.Sys_Deactivated
+bool                                            ExternalSystemInvoiceTemplateDetail.Sys_Historic
+bool                                            ExternalSystemInvoiceTemplateDetail.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemInvoiceTemplateDetail.Enum_SyncStatusId
 short                                           ExternalSystemJobCategory.ExternalSystemJobCategoryId
 string                                          ExternalSystemJobCategory.JobCategoryIdExternal
 string (50)                                     ExternalSystemJobCategory.ExternalId
@@ -1455,19 +1475,24 @@ bool                                            InvoiceLineRuleWageCodeType.Sys_
 WageCodeTypeEnum                                InvoiceLineRuleWageCodeType.Enum_WageCodeTypeId
 --> ExternalSystemInvoiceLineRuleWageCodeType[] InvoiceLineRuleWageCodeType.ExternalSystemInvoiceLineRuleWageCodeTypes
 short                                           InvoiceTemplate.InvoiceTemplateId
+string                                          InvoiceTemplate.InvoiceTemplateIdExternal
 string [MultilineText](100)                     InvoiceTemplate.Description
 short                                           InvoiceTemplate.InvoiceTemplateNumber
 bool                                            InvoiceTemplate.Sys_Deactivated
 bool                                            InvoiceTemplate.Sys_Historic
 bool                                            InvoiceTemplate.Sys_Incomplete
+--> ExternalSystemInvoiceTemplate[]             InvoiceTemplate.ExternalSystemInvoiceTemplates
 --> InvoiceTemplateDetail[]                     InvoiceTemplate.InvoiceTemplateDetails
 short                                           InvoiceTemplateDetail.InvoiceTemplateDetailId
+string                                          InvoiceTemplateDetail.InvoiceTemplateDetailIdExternal
 string                                          InvoiceTemplateDetail.InvoiceLineRuleIdExternal
+string                                          InvoiceTemplateDetail.InvoiceTemplateIdExternal
 short                                           InvoiceTemplateDetail.InvoiceLineRuleId
 int                                             InvoiceTemplateDetail.SortOrder
 bool                                            InvoiceTemplateDetail.Sys_Deactivated
 bool                                            InvoiceTemplateDetail.Sys_Historic
 bool                                            InvoiceTemplateDetail.Sys_Incomplete
+--> ExternalSystemInvoiceTemplateDetail[]       InvoiceTemplateDetail.ExternalSystemInvoiceTemplateDetails
 short                                           JobCategory.JobCategoryId
 string                                          JobCategory.JobCategoryIdExternal
 string [Name](200)                              JobCategory.Name
@@ -2097,6 +2122,7 @@ ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_Serv
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
+string                                          Settings_Assignment.Default_InvoiceTemplateIdExternal
 string                                          Settings_Assignment.Default_ProductAgreementIdExternal
 string                                          Settings_Assignment.Default_ProjectIdExternal
 string                                          Settings_Assignment.Default_ServiceAgreementIdExternal
