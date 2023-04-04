@@ -51,6 +51,7 @@ string                                          Assignment.AssignmentIdExternal
 string                                          Assignment.AssignmentCategoryIdExternal
 string                                          Assignment.CaseHandler_EmployeeIdExternal
 string                                          Assignment.CustomerIdExternal
+string                                          Assignment.Default_InvoiceTemplateIdExternal
 string                                          Assignment.Default_ProductAgreementIdExternal
 string                                          Assignment.DepartmentIdExternal
 string                                          Assignment.JobResponsible_EmployeeIdExternal
@@ -66,6 +67,7 @@ int                                             Assignment.CaseHandler_EmployeeI
 string (100)                                    Assignment.Contact
 int                                             Assignment.CustomerId
 string (200)                                    Assignment.CustomerReference
+short                                           Assignment.Default_InvoiceTemplateId
 short                                           Assignment.Default_ProductAgreementId
 short                                           Assignment.DepartmentId
 string [MultilineText]                          Assignment.Description
@@ -336,6 +338,7 @@ bool                                            Country.Sys_Incomplete
 int                                             Customer.CustomerId
 string                                          Customer.CustomerIdExternal
 string                                          Customer.Default_AssignmentCategoryIdExternal
+string                                          Customer.Default_InvoiceTemplateIdExternal
 string                                          Customer.Default_ProductAgreementIdExternal
 string                                          Customer.Invoice_CustomerIdExternal
 string                                          Customer.PaymentTermIdExternal
@@ -346,6 +349,7 @@ string (2)                                      Customer.CountryId
 int                                             Customer.CreditLimit
 int                                             Customer.CustomerNumber
 int                                             Customer.Default_AssignmentCategoryId
+short                                           Customer.Default_InvoiceTemplateId
 short                                           Customer.Default_ProductAgreementId
 string [Email](150)                             Customer.Email
 string [Phone](50)                              Customer.Fax
@@ -771,16 +775,6 @@ bool                                            ExternalSystemInvoiceLineRule.Sy
 bool                                            ExternalSystemInvoiceLineRule.Sys_Historic
 bool                                            ExternalSystemInvoiceLineRule.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemInvoiceLineRule.Enum_SyncStatusId
-short                                           ExternalSystemInvoiceLineRuleWageCodeType.ExternalSystemInvoiceLineRuleWageCodeTypeId
-string                                          ExternalSystemInvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeIdExternal
-string (50)                                     ExternalSystemInvoiceLineRuleWageCodeType.ExternalId
-short                                           ExternalSystemInvoiceLineRuleWageCodeType.ExternalSystemId
-int                                             ExternalSystemInvoiceLineRuleWageCodeType.LastTransferMilliseconds
-string [MultilineText](50)                      ExternalSystemInvoiceLineRuleWageCodeType.StatusDescription
-bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Deactivated
-bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Historic
-bool                                            ExternalSystemInvoiceLineRuleWageCodeType.Sys_Incomplete
-SyncStatusEnum                                  ExternalSystemInvoiceLineRuleWageCodeType.Enum_SyncStatusId
 short                                           ExternalSystemInvoiceTemplate.ExternalSystemInvoiceTemplateId
 string                                          ExternalSystemInvoiceTemplate.InvoiceTemplateIdExternal
 string (50)                                     ExternalSystemInvoiceTemplate.ExternalId
@@ -1358,6 +1352,7 @@ string                                          InvoiceLine.ProjectPeriodIdExter
 string                                          InvoiceLine.ServiceAgreementDetailIdExternal
 string                                          InvoiceLine.StorageIdExternal
 string                                          InvoiceLine.VATRateIdExternal
+string                                          InvoiceLine.WageCodeReportCategoryIdExternal
 decimal                                         InvoiceLine.BasisSumPercentInvoice
 short                                           InvoiceLine.Cost_LedgerAccountId
 int                                             InvoiceLine.Cost_ProjectAccountId
@@ -1399,6 +1394,7 @@ bool                                            InvoiceLine.UpdateAssignmentCost
 bool                                            InvoiceLine.UpdateStock
 bool                                            InvoiceLine.VATFree
 byte                                            InvoiceLine.VATRateId
+int                                             InvoiceLine.WageCodeReportCategoryId
 InvoiceLineTypeEnum                             InvoiceLine.Enum_InvoiceLineTypeId
 --> ExternalSystemInvoiceLine[]                 InvoiceLine.ExternalSystemInvoiceLines
 int                                             InvoiceLine_Session.InvoiceLineSessionId
@@ -1456,10 +1452,15 @@ bool                                            InvoiceLineRule.Sys_Historic
 bool                                            InvoiceLineRule.Sys_Incomplete
 byte                                            InvoiceLineRule.VATRateId
 int                                             InvoiceLineRule.WageCodeReportCategoryId
+bool                                            InvoiceLineRule.WageType_CarExpenses
+bool                                            InvoiceLineRule.WageType_Diet
+bool                                            InvoiceLineRule.WageType_OrdinaryWage
+bool                                            InvoiceLineRule.WageType_Overtime
+bool                                            InvoiceLineRule.WageType_TravelExpenses
+bool                                            InvoiceLineRule.WageType_VariousExtra
 InvoiceLineRuleTypeDetailEnum                   InvoiceLineRule.Enum_InvoiceLineRuleTypeDetailId
 InvoiceLineRuleTypeEnum                         InvoiceLineRule.Enum_InvoiceLineRuleTypeId
 --> ExternalSystemInvoiceLineRule[]             InvoiceLineRule.ExternalSystemInvoiceLineRules
---> InvoiceLineRuleWageCodeType[]               InvoiceLineRule.InvoiceLineRuleWageCodeTypes
 byte                                            InvoiceLineRuleTypeDetail.InvoiceLineRuleTypeDetailId
 bool                                            InvoiceLineRuleTypeDetail.Sys_Deactivated
 bool                                            InvoiceLineRuleTypeDetail.Sys_Historic
@@ -1467,13 +1468,12 @@ bool                                            InvoiceLineRuleTypeDetail.Sys_In
 InvoiceLineRuleTypeDetailEnum                   InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeDetailId
 InvoiceLineRuleTypeEnum                         InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeId
 short                                           InvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeId
-string                                          InvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeIdExternal
 string                                          InvoiceLineRuleWageCodeType.InvoiceLineRuleIdExternal
+short                                           InvoiceLineRuleWageCodeType.InvoiceLineRuleId
 bool                                            InvoiceLineRuleWageCodeType.Sys_Deactivated
 bool                                            InvoiceLineRuleWageCodeType.Sys_Historic
 bool                                            InvoiceLineRuleWageCodeType.Sys_Incomplete
 WageCodeTypeEnum                                InvoiceLineRuleWageCodeType.Enum_WageCodeTypeId
---> ExternalSystemInvoiceLineRuleWageCodeType[] InvoiceLineRuleWageCodeType.ExternalSystemInvoiceLineRuleWageCodeTypes
 short                                           InvoiceTemplate.InvoiceTemplateId
 string                                          InvoiceTemplate.InvoiceTemplateIdExternal
 string [MultilineText](100)                     InvoiceTemplate.Description
@@ -1828,6 +1828,7 @@ string                                          Project.Budget_DimensionIdExtern
 string                                          Project.CaseHandler_EmployeeIdExternal
 string                                          Project.CustomerIdExternal
 string                                          Project.Default_AssignmentCategoryIdExternal
+string                                          Project.Default_InvoiceTemplateIdExternal
 string                                          Project.Default_ProductAgreementIdExternal
 string                                          Project.DepartmentIdExternal
 string                                          Project.ParentProjectIdExternal
@@ -1840,6 +1841,7 @@ string (50)                                     Project.Code
 int                                             Project.CustomerId
 string (50)                                     Project.CustomersReference
 int                                             Project.Default_AssignmentCategoryId
+short                                           Project.Default_InvoiceTemplateId
 short                                           Project.Default_ProductAgreementId
 short                                           Project.DepartmentId
 string [MultilineText](500)                     Project.Description
@@ -2004,6 +2006,8 @@ string [Name](50)                               Role.Name
 bool                                            Role.Sys_Deactivated
 bool                                            Role.Sys_Historic
 bool                                            Role.Sys_Incomplete
+ClientLevelEnum                                 Role.AdminFor_Enum_ClientLevelId
+ClientLevelEnum                                 Role.Enum_ClientLevelId
 --> ExternalSystemRole[]                        Role.ExternalSystemRoles
 short                                           RolePermission.RolePermissionId
 string                                          RolePermission.RolePermissionIdExternal
@@ -2017,7 +2021,6 @@ bool                                            RolePermission.Sys_Incomplete
 --> ExternalSystemRolePermission[]              RolePermission.ExternalSystemRolePermissions
 int                                             Service.ServiceId
 string                                          Service.ServiceIdExternal
-string                                          Service.ApprovedInvoice_EmployeeIdExternal
 string                                          Service.AssignmentIdExternal
 string                                          Service.Cost_LedgerAccountIdExternal
 string                                          Service.Cost_ProjectAccountIdExternal
@@ -2033,19 +2036,17 @@ string                                          Service.EmployeeIdExternal
 string                                          Service.EmployeeInvoiceCategoryIdExternal
 string                                          Service.Income_LedgerAccountIdExternal
 string                                          Service.Income_ProjectAccountIdExternal
+string                                          Service.Invoice_ApprovalEmployeeIdExternal
 string                                          Service.InvoiceIdExternal
 string                                          Service.InvoiceLineIdExternal
 string                                          Service.JobCategoryIdExternal
 string                                          Service.MovedFromAssignmentIdExternal
 string                                          Service.MovedToAssignmentIdExternal
 string                                          Service.ProjectPeriodIdExternal
+string                                          Service.Wage_ApprovalEmployeeIdExternal
 string                                          Service.WageCodeIdExternal
 string                                          Service.WageCodeReportCategoryIdExternal
 string                                          Service.WagePeriodIdExternal
-byte                                            Service.ApprovedInvoice
-int                                             Service.ApprovedInvoice_EmployeeId
-byte                                            Service.ApprovedWage
-short                                           Service.ApprovedWageByEmployeeId
 int                                             Service.AssignmentId
 short                                           Service.Cost_LedgerAccountId
 int                                             Service.Cost_ProjectAccountId
@@ -2066,6 +2067,7 @@ short                                           Service.EmployeeInvoiceCategoryI
 DateTime                                        Service.EndDateTimeUTC
 short                                           Service.Income_LedgerAccountId
 int                                             Service.Income_ProjectAccountId
+int                                             Service.Invoice_ApprovalEmployeeId
 string [MultilineText](200)                     Service.InvoiceDescription
 int                                             Service.InvoiceId
 int                                             Service.InvoiceLineId
@@ -2087,6 +2089,7 @@ bool                                            Service.Sys_Incomplete
 string (50)                                     Service.Sys_LastChangeOrigin
 bool                                            Service.Sys_NextWageCodeProcessed
 bool                                            Service.Sys_PostProcessNeeded
+int                                             Service.Wage_ApprovalEmployeeId
 short                                           Service.WageCodeId
 string [Name](100)                              Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
@@ -2094,6 +2097,8 @@ int                                             Service.WagePeriodId
 InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatusId
 WageCodeInvoiceRuleEnum                         Service.Enum_WageCodeInvoiceRuleId
 WagePeriodStatusEnum                            Service.Enum_WagePeriodStatusId
+ApprovalStatusEnum                              Service.Invoice_Enum_ApprovalStatusId
+ApprovalStatusEnum                              Service.Wage_Enum_ApprovalStatusId
 --> ExternalSystemService[]                     Service.ExternalSystemServices
 short                                           ServiceAgreement.ServiceAgreementId
 string                                          ServiceAgreement.ServiceAgreementIdExternal
@@ -2121,6 +2126,7 @@ short                                           ServiceAgreementDetail.WageCodeI
 ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_ServiceAgreementDetailValueTypeId
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
 byte                                            Settings_Assignment.Settings_AssignmentId
+string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
 string                                          Settings_Assignment.Default_InvoiceTemplateIdExternal
 string                                          Settings_Assignment.Default_ProductAgreementIdExternal
@@ -2131,6 +2137,7 @@ bool                                            Settings_Assignment.ApproveBefor
 bool                                            Settings_Assignment.ApproveHoursBeforeInvoicing
 bool                                            Settings_Assignment.AssignmentDateToStartDate
 bool                                            Settings_Assignment.CopyCategoryFromCustomer
+int                                             Settings_Assignment.Default_AssignmentCategoryId
 int                                             Settings_Assignment.Default_CasehandlerEmployeeId
 short                                           Settings_Assignment.Default_InvoiceTemplateId
 short                                           Settings_Assignment.Default_ProductAgreementId
@@ -2154,6 +2161,7 @@ InvoiceReserveFixedPriceCalculationEnum         Settings_Assignment.Enum_Invoice
 byte                                            Settings_Main.Settings_MainId
 string                                          Settings_Main.DepartmentIdExternal
 string                                          Settings_Main.IndustryTypeIdExternal
+string                                          Settings_Main.InvoiceTemplateIdExternal
 string                                          Settings_Main.PaymentTermIdExternal
 string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
@@ -2169,6 +2177,7 @@ bool                                            Settings_Main.HandleOffers
 byte                                            Settings_Main.IndustryTypeId
 bool                                            Settings_Main.Invoice_KeepValuesForCreditNotes
 bool                                            Settings_Main.Invoice_SendImmediately
+short                                           Settings_Main.InvoiceTemplateId
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
 bool                                            Settings_Main.PreserveGridSettingsLocally
@@ -2187,6 +2196,7 @@ bool                                            Settings_Main.Sys_Historic
 bool                                            Settings_Main.Sys_Incomplete
 bool                                            Settings_Main.UseDepartments
 bool                                            Settings_Main.UseDimensions
+bool                                            Settings_Main.UseServiceApprovalWage
 StorageModeEnum                                 Settings_Main.Enum_StorageModeId
 TimeZoneEnum                                    Settings_Main.Enum_TimeZoneId
 byte                                            Settings_Payroll.Settings_PayrollId
@@ -2371,6 +2381,7 @@ bool                                            StorageTransfer.Sys_PostProcessN
 int                                             Supplier.SupplierId
 string                                          Supplier.SupplierIdExternal
 string (2)                                      Supplier.CountryId
+string (50)                                     Supplier.OrganizationNumber
 string [Name](50)                               Supplier.SupplierName
 int [PositiveNumber]                            Supplier.SupplierNumber
 bool                                            Supplier.Sys_Deactivated
@@ -2396,12 +2407,15 @@ bool                                            SupplierIndustryType.IsDefaultFo
 decimal                                         SupplierIndustryType.MarkupForNewDiscountGroups
 string [Name](50)                               SupplierIndustryType.Name
 short [PositiveNumber]                          SupplierIndustryType.Number
+string (50)                                     SupplierIndustryType.OrganizationNumber
 bool                                            SupplierIndustryType.PriceCalculationBase
 DateTime                                        SupplierIndustryType.PriceLastUpdateDate
 int                                             SupplierIndustryType.SupplierId
 bool                                            SupplierIndustryType.Sys_Deactivated
 bool                                            SupplierIndustryType.Sys_Historic
 bool                                            SupplierIndustryType.Sys_Incomplete
+bool                                            SupplierIndustryType.Sys_IsTemplateActivated
+bool                                            SupplierIndustryType.Sys_IsTemplateRow
 bool                                            SupplierIndustryType.UseOtherCurrency
 --> PurchaseAgreement                           SupplierIndustryType.Default_PurchaseAgreement
 --> ExternalSystemSupplierIndustryType[]        SupplierIndustryType.ExternalSystemSupplierIndustryTypes
@@ -2419,6 +2433,7 @@ bool                                            SupplierIndustryTypeFtpInfo.Sys_
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Historic
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Incomplete
 string [Name](250)                              SupplierIndustryTypeFtpInfo.UserName
+FileDownloadModeEnum                            SupplierIndustryTypeFtpInfo.Enum_FileDownloadModeId
 ImportFormatEnum                                SupplierIndustryTypeFtpInfo.Enum_ImportFormatId
 ImportTypeEnum                                  SupplierIndustryTypeFtpInfo.Enum_ImportTypeId
 short                                           SupplierIndustryTypePurchaseAgreement.SupplierIndustryTypePurchaseAgreementId
@@ -2482,7 +2497,7 @@ string (50)                                     SupplierInvoiceLine.CustomerNumb
 short                                           SupplierInvoiceLine.DepartmentId
 string (50)                                     SupplierInvoiceLine.DepartmentNumberTxt
 int                                             SupplierInvoiceLine.DimensionValueId_1
-string (50)                                     SupplierInvoiceLine.DimensionValueTxt_1
+string (500)                                    SupplierInvoiceLine.DimensionValueTxt_1
 bool                                            SupplierInvoiceLine.DoNotForwardInvoice
 bool                                            SupplierInvoiceLine.FallbackValueUsed
 short                                           SupplierInvoiceLine.LedgerAccountId
@@ -2509,6 +2524,7 @@ string                                          SupplierInvoiceProductMatch.Supp
 string                                          SupplierInvoiceProductMatch.SupplierIndustryTypeIdExternal
 string                                          SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeIdExternal
 string                                          SupplierInvoiceProductMatch.VATRateIdExternal
+string [MultilineText](100)                     SupplierInvoiceProductMatch.Description
 bool                                            SupplierInvoiceProductMatch.DoNotForwardInvoice
 byte                                            SupplierInvoiceProductMatch.IndustryTypeId
 string (50)                                     SupplierInvoiceProductMatch.ProductNumberTxt
