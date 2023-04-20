@@ -65,6 +65,8 @@ bool                                            Assignment.AssignmentCompleteMob
 int [PositiveNumber]                            Assignment.AssignmentNumber
 int                                             Assignment.CaseHandler_EmployeeId
 string (100)                                    Assignment.Contact
+decimal                                         Assignment.CoverageRateFixedPrice
+decimal                                         Assignment.CoverageRateNotFixedPrice
 int                                             Assignment.CustomerId
 string (200)                                    Assignment.CustomerReference
 short                                           Assignment.Default_InvoiceTemplateId
@@ -112,6 +114,7 @@ AssignmentProgressEnum                          Assignment.Enum_AssignmentProgre
 AssignmentStatusEnum                            Assignment.Enum_AssignmentStatusId
 AssignmentTypeEnum                              Assignment.Enum_AssignmentTypeId
 ContractTypeEnum                                Assignment.Enum_ContractTypeId
+InvoiceReserveBilledPriceCalculationEnum        Assignment.Enum_InvoiceReserveBilledPriceCalculationId
 InvoiceReserveFixedPriceCalculationEnum         Assignment.Enum_InvoiceReserveFixedPriceCalculationId
 --> Address                                     Assignment.Address
 --> Contact                                     Assignment.Default_Contact
@@ -169,6 +172,20 @@ short                                           AssignmentProductAgreement.Produ
 bool                                            AssignmentProductAgreement.Sys_Deactivated
 bool                                            AssignmentProductAgreement.Sys_Historic
 bool                                            AssignmentProductAgreement.Sys_Incomplete
+int                                             AssignmentProjectPeriodInvoiceReserve.AssignmentProjectPeriodInvoiceReserveId
+string                                          AssignmentProjectPeriodInvoiceReserve.AssignmentIdExternal
+string                                          AssignmentProjectPeriodInvoiceReserve.ProjectPeriodIdExternal
+int                                             AssignmentProjectPeriodInvoiceReserve.AssignmentId
+decimal                                         AssignmentProjectPeriodInvoiceReserve.CoverageRateFixedPrice
+decimal                                         AssignmentProjectPeriodInvoiceReserve.CoverageRateNotFixedPrice
+decimal                                         AssignmentProjectPeriodInvoiceReserve.InvoiceReserveAdjustmentAmount
+string [MultilineText](200)                     AssignmentProjectPeriodInvoiceReserve.InvoiceReserveAdjustmentComment
+int                                             AssignmentProjectPeriodInvoiceReserve.ProjectPeriodId
+bool                                            AssignmentProjectPeriodInvoiceReserve.Sys_Deactivated
+bool                                            AssignmentProjectPeriodInvoiceReserve.Sys_Historic
+bool                                            AssignmentProjectPeriodInvoiceReserve.Sys_Incomplete
+InvoiceReserveBilledPriceCalculationEnum        AssignmentProjectPeriodInvoiceReserve.Enum_InvoiceReserveBilledPriceCalculationId
+InvoiceReserveFixedPriceCalculationEnum         AssignmentProjectPeriodInvoiceReserve.Enum_InvoiceReserveFixedPriceCalculationId
 int                                             AssignmentPurchaseAgreement.AssignmentPurchaseAgreementId
 string                                          AssignmentPurchaseAgreement.AssignmentIdExternal
 int                                             AssignmentPurchaseAgreement.AssignmentId
@@ -473,6 +490,7 @@ string                                          Employee.EmployeeIdExternal
 string                                          Employee.DepartmentIdExternal
 string                                          Employee.EmployeeInvoiceCategoryIdExternal
 string                                          Employee.JobCategoryIdExternal
+bool                                            Employee.ApproveWageRequired
 DateTime                                        Employee.DateOfBirth
 short                                           Employee.DepartmentId
 string [Email](200)                             Employee.EmailPrivate
@@ -1662,6 +1680,59 @@ bool                                            ProductExtendedInfo.Sys_Historic
 bool                                            ProductExtendedInfo.Sys_Incomplete
 string (50)                                     ProductExtendedInfo.Type
 string                                          ProductExtendedInfo.Value
+int                                             ProductImport.ProductImportId
+string (250)                                    ProductImport.FileName
+string (250)                                    ProductImport.FtpDir
+string (50)                                     ProductImport.FtpFileName
+string (50)                                     ProductImport.FtpHash
+DateTime                                        ProductImport.FtpLastChangedDateTimeUTC
+string (250)                                    ProductImport.FtpPwd
+long                                            ProductImport.FtpSize
+bool                                            ProductImport.FtpSupportsHash
+string (100)                                    ProductImport.FtpSvr
+string (250)                                    ProductImport.FtpUsr
+string (50)                                     ProductImport.Hash
+DateTime                                        ProductImport.Imported_UTC
+bool                                            ProductImport.IsProductAgreement
+string (250)                                    ProductImport.LastSuccess_FileName
+DateTime                                        ProductImport.LastSuccess_Imported_UTC
+int                                             ProductImport.LastSuccess_Staged_LineCount
+DateTime                                        ProductImport.LastSuccess_Staged_UTC
+int                                             ProductImport.LastSuccess_StagingInMs
+string (500)                                    ProductImport.LastSuccess_StatusMessage
+bool                                            ProductImport.ManuallyUpladed
+long                                            ProductImport.Size
+int                                             ProductImport.Staged_LineCount
+DateTime                                        ProductImport.Staged_UTC
+int                                             ProductImport.StagingInMs
+string (500)                                    ProductImport.StatusMessage
+bool                                            ProductImport.Sys_Deactivated
+bool                                            ProductImport.Sys_Historic
+bool                                            ProductImport.Sys_Incomplete
+FileDownloadModeEnum                            ProductImport.Enum_FileDownloadModeId
+int                                             ProductImportFileSet.ProductImportFileSetId
+string                                          ProductImportFileSet.SupplierIndustryTypeIdExternal
+int                                             ProductImportFileSet.ImportingInMs
+int                                             ProductImportFileSet.JobNumber
+DateTime                                        ProductImportFileSet.JobStartedUTC
+int                                             ProductImportFileSet.LastSuccess_ImportingInMs
+int                                             ProductImportFileSet.LastSuccess_JobNumber
+DateTime                                        ProductImportFileSet.LastSuccess_JobStartedUTC
+int                                             ProductImportFileSet.LastSuccess_ProductCount
+int                                             ProductImportFileSet.LastSuccess_StagingInMs
+string (500)                                    ProductImportFileSet.LastSuccess_StatusMessage
+bool                                            ProductImportFileSet.ManuallyRequested
+bool                                            ProductImportFileSet.ManuallyUploaded
+int                                             ProductImportFileSet.ProductCount
+int                                             ProductImportFileSet.StagingInMs
+string (500)                                    ProductImportFileSet.StatusMessage
+bool                                            ProductImportFileSet.Succeeded
+short                                           ProductImportFileSet.SupplierIndustryTypeId
+bool                                            ProductImportFileSet.Sys_Deactivated
+bool                                            ProductImportFileSet.Sys_Historic
+bool                                            ProductImportFileSet.Sys_Incomplete
+ImportFrequencyEnum                             ProductImportFileSet.Enum_ImportFrequencyId
+--> ProductImport[]                             ProductImportFileSet.ProductImports
 int                                             ProductNote.ProductNoteId
 string                                          ProductNote.ProductNoteIdExternal
 string                                          ProductNote.AssignmentIdExternal
@@ -2047,6 +2118,7 @@ string                                          Service.Wage_ApprovalEmployeeIdE
 string                                          Service.WageCodeIdExternal
 string                                          Service.WageCodeReportCategoryIdExternal
 string                                          Service.WagePeriodIdExternal
+string [MultilineText](500)                     Service.ApprovalComment
 int                                             Service.AssignmentId
 short                                           Service.Cost_LedgerAccountId
 int                                             Service.Cost_ProjectAccountId
@@ -2137,6 +2209,8 @@ bool                                            Settings_Assignment.ApproveBefor
 bool                                            Settings_Assignment.ApproveHoursBeforeInvoicing
 bool                                            Settings_Assignment.AssignmentDateToStartDate
 bool                                            Settings_Assignment.CopyCategoryFromCustomer
+decimal                                         Settings_Assignment.CoverageRateFixedPrice
+decimal                                         Settings_Assignment.CoverageRateNotFixedPrice
 int                                             Settings_Assignment.Default_AssignmentCategoryId
 int                                             Settings_Assignment.Default_CasehandlerEmployeeId
 short                                           Settings_Assignment.Default_InvoiceTemplateId
@@ -2588,6 +2662,14 @@ int                                             TeamEmployee.EmployeeId
 bool                                            TeamEmployee.Sys_Deactivated
 bool                                            TeamEmployee.Sys_Historic
 bool                                            TeamEmployee.Sys_Incomplete
+int                                             Temp_SpeedyCraftSyncEvent.Temp_SpeedyCraftSyncEventId
+int                                             Temp_SpeedyCraftSyncEvent.AssignmentId
+bool                                            Temp_SpeedyCraftSyncEvent.CreateOperation
+long                                            Temp_SpeedyCraftSyncEvent.RowId
+bool                                            Temp_SpeedyCraftSyncEvent.Sys_Deactivated
+bool                                            Temp_SpeedyCraftSyncEvent.Sys_Historic
+bool                                            Temp_SpeedyCraftSyncEvent.Sys_Incomplete
+string [Name](50)                               Temp_SpeedyCraftSyncEvent.TableName
 int                                             User.UserId
 string                                          User.EmployeeIdExternal
 string (2)                                      User.DefaultLanguage
