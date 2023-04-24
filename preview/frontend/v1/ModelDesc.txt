@@ -1209,6 +1209,9 @@ string (255)                                    ImportFile.AzureBlobIdExt
 DateTime                                        ImportFile.DownloadedDateTimeUTC
 DateTime                                        ImportFile.ImportedDateTimeUTC
 string                                          ImportFile.ImportMessage
+string (50)                                     ImportFile.LocalHashCode
+byte                                            ImportFile.RemainingDownloadTryCount
+byte                                            ImportFile.RemainingImportTryCount
 bool                                            ImportFile.SourceAutoDeleteAfterImport
 DateTime                                        ImportFile.SourceDeletedDateTimeUTC
 string (255)                                    ImportFile.SourceFileName
@@ -2496,10 +2499,12 @@ bool                                            SupplierIndustryType.UseOtherCur
 --> PurchaseAgreement[]                         SupplierIndustryType.PurchaseAgreements
 short                                           SupplierIndustryTypeFtpInfo.SupplierIndustryTypeFtpInfoId
 string                                          SupplierIndustryTypeFtpInfo.SupplierIndustryTypeIdExternal
-bool                                            SupplierIndustryTypeFtpInfo.AutoDeleteOnFtpAfterImport
 bool                                            SupplierIndustryTypeFtpInfo.AutoImport
 string (200)                                    SupplierIndustryTypeFtpInfo.DirectoryPath
 string (50)                                     SupplierIndustryTypeFtpInfo.FileMask
+DateTime                                        SupplierIndustryTypeFtpInfo.FtpLastCheckedUTC
+byte                                            SupplierIndustryTypeFtpInfo.MaxDownloadTryCount
+byte                                            SupplierIndustryTypeFtpInfo.MaxImportTryCount
 string (250)                                    SupplierIndustryTypeFtpInfo.Password
 string (100)                                    SupplierIndustryTypeFtpInfo.Server
 short                                           SupplierIndustryTypeFtpInfo.SupplierIndustryTypeId
