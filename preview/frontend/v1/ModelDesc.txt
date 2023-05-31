@@ -245,15 +245,19 @@ int                                             Budget.BudgetId
 string                                          Budget.BudgetIdExternal
 string                                          Budget.AssignmentIdExternal
 string                                          Budget.BudgetScenarioIdExternal
+string                                          Budget.FromProjectPeriodIdExternal
 string                                          Budget.ProjectIdExternal
+string                                          Budget.ToProjectPeriodIdExternal
 int                                             Budget.AssignmentId
 int                                             Budget.BudgetScenarioId
 string [MultilineText](200)                     Budget.Comment
 string [MultilineText](200)                     Budget.Description
+int                                             Budget.FromProjectPeriodId
 int                                             Budget.ProjectId
 bool                                            Budget.Sys_Deactivated
 bool                                            Budget.Sys_Historic
 bool                                            Budget.Sys_Incomplete
+int                                             Budget.ToProjectPeriodId
 --> ExternalSystemBudget[]                      Budget.ExternalSystemBudgets
 int                                             BudgetLine.BudgetLineId
 string                                          BudgetLine.BudgetLineIdExternal
@@ -312,6 +316,7 @@ bool                                            Contact.InvoiceSendCopy
 string [Phone](50)                              Contact.Mobile
 string [Name](100)                              Contact.Name
 string [Name](100)                              Contact.Name2
+int                                             Contact.ParentContactId
 string [Phone](50)                              Contact.Phone
 bool                                            Contact.Sys_Deactivated
 bool                                            Contact.Sys_Historic
@@ -1392,6 +1397,7 @@ string (100)                                    InvoiceLine.InvoiceLineCode
 short                                           InvoiceLine.InvoiceLineRuleId
 string                                          InvoiceLine.InvoiceLineText
 int                                             InvoiceLine.InvoicingDimensionValueId
+bool                                            InvoiceLine.IsFixedPrice
 bool                                            InvoiceLine.IsVarious
 decimal                                         InvoiceLine.ListPrice
 bool                                            InvoiceLine.PriceOnly
@@ -2675,6 +2681,14 @@ bool                                            Temp_SpeedyCraftSyncEvent.Sys_De
 bool                                            Temp_SpeedyCraftSyncEvent.Sys_Historic
 bool                                            Temp_SpeedyCraftSyncEvent.Sys_Incomplete
 string [Name](50)                               Temp_SpeedyCraftSyncEvent.TableName
+int                                             Temp_WebhookMessage.Temp_WebhookMessageId
+bool                                            Temp_WebhookMessage.CreateOperation
+long                                            Temp_WebhookMessage.RowId
+bool                                            Temp_WebhookMessage.Sys_Deactivated
+bool                                            Temp_WebhookMessage.Sys_Historic
+bool                                            Temp_WebhookMessage.Sys_Incomplete
+string [Name](50)                               Temp_WebhookMessage.TableName
+short                                           Temp_WebhookMessage.WebhookSubscriptionId
 int                                             User.UserId
 string                                          User.EmployeeIdExternal
 string (2)                                      User.DefaultLanguage
