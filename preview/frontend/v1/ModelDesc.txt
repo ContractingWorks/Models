@@ -99,6 +99,7 @@ int                                             Assignment.PieceworkNumber
 int                                             Assignment.ProjectId
 bool                                            Assignment.ReadyToInvoice
 short                                           Assignment.ServiceAgreementId
+int                                             Assignment.ServiceContractId
 DateTime                                        Assignment.ServiceInvoiceLimitDate
 DateTime                                        Assignment.SortDateUTC
 DateTime                                        Assignment.StartDateTimeUTC
@@ -151,6 +152,7 @@ int                                             AssignmentMOM.AssignmentId
 int                                             AssignmentMOM.ProductId
 string (50)                                     AssignmentMOM.ProductNumber
 bool                                            AssignmentMOM.Selected
+bool                                            AssignmentMOM.Selected_UserManual
 bool                                            AssignmentMOM.Sys_Deactivated
 bool                                            AssignmentMOM.Sys_Historic
 bool                                            AssignmentMOM.Sys_Incomplete
@@ -1230,6 +1232,13 @@ bool                                            ImportFile.Sys_Incomplete
 ImportFormatEnum                                ImportFile.Enum_ImportFormatId
 ImportStatusEnum                                ImportFile.Enum_ImportStatusId
 ImportTypeEnum                                  ImportFile.Enum_ImportTypeId
+byte                                            IndexRateGroup.IndexRateGroupId
+string [MultilineText](50)                      IndexRateGroup.Description
+decimal                                         IndexRateGroup.IndexRate
+short                                           IndexRateGroup.Number
+bool                                            IndexRateGroup.Sys_Deactivated
+bool                                            IndexRateGroup.Sys_Historic
+bool                                            IndexRateGroup.Sys_Incomplete
 byte                                            IndustryType.IndustryTypeId
 string                                          IndustryType.IndustryTypeIdExternal
 string [MultilineText](100)                     IndustryType.Description
@@ -1414,15 +1423,20 @@ string [MultilineText]                          InvoiceLine.SourceProductNoteLin
 string                                          InvoiceLine.SourceServiceIds
 short                                           InvoiceLine.StorageId
 decimal                                         InvoiceLine.SurchargePercentInvoice
+int                                             InvoiceLine.Sys_AssignmentId
 bool                                            InvoiceLine.Sys_Deactivated
 bool                                            InvoiceLine.Sys_Historic
 bool                                            InvoiceLine.Sys_Incomplete
+int                                             InvoiceLine.Sys_InvoiceNumber
+byte                                            InvoiceLine.Sys_ProjectAccountCategoryId
+int                                             InvoiceLine.Sys_ProjectPeriod
 bool                                            InvoiceLine.UpdateAssignmentCost
 bool                                            InvoiceLine.UpdateStock
 bool                                            InvoiceLine.VATFree
 byte                                            InvoiceLine.VATRateId
 int                                             InvoiceLine.WageCodeReportCategoryId
 InvoiceLineTypeEnum                             InvoiceLine.Enum_InvoiceLineTypeId
+InvoiceLineRuleTypeDetailEnum                   InvoiceLine.Sys_Enum_InvoiceLineRuleTypeDetailId
 --> ExternalSystemInvoiceLine[]                 InvoiceLine.ExternalSystemInvoiceLines
 int                                             InvoiceLine_Session.InvoiceLineSessionId
 decimal                                         InvoiceLine_Session.Amount
@@ -1841,6 +1855,7 @@ int                                             ProductNoteLine.SupplierInvoiceL
 decimal                                         ProductNoteLine.SurchargePercent
 decimal                                         ProductNoteLine.SurchargePercentInvoice
 bool                                            ProductNoteLine.SyncToMobileDevice
+int                                             ProductNoteLine.Sys_AssignmentId
 decimal                                         ProductNoteLine.Sys_CostPriceAvgFIFO
 decimal                                         ProductNoteLine.Sys_CostPriceAvgUpdOnAdd
 decimal                                         ProductNoteLine.Sys_CostPriceDefault
@@ -1848,13 +1863,18 @@ bool                                            ProductNoteLine.Sys_CostPriceLoc
 bool                                            ProductNoteLine.Sys_Deactivated
 bool                                            ProductNoteLine.Sys_Historic
 bool                                            ProductNoteLine.Sys_Incomplete
+int                                             ProductNoteLine.Sys_InvoicedProjectPeriod
+int                                             ProductNoteLine.Sys_InvoicedProjectPeriodId
 string (50)                                     ProductNoteLine.Sys_LastChangeOrigin
 bool                                            ProductNoteLine.Sys_PostProcessNeeded
+byte                                            ProductNoteLine.Sys_ProjectAccountCategoryId
+int                                             ProductNoteLine.Sys_ProjectPeriod
 short                                           ProductNoteLine.Sys_PurchaseAgreementId
 bool                                            ProductNoteLine.UpdateAssignmentCost
 bool                                            ProductNoteLine.UpdateStock
 CostPriceSourceEnum                             ProductNoteLine.Enum_CostPriceSourceId
 InvoicingLineStatusEnum                         ProductNoteLine.Enum_InvoicingLineStatusId
+OriginTypeEnum                                  ProductNoteLine.Sys_Enum_OriginTypeId
 --> ExternalSystemProductNoteLine[]             ProductNoteLine.ExternalSystemProductNoteLines
 int                                             ProductNoteLineBatch.ProductNoteLineBatchId
 string                                          ProductNoteLineBatch.ProductNoteLineIdExternal
@@ -2167,9 +2187,15 @@ bool                                            Service.SyncToMobileDevice
 bool                                            Service.Sys_Deactivated
 bool                                            Service.Sys_Historic
 bool                                            Service.Sys_Incomplete
+int                                             Service.Sys_InvoicedProjectPeriod
+int                                             Service.Sys_InvoicedProjectPeriodId
+bool                                            Service.Sys_IsWorkTime
 string (50)                                     Service.Sys_LastChangeOrigin
 bool                                            Service.Sys_NextWageCodeProcessed
+string (500)                                    Service.Sys_PostProcessMessage
 bool                                            Service.Sys_PostProcessNeeded
+byte                                            Service.Sys_ProjectAccountCategoryId
+int                                             Service.Sys_ProjectPeriod
 int                                             Service.Wage_ApprovalEmployeeId
 short                                           Service.WageCodeId
 string [Name](100)                              Service.WageCodeName
@@ -2179,6 +2205,7 @@ InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatus
 WageCodeInvoiceRuleEnum                         Service.Enum_WageCodeInvoiceRuleId
 WagePeriodStatusEnum                            Service.Enum_WagePeriodStatusId
 ApprovalStatusEnum                              Service.Invoice_Enum_ApprovalStatusId
+WageCodeTypeEnum                                Service.Sys_Enum_WageCodeTypeId
 ApprovalStatusEnum                              Service.Wage_Enum_ApprovalStatusId
 --> ExternalSystemService[]                     Service.ExternalSystemServices
 short                                           ServiceAgreement.ServiceAgreementId
@@ -2206,6 +2233,21 @@ decimal                                         ServiceAgreementDetail.Value
 short                                           ServiceAgreementDetail.WageCodeId
 ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_ServiceAgreementDetailValueTypeId
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
+int                                             ServiceContract.ServiceContractId
+int                                             ServiceContract.Default_AssignmentId
+DateTime                                        ServiceContract.EndDateUTC
+bool                                            ServiceContract.Inactive
+decimal                                         ServiceContract.IndexRate
+byte                                            ServiceContract.IndexRateGroupId
+DateTime                                        ServiceContract.IndexRateStartDate
+string (1024)                                   ServiceContract.InvoiceRecurrencePattern
+string (1024)                                   ServiceContract.RecurrencePattern
+int                                             ServiceContract.ServiceContractNumber
+DateTime                                        ServiceContract.StartDateUTC
+bool                                            ServiceContract.Sys_Deactivated
+bool                                            ServiceContract.Sys_Historic
+bool                                            ServiceContract.Sys_Incomplete
+ServiceContractRecurrenceHandlingEnum           ServiceContract.Enum_ServiceContractRecurrenceHandlingId
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
@@ -2217,6 +2259,7 @@ bool                                            Settings_Assignment.AllowHpcTime
 bool                                            Settings_Assignment.ApproveBeforeInvoicing
 bool                                            Settings_Assignment.ApproveHoursBeforeInvoicing
 bool                                            Settings_Assignment.AssignmentDateToStartDate
+bool                                            Settings_Assignment.BudgetNew_AddAllItem
 bool                                            Settings_Assignment.CopyCategoryFromCustomer
 decimal                                         Settings_Assignment.CoverageRateFixedPrice
 decimal                                         Settings_Assignment.CoverageRateNotFixedPrice
