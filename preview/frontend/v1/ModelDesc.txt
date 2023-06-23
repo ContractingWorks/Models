@@ -216,6 +216,7 @@ bool                                            Attachment.Sys_Incomplete
 string (500)                                    Attachment.Uri
 bool                                            Attachment.UseCommonBlobStore
 IndustryTypeEnum                                Attachment.Enum_IndustryTypeId
+MOM_TypeEnum                                    Attachment.Enum_MOM_TypeId
 --> AssignmentAttachment[]                      Attachment.AssignmentAttachments
 --> ExternalSystemAttachment[]                  Attachment.ExternalSystemAttachments
 short                                           AttachmentCategory.AttachmentCategoryId
@@ -2635,6 +2636,8 @@ int                                             SupplierInvoiceLine.ProductId
 string [Name](250)                              SupplierInvoiceLine.ProductName
 string (50)                                     SupplierInvoiceLine.ProductNumberTxt
 int                                             SupplierInvoiceLine.ProductSupplierIndustryTypeId
+int                                             SupplierInvoiceLine.ProjectAccountId
+string (50)                                     SupplierInvoiceLine.ProjectAccountNumberTxt
 decimal                                         SupplierInvoiceLine.Quantity
 int                                             SupplierInvoiceLine.SortOrder
 short                                           SupplierInvoiceLine.StorageId
