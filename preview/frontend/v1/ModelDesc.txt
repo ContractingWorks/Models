@@ -841,6 +841,26 @@ bool                                            ExternalSystemLedgerAccount.Sys_
 bool                                            ExternalSystemLedgerAccount.Sys_Historic
 bool                                            ExternalSystemLedgerAccount.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemLedgerAccount.Enum_SyncStatusId
+int                                             ExternalSystemOffer.ExternalSystemOfferId
+string                                          ExternalSystemOffer.OfferIdExternal
+string (50)                                     ExternalSystemOffer.ExternalId
+short                                           ExternalSystemOffer.ExternalSystemId
+int                                             ExternalSystemOffer.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemOffer.StatusDescription
+bool                                            ExternalSystemOffer.Sys_Deactivated
+bool                                            ExternalSystemOffer.Sys_Historic
+bool                                            ExternalSystemOffer.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemOffer.Enum_SyncStatusId
+int                                             ExternalSystemOfferLine.ExternalSystemOfferLineId
+string                                          ExternalSystemOfferLine.OfferLineIdExternal
+string (50)                                     ExternalSystemOfferLine.ExternalId
+short                                           ExternalSystemOfferLine.ExternalSystemId
+int                                             ExternalSystemOfferLine.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemOfferLine.StatusDescription
+bool                                            ExternalSystemOfferLine.Sys_Deactivated
+bool                                            ExternalSystemOfferLine.Sys_Historic
+bool                                            ExternalSystemOfferLine.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemOfferLine.Enum_SyncStatusId
 byte                                            ExternalSystemPaymentTerm.ExternalSystemPaymentTermId
 string                                          ExternalSystemPaymentTerm.PaymentTermIdExternal
 string (50)                                     ExternalSystemPaymentTerm.ExternalId
@@ -1579,6 +1599,74 @@ string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
+int                                             Offer.OfferId
+string                                          Offer.OfferIdExternal
+string                                          Offer.AddressIdExternal
+string                                          Offer.AssignmentIdExternal
+string                                          Offer.CustomerIdExternal
+string                                          Offer.DepartmentIdExternal
+string                                          Offer.ProductAgreementIdExternal
+string                                          Offer.ProjectIdExternal
+string                                          Offer.ServiceAgreementIdExternal
+int                                             Offer.AddressId
+DateTime                                        Offer.ApprovedUTC
+int                                             Offer.AssignmentId
+DateTime                                        Offer.CompletedUTC
+int                                             Offer.CustomerId
+string (200)                                    Offer.CustomerReference
+short                                           Offer.DepartmentId
+string [MultilineText](500)                     Offer.Description
+DateTime                                        Offer.EndDateTimeUTC
+DateTime                                        Offer.ExpiryDate
+string (200)                                    Offer.ExternalReference
+decimal                                         Offer.FixedPrice
+string (200)                                    Offer.InternalReference
+string [MultilineText]                          Offer.InvoiceComment
+string [MultilineText]                          Offer.Note
+string [Name](50)                               Offer.OfferName
+int                                             Offer.OfferNumber
+short                                           Offer.ProductAgreementId
+int                                             Offer.ProjectId
+DateTime                                        Offer.RejectedUTC
+DateTime                                        Offer.SentUTC
+short                                           Offer.ServiceAgreementId
+DateTime                                        Offer.StartDateTimeUTC
+bool                                            Offer.Sys_Deactivated
+bool                                            Offer.Sys_Historic
+bool                                            Offer.Sys_Incomplete
+bool                                            Offer.VATFree
+OfferStatusEnum                                 Offer.Enum_OfferStatusId
+--> ExternalSystemOffer[]                       Offer.ExternalSystemOffers
+--> OfferAttachment[]                           Offer.OfferAttachments
+--> OfferLine[]                                 Offer.OfferLines
+int                                             OfferAttachment.OfferAttachmentId
+string                                          OfferAttachment.AttachmentIdExternal
+string                                          OfferAttachment.OfferIdExternal
+int                                             OfferAttachment.AttachmentId
+bool                                            OfferAttachment.Sys_Deactivated
+bool                                            OfferAttachment.Sys_Historic
+bool                                            OfferAttachment.Sys_Incomplete
+int                                             OfferLine.OfferLineId
+string                                          OfferLine.OfferLineIdExternal
+string                                          OfferLine.OfferIdExternal
+string                                          OfferLine.ProductSupplierIndustryTypeIdExternal
+string                                          OfferLine.WageCodeReportCategoryIdExternal
+string (100)                                    OfferLine.Code
+string [MultilineText](100)                     OfferLine.Comment
+decimal                                         OfferLine.CostPrice
+string [MultilineText]                          OfferLine.Description
+bool                                            OfferLine.IsVarious
+int                                             OfferLine.ProductSupplierIndustryTypeId
+decimal                                         OfferLine.Quantity
+decimal                                         OfferLine.SalesPrice
+int                                             OfferLine.SortOrder
+decimal                                         OfferLine.SurchargePercent
+bool                                            OfferLine.Sys_Deactivated
+bool                                            OfferLine.Sys_Historic
+bool                                            OfferLine.Sys_Incomplete
+bool                                            OfferLine.VATFree
+int                                             OfferLine.WageCodeReportCategoryId
+--> ExternalSystemOfferLine[]                   OfferLine.ExternalSystemOfferLines
 byte                                            PaymentTerm.PaymentTermId
 string                                          PaymentTerm.PaymentTermIdExternal
 short                                           PaymentTerm.Days
@@ -2810,6 +2898,8 @@ WageCodeTypeEnum                                WageCode.Enum_WageCodeTypeId
 int                                             WageCodeReportCategory.WageCodeReportCategoryId
 string                                          WageCodeReportCategory.WageCodeReportCategoryIdExternal
 string                                          WageCodeReportCategory.WageCodeReportCategoryTypeIdExternal
+decimal                                         WageCodeReportCategory.BudgetCostPrice
+decimal                                         WageCodeReportCategory.BudgetSalesPrice
 string [MultilineText](100)                     WageCodeReportCategory.Description
 string (100)                                    WageCodeReportCategory.ReportText
 bool                                            WageCodeReportCategory.Sys_Deactivated
