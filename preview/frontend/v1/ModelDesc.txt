@@ -244,6 +244,11 @@ bool                                            BoligmappaTokens.Sys_Deactivated
 bool                                            BoligmappaTokens.Sys_Historic
 bool                                            BoligmappaTokens.Sys_Incomplete
 DateTime                                        BoligmappaTokens.TokensLastRefreshedUTC
+int                                             Brand.BrandId
+string [Name](50)                               Brand.Name
+bool                                            Brand.Sys_Deactivated
+bool                                            Brand.Sys_Historic
+bool                                            Brand.Sys_Incomplete
 int                                             Budget.BudgetId
 string                                          Budget.BudgetIdExternal
 string                                          Budget.AssignmentIdExternal
@@ -841,6 +846,26 @@ bool                                            ExternalSystemLedgerAccount.Sys_
 bool                                            ExternalSystemLedgerAccount.Sys_Historic
 bool                                            ExternalSystemLedgerAccount.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemLedgerAccount.Enum_SyncStatusId
+int                                             ExternalSystemOffer.ExternalSystemOfferId
+string                                          ExternalSystemOffer.OfferIdExternal
+string (50)                                     ExternalSystemOffer.ExternalId
+short                                           ExternalSystemOffer.ExternalSystemId
+int                                             ExternalSystemOffer.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemOffer.StatusDescription
+bool                                            ExternalSystemOffer.Sys_Deactivated
+bool                                            ExternalSystemOffer.Sys_Historic
+bool                                            ExternalSystemOffer.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemOffer.Enum_SyncStatusId
+int                                             ExternalSystemOfferLine.ExternalSystemOfferLineId
+string                                          ExternalSystemOfferLine.OfferLineIdExternal
+string (50)                                     ExternalSystemOfferLine.ExternalId
+short                                           ExternalSystemOfferLine.ExternalSystemId
+int                                             ExternalSystemOfferLine.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemOfferLine.StatusDescription
+bool                                            ExternalSystemOfferLine.Sys_Deactivated
+bool                                            ExternalSystemOfferLine.Sys_Historic
+bool                                            ExternalSystemOfferLine.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemOfferLine.Enum_SyncStatusId
 byte                                            ExternalSystemPaymentTerm.ExternalSystemPaymentTermId
 string                                          ExternalSystemPaymentTerm.PaymentTermIdExternal
 string (50)                                     ExternalSystemPaymentTerm.ExternalId
@@ -1579,6 +1604,75 @@ string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
+int                                             Offer.OfferId
+string                                          Offer.OfferIdExternal
+string                                          Offer.AddressIdExternal
+string                                          Offer.AssignmentIdExternal
+string                                          Offer.CustomerIdExternal
+string                                          Offer.DepartmentIdExternal
+string                                          Offer.ProductAgreementIdExternal
+string                                          Offer.ProjectIdExternal
+string                                          Offer.ServiceAgreementIdExternal
+int                                             Offer.AddressId
+DateTime                                        Offer.ApprovedUTC
+int                                             Offer.AssignmentId
+DateTime                                        Offer.CompletedUTC
+int                                             Offer.CustomerId
+string (200)                                    Offer.CustomerReference
+short                                           Offer.DepartmentId
+string [MultilineText](500)                     Offer.Description
+DateTime                                        Offer.EndDateTimeUTC
+DateTime                                        Offer.ExpiryDate
+string (200)                                    Offer.ExternalReference
+decimal                                         Offer.FixedPrice
+string (200)                                    Offer.InternalReference
+string [MultilineText]                          Offer.InvoiceComment
+string [MultilineText]                          Offer.Note
+string [Name](50)                               Offer.OfferName
+int                                             Offer.OfferNumber
+short                                           Offer.ProductAgreementId
+int                                             Offer.ProjectId
+DateTime                                        Offer.RejectedUTC
+DateTime                                        Offer.SentUTC
+short                                           Offer.ServiceAgreementId
+DateTime                                        Offer.StartDateTimeUTC
+bool                                            Offer.Sys_Deactivated
+bool                                            Offer.Sys_Historic
+bool                                            Offer.Sys_Incomplete
+bool                                            Offer.VATFree
+OfferStatusEnum                                 Offer.Enum_OfferStatusId
+--> ExternalSystemOffer[]                       Offer.ExternalSystemOffers
+--> OfferAttachment[]                           Offer.OfferAttachments
+--> OfferLine[]                                 Offer.OfferLines
+int                                             OfferAttachment.OfferAttachmentId
+string                                          OfferAttachment.AttachmentIdExternal
+string                                          OfferAttachment.OfferIdExternal
+int                                             OfferAttachment.AttachmentId
+bool                                            OfferAttachment.Sys_Deactivated
+bool                                            OfferAttachment.Sys_Historic
+bool                                            OfferAttachment.Sys_Incomplete
+int                                             OfferLine.OfferLineId
+string                                          OfferLine.OfferLineIdExternal
+string                                          OfferLine.OfferIdExternal
+string                                          OfferLine.ProductSupplierIndustryTypeIdExternal
+string                                          OfferLine.WageCodeReportCategoryIdExternal
+string (100)                                    OfferLine.Code
+string [MultilineText](100)                     OfferLine.Comment
+decimal                                         OfferLine.CostPrice
+string [MultilineText]                          OfferLine.Description
+bool                                            OfferLine.IsVarious
+decimal                                         OfferLine.ManualTotalPrice
+int                                             OfferLine.ProductSupplierIndustryTypeId
+decimal                                         OfferLine.Quantity
+decimal                                         OfferLine.SalesPrice
+int                                             OfferLine.SortOrder
+decimal                                         OfferLine.SurchargePercent
+bool                                            OfferLine.Sys_Deactivated
+bool                                            OfferLine.Sys_Historic
+bool                                            OfferLine.Sys_Incomplete
+bool                                            OfferLine.VATFree
+int                                             OfferLine.WageCodeReportCategoryId
+--> ExternalSystemOfferLine[]                   OfferLine.ExternalSystemOfferLines
 byte                                            PaymentTerm.PaymentTermId
 string                                          PaymentTerm.PaymentTermIdExternal
 short                                           PaymentTerm.Days
@@ -1612,6 +1706,7 @@ string                                          Product.Purchase_VATRequired_Led
 string                                          Product.Sale_VATFree_LedgerAccountIdExternal
 string                                          Product.Sale_VATRequired_LedgerAccountIdExternal
 string                                          Product.VATRateIdExternal
+int                                             Product.BrandId
 int                                             Product.Cost_ProjectAccountId
 string (2)                                      Product.CountryId
 long                                            Product.GTIN
@@ -1687,6 +1782,15 @@ short                                           ProductBatch.StorageId
 bool                                            ProductBatch.Sys_Deactivated
 bool                                            ProductBatch.Sys_Historic
 bool                                            ProductBatch.Sys_Incomplete
+int                                             ProductBrandDef.ProductBrandDefId
+string [Name](50)                               ProductBrandDef.BrandName
+string (50)                                     ProductBrandDef.ProductNumber
+bool                                            ProductBrandDef.Sys_Deactivated
+bool                                            ProductBrandDef.Sys_Historic
+bool                                            ProductBrandDef.Sys_Incomplete
+ClientLevelEnum                                 ProductBrandDef.Enum_ClientLevelId
+IndustryTypeEnum                                ProductBrandDef.Enum_IndustryTypeId
+PublicationStatusEnum                           ProductBrandDef.Enum_PublicationStatusId
 short                                           ProductCampaign.ProductCampaignId
 string                                          ProductCampaign.ProductSupplierIndustryTypeIdExternal
 decimal                                         ProductCampaign.CampaignQuantity
@@ -1697,6 +1801,27 @@ DateTime                                        ProductCampaign.StartDatetimeUTC
 bool                                            ProductCampaign.Sys_Deactivated
 bool                                            ProductCampaign.Sys_Historic
 bool                                            ProductCampaign.Sys_Incomplete
+int                                             ProductCategory.ProductCategoryId
+string (50)                                     ProductCategory.Category1
+string (50)                                     ProductCategory.Category2
+string (50)                                     ProductCategory.Category3
+bool                                            ProductCategory.Sys_Deactivated
+bool                                            ProductCategory.Sys_Historic
+bool                                            ProductCategory.Sys_Incomplete
+ClientLevelEnum                                 ProductCategory.Enum_ClientLevelId
+IndustryTypeEnum                                ProductCategory.Enum_IndustryTypeId
+PublicationStatusEnum                           ProductCategory.Enum_PublicationStatusId
+int                                             ProductCategoryDef.ProductCategoryDefId
+string (50)                                     ProductCategoryDef.Category1
+string (50)                                     ProductCategoryDef.Category2
+string (50)                                     ProductCategoryDef.Category3
+string (50)                                     ProductCategoryDef.ProductNumber
+bool                                            ProductCategoryDef.Sys_Deactivated
+bool                                            ProductCategoryDef.Sys_Historic
+bool                                            ProductCategoryDef.Sys_Incomplete
+ClientLevelEnum                                 ProductCategoryDef.Enum_ClientLevelId
+IndustryTypeEnum                                ProductCategoryDef.Enum_IndustryTypeId
+PublicationStatusEnum                           ProductCategoryDef.Enum_PublicationStatusId
 int                                             ProductExtendedInfo.ProductExtendedInfoId
 string                                          ProductExtendedInfo.ProductIdExternal
 bool                                            ProductExtendedInfo.Sys_Deactivated
@@ -1887,6 +2012,15 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 short                                           ProductNoteLineBatch.Sys_HistoricStorageId
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
+int                                             ProductProductCategory.ProductProductCategoryId
+string                                          ProductProductCategory.ProductIdExternal
+int                                             ProductProductCategory.ProductCategoryId
+int                                             ProductProductCategory.ProductId
+bool                                            ProductProductCategory.Sys_Deactivated
+bool                                            ProductProductCategory.Sys_Historic
+bool                                            ProductProductCategory.Sys_Incomplete
+ClientLevelEnum                                 ProductProductCategory.Enum_ClientLevelId
+PublicationStatusEnum                           ProductProductCategory.Enum_PublicationStatusId
 int                                             ProductSupplierIndustryType.ProductSupplierIndustryTypeId
 string                                          ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string                                          ProductSupplierIndustryType.ProductIdExternal
@@ -2236,15 +2370,17 @@ ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_Serv
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
 int                                             ServiceContract.ServiceContractId
 int                                             ServiceContract.Default_AssignmentId
-DateTime                                        ServiceContract.EndDateUTC
+DateTime                                        ServiceContract.EndDate
 bool                                            ServiceContract.Inactive
 decimal                                         ServiceContract.IndexRate
 byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
 string (1024)                                   ServiceContract.InvoiceRecurrencePattern
+DateTime                                        ServiceContract.NextOccurranceDate
 string (1024)                                   ServiceContract.RecurrencePattern
 int                                             ServiceContract.ServiceContractNumber
-DateTime                                        ServiceContract.StartDateUTC
+string (200)                                    ServiceContract.ServiceContractReference
+DateTime                                        ServiceContract.StartDate
 bool                                            ServiceContract.Sys_Deactivated
 bool                                            ServiceContract.Sys_Historic
 bool                                            ServiceContract.Sys_Incomplete
@@ -2706,6 +2842,52 @@ bool                                            SystemNotification.Sys_Historic
 bool                                            SystemNotification.Sys_Incomplete
 string (100)                                    SystemNotification.Title
 NotificationTypeEnum                            SystemNotification.Enum_NotificationTypeId
+int                                             Tariff.TariffId
+decimal                                         Tariff.Amount
+string (20)                                     Tariff.Code
+string [MultilineText](100)                     Tariff.Description
+decimal                                         Tariff.EstimatedHours
+bool                                            Tariff.Sys_Deactivated
+bool                                            Tariff.Sys_Historic
+bool                                            Tariff.Sys_Incomplete
+int                                             Tariff.TariffVersionId
+string (5)                                      Tariff.Unit
+ClientLevelEnum                                 Tariff.Enum_ClientLevelId
+PublicationStatusEnum                           Tariff.Enum_PublicationStatusId
+int                                             TariffProduct.TariffProductId
+string                                          TariffProduct.ProductIdExternal
+int                                             TariffProduct.ProductId
+bool                                            TariffProduct.Sys_Deactivated
+bool                                            TariffProduct.Sys_Historic
+bool                                            TariffProduct.Sys_Incomplete
+int                                             TariffProduct.TariffId
+ClientLevelEnum                                 TariffProduct.Enum_ClientLevelId
+PublicationStatusEnum                           TariffProduct.Enum_PublicationStatusId
+int                                             TariffProductDef.TariffProductDefId
+decimal                                         TariffProductDef.Amount
+string (20)                                     TariffProductDef.Code
+string [MultilineText](100)                     TariffProductDef.Description
+decimal                                         TariffProductDef.EstimatedHours
+string (50)                                     TariffProductDef.ProductNumber
+bool                                            TariffProductDef.Sys_Deactivated
+bool                                            TariffProductDef.Sys_Historic
+bool                                            TariffProductDef.Sys_Incomplete
+decimal                                         TariffProductDef.TariffAmountFactor
+string (50)                                     TariffProductDef.TariffCreatedBy
+string [Name](50)                               TariffProductDef.TariffName
+string (5)                                      TariffProductDef.Unit
+ClientLevelEnum                                 TariffProductDef.Enum_ClientLevelId
+IndustryTypeEnum                                TariffProductDef.Enum_IndustryTypeId
+PublicationStatusEnum                           TariffProductDef.Enum_PublicationStatusId
+int                                             TariffVersion.TariffVersionId
+decimal                                         TariffVersion.AmountFactor
+string (50)                                     TariffVersion.CreatedBy
+string [Name](50)                               TariffVersion.Name
+bool                                            TariffVersion.Sys_Deactivated
+bool                                            TariffVersion.Sys_Historic
+bool                                            TariffVersion.Sys_Incomplete
+ClientLevelEnum                                 TariffVersion.Enum_ClientLevelId
+PublicationStatusEnum                           TariffVersion.Enum_PublicationStatusId
 short                                           Team.TeamId
 string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
@@ -2810,6 +2992,8 @@ WageCodeTypeEnum                                WageCode.Enum_WageCodeTypeId
 int                                             WageCodeReportCategory.WageCodeReportCategoryId
 string                                          WageCodeReportCategory.WageCodeReportCategoryIdExternal
 string                                          WageCodeReportCategory.WageCodeReportCategoryTypeIdExternal
+decimal                                         WageCodeReportCategory.BudgetCostPrice
+decimal                                         WageCodeReportCategory.BudgetSalesPrice
 string [MultilineText](100)                     WageCodeReportCategory.Description
 string (100)                                    WageCodeReportCategory.ReportText
 bool                                            WageCodeReportCategory.Sys_Deactivated
