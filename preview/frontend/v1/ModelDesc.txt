@@ -1830,6 +1830,7 @@ bool                                            ProductExtendedInfo.Sys_Incomple
 string (50)                                     ProductExtendedInfo.Type
 string                                          ProductExtendedInfo.Value
 int                                             ProductImport.ProductImportId
+string                                          ProductImport.SupplierIndustryTypeIdExternal
 string (250)                                    ProductImport.FileName
 string (250)                                    ProductImport.FtpDir
 string (50)                                     ProductImport.FtpFileName
@@ -1849,39 +1850,19 @@ int                                             ProductImport.LastSuccess_Staged
 DateTime                                        ProductImport.LastSuccess_Staged_UTC
 int                                             ProductImport.LastSuccess_StagingInMs
 string (500)                                    ProductImport.LastSuccess_StatusMessage
-bool                                            ProductImport.ManuallyUpladed
+bool                                            ProductImport.ManuallyUploaded
+DateTime                                        ProductImport.NextAutomaticImportUTC
 long                                            ProductImport.Size
 int                                             ProductImport.Staged_LineCount
 DateTime                                        ProductImport.Staged_UTC
 int                                             ProductImport.StagingInMs
 string (500)                                    ProductImport.StatusMessage
+short                                           ProductImport.SupplierIndustryTypeId
 bool                                            ProductImport.Sys_Deactivated
 bool                                            ProductImport.Sys_Historic
 bool                                            ProductImport.Sys_Incomplete
 FileDownloadModeEnum                            ProductImport.Enum_FileDownloadModeId
-int                                             ProductImportFileSet.ProductImportFileSetId
-string                                          ProductImportFileSet.SupplierIndustryTypeIdExternal
-int                                             ProductImportFileSet.ImportingInMs
-int                                             ProductImportFileSet.JobNumber
-DateTime                                        ProductImportFileSet.JobStartedUTC
-int                                             ProductImportFileSet.LastSuccess_ImportingInMs
-int                                             ProductImportFileSet.LastSuccess_JobNumber
-DateTime                                        ProductImportFileSet.LastSuccess_JobStartedUTC
-int                                             ProductImportFileSet.LastSuccess_ProductCount
-int                                             ProductImportFileSet.LastSuccess_StagingInMs
-string (500)                                    ProductImportFileSet.LastSuccess_StatusMessage
-bool                                            ProductImportFileSet.ManuallyRequested
-bool                                            ProductImportFileSet.ManuallyUploaded
-int                                             ProductImportFileSet.ProductCount
-int                                             ProductImportFileSet.StagingInMs
-string (500)                                    ProductImportFileSet.StatusMessage
-bool                                            ProductImportFileSet.Succeeded
-short                                           ProductImportFileSet.SupplierIndustryTypeId
-bool                                            ProductImportFileSet.Sys_Deactivated
-bool                                            ProductImportFileSet.Sys_Historic
-bool                                            ProductImportFileSet.Sys_Incomplete
-ImportFrequencyEnum                             ProductImportFileSet.Enum_ImportFrequencyId
---> ProductImport[]                             ProductImportFileSet.ProductImports
+ImportFrequencyEnum                             ProductImport.Enum_ImportFrequencyId
 int                                             ProductNote.ProductNoteId
 string                                          ProductNote.ProductNoteIdExternal
 string                                          ProductNote.AssignmentIdExternal
@@ -1959,6 +1940,7 @@ int                                             ProductNoteLine.Income_ProjectAc
 int                                             ProductNoteLine.InvoiceId
 int                                             ProductNoteLine.InvoiceLineId
 int                                             ProductNoteLine.InvoiceSpecificationNumber
+bool                                            ProductNoteLine.IsFixedPrice
 bool                                            ProductNoteLine.IsVarious
 decimal                                         ProductNoteLine.ListPrice
 decimal                                         ProductNoteLine.Override_QuantityInvoice
@@ -2307,6 +2289,7 @@ int                                             Service.Invoice_ApprovalEmployee
 string [MultilineText](200)                     Service.InvoiceDescription
 int                                             Service.InvoiceId
 int                                             Service.InvoiceLineId
+bool                                            Service.IsFixedPrice
 short                                           Service.JobCategoryId
 int                                             Service.MovedFromAssignmentId
 int                                             Service.MovedToAssignmentId
@@ -2853,6 +2836,7 @@ bool                                            Tariff.Sys_Incomplete
 int                                             Tariff.TariffVersionId
 string (5)                                      Tariff.Unit
 ClientLevelEnum                                 Tariff.Enum_ClientLevelId
+IndustryTypeEnum                                Tariff.Enum_IndustryTypeId
 PublicationStatusEnum                           Tariff.Enum_PublicationStatusId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
