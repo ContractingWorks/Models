@@ -2826,17 +2826,15 @@ bool                                            SystemNotification.Sys_Incomplet
 string (100)                                    SystemNotification.Title
 NotificationTypeEnum                            SystemNotification.Enum_NotificationTypeId
 int                                             Tariff.TariffId
+string (1024)                                   Tariff.AdditionalInfo
 decimal                                         Tariff.Amount
 string (20)                                     Tariff.Code
 string [MultilineText](100)                     Tariff.Description
-decimal                                         Tariff.EstimatedHours
 bool                                            Tariff.Sys_Deactivated
 bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
-int                                             Tariff.TariffVersionId
 string (5)                                      Tariff.Unit
 ClientLevelEnum                                 Tariff.Enum_ClientLevelId
-IndustryTypeEnum                                Tariff.Enum_IndustryTypeId
 PublicationStatusEnum                           Tariff.Enum_PublicationStatusId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
@@ -2848,15 +2846,15 @@ int                                             TariffProduct.TariffId
 ClientLevelEnum                                 TariffProduct.Enum_ClientLevelId
 PublicationStatusEnum                           TariffProduct.Enum_PublicationStatusId
 int                                             TariffProductDef.TariffProductDefId
+string (1024)                                   TariffProductDef.AdditionalInfo
 decimal                                         TariffProductDef.Amount
+int                                             TariffProductDef.AmountFactorInSeconds
 string (20)                                     TariffProductDef.Code
 string [MultilineText](100)                     TariffProductDef.Description
-decimal                                         TariffProductDef.EstimatedHours
 string (50)                                     TariffProductDef.ProductNumber
 bool                                            TariffProductDef.Sys_Deactivated
 bool                                            TariffProductDef.Sys_Historic
 bool                                            TariffProductDef.Sys_Incomplete
-decimal                                         TariffProductDef.TariffAmountFactor
 string (50)                                     TariffProductDef.TariffCreatedBy
 string [Name](50)                               TariffProductDef.TariffName
 string (5)                                      TariffProductDef.Unit
@@ -2864,14 +2862,16 @@ ClientLevelEnum                                 TariffProductDef.Enum_ClientLeve
 IndustryTypeEnum                                TariffProductDef.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffProductDef.Enum_PublicationStatusId
 int                                             TariffVersion.TariffVersionId
-decimal                                         TariffVersion.AmountFactor
+int                                             TariffVersion.AmountFactorInSeconds
 string (50)                                     TariffVersion.CreatedBy
 string [Name](50)                               TariffVersion.Name
 bool                                            TariffVersion.Sys_Deactivated
 bool                                            TariffVersion.Sys_Historic
 bool                                            TariffVersion.Sys_Incomplete
 ClientLevelEnum                                 TariffVersion.Enum_ClientLevelId
+IndustryTypeEnum                                TariffVersion.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffVersion.Enum_PublicationStatusId
+--> Tariff[]                                    TariffVersion.Tariffs
 short                                           Team.TeamId
 string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
