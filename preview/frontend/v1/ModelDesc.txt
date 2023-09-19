@@ -2833,9 +2833,7 @@ string [MultilineText](100)                     Tariff.Description
 bool                                            Tariff.Sys_Deactivated
 bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
-string (5)                                      Tariff.Unit
-ClientLevelEnum                                 Tariff.Enum_ClientLevelId
-PublicationStatusEnum                           Tariff.Enum_PublicationStatusId
+short                                           Tariff.UnitId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
 int                                             TariffProduct.ProductId
@@ -2843,8 +2841,6 @@ bool                                            TariffProduct.Sys_Deactivated
 bool                                            TariffProduct.Sys_Historic
 bool                                            TariffProduct.Sys_Incomplete
 int                                             TariffProduct.TariffId
-ClientLevelEnum                                 TariffProduct.Enum_ClientLevelId
-PublicationStatusEnum                           TariffProduct.Enum_PublicationStatusId
 int                                             TariffProductDef.TariffProductDefId
 string (1024)                                   TariffProductDef.AdditionalInfo
 decimal                                         TariffProductDef.Amount
@@ -2901,6 +2897,11 @@ bool                                            Temp_WebhookMessage.Sys_Historic
 bool                                            Temp_WebhookMessage.Sys_Incomplete
 string [Name](50)                               Temp_WebhookMessage.TableName
 short                                           Temp_WebhookMessage.WebhookSubscriptionId
+short                                           Unit.UnitId
+bool                                            Unit.Sys_Deactivated
+bool                                            Unit.Sys_Historic
+bool                                            Unit.Sys_Incomplete
+string [Name](5)                                Unit.UnitName
 int                                             User.UserId
 string                                          User.EmployeeIdExternal
 string (2)                                      User.DefaultLanguage
