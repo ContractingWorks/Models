@@ -2853,7 +2853,7 @@ bool                                            TariffProductDef.Sys_Historic
 bool                                            TariffProductDef.Sys_Incomplete
 string (50)                                     TariffProductDef.TariffCreatedBy
 string [Name](50)                               TariffProductDef.TariffName
-string (5)                                      TariffProductDef.Unit
+string (5)                                      TariffProductDef.UnitCode
 ClientLevelEnum                                 TariffProductDef.Enum_ClientLevelId
 IndustryTypeEnum                                TariffProductDef.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffProductDef.Enum_PublicationStatusId
@@ -2898,10 +2898,11 @@ bool                                            Temp_WebhookMessage.Sys_Incomple
 string [Name](50)                               Temp_WebhookMessage.TableName
 short                                           Temp_WebhookMessage.WebhookSubscriptionId
 short                                           Unit.UnitId
+string (5)                                      Unit.Code
 bool                                            Unit.Sys_Deactivated
 bool                                            Unit.Sys_Historic
 bool                                            Unit.Sys_Incomplete
-string [Name](5)                                Unit.UnitName
+string (5)                                      Unit.Text
 int                                             User.UserId
 string                                          User.EmployeeIdExternal
 string (2)                                      User.DefaultLanguage
