@@ -2697,6 +2697,7 @@ bool                                            SupplierIndustryTypePurchaseAgre
 int                                             SupplierInvoice.SupplierInvoiceId
 string                                          SupplierInvoice.SupplierInvoiceIdExternal
 string                                          SupplierInvoice.IndustryTypeIdExternal
+string                                          SupplierInvoice.Linked_SupplierInvoiceIdExternal
 string                                          SupplierInvoice.SupplierIdExternal
 string                                          SupplierInvoice.SupplierIndustryTypeIdExternal
 string [MultilineText](500)                     SupplierInvoice.Description
@@ -2705,6 +2706,7 @@ DateTime                                        SupplierInvoice.InvoiceDate
 string (50)                                     SupplierInvoice.InvoiceNumber
 bool                                            SupplierInvoice.IsCreditNote
 short                                           SupplierInvoice.LineCount
+int                                             SupplierInvoice.Linked_SupplierInvoiceId
 bool                                            SupplierInvoice.Reviewed
 decimal                                         SupplierInvoice.Sum
 string (50)                                     SupplierInvoice.SupplierCustomerNumberTxt
