@@ -2404,6 +2404,11 @@ bool                                            Settings_Assignment.Sys_Historic
 bool                                            Settings_Assignment.Sys_Incomplete
 InvoiceReserveBilledPriceCalculationEnum        Settings_Assignment.Enum_InvoiceReserveBilledPriceCalculationId
 InvoiceReserveFixedPriceCalculationEnum         Settings_Assignment.Enum_InvoiceReserveFixedPriceCalculationId
+byte                                            Settings_Employee.Settings_EmployeeId
+bool                                            Settings_Employee.ApproveWageRequired
+bool                                            Settings_Employee.Sys_Deactivated
+bool                                            Settings_Employee.Sys_Historic
+bool                                            Settings_Employee.Sys_Incomplete
 byte                                            Settings_Main.Settings_MainId
 string                                          Settings_Main.DepartmentIdExternal
 string                                          Settings_Main.IndustryTypeIdExternal
