@@ -1604,6 +1604,26 @@ string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
+int                                             NumberSeries.NumberSeriesId
+string                                          NumberSeries.ValidFor_DepartmentIdExternal
+string [MultilineText](50)                      NumberSeries.Description
+int                                             NumberSeries.End
+byte                                            NumberSeries.FixedTextNumberLength
+bool                                            NumberSeries.IsActive
+int                                             NumberSeries.Next
+int                                             NumberSeries.NotifyIfRemainingLessThan
+string (10)                                     NumberSeries.Postfix
+string (10)                                     NumberSeries.Prefix
+short                                           NumberSeries.SetBy_ExternalSystemId
+int                                             NumberSeries.Start
+bool                                            NumberSeries.Sys_Deactivated
+bool                                            NumberSeries.Sys_Historic
+bool                                            NumberSeries.Sys_Incomplete
+short                                           NumberSeries.ValidFor_DepartmentId
+DateTime                                        NumberSeries.ValidFromDate
+DateTime                                        NumberSeries.ValidToDate
+NumberSeriesTypeEnum                            NumberSeries.Enum_NumberSeriesTypeId
+AssignmentTypeEnum                              NumberSeries.ValidFor_Enum_AssignmentTypeId
 int                                             Offer.OfferId
 string                                          Offer.OfferIdExternal
 string                                          Offer.AddressIdExternal
