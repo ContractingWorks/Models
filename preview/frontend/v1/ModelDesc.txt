@@ -2739,6 +2739,8 @@ decimal                                         SupplierInvoice.Sum
 string (50)                                     SupplierInvoice.SupplierCustomerNumberTxt
 int                                             SupplierInvoice.SupplierId
 short                                           SupplierInvoice.SupplierIndustryTypeId
+string [Name](50)                               SupplierInvoice.SupplierIndustryTypeName
+string (50)                                     SupplierInvoice.SupplierIndustryTypeOrgNo
 string (50)                                     SupplierInvoice.SupplierNumberTxt
 bool                                            SupplierInvoice.SyncRetry
 bool                                            SupplierInvoice.Sys_Deactivated
