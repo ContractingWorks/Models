@@ -2716,10 +2716,15 @@ bool                                            SupplierIndustryTypePurchaseAgre
 bool                                            SupplierIndustryTypePurchaseAgreement.Sys_Incomplete
 int                                             SupplierInvoice.SupplierInvoiceId
 string                                          SupplierInvoice.SupplierInvoiceIdExternal
+string                                          SupplierInvoice.AssignmentIdExternal
 string                                          SupplierInvoice.IndustryTypeIdExternal
 string                                          SupplierInvoice.Linked_SupplierInvoiceIdExternal
+string                                          SupplierInvoice.StorageIdExternal
 string                                          SupplierInvoice.SupplierIdExternal
 string                                          SupplierInvoice.SupplierIndustryTypeIdExternal
+int                                             SupplierInvoice.AssignmentId
+string (50)                                     SupplierInvoice.AssignmentNumberTxt
+string [MultilineText](250)                     SupplierInvoice.Comment
 string [MultilineText](500)                     SupplierInvoice.Description
 byte                                            SupplierInvoice.IndustryTypeId
 DateTime                                        SupplierInvoice.InvoiceDate
@@ -2728,6 +2733,8 @@ bool                                            SupplierInvoice.IsCreditNote
 short                                           SupplierInvoice.LineCount
 int                                             SupplierInvoice.Linked_SupplierInvoiceId
 bool                                            SupplierInvoice.Reviewed
+short                                           SupplierInvoice.StorageId
+string (50)                                     SupplierInvoice.StorageNumberTxt
 decimal                                         SupplierInvoice.Sum
 string (50)                                     SupplierInvoice.SupplierCustomerNumberTxt
 int                                             SupplierInvoice.SupplierId
@@ -2765,6 +2772,7 @@ string                                          SupplierInvoiceLine.SupplierInvo
 string                                          SupplierInvoiceLine.VATRateIdExternal
 int                                             SupplierInvoiceLine.AssignmentId
 string (50)                                     SupplierInvoiceLine.AssignmentNumberTxt
+string [MultilineText](250)                     SupplierInvoiceLine.Comment
 decimal                                         SupplierInvoiceLine.CostPrice
 decimal                                         SupplierInvoiceLine.CostPricePurchaseAgreement
 int                                             SupplierInvoiceLine.CustomerId
@@ -2777,6 +2785,7 @@ bool                                            SupplierInvoiceLine.DoNotForward
 bool                                            SupplierInvoiceLine.FallbackValueUsed
 short                                           SupplierInvoiceLine.LedgerAccountId
 string (50)                                     SupplierInvoiceLine.LedgerAccountNumberTxt
+decimal                                         SupplierInvoiceLine.LineAmount
 int                                             SupplierInvoiceLine.LineNumber
 int                                             SupplierInvoiceLine.ProductId
 string [Name](250)                              SupplierInvoiceLine.ProductName
