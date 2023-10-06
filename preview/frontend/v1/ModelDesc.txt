@@ -1466,6 +1466,7 @@ InvoiceLineRuleTypeDetailEnum                   InvoiceLine.Sys_Enum_InvoiceLine
 --> ExternalSystemInvoiceLine[]                 InvoiceLine.ExternalSystemInvoiceLines
 int                                             InvoiceLine_Session.InvoiceLineSessionId
 decimal                                         InvoiceLine_Session.Amount
+int                                             InvoiceLine_Session.AssignmentId
 decimal                                         InvoiceLine_Session.BasisSumPercentInvoice
 decimal                                         InvoiceLine_Session.CostPrice
 string                                          InvoiceLine_Session.FieldAttributesAsJSON
@@ -1475,7 +1476,9 @@ int                                             InvoiceLine_Session.InvoiceLineI
 int                                             InvoiceLine_Session.InvoiceLineRuleId
 string                                          InvoiceLine_Session.InvoiceLineText
 int                                             InvoiceLine_Session.InvoicingDimensionValueId
+bool                                            InvoiceLine_Session.IsFixedPrice
 int                                             InvoiceLine_Session.ProductSupplierIndustryTypeId
+byte                                            InvoiceLine_Session.ProjectAccountCategoryId
 decimal                                         InvoiceLine_Session.QuantityInvoice
 decimal                                         InvoiceLine_Session.SalesPriceInvoice
 Guid                                            InvoiceLine_Session.SessionId
