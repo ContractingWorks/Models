@@ -225,6 +225,14 @@ bool                                            AttachmentCategory.Sys_Deactivat
 bool                                            AttachmentCategory.Sys_Historic
 bool                                            AttachmentCategory.Sys_Incomplete
 AttachmentCategoryEnum                          AttachmentCategory.Enum_AttachmentCategoryId
+int                                             Attribute.AttributeId
+string [MultilineText](500)                     Attribute.Description
+bool                                            Attribute.IsNumber
+string [Name](50)                               Attribute.Name
+bool                                            Attribute.Sys_Deactivated
+bool                                            Attribute.Sys_Historic
+bool                                            Attribute.Sys_Incomplete
+short                                           Attribute.UnitId
 int                                             BoligmappaAttachment.BoligmappaAttachmentId
 int                                             BoligmappaAttachment.BoligmappaFileId
 string (50)                                     BoligmappaAttachment.BoligmappaNumber
@@ -244,11 +252,6 @@ bool                                            BoligmappaTokens.Sys_Deactivated
 bool                                            BoligmappaTokens.Sys_Historic
 bool                                            BoligmappaTokens.Sys_Incomplete
 DateTime                                        BoligmappaTokens.TokensLastRefreshedUTC
-int                                             Brand.BrandId
-string [Name](50)                               Brand.Name
-bool                                            Brand.Sys_Deactivated
-bool                                            Brand.Sys_Historic
-bool                                            Brand.Sys_Incomplete
 int                                             Budget.BudgetId
 string                                          Budget.BudgetIdExternal
 string                                          Budget.AssignmentIdExternal
@@ -522,6 +525,7 @@ short                                           Employee.JobCategoryId
 DateTime                                        Employee.JobCategoryStartDate
 decimal                                         Employee.JobPercent
 string [Name](50)                               Employee.LastName
+string (50)                                     Employee.NationalIdNumber
 string [MultilineText]                          Employee.Note
 string [Phone](50)                              Employee.PhoneMobile
 string [Phone](50)                              Employee.PhonePrivate
@@ -1729,7 +1733,6 @@ string                                          Product.Purchase_VATRequired_Led
 string                                          Product.Sale_VATFree_LedgerAccountIdExternal
 string                                          Product.Sale_VATRequired_LedgerAccountIdExternal
 string                                          Product.VATRateIdExternal
-int                                             Product.BrandId
 int                                             Product.Cost_ProjectAccountId
 string (2)                                      Product.CountryId
 long                                            Product.GTIN
@@ -1737,6 +1740,7 @@ int                                             Product.Income_ProjectAccountId
 byte                                            Product.IndustryTypeId
 bool                                            Product.InvoiceMergeProduct
 bool                                            Product.InvoiceShowProductNumber
+bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
 short                                           Product.POSPurchase_VATFree_LedgerAccountId
 short                                           Product.POSPurchase_VATRequired_LedgerAccountId
@@ -1792,6 +1796,15 @@ string (50)                                     ProductAgreementDetail.To
 long                                            ProductAgreementDetail.ToNumeric
 ProductAgreementDetail_PriceTypeEnum            ProductAgreementDetail.Enum_ProductAgreementDetail_PriceTypeId
 --> ExternalSystemProductAgreementDetail[]      ProductAgreementDetail.ExternalSystemProductAgreementDetails
+int                                             ProductAttribute.ProductAttributeId
+string                                          ProductAttribute.ProductIdExternal
+int                                             ProductAttribute.AttributeId
+decimal                                         ProductAttribute.Number
+int                                             ProductAttribute.ProductId
+bool                                            ProductAttribute.Sys_Deactivated
+bool                                            ProductAttribute.Sys_Historic
+bool                                            ProductAttribute.Sys_Incomplete
+string (50)                                     ProductAttribute.Text
 int                                             ProductBatch.ProductBatchId
 string                                          ProductBatch.ProductIdExternal
 string                                          ProductBatch.StockIdExternal
@@ -1824,16 +1837,6 @@ DateTime                                        ProductCampaign.StartDatetimeUTC
 bool                                            ProductCampaign.Sys_Deactivated
 bool                                            ProductCampaign.Sys_Historic
 bool                                            ProductCampaign.Sys_Incomplete
-int                                             ProductCategory.ProductCategoryId
-string (50)                                     ProductCategory.Category1
-string (50)                                     ProductCategory.Category2
-string (50)                                     ProductCategory.Category3
-bool                                            ProductCategory.Sys_Deactivated
-bool                                            ProductCategory.Sys_Historic
-bool                                            ProductCategory.Sys_Incomplete
-ClientLevelEnum                                 ProductCategory.Enum_ClientLevelId
-IndustryTypeEnum                                ProductCategory.Enum_IndustryTypeId
-PublicationStatusEnum                           ProductCategory.Enum_PublicationStatusId
 int                                             ProductCategoryDef.ProductCategoryDefId
 string (50)                                     ProductCategoryDef.Category1
 string (50)                                     ProductCategoryDef.Category2
@@ -2017,15 +2020,17 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 short                                           ProductNoteLineBatch.Sys_HistoricStorageId
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
-int                                             ProductProductCategory.ProductProductCategoryId
-string                                          ProductProductCategory.ProductIdExternal
-int                                             ProductProductCategory.ProductCategoryId
-int                                             ProductProductCategory.ProductId
-bool                                            ProductProductCategory.Sys_Deactivated
-bool                                            ProductProductCategory.Sys_Historic
-bool                                            ProductProductCategory.Sys_Incomplete
-ClientLevelEnum                                 ProductProductCategory.Enum_ClientLevelId
-PublicationStatusEnum                           ProductProductCategory.Enum_PublicationStatusId
+int                                             ProductStructure.ProductStuctureId
+string                                          ProductStructure.ParentProductIdExternal
+string                                          ProductStructure.ProductIdExternal
+string [MultilineText](250)                     ProductStructure.Description
+int                                             ProductStructure.ParentProductId
+string (500)                                    ProductStructure.ProductAttributeSearch
+int                                             ProductStructure.ProductId
+decimal                                         ProductStructure.Quantity
+bool                                            ProductStructure.Sys_Deactivated
+bool                                            ProductStructure.Sys_Historic
+bool                                            ProductStructure.Sys_Incomplete
 int                                             ProductSupplierIndustryType.ProductSupplierIndustryTypeId
 string                                          ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string                                          ProductSupplierIndustryType.ProductIdExternal
@@ -2957,6 +2962,7 @@ string [Email](100)                             User.SecondaryEmail
 bool                                            User.Sys_Deactivated
 bool                                            User.Sys_Historic
 bool                                            User.Sys_Incomplete
+bool                                            User.TwoFactorEnabled
 short                                           UserCommand.UserCommandId
 string (100)                                    UserCommand.Context
 int                                             UserCommand.CwUserId
