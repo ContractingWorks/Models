@@ -2329,6 +2329,7 @@ decimal                                         Service.SalesPrice
 decimal                                         Service.SalesPriceInvoice
 string [MultilineText](500)                     Service.ServiceComment
 DateTime                                        Service.StartDateTimeUTC
+decimal                                         Service.SurchargePercentInvoice
 bool                                            Service.SyncToMobileDevice
 bool                                            Service.Sys_Deactivated
 bool                                            Service.Sys_Historic
