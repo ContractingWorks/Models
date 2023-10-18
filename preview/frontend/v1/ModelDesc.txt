@@ -1702,6 +1702,7 @@ int                                             OfferLine.WageCodeReportCategory
 --> ExternalSystemOfferLine[]                   OfferLine.ExternalSystemOfferLines
 byte                                            PaymentTerm.PaymentTermId
 string                                          PaymentTerm.PaymentTermIdExternal
+string (5)                                      PaymentTerm.Code
 short                                           PaymentTerm.Days
 bool                                            PaymentTerm.DaysStartNextMonth
 string [MultilineText](50)                      PaymentTerm.Description
@@ -2660,8 +2661,14 @@ bool                                            StorageTransfer.Sys_PostProcessN
 --> ExternalSystemStorageTransfer[]             StorageTransfer.ExternalSystemStorageTransfers
 int                                             Supplier.SupplierId
 string                                          Supplier.SupplierIdExternal
+string (50)                                     Supplier.Bank_Giro
+string (50)                                     Supplier.Bank_Iban
+string (50)                                     Supplier.Bank_Swift
 string (2)                                      Supplier.CountryId
+string [Email](150)                             Supplier.Email
+string [Phone](50)                              Supplier.Mobile
 string (50)                                     Supplier.OrganizationNumber
+string [Phone](50)                              Supplier.Phone
 string [Name](50)                               Supplier.SupplierName
 int [PositiveNumber]                            Supplier.SupplierNumber
 bool                                            Supplier.Sys_Deactivated
