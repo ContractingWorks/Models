@@ -850,6 +850,16 @@ bool                                            ExternalSystemLedgerAccount.Sys_
 bool                                            ExternalSystemLedgerAccount.Sys_Historic
 bool                                            ExternalSystemLedgerAccount.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemLedgerAccount.Enum_SyncStatusId
+int                                             ExternalSystemNumberSeries.ExternalSystemNumberSeriesId
+string                                          ExternalSystemNumberSeries.NumberSeriesIdExternal
+string (50)                                     ExternalSystemNumberSeries.ExternalId
+short                                           ExternalSystemNumberSeries.ExternalSystemId
+int                                             ExternalSystemNumberSeries.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemNumberSeries.StatusDescription
+bool                                            ExternalSystemNumberSeries.Sys_Deactivated
+bool                                            ExternalSystemNumberSeries.Sys_Historic
+bool                                            ExternalSystemNumberSeries.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemNumberSeries.Enum_SyncStatusId
 int                                             ExternalSystemOffer.ExternalSystemOfferId
 string                                          ExternalSystemOffer.OfferIdExternal
 string (50)                                     ExternalSystemOffer.ExternalId
@@ -1612,6 +1622,7 @@ bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             NumberSeries.NumberSeriesId
+string                                          NumberSeries.NumberSeriesIdExternal
 string                                          NumberSeries.ValidFor_DepartmentIdExternal
 string [MultilineText](50)                      NumberSeries.Description
 int                                             NumberSeries.End
@@ -1631,6 +1642,7 @@ DateTime                                        NumberSeries.ValidFromDate
 DateTime                                        NumberSeries.ValidToDate
 NumberSeriesTypeEnum                            NumberSeries.Enum_NumberSeriesTypeId
 AssignmentTypeEnum                              NumberSeries.ValidFor_Enum_AssignmentTypeId
+--> ExternalSystemNumberSeries[]                NumberSeries.ExternalSystemNumberSerieses
 int                                             Offer.OfferId
 string                                          Offer.OfferIdExternal
 string                                          Offer.AddressIdExternal
