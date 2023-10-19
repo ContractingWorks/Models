@@ -370,6 +370,7 @@ bool                                            Country.Sys_Historic
 bool                                            Country.Sys_Incomplete
 int                                             Customer.CustomerId
 string                                          Customer.CustomerIdExternal
+string                                          Customer.CustomerClassIdExternal
 string                                          Customer.Default_AssignmentCategoryIdExternal
 string                                          Customer.Default_InvoiceTemplateIdExternal
 string                                          Customer.Default_ProductAgreementIdExternal
@@ -380,6 +381,7 @@ string (50)                                     Customer.BankAccountNumber
 string [MultilineText](1024)                    Customer.Comment
 string (2)                                      Customer.CountryId
 int                                             Customer.CreditLimit
+short                                           Customer.CustomerClassId
 int                                             Customer.CustomerNumber
 int                                             Customer.Default_AssignmentCategoryId
 short                                           Customer.Default_InvoiceTemplateId
@@ -430,6 +432,27 @@ int                                             CustomerAttachment.AttachmentId
 bool                                            CustomerAttachment.Sys_Deactivated
 bool                                            CustomerAttachment.Sys_Historic
 bool                                            CustomerAttachment.Sys_Incomplete
+short                                           CustomerClass.CustomerClassId
+string                                          CustomerClass.CustomerClassIdExternal
+string                                          CustomerClass.Default_AssignmentCategoryIdExternal
+string                                          CustomerClass.Default_InvoiceTemplateIdExternal
+string                                          CustomerClass.Default_ProductAgreementIdExternal
+string                                          CustomerClass.PaymentTermIdExternal
+string                                          CustomerClass.ServiceAgreementIdExternal
+string (5)                                      CustomerClass.Code
+int                                             CustomerClass.CreditLimit
+int                                             CustomerClass.Default_AssignmentCategoryId
+short                                           CustomerClass.Default_InvoiceTemplateId
+short                                           CustomerClass.Default_ProductAgreementId
+string [MultilineText](500)                     CustomerClass.Description
+bool                                            CustomerClass.IsDefault
+string [Name](50)                               CustomerClass.Name
+byte                                            CustomerClass.PaymentTermId
+short                                           CustomerClass.ServiceAgreementId
+bool                                            CustomerClass.Sys_Deactivated
+bool                                            CustomerClass.Sys_Historic
+bool                                            CustomerClass.Sys_Incomplete
+--> ExternalSystemCustomerClass[]               CustomerClass.ExternalSystemCustomerClasses
 int                                             CustomerContact.CustomerContactId
 string                                          CustomerContact.ContactIdExternal
 string                                          CustomerContact.Owner_CustomerIdExternal
@@ -694,6 +717,16 @@ bool                                            ExternalSystemCustomer.Sys_Deact
 bool                                            ExternalSystemCustomer.Sys_Historic
 bool                                            ExternalSystemCustomer.Sys_Incomplete
 SyncStatusEnum                                  ExternalSystemCustomer.Enum_SyncStatusId
+short                                           ExternalSystemCustomerClass.ExternalSystemCustomerClassId
+string                                          ExternalSystemCustomerClass.CustomerClassIdExternal
+string (50)                                     ExternalSystemCustomerClass.ExternalId
+short                                           ExternalSystemCustomerClass.ExternalSystemId
+int                                             ExternalSystemCustomerClass.LastTransferMilliseconds
+string [MultilineText](50)                      ExternalSystemCustomerClass.StatusDescription
+bool                                            ExternalSystemCustomerClass.Sys_Deactivated
+bool                                            ExternalSystemCustomerClass.Sys_Historic
+bool                                            ExternalSystemCustomerClass.Sys_Incomplete
+SyncStatusEnum                                  ExternalSystemCustomerClass.Enum_SyncStatusId
 short                                           ExternalSystemDepartment.ExternalSystemDepartmentId
 string                                          ExternalSystemDepartment.DepartmentIdExternal
 string (50)                                     ExternalSystemDepartment.ExternalId
@@ -1623,10 +1656,12 @@ bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             NumberSeries.NumberSeriesId
 string                                          NumberSeries.NumberSeriesIdExternal
+string                                          NumberSeries.ValidFor_CustomerGroupIdExternal
 string                                          NumberSeries.ValidFor_DepartmentIdExternal
 string [MultilineText](50)                      NumberSeries.Description
 int                                             NumberSeries.End
 byte                                            NumberSeries.FixedTextNumberLength
+int                                             NumberSeries.Group
 bool                                            NumberSeries.IsActive
 int                                             NumberSeries.Next
 int                                             NumberSeries.NotifyIfRemainingLessThan
@@ -1637,6 +1672,7 @@ int                                             NumberSeries.Start
 bool                                            NumberSeries.Sys_Deactivated
 bool                                            NumberSeries.Sys_Historic
 bool                                            NumberSeries.Sys_Incomplete
+short                                           NumberSeries.ValidFor_CustomerGroupId
 short                                           NumberSeries.ValidFor_DepartmentId
 DateTime                                        NumberSeries.ValidFromDate
 DateTime                                        NumberSeries.ValidToDate
