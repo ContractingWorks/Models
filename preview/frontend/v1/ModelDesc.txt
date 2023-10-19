@@ -406,6 +406,7 @@ byte                                            Customer.PaymentTermId
 string [Phone](50)                              Customer.Phone
 bool                                            Customer.Private
 short                                           Customer.ServiceAgreementId
+bool                                            Customer.Sys_CustomerClassApplied
 bool                                            Customer.Sys_Deactivated
 bool                                            Customer.Sys_Historic
 bool                                            Customer.Sys_Incomplete
@@ -445,9 +446,15 @@ int                                             CustomerClass.Default_Assignment
 short                                           CustomerClass.Default_InvoiceTemplateId
 short                                           CustomerClass.Default_ProductAgreementId
 string [MultilineText](500)                     CustomerClass.Description
+bool                                            CustomerClass.Internal
+bool                                            CustomerClass.InvoiceConsolidate
+bool                                            CustomerClass.InvoiceElectronic
+bool                                            CustomerClass.InvoiceReminder
+bool                                            CustomerClass.InvoiceVAT
 bool                                            CustomerClass.IsDefault
 string [Name](50)                               CustomerClass.Name
 byte                                            CustomerClass.PaymentTermId
+bool                                            CustomerClass.Private
 short                                           CustomerClass.ServiceAgreementId
 bool                                            CustomerClass.Sys_Deactivated
 bool                                            CustomerClass.Sys_Historic
