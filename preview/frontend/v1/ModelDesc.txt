@@ -1663,7 +1663,7 @@ bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             NumberSeries.NumberSeriesId
 string                                          NumberSeries.NumberSeriesIdExternal
-string                                          NumberSeries.ValidFor_CustomerGroupIdExternal
+string                                          NumberSeries.ValidFor_CustomerClassIdExternal
 string                                          NumberSeries.ValidFor_DepartmentIdExternal
 string [MultilineText](50)                      NumberSeries.Description
 int                                             NumberSeries.End
@@ -1679,7 +1679,7 @@ int                                             NumberSeries.Start
 bool                                            NumberSeries.Sys_Deactivated
 bool                                            NumberSeries.Sys_Historic
 bool                                            NumberSeries.Sys_Incomplete
-short                                           NumberSeries.ValidFor_CustomerGroupId
+short                                           NumberSeries.ValidFor_CustomerClassId
 short                                           NumberSeries.ValidFor_DepartmentId
 DateTime                                        NumberSeries.ValidFromDate
 DateTime                                        NumberSeries.ValidToDate
@@ -2300,6 +2300,60 @@ decimal                                         PurchaseAgreementDiscountProduct
 bool                                            PurchaseAgreementDiscountProduct.Sys_Deactivated
 bool                                            PurchaseAgreementDiscountProduct.Sys_Historic
 bool                                            PurchaseAgreementDiscountProduct.Sys_Incomplete
+int                                             PurchaseOrder.PurchaseOrderId
+string                                          PurchaseOrder.AssignmentIdExternal
+string                                          PurchaseOrder.StorageIdExternal
+string                                          PurchaseOrder.SupplierIndustryTypeIdExternal
+int                                             PurchaseOrder.AssignmentId
+DateTime                                        PurchaseOrder.CompletelyCheckedInDateUTC
+string (100)                                    PurchaseOrder.DeliveryAddress
+DateTime                                        PurchaseOrder.DeliveryDateTimeUTC
+string [Name](100)                              PurchaseOrder.DeliveryName
+string (50)                                     PurchaseOrder.DeliveryPostalNumber
+string (50)                                     PurchaseOrder.DeliveryPostalPlace
+string (250)                                    PurchaseOrder.Message
+DateTime                                        PurchaseOrder.OrderDate
+string (50)                                     PurchaseOrder.OurRefernce
+string (50)                                     PurchaseOrder.PackageText
+int                                             PurchaseOrder.PurchaseOrderNumber
+short                                           PurchaseOrder.StorageId
+short                                           PurchaseOrder.SupplierIndustryTypeId
+string (50)                                     PurchaseOrder.SupplierOrderNumber
+bool                                            PurchaseOrder.Sys_Deactivated
+bool                                            PurchaseOrder.Sys_Historic
+bool                                            PurchaseOrder.Sys_Incomplete
+DeliveryStatusEnum                              PurchaseOrder.Enum_DeliveryStatusId
+PurchaseOrderCommStatusEnum                     PurchaseOrder.Enum_PurchaseOrderCommStatusId
+int                                             PurchaseOrderLine.PurchaseOrderLineId
+string                                          PurchaseOrderLine.ProductIdExternal
+string                                          PurchaseOrderLine.ProductSupplierIndustryTypeIdExternal
+decimal                                         PurchaseOrderLine.AlreadyCheckedInQuantity
+decimal                                         PurchaseOrderLine.ChargeCost
+decimal                                         PurchaseOrderLine.ChargeCostPercent
+decimal                                         PurchaseOrderLine.CheckInQuantityNow
+DateTime                                        PurchaseOrderLine.DeliveryDate
+DateTime                                        PurchaseOrderLine.DeliveryDateRest
+decimal                                         PurchaseOrderLine.Discount
+decimal                                         PurchaseOrderLine.DiscountPercent
+decimal                                         PurchaseOrderLine.ExpectedLineAmount
+decimal                                         PurchaseOrderLine.ExtraCost
+decimal                                         PurchaseOrderLine.ExtraCostPercent
+decimal                                         PurchaseOrderLine.LineAmount
+int                                             PurchaseOrderLine.LineNumber
+int                                             PurchaseOrderLine.ProductId
+string [Name](250)                              PurchaseOrderLine.ProductName
+string (50)                                     PurchaseOrderLine.ProductNumber
+int                                             PurchaseOrderLine.ProductSupplierIndustryTypeId
+int                                             PurchaseOrderLine.PurchaseOrderId
+decimal                                         PurchaseOrderLine.Quantity
+decimal                                         PurchaseOrderLine.QuantityDelivered
+decimal                                         PurchaseOrderLine.QuantityRest
+bool                                            PurchaseOrderLine.Sys_Deactivated
+bool                                            PurchaseOrderLine.Sys_Historic
+bool                                            PurchaseOrderLine.Sys_Incomplete
+short                                           PurchaseOrderLine.UnitId
+decimal                                         PurchaseOrderLine.UnitPrice
+DeliveryStatusEnum                              PurchaseOrderLine.Enum_DeliveryStatusId
 short                                           Role.RoleId
 string                                          Role.RoleIdExternal
 string [MultilineText](200)                     Role.Description
