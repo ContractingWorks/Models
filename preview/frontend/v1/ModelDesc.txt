@@ -1685,7 +1685,7 @@ DateTime                                        NumberSeries.ValidFromDate
 DateTime                                        NumberSeries.ValidToDate
 NumberSeriesTypeEnum                            NumberSeries.Enum_NumberSeriesTypeId
 AssignmentTypeEnum                              NumberSeries.ValidFor_Enum_AssignmentTypeId
---> ExternalSystemNumberSeries[]                NumberSeries.ExternalSystemNumberSerieses
+--> ExternalSystemNumberSeries[]                NumberSeries.ExternalSystemNumberSeries
 int                                             Offer.OfferId
 string                                          Offer.OfferIdExternal
 string                                          Offer.AddressIdExternal
