@@ -2313,7 +2313,7 @@ string (50)                                     PurchaseOrder.DeliveryPostalNumb
 string (50)                                     PurchaseOrder.DeliveryPostalPlace
 string (250)                                    PurchaseOrder.Message
 DateTime                                        PurchaseOrder.OrderDate
-string (50)                                     PurchaseOrder.OurRefernce
+string (50)                                     PurchaseOrder.OurReference
 string (50)                                     PurchaseOrder.PackageText
 int                                             PurchaseOrder.PurchaseOrderNumber
 short                                           PurchaseOrder.StorageId
