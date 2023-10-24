@@ -2324,6 +2324,7 @@ bool                                            PurchaseOrder.Sys_Historic
 bool                                            PurchaseOrder.Sys_Incomplete
 DeliveryStatusEnum                              PurchaseOrder.Enum_DeliveryStatusId
 PurchaseOrderCommStatusEnum                     PurchaseOrder.Enum_PurchaseOrderCommStatusId
+--> PurchaseOrderLine[]                         PurchaseOrder.PurchaseOrderLines
 int                                             PurchaseOrderLine.PurchaseOrderLineId
 string                                          PurchaseOrderLine.ProductIdExternal
 string                                          PurchaseOrderLine.ProductSupplierIndustryTypeIdExternal
@@ -2344,7 +2345,6 @@ int                                             PurchaseOrderLine.ProductId
 string [Name](250)                              PurchaseOrderLine.ProductName
 string (50)                                     PurchaseOrderLine.ProductNumber
 int                                             PurchaseOrderLine.ProductSupplierIndustryTypeId
-int                                             PurchaseOrderLine.PurchaseOrderId
 decimal                                         PurchaseOrderLine.Quantity
 decimal                                         PurchaseOrderLine.QuantityDelivered
 decimal                                         PurchaseOrderLine.QuantityRest
