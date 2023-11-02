@@ -2332,14 +2332,15 @@ decimal                                         PurchaseOrderLine.AlreadyChecked
 decimal                                         PurchaseOrderLine.ChargeCost
 decimal                                         PurchaseOrderLine.ChargeCostPercent
 decimal                                         PurchaseOrderLine.CheckInQuantityNow
+decimal                                         PurchaseOrderLine.CostPriceExpected
 DateTime                                        PurchaseOrderLine.DeliveryDate
 DateTime                                        PurchaseOrderLine.DeliveryDateRest
 decimal                                         PurchaseOrderLine.Discount
 decimal                                         PurchaseOrderLine.DiscountPercent
-decimal                                         PurchaseOrderLine.ExpectedLineAmount
 decimal                                         PurchaseOrderLine.ExtraCost
 decimal                                         PurchaseOrderLine.ExtraCostPercent
 decimal                                         PurchaseOrderLine.LineAmount
+decimal                                         PurchaseOrderLine.LineAmountExpected
 int                                             PurchaseOrderLine.LineNumber
 int                                             PurchaseOrderLine.ProductId
 string [Name](250)                              PurchaseOrderLine.ProductName
@@ -2770,13 +2771,16 @@ bool                                            StorageTransfer.Sys_PostProcessN
 --> ExternalSystemStorageTransfer[]             StorageTransfer.ExternalSystemStorageTransfers
 int                                             Supplier.SupplierId
 string                                          Supplier.SupplierIdExternal
+string                                          Supplier.PaymentTermIdExternal
 string (50)                                     Supplier.Bank_Giro
 string (50)                                     Supplier.Bank_Iban
 string (50)                                     Supplier.Bank_Swift
 string (2)                                      Supplier.CountryId
 string [Email](150)                             Supplier.Email
+bool                                            Supplier.Inactive
 string [Phone](50)                              Supplier.Mobile
 string (50)                                     Supplier.OrganizationNumber
+byte                                            Supplier.PaymentTermId
 string [Phone](50)                              Supplier.Phone
 string [Name](50)                               Supplier.SupplierName
 int [PositiveNumber]                            Supplier.SupplierNumber
