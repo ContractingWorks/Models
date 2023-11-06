@@ -1694,6 +1694,7 @@ string                                          Offer.CustomerIdExternal
 string                                          Offer.DepartmentIdExternal
 string                                          Offer.ProductAgreementIdExternal
 string                                          Offer.ProjectIdExternal
+string                                          Offer.SelectedGenPDF_AttachmentIdExternal
 string                                          Offer.ServiceAgreementIdExternal
 int                                             Offer.AddressId
 DateTime                                        Offer.ApprovedUTC
@@ -1715,6 +1716,7 @@ int                                             Offer.OfferNumber
 short                                           Offer.ProductAgreementId
 int                                             Offer.ProjectId
 DateTime                                        Offer.RejectedUTC
+int                                             Offer.SelectedGenPDF_AttachmentId
 DateTime                                        Offer.SentUTC
 short                                           Offer.ServiceAgreementId
 DateTime                                        Offer.StartDateTimeUTC
@@ -2550,6 +2552,7 @@ bool                                            Settings_Employee.Sys_Deactivate
 bool                                            Settings_Employee.Sys_Historic
 bool                                            Settings_Employee.Sys_Incomplete
 byte                                            Settings_Main.Settings_MainId
+string                                          Settings_Main.CompanyLogo_AttachmentIdExternal
 string                                          Settings_Main.DepartmentIdExternal
 string                                          Settings_Main.IndustryTypeIdExternal
 string                                          Settings_Main.InvoiceTemplateIdExternal
@@ -2558,9 +2561,12 @@ string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
+string (50)                                     Settings_Main.Address1
+string (50)                                     Settings_Main.Address2
 string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
+int                                             Settings_Main.CompanyLogo_AttachmentId
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
 string [Email](200)                             Settings_Main.Email
@@ -2571,6 +2577,8 @@ bool                                            Settings_Main.Invoice_SendImmedi
 short                                           Settings_Main.InvoiceTemplateId
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
+string (10)                                     Settings_Main.PostalNumber
+string (50)                                     Settings_Main.PostalPlace
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
