@@ -3000,6 +3000,7 @@ string [MultilineText](100)                     Tariff.Description
 bool                                            Tariff.Sys_Deactivated
 bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
+int                                             Tariff.TariffVersionId
 short                                           Tariff.UnitId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
@@ -3034,7 +3035,6 @@ bool                                            TariffVersion.Sys_Incomplete
 ClientLevelEnum                                 TariffVersion.Enum_ClientLevelId
 IndustryTypeEnum                                TariffVersion.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffVersion.Enum_PublicationStatusId
---> Tariff[]                                    TariffVersion.Tariffs
 short                                           Team.TeamId
 string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
