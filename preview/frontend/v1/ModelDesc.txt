@@ -233,6 +233,13 @@ bool                                            Attribute.Sys_Deactivated
 bool                                            Attribute.Sys_Historic
 bool                                            Attribute.Sys_Incomplete
 short                                           Attribute.UnitId
+int                                             AttributeValue.AttributeValueId
+int                                             AttributeValue.AttributeId
+decimal                                         AttributeValue.Number
+bool                                            AttributeValue.Sys_Deactivated
+bool                                            AttributeValue.Sys_Historic
+bool                                            AttributeValue.Sys_Incomplete
+string (50)                                     AttributeValue.Text
 int                                             BoligmappaAttachment.BoligmappaAttachmentId
 int                                             BoligmappaAttachment.BoligmappaFileId
 string (50)                                     BoligmappaAttachment.BoligmappaNumber
@@ -478,7 +485,7 @@ short                                           Department.DepartmentId
 string                                          Department.DepartmentIdExternal
 string                                          Department.ProductAgreementIdExternal
 string                                          Department.ServiceAgreementIdExternal
-short                                           Department.DepartmentNumber
+int                                             Department.DepartmentNumber
 string [MultilineText](100)                     Department.Description
 bool                                            Department.Inactive
 decimal                                         Department.MarginMinPercent
@@ -1637,6 +1644,11 @@ bool                                            LedgerAccount.Sys_Deactivated
 bool                                            LedgerAccount.Sys_Historic
 bool                                            LedgerAccount.Sys_Incomplete
 --> ExternalSystemLedgerAccount[]               LedgerAccount.ExternalSystemLedgerAccounts
+int                                             Manufaturer.ManufaturerId
+string [Name](100)                              Manufaturer.Name
+bool                                            Manufaturer.Sys_Deactivated
+bool                                            Manufaturer.Sys_Historic
+bool                                            Manufaturer.Sys_Incomplete
 int                                             MapData.MapDataId
 DateTime                                        MapData.ApplyDoneUTC
 DateTime                                        MapData.ApplyStartedUTC
@@ -1800,13 +1812,16 @@ bool                                            Product.InvoiceMergeProduct
 bool                                            Product.InvoiceShowProductNumber
 bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
+int                                             Product.ManufaturerId
 short                                           Product.POSPurchase_VATFree_LedgerAccountId
 short                                           Product.POSPurchase_VATRequired_LedgerAccountId
 short                                           Product.POSSale_VATFree_LedgerAccountId
 short                                           Product.POSSale_VATRequired_LedgerAccountId
 bool                                            Product.PriceOnly
+int                                             Product.ProductGroupId
 string [Name](100)                              Product.ProductName
 string (50)                                     Product.ProductNumber
+int                                             Product.ProductSeriesId
 short                                           Product.Purchase_VATFree_LedgerAccountId
 short                                           Product.Purchase_VATRequired_LedgerAccountId
 short                                           Product.Sale_VATFree_LedgerAccountId
@@ -1819,6 +1834,7 @@ bool                                            Product.Sys_Incomplete
 string (3)                                      Product.Unit
 byte                                            Product.VATRateId
 --> ExternalSystemProduct[]                     Product.ExternalSystemProducts
+--> ProductAttribute[]                          Product.ProductAttributes
 --> ProductExtendedInfo[]                       Product.ProductExtendedInfos
 short                                           ProductAgreement.ProductAgreementId
 string                                          ProductAgreement.ProductAgreementIdExternal
@@ -1858,7 +1874,6 @@ int                                             ProductAttribute.ProductAttribut
 string                                          ProductAttribute.ProductIdExternal
 int                                             ProductAttribute.AttributeId
 decimal                                         ProductAttribute.Number
-int                                             ProductAttribute.ProductId
 bool                                            ProductAttribute.Sys_Deactivated
 bool                                            ProductAttribute.Sys_Historic
 bool                                            ProductAttribute.Sys_Incomplete
@@ -1913,6 +1928,19 @@ bool                                            ProductExtendedInfo.Sys_Historic
 bool                                            ProductExtendedInfo.Sys_Incomplete
 string (50)                                     ProductExtendedInfo.Type
 string                                          ProductExtendedInfo.Value
+int                                             ProductGroup.ProductGroupId
+string (20)                                     ProductGroup.Code
+string [MultilineText](100)                     ProductGroup.Description
+int                                             ProductGroup.Parent_ProductGroupId
+bool                                            ProductGroup.Sys_Deactivated
+bool                                            ProductGroup.Sys_Historic
+bool                                            ProductGroup.Sys_Incomplete
+--> ProductGroupAttribute[]                     ProductGroup.ProductGroupAttributes
+int                                             ProductGroupAttribute.ProductGroupAttributeId
+int                                             ProductGroupAttribute.AttributeId
+bool                                            ProductGroupAttribute.Sys_Deactivated
+bool                                            ProductGroupAttribute.Sys_Historic
+bool                                            ProductGroupAttribute.Sys_Incomplete
 int                                             ProductImport.ProductImportId
 string                                          ProductImport.SupplierIndustryTypeIdExternal
 string (250)                                    ProductImport.FileName
@@ -2078,6 +2106,12 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 short                                           ProductNoteLineBatch.Sys_HistoricStorageId
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
+int                                             ProductSeries.ProductSeriesId
+int                                             ProductSeries.ManufaturerId
+string [Name](100)                              ProductSeries.Name
+bool                                            ProductSeries.Sys_Deactivated
+bool                                            ProductSeries.Sys_Historic
+bool                                            ProductSeries.Sys_Incomplete
 int                                             ProductStructure.ProductStuctureId
 string                                          ProductStructure.ParentProductIdExternal
 string                                          ProductStructure.ProductIdExternal
