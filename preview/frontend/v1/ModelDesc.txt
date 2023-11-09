@@ -1644,11 +1644,11 @@ bool                                            LedgerAccount.Sys_Deactivated
 bool                                            LedgerAccount.Sys_Historic
 bool                                            LedgerAccount.Sys_Incomplete
 --> ExternalSystemLedgerAccount[]               LedgerAccount.ExternalSystemLedgerAccounts
-int                                             Manufaturer.ManufaturerId
-string [Name](100)                              Manufaturer.Name
-bool                                            Manufaturer.Sys_Deactivated
-bool                                            Manufaturer.Sys_Historic
-bool                                            Manufaturer.Sys_Incomplete
+int                                             Manufacturer.ManufacturerId
+string [Name](100)                              Manufacturer.Name
+bool                                            Manufacturer.Sys_Deactivated
+bool                                            Manufacturer.Sys_Historic
+bool                                            Manufacturer.Sys_Incomplete
 int                                             MapData.MapDataId
 DateTime                                        MapData.ApplyDoneUTC
 DateTime                                        MapData.ApplyStartedUTC
@@ -1812,7 +1812,7 @@ bool                                            Product.InvoiceMergeProduct
 bool                                            Product.InvoiceShowProductNumber
 bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
-int                                             Product.ManufaturerId
+int                                             Product.ManufacturerId
 short                                           Product.POSPurchase_VATFree_LedgerAccountId
 short                                           Product.POSPurchase_VATRequired_LedgerAccountId
 short                                           Product.POSSale_VATFree_LedgerAccountId
@@ -2107,7 +2107,7 @@ short                                           ProductNoteLineBatch.Sys_Histori
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
 int                                             ProductSeries.ProductSeriesId
-int                                             ProductSeries.ManufaturerId
+int                                             ProductSeries.ManufacturerId
 string [Name](100)                              ProductSeries.Name
 bool                                            ProductSeries.Sys_Deactivated
 bool                                            ProductSeries.Sys_Historic
