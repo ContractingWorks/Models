@@ -73,6 +73,7 @@ short                                           Assignment.Default_InvoiceTempla
 short                                           Assignment.Default_ProductAgreementId
 short                                           Assignment.DepartmentId
 string [MultilineText]                          Assignment.Description
+DateTime                                        Assignment.DueDate
 string [Email](100)                             Assignment.EmailAddress
 DateTime                                        Assignment.EndDateTimeUTC
 decimal                                         Assignment.EstimatedCompletionPercentage
@@ -108,6 +109,7 @@ bool                                            Assignment.SyncToMobileDevice
 bool                                            Assignment.Sys_Deactivated
 bool                                            Assignment.Sys_Historic
 bool                                            Assignment.Sys_Incomplete
+bool                                            Assignment.Sys_InitialPostProcessNeeded
 string (255)                                    Assignment.Sys_Tags
 byte                                            Assignment.TimeSheetAttachmentsNumber
 DateTime                                        Assignment.WarrantyDate
@@ -2528,21 +2530,24 @@ short                                           ServiceAgreementDetail.WageCodeI
 ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_ServiceAgreementDetailValueTypeId
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
 int                                             ServiceContract.ServiceContractId
+DateTime                                        ServiceContract.ActiveDueDate
 int                                             ServiceContract.Default_AssignmentId
+string (1024)                                   ServiceContract.DueRecurrencePattern
 DateTime                                        ServiceContract.EndDate
 bool                                            ServiceContract.Inactive
 decimal                                         ServiceContract.IndexRate
 byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
 string (1024)                                   ServiceContract.InvoiceRecurrencePattern
-DateTime                                        ServiceContract.NextOccurranceDate
-string (1024)                                   ServiceContract.RecurrencePattern
+DateTime                                        ServiceContract.NextDueDate
+short                                           ServiceContract.NextDueLeadDays
 int [PositiveNumber]                            ServiceContract.ServiceContractNumber
 string (200)                                    ServiceContract.ServiceContractReference
 DateTime                                        ServiceContract.StartDate
 bool                                            ServiceContract.Sys_Deactivated
 bool                                            ServiceContract.Sys_Historic
 bool                                            ServiceContract.Sys_Incomplete
+bool                                            ServiceContract.Sys_NextDueProcessed
 ServiceContractRecurrenceHandlingEnum           ServiceContract.Enum_ServiceContractRecurrenceHandlingId
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
@@ -2619,6 +2624,7 @@ bool                                            Settings_Main.ProductNote_CostPr
 bool                                            Settings_Main.ProjectPeriod_AutoCreate
 int                                             Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                            Settings_Main.Require2FAForAllUsers
+byte                                            Settings_Main.ServiceContract_DueLeadDays
 short                                           Settings_Main.Standard_SupplierIndustryTypeId
 short                                           Settings_Main.StorageId
 short                                           Settings_Main.SupplierIndustryTypeId
@@ -3042,7 +3048,6 @@ string [MultilineText](100)                     Tariff.Description
 bool                                            Tariff.Sys_Deactivated
 bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
-int                                             Tariff.TariffVersionId
 short                                           Tariff.UnitId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
@@ -3077,6 +3082,7 @@ bool                                            TariffVersion.Sys_Incomplete
 ClientLevelEnum                                 TariffVersion.Enum_ClientLevelId
 IndustryTypeEnum                                TariffVersion.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffVersion.Enum_PublicationStatusId
+--> Tariff[]                                    TariffVersion.Tariffs
 short                                           Team.TeamId
 string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
