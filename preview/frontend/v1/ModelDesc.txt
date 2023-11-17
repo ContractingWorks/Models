@@ -314,6 +314,27 @@ bool                                            BudgetScenario.Sys_Deactivated
 bool                                            BudgetScenario.Sys_Historic
 bool                                            BudgetScenario.Sys_Incomplete
 --> ExternalSystemBudgetScenario[]              BudgetScenario.ExternalSystemBudgetScenarios
+int                                             CompanyInfo.CompanyInfoId
+string                                          CompanyInfo.CompanyLogo_AttachmentIdExternal
+string (50)                                     CompanyInfo.Address1
+string (50)                                     CompanyInfo.Address2
+int                                             CompanyInfo.CompanyLogo_AttachmentId
+string [Name](100)                              CompanyInfo.CompanyName
+string [Email](200)                             CompanyInfo.Email
+string (50)                                     CompanyInfo.OrganizationNumber
+string [Phone](50)                              CompanyInfo.PhoneNumberForSMS
+string (10)                                     CompanyInfo.PostalNumber
+string (50)                                     CompanyInfo.PostalPlace
+bool                                            CompanyInfo.Sys_Deactivated
+bool                                            CompanyInfo.Sys_Historic
+bool                                            CompanyInfo.Sys_Incomplete
+--> CompanyInfoAttachment[]                     CompanyInfo.CompanyInfoAttachments
+int                                             CompanyInfoAttachment.CompanyInfoAttachmentId
+string                                          CompanyInfoAttachment.AttachmentIdExternal
+int                                             CompanyInfoAttachment.AttachmentId
+bool                                            CompanyInfoAttachment.Sys_Deactivated
+bool                                            CompanyInfoAttachment.Sys_Historic
+bool                                            CompanyInfoAttachment.Sys_Incomplete
 short                                           Competency.CompetencyId
 byte                                            Competency.CompetencyGroupId
 string [MultilineText](450)                     Competency.Description
@@ -2591,7 +2612,6 @@ bool                                            Settings_Employee.Sys_Deactivate
 bool                                            Settings_Employee.Sys_Historic
 bool                                            Settings_Employee.Sys_Incomplete
 byte                                            Settings_Main.Settings_MainId
-string                                          Settings_Main.CompanyLogo_AttachmentIdExternal
 string                                          Settings_Main.DepartmentIdExternal
 string                                          Settings_Main.IndustryTypeIdExternal
 string                                          Settings_Main.InvoiceTemplateIdExternal
@@ -2600,12 +2620,9 @@ string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
-string (50)                                     Settings_Main.Address1
-string (50)                                     Settings_Main.Address2
 string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
-int                                             Settings_Main.CompanyLogo_AttachmentId
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
 string [Email](200)                             Settings_Main.Email
@@ -2616,8 +2633,6 @@ bool                                            Settings_Main.Invoice_SendImmedi
 short                                           Settings_Main.InvoiceTemplateId
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
-string (10)                                     Settings_Main.PostalNumber
-string (50)                                     Settings_Main.PostalPlace
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
