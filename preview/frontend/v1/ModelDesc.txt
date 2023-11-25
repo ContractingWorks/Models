@@ -64,7 +64,7 @@ bool                                            Assignment.Archived
 int                                             Assignment.AssignmentCategoryId
 DateTime                                        Assignment.AssignmentCompleteDateTimeUTC
 bool                                            Assignment.AssignmentCompleteMobileDevice
-int [PositiveNumber]                            Assignment.AssignmentNumber
+int                                             Assignment.AssignmentNumber
 int                                             Assignment.CaseHandler_EmployeeId
 string (100)                                    Assignment.Contact
 decimal                                         Assignment.CoverageRateFixedPrice
