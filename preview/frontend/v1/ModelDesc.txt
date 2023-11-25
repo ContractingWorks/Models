@@ -1,6 +1,7 @@
 Type [validation category](max length)          TableName.ColumnName
 int                                             Address.AddressId
 string                                          Address.AddressIdExternal
+string                                          Address.ParentAddressIdExternal
 string (50)                                     Address.Address1
 string (50)                                     Address.Address2
 int                                             Address.CadastralUnitNumber
@@ -21,6 +22,7 @@ int                                             Address.LeaseholdUnitNumber
 int                                             Address.MunicipalityNumber
 string [Name](100)                              Address.Name
 string [Name](100)                              Address.Name2
+int                                             Address.ParentAddressId
 string (10)                                     Address.PostalNumber
 string (50)                                     Address.PostalPlace
 int                                             Address.PropertyUnitNumber
@@ -351,6 +353,7 @@ bool                                            CompetencyGroup.Sys_Historic
 bool                                            CompetencyGroup.Sys_Incomplete
 int                                             Contact.ContactId
 string                                          Contact.ContactIdExternal
+string                                          Contact.ParentContactIdExternal
 string [Email](200)                             Contact.Email
 bool                                            Contact.InvoiceSendAttachment
 bool                                            Contact.InvoiceSendCopy
@@ -504,6 +507,18 @@ short                                           CustomerProductAgreement.Product
 bool                                            CustomerProductAgreement.Sys_Deactivated
 bool                                            CustomerProductAgreement.Sys_Historic
 bool                                            CustomerProductAgreement.Sys_Incomplete
+int                                             DataGrid.DataGridId
+string                                          DataGrid.AgGridColumnState
+string                                          DataGrid.AgGridFilter
+string (50)                                     DataGrid.DataGridKey
+string [MultilineText](200)                     DataGrid.Description
+bool                                            DataGrid.Editable
+string [Name](50)                               DataGrid.Name
+bool                                            DataGrid.Sys_Deactivated
+bool                                            DataGrid.Sys_Historic
+bool                                            DataGrid.Sys_Incomplete
+int                                             DataGrid.UserId
+bool                                            DataGrid.VisibleToAllUsers
 short                                           Department.DepartmentId
 string                                          Department.DepartmentIdExternal
 string                                          Department.ProductAgreementIdExternal
@@ -1696,6 +1711,20 @@ string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
+int                                             Note.NoteId
+string                                          Note.AssignmentIdExternal
+string                                          Note.CustomerIdExternal
+string                                          Note.InvoiceIdExternal
+string                                          Note.SupplierInvoiceIdExternal
+int                                             Note.AssignmentId
+int                                             Note.CustomerId
+int                                             Note.InvoiceId
+bool                                            Note.IsPublic
+string [MultilineText]                          Note.NoteText
+int                                             Note.SupplierInvoiceId
+bool                                            Note.Sys_Deactivated
+bool                                            Note.Sys_Historic
+bool                                            Note.Sys_Incomplete
 int                                             NumberSeries.NumberSeriesId
 string                                          NumberSeries.NumberSeriesIdExternal
 string                                          NumberSeries.ValidFor_CustomerClassIdExternal
@@ -1857,7 +1886,6 @@ bool                                            Product.Sys_Incomplete
 string (3)                                      Product.Unit
 byte                                            Product.VATRateId
 --> ExternalSystemProduct[]                     Product.ExternalSystemProducts
---> ProductAttribute[]                          Product.ProductAttributes
 --> ProductExtendedInfo[]                       Product.ProductExtendedInfos
 short                                           ProductAgreement.ProductAgreementId
 string                                          ProductAgreement.ProductAgreementIdExternal
@@ -1897,6 +1925,7 @@ int                                             ProductAttribute.ProductAttribut
 string                                          ProductAttribute.ProductIdExternal
 int                                             ProductAttribute.AttributeId
 decimal                                         ProductAttribute.Number
+int                                             ProductAttribute.ProductId
 bool                                            ProductAttribute.Sys_Deactivated
 bool                                            ProductAttribute.Sys_Historic
 bool                                            ProductAttribute.Sys_Incomplete
