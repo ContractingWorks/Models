@@ -2263,7 +2263,7 @@ ProjectStatusEnum                               Project.Enum_ProjectStatusId
 --> ProjectAttachment[]                         Project.ProjectAttachments
 int                                             ProjectAccount.ProjectAccountId
 string                                          ProjectAccount.ProjectAccountIdExternal
-int [PositiveNumber]                            ProjectAccount.AccountNumber
+int                                             ProjectAccount.AccountNumber
 int                                             ProjectAccount.Assessment_ProjectAccountReportCategoryId
 bool                                            ProjectAccount.BudgetUse
 string [MultilineText](100)                     ProjectAccount.Description
