@@ -637,7 +637,7 @@ bool                                            EmployeeAttachment.Sys_Incomplet
 short                                           EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string                                          EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
 string [Name](200)                              EmployeeInvoiceCategory.Name
-short [PositiveNumber]                          EmployeeInvoiceCategory.Number
+short                                           EmployeeInvoiceCategory.Number
 bool                                            EmployeeInvoiceCategory.Sys_Deactivated
 bool                                            EmployeeInvoiceCategory.Sys_Historic
 bool                                            EmployeeInvoiceCategory.Sys_Incomplete
@@ -1367,7 +1367,7 @@ bool                                            IndexRateGroup.Sys_Incomplete
 byte                                            IndustryType.IndustryTypeId
 string                                          IndustryType.IndustryTypeIdExternal
 string [MultilineText](100)                     IndustryType.Description
-byte [PositiveNumber]                           IndustryType.IndustryTypeNumber
+byte                                            IndustryType.IndustryTypeNumber
 bool                                            IndustryType.Sys_Deactivated
 bool                                            IndustryType.Sys_Historic
 bool                                            IndustryType.Sys_Incomplete
@@ -1665,7 +1665,7 @@ bool                                            InvoiceTemplateDetail.Sys_Incomp
 short                                           JobCategory.JobCategoryId
 string                                          JobCategory.JobCategoryIdExternal
 string [Name](200)                              JobCategory.Name
-short [PositiveNumber]                          JobCategory.Number
+short                                           JobCategory.Number
 bool                                            JobCategory.Sys_Deactivated
 bool                                            JobCategory.Sys_Historic
 bool                                            JobCategory.Sys_Incomplete
@@ -1675,7 +1675,7 @@ string                                          LedgerAccount.LedgerAccountIdExt
 string                                          LedgerAccount.ParentLedgerAccountIdExternal
 string                                          LedgerAccount.ProjectAccountIdExternal
 string [MultilineText](100)                     LedgerAccount.Description
-int [PositiveNumber]                            LedgerAccount.LedgerAccountNumber
+int                                             LedgerAccount.LedgerAccountNumber
 short                                           LedgerAccount.ParentLedgerAccountId
 int                                             LedgerAccount.ProjectAccountId
 bool                                            LedgerAccount.Sys_Deactivated
@@ -1894,7 +1894,7 @@ string                                          ProductAgreement.UsePriceFrom_Su
 bool                                            ProductAgreement.CalculateFromInvoice
 string [MultilineText](100)                     ProductAgreement.Description
 byte                                            ProductAgreement.IndustryTypeId
-short [PositiveNumber]                          ProductAgreement.Number
+short                                           ProductAgreement.Number
 bool                                            ProductAgreement.Sys_Deactivated
 bool                                            ProductAgreement.Sys_Historic
 bool                                            ProductAgreement.Sys_Incomplete
@@ -2322,7 +2322,7 @@ bool                                            ProjectPeriod.Sys_Incomplete
 short                                           ProjectProductAgreement.ProjectProductAgreementId
 string                                          ProjectProductAgreement.ProductAgreementIdExternal
 string                                          ProjectProductAgreement.ProjectIdExternal
-short [PositiveNumber]                          ProjectProductAgreement.Number
+short                                           ProjectProductAgreement.Number
 byte                                            ProjectProductAgreement.Priority
 short                                           ProjectProductAgreement.ProductAgreementId
 int                                             ProjectProductAgreement.ProjectId
@@ -2557,7 +2557,7 @@ ApprovalStatusEnum                              Service.Wage_Enum_ApprovalStatus
 short                                           ServiceAgreement.ServiceAgreementId
 string                                          ServiceAgreement.ServiceAgreementIdExternal
 string [MultilineText](50)                      ServiceAgreement.Description
-short [PositiveNumber]                          ServiceAgreement.Number
+short                                           ServiceAgreement.Number
 bool                                            ServiceAgreement.Sys_Deactivated
 bool                                            ServiceAgreement.Sys_Historic
 bool                                            ServiceAgreement.Sys_Incomplete
@@ -2828,7 +2828,7 @@ bool                                            Storage.CountInProgress
 string [MultilineText](100)                     Storage.Description
 short                                           Storage.ProfitAndLoss_LedgerAccountId
 int                                             Storage.ResponsibleEmployeeId
-short [PositiveNumber]                          Storage.StorageNumber
+short                                           Storage.StorageNumber
 int                                             Storage.SupplierInvoice_VirtualAssignmentNumber
 bool                                            Storage.SyncToMobileDevice
 bool                                            Storage.Sys_Deactivated
@@ -2875,7 +2875,7 @@ string (50)                                     Supplier.OrganizationNumber
 byte                                            Supplier.PaymentTermId
 string [Phone](50)                              Supplier.Phone
 string [Name](50)                               Supplier.SupplierName
-int [PositiveNumber]                            Supplier.SupplierNumber
+int                                             Supplier.SupplierNumber
 bool                                            Supplier.Sys_Deactivated
 bool                                            Supplier.Sys_Historic
 bool                                            Supplier.Sys_Incomplete
@@ -2898,7 +2898,7 @@ bool                                            SupplierIndustryType.IsCustom
 bool                                            SupplierIndustryType.IsDefaultForIndustryType
 decimal                                         SupplierIndustryType.MarkupForNewDiscountGroups
 string [Name](50)                               SupplierIndustryType.Name
-short [PositiveNumber]                          SupplierIndustryType.Number
+short                                           SupplierIndustryType.Number
 string (50)                                     SupplierIndustryType.OrganizationNumber
 bool                                            SupplierIndustryType.PriceCalculationBase
 DateTime                                        SupplierIndustryType.PriceLastUpdateDate
@@ -3132,7 +3132,7 @@ string [Name](50)                               Team.Name
 bool                                            Team.Sys_Deactivated
 bool                                            Team.Sys_Historic
 bool                                            Team.Sys_Incomplete
-int [PositiveNumber]                            Team.TeamNumber
+int                                             Team.TeamNumber
 --> TeamEmployee[]                              Team.TeamEmployees
 short                                           TeamEmployee.TeamEmployeeId
 string                                          TeamEmployee.EmployeeIdExternal
@@ -3262,7 +3262,7 @@ bool                                            WageGroup.Sys_Deactivated
 bool                                            WageGroup.Sys_Historic
 bool                                            WageGroup.Sys_Incomplete
 string [Name](200)                              WageGroup.WageGroupName
-short [PositiveNumber]                          WageGroup.WageGroupNumber
+short                                           WageGroup.WageGroupNumber
 --> ExternalSystemWageGroup[]                   WageGroup.ExternalSystemWageGroups
 int                                             WagePeriod.WagePeriodId
 string                                          WagePeriod.WagePeriodIdExternal
