@@ -2591,7 +2591,7 @@ DateTime                                        ServiceContract.IndexRateStartDa
 string (1024)                                   ServiceContract.InvoiceRecurrencePattern
 DateTime                                        ServiceContract.NextDueDate
 short                                           ServiceContract.NextDueLeadDays
-int [PositiveNumber]                            ServiceContract.ServiceContractNumber
+int                                             ServiceContract.ServiceContractNumber
 string (200)                                    ServiceContract.ServiceContractReference
 DateTime                                        ServiceContract.StartDate
 bool                                            ServiceContract.Sys_Deactivated
