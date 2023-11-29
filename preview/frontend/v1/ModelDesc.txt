@@ -2649,6 +2649,8 @@ string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
+string                                          Settings_Main.VATFree_Int_VATRateIdExternal
+string                                          Settings_Main.VATFree_Nat_VATRateIdExternal
 string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
@@ -2680,6 +2682,8 @@ bool                                            Settings_Main.Sys_Incomplete
 bool                                            Settings_Main.UseDepartments
 bool                                            Settings_Main.UseDimensions
 bool                                            Settings_Main.UseServiceApprovalWage
+byte                                            Settings_Main.VATFree_Int_VATRateId
+byte                                            Settings_Main.VATFree_Nat_VATRateId
 StorageModeEnum                                 Settings_Main.Enum_StorageModeId
 TimeZoneEnum                                    Settings_Main.Enum_TimeZoneId
 byte                                            Settings_Payroll.Settings_PayrollId
