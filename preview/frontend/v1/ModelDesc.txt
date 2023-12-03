@@ -2953,6 +2953,7 @@ string                                          SupplierInvoice.SupplierIndustry
 int                                             SupplierInvoice.AssignmentId
 string (50)                                     SupplierInvoice.AssignmentNumberTxt
 string [MultilineText](250)                     SupplierInvoice.Comment
+bool                                            SupplierInvoice.DeactivateRelatedProductNotes
 string [MultilineText](500)                     SupplierInvoice.Description
 byte                                            SupplierInvoice.IndustryTypeId
 DateTime                                        SupplierInvoice.InvoiceDate
