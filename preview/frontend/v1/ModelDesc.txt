@@ -2046,7 +2046,7 @@ string [MultilineText](500)                     ProductNote.NoteDescription
 int                                             ProductNote.NoteMovedFromAssignmentId
 int                                             ProductNote.NoteMovedToAssignmentId
 short                                           ProductNote.NoteMovedToStorageId
-int [PositiveNumber]                            ProductNote.ProductNoteNumber
+int                                             ProductNote.ProductNoteNumber
 int                                             ProductNote.RegBy_EmployeeId
 DateTime                                        ProductNote.RegisteredTimeUTC
 bool                                            ProductNote.ReturnNote
@@ -2054,6 +2054,7 @@ bool                                            ProductNote.SkipOnNextInvoice
 bool                                            ProductNote.Sys_Deactivated
 bool                                            ProductNote.Sys_Historic
 bool                                            ProductNote.Sys_Incomplete
+bool                                            ProductNote.Sys_InitialPostProcessNeeded
 string (50)                                     ProductNote.VoucherNumber
 OriginTypeEnum                                  ProductNote.Enum_OriginTypeId
 --> ExternalSystemProductNote[]                 ProductNote.ExternalSystemProductNotes
