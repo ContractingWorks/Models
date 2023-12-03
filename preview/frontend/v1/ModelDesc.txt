@@ -2051,6 +2051,7 @@ int                                             ProductNote.RegBy_EmployeeId
 DateTime                                        ProductNote.RegisteredTimeUTC
 bool                                            ProductNote.ReturnNote
 bool                                            ProductNote.SkipOnNextInvoice
+int                                             ProductNote.SupplierInvoiceId
 bool                                            ProductNote.Sys_Deactivated
 bool                                            ProductNote.Sys_Historic
 bool                                            ProductNote.Sys_Incomplete
@@ -2136,6 +2137,7 @@ bool                                            ProductNoteLine.Sys_CostPriceLoc
 bool                                            ProductNoteLine.Sys_Deactivated
 bool                                            ProductNoteLine.Sys_Historic
 bool                                            ProductNoteLine.Sys_Incomplete
+bool                                            ProductNoteLine.Sys_InitialPostProcessNeeded
 int                                             ProductNoteLine.Sys_InvoicedProjectPeriod
 int                                             ProductNoteLine.Sys_InvoicedProjectPeriodId
 string (50)                                     ProductNoteLine.Sys_LastChangeOrigin
@@ -2976,7 +2978,6 @@ bool                                            SupplierInvoice.Sys_PostProcessN
 string (50)                                     SupplierInvoice.VoucherNumber
 SupplierInvoiceStatusEnum                       SupplierInvoice.Enum_SupplierInvoiceStatusId
 --> ExternalSystemSupplierInvoice[]             SupplierInvoice.ExternalSystemSupplierInvoices
---> ProductNote[]                               SupplierInvoice.ProductNotes
 --> SupplierInvoiceAttachment[]                 SupplierInvoice.SupplierInvoiceAttachments
 --> SupplierInvoiceLine[]                       SupplierInvoice.SupplierInvoiceLines
 int                                             SupplierInvoiceAttachment.SupplierInvoiceAttachmentId
