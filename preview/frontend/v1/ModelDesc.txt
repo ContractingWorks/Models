@@ -2536,13 +2536,13 @@ bool                                            Service.SyncToMobileDevice
 bool                                            Service.Sys_Deactivated
 bool                                            Service.Sys_Historic
 bool                                            Service.Sys_Incomplete
+bool                                            Service.Sys_InitialPostProcessNeeded
 int                                             Service.Sys_InvoicedProjectPeriod
 int                                             Service.Sys_InvoicedProjectPeriodId
 bool                                            Service.Sys_IsWorkTime
 string (50)                                     Service.Sys_LastChangeOrigin
 bool                                            Service.Sys_NextWageCodeProcessed
 string (500)                                    Service.Sys_PostProcessMessage
-bool                                            Service.Sys_PostProcessNeeded
 byte                                            Service.Sys_ProjectAccountCategoryId
 int                                             Service.Sys_ProjectPeriod
 int                                             Service.Wage_ApprovalEmployeeId
