@@ -2065,7 +2065,6 @@ int                                             ProductNote.RegBy_EmployeeId
 DateTime                                        ProductNote.RegisteredTimeUTC
 bool                                            ProductNote.ReturnNote
 bool                                            ProductNote.SkipOnNextInvoice
-int                                             ProductNote.SupplierInvoiceId
 bool                                            ProductNote.Sys_Deactivated
 bool                                            ProductNote.Sys_Historic
 bool                                            ProductNote.Sys_Incomplete
@@ -3006,6 +3005,7 @@ bool                                            SupplierInvoice.Sys_PostProcessN
 string (50)                                     SupplierInvoice.VoucherNumber
 SupplierInvoiceStatusEnum                       SupplierInvoice.Enum_SupplierInvoiceStatusId
 --> ExternalSystemSupplierInvoice[]             SupplierInvoice.ExternalSystemSupplierInvoices
+--> ProductNote[]                               SupplierInvoice.ProductNotes
 --> SupplierInvoiceAttachment[]                 SupplierInvoice.SupplierInvoiceAttachments
 --> SupplierInvoiceLine[]                       SupplierInvoice.SupplierInvoiceLines
 int                                             SupplierInvoiceAttachment.SupplierInvoiceAttachmentId
