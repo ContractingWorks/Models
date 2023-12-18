@@ -2157,7 +2157,6 @@ bool                                            ProductNoteLine.Sys_InitialPostP
 int                                             ProductNoteLine.Sys_InvoicedProjectPeriod
 int                                             ProductNoteLine.Sys_InvoicedProjectPeriodId
 string (50)                                     ProductNoteLine.Sys_LastChangeOrigin
-bool                                            ProductNoteLine.Sys_PostProcessNeeded
 byte                                            ProductNoteLine.Sys_ProjectAccountCategoryId
 int                                             ProductNoteLine.Sys_ProjectPeriod
 short                                           ProductNoteLine.Sys_PurchaseAgreementId
