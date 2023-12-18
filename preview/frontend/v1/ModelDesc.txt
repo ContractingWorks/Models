@@ -2096,6 +2096,7 @@ string                                          ProductNoteLine.Income_LedgerAcc
 string                                          ProductNoteLine.Income_ProjectAccountIdExternal
 string                                          ProductNoteLine.InvoiceIdExternal
 string                                          ProductNoteLine.InvoiceLineIdExternal
+string                                          ProductNoteLine.Linked_ProductNoteLineIdExternal
 string                                          ProductNoteLine.Parent_ProductNoteLineIdExternal
 string                                          ProductNoteLine.ProductAgreementIdExternal
 string                                          ProductNoteLine.ProductNoteIdExternal
@@ -2121,6 +2122,7 @@ int                                             ProductNoteLine.InvoiceLineId
 int                                             ProductNoteLine.InvoiceSpecificationNumber
 bool                                            ProductNoteLine.IsFixedPrice
 bool                                            ProductNoteLine.IsVarious
+int                                             ProductNoteLine.Linked_ProductNoteLineId
 decimal                                         ProductNoteLine.ListPrice
 decimal                                         ProductNoteLine.Override_QuantityInvoice
 int                                             ProductNoteLine.Parent_ProductNoteLineId
