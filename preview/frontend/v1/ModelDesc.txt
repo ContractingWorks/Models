@@ -1739,6 +1739,7 @@ int                                             Note.SupplierInvoiceId
 bool                                            Note.Sys_Deactivated
 bool                                            Note.Sys_Historic
 bool                                            Note.Sys_Incomplete
+NoteSourceEnum                                  Note.Enum_NoteSourceId
 int                                             NumberSeries.NumberSeriesId
 string                                          NumberSeries.NumberSeriesIdExternal
 string                                          NumberSeries.ValidFor_CustomerClassIdExternal
