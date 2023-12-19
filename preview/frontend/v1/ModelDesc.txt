@@ -35,9 +35,7 @@ bool                                            Address.Sys_Incomplete
 --> ExternalSystemAddress[]                     Address.ExternalSystemAddresses
 int                                             Appointment.AppointmentId
 string                                          Appointment.AppointmentIdExternal
-string                                          Appointment.AssignmentIdExternal
 string                                          Appointment.EmployeeIdExternal
-int                                             Appointment.AssignmentId
 string [MultilineText]                          Appointment.Comment
 string [MultilineText](255)                     Appointment.Description
 int                                             Appointment.EmployeeId
@@ -47,6 +45,7 @@ bool                                            Appointment.SyncToMobileDevice
 bool                                            Appointment.Sys_Deactivated
 bool                                            Appointment.Sys_Historic
 bool                                            Appointment.Sys_Incomplete
+--> Assignment                                  Appointment.Assignment
 --> ExternalSystemAppointment[]                 Appointment.ExternalSystemAppointments
 int                                             Assignment.AssignmentId
 string                                          Assignment.AssignmentIdExternal
