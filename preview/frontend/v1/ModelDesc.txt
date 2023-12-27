@@ -3041,6 +3041,7 @@ int                                             SupplierInvoiceLine.DimensionVal
 string (500)                                    SupplierInvoiceLine.DimensionValueTxt_1
 bool                                            SupplierInvoiceLine.DoNotForwardInvoice
 bool                                            SupplierInvoiceLine.FallbackValueUsed
+bool                                            SupplierInvoiceLine.IgnoreInCW
 short                                           SupplierInvoiceLine.LedgerAccountId
 string (50)                                     SupplierInvoiceLine.LedgerAccountNumberTxt
 decimal                                         SupplierInvoiceLine.LineAmount
