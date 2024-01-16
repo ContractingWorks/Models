@@ -4016,6 +4016,7 @@ decimal                                         ServiceContract.IndexRate
 byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
 string (1024)                                   ServiceContract.InvoiceRecurrencePattern
+DateTime                                        ServiceContract.LastServiceDate
 DateTime                                        ServiceContract.NextDueDate
 short                                           ServiceContract.NextDueLeadDaysForNotification
 short                                           ServiceContract.NextDueLeadDaysForRecurrenceHandling
@@ -4025,7 +4026,8 @@ DateTime                                        ServiceContract.StartDate
 bool                                            ServiceContract.Sys_Deactivated
 bool                                            ServiceContract.Sys_Historic
 bool                                            ServiceContract.Sys_Incomplete
-bool                                            ServiceContract.Sys_NextDueProcessed
+bool                                            ServiceContract.Sys_NextDueForNotificationsProcessed
+bool                                            ServiceContract.Sys_NextDueForRecurrenceProcessed
 ServiceContractRecurrenceHandlingEnum           ServiceContract.Enum_ServiceContractRecurrenceHandlingId
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
@@ -4447,6 +4449,7 @@ string (50)                                     SupplierIndustryType.Organizatio
 bool                                            SupplierIndustryType.PriceCalculationBase
 DateTime                                        SupplierIndustryType.PriceLastUpdateDate
 int                                             SupplierIndustryType.SupplierId
+bool                                            SupplierIndustryType.SupplierInvoiceAutoCreateProduct
 bool                                            SupplierIndustryType.Sys_Deactivated
 bool                                            SupplierIndustryType.Sys_Historic
 bool                                            SupplierIndustryType.Sys_Incomplete
