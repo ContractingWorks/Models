@@ -130,6 +130,7 @@ DateTime                                        Assignment.OptimizedAtUTC
 byte                                            Assignment.PaymentTermId
 string [Phone](50)                              Assignment.Phone
 int                                             Assignment.PieceworkNumber
+int                                             Assignment.ProductAgreementGroupId
 int                                             Assignment.ProjectId
 bool                                            Assignment.ReadyToInvoice
 short                                           Assignment.ServiceAgreementId
@@ -143,6 +144,7 @@ bool                                            Assignment.Sys_Deactivated
 bool                                            Assignment.Sys_Historic
 bool                                            Assignment.Sys_Incomplete
 bool                                            Assignment.Sys_InitialPostProcessNeeded
+int                                             Assignment.Sys_PreviousProductAgreementGroupId
 string (255)                                    Assignment.Sys_Tags
 byte                                            Assignment.TimeSheetAttachmentsNumber
 DateTime                                        Assignment.WarrantyDate
@@ -627,6 +629,7 @@ string (50)                                     Customer.OrganizationNumber
 byte                                            Customer.PaymentTermId
 string [Phone](50)                              Customer.Phone
 bool                                            Customer.Private
+int                                             Customer.ProductAgreementGroupId
 short                                           Customer.ServiceAgreementId
 bool                                            Customer.Sys_CustomerClassApplied
 bool                                            Customer.Sys_Deactivated
@@ -3124,6 +3127,14 @@ string                                          ProductAgreementDetail.Ext_Out_E
 bool                                            ProductAgreementDetail.Ext_Out_Error_SetOK
 DateTime                                        ProductAgreementDetail.Ext_Out_LastSyncUTC
 --> ExternalSystemProductAgreementDetail[]      ProductAgreementDetail.ExternalSystemProductAgreementDetails
+int                                             ProductAgreementGroup.ProductAgreementGroupId
+string [MultilineText](100)                     ProductAgreementGroup.Description
+short                                           ProductAgreementGroup.Number
+byte                                            ProductAgreementGroup.Priority
+short                                           ProductAgreementGroup.ProductAgreementId
+bool                                            ProductAgreementGroup.Sys_Deactivated
+bool                                            ProductAgreementGroup.Sys_Historic
+bool                                            ProductAgreementGroup.Sys_Incomplete
 int                                             ProductAttribute.ProductAttributeId
 string                                          ProductAttribute.ProductIdExternal
 int                                             ProductAttribute.AttributeId
@@ -3304,10 +3315,12 @@ string                                          ProductNoteLine.InvoiceLineIdExt
 string                                          ProductNoteLine.Linked_ProductNoteLineIdExternal
 string                                          ProductNoteLine.Parent_ProductNoteLineIdExternal
 string                                          ProductNoteLine.ProductAgreementIdExternal
+string                                          ProductNoteLine.ProductIdExternal
 string                                          ProductNoteLine.ProductNoteIdExternal
 string                                          ProductNoteLine.ProductSupplierIndustryTypeIdExternal
 string                                          ProductNoteLine.ProjectPeriodIdExternal
 string                                          ProductNoteLine.StorageIdExternal
+string                                          ProductNoteLine.SupplierIndustryTypeIdExternal
 string                                          ProductNoteLine.SupplierInvoiceLineIdExternal
 short                                           ProductNoteLine.Cost_LedgerAccountId
 int                                             ProductNoteLine.Cost_ProjectAccountId
@@ -3333,6 +3346,7 @@ decimal                                         ProductNoteLine.Override_Quantit
 int                                             ProductNoteLine.Parent_ProductNoteLineId
 bool                                            ProductNoteLine.PriceOnly
 short                                           ProductNoteLine.ProductAgreementId
+int                                             ProductNoteLine.ProductId
 string [Name]                                   ProductNoteLine.ProductName
 string (50)                                     ProductNoteLine.ProductNumber
 int                                             ProductNoteLine.ProductSupplierIndustryTypeId
@@ -3345,6 +3359,7 @@ decimal                                         ProductNoteLine.SalesPriceInvoic
 bool                                            ProductNoteLine.SalesPriceModified
 int                                             ProductNoteLine.SortOrder
 short                                           ProductNoteLine.StorageId
+short                                           ProductNoteLine.SupplierIndustryTypeId
 int                                             ProductNoteLine.SupplierInvoiceLineId
 decimal                                         ProductNoteLine.SurchargePercent
 decimal                                         ProductNoteLine.SurchargePercentInvoice
@@ -3511,6 +3526,7 @@ decimal                                         Project.MarginPercent
 string [Name](100)                              Project.Name
 string [MultilineText]                          Project.Note
 int                                             Project.ParentProjectId
+int                                             Project.ProductAgreementGroupId
 bool                                            Project.ProjectAssessment
 DateTime                                        Project.ProjectDateTimeUTC
 short                                           Project.ProjectGroupId
@@ -4059,6 +4075,7 @@ bool                                            Settings_Assignment.MandatoryHpc
 bool                                            Settings_Assignment.MandatoryMatAgreement
 decimal                                         Settings_Assignment.MinimumCoveragePercent
 bool                                            Settings_Assignment.NoChangeCustomerAfterTimeMatInv
+int                                             Settings_Assignment.ProductAgreementGroupId
 bool                                            Settings_Assignment.ProductNote_CostPrice_Edit
 bool                                            Settings_Assignment.Sys_Deactivated
 bool                                            Settings_Assignment.Sys_Historic
