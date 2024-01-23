@@ -4737,7 +4737,7 @@ ClientLevelEnum                                 TariffProductDef.Enum_ClientLeve
 IndustryTypeEnum                                TariffProductDef.Enum_IndustryTypeId
 PublicationStatusEnum                           TariffProductDef.Enum_PublicationStatusId
 int                                             TariffVersion.TariffVersionId
-int                                             TariffVersion.AmountFactorInSeconds
+decimal                                         TariffVersion.AmountFactorInSeconds
 string (50)                                     TariffVersion.CreatedBy
 string [Name](50)                               TariffVersion.Name
 bool                                            TariffVersion.Sys_Deactivated
