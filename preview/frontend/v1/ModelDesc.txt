@@ -87,6 +87,7 @@ string                                          Assignment.CustomerIdExternal
 string                                          Assignment.Default_InvoiceTemplateIdExternal
 string                                          Assignment.Default_ProductAgreementIdExternal
 string                                          Assignment.DepartmentIdExternal
+string                                          Assignment.Invoice_CustomerIdExternal
 string                                          Assignment.JobResponsible_EmployeeIdExternal
 string                                          Assignment.PaymentTermIdExternal
 string                                          Assignment.ProjectIdExternal
@@ -117,6 +118,7 @@ bool                                            Assignment.FixedPriceInvoiced
 bool                                            Assignment.GroupedInvoicing
 bool                                            Assignment.InternalOnly
 string (200)                                    Assignment.InternalReference
+int                                             Assignment.Invoice_CustomerId
 string [MultilineText]                          Assignment.InvoiceComment
 int                                             Assignment.JobResponsible_EmployeeId
 bool                                            Assignment.JobResponsibleCompleted
@@ -3508,6 +3510,7 @@ string                                          Project.Default_AssignmentCatego
 string                                          Project.Default_InvoiceTemplateIdExternal
 string                                          Project.Default_ProductAgreementIdExternal
 string                                          Project.DepartmentIdExternal
+string                                          Project.Invoice_CustomerIdExternal
 string                                          Project.ParentProjectIdExternal
 string                                          Project.ProjectGroupIdExternal
 string                                          Project.ProjectTypeIdExternal
@@ -3527,6 +3530,7 @@ decimal                                         Project.EstimatedCompletionPerce
 decimal                                         Project.EstimatedTotalHours
 decimal                                         Project.FixedPrice
 bool                                            Project.Internal
+int                                             Project.Invoice_CustomerId
 bool                                            Project.InvoiceReserveSumAllAssignment
 decimal                                         Project.MarginPercent
 string [Name](100)                              Project.Name
