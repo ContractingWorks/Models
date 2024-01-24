@@ -4037,7 +4037,12 @@ bool                                            ServiceContract.Inactive
 decimal                                         ServiceContract.IndexRate
 byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
-string (1024)                                   ServiceContract.InvoiceRecurrencePattern
+DateTime                                        ServiceContract.InvoiceActiveDueDate
+string (1024)                                   ServiceContract.InvoiceDueRecurrencePattern
+DateTime                                        ServiceContract.InvoiceLastDate
+DateTime                                        ServiceContract.InvoiceNextDueDate
+short                                           ServiceContract.InvoiceNextDueLeadDaysForNotification
+short                                           ServiceContract.InvoiceNextDueLeadDaysForRecurrenceHandling
 DateTime                                        ServiceContract.LastServiceDate
 DateTime                                        ServiceContract.NextDueDate
 short                                           ServiceContract.NextDueLeadDaysForNotification
@@ -4048,6 +4053,7 @@ DateTime                                        ServiceContract.StartDate
 bool                                            ServiceContract.Sys_Deactivated
 bool                                            ServiceContract.Sys_Historic
 bool                                            ServiceContract.Sys_Incomplete
+bool                                            ServiceContract.Sys_NextDueForInvoiceNotificationsProcessed
 bool                                            ServiceContract.Sys_NextDueForNotificationsProcessed
 bool                                            ServiceContract.Sys_NextDueForRecurrenceProcessed
 ServiceContractRecurrenceHandlingEnum           ServiceContract.Enum_ServiceContractRecurrenceHandlingId
