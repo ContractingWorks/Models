@@ -3135,10 +3135,10 @@ short                                           ProductAgreementGroup.Number
 bool                                            ProductAgreementGroup.Sys_Deactivated
 bool                                            ProductAgreementGroup.Sys_Historic
 bool                                            ProductAgreementGroup.Sys_Incomplete
+--> ProductAgreementGroupLine[]                 ProductAgreementGroup.ProductAgreementGroupLines
 int                                             ProductAgreementGroupLine.ProductAgreementGroupLineId
 string                                          ProductAgreementGroupLine.ProductAgreementIdExternal
 byte                                            ProductAgreementGroupLine.Priority
-int                                             ProductAgreementGroupLine.ProductAgreementGroupId
 short                                           ProductAgreementGroupLine.ProductAgreementId
 bool                                            ProductAgreementGroupLine.Sys_Deactivated
 bool                                            ProductAgreementGroupLine.Sys_Historic
