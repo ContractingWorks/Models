@@ -2873,6 +2873,7 @@ string [MultilineText]                          Offer.InvoiceComment
 string [MultilineText]                          Offer.Note
 string [Name](50)                               Offer.OfferName
 int                                             Offer.OfferNumber
+int                                             Offer.ProductAgreementGroupId
 short                                           Offer.ProductAgreementId
 int                                             Offer.ProjectId
 DateTime                                        Offer.RejectedUTC
