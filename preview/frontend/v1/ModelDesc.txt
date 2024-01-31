@@ -85,13 +85,14 @@ string                                          Assignment.AssignmentCategoryIdE
 string                                          Assignment.CaseHandler_EmployeeIdExternal
 string                                          Assignment.CustomerIdExternal
 string                                          Assignment.Default_InvoiceTemplateIdExternal
-string                                          Assignment.Default_ProductAgreementIdExternal
 string                                          Assignment.DepartmentIdExternal
 string                                          Assignment.Invoice_CustomerIdExternal
 string                                          Assignment.JobResponsible_EmployeeIdExternal
 string                                          Assignment.PaymentTermIdExternal
+string                                          Assignment.ProductAgreementGroupIdExternal
 string                                          Assignment.ProjectIdExternal
 string                                          Assignment.ServiceAgreementIdExternal
+string                                          Assignment.Sys_PreviousProductAgreementGroupIdExternal
 bool                                            Assignment.Archived
 int                                             Assignment.AssignmentCategoryId
 DateTime                                        Assignment.AssignmentCompleteDateTimeUTC
@@ -104,7 +105,6 @@ decimal                                         Assignment.CoverageRateNotFixedP
 int                                             Assignment.CustomerId
 string (200)                                    Assignment.CustomerReference
 short                                           Assignment.Default_InvoiceTemplateId
-short                                           Assignment.Default_ProductAgreementId
 short                                           Assignment.DepartmentId
 string [MultilineText]                          Assignment.Description
 DateTime                                        Assignment.DueDate
@@ -599,9 +599,9 @@ string                                          Customer.CustomerIdExternal
 string                                          Customer.CustomerClassIdExternal
 string                                          Customer.Default_AssignmentCategoryIdExternal
 string                                          Customer.Default_InvoiceTemplateIdExternal
-string                                          Customer.Default_ProductAgreementIdExternal
 string                                          Customer.Invoice_CustomerIdExternal
 string                                          Customer.PaymentTermIdExternal
+string                                          Customer.ProductAgreementGroupIdExternal
 string                                          Customer.ServiceAgreementIdExternal
 string (50)                                     Customer.BankAccountNumber
 string [MultilineText](1024)                    Customer.Comment
@@ -611,7 +611,6 @@ short                                           Customer.CustomerClassId
 int                                             Customer.CustomerNumber
 int                                             Customer.Default_AssignmentCategoryId
 short                                           Customer.Default_InvoiceTemplateId
-short                                           Customer.Default_ProductAgreementId
 string [Email](150)                             Customer.Email
 string [Phone](50)                              Customer.Fax
 bool                                            Customer.Inactive
@@ -680,14 +679,13 @@ short                                           CustomerClass.CustomerClassId
 string                                          CustomerClass.CustomerClassIdExternal
 string                                          CustomerClass.Default_AssignmentCategoryIdExternal
 string                                          CustomerClass.Default_InvoiceTemplateIdExternal
-string                                          CustomerClass.Default_ProductAgreementIdExternal
 string                                          CustomerClass.PaymentTermIdExternal
+string                                          CustomerClass.ProductAgreementGroupIdExternal
 string                                          CustomerClass.ServiceAgreementIdExternal
 string (5)                                      CustomerClass.Code
 int                                             CustomerClass.CreditLimit
 int                                             CustomerClass.Default_AssignmentCategoryId
 short                                           CustomerClass.Default_InvoiceTemplateId
-short                                           CustomerClass.Default_ProductAgreementId
 string [MultilineText](500)                     CustomerClass.Description
 bool                                            CustomerClass.Internal
 bool                                            CustomerClass.InvoiceConsolidate
@@ -698,6 +696,7 @@ bool                                            CustomerClass.IsDefault
 string [Name](50)                               CustomerClass.Name
 byte                                            CustomerClass.PaymentTermId
 bool                                            CustomerClass.Private
+int                                             CustomerClass.ProductAgreementGroupId
 short                                           CustomerClass.ServiceAgreementId
 bool                                            CustomerClass.Sys_Deactivated
 bool                                            CustomerClass.Sys_Historic
@@ -1677,6 +1676,44 @@ DateTime                                        ExternalSystemProductAgreementDe
 string [MultilineText](50)                      ExternalSystemProductAgreementDetail.StatusDescription
 bool                                            ExternalSystemProductAgreementDetail.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemProductAgreementDetail.Enum_SyncStatusId
+int                                             ExternalSystemProductAgreementGroup.ExternalSystemProductAgreementGroupId
+string                                          ExternalSystemProductAgreementGroup.ProductAgreementGroupIdExternal
+string (50)                                     ExternalSystemProductAgreementGroup.ExternalId
+short                                           ExternalSystemProductAgreementGroup.ExternalSystemId
+string (100)                                    ExternalSystemProductAgreementGroup.In_Error_FixLink
+string (250)                                    ExternalSystemProductAgreementGroup.In_Error_MsgEN
+string (250)                                    ExternalSystemProductAgreementGroup.In_Error_MsgNO
+string                                          ExternalSystemProductAgreementGroup.In_Error_TechDetail
+string (40)                                     ExternalSystemProductAgreementGroup.In_Error_TraceId
+DateTime                                        ExternalSystemProductAgreementGroup.In_LastSyncUTC
+string (100)                                    ExternalSystemProductAgreementGroup.Out_Error_FixLink
+string (250)                                    ExternalSystemProductAgreementGroup.Out_Error_MsgEN
+string (250)                                    ExternalSystemProductAgreementGroup.Out_Error_MsgNO
+string                                          ExternalSystemProductAgreementGroup.Out_Error_TechDetail
+string (40)                                     ExternalSystemProductAgreementGroup.Out_Error_TraceId
+DateTime                                        ExternalSystemProductAgreementGroup.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemProductAgreementGroup.StatusDescription
+bool                                            ExternalSystemProductAgreementGroup.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemProductAgreementGroup.Enum_SyncStatusId
+int                                             ExternalSystemProductAgreementGroupLine.ExternalSystemProductAgreementGroupLineId
+string                                          ExternalSystemProductAgreementGroupLine.ProductAgreementGroupLineIdExternal
+string (50)                                     ExternalSystemProductAgreementGroupLine.ExternalId
+short                                           ExternalSystemProductAgreementGroupLine.ExternalSystemId
+string (100)                                    ExternalSystemProductAgreementGroupLine.In_Error_FixLink
+string (250)                                    ExternalSystemProductAgreementGroupLine.In_Error_MsgEN
+string (250)                                    ExternalSystemProductAgreementGroupLine.In_Error_MsgNO
+string                                          ExternalSystemProductAgreementGroupLine.In_Error_TechDetail
+string (40)                                     ExternalSystemProductAgreementGroupLine.In_Error_TraceId
+DateTime                                        ExternalSystemProductAgreementGroupLine.In_LastSyncUTC
+string (100)                                    ExternalSystemProductAgreementGroupLine.Out_Error_FixLink
+string (250)                                    ExternalSystemProductAgreementGroupLine.Out_Error_MsgEN
+string (250)                                    ExternalSystemProductAgreementGroupLine.Out_Error_MsgNO
+string                                          ExternalSystemProductAgreementGroupLine.Out_Error_TechDetail
+string (40)                                     ExternalSystemProductAgreementGroupLine.Out_Error_TraceId
+DateTime                                        ExternalSystemProductAgreementGroupLine.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemProductAgreementGroupLine.StatusDescription
+bool                                            ExternalSystemProductAgreementGroupLine.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemProductAgreementGroupLine.Enum_SyncStatusId
 int                                             ExternalSystemProductNote.ExternalSystemProductNoteId
 string                                          ExternalSystemProductNote.ProductNoteIdExternal
 string (50)                                     ExternalSystemProductNote.ExternalId
@@ -2852,6 +2889,7 @@ string                                          Offer.AddressIdExternal
 string                                          Offer.AssignmentIdExternal
 string                                          Offer.CustomerIdExternal
 string                                          Offer.DepartmentIdExternal
+string                                          Offer.ProductAgreementGroupIdExternal
 string                                          Offer.ProductAgreementIdExternal
 string                                          Offer.ProjectIdExternal
 string                                          Offer.SelectedGenPDF_AttachmentIdExternal
@@ -3131,19 +3169,56 @@ bool                                            ProductAgreementDetail.Ext_Out_E
 DateTime                                        ProductAgreementDetail.Ext_Out_LastSyncUTC
 --> ExternalSystemProductAgreementDetail[]      ProductAgreementDetail.ExternalSystemProductAgreementDetails
 int                                             ProductAgreementGroup.ProductAgreementGroupId
+string                                          ProductAgreementGroup.ProductAgreementGroupIdExternal
 string [MultilineText](100)                     ProductAgreementGroup.Description
 short                                           ProductAgreementGroup.Number
 bool                                            ProductAgreementGroup.Sys_Deactivated
 bool                                            ProductAgreementGroup.Sys_Historic
 bool                                            ProductAgreementGroup.Sys_Incomplete
+bool                                            ProductAgreementGroup.Ext_Sys_Deactivated
+string                                          ProductAgreementGroup.Ext_ExternalId
+string                                          ProductAgreementGroup.Ext_In_Error_MsgNO
+string                                          ProductAgreementGroup.Ext_In_Error_MsgEN
+string                                          ProductAgreementGroup.Ext_In_Error_TraceId
+string                                          ProductAgreementGroup.Ext_In_Error_TechDetail
+string                                          ProductAgreementGroup.Ext_In_Error_FixLink
+bool                                            ProductAgreementGroup.Ext_In_Error_SetOK
+DateTime                                        ProductAgreementGroup.Ext_In_LastSyncUTC
+string                                          ProductAgreementGroup.Ext_Out_Error_MsgNO
+string                                          ProductAgreementGroup.Ext_Out_Error_MsgEN
+string                                          ProductAgreementGroup.Ext_Out_Error_TraceId
+string                                          ProductAgreementGroup.Ext_Out_Error_TechDetail
+string                                          ProductAgreementGroup.Ext_Out_Error_FixLink
+bool                                            ProductAgreementGroup.Ext_Out_Error_SetOK
+DateTime                                        ProductAgreementGroup.Ext_Out_LastSyncUTC
+--> ExternalSystemProductAgreementGroup[]       ProductAgreementGroup.ExternalSystemProductAgreementGroups
 --> ProductAgreementGroupLine[]                 ProductAgreementGroup.ProductAgreementGroupLines
 int                                             ProductAgreementGroupLine.ProductAgreementGroupLineId
+string                                          ProductAgreementGroupLine.ProductAgreementGroupLineIdExternal
+string                                          ProductAgreementGroupLine.ProductAgreementGroupIdExternal
 string                                          ProductAgreementGroupLine.ProductAgreementIdExternal
 byte                                            ProductAgreementGroupLine.Priority
 short                                           ProductAgreementGroupLine.ProductAgreementId
 bool                                            ProductAgreementGroupLine.Sys_Deactivated
 bool                                            ProductAgreementGroupLine.Sys_Historic
 bool                                            ProductAgreementGroupLine.Sys_Incomplete
+bool                                            ProductAgreementGroupLine.Ext_Sys_Deactivated
+string                                          ProductAgreementGroupLine.Ext_ExternalId
+string                                          ProductAgreementGroupLine.Ext_In_Error_MsgNO
+string                                          ProductAgreementGroupLine.Ext_In_Error_MsgEN
+string                                          ProductAgreementGroupLine.Ext_In_Error_TraceId
+string                                          ProductAgreementGroupLine.Ext_In_Error_TechDetail
+string                                          ProductAgreementGroupLine.Ext_In_Error_FixLink
+bool                                            ProductAgreementGroupLine.Ext_In_Error_SetOK
+DateTime                                        ProductAgreementGroupLine.Ext_In_LastSyncUTC
+string                                          ProductAgreementGroupLine.Ext_Out_Error_MsgNO
+string                                          ProductAgreementGroupLine.Ext_Out_Error_MsgEN
+string                                          ProductAgreementGroupLine.Ext_Out_Error_TraceId
+string                                          ProductAgreementGroupLine.Ext_Out_Error_TechDetail
+string                                          ProductAgreementGroupLine.Ext_Out_Error_FixLink
+bool                                            ProductAgreementGroupLine.Ext_Out_Error_SetOK
+DateTime                                        ProductAgreementGroupLine.Ext_Out_LastSyncUTC
+--> ExternalSystemProductAgreementGroupLine[]   ProductAgreementGroupLine.ExternalSystemProductAgreementGroupLines
 int                                             ProductAttribute.ProductAttributeId
 string                                          ProductAttribute.ProductIdExternal
 int                                             ProductAttribute.AttributeId
@@ -3509,10 +3584,10 @@ string                                          Project.CaseHandler_EmployeeIdEx
 string                                          Project.CustomerIdExternal
 string                                          Project.Default_AssignmentCategoryIdExternal
 string                                          Project.Default_InvoiceTemplateIdExternal
-string                                          Project.Default_ProductAgreementIdExternal
 string                                          Project.DepartmentIdExternal
 string                                          Project.Invoice_CustomerIdExternal
 string                                          Project.ParentProjectIdExternal
+string                                          Project.ProductAgreementGroupIdExternal
 string                                          Project.ProjectGroupIdExternal
 string                                          Project.ProjectTypeIdExternal
 string                                          Project.ServiceAgreementIdExternal
@@ -3523,7 +3598,6 @@ int                                             Project.CustomerId
 string (50)                                     Project.CustomersReference
 int                                             Project.Default_AssignmentCategoryId
 short                                           Project.Default_InvoiceTemplateId
-short                                           Project.Default_ProductAgreementId
 short                                           Project.DepartmentId
 string [MultilineText](500)                     Project.Description
 DateTime                                        Project.EndDateUTC
@@ -4066,9 +4140,9 @@ byte                                            Settings_Assignment.Settings_Ass
 string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
 string                                          Settings_Assignment.Default_InvoiceTemplateIdExternal
-string                                          Settings_Assignment.Default_ProductAgreementIdExternal
 string                                          Settings_Assignment.Default_ProjectIdExternal
 string                                          Settings_Assignment.Default_ServiceAgreementIdExternal
+string                                          Settings_Assignment.ProductAgreementGroupIdExternal
 bool                                            Settings_Assignment.AllowHpcTimeCorrection
 bool                                            Settings_Assignment.ApproveBeforeInvoicing
 bool                                            Settings_Assignment.ApproveHoursBeforeInvoicing
@@ -4080,7 +4154,6 @@ decimal                                         Settings_Assignment.CoverageRate
 int                                             Settings_Assignment.Default_AssignmentCategoryId
 int                                             Settings_Assignment.Default_CasehandlerEmployeeId
 short                                           Settings_Assignment.Default_InvoiceTemplateId
-short                                           Settings_Assignment.Default_ProductAgreementId
 int                                             Settings_Assignment.Default_ProjectId
 short                                           Settings_Assignment.Default_ServiceAgreementId
 bool                                            Settings_Assignment.Default_SyncToMobileDevice
