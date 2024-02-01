@@ -3075,6 +3075,7 @@ bool                                            Product.Sys_Historic
 bool                                            Product.Sys_Incomplete
 string (3)                                      Product.Unit
 byte                                            Product.VATRateId
+ProductSourceEnum                               Product.Enum_ProductSourceId
 bool                                            Product.Ext_Sys_Deactivated
 string                                          Product.Ext_ExternalId
 string                                          Product.Ext_In_Error_MsgNO
@@ -3532,6 +3533,7 @@ string (50)                                     ProductSupplierIndustryType.Supp
 bool                                            ProductSupplierIndustryType.Sys_Deactivated
 bool                                            ProductSupplierIndustryType.Sys_Historic
 bool                                            ProductSupplierIndustryType.Sys_Incomplete
+ProductSourceEnum                               ProductSupplierIndustryType.Enum_ProductSourceId
 bool                                            ProductSupplierIndustryType.Ext_Sys_Deactivated
 string                                          ProductSupplierIndustryType.Ext_ExternalId
 string                                          ProductSupplierIndustryType.Ext_In_Error_MsgNO
