@@ -660,7 +660,6 @@ DateTime                                        Customer.Ext_Out_LastSyncUTC
 --> Address[]                                   Customer.Addresses
 --> CustomerAttachment[]                        Customer.CustomerAttachments
 --> Contact[]                                   Customer.Contacts
---> CustomerProductAgreement[]                  Customer.CustomerProductAgreements
 --> ExternalSystemCustomer[]                    Customer.ExternalSystemCustomers
 int                                             CustomerAddress.CustomerAddressId
 string                                          CustomerAddress.AddressIdExternal
@@ -724,14 +723,6 @@ string                                          CustomerContact.Owner_CustomerId
 bool                                            CustomerContact.Sys_Deactivated
 bool                                            CustomerContact.Sys_Historic
 bool                                            CustomerContact.Sys_Incomplete
-short                                           CustomerProductAgreement.CustomerProductAgreementId
-string                                          CustomerProductAgreement.CustomerIdExternal
-string                                          CustomerProductAgreement.ProductAgreementIdExternal
-int                                             CustomerProductAgreement.Priority
-short                                           CustomerProductAgreement.ProductAgreementId
-bool                                            CustomerProductAgreement.Sys_Deactivated
-bool                                            CustomerProductAgreement.Sys_Historic
-bool                                            CustomerProductAgreement.Sys_Incomplete
 int                                             DataGrid.DataGridId
 string                                          DataGrid.AgGridColumnState
 string                                          DataGrid.AgGridFilter
