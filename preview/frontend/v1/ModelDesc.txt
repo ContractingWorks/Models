@@ -4609,6 +4609,7 @@ string                                          SupplierInvoice.SupplierIndustry
 int                                             SupplierInvoice.AssignmentId
 string (50)                                     SupplierInvoice.AssignmentNumberTxt
 string [MultilineText](250)                     SupplierInvoice.Comment
+string (50)                                     SupplierInvoice.CustomerNumber
 bool                                            SupplierInvoice.DeactivateRelatedProductNotes
 string [MultilineText](500)                     SupplierInvoice.Description
 byte                                            SupplierInvoice.IndustryTypeId
