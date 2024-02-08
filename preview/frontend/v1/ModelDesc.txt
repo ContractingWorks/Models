@@ -2820,14 +2820,17 @@ bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             Note.NoteId
 string                                          Note.AssignmentIdExternal
+string                                          Note.CreatedBy_EmployeeIdExternal
 string                                          Note.CustomerIdExternal
 string                                          Note.InvoiceIdExternal
 string                                          Note.SupplierInvoiceIdExternal
 int                                             Note.AssignmentId
+int                                             Note.CreatedBy_EmployeeId
 int                                             Note.CustomerId
 int                                             Note.InvoiceId
 bool                                            Note.IsPublic
 string [MultilineText]                          Note.NoteText
+DateTime                                        Note.RegisteredUTC
 int                                             Note.SupplierInvoiceId
 bool                                            Note.Sys_Deactivated
 bool                                            Note.Sys_Historic
