@@ -4840,14 +4840,6 @@ int                                             TeamEmployee.EmployeeId
 bool                                            TeamEmployee.Sys_Deactivated
 bool                                            TeamEmployee.Sys_Historic
 bool                                            TeamEmployee.Sys_Incomplete
-int                                             Temp_SpeedyCraftSyncEvent.Temp_SpeedyCraftSyncEventId
-int                                             Temp_SpeedyCraftSyncEvent.AssignmentId
-bool                                            Temp_SpeedyCraftSyncEvent.CreateOperation
-long                                            Temp_SpeedyCraftSyncEvent.RowId
-bool                                            Temp_SpeedyCraftSyncEvent.Sys_Deactivated
-bool                                            Temp_SpeedyCraftSyncEvent.Sys_Historic
-bool                                            Temp_SpeedyCraftSyncEvent.Sys_Incomplete
-string [Name](50)                               Temp_SpeedyCraftSyncEvent.TableName
 int                                             Temp_WebhookMessage.Temp_WebhookMessageId
 bool                                            Temp_WebhookMessage.CreateOperation
 long                                            Temp_WebhookMessage.RowId
