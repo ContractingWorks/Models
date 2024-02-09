@@ -1838,6 +1838,44 @@ DateTime                                        ExternalSystemProjectPeriod.Out_
 string [MultilineText](50)                      ExternalSystemProjectPeriod.StatusDescription
 bool                                            ExternalSystemProjectPeriod.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemProjectPeriod.Enum_SyncStatusId
+short                                           ExternalSystemProjectReport.ExternalSystemProjectReportId
+string                                          ExternalSystemProjectReport.ProjectReportIdExternal
+string (50)                                     ExternalSystemProjectReport.ExternalId
+short                                           ExternalSystemProjectReport.ExternalSystemId
+string (100)                                    ExternalSystemProjectReport.In_Error_FixLink
+string (250)                                    ExternalSystemProjectReport.In_Error_MsgEN
+string (250)                                    ExternalSystemProjectReport.In_Error_MsgNO
+string                                          ExternalSystemProjectReport.In_Error_TechDetail
+string (40)                                     ExternalSystemProjectReport.In_Error_TraceId
+DateTime                                        ExternalSystemProjectReport.In_LastSyncUTC
+string (100)                                    ExternalSystemProjectReport.Out_Error_FixLink
+string (250)                                    ExternalSystemProjectReport.Out_Error_MsgEN
+string (250)                                    ExternalSystemProjectReport.Out_Error_MsgNO
+string                                          ExternalSystemProjectReport.Out_Error_TechDetail
+string (40)                                     ExternalSystemProjectReport.Out_Error_TraceId
+DateTime                                        ExternalSystemProjectReport.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemProjectReport.StatusDescription
+bool                                            ExternalSystemProjectReport.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemProjectReport.Enum_SyncStatusId
+short                                           ExternalSystemProjectReportDetail.ExternalSystemProjectReportDetailId
+string                                          ExternalSystemProjectReportDetail.ProjectReportDetailIdExternal
+string (50)                                     ExternalSystemProjectReportDetail.ExternalId
+short                                           ExternalSystemProjectReportDetail.ExternalSystemId
+string (100)                                    ExternalSystemProjectReportDetail.In_Error_FixLink
+string (250)                                    ExternalSystemProjectReportDetail.In_Error_MsgEN
+string (250)                                    ExternalSystemProjectReportDetail.In_Error_MsgNO
+string                                          ExternalSystemProjectReportDetail.In_Error_TechDetail
+string (40)                                     ExternalSystemProjectReportDetail.In_Error_TraceId
+DateTime                                        ExternalSystemProjectReportDetail.In_LastSyncUTC
+string (100)                                    ExternalSystemProjectReportDetail.Out_Error_FixLink
+string (250)                                    ExternalSystemProjectReportDetail.Out_Error_MsgEN
+string (250)                                    ExternalSystemProjectReportDetail.Out_Error_MsgNO
+string                                          ExternalSystemProjectReportDetail.Out_Error_TechDetail
+string (40)                                     ExternalSystemProjectReportDetail.Out_Error_TraceId
+DateTime                                        ExternalSystemProjectReportDetail.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemProjectReportDetail.StatusDescription
+bool                                            ExternalSystemProjectReportDetail.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemProjectReportDetail.Enum_SyncStatusId
 byte                                            ExternalSystemProjectType.ExternalSystemProjectTypeId
 string                                          ExternalSystemProjectType.ProjectTypeIdExternal
 string (50)                                     ExternalSystemProjectType.ExternalId
@@ -3766,13 +3804,33 @@ bool                                            ProjectPurchaseAgreement.Sys_Dea
 bool                                            ProjectPurchaseAgreement.Sys_Historic
 bool                                            ProjectPurchaseAgreement.Sys_Incomplete
 short                                           ProjectReport.ProjectReportId
+string                                          ProjectReport.ProjectReportIdExternal
 string [MultilineText](100)                     ProjectReport.Description
 short                                           ProjectReport.ProjectReportNumber
 bool                                            ProjectReport.Sys_Deactivated
 bool                                            ProjectReport.Sys_Historic
 bool                                            ProjectReport.Sys_Incomplete
+bool                                            ProjectReport.Ext_Sys_Deactivated
+string                                          ProjectReport.Ext_ExternalId
+string                                          ProjectReport.Ext_In_Error_MsgNO
+string                                          ProjectReport.Ext_In_Error_MsgEN
+string                                          ProjectReport.Ext_In_Error_TraceId
+string                                          ProjectReport.Ext_In_Error_TechDetail
+string                                          ProjectReport.Ext_In_Error_FixLink
+bool                                            ProjectReport.Ext_In_Error_SetOK
+DateTime                                        ProjectReport.Ext_In_LastSyncUTC
+string                                          ProjectReport.Ext_Out_Error_MsgNO
+string                                          ProjectReport.Ext_Out_Error_MsgEN
+string                                          ProjectReport.Ext_Out_Error_TraceId
+string                                          ProjectReport.Ext_Out_Error_TechDetail
+string                                          ProjectReport.Ext_Out_Error_FixLink
+bool                                            ProjectReport.Ext_Out_Error_SetOK
+DateTime                                        ProjectReport.Ext_Out_LastSyncUTC
+--> ExternalSystemProjectReport[]               ProjectReport.ExternalSystemProjectReports
 --> ProjectReportDetail[]                       ProjectReport.ProjectReportDetails
 short                                           ProjectReportDetail.ProjectReportDetailId
+string                                          ProjectReportDetail.ProjectReportDetailIdExternal
+string                                          ProjectReportDetail.ProjectReportIdExternal
 int                                             ProjectReportDetail.FromNumber
 string (250)                                    ProjectReportDetail.ReportText
 int                                             ProjectReportDetail.SortOrder
@@ -3783,6 +3841,23 @@ bool                                            ProjectReportDetail.Sys_Historic
 bool                                            ProjectReportDetail.Sys_Incomplete
 int                                             ProjectReportDetail.ToNumber
 ProjectReportDetailTypeEnum                     ProjectReportDetail.Enum_ProjectReportDetailTypeId
+bool                                            ProjectReportDetail.Ext_Sys_Deactivated
+string                                          ProjectReportDetail.Ext_ExternalId
+string                                          ProjectReportDetail.Ext_In_Error_MsgNO
+string                                          ProjectReportDetail.Ext_In_Error_MsgEN
+string                                          ProjectReportDetail.Ext_In_Error_TraceId
+string                                          ProjectReportDetail.Ext_In_Error_TechDetail
+string                                          ProjectReportDetail.Ext_In_Error_FixLink
+bool                                            ProjectReportDetail.Ext_In_Error_SetOK
+DateTime                                        ProjectReportDetail.Ext_In_LastSyncUTC
+string                                          ProjectReportDetail.Ext_Out_Error_MsgNO
+string                                          ProjectReportDetail.Ext_Out_Error_MsgEN
+string                                          ProjectReportDetail.Ext_Out_Error_TraceId
+string                                          ProjectReportDetail.Ext_Out_Error_TechDetail
+string                                          ProjectReportDetail.Ext_Out_Error_FixLink
+bool                                            ProjectReportDetail.Ext_Out_Error_SetOK
+DateTime                                        ProjectReportDetail.Ext_Out_LastSyncUTC
+--> ExternalSystemProjectReportDetail[]         ProjectReportDetail.ExternalSystemProjectReportDetails
 byte                                            ProjectType.ProjectTypeId
 string                                          ProjectType.ProjectTypeIdExternal
 string (50)                                     ProjectType.Code
