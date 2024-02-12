@@ -2832,19 +2832,6 @@ string [Name](100)                              Manufacturer.Name
 bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
-int                                             MapData.MapDataId
-DateTime                                        MapData.ApplyDoneUTC
-DateTime                                        MapData.ApplyStartedUTC
-string [MultilineText](250)                     MapData.Description
-long                                            MapData.EntityId
-string (50)                                     MapData.EntityType
-bool                                            MapData.IsInUse
-int                                             MapData.MapDataValueId
-string (100)                                    MapData.Number
-int                                             MapData.Suggested_MapDataValueId
-bool                                            MapData.Sys_Deactivated
-bool                                            MapData.Sys_Historic
-bool                                            MapData.Sys_Incomplete
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
@@ -2852,6 +2839,7 @@ string [MultilineText](250)                     MapDataValue.DescriptionPart2
 string (50)                                     MapDataValue.EntityType
 string (100)                                    MapDataValue.ExternalId
 short                                           MapDataValue.ExternalSystemId
+string                                          MapDataValue.JsonFields
 string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
