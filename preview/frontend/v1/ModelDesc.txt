@@ -1515,6 +1515,25 @@ DateTime                                        ExternalSystemLedgerAccount.Out_
 string [MultilineText](50)                      ExternalSystemLedgerAccount.StatusDescription
 bool                                            ExternalSystemLedgerAccount.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemLedgerAccount.Enum_SyncStatusId
+int                                             ExternalSystemNote.ExternalSystemNoteId
+string                                          ExternalSystemNote.NoteIdExternal
+string (50)                                     ExternalSystemNote.ExternalId
+short                                           ExternalSystemNote.ExternalSystemId
+string (100)                                    ExternalSystemNote.In_Error_FixLink
+string (250)                                    ExternalSystemNote.In_Error_MsgEN
+string (250)                                    ExternalSystemNote.In_Error_MsgNO
+string                                          ExternalSystemNote.In_Error_TechDetail
+string (40)                                     ExternalSystemNote.In_Error_TraceId
+DateTime                                        ExternalSystemNote.In_LastSyncUTC
+string (100)                                    ExternalSystemNote.Out_Error_FixLink
+string (250)                                    ExternalSystemNote.Out_Error_MsgEN
+string (250)                                    ExternalSystemNote.Out_Error_MsgNO
+string                                          ExternalSystemNote.Out_Error_TechDetail
+string (40)                                     ExternalSystemNote.Out_Error_TraceId
+DateTime                                        ExternalSystemNote.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemNote.StatusDescription
+bool                                            ExternalSystemNote.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemNote.Enum_SyncStatusId
 int                                             ExternalSystemNumberSeries.ExternalSystemNumberSeriesId
 string                                          ExternalSystemNumberSeries.NumberSeriesIdExternal
 string (50)                                     ExternalSystemNumberSeries.ExternalId
@@ -2845,6 +2864,7 @@ bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             Note.NoteId
+string                                          Note.NoteIdExternal
 string                                          Note.AssignmentIdExternal
 string                                          Note.CreatedBy_EmployeeIdExternal
 string                                          Note.CustomerIdExternal
@@ -2862,6 +2882,23 @@ bool                                            Note.Sys_Deactivated
 bool                                            Note.Sys_Historic
 bool                                            Note.Sys_Incomplete
 NoteSourceEnum                                  Note.Enum_NoteSourceId
+bool                                            Note.Ext_Sys_Deactivated
+string                                          Note.Ext_ExternalId
+string                                          Note.Ext_In_Error_MsgNO
+string                                          Note.Ext_In_Error_MsgEN
+string                                          Note.Ext_In_Error_TraceId
+string                                          Note.Ext_In_Error_TechDetail
+string                                          Note.Ext_In_Error_FixLink
+bool                                            Note.Ext_In_Error_SetOK
+DateTime                                        Note.Ext_In_LastSyncUTC
+string                                          Note.Ext_Out_Error_MsgNO
+string                                          Note.Ext_Out_Error_MsgEN
+string                                          Note.Ext_Out_Error_TraceId
+string                                          Note.Ext_Out_Error_TechDetail
+string                                          Note.Ext_Out_Error_FixLink
+bool                                            Note.Ext_Out_Error_SetOK
+DateTime                                        Note.Ext_Out_LastSyncUTC
+--> ExternalSystemNote[]                        Note.ExternalSystemNotes
 int                                             NumberSeries.NumberSeriesId
 string                                          NumberSeries.NumberSeriesIdExternal
 string                                          NumberSeries.ValidFor_CustomerClassIdExternal
