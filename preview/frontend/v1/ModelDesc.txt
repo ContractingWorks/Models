@@ -51,11 +51,18 @@ DateTime                                        Address.Ext_Out_LastSyncUTC
 --> ExternalSystemAddress[]                     Address.ExternalSystemAddresses
 int                                             Appointment.AppointmentId
 string                                          Appointment.AppointmentIdExternal
+string                                          Appointment.ContactIdExternal
 string                                          Appointment.EmployeeIdExternal
 string [MultilineText]                          Appointment.Comment
+int                                             Appointment.ContactId
 string [MultilineText](255)                     Appointment.Description
 int                                             Appointment.EmployeeId
 DateTime                                        Appointment.EndDateTimeUTC
+int                                             Appointment.OnCreate_ContactMessageId
+string (512)                                    Appointment.OnCreate_Message
+int                                             Appointment.Reminder_ContactMessageId
+int                                             Appointment.Reminder_LeadHours
+string (512)                                    Appointment.Reminder_Message
 DateTime                                        Appointment.StartDateTimeUTC
 bool                                            Appointment.SyncToMobileDevice
 bool                                            Appointment.Sys_Deactivated
@@ -4284,6 +4291,9 @@ string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
 string                                          Settings_Main.VATFree_Int_VATRateIdExternal
 string                                          Settings_Main.VATFree_Nat_VATRateIdExternal
+string (512)                                    Settings_Main.Appointment_OnCreateMessge
+int                                             Settings_Main.Appointment_ReminderLeadDays
+string (512)                                    Settings_Main.Appointment_ReminderMessge
 string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
