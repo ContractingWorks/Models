@@ -2,8 +2,8 @@ Type [validation category](max length)          TableName.ColumnName
 int                                             Address.AddressId
 string                                          Address.AddressIdExternal
 string                                          Address.ParentAddressIdExternal
-string (50)                                     Address.Address1
-string (50)                                     Address.Address2
+string (100)                                    Address.Address1
+string (100)                                    Address.Address2
 int                                             Address.CadastralUnitNumber
 string [MultilineText](100)                     Address.Comment
 string (2)                                      Address.CountryId
