@@ -337,28 +337,28 @@ bool                                            AttachmentCategory.Sys_Incomplet
 AttachmentCategoryEnum                          AttachmentCategory.Enum_AttachmentCategoryId
 int                                             Attribute.AttributeId
 string [MultilineText](500)                     Attribute.Description
-bool                                            Attribute.IsNumber
 string [Name](50)                               Attribute.Name
 bool                                            Attribute.Sys_Deactivated
 bool                                            Attribute.Sys_Historic
 bool                                            Attribute.Sys_Incomplete
 short                                           Attribute.UnitId
+ValueTypeEnum                                   Attribute.Enum_ValueTypeId
 int                                             AttributeFilter.AttributeFilterId
 int                                             AttributeFilter.AttributeId
+DateTime                                        AttributeFilter.DateTimeUTC
+byte                                            AttributeFilter.FilterGroupNumber
+bool                                            AttributeFilter.IsAnd
+decimal                                         AttributeFilter.Number
 int                                             AttributeFilter.ProductSearchId
+byte                                            AttributeFilter.SortOrder
 bool                                            AttributeFilter.Sys_Deactivated
 bool                                            AttributeFilter.Sys_Historic
 bool                                            AttributeFilter.Sys_Incomplete
-int                                             AttributeFilterValue.AttributeFilterValueId
-int                                             AttributeFilterValue.AttributeFilterId
-decimal                                         AttributeFilterValue.Number
-bool                                            AttributeFilterValue.Sys_Deactivated
-bool                                            AttributeFilterValue.Sys_Historic
-bool                                            AttributeFilterValue.Sys_Incomplete
-string (50)                                     AttributeFilterValue.Text
-AttributeFilterOperationEnum                    AttributeFilterValue.Enum_AttributeFilterOperationId
+string (50)                                     AttributeFilter.Text
+AttributeFilterOperationEnum                    AttributeFilter.Enum_AttributeFilterOperationId
 int                                             AttributeValue.AttributeValueId
 int                                             AttributeValue.AttributeId
+DateTime                                        AttributeValue.DateTimeUTC
 decimal                                         AttributeValue.Number
 bool                                            AttributeValue.Sys_Deactivated
 bool                                            AttributeValue.Sys_Historic
@@ -3287,6 +3287,7 @@ DateTime                                        ProductAgreementGroupLine.Ext_Ou
 int                                             ProductAttribute.ProductAttributeId
 string                                          ProductAttribute.ProductIdExternal
 int                                             ProductAttribute.AttributeId
+DateTime                                        ProductAttribute.DateTimeUTC
 decimal                                         ProductAttribute.Number
 int                                             ProductAttribute.ProductId
 bool                                            ProductAttribute.Sys_Deactivated
@@ -3568,11 +3569,21 @@ bool                                            ProductSearch.Sys_Deactivated
 bool                                            ProductSearch.Sys_Historic
 bool                                            ProductSearch.Sys_Incomplete
 int                                             ProductSearchGroup.ProductSearchGroupId
+int                                             ProductSearchGroup.Default_ManufacturerId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
+int                                             ProductSearchSeriesDefault.ProductSearchSeriesDefaultId
+string                                          ProductSearchSeriesDefault.ProductIdExternal
+int                                             ProductSearchSeriesDefault.ManufacturerId
+int                                             ProductSearchSeriesDefault.ProductId
+int                                             ProductSearchSeriesDefault.ProductSearchId
+int                                             ProductSearchSeriesDefault.ProductSeriesId
+bool                                            ProductSearchSeriesDefault.Sys_Deactivated
+bool                                            ProductSearchSeriesDefault.Sys_Historic
+bool                                            ProductSearchSeriesDefault.Sys_Incomplete
 int                                             ProductSeries.ProductSeriesId
 int                                             ProductSeries.ManufacturerId
 string [Name](100)                              ProductSeries.Name
