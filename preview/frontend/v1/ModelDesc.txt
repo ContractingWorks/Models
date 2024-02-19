@@ -4303,7 +4303,7 @@ string                                          Settings_Main.SupplierIndustryTy
 string                                          Settings_Main.VATFree_Int_VATRateIdExternal
 string                                          Settings_Main.VATFree_Nat_VATRateIdExternal
 string (512)                                    Settings_Main.Appointment_OnCreateMessge
-int                                             Settings_Main.Appointment_ReminderLeadDays
+int                                             Settings_Main.Appointment_ReminderLeadHours
 string (512)                                    Settings_Main.Appointment_ReminderMessge
 string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
