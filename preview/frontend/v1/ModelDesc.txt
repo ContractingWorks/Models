@@ -4087,6 +4087,7 @@ string                                          Service.WageCodeReportCategoryId
 string                                          Service.WagePeriodIdExternal
 string [MultilineText](500)                     Service.ApprovalComment
 int                                             Service.AssignmentId
+DateTime                                        Service.Calc_StartDateLocal
 short                                           Service.Cost_LedgerAccountId
 int                                             Service.Cost_ProjectAccountId
 decimal                                         Service.CostPrice
