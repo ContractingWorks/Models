@@ -4306,7 +4306,6 @@ string                                          Settings_Main.VATFree_Nat_VATRat
 string (512)                                    Settings_Main.Appointment_OnCreateMessge
 int                                             Settings_Main.Appointment_ReminderLeadHours
 string (512)                                    Settings_Main.Appointment_ReminderMessge
-string (50)                                     Settings_Main.AutoFallbackProductNumber
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
 string (2)                                      Settings_Main.DefaultLanguage
