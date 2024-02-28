@@ -4012,6 +4012,7 @@ string [Name](50)                               Role.Name
 bool                                            Role.Sys_Deactivated
 bool                                            Role.Sys_Historic
 bool                                            Role.Sys_Incomplete
+bool                                            Role.UserEditable
 ClientLevelEnum                                 Role.AdminFor_Enum_ClientLevelId
 ClientLevelEnum                                 Role.Enum_ClientLevelId
 bool                                            Role.Ext_Sys_Deactivated
@@ -4662,7 +4663,6 @@ string                                          SupplierIndustryType.SupplierInd
 string                                          SupplierIndustryType.IndustryTypeIdExternal
 string                                          SupplierIndustryType.SupplierIdExternal
 string (50)                                     SupplierIndustryType.CustomerNumber
-int                                             SupplierIndustryType.DefaultUnknown_ProductSupplierIndustryTypeId
 byte                                            SupplierIndustryType.IndustryTypeId
 bool                                            SupplierIndustryType.IsCustom
 bool                                            SupplierIndustryType.IsDefaultForIndustryType
