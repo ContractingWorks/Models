@@ -4906,6 +4906,7 @@ int                                             TariffGroup.TariffVersionId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
 int                                             TariffProduct.ProductId
+decimal                                         TariffProduct.Quantity
 bool                                            TariffProduct.Sys_Deactivated
 bool                                            TariffProduct.Sys_Historic
 bool                                            TariffProduct.Sys_Incomplete
