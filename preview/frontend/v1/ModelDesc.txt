@@ -3307,15 +3307,6 @@ short                                           ProductBatch.StorageId
 bool                                            ProductBatch.Sys_Deactivated
 bool                                            ProductBatch.Sys_Historic
 bool                                            ProductBatch.Sys_Incomplete
-int                                             ProductBrandDef.ProductBrandDefId
-string [Name](50)                               ProductBrandDef.BrandName
-string (50)                                     ProductBrandDef.ProductNumber
-bool                                            ProductBrandDef.Sys_Deactivated
-bool                                            ProductBrandDef.Sys_Historic
-bool                                            ProductBrandDef.Sys_Incomplete
-ClientLevelEnum                                 ProductBrandDef.Enum_ClientLevelId
-IndustryTypeEnum                                ProductBrandDef.Enum_IndustryTypeId
-PublicationStatusEnum                           ProductBrandDef.Enum_PublicationStatusId
 short                                           ProductCampaign.ProductCampaignId
 string                                          ProductCampaign.ProductSupplierIndustryTypeIdExternal
 decimal                                         ProductCampaign.CampaignQuantity
@@ -3326,17 +3317,6 @@ DateTime                                        ProductCampaign.StartDatetimeUTC
 bool                                            ProductCampaign.Sys_Deactivated
 bool                                            ProductCampaign.Sys_Historic
 bool                                            ProductCampaign.Sys_Incomplete
-int                                             ProductCategoryDef.ProductCategoryDefId
-string (50)                                     ProductCategoryDef.Category1
-string (50)                                     ProductCategoryDef.Category2
-string (50)                                     ProductCategoryDef.Category3
-string (50)                                     ProductCategoryDef.ProductNumber
-bool                                            ProductCategoryDef.Sys_Deactivated
-bool                                            ProductCategoryDef.Sys_Historic
-bool                                            ProductCategoryDef.Sys_Incomplete
-ClientLevelEnum                                 ProductCategoryDef.Enum_ClientLevelId
-IndustryTypeEnum                                ProductCategoryDef.Enum_IndustryTypeId
-PublicationStatusEnum                           ProductCategoryDef.Enum_PublicationStatusId
 int                                             ProductExtendedInfo.ProductExtendedInfoId
 string                                          ProductExtendedInfo.ProductIdExternal
 bool                                            ProductExtendedInfo.Sys_Deactivated
@@ -4913,7 +4893,16 @@ string [MultilineText](100)                     Tariff.Description
 bool                                            Tariff.Sys_Deactivated
 bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
+int                                             Tariff.TariffGroupId
 short                                           Tariff.UnitId
+int                                             TariffGroup.TariffGroupId
+string (20)                                     TariffGroup.Code
+string [MultilineText](100)                     TariffGroup.Description
+int                                             TariffGroup.Parent_TariffGroupId
+bool                                            TariffGroup.Sys_Deactivated
+bool                                            TariffGroup.Sys_Historic
+bool                                            TariffGroup.Sys_Incomplete
+int                                             TariffGroup.TariffVersionId
 int                                             TariffProduct.TariffProductId
 string                                          TariffProduct.ProductIdExternal
 int                                             TariffProduct.ProductId
@@ -4921,25 +4910,10 @@ bool                                            TariffProduct.Sys_Deactivated
 bool                                            TariffProduct.Sys_Historic
 bool                                            TariffProduct.Sys_Incomplete
 int                                             TariffProduct.TariffId
-int                                             TariffProductDef.TariffProductDefId
-string (1024)                                   TariffProductDef.AdditionalInfo
-decimal                                         TariffProductDef.Amount
-int                                             TariffProductDef.AmountFactorInSeconds
-string (20)                                     TariffProductDef.Code
-string [MultilineText](100)                     TariffProductDef.Description
-string (50)                                     TariffProductDef.ProductNumber
-bool                                            TariffProductDef.Sys_Deactivated
-bool                                            TariffProductDef.Sys_Historic
-bool                                            TariffProductDef.Sys_Incomplete
-string (50)                                     TariffProductDef.TariffCreatedBy
-string [Name](50)                               TariffProductDef.TariffName
-string (5)                                      TariffProductDef.UnitCode
-ClientLevelEnum                                 TariffProductDef.Enum_ClientLevelId
-IndustryTypeEnum                                TariffProductDef.Enum_IndustryTypeId
-PublicationStatusEnum                           TariffProductDef.Enum_PublicationStatusId
 int                                             TariffVersion.TariffVersionId
 decimal                                         TariffVersion.AmountFactorInSeconds
 string (50)                                     TariffVersion.CreatedBy
+bool                                            TariffVersion.IsDefaultForIndustryType
 string [Name](50)                               TariffVersion.Name
 bool                                            TariffVersion.Sys_Deactivated
 bool                                            TariffVersion.Sys_Historic
