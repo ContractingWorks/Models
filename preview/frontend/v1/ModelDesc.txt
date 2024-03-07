@@ -99,6 +99,7 @@ string                                          Assignment.PaymentTermIdExternal
 string                                          Assignment.ProductAgreementGroupIdExternal
 string                                          Assignment.ProjectIdExternal
 string                                          Assignment.ServiceAgreementIdExternal
+string                                          Assignment.ServiceContractIdExternal
 string                                          Assignment.Sys_PreviousProductAgreementGroupIdExternal
 bool                                            Assignment.Archived
 int                                             Assignment.AssignmentCategoryId
@@ -1370,6 +1371,25 @@ bool                                            ExternalSystemExtraData.Sys_Deac
 bool                                            ExternalSystemExtraData.Sys_Historic
 bool                                            ExternalSystemExtraData.Sys_Incomplete
 string                                          ExternalSystemExtraData.Value
+byte                                            ExternalSystemIndexRateGroup.ExternalSystemIndexRateGroupId
+string                                          ExternalSystemIndexRateGroup.IndexRateGroupIdExternal
+string (50)                                     ExternalSystemIndexRateGroup.ExternalId
+short                                           ExternalSystemIndexRateGroup.ExternalSystemId
+string (100)                                    ExternalSystemIndexRateGroup.In_Error_FixLink
+string (250)                                    ExternalSystemIndexRateGroup.In_Error_MsgEN
+string (250)                                    ExternalSystemIndexRateGroup.In_Error_MsgNO
+string                                          ExternalSystemIndexRateGroup.In_Error_TechDetail
+string (40)                                     ExternalSystemIndexRateGroup.In_Error_TraceId
+DateTime                                        ExternalSystemIndexRateGroup.In_LastSyncUTC
+string (100)                                    ExternalSystemIndexRateGroup.Out_Error_FixLink
+string (250)                                    ExternalSystemIndexRateGroup.Out_Error_MsgEN
+string (250)                                    ExternalSystemIndexRateGroup.Out_Error_MsgNO
+string                                          ExternalSystemIndexRateGroup.Out_Error_TechDetail
+string (40)                                     ExternalSystemIndexRateGroup.Out_Error_TraceId
+DateTime                                        ExternalSystemIndexRateGroup.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemIndexRateGroup.StatusDescription
+bool                                            ExternalSystemIndexRateGroup.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemIndexRateGroup.Enum_SyncStatusId
 byte                                            ExternalSystemIndustryType.ExternalSystemIndustryTypeId
 string                                          ExternalSystemIndustryType.IndustryTypeIdExternal
 string (50)                                     ExternalSystemIndustryType.ExternalId
@@ -2016,6 +2036,25 @@ DateTime                                        ExternalSystemServiceAgreementDe
 string [MultilineText](50)                      ExternalSystemServiceAgreementDetail.StatusDescription
 bool                                            ExternalSystemServiceAgreementDetail.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemServiceAgreementDetail.Enum_SyncStatusId
+int                                             ExternalSystemServiceContract.ExternalSystemServiceContractId
+string                                          ExternalSystemServiceContract.ServiceContractIdExternal
+string (50)                                     ExternalSystemServiceContract.ExternalId
+short                                           ExternalSystemServiceContract.ExternalSystemId
+string (100)                                    ExternalSystemServiceContract.In_Error_FixLink
+string (250)                                    ExternalSystemServiceContract.In_Error_MsgEN
+string (250)                                    ExternalSystemServiceContract.In_Error_MsgNO
+string                                          ExternalSystemServiceContract.In_Error_TechDetail
+string (40)                                     ExternalSystemServiceContract.In_Error_TraceId
+DateTime                                        ExternalSystemServiceContract.In_LastSyncUTC
+string (100)                                    ExternalSystemServiceContract.Out_Error_FixLink
+string (250)                                    ExternalSystemServiceContract.Out_Error_MsgEN
+string (250)                                    ExternalSystemServiceContract.Out_Error_MsgNO
+string                                          ExternalSystemServiceContract.Out_Error_TechDetail
+string (40)                                     ExternalSystemServiceContract.Out_Error_TraceId
+DateTime                                        ExternalSystemServiceContract.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemServiceContract.StatusDescription
+bool                                            ExternalSystemServiceContract.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemServiceContract.Enum_SyncStatusId
 int                                             ExternalSystemStock.ExternalSystemStockId
 string                                          ExternalSystemStock.StockIdExternal
 string (50)                                     ExternalSystemStock.ExternalId
@@ -2400,12 +2439,30 @@ ImportFormatEnum                                ImportFile.Enum_ImportFormatId
 ImportStatusEnum                                ImportFile.Enum_ImportStatusId
 ImportTypeEnum                                  ImportFile.Enum_ImportTypeId
 byte                                            IndexRateGroup.IndexRateGroupId
+string                                          IndexRateGroup.IndexRateGroupIdExternal
 string [MultilineText](50)                      IndexRateGroup.Description
 decimal                                         IndexRateGroup.IndexRate
 short                                           IndexRateGroup.Number
 bool                                            IndexRateGroup.Sys_Deactivated
 bool                                            IndexRateGroup.Sys_Historic
 bool                                            IndexRateGroup.Sys_Incomplete
+bool                                            IndexRateGroup.Ext_Sys_Deactivated
+string                                          IndexRateGroup.Ext_ExternalId
+string                                          IndexRateGroup.Ext_In_Error_MsgNO
+string                                          IndexRateGroup.Ext_In_Error_MsgEN
+string                                          IndexRateGroup.Ext_In_Error_TraceId
+string                                          IndexRateGroup.Ext_In_Error_TechDetail
+string                                          IndexRateGroup.Ext_In_Error_FixLink
+bool                                            IndexRateGroup.Ext_In_Error_SetOK
+DateTime                                        IndexRateGroup.Ext_In_LastSyncUTC
+string                                          IndexRateGroup.Ext_Out_Error_MsgNO
+string                                          IndexRateGroup.Ext_Out_Error_MsgEN
+string                                          IndexRateGroup.Ext_Out_Error_TraceId
+string                                          IndexRateGroup.Ext_Out_Error_TechDetail
+string                                          IndexRateGroup.Ext_Out_Error_FixLink
+bool                                            IndexRateGroup.Ext_Out_Error_SetOK
+DateTime                                        IndexRateGroup.Ext_Out_LastSyncUTC
+--> ExternalSystemIndexRateGroup[]              IndexRateGroup.ExternalSystemIndexRateGroups
 byte                                            IndustryType.IndustryTypeId
 string                                          IndustryType.IndustryTypeIdExternal
 string [MultilineText](100)                     IndustryType.Description
@@ -4204,6 +4261,8 @@ bool                                            ServiceAgreementDetail.Ext_Out_E
 DateTime                                        ServiceAgreementDetail.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceAgreementDetail[]      ServiceAgreementDetail.ExternalSystemServiceAgreementDetails
 int                                             ServiceContract.ServiceContractId
+string                                          ServiceContract.ServiceContractIdExternal
+string                                          ServiceContract.IndexRateGroupIdExternal
 DateTime                                        ServiceContract.ActiveDueDate
 int                                             ServiceContract.Default_AssignmentId
 string (1024)                                   ServiceContract.DueRecurrencePattern
@@ -4212,6 +4271,7 @@ bool                                            ServiceContract.Inactive
 decimal                                         ServiceContract.IndexRate
 byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
+DateTime                                        ServiceContract.InstalledDate
 DateTime                                        ServiceContract.InvoiceActiveDueDate
 string (1024)                                   ServiceContract.InvoiceDueRecurrencePattern
 DateTime                                        ServiceContract.InvoiceLastDate
@@ -4232,6 +4292,23 @@ bool                                            ServiceContract.Sys_NextDueForIn
 bool                                            ServiceContract.Sys_NextDueForNotificationsProcessed
 bool                                            ServiceContract.Sys_NextDueForRecurrenceProcessed
 ServiceContractRecurrenceHandlingEnum           ServiceContract.Enum_ServiceContractRecurrenceHandlingId
+bool                                            ServiceContract.Ext_Sys_Deactivated
+string                                          ServiceContract.Ext_ExternalId
+string                                          ServiceContract.Ext_In_Error_MsgNO
+string                                          ServiceContract.Ext_In_Error_MsgEN
+string                                          ServiceContract.Ext_In_Error_TraceId
+string                                          ServiceContract.Ext_In_Error_TechDetail
+string                                          ServiceContract.Ext_In_Error_FixLink
+bool                                            ServiceContract.Ext_In_Error_SetOK
+DateTime                                        ServiceContract.Ext_In_LastSyncUTC
+string                                          ServiceContract.Ext_Out_Error_MsgNO
+string                                          ServiceContract.Ext_Out_Error_MsgEN
+string                                          ServiceContract.Ext_Out_Error_TraceId
+string                                          ServiceContract.Ext_Out_Error_TechDetail
+string                                          ServiceContract.Ext_Out_Error_FixLink
+bool                                            ServiceContract.Ext_Out_Error_SetOK
+DateTime                                        ServiceContract.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceContract[]             ServiceContract.ExternalSystemServiceContracts
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
