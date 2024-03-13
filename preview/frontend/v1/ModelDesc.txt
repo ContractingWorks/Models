@@ -3602,6 +3602,7 @@ int                                             ProductSearch.ProductSearchId
 string [Name](50)                               ProductSearch.Name
 int                                             ProductSearch.ProductGroupId
 int                                             ProductSearch.ProductSearchGroupId
+int                                             ProductSearch.SortOrder
 bool                                            ProductSearch.Sys_Deactivated
 bool                                            ProductSearch.Sys_Historic
 bool                                            ProductSearch.Sys_Incomplete
@@ -3609,6 +3610,7 @@ int                                             ProductSearchGroup.ProductSearch
 int                                             ProductSearchGroup.Default_ManufacturerId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
+int                                             ProductSearchGroup.SortOrder
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
