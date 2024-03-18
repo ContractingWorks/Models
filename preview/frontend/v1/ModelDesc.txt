@@ -617,12 +617,15 @@ string (2)                                      Customer.CountryId
 int                                             Customer.CreditLimit
 short                                           Customer.CustomerClassId
 int                                             Customer.CustomerNumber
+string (200)                                    Customer.CustomerReference
 int                                             Customer.Default_AssignmentCategoryId
 short                                           Customer.Default_InvoiceTemplateId
 string [Email](150)                             Customer.Email
+string (200)                                    Customer.ExternalReference
 string [Phone](50)                              Customer.Fax
 bool                                            Customer.Inactive
 bool                                            Customer.Internal
+string (200)                                    Customer.InternalReference
 int                                             Customer.Invoice_CustomerId
 bool                                            Customer.InvoiceConsolidate
 bool                                            Customer.InvoiceElectronic
@@ -2589,8 +2592,10 @@ DateTime                                        Invoice.RegisteredUTC
 decimal                                         Invoice.RemainingAmount
 DateTime                                        Invoice.SentUTC
 bool                                            Invoice.Sys_Deactivated
+bool                                            Invoice.Sys_FinalPostProcessDone
 bool                                            Invoice.Sys_Historic
 bool                                            Invoice.Sys_Incomplete
+bool                                            Invoice.Sys_PostProcessNeeded
 bool                                            Invoice.Sys_ResetSkipOnNextWhenInvoiced
 DateTime                                        Invoice.TransferredUTC
 bool                                            Invoice.VATFree
