@@ -3143,9 +3143,9 @@ DateTime                                        PaymentTerm.Ext_Out_LastSyncUTC
 short                                           Permission.PermissionId
 string                                          Permission.PermissionIdExternal
 string [MultilineText](200)                     Permission.Description
+bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
 string [Name](50)                               Permission.Name
-bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
@@ -4057,8 +4057,6 @@ bool                                            Role.Sys_Deactivated
 bool                                            Role.Sys_Historic
 bool                                            Role.Sys_Incomplete
 bool                                            Role.UserEditable
-ClientLevelEnum                                 Role.AdminFor_Enum_ClientLevelId
-ClientLevelEnum                                 Role.Enum_ClientLevelId
 bool                                            Role.Ext_Sys_Deactivated
 string                                          Role.Ext_ExternalId
 string                                          Role.Ext_In_Error_MsgNO
