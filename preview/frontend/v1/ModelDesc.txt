@@ -5041,6 +5041,7 @@ short                                           User.ExternalSystemId
 string [Name](200)                              User.FirstName
 bool                                            User.IsClientAdmin
 bool                                            User.IsInactive
+bool                                            User.IsSystemUser
 string [Name](200)                              User.LastName
 string [Email](100)                             User.SecondaryEmail
 bool                                            User.Sys_Deactivated
@@ -5061,6 +5062,7 @@ CommandEnum                                     UserCommand.Enum_CommandId
 int                                             UserRole.UserRoleId
 string                                          UserRole.UserRoleIdExternal
 string                                          UserRole.RoleIdExternal
+bool                                            UserRole.AssignedFromClaims
 short                                           UserRole.RoleId
 bool                                            UserRole.Sys_Deactivated
 bool                                            UserRole.Sys_Historic
