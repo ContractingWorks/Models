@@ -345,35 +345,6 @@ bool                                            AttachmentCategory.Sys_Deactivat
 bool                                            AttachmentCategory.Sys_Historic
 bool                                            AttachmentCategory.Sys_Incomplete
 AttachmentCategoryEnum                          AttachmentCategory.Enum_AttachmentCategoryId
-int                                             Attribute.AttributeId
-string [MultilineText](500)                     Attribute.Description
-string [Name](50)                               Attribute.Name
-bool                                            Attribute.Sys_Deactivated
-bool                                            Attribute.Sys_Historic
-bool                                            Attribute.Sys_Incomplete
-short                                           Attribute.UnitId
-ValueTypeEnum                                   Attribute.Enum_ValueTypeId
-int                                             AttributeFilter.AttributeFilterId
-int                                             AttributeFilter.AttributeId
-DateTime                                        AttributeFilter.DateTimeUTC
-byte                                            AttributeFilter.FilterGroupNumber
-bool                                            AttributeFilter.IsAnd
-decimal                                         AttributeFilter.Number
-int                                             AttributeFilter.ProductSearchId
-byte                                            AttributeFilter.SortOrder
-bool                                            AttributeFilter.Sys_Deactivated
-bool                                            AttributeFilter.Sys_Historic
-bool                                            AttributeFilter.Sys_Incomplete
-string (50)                                     AttributeFilter.Text
-AttributeFilterOperationEnum                    AttributeFilter.Enum_AttributeFilterOperationId
-int                                             AttributeValue.AttributeValueId
-int                                             AttributeValue.AttributeId
-DateTime                                        AttributeValue.DateTimeUTC
-decimal                                         AttributeValue.Number
-bool                                            AttributeValue.Sys_Deactivated
-bool                                            AttributeValue.Sys_Historic
-bool                                            AttributeValue.Sys_Incomplete
-string (50)                                     AttributeValue.Text
 int                                             BoligmappaAttachment.BoligmappaAttachmentId
 int                                             BoligmappaAttachment.BoligmappaFileId
 string (50)                                     BoligmappaAttachment.BoligmappaNumber
@@ -3218,7 +3189,7 @@ short                                           Product.POSPurchase_VATRequired_
 short                                           Product.POSSale_VATFree_LedgerAccountId
 short                                           Product.POSSale_VATRequired_LedgerAccountId
 bool                                            Product.PriceOnly
-int                                             Product.ProductGroupId
+int                                             Product.ProductClassId
 string [Name](100)                              Product.ProductName
 string (50)                                     Product.ProductNumber
 int                                             Product.ProductSeriesId
@@ -3369,16 +3340,6 @@ string                                          ProductAgreementGroupLine.Ext_Ou
 bool                                            ProductAgreementGroupLine.Ext_Out_Error_SetOK
 DateTime                                        ProductAgreementGroupLine.Ext_Out_LastSyncUTC
 --> ExternalSystemProductAgreementGroupLine[]   ProductAgreementGroupLine.ExternalSystemProductAgreementGroupLines
-int                                             ProductAttribute.ProductAttributeId
-string                                          ProductAttribute.ProductIdExternal
-int                                             ProductAttribute.AttributeId
-DateTime                                        ProductAttribute.DateTimeUTC
-decimal                                         ProductAttribute.Number
-int                                             ProductAttribute.ProductId
-bool                                            ProductAttribute.Sys_Deactivated
-bool                                            ProductAttribute.Sys_Historic
-bool                                            ProductAttribute.Sys_Incomplete
-string (50)                                     ProductAttribute.Text
 int                                             ProductBatch.ProductBatchId
 string                                          ProductBatch.ProductIdExternal
 string                                          ProductBatch.StockIdExternal
@@ -3402,6 +3363,24 @@ DateTime                                        ProductCampaign.StartDatetimeUTC
 bool                                            ProductCampaign.Sys_Deactivated
 bool                                            ProductCampaign.Sys_Historic
 bool                                            ProductCampaign.Sys_Incomplete
+int                                             ProductClass.ProductClassId
+string (20)                                     ProductClass.Code
+string [MultilineText](100)                     ProductClass.Description
+bool                                            ProductClass.ETIM
+int                                             ProductClass.ProductGroupId
+bool                                            ProductClass.Sys_Deactivated
+bool                                            ProductClass.Sys_Historic
+bool                                            ProductClass.Sys_Incomplete
+byte                                            ProductClass.Version
+int                                             ProductClassFeature.ProductClassFeatureId
+int                                             ProductClassFeature.ProductClassId
+int                                             ProductClassFeature.ProductFeatureId
+int                                             ProductClassFeature.SortOrder
+bool                                            ProductClassFeature.Sys_Deactivated
+bool                                            ProductClassFeature.Sys_Historic
+bool                                            ProductClassFeature.Sys_Incomplete
+short                                           ProductClassFeature.UnitId
+ValueTypeEnum                                   ProductClassFeature.Enum_ValueTypeId
 int                                             ProductExtendedInfo.ProductExtendedInfoId
 string                                          ProductExtendedInfo.ProductIdExternal
 bool                                            ProductExtendedInfo.Sys_Deactivated
@@ -3409,19 +3388,53 @@ bool                                            ProductExtendedInfo.Sys_Historic
 bool                                            ProductExtendedInfo.Sys_Incomplete
 string (50)                                     ProductExtendedInfo.Type
 string                                          ProductExtendedInfo.Value
+int                                             ProductFeature.ProductFeatureId
+string (20)                                     ProductFeature.Code
+string [MultilineText](100)                     ProductFeature.Description
+bool                                            ProductFeature.ETIM
+bool                                            ProductFeature.Sys_Deactivated
+bool                                            ProductFeature.Sys_Historic
+bool                                            ProductFeature.Sys_Incomplete
+int                                             ProductFeatureFilter.ProductFeatureFilterId
+byte                                            ProductFeatureFilter.FilterGroupNumber
+bool                                            ProductFeatureFilter.IsAnd
+int                                             ProductFeatureFilter.ProductSearchId
+byte                                            ProductFeatureFilter.SortOrder
+bool                                            ProductFeatureFilter.Sys_Deactivated
+bool                                            ProductFeatureFilter.Sys_Historic
+bool                                            ProductFeatureFilter.Sys_Incomplete
+string (100)                                    ProductFeatureFilter.Value
+ProductFeatureFilterOperationEnum               ProductFeatureFilter.Enum_ProductFeatureFilterOperationId
+int                                             ProductFeatureListValue.ProductFeatureListValueId
+string (20)                                     ProductFeatureListValue.Code
+string [MultilineText](100)                     ProductFeatureListValue.Description
+bool                                            ProductFeatureListValue.ETIM
+bool                                            ProductFeatureListValue.Sys_Deactivated
+bool                                            ProductFeatureListValue.Sys_Historic
+bool                                            ProductFeatureListValue.Sys_Incomplete
+int                                             ProductFeatureListValueUse.ProductFeatureListValueUseId
+int                                             ProductFeatureListValueUse.ProductFeatureId
+int                                             ProductFeatureListValueUse.ProductFeatureListValueId
+int                                             ProductFeatureListValueUse.SortOrder
+bool                                            ProductFeatureListValueUse.Sys_Deactivated
+bool                                            ProductFeatureListValueUse.Sys_Historic
+bool                                            ProductFeatureListValueUse.Sys_Incomplete
+int                                             ProductFeatureUse.ProductFeatureUseId
+string                                          ProductFeatureUse.ProductIdExternal
+int                                             ProductFeatureUse.ProductFeatureId
+int                                             ProductFeatureUse.ProductFeatureListValueId
+int                                             ProductFeatureUse.ProductId
+bool                                            ProductFeatureUse.Sys_Deactivated
+bool                                            ProductFeatureUse.Sys_Historic
+bool                                            ProductFeatureUse.Sys_Incomplete
+string (100)                                    ProductFeatureUse.Value
 int                                             ProductGroup.ProductGroupId
 string (20)                                     ProductGroup.Code
 string [MultilineText](100)                     ProductGroup.Description
-int                                             ProductGroup.Parent_ProductGroupId
+bool                                            ProductGroup.ETIM
 bool                                            ProductGroup.Sys_Deactivated
 bool                                            ProductGroup.Sys_Historic
 bool                                            ProductGroup.Sys_Incomplete
---> ProductGroupAttribute[]                     ProductGroup.ProductGroupAttributes
-int                                             ProductGroupAttribute.ProductGroupAttributeId
-int                                             ProductGroupAttribute.AttributeId
-bool                                            ProductGroupAttribute.Sys_Deactivated
-bool                                            ProductGroupAttribute.Sys_Historic
-bool                                            ProductGroupAttribute.Sys_Incomplete
 int                                             ProductImport.ProductImportId
 string                                          ProductImport.SupplierIndustryTypeIdExternal
 string (250)                                    ProductImport.FileName
@@ -3628,7 +3641,7 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 bool                                            ProductNoteLineBatch.Sys_Incomplete
 int                                             ProductSearch.ProductSearchId
 string [Name](50)                               ProductSearch.Name
-int                                             ProductSearch.ProductGroupId
+int                                             ProductSearch.ProductClassId
 int                                             ProductSearch.ProductSearchGroupId
 int                                             ProductSearch.SortOrder
 bool                                            ProductSearch.Sys_Deactivated
@@ -5065,11 +5078,12 @@ bool                                            Temp_WebhookMessage.Sys_Incomple
 string [Name](50)                               Temp_WebhookMessage.TableName
 short                                           Temp_WebhookMessage.WebhookSubscriptionId
 short                                           Unit.UnitId
-string (5)                                      Unit.Code
+string (8)                                      Unit.Code
+bool                                            Unit.ETIM
 bool                                            Unit.Sys_Deactivated
 bool                                            Unit.Sys_Historic
 bool                                            Unit.Sys_Incomplete
-string (5)                                      Unit.Text
+string (20)                                     Unit.Text
 int                                             User.UserId
 string                                          User.EmployeeIdExternal
 string (2)                                      User.DefaultLanguage
