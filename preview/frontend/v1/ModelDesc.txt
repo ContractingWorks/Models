@@ -88,6 +88,9 @@ DateTime                                        Appointment.Ext_Out_LastSyncUTC
 --> ExternalSystemAppointment[]                 Appointment.ExternalSystemAppointments
 int                                             Assignment.AssignmentId
 string                                          Assignment.AssignmentIdExternal
+string                                          Assignment.AssignmentCategoryId_1External
+string                                          Assignment.AssignmentCategoryId_2External
+string                                          Assignment.AssignmentCategoryId_3External
 string                                          Assignment.AssignmentCategoryIdExternal
 string                                          Assignment.CaseHandler_EmployeeIdExternal
 string                                          Assignment.CustomerIdExternal
@@ -103,6 +106,9 @@ string                                          Assignment.ServiceContractIdExte
 string                                          Assignment.Sys_PreviousProductAgreementGroupIdExternal
 bool                                            Assignment.Archived
 int                                             Assignment.AssignmentCategoryId
+int                                             Assignment.AssignmentCategoryId_1
+int                                             Assignment.AssignmentCategoryId_2
+int                                             Assignment.AssignmentCategoryId_3
 DateTime                                        Assignment.AssignmentCompleteDateTimeUTC
 bool                                            Assignment.AssignmentCompleteMobileDevice
 int                                             Assignment.AssignmentNumber
@@ -196,6 +202,7 @@ bool                                            AssignmentAttachment.Sys_Incompl
 int                                             AssignmentCategory.AssignmentCategoryId
 string                                          AssignmentCategory.AssignmentCategoryIdExternal
 int                                             AssignmentCategory.AssignmentCategoryNumber
+byte                                            AssignmentCategory.ColumnNo
 string [MultilineText](100)                     AssignmentCategory.Description
 decimal                                         AssignmentCategory.MarginPercent
 bool                                            AssignmentCategory.Sys_Deactivated
@@ -604,13 +611,20 @@ bool                                            Country.Sys_Historic
 bool                                            Country.Sys_Incomplete
 int                                             Customer.CustomerId
 string                                          Customer.CustomerIdExternal
+string                                          Customer.AssignmentCategoryId_1External
+string                                          Customer.AssignmentCategoryId_2External
+string                                          Customer.AssignmentCategoryId_3External
+string                                          Customer.AssignmentCategoryIdExternal
 string                                          Customer.CustomerClassIdExternal
-string                                          Customer.Default_AssignmentCategoryIdExternal
 string                                          Customer.Default_InvoiceTemplateIdExternal
 string                                          Customer.Invoice_CustomerIdExternal
 string                                          Customer.PaymentTermIdExternal
 string                                          Customer.ProductAgreementGroupIdExternal
 string                                          Customer.ServiceAgreementIdExternal
+int                                             Customer.AssignmentCategoryId
+int                                             Customer.AssignmentCategoryId_1
+int                                             Customer.AssignmentCategoryId_2
+int                                             Customer.AssignmentCategoryId_3
 string (50)                                     Customer.BankAccountNumber
 string [MultilineText](1024)                    Customer.Comment
 string (2)                                      Customer.CountryId
@@ -618,7 +632,6 @@ int                                             Customer.CreditLimit
 short                                           Customer.CustomerClassId
 int                                             Customer.CustomerNumber
 string (200)                                    Customer.CustomerReference
-int                                             Customer.Default_AssignmentCategoryId
 short                                           Customer.Default_InvoiceTemplateId
 string [Email](150)                             Customer.Email
 string (200)                                    Customer.ExternalReference
@@ -687,14 +700,20 @@ bool                                            CustomerAttachment.Sys_Historic
 bool                                            CustomerAttachment.Sys_Incomplete
 short                                           CustomerClass.CustomerClassId
 string                                          CustomerClass.CustomerClassIdExternal
-string                                          CustomerClass.Default_AssignmentCategoryIdExternal
+string                                          CustomerClass.AssignmentCategoryId_1External
+string                                          CustomerClass.AssignmentCategoryId_2External
+string                                          CustomerClass.AssignmentCategoryId_3External
+string                                          CustomerClass.AssignmentCategoryIdExternal
 string                                          CustomerClass.Default_InvoiceTemplateIdExternal
 string                                          CustomerClass.PaymentTermIdExternal
 string                                          CustomerClass.ProductAgreementGroupIdExternal
 string                                          CustomerClass.ServiceAgreementIdExternal
+int                                             CustomerClass.AssignmentCategoryId
+int                                             CustomerClass.AssignmentCategoryId_1
+int                                             CustomerClass.AssignmentCategoryId_2
+int                                             CustomerClass.AssignmentCategoryId_3
 string (5)                                      CustomerClass.Code
 int                                             CustomerClass.CreditLimit
-int                                             CustomerClass.Default_AssignmentCategoryId
 short                                           CustomerClass.Default_InvoiceTemplateId
 string [MultilineText](500)                     CustomerClass.Description
 bool                                            CustomerClass.Internal
@@ -3700,24 +3719,31 @@ bool                                            ProductSync.Sys_Incomplete
 SyncStatusEnum                                  ProductSync.Enum_SyncStatusId
 int                                             Project.ProjectId
 string                                          Project.ProjectIdExternal
+string                                          Project.AssignmentCategoryId_1External
+string                                          Project.AssignmentCategoryId_2External
+string                                          Project.AssignmentCategoryId_3External
+string                                          Project.AssignmentCategoryIdExternal
 string                                          Project.Budget_DimensionIdExternal
 string                                          Project.CaseHandler_EmployeeIdExternal
 string                                          Project.CustomerIdExternal
-string                                          Project.Default_AssignmentCategoryIdExternal
 string                                          Project.Default_InvoiceTemplateIdExternal
 string                                          Project.DepartmentIdExternal
 string                                          Project.Invoice_CustomerIdExternal
 string                                          Project.ParentProjectIdExternal
 string                                          Project.ProductAgreementGroupIdExternal
+string                                          Project.ProjectGroupId_1External
 string                                          Project.ProjectGroupIdExternal
 string                                          Project.ProjectTypeIdExternal
 string                                          Project.ServiceAgreementIdExternal
+int                                             Project.AssignmentCategoryId
+int                                             Project.AssignmentCategoryId_1
+int                                             Project.AssignmentCategoryId_2
+int                                             Project.AssignmentCategoryId_3
 int                                             Project.Budget_DimensionId
 int                                             Project.CaseHandler_EmployeeId
 string (50)                                     Project.Code
 int                                             Project.CustomerId
 string (50)                                     Project.CustomersReference
-int                                             Project.Default_AssignmentCategoryId
 short                                           Project.Default_InvoiceTemplateId
 short                                           Project.DepartmentId
 string [MultilineText](500)                     Project.Description
@@ -3736,6 +3762,7 @@ int                                             Project.ProductAgreementGroupId
 bool                                            Project.ProjectAssessment
 DateTime                                        Project.ProjectDateTimeUTC
 short                                           Project.ProjectGroupId
+short                                           Project.ProjectGroupId_1
 byte                                            Project.ProjectTypeId
 string (500)                                    Project.Reference
 decimal                                         Project.RiskMarginPercent
@@ -3824,6 +3851,7 @@ bool                                            ProjectAttachment.Sys_Incomplete
 short                                           ProjectGroup.ProjectGroupId
 string                                          ProjectGroup.ProjectGroupIdExternal
 string (50)                                     ProjectGroup.Code
+byte                                            ProjectGroup.ColumnNo
 string [Name](100)                              ProjectGroup.Name
 bool                                            ProjectGroup.Sys_Deactivated
 bool                                            ProjectGroup.Sys_Historic
@@ -4315,7 +4343,10 @@ bool                                            ServiceContract.Ext_Out_Error_Se
 DateTime                                        ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]             ServiceContract.ExternalSystemServiceContracts
 byte                                            Settings_Assignment.Settings_AssignmentId
-string                                          Settings_Assignment.Default_AssignmentCategoryIdExternal
+string                                          Settings_Assignment.AssignmentCategoryId_1External
+string                                          Settings_Assignment.AssignmentCategoryId_2External
+string                                          Settings_Assignment.AssignmentCategoryId_3External
+string                                          Settings_Assignment.AssignmentCategoryIdExternal
 string                                          Settings_Assignment.Default_CasehandlerEmployeeIdExternal
 string                                          Settings_Assignment.Default_InvoiceTemplateIdExternal
 string                                          Settings_Assignment.Default_ProjectIdExternal
@@ -4324,12 +4355,15 @@ string                                          Settings_Assignment.ProductAgree
 bool                                            Settings_Assignment.AllowHpcTimeCorrection
 bool                                            Settings_Assignment.ApproveBeforeInvoicing
 bool                                            Settings_Assignment.ApproveHoursBeforeInvoicing
+int                                             Settings_Assignment.AssignmentCategoryId
+int                                             Settings_Assignment.AssignmentCategoryId_1
+int                                             Settings_Assignment.AssignmentCategoryId_2
+int                                             Settings_Assignment.AssignmentCategoryId_3
 bool                                            Settings_Assignment.AssignmentDateToStartDate
 bool                                            Settings_Assignment.BudgetNew_AddAllItem
 bool                                            Settings_Assignment.CopyCategoryFromCustomer
 decimal                                         Settings_Assignment.CoverageRateFixedPrice
 decimal                                         Settings_Assignment.CoverageRateNotFixedPrice
-int                                             Settings_Assignment.Default_AssignmentCategoryId
 int                                             Settings_Assignment.Default_CasehandlerEmployeeId
 short                                           Settings_Assignment.Default_InvoiceTemplateId
 int                                             Settings_Assignment.Default_ProjectId
