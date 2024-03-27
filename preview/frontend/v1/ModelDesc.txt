@@ -115,7 +115,6 @@ DateTime                                        Assignment.AssignmentCompleteDat
 bool                                            Assignment.AssignmentCompleteMobileDevice
 int                                             Assignment.AssignmentNumber
 int                                             Assignment.CaseHandler_EmployeeId
-string (100)                                    Assignment.Contact
 decimal                                         Assignment.CoverageRateFixedPrice
 decimal                                         Assignment.CoverageRateNotFixedPrice
 int                                             Assignment.CustomerId
@@ -142,11 +141,9 @@ DateTime                                        Assignment.JobResponsibleComplet
 string (200)                                    Assignment.KeyInformation
 int                                             Assignment.LinkedAssignmentId
 decimal                                         Assignment.MarginPercent
-string [Phone](50)                              Assignment.Mobile
 string [MultilineText]                          Assignment.Note
 DateTime                                        Assignment.OptimizedAtUTC
 byte                                            Assignment.PaymentTermId
-string [Phone](50)                              Assignment.Phone
 int                                             Assignment.PieceworkNumber
 int                                             Assignment.ProductAgreementGroupId
 int                                             Assignment.ProjectId
