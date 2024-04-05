@@ -3364,6 +3364,7 @@ int                                             ProductClass.ProductClassId
 string (20)                                     ProductClass.Code
 string [MultilineText](100)                     ProductClass.Description
 bool                                            ProductClass.ETIM
+short                                           ProductClass.ProductClassTypeId
 int                                             ProductClass.ProductGroupId
 bool                                            ProductClass.Sys_Deactivated
 bool                                            ProductClass.Sys_Historic
@@ -3378,6 +3379,19 @@ bool                                            ProductClassFeature.Sys_Historic
 bool                                            ProductClassFeature.Sys_Incomplete
 short                                           ProductClassFeature.UnitId
 ValueTypeEnum                                   ProductClassFeature.Enum_ValueTypeId
+short                                           ProductClassType.ProductClassTypeId
+string [MultilineText](100)                     ProductClassType.Description
+bool                                            ProductClassType.IsCustom
+bool                                            ProductClassType.Sys_Deactivated
+bool                                            ProductClassType.Sys_Historic
+bool                                            ProductClassType.Sys_Incomplete
+int                                             ProductClassUse.ProductClassUseId
+string                                          ProductClassUse.ProductIdExternal
+int                                             ProductClassUse.ProductClassId
+int                                             ProductClassUse.ProductId
+bool                                            ProductClassUse.Sys_Deactivated
+bool                                            ProductClassUse.Sys_Historic
+bool                                            ProductClassUse.Sys_Incomplete
 int                                             ProductExtendedInfo.ProductExtendedInfoId
 string                                          ProductExtendedInfo.ProductIdExternal
 bool                                            ProductExtendedInfo.Sys_Deactivated
@@ -3429,6 +3443,8 @@ int                                             ProductGroup.ProductGroupId
 string (20)                                     ProductGroup.Code
 string [MultilineText](100)                     ProductGroup.Description
 bool                                            ProductGroup.ETIM
+int                                             ProductGroup.Parent_ProductGroupId
+short                                           ProductGroup.ProductClassTypeId
 bool                                            ProductGroup.Sys_Deactivated
 bool                                            ProductGroup.Sys_Historic
 bool                                            ProductGroup.Sys_Incomplete
