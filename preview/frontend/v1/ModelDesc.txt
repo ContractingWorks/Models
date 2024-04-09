@@ -3186,7 +3186,6 @@ short                                           Product.POSPurchase_VATRequired_
 short                                           Product.POSSale_VATFree_LedgerAccountId
 short                                           Product.POSSale_VATRequired_LedgerAccountId
 bool                                            Product.PriceOnly
-int                                             Product.ProductClassId
 string [Name](100)                              Product.ProductName
 string (50)                                     Product.ProductNumber
 int                                             Product.ProductSeriesId
