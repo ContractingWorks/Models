@@ -4429,9 +4429,9 @@ string                                          Settings_Main.StorageIdExternal
 string                                          Settings_Main.SupplierIndustryTypeIdExternal
 string                                          Settings_Main.VATFree_Int_VATRateIdExternal
 string                                          Settings_Main.VATFree_Nat_VATRateIdExternal
-string (512)                                    Settings_Main.Appointment_OnCreateMessge
+string (512)                                    Settings_Main.Appointment_OnCreateMessage
 int                                             Settings_Main.Appointment_ReminderLeadHours
-string (512)                                    Settings_Main.Appointment_ReminderMessge
+string (512)                                    Settings_Main.Appointment_ReminderMessage
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
 string (2)                                      Settings_Main.DefaultLanguage
