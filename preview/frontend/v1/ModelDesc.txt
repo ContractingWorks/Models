@@ -159,6 +159,7 @@ bool                                            Assignment.Sys_Deactivated
 bool                                            Assignment.Sys_Historic
 bool                                            Assignment.Sys_Incomplete
 bool                                            Assignment.Sys_InitialPostProcessNeeded
+bool                                            Assignment.Sys_IsServiceContract
 int                                             Assignment.Sys_PreviousProductAgreementGroupId
 string (255)                                    Assignment.Sys_Tags
 byte                                            Assignment.TimeSheetAttachmentsNumber
@@ -2410,6 +2411,26 @@ DateTime                                        ExternalSystemWageRateEmployee.O
 string [MultilineText](50)                      ExternalSystemWageRateEmployee.StatusDescription
 bool                                            ExternalSystemWageRateEmployee.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemWageRateEmployee.Enum_SyncStatusId
+int                                             Import_ETIM.Import_ETIMId
+string (100)                                    Import_ETIM.Class
+string (20)                                     Import_ETIM.ClassId
+byte                                            Import_ETIM.ClassVersion
+string (100)                                    Import_ETIM.Feature
+string (20)                                     Import_ETIM.FeatureId
+int                                             Import_ETIM.FileId
+string (100)                                    Import_ETIM.Group
+string (20)                                     Import_ETIM.GroupId
+string (100)                                    Import_ETIM.ProductClassType
+byte                                            Import_ETIM.SortFeature
+byte                                            Import_ETIM.SortValue
+bool                                            Import_ETIM.Sys_Deactivated
+bool                                            Import_ETIM.Sys_Historic
+bool                                            Import_ETIM.Sys_Incomplete
+string (1)                                      Import_ETIM.Type
+string (100)                                    Import_ETIM.Unit
+string (20)                                     Import_ETIM.UnitId
+string (100)                                    Import_ETIM.Value
+string (20)                                     Import_ETIM.ValueId
 short                                           ImportFile.ImportFileId
 bool                                            ImportFile.AutoImport
 string (255)                                    ImportFile.AzureBlobIdExt
@@ -3378,6 +3399,13 @@ bool                                            ProductClassFeature.Sys_Historic
 bool                                            ProductClassFeature.Sys_Incomplete
 short                                           ProductClassFeature.UnitId
 ValueTypeEnum                                   ProductClassFeature.Enum_ValueTypeId
+int                                             ProductClassFeatureListValueUse.ProductClassFeatureListValueUseId
+int                                             ProductClassFeatureListValueUse.ProductClassFeatureId
+int                                             ProductClassFeatureListValueUse.ProductFeatureListValueId
+int                                             ProductClassFeatureListValueUse.SortOrder
+bool                                            ProductClassFeatureListValueUse.Sys_Deactivated
+bool                                            ProductClassFeatureListValueUse.Sys_Historic
+bool                                            ProductClassFeatureListValueUse.Sys_Incomplete
 short                                           ProductClassType.ProductClassTypeId
 string [MultilineText](100)                     ProductClassType.Description
 bool                                            ProductClassType.IsCustom
@@ -3422,13 +3450,6 @@ bool                                            ProductFeatureListValue.ETIM
 bool                                            ProductFeatureListValue.Sys_Deactivated
 bool                                            ProductFeatureListValue.Sys_Historic
 bool                                            ProductFeatureListValue.Sys_Incomplete
-int                                             ProductFeatureListValueUse.ProductFeatureListValueUseId
-int                                             ProductFeatureListValueUse.ProductFeatureId
-int                                             ProductFeatureListValueUse.ProductFeatureListValueId
-int                                             ProductFeatureListValueUse.SortOrder
-bool                                            ProductFeatureListValueUse.Sys_Deactivated
-bool                                            ProductFeatureListValueUse.Sys_Historic
-bool                                            ProductFeatureListValueUse.Sys_Incomplete
 int                                             ProductFeatureUse.ProductFeatureUseId
 string                                          ProductFeatureUse.ProductIdExternal
 int                                             ProductFeatureUse.ProductFeatureId
