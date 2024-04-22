@@ -3445,11 +3445,11 @@ string (100)                                    ProductFeatureFilter.Value
 ProductFeatureFilterOperationEnum               ProductFeatureFilter.Enum_ProductFeatureFilterOperationId
 int                                             ProductFeatureListValue.ProductFeatureListValueId
 string (20)                                     ProductFeatureListValue.Code
-string [MultilineText](100)                     ProductFeatureListValue.Description
 bool                                            ProductFeatureListValue.ETIM
 bool                                            ProductFeatureListValue.Sys_Deactivated
 bool                                            ProductFeatureListValue.Sys_Historic
 bool                                            ProductFeatureListValue.Sys_Incomplete
+string (100)                                    ProductFeatureListValue.Value
 int                                             ProductFeatureUse.ProductFeatureUseId
 string                                          ProductFeatureUse.ProductIdExternal
 int                                             ProductFeatureUse.ProductFeatureId
