@@ -634,6 +634,7 @@ bool                                            Customer.Sys_Deactivated
 bool                                            Customer.Sys_Historic
 bool                                            Customer.Sys_Incomplete
 byte                                            Customer.TimeSheetAttachmentsNumber
+CustomerCreateSourceEnum                        Customer.Enum_CustomerCreateSourceId
 DebtCollectionStatusEnum                        Customer.Enum_DebtCollectionStatusId
 bool                                            Customer.Ext_Sys_Deactivated
 string                                          Customer.Ext_ExternalId
@@ -2580,6 +2581,7 @@ string                                          Invoice.AssignmentIdExternal
 string                                          Invoice.CustomerIdExternal
 string                                          Invoice.DebtorCustomerIdExternal
 string                                          Invoice.DepartmentIdExternal
+string                                          Invoice.MasterInvoiceIdExternal
 string                                          Invoice.ParentInvoiceIdExternal
 string                                          Invoice.PaymentTermIdExternal
 string                                          Invoice.ProjectIdExternal
@@ -2596,6 +2598,9 @@ DateTime                                        Invoice.InvoicedUTC
 int                                             Invoice.InvoiceNumber
 bool                                            Invoice.IsCreditNote
 bool                                            Invoice.IsFinalInvoice
+bool                                            Invoice.IsMasterInvoice
+int                                             Invoice.MasterInvoiceId
+int                                             Invoice.MasterInvoiceSortOrder
 decimal                                         Invoice.NetAmount
 int                                             Invoice.ParentInvoiceId
 byte                                            Invoice.PaymentTermId
