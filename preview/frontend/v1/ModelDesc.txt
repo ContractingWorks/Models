@@ -2686,6 +2686,7 @@ short                                           InvoiceLine.InvoiceLineRuleId
 string                                          InvoiceLine.InvoiceLineText
 int                                             InvoiceLine.InvoicingDimensionValueId
 bool                                            InvoiceLine.IsFixedPrice
+bool                                            InvoiceLine.IsMasterInvoice
 bool                                            InvoiceLine.IsVarious
 decimal                                         InvoiceLine.ListPrice
 bool                                            InvoiceLine.PriceOnly
