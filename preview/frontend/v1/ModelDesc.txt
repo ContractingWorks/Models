@@ -2693,6 +2693,7 @@ bool                                            InvoiceLine.PriceOnly
 short                                           InvoiceLine.ProductAgreementId
 int                                             InvoiceLine.ProductSupplierIndustryTypeId
 int                                             InvoiceLine.ProjectPeriodId
+decimal                                         InvoiceLine.Quantity
 decimal                                         InvoiceLine.QuantityInvoice
 DateTime                                        InvoiceLine.RegisteredDateTimeUTC
 decimal                                         InvoiceLine.SalesPrice
