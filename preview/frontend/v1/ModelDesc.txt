@@ -2455,22 +2455,12 @@ ImportFormatEnum                                ImportFile.Enum_ImportFormatId
 ImportStatusEnum                                ImportFile.Enum_ImportStatusId
 ImportTypeEnum                                  ImportFile.Enum_ImportTypeId
 short                                           ImportFile2.ImportFile2Id
-bool                                            ImportFile2.AutoImport
-string (255)                                    ImportFile2.AzureBlobIdExt
-DateTime                                        ImportFile2.DownloadedDateTimeUTC
-DateTime                                        ImportFile2.ImportedDateTimeUTC
-string                                          ImportFile2.ImportMessage
+DateTime                                        ImportFile2.LastStatusChangedUTC
 string (50)                                     ImportFile2.LocalHashCode
-bool                                            ImportFile2.ManualUpload
-byte                                            ImportFile2.RemainingDownloadTryCount
-byte                                            ImportFile2.RemainingImportTryCount
-bool                                            ImportFile2.SourceAutoDeleteAfterImport
-DateTime                                        ImportFile2.SourceDeletedDateTimeUTC
 string (255)                                    ImportFile2.SourceFileName
 long                                            ImportFile2.SourceFileSize
-string (50)                                     ImportFile2.SourceHashCode
-DateTime                                        ImportFile2.SourceLastUpdatedUTC
-short                                           ImportFile2.SupplierIndustryTypeFtpInfoId
+string                                          ImportFile2.StatusMessage
+short                                           ImportFile2.SupplierIndustryTypeId
 bool                                            ImportFile2.Sys_Deactivated
 bool                                            ImportFile2.Sys_Historic
 bool                                            ImportFile2.Sys_Incomplete
