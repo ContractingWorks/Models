@@ -2455,7 +2455,8 @@ ImportFormatEnum                                ImportFile.Enum_ImportFormatId
 ImportStatusEnum                                ImportFile.Enum_ImportStatusId
 ImportTypeEnum                                  ImportFile.Enum_ImportTypeId
 short                                           ImportFile2.ImportFile2Id
-DateTime                                        ImportFile2.LastStatusChangedUTC
+string                                          ImportFile2.SupplierIndustryTypeIdExternal
+DateTime                                        ImportFile2.LastStatusChangeUTC
 string (50)                                     ImportFile2.LocalHashCode
 string (255)                                    ImportFile2.SourceFileName
 long                                            ImportFile2.SourceFileSize
@@ -4475,7 +4476,6 @@ int                                             Settings_Main.Appointment_Remind
 string (512)                                    Settings_Main.Appointment_ReminderMessage
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
-bool                                            Settings_Main.CustomerImportUseExternal
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
 string [Email](200)                             Settings_Main.Email
@@ -4484,6 +4484,7 @@ byte                                            Settings_Main.IndustryTypeId
 bool                                            Settings_Main.Invoice_KeepValuesForCreditNotes
 bool                                            Settings_Main.Invoice_SendImmediately
 short                                           Settings_Main.InvoiceTemplateId
+bool                                            Settings_Main.LookupExternal_Customer
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
 bool                                            Settings_Main.PreserveGridSettingsLocally
