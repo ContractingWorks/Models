@@ -2454,6 +2454,29 @@ bool                                            ImportFile.Sys_Incomplete
 ImportFormatEnum                                ImportFile.Enum_ImportFormatId
 ImportStatusEnum                                ImportFile.Enum_ImportStatusId
 ImportTypeEnum                                  ImportFile.Enum_ImportTypeId
+short                                           ImportFile2.ImportFile2Id
+bool                                            ImportFile2.AutoImport
+string (255)                                    ImportFile2.AzureBlobIdExt
+DateTime                                        ImportFile2.DownloadedDateTimeUTC
+DateTime                                        ImportFile2.ImportedDateTimeUTC
+string                                          ImportFile2.ImportMessage
+string (50)                                     ImportFile2.LocalHashCode
+bool                                            ImportFile2.ManualUpload
+byte                                            ImportFile2.RemainingDownloadTryCount
+byte                                            ImportFile2.RemainingImportTryCount
+bool                                            ImportFile2.SourceAutoDeleteAfterImport
+DateTime                                        ImportFile2.SourceDeletedDateTimeUTC
+string (255)                                    ImportFile2.SourceFileName
+long                                            ImportFile2.SourceFileSize
+string (50)                                     ImportFile2.SourceHashCode
+DateTime                                        ImportFile2.SourceLastUpdatedUTC
+short                                           ImportFile2.SupplierIndustryTypeFtpInfoId
+bool                                            ImportFile2.Sys_Deactivated
+bool                                            ImportFile2.Sys_Historic
+bool                                            ImportFile2.Sys_Incomplete
+ImportFormatEnum                                ImportFile2.Enum_ImportFormatId
+ImportStatusEnum                                ImportFile2.Enum_ImportStatusId
+ImportTypeEnum                                  ImportFile2.Enum_ImportTypeId
 byte                                            IndexRateGroup.IndexRateGroupId
 string                                          IndexRateGroup.IndexRateGroupIdExternal
 string [MultilineText](50)                      IndexRateGroup.Description
@@ -4462,6 +4485,7 @@ int                                             Settings_Main.Appointment_Remind
 string (512)                                    Settings_Main.Appointment_ReminderMessage
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
+bool                                            Settings_Main.CustomerImportUseExternal
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
 string [Email](200)                             Settings_Main.Email
