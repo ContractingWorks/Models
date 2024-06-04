@@ -2953,6 +2953,29 @@ string [Name](100)                              Manufacturer.Name
 bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
+int                                             MapData.MapDataId
+string [MultilineText](500)                     MapData.Comment
+string [MultilineText](250)                     MapData.Description
+string (50)                                     MapData.EntityType
+string [MultilineText](250)                     MapData.ExternalDescription
+string (100)                                    MapData.ExternalId
+string (100)                                    MapData.ExternalNumber
+short                                           MapData.ExternalSystemId
+bool                                            MapData.IsCloseMatch
+bool                                            MapData.IsDeactivated
+bool                                            MapData.IsExactMatch
+bool                                            MapData.IsHistoric
+DateTime                                        MapData.LastUsageUTC
+string (100)                                    MapData.NewNumber
+string (100)                                    MapData.Number
+int                                             MapData.RowId
+bool                                            MapData.SkipForNow
+bool                                            MapData.Sys_Deactivated
+bool                                            MapData.Sys_Historic
+bool                                            MapData.Sys_Incomplete
+int                                             MapData.UsageCount
+string (500)                                    MapData.UserVerificationNeededMessage
+bool                                            MapData.UserVerifiedOK
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
@@ -4544,6 +4567,13 @@ bool                                            Settings_ProductImport.Sys_Deact
 bool                                            Settings_ProductImport.Sys_Historic
 bool                                            Settings_ProductImport.Sys_Incomplete
 byte                                            Settings_ProductImport.VATRateId
+int                                             Settings_StartupValues.Settings_StartupValuesId
+string [Email](150)                             Settings_StartupValues.Fallback_VismaNet_InvoiceEmail
+int                                             Settings_StartupValues.ReplaceUnmapped_Casehandler_EmployeeId
+int                                             Settings_StartupValues.ReplaceUnmapped_JobResonsible_EmployeeId
+bool                                            Settings_StartupValues.Sys_Deactivated
+bool                                            Settings_StartupValues.Sys_Historic
+bool                                            Settings_StartupValues.Sys_Incomplete
 short                                           Settings_User.Settings_UserId
 int                                             Settings_User.CwUserId
 string (100)                                    Settings_User.Key
@@ -4551,6 +4581,20 @@ bool                                            Settings_User.Sys_Deactivated
 bool                                            Settings_User.Sys_Historic
 bool                                            Settings_User.Sys_Incomplete
 string                                          Settings_User.Value
+int                                             StartupTask.StartupTaskId
+string [MultilineText](500)                     StartupTask.Comment
+string [MultilineText](500)                     StartupTask.Description
+string (500)                                    StartupTask.DocumentationLink
+DateTime                                        StartupTask.DoneUTC
+string (50)                                     StartupTask.PerformedBy
+DateTime                                        StartupTask.StartedUTC
+bool                                            StartupTask.Sys_Deactivated
+bool                                            StartupTask.Sys_Historic
+bool                                            StartupTask.Sys_Incomplete
+string (500)                                    StartupTask.SystemMessage
+bool                                            StartupTask.SystemVerifiedOK
+StartupTaskAutomationEnum                       StartupTask.Enum_StartupTaskAutomationId
+StartupTaskResponsibleEnum                      StartupTask.Enum_StartupTaskResponsibleId
 int                                             Stock.StockId
 string                                          Stock.StockIdExternal
 string                                          Stock.ProductIdExternal
