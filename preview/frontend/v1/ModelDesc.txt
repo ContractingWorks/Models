@@ -626,7 +626,6 @@ string [Name](100)                              Customer.Name2
 string (50)                                     Customer.OrganizationNumber
 byte                                            Customer.PaymentTermId
 string [Phone](50)                              Customer.Phone
-bool                                            Customer.Private
 int                                             Customer.ProductAgreementGroupId
 short                                           Customer.ServiceAgreementId
 bool                                            Customer.Sys_CustomerClassApplied
@@ -698,7 +697,6 @@ bool                                            CustomerClass.InvoiceVAT
 bool                                            CustomerClass.IsDefault
 string [Name](50)                               CustomerClass.Name
 byte                                            CustomerClass.PaymentTermId
-bool                                            CustomerClass.Private
 int                                             CustomerClass.ProductAgreementGroupId
 short                                           CustomerClass.ServiceAgreementId
 bool                                            CustomerClass.Sys_Deactivated
@@ -4587,6 +4585,7 @@ string [MultilineText](500)                     StartupTask.Description
 string (500)                                    StartupTask.DocumentationLink
 DateTime                                        StartupTask.DoneUTC
 string (50)                                     StartupTask.PerformedBy
+short                                           StartupTask.SortOrder
 DateTime                                        StartupTask.StartedUTC
 bool                                            StartupTask.Sys_Deactivated
 bool                                            StartupTask.Sys_Historic
