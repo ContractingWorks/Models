@@ -3478,6 +3478,8 @@ bool                                            ProductFeature.Sys_Incomplete
 int                                             ProductFeatureFilter.ProductFeatureFilterId
 byte                                            ProductFeatureFilter.FilterGroupNumber
 bool                                            ProductFeatureFilter.IsAnd
+int                                             ProductFeatureFilter.ProductFeatureId
+int                                             ProductFeatureFilter.ProductFeatureListValueId
 int                                             ProductFeatureFilter.ProductSearchId
 byte                                            ProductFeatureFilter.SortOrder
 bool                                            ProductFeatureFilter.Sys_Deactivated
