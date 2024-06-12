@@ -2968,12 +2968,28 @@ string (100)                                    MapData.NewNumber
 string (100)                                    MapData.Number
 int                                             MapData.RowId
 bool                                            MapData.SkipForNow
+bool                                            MapData.Sys_AllowMapDataValueSelection
 bool                                            MapData.Sys_Deactivated
 bool                                            MapData.Sys_Historic
 bool                                            MapData.Sys_Incomplete
 int                                             MapData.UsageCount
 string (500)                                    MapData.UserVerificationNeededMessage
 bool                                            MapData.UserVerifiedOK
+int                                             MapDataUsage.MapDataUsageId
+string (50)                                     MapDataUsage.EntityType
+DateTime                                        MapDataUsage.LastUsageUTC
+string (100)                                    MapDataUsage.Number
+int                                             MapDataUsage.RowId
+bool                                            MapDataUsage.Sys_Deactivated
+bool                                            MapDataUsage.Sys_Historic
+bool                                            MapDataUsage.Sys_Incomplete
+string (50)                                     MapDataUsage.UsageColumn
+int                                             MapDataUsage.UsageCount
+int                                             MapDataUsage.UsageCountDeactivated
+int                                             MapDataUsage.UsageCountHistoric
+int                                             MapDataUsage.UsageCountMigrated
+string (50)                                     MapDataUsage.UsageTable
+int                                             MapDataUsage.UsageToBeProcessed
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
@@ -2984,6 +3000,7 @@ short                                           MapDataValue.ExternalSystemId
 string                                          MapDataValue.JsonFields
 string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
+bool                                            MapDataValue.Sys_HideInFrontend
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             Note.NoteId
@@ -3241,6 +3258,8 @@ int                                             Product.Income_ProjectAccountId
 byte                                            Product.IndustryTypeId
 bool                                            Product.InvoiceMergeProduct
 bool                                            Product.InvoiceShowProductNumber
+bool                                            Product.IsFavorite
+bool                                            Product.IsPOS
 bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
 int                                             Product.ManufacturerId
@@ -3638,6 +3657,8 @@ int                                             ProductNoteLine.DimensionValueId
 int                                             ProductNoteLine.DimensionValueId_4
 int                                             ProductNoteLine.DimensionValueId_5
 int                                             ProductNoteLine.DimensionValueId_6
+decimal                                         ProductNoteLine.IfVarious_CostPrice
+decimal                                         ProductNoteLine.IfVarious_SalesPriceInvoice
 short                                           ProductNoteLine.Income_LedgerAccountId
 int                                             ProductNoteLine.Income_ProjectAccountId
 int                                             ProductNoteLine.InvoiceId
@@ -4488,6 +4509,8 @@ string                                          Settings_Main.DepartmentIdExtern
 string                                          Settings_Main.IndustryTypeIdExternal
 string                                          Settings_Main.InvoiceTemplateIdExternal
 string                                          Settings_Main.PaymentTermIdExternal
+string                                          Settings_Main.POS_ProductAgreementGroupIdExternal
+string                                          Settings_Main.POS_StorageIdExternal
 string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
@@ -4510,6 +4533,8 @@ short                                           Settings_Main.InvoiceTemplateId
 bool                                            Settings_Main.LookupExternal_Customer
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
+int                                             Settings_Main.POS_ProductAgreementGroupId
+short                                           Settings_Main.POS_StorageId
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
@@ -4527,6 +4552,7 @@ bool                                            Settings_Main.Sys_Historic
 bool                                            Settings_Main.Sys_Incomplete
 bool                                            Settings_Main.UseDepartments
 bool                                            Settings_Main.UseDimensions
+bool                                            Settings_Main.UseServiceApprovalInvoice
 bool                                            Settings_Main.UseServiceApprovalWage
 byte                                            Settings_Main.VATFree_Int_VATRateId
 byte                                            Settings_Main.VATFree_Nat_VATRateId
