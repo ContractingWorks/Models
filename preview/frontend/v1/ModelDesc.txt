@@ -2600,10 +2600,13 @@ string                                          Invoice.ProjectIdExternal
 int                                             Invoice.AssignmentId
 bool                                            Invoice.AttachServiceListAsPDF
 int                                             Invoice.CustomerId
+string (200)                                    Invoice.CustomerReference
 int                                             Invoice.DebtorCustomerId
 short                                           Invoice.DepartmentId
 DateTime                                        Invoice.DueDate
+string (200)                                    Invoice.ExternalReference
 decimal                                         Invoice.GrossAmount
+string (200)                                    Invoice.InternalReference
 string [MultilineText]                          Invoice.InvoiceComment
 DateTime                                        Invoice.InvoiceDate
 DateTime                                        Invoice.InvoicedUTC
