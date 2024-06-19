@@ -2685,6 +2685,7 @@ string                                          InvoiceLine.WageCodeReportCatego
 decimal                                         InvoiceLine.BasisSumPercentInvoice
 short                                           InvoiceLine.Cost_LedgerAccountId
 int                                             InvoiceLine.Cost_ProjectAccountId
+decimal                                         InvoiceLine.CostAmount
 decimal                                         InvoiceLine.CostPrice
 short                                           InvoiceLine.DepartmentId
 int                                             InvoiceLine.DimensionValueId_1
@@ -2754,6 +2755,7 @@ int                                             InvoiceLine_Session.InvoiceLineS
 decimal                                         InvoiceLine_Session.Amount
 int                                             InvoiceLine_Session.AssignmentId
 decimal                                         InvoiceLine_Session.BasisSumPercentInvoice
+decimal                                         InvoiceLine_Session.CostAmount
 decimal                                         InvoiceLine_Session.CostPrice
 string                                          InvoiceLine_Session.FieldAttributesAsJSON
 int                                             InvoiceLine_Session.InvoiceId
