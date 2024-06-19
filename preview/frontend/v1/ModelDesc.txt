@@ -3752,6 +3752,7 @@ bool                                            ProductSearch.Sys_Historic
 bool                                            ProductSearch.Sys_Incomplete
 int                                             ProductSearchGroup.ProductSearchGroupId
 int                                             ProductSearchGroup.Default_ManufacturerId
+int                                             ProductSearchGroup.Default_ProductClassId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
 int                                             ProductSearchGroup.SortOrder
@@ -4322,6 +4323,7 @@ bool                                            Service.Sys_Incomplete
 bool                                            Service.Sys_InitialPostProcessNeeded
 int                                             Service.Sys_InvoicedProjectPeriod
 int                                             Service.Sys_InvoicedProjectPeriodId
+bool                                            Service.Sys_IsSensitive
 bool                                            Service.Sys_IsWorkTime
 string (50)                                     Service.Sys_LastChangeOrigin
 bool                                            Service.Sys_NextWageCodeProcessed
@@ -5242,6 +5244,12 @@ bool                                            UserCommand.Sys_Historic
 bool                                            UserCommand.Sys_Incomplete
 string (100)                                    UserCommand.ToolbarIcon
 CommandEnum                                     UserCommand.Enum_CommandId
+int                                             UserDepartmentAccess.UserDepartmentAccessId
+short                                           UserDepartmentAccess.DepartmentId
+bool                                            UserDepartmentAccess.Sys_Deactivated
+bool                                            UserDepartmentAccess.Sys_Historic
+bool                                            UserDepartmentAccess.Sys_Incomplete
+int                                             UserDepartmentAccess.UserId
 int                                             UserRole.UserRoleId
 string                                          UserRole.UserRoleIdExternal
 string                                          UserRole.RoleIdExternal
@@ -5305,6 +5313,7 @@ bool                                            WageCode.AssignmentUpdate
 int                                             WageCode.Cost_ProjectAccountId
 int                                             WageCode.CostSurcharge_ProjectAccountId
 bool                                            WageCode.FieldsolutionServiceExport
+bool                                            WageCode.IsSensitive
 bool                                            WageCode.IsWorkTime
 bool                                            WageCode.PayrollExport
 bool                                            WageCode.PieceworkActive
