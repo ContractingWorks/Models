@@ -768,7 +768,6 @@ bool                                            Department.Ext_Out_Error_SetOK
 DateTime                                        Department.Ext_Out_LastSyncUTC
 --> Address                                     Department.Address
 --> ExternalSystemDepartment[]                  Department.ExternalSystemDepartments
---> StorageDepartment[]                         Department.StorageDepartments
 int                                             Dimension.DimensionId
 string                                          Dimension.DimensionIdExternal
 string (50)                                     Dimension.Code
@@ -3222,6 +3221,7 @@ string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
 string [Name](50)                               Permission.Name
+bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
@@ -4790,11 +4790,14 @@ DateTime                                        StockTransaction.Ext_Out_LastSyn
 short                                           Storage.StorageId
 string                                          Storage.StorageIdExternal
 string                                          Storage.Balance_LedgerAccountIdExternal
+string                                          Storage.DepartmentIdExternal
 string                                          Storage.ProfitAndLoss_LedgerAccountIdExternal
 string                                          Storage.ResponsibleEmployeeIdExternal
 short                                           Storage.Balance_LedgerAccountId
 bool                                            Storage.CountInProgress
+short                                           Storage.DepartmentId
 string [MultilineText](100)                     Storage.Description
+bool                                            Storage.IsDefaultForDepartment
 short                                           Storage.ProfitAndLoss_LedgerAccountId
 int                                             Storage.ResponsibleEmployeeId
 short                                           Storage.StorageNumber
@@ -4822,14 +4825,6 @@ DateTime                                        Storage.Ext_Out_LastSyncUTC
 --> ExternalSystemStorage[]                     Storage.ExternalSystemStorages
 --> Stock[]                                     Storage.Stocks
 --> StockTransaction[]                          Storage.StockTransactions
---> StorageDepartment[]                         Storage.StorageDepartments
-short                                           StorageDepartment.StorageDepartmentId
-string                                          StorageDepartment.DepartmentIdExternal
-string                                          StorageDepartment.StorageIdExternal
-bool                                            StorageDepartment.IsDefaultStorage
-bool                                            StorageDepartment.Sys_Deactivated
-bool                                            StorageDepartment.Sys_Historic
-bool                                            StorageDepartment.Sys_Incomplete
 int                                             StorageTransfer.StorageTransferId
 string                                          StorageTransfer.StorageTransferIdExternal
 string                                          StorageTransfer.ProductIdExternal
