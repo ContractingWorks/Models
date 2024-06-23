@@ -1630,25 +1630,6 @@ DateTime                                        ExternalSystemPaymentTerm.Out_La
 string [MultilineText](50)                      ExternalSystemPaymentTerm.StatusDescription
 bool                                            ExternalSystemPaymentTerm.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemPaymentTerm.Enum_SyncStatusId
-short                                           ExternalSystemPermission.ExternalSystemPermissionId
-string                                          ExternalSystemPermission.PermissionIdExternal
-string (50)                                     ExternalSystemPermission.ExternalId
-short                                           ExternalSystemPermission.ExternalSystemId
-string (100)                                    ExternalSystemPermission.In_Error_FixLink
-string (250)                                    ExternalSystemPermission.In_Error_MsgEN
-string (250)                                    ExternalSystemPermission.In_Error_MsgNO
-string                                          ExternalSystemPermission.In_Error_TechDetail
-string (40)                                     ExternalSystemPermission.In_Error_TraceId
-DateTime                                        ExternalSystemPermission.In_LastSyncUTC
-string (100)                                    ExternalSystemPermission.Out_Error_FixLink
-string (250)                                    ExternalSystemPermission.Out_Error_MsgEN
-string (250)                                    ExternalSystemPermission.Out_Error_MsgNO
-string                                          ExternalSystemPermission.Out_Error_TechDetail
-string (40)                                     ExternalSystemPermission.Out_Error_TraceId
-DateTime                                        ExternalSystemPermission.Out_LastSyncUTC
-string [MultilineText](50)                      ExternalSystemPermission.StatusDescription
-bool                                            ExternalSystemPermission.Sys_Deactivated
-SyncStatusEnum                                  ExternalSystemPermission.Enum_SyncStatusId
 int                                             ExternalSystemProduct.ExternalSystemProductId
 string                                          ExternalSystemProduct.ProductIdExternal
 string (50)                                     ExternalSystemProduct.ExternalId
@@ -3216,7 +3197,6 @@ bool                                            PaymentTerm.Ext_Out_Error_SetOK
 DateTime                                        PaymentTerm.Ext_Out_LastSyncUTC
 --> ExternalSystemPaymentTerm[]                 PaymentTerm.ExternalSystemPaymentTerms
 short                                           Permission.PermissionId
-string                                          Permission.PermissionIdExternal
 string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
@@ -3225,23 +3205,6 @@ bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
-bool                                            Permission.Ext_Sys_Deactivated
-string                                          Permission.Ext_ExternalId
-string                                          Permission.Ext_In_Error_MsgNO
-string                                          Permission.Ext_In_Error_MsgEN
-string                                          Permission.Ext_In_Error_TraceId
-string                                          Permission.Ext_In_Error_TechDetail
-string                                          Permission.Ext_In_Error_FixLink
-bool                                            Permission.Ext_In_Error_SetOK
-DateTime                                        Permission.Ext_In_LastSyncUTC
-string                                          Permission.Ext_Out_Error_MsgNO
-string                                          Permission.Ext_Out_Error_MsgEN
-string                                          Permission.Ext_Out_Error_TraceId
-string                                          Permission.Ext_Out_Error_TechDetail
-string                                          Permission.Ext_Out_Error_FixLink
-bool                                            Permission.Ext_Out_Error_SetOK
-DateTime                                        Permission.Ext_Out_LastSyncUTC
---> ExternalSystemPermission[]                  Permission.ExternalSystemPermissions
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
@@ -4225,7 +4188,6 @@ DateTime                                        Role.Ext_Out_LastSyncUTC
 --> ExternalSystemRole[]                        Role.ExternalSystemRoles
 short                                           RolePermission.RolePermissionId
 string                                          RolePermission.RolePermissionIdExternal
-string                                          RolePermission.PermissionIdExternal
 string                                          RolePermission.RoleIdExternal
 short                                           RolePermission.PermissionId
 short                                           RolePermission.RoleId
