@@ -613,6 +613,7 @@ bool                                            Customer.Inactive
 bool                                            Customer.Internal
 string (200)                                    Customer.InternalReference
 int                                             Customer.Invoice_CustomerId
+bool                                            Customer.InvoiceAttachServiceListAsPDF
 bool                                            Customer.InvoiceConsolidate
 bool                                            Customer.InvoiceElectronic
 string [Email](200)                             Customer.InvoiceElectronicEmail
@@ -4453,7 +4454,9 @@ short                                           Settings_Assignment.Default_Invo
 int                                             Settings_Assignment.Default_ProjectId
 short                                           Settings_Assignment.Default_ServiceAgreementId
 bool                                            Settings_Assignment.Default_SyncToMobileDevice
+bool                                            Settings_Assignment.Invoice_InformationSectionIsOpen
 bool                                            Settings_Assignment.Invoice_IsFinalInvoice
+bool                                            Settings_Assignment.Invoice_NoteOpenAsModal
 bool                                            Settings_Assignment.Invoice_SendImmediately
 bool                                            Settings_Assignment.MandatoryCaseHandler
 bool                                            Settings_Assignment.MandatoryCategory
