@@ -3202,7 +3202,7 @@ short                                           Permission.PermissionId
 string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
-string [Name](50)                               Permission.Name
+string [Name](100)                              Permission.Name
 bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
