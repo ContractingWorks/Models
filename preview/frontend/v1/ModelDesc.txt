@@ -309,6 +309,7 @@ string (250)                                    Attachment.FileName
 bool                                            Attachment.Internal
 int                                             Attachment.ProductId
 short                                           Attachment.RevisionNumber
+bool                                            Attachment.ServiceContractCopyToAssignment
 short                                           Attachment.SourceExternalSystemId
 string (250)                                    Attachment.SourceType
 bool                                            Attachment.SyncToMobileDevice
