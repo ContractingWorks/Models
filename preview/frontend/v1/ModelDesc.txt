@@ -3467,16 +3467,21 @@ bool                                            ProductFeature.Sys_Historic
 bool                                            ProductFeature.Sys_Incomplete
 int                                             ProductFeatureFilter.ProductFeatureFilterId
 byte                                            ProductFeatureFilter.FilterGroupNumber
-bool                                            ProductFeatureFilter.IsAnd
 int                                             ProductFeatureFilter.ProductFeatureId
-int                                             ProductFeatureFilter.ProductFeatureListValueId
 int                                             ProductFeatureFilter.ProductSearchId
 byte                                            ProductFeatureFilter.SortOrder
 bool                                            ProductFeatureFilter.Sys_Deactivated
 bool                                            ProductFeatureFilter.Sys_Historic
 bool                                            ProductFeatureFilter.Sys_Incomplete
-string (100)                                    ProductFeatureFilter.Value
 ProductFeatureFilterOperationEnum               ProductFeatureFilter.Enum_ProductFeatureFilterOperationId
+int                                             ProductFeatureFilterValue.ProductFeatureFilterValueId
+int                                             ProductFeatureFilterValue.ProductFeatureFilterId
+int                                             ProductFeatureFilterValue.ProductFeatureListValueId
+string (50)                                     ProductFeatureFilterValue.ProductNumber
+bool                                            ProductFeatureFilterValue.Sys_Deactivated
+bool                                            ProductFeatureFilterValue.Sys_Historic
+bool                                            ProductFeatureFilterValue.Sys_Incomplete
+string (100)                                    ProductFeatureFilterValue.Value
 int                                             ProductFeatureListValue.ProductFeatureListValueId
 string (20)                                     ProductFeatureListValue.Code
 bool                                            ProductFeatureListValue.ETIM
