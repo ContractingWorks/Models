@@ -3467,6 +3467,7 @@ bool                                            ProductFeature.Sys_Historic
 bool                                            ProductFeature.Sys_Incomplete
 int                                             ProductFeatureFilter.ProductFeatureFilterId
 byte                                            ProductFeatureFilter.FilterGroupNumber
+int                                             ProductFeatureFilter.ProductClassId
 int                                             ProductFeatureFilter.ProductFeatureId
 int                                             ProductFeatureFilter.ProductSearchId
 byte                                            ProductFeatureFilter.SortOrder
