@@ -3230,6 +3230,7 @@ byte                                            Product.IndustryTypeId
 bool                                            Product.InvoiceMergeProduct
 bool                                            Product.InvoiceShowProductNumber
 bool                                            Product.IsFavorite
+bool                                            Product.IsInteresting
 bool                                            Product.IsPOS
 bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
@@ -3451,6 +3452,14 @@ int                                             ProductClassUse.ProductId
 bool                                            ProductClassUse.Sys_Deactivated
 bool                                            ProductClassUse.Sys_Historic
 bool                                            ProductClassUse.Sys_Incomplete
+int                                             ProductDimensionValue.ProductDimensionValueId
+string                                          ProductDimensionValue.DimensionValueIdExternal
+string                                          ProductDimensionValue.ProductIdExternal
+int                                             ProductDimensionValue.DimensionValueId
+int                                             ProductDimensionValue.ProductId
+bool                                            ProductDimensionValue.Sys_Deactivated
+bool                                            ProductDimensionValue.Sys_Historic
+bool                                            ProductDimensionValue.Sys_Incomplete
 int                                             ProductExtendedInfo.ProductExtendedInfoId
 string                                          ProductExtendedInfo.ProductIdExternal
 bool                                            ProductExtendedInfo.Sys_Deactivated
@@ -3749,18 +3758,27 @@ bool                                            ProductSeries.Sys_Incomplete
 int                                             ProductStructure.ProductStuctureId
 string                                          ProductStructure.ParentProductIdExternal
 string                                          ProductStructure.ProductIdExternal
-string [MultilineText](250)                     ProductStructure.Description
+bool                                            ProductStructure.IsInteresting
 int                                             ProductStructure.ParentProductId
-string (500)                                    ProductStructure.ProductAttributeSearch
 int                                             ProductStructure.ProductId
+int                                             ProductStructure.ProductSearchId
 decimal                                         ProductStructure.Quantity
 bool                                            ProductStructure.Sys_Deactivated
 bool                                            ProductStructure.Sys_Historic
 bool                                            ProductStructure.Sys_Incomplete
+int                                             ProductStructureFolder.ProductStructureFolderId
+string                                          ProductStructureFolder.ProductIdExternal
+string [Name](250)                              ProductStructureFolder.Name
+int                                             ProductStructureFolder.Parent_ProductStructureFolderId
+int                                             ProductStructureFolder.ProductId
+bool                                            ProductStructureFolder.Sys_Deactivated
+bool                                            ProductStructureFolder.Sys_Historic
+bool                                            ProductStructureFolder.Sys_Incomplete
 int                                             ProductSupplierIndustryType.ProductSupplierIndustryTypeId
 string                                          ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string                                          ProductSupplierIndustryType.ProductIdExternal
 string                                          ProductSupplierIndustryType.SupplierIndustryTypeIdExternal
+decimal                                         ProductSupplierIndustryType.AdditionalCost
 decimal                                         ProductSupplierIndustryType.CostPriceOverride
 int                                             ProductSupplierIndustryType.DiscountGroupId
 bool                                            ProductSupplierIndustryType.Inactive
