@@ -482,6 +482,70 @@ string                                          BudgetScenario.Ext_Out_Error_Fix
 bool                                            BudgetScenario.Ext_Out_Error_SetOK
 DateTime                                        BudgetScenario.Ext_Out_LastSyncUTC
 --> ExternalSystemBudgetScenario[]              BudgetScenario.ExternalSystemBudgetScenarios
+int                                             Calculation.CalculationId
+string                                          Calculation.AddressIdExternal
+string                                          Calculation.CaseHandler_EmployeeIdExternal
+string                                          Calculation.ContactIdExternal
+string                                          Calculation.CustomerIdExternal
+string                                          Calculation.ProjectIdExternal
+string                                          Calculation.WageCodeReportCategoryIdExternal
+int                                             Calculation.AddressId
+int                                             Calculation.CalculationNumber
+int                                             Calculation.CaseHandler_EmployeeId
+int                                             Calculation.ContactId
+int                                             Calculation.CustomerId
+string [MultilineText](50)                      Calculation.Description
+int                                             Calculation.ProjectId
+bool                                            Calculation.Sys_Deactivated
+bool                                            Calculation.Sys_Historic
+bool                                            Calculation.Sys_Incomplete
+int                                             Calculation.WageCodeReportCategoryId
+CalculationStatusEnum                           Calculation.Enum_CalculationStatusId
+int                                             CalculationFolder.CalculationFolderId
+string (50)                                     CalculationFolder.Code
+string [MultilineText](1024)                    CalculationFolder.Comment
+bool                                            CalculationFolder.Complete
+string [Name](100)                              CalculationFolder.Name
+int                                             CalculationFolder.Parent_CalculationFolderId
+int                                             CalculationFolder.SortOrder
+bool                                            CalculationFolder.Sys_Deactivated
+bool                                            CalculationFolder.Sys_Historic
+bool                                            CalculationFolder.Sys_Incomplete
+int                                             CalculationFolderTemplate.CalculationFolderTemplateId
+string (50)                                     CalculationFolderTemplate.Code
+string [Name](100)                              CalculationFolderTemplate.Name
+int                                             CalculationFolderTemplate.Parent_CalculationFolderTemplateId
+int                                             CalculationFolderTemplate.SortOrder
+bool                                            CalculationFolderTemplate.Sys_Deactivated
+bool                                            CalculationFolderTemplate.Sys_Historic
+bool                                            CalculationFolderTemplate.Sys_Incomplete
+int                                             CalculationLine.CalculationLineId
+string                                          CalculationLine.ProductIdExternal
+string                                          CalculationLine.ProductSupplierIndustryTypeIdExternal
+string                                          CalculationLine.SupplierIndustryTypeIdExternal
+string                                          CalculationLine.WageCodeReportCategoryIdExternal
+decimal                                         CalculationLine.AdditionalCost
+int                                             CalculationLine.CalculationFolderId
+int                                             CalculationLine.CalculationId
+string [MultilineText](1024)                    CalculationLine.Comment
+decimal                                         CalculationLine.CostPrice
+bool                                            CalculationLine.IsInteresting
+int                                             CalculationLine.ProductId
+string [Name]                                   CalculationLine.ProductName
+string (50)                                     CalculationLine.ProductNumber
+int                                             CalculationLine.ProductSupplierIndustryTypeId
+decimal                                         CalculationLine.Quantity
+decimal                                         CalculationLine.SalesPrice
+decimal                                         CalculationLine.SalesPriceOverride
+int                                             CalculationLine.StructureParent_CalculationLineId
+short                                           CalculationLine.SupplierIndustryTypeId
+decimal                                         CalculationLine.SurchargePercent
+bool                                            CalculationLine.Sys_Deactivated
+bool                                            CalculationLine.Sys_Historic
+bool                                            CalculationLine.Sys_Incomplete
+int                                             CalculationLine.WageCodeReportCategoryId
+int                                             CalculationLine.WorkSeconds
+int                                             CalculationLine.WorkSecondsOverride
 int                                             CompanyInfo.CompanyInfoId
 string                                          CompanyInfo.CompanyLogo_AttachmentIdExternal
 string (50)                                     CompanyInfo.Address1
@@ -3742,15 +3806,21 @@ int                                             ProductSearchGroup.SortOrder
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
-int                                             ProductSearchSeriesDefault.ProductSearchSeriesDefaultId
-string                                          ProductSearchSeriesDefault.ProductIdExternal
-int                                             ProductSearchSeriesDefault.ManufacturerId
-int                                             ProductSearchSeriesDefault.ProductId
-int                                             ProductSearchSeriesDefault.ProductSearchId
-int                                             ProductSearchSeriesDefault.ProductSeriesId
-bool                                            ProductSearchSeriesDefault.Sys_Deactivated
-bool                                            ProductSearchSeriesDefault.Sys_Historic
-bool                                            ProductSearchSeriesDefault.Sys_Incomplete
+int                                             ProductSearchGroupSeries.ProductSearchGroupPriorityId
+int                                             ProductSearchGroupSeries.CalculationId
+int                                             ProductSearchGroupSeries.ProductSearchGroupId
+int                                             ProductSearchGroupSeries.ProductSeriesId
+bool                                            ProductSearchGroupSeries.Sys_Deactivated
+bool                                            ProductSearchGroupSeries.Sys_Historic
+bool                                            ProductSearchGroupSeries.Sys_Incomplete
+int                                             ProductSearchSeriesProduct.ProductSearchSeriesProductId
+string                                          ProductSearchSeriesProduct.ProductIdExternal
+int                                             ProductSearchSeriesProduct.ProductId
+int                                             ProductSearchSeriesProduct.ProductSearchId
+int                                             ProductSearchSeriesProduct.ProductSeriesId
+bool                                            ProductSearchSeriesProduct.Sys_Deactivated
+bool                                            ProductSearchSeriesProduct.Sys_Historic
+bool                                            ProductSearchSeriesProduct.Sys_Incomplete
 int                                             ProductSeries.ProductSeriesId
 int                                             ProductSeries.ManufacturerId
 string [Name](100)                              ProductSeries.Name
@@ -3768,11 +3838,13 @@ decimal                                         ProductStructure.Quantity
 bool                                            ProductStructure.Sys_Deactivated
 bool                                            ProductStructure.Sys_Historic
 bool                                            ProductStructure.Sys_Incomplete
+string (50)                                     ProductStructure.TariffFilter
 int                                             ProductStructureFolder.ProductStructureFolderId
 string                                          ProductStructureFolder.ProductIdExternal
 string [Name](250)                              ProductStructureFolder.Name
 int                                             ProductStructureFolder.Parent_ProductStructureFolderId
 int                                             ProductStructureFolder.ProductId
+int                                             ProductStructureFolder.SortOrder
 bool                                            ProductStructureFolder.Sys_Deactivated
 bool                                            ProductStructureFolder.Sys_Historic
 bool                                            ProductStructureFolder.Sys_Incomplete
@@ -4499,6 +4571,12 @@ bool                                            Settings_Assignment.Sys_Historic
 bool                                            Settings_Assignment.Sys_Incomplete
 InvoiceReserveBilledPriceCalculationEnum        Settings_Assignment.Enum_InvoiceReserveBilledPriceCalculationId
 InvoiceReserveFixedPriceCalculationEnum         Settings_Assignment.Enum_InvoiceReserveFixedPriceCalculationId
+int                                             Settings_Calculation.Settings_CalculationId
+string                                          Settings_Calculation.WageCodeReportCategoryIdExternal
+bool                                            Settings_Calculation.Sys_Deactivated
+bool                                            Settings_Calculation.Sys_Historic
+bool                                            Settings_Calculation.Sys_Incomplete
+int                                             Settings_Calculation.WageCodeReportCategoryId
 byte                                            Settings_Employee.Settings_EmployeeId
 bool                                            Settings_Employee.ApproveWageRequired
 bool                                            Settings_Employee.Sys_Deactivated
