@@ -3630,6 +3630,7 @@ string                                          ProductNoteLine.ProductNoteIdExt
 string                                          ProductNoteLine.ProductSupplierIndustryTypeIdExternal
 string                                          ProductNoteLine.ProjectPeriodIdExternal
 string                                          ProductNoteLine.StorageIdExternal
+string                                          ProductNoteLine.StructureParent_ProductNoteLineIdExternal
 string                                          ProductNoteLine.SupplierIndustryTypeIdExternal
 string                                          ProductNoteLine.SupplierInvoiceLineIdExternal
 short                                           ProductNoteLine.Cost_LedgerAccountId
@@ -3671,6 +3672,7 @@ decimal                                         ProductNoteLine.SalesPriceInvoic
 bool                                            ProductNoteLine.SalesPriceModified
 int                                             ProductNoteLine.SortOrder
 short                                           ProductNoteLine.StorageId
+int                                             ProductNoteLine.StructureParent_ProductNoteLineId
 short                                           ProductNoteLine.SupplierIndustryTypeId
 int                                             ProductNoteLine.SupplierInvoiceLineId
 decimal                                         ProductNoteLine.SurchargePercent
