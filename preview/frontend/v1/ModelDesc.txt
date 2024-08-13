@@ -945,6 +945,7 @@ string                                          Employee.DepartmentIdExternal
 string                                          Employee.EmployeeInvoiceCategoryIdExternal
 string                                          Employee.JobCategoryIdExternal
 bool                                            Employee.ApproveWageRequired
+bool                                            Employee.CW_Owned
 DateTime                                        Employee.DateOfBirth
 short                                           Employee.DepartmentId
 string [Email](200)                             Employee.EmailPrivate
@@ -4484,6 +4485,7 @@ string                                          ServiceContract.ServiceContractI
 string                                          ServiceContract.IndexRateGroupIdExternal
 DateTime                                        ServiceContract.ActiveDueDate
 int                                             ServiceContract.Default_AssignmentId
+bool                                            ServiceContract.DueRecurrence
 string (1024)                                   ServiceContract.DueRecurrencePattern
 DateTime                                        ServiceContract.EndDate
 bool                                            ServiceContract.Inactive
@@ -4492,6 +4494,7 @@ byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
 DateTime                                        ServiceContract.InstalledDate
 DateTime                                        ServiceContract.InvoiceActiveDueDate
+bool                                            ServiceContract.InvoiceDueRecurrence
 string (1024)                                   ServiceContract.InvoiceDueRecurrencePattern
 DateTime                                        ServiceContract.InvoiceLastDate
 DateTime                                        ServiceContract.InvoiceNextDueDate
