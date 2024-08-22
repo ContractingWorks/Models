@@ -105,6 +105,7 @@ string                                          Assignment.ProductAgreementGroup
 string                                          Assignment.ProjectIdExternal
 string                                          Assignment.ServiceAgreementIdExternal
 string                                          Assignment.ServiceContractIdExternal
+string                                          Assignment.StorageIdExternal
 string                                          Assignment.Sys_PreviousProductAgreementGroupIdExternal
 bool                                            Assignment.Archived
 int                                             Assignment.AssignmentCategoryId
@@ -153,6 +154,7 @@ int                                             Assignment.ServiceContractId
 DateTime                                        Assignment.ServiceInvoiceLimitDate
 DateTime                                        Assignment.SortDateUTC
 DateTime                                        Assignment.StartDateTimeUTC
+short                                           Assignment.StorageId
 bool                                            Assignment.SyncToEconomySystem
 bool                                            Assignment.SyncToMobileDevice
 bool                                            Assignment.Sys_Deactivated
@@ -3513,6 +3515,7 @@ bool                                            ProductClassType.Sys_Historic
 bool                                            ProductClassType.Sys_Incomplete
 int                                             ProductClassUse.ProductClassUseId
 string                                          ProductClassUse.ProductIdExternal
+bool                                            ProductClassUse.Inactive
 int                                             ProductClassUse.ProductClassId
 int                                             ProductClassUse.ProductId
 bool                                            ProductClassUse.Sys_Deactivated
@@ -3922,6 +3925,7 @@ string                                          Project.ProjectGroupId_1External
 string                                          Project.ProjectGroupIdExternal
 string                                          Project.ProjectTypeIdExternal
 string                                          Project.ServiceAgreementIdExternal
+string                                          Project.StorageIdExternal
 int                                             Project.AssignmentCategoryId
 int                                             Project.AssignmentCategoryId_1
 int                                             Project.AssignmentCategoryId_2
@@ -3955,6 +3959,7 @@ string (500)                                    Project.Reference
 decimal                                         Project.RiskMarginPercent
 short                                           Project.ServiceAgreementId
 DateTime                                        Project.StartDateUTC
+short                                           Project.StorageId
 bool                                            Project.Sys_Deactivated
 bool                                            Project.Sys_Historic
 bool                                            Project.Sys_Incomplete
