@@ -4387,6 +4387,7 @@ string [MultilineText](500)                     Service.ServiceComment
 DateTime                                        Service.StartDateTimeUTC
 decimal                                         Service.SurchargePercentInvoice
 bool                                            Service.SyncToMobileDevice
+bool                                            Service.Sys_ApprovalInvoiceUpdated
 bool                                            Service.Sys_Deactivated
 bool                                            Service.Sys_Historic
 bool                                            Service.Sys_Incomplete
@@ -4629,6 +4630,7 @@ bool                                            Settings_Main.ProductNote_CostPr
 bool                                            Settings_Main.ProjectPeriod_AutoCreate
 int                                             Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                            Settings_Main.Require2FAForAllUsers
+bool                                            Settings_Main.Service_ApprovalInvoice_To_Wage
 byte                                            Settings_Main.ServiceContract_DueLeadDays
 short                                           Settings_Main.Standard_SupplierIndustryTypeId
 short                                           Settings_Main.StorageId
@@ -4717,6 +4719,7 @@ string                                          Stock.StorageIdExternal
 decimal                                         Stock.AverageCostPrice
 decimal                                         Stock.AverageCostPriceFIFO
 decimal                                         Stock.LastCostPrice
+string (100)                                    Stock.Location
 int                                             Stock.ProductId
 decimal                                         Stock.Quantity
 decimal                                         Stock.QuantityMax
