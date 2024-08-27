@@ -1700,6 +1700,44 @@ DateTime                                        ExternalSystemPaymentTerm.Out_La
 string [MultilineText](50)                      ExternalSystemPaymentTerm.StatusDescription
 bool                                            ExternalSystemPaymentTerm.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemPaymentTerm.Enum_SyncStatusId
+int                                             ExternalSystemPreImportFile.ExternalSystemPreImportFileId
+string                                          ExternalSystemPreImportFile.PreImportFileIdExternal
+string (50)                                     ExternalSystemPreImportFile.ExternalId
+short                                           ExternalSystemPreImportFile.ExternalSystemId
+string (100)                                    ExternalSystemPreImportFile.In_Error_FixLink
+string (250)                                    ExternalSystemPreImportFile.In_Error_MsgEN
+string (250)                                    ExternalSystemPreImportFile.In_Error_MsgNO
+string                                          ExternalSystemPreImportFile.In_Error_TechDetail
+string (40)                                     ExternalSystemPreImportFile.In_Error_TraceId
+DateTime                                        ExternalSystemPreImportFile.In_LastSyncUTC
+string (100)                                    ExternalSystemPreImportFile.Out_Error_FixLink
+string (250)                                    ExternalSystemPreImportFile.Out_Error_MsgEN
+string (250)                                    ExternalSystemPreImportFile.Out_Error_MsgNO
+string                                          ExternalSystemPreImportFile.Out_Error_TechDetail
+string (40)                                     ExternalSystemPreImportFile.Out_Error_TraceId
+DateTime                                        ExternalSystemPreImportFile.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemPreImportFile.StatusDescription
+bool                                            ExternalSystemPreImportFile.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemPreImportFile.Enum_SyncStatusId
+int                                             ExternalSystemPreImportProduct.ExternalSystemPreImportProductId
+string                                          ExternalSystemPreImportProduct.PreImportProductIdExternal
+string (50)                                     ExternalSystemPreImportProduct.ExternalId
+short                                           ExternalSystemPreImportProduct.ExternalSystemId
+string (100)                                    ExternalSystemPreImportProduct.In_Error_FixLink
+string (250)                                    ExternalSystemPreImportProduct.In_Error_MsgEN
+string (250)                                    ExternalSystemPreImportProduct.In_Error_MsgNO
+string                                          ExternalSystemPreImportProduct.In_Error_TechDetail
+string (40)                                     ExternalSystemPreImportProduct.In_Error_TraceId
+DateTime                                        ExternalSystemPreImportProduct.In_LastSyncUTC
+string (100)                                    ExternalSystemPreImportProduct.Out_Error_FixLink
+string (250)                                    ExternalSystemPreImportProduct.Out_Error_MsgEN
+string (250)                                    ExternalSystemPreImportProduct.Out_Error_MsgNO
+string                                          ExternalSystemPreImportProduct.Out_Error_TechDetail
+string (40)                                     ExternalSystemPreImportProduct.Out_Error_TraceId
+DateTime                                        ExternalSystemPreImportProduct.Out_LastSyncUTC
+string [MultilineText](50)                      ExternalSystemPreImportProduct.StatusDescription
+bool                                            ExternalSystemPreImportProduct.Sys_Deactivated
+SyncStatusEnum                                  ExternalSystemPreImportProduct.Enum_SyncStatusId
 int                                             ExternalSystemProduct.ExternalSystemProductId
 string                                          ExternalSystemProduct.ProductIdExternal
 string (50)                                     ExternalSystemProduct.ExternalId
@@ -3277,6 +3315,7 @@ bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
 int                                             PreImportFile.PreImportFileId
+string                                          PreImportFile.PreImportFileIdExternal
 string                                          PreImportFile.SupplierIndustryTypeIdExternal
 string (500)                                    PreImportFile.FileName
 DateTime                                        PreImportFile.ImportedUTC
@@ -3284,8 +3323,27 @@ short                                           PreImportFile.SupplierIndustryTy
 bool                                            PreImportFile.Sys_Deactivated
 bool                                            PreImportFile.Sys_Historic
 bool                                            PreImportFile.Sys_Incomplete
+bool                                            PreImportFile.Ext_Sys_Deactivated
+string                                          PreImportFile.Ext_ExternalId
+string                                          PreImportFile.Ext_In_Error_MsgNO
+string                                          PreImportFile.Ext_In_Error_MsgEN
+string                                          PreImportFile.Ext_In_Error_TraceId
+string                                          PreImportFile.Ext_In_Error_TechDetail
+string                                          PreImportFile.Ext_In_Error_FixLink
+bool                                            PreImportFile.Ext_In_Error_SetOK
+DateTime                                        PreImportFile.Ext_In_LastSyncUTC
+string                                          PreImportFile.Ext_Out_Error_MsgNO
+string                                          PreImportFile.Ext_Out_Error_MsgEN
+string                                          PreImportFile.Ext_Out_Error_TraceId
+string                                          PreImportFile.Ext_Out_Error_TechDetail
+string                                          PreImportFile.Ext_Out_Error_FixLink
+bool                                            PreImportFile.Ext_Out_Error_SetOK
+DateTime                                        PreImportFile.Ext_Out_LastSyncUTC
+--> ExternalSystemPreImportFile[]               PreImportFile.ExternalSystemPreImportFiles
 --> PreImportProduct[]                          PreImportFile.PreImportProducts
 int                                             PreImportProduct.PreImportProductId
+string                                          PreImportProduct.PreImportProductIdExternal
+string                                          PreImportProduct.PreImportFileIdExternal
 decimal                                         PreImportProduct.CostPrice
 string (50)                                     PreImportProduct.DiscountGroup
 long                                            PreImportProduct.GTIN
@@ -3299,6 +3357,23 @@ bool                                            PreImportProduct.Sys_Deactivated
 bool                                            PreImportProduct.Sys_Historic
 bool                                            PreImportProduct.Sys_Incomplete
 string (3)                                      PreImportProduct.Unit
+bool                                            PreImportProduct.Ext_Sys_Deactivated
+string                                          PreImportProduct.Ext_ExternalId
+string                                          PreImportProduct.Ext_In_Error_MsgNO
+string                                          PreImportProduct.Ext_In_Error_MsgEN
+string                                          PreImportProduct.Ext_In_Error_TraceId
+string                                          PreImportProduct.Ext_In_Error_TechDetail
+string                                          PreImportProduct.Ext_In_Error_FixLink
+bool                                            PreImportProduct.Ext_In_Error_SetOK
+DateTime                                        PreImportProduct.Ext_In_LastSyncUTC
+string                                          PreImportProduct.Ext_Out_Error_MsgNO
+string                                          PreImportProduct.Ext_Out_Error_MsgEN
+string                                          PreImportProduct.Ext_Out_Error_TraceId
+string                                          PreImportProduct.Ext_Out_Error_TechDetail
+string                                          PreImportProduct.Ext_Out_Error_FixLink
+bool                                            PreImportProduct.Ext_Out_Error_SetOK
+DateTime                                        PreImportProduct.Ext_Out_LastSyncUTC
+--> ExternalSystemPreImportProduct[]            PreImportProduct.ExternalSystemPreImportProducts
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
