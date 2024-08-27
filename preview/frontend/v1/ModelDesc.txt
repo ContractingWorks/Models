@@ -3276,6 +3276,29 @@ bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
+int                                             PreImportFile.PreImportFileId
+string                                          PreImportFile.SupplierIndustryTypeIdExternal
+string (500)                                    PreImportFile.FileName
+DateTime                                        PreImportFile.ImportedUTC
+short                                           PreImportFile.SupplierIndustryTypeId
+bool                                            PreImportFile.Sys_Deactivated
+bool                                            PreImportFile.Sys_Historic
+bool                                            PreImportFile.Sys_Incomplete
+--> PreImportProduct[]                          PreImportFile.PreImportProducts
+int                                             PreImportProduct.PreImportProductId
+decimal                                         PreImportProduct.CostPrice
+string (50)                                     PreImportProduct.DiscountGroup
+long                                            PreImportProduct.GTIN
+bool                                            PreImportProduct.IsInteresting
+bool                                            PreImportProduct.IsVarious
+decimal                                         PreImportProduct.ListPrice
+DateTime                                        PreImportProduct.PriceDate
+string [Name](100)                              PreImportProduct.ProductName
+string (50)                                     PreImportProduct.ProductNumber
+bool                                            PreImportProduct.Sys_Deactivated
+bool                                            PreImportProduct.Sys_Historic
+bool                                            PreImportProduct.Sys_Incomplete
+string (3)                                      PreImportProduct.Unit
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
@@ -5338,6 +5361,7 @@ bool                                            UserRole.Sys_Deactivated
 bool                                            UserRole.Sys_Historic
 bool                                            UserRole.Sys_Incomplete
 int                                             UserRole.UserId
+DateTime                                        UserRole.ValidUntilUTC
 bool                                            UserRole.Ext_Sys_Deactivated
 string                                          UserRole.Ext_ExternalId
 string                                          UserRole.Ext_In_Error_MsgNO
