@@ -304,7 +304,7 @@ int                                             Attachment.AttachmentId
 string                                          Attachment.AttachmentIdExternal
 string                                          Attachment.ProductIdExternal
 short                                           Attachment.AttachmentCategoryId
-string (1024)                                   Attachment.AzureBlobId
+string (500)                                    Attachment.AzureBlobId
 string [MultilineText](1024)                    Attachment.Description
 string (64)                                     Attachment.FileChecksum
 string (250)                                    Attachment.FileName
@@ -3909,6 +3909,7 @@ int                                             ProductSearchGroup.SortOrder
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
+IndustryTypeEnum                                ProductSearchGroup.Enum_IndustryTypeId
 int                                             ProductSearchGroupSeries.ProductSearchGroupPriorityId
 int                                             ProductSearchGroupSeries.CalculationId
 int                                             ProductSearchGroupSeries.ProductSearchGroupId
@@ -5491,6 +5492,7 @@ bool                                            WageCode.AssignmentUpdate
 int                                             WageCode.Cost_ProjectAccountId
 int                                             WageCode.CostSurcharge_ProjectAccountId
 bool                                            WageCode.FieldsolutionServiceExport
+bool                                            WageCode.Inactive
 bool                                            WageCode.IsSensitive
 bool                                            WageCode.IsWorkTime
 bool                                            WageCode.PayrollExport
