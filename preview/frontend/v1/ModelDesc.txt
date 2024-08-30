@@ -4989,6 +4989,7 @@ bool                                            Storage.SyncToMobileDevice
 bool                                            Storage.Sys_Deactivated
 bool                                            Storage.Sys_Historic
 bool                                            Storage.Sys_Incomplete
+bool                                            Storage.UseInPOS
 bool                                            Storage.Ext_Sys_Deactivated
 string                                          Storage.Ext_ExternalId
 string                                          Storage.Ext_In_Error_MsgNO
