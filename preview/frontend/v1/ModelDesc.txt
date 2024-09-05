@@ -3401,6 +3401,7 @@ bool                                            Product.IsPOS
 bool                                            Product.IsProductStucture
 bool                                            Product.IsVarious
 int                                             Product.ManufacturerId
+string [MultilineText]                          Product.Note
 short                                           Product.POSPurchase_VATFree_LedgerAccountId
 short                                           Product.POSPurchase_VATRequired_LedgerAccountId
 short                                           Product.POSSale_VATFree_LedgerAccountId
@@ -3438,6 +3439,7 @@ string                                          Product.Ext_Out_Error_FixLink
 bool                                            Product.Ext_Out_Error_SetOK
 DateTime                                        Product.Ext_Out_LastSyncUTC
 --> ExternalSystemProduct[]                     Product.ExternalSystemProducts
+--> ProductAttachment[]                         Product.ProductAttachments
 --> ProductExtendedInfo[]                       Product.ProductExtendedInfos
 short                                           ProductAgreement.ProductAgreementId
 string                                          ProductAgreement.ProductAgreementIdExternal
@@ -3556,6 +3558,13 @@ string                                          ProductAgreementGroupLine.Ext_Ou
 bool                                            ProductAgreementGroupLine.Ext_Out_Error_SetOK
 DateTime                                        ProductAgreementGroupLine.Ext_Out_LastSyncUTC
 --> ExternalSystemProductAgreementGroupLine[]   ProductAgreementGroupLine.ExternalSystemProductAgreementGroupLines
+int                                             ProductAttachment.ProductAttachmentId
+string                                          ProductAttachment.AttachmentIdExternal
+string                                          ProductAttachment.ProductIdExternal
+int                                             ProductAttachment.AttachmentId
+bool                                            ProductAttachment.Sys_Deactivated
+bool                                            ProductAttachment.Sys_Historic
+bool                                            ProductAttachment.Sys_Incomplete
 int                                             ProductBatch.ProductBatchId
 string                                          ProductBatch.ProductIdExternal
 string                                          ProductBatch.StockIdExternal
@@ -4019,6 +4028,7 @@ string                                          Project.Default_InvoiceTemplateI
 string                                          Project.DepartmentIdExternal
 string                                          Project.Invoice_CustomerIdExternal
 string                                          Project.ParentProjectIdExternal
+string                                          Project.PaymentTermIdExternal
 string                                          Project.ProductAgreementGroupIdExternal
 string                                          Project.ProjectGroupId_1External
 string                                          Project.ProjectGroupIdExternal
@@ -4048,6 +4058,7 @@ decimal                                         Project.MarginPercent
 string [Name](100)                              Project.Name
 string [MultilineText]                          Project.Note
 int                                             Project.ParentProjectId
+byte                                            Project.PaymentTermId
 int                                             Project.ProductAgreementGroupId
 bool                                            Project.ProjectAssessment
 DateTime                                        Project.ProjectDateTimeUTC
@@ -4698,7 +4709,6 @@ string                                          Settings_Main.IndustryTypeIdExte
 string                                          Settings_Main.InvoiceTemplateIdExternal
 string                                          Settings_Main.PaymentTermIdExternal
 string                                          Settings_Main.POS_ProductAgreementGroupIdExternal
-string                                          Settings_Main.POS_StorageIdExternal
 string                                          Settings_Main.ProductIdExternal
 string                                          Settings_Main.Standard_SupplierIndustryTypeIdExternal
 string                                          Settings_Main.StorageIdExternal
@@ -4722,7 +4732,6 @@ bool                                            Settings_Main.LookupExternal_Cus
 byte                                            Settings_Main.PaymentTermId
 string [Phone](50)                              Settings_Main.PhoneNumberForSMS
 int                                             Settings_Main.POS_ProductAgreementGroupId
-short                                           Settings_Main.POS_StorageId
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
