@@ -163,6 +163,7 @@ bool                                            Assignment.Sys_Incomplete
 bool                                            Assignment.Sys_InitialPostProcessNeeded
 bool                                            Assignment.Sys_IsServiceContract
 int                                             Assignment.Sys_PreviousProductAgreementGroupId
+bool                                            Assignment.Sys_RowState_NoSyncToEconomySystem
 string (255)                                    Assignment.Sys_Tags
 byte                                            Assignment.TimeSheetAttachmentsNumber
 DateTime                                        Assignment.WarrantyDate
@@ -4992,7 +4993,7 @@ string [MultilineText](100)                     Storage.Description
 bool                                            Storage.IsDefaultForDepartment
 short                                           Storage.ProfitAndLoss_LedgerAccountId
 int                                             Storage.ResponsibleEmployeeId
-short                                           Storage.StorageNumber
+int                                             Storage.StorageNumber
 int                                             Storage.SupplierInvoice_VirtualAssignmentNumber
 bool                                            Storage.SyncToMobileDevice
 bool                                            Storage.Sys_Deactivated
