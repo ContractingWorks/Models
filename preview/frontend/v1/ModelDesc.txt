@@ -4548,7 +4548,6 @@ DateTime                                        RolePermission.Ext_Out_LastSyncU
 int                                             Service.ServiceId
 string                                          Service.ServiceIdExternal
 string                                          Service.AssignmentIdExternal
-string                                          Service.Cost_LedgerAccountIdExternal
 string                                          Service.Cost_ProjectAccountIdExternal
 string                                          Service.CostSurcharge_ProjectAccountIdExternal
 string                                          Service.DepartmentIdExternal
@@ -4560,7 +4559,6 @@ string                                          Service.DimensionValueId_5Extern
 string                                          Service.DimensionValueId_6External
 string                                          Service.EmployeeIdExternal
 string                                          Service.EmployeeInvoiceCategoryIdExternal
-string                                          Service.Income_LedgerAccountIdExternal
 string                                          Service.Income_ProjectAccountIdExternal
 string                                          Service.Invoice_ApprovalEmployeeIdExternal
 string                                          Service.InvoiceIdExternal
@@ -4576,7 +4574,6 @@ string                                          Service.WagePeriodIdExternal
 string [MultilineText](500)                     Service.ApprovalComment
 int                                             Service.AssignmentId
 DateTime                                        Service.Calc_StartDateLocal
-short                                           Service.Cost_LedgerAccountId
 int                                             Service.Cost_ProjectAccountId
 decimal                                         Service.CostPrice
 decimal                                         Service.CostPriceSurcharge
@@ -4593,7 +4590,6 @@ int                                             Service.DimensionValueId_6
 int                                             Service.EmployeeId
 short                                           Service.EmployeeInvoiceCategoryId
 DateTime                                        Service.EndDateTimeUTC
-short                                           Service.Income_LedgerAccountId
 int                                             Service.Income_ProjectAccountId
 int                                             Service.Invoice_ApprovalEmployeeId
 string [MultilineText](200)                     Service.InvoiceDescription
