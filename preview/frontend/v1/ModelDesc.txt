@@ -3389,6 +3389,7 @@ string                                          Product.VATRateIdExternal
 int                                             Product.Cost_ProjectAccountId
 string (2)                                      Product.CountryId
 long                                            Product.GTIN
+bool                                            Product.HasPicture
 int                                             Product.Income_ProjectAccountId
 byte                                            Product.IndustryTypeId
 bool                                            Product.InvoiceMergeProduct
@@ -4024,8 +4025,8 @@ bool                                            ProductSearch.Ext_Out_Error_SetO
 DateTime                                        ProductSearch.Ext_Out_LastSyncUTC
 --> ExternalSystemProductSearch[]               ProductSearch.ExternalSystemProductSearchs
 int                                             ProductSearchGroup.ProductSearchGroupId
-int                                             ProductSearchGroup.Default_ManufacturerId
 int                                             ProductSearchGroup.Default_ProductClassId
+int                                             ProductSearchGroup.Default_ProductSeriesId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
 int                                             ProductSearchGroup.SortOrder
@@ -4033,13 +4034,6 @@ bool                                            ProductSearchGroup.Sys_Deactivat
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
 IndustryTypeEnum                                ProductSearchGroup.Enum_IndustryTypeId
-int                                             ProductSearchGroupSeries.ProductSearchGroupPriorityId
-int                                             ProductSearchGroupSeries.CalculationId
-int                                             ProductSearchGroupSeries.ProductSearchGroupId
-int                                             ProductSearchGroupSeries.ProductSeriesId
-bool                                            ProductSearchGroupSeries.Sys_Deactivated
-bool                                            ProductSearchGroupSeries.Sys_Historic
-bool                                            ProductSearchGroupSeries.Sys_Incomplete
 int                                             ProductSearchSeriesProduct.ProductSearchSeriesProductId
 string                                          ProductSearchSeriesProduct.ProductIdExternal
 string                                          ProductSearchSeriesProduct.ProductSearchIdExternal
@@ -4086,6 +4080,7 @@ decimal                                         ProductSupplierIndustryType.Cost
 int                                             ProductSupplierIndustryType.DiscountGroupId
 bool                                            ProductSupplierIndustryType.Inactive
 decimal                                         ProductSupplierIndustryType.ListPrice
+bool                                            ProductSupplierIndustryType.NormallyOnStock
 string [MultilineText]                          ProductSupplierIndustryType.Note
 int                                             ProductSupplierIndustryType.ProductId
 string [Name](100)                              ProductSupplierIndustryType.ProductName
