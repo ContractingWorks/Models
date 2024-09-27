@@ -1019,7 +1019,6 @@ bool                                            EmployeeAttachment.Sys_Historic
 bool                                            EmployeeAttachment.Sys_Incomplete
 short                                           EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string                                          EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
-bool                                            EmployeeInvoiceCategory.IsIndependent
 string [Name](200)                              EmployeeInvoiceCategory.Name
 short                                           EmployeeInvoiceCategory.Number
 bool                                            EmployeeInvoiceCategory.Sys_Deactivated
