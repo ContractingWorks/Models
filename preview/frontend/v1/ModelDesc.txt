@@ -4590,6 +4590,7 @@ string [MultilineText](200)                     Service.InvoiceDescription
 int                                             Service.InvoiceId
 int                                             Service.InvoiceLineId
 bool                                            Service.IsFixedPrice
+bool                                            Service.IsForInvoicing
 short                                           Service.JobCategoryId
 int                                             Service.MovedFromAssignmentId
 int                                             Service.MovedToAssignmentId
@@ -4623,7 +4624,6 @@ string [Name](100)                              Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
 int                                             Service.WagePeriodId
 InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatusId
-WageCodeInvoiceRuleEnum                         Service.Enum_WageCodeInvoiceRuleId
 WagePeriodStatusEnum                            Service.Enum_WagePeriodStatusId
 ApprovalStatusEnum                              Service.Invoice_Enum_ApprovalStatusId
 WageCodeTypeEnum                                Service.Sys_Enum_WageCodeTypeId
@@ -5607,8 +5607,10 @@ bool                                            WageCode.ApproveRequired
 bool                                            WageCode.AssignmentUpdate
 int                                             WageCode.Cost_ProjectAccountId
 int                                             WageCode.CostSurcharge_ProjectAccountId
+bool                                            WageCode.EmployeeInvoiceCategoryRequired
 bool                                            WageCode.FieldsolutionServiceExport
 bool                                            WageCode.Inactive
+bool                                            WageCode.IsForInvoicing
 bool                                            WageCode.IsSensitive
 bool                                            WageCode.IsWorkTime
 bool                                            WageCode.PayrollExport
@@ -5625,7 +5627,6 @@ int                                             WageCode.WageCodeReportCategoryI
 short                                           WageCode.WageGroupId
 decimal                                         WageCode.WageRatePercent
 PieceworkTypeEnum                               WageCode.Enum_PieceworkTypeId
-WageCodeInvoiceRuleEnum                         WageCode.Enum_WageCodeInvoiceRuleId
 WageCodeTypeEnum                                WageCode.Enum_WageCodeTypeId
 bool                                            WageCode.Ext_Sys_Deactivated
 string                                          WageCode.Ext_ExternalId
