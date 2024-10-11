@@ -4706,6 +4706,7 @@ int                                             ServiceContract.ServiceContractI
 string                                          ServiceContract.ServiceContractIdExternal
 string                                          ServiceContract.IndexRateGroupIdExternal
 DateTime                                        ServiceContract.ActiveDueDate
+bool                                            ServiceContract.ActiveDueDateNotify
 int                                             ServiceContract.Default_AssignmentId
 bool                                            ServiceContract.DueRecurrence
 string (1024)                                   ServiceContract.DueRecurrencePattern
@@ -4716,6 +4717,7 @@ byte                                            ServiceContract.IndexRateGroupId
 DateTime                                        ServiceContract.IndexRateStartDate
 DateTime                                        ServiceContract.InstalledDate
 DateTime                                        ServiceContract.InvoiceActiveDueDate
+bool                                            ServiceContract.InvoiceActiveDueDateNotify
 bool                                            ServiceContract.InvoiceDueRecurrence
 string (1024)                                   ServiceContract.InvoiceDueRecurrencePattern
 DateTime                                        ServiceContract.InvoiceLastDate
@@ -4846,6 +4848,7 @@ int                                             Settings_Main.ProjectPeriod_Last
 bool                                            Settings_Main.Require2FAForAllUsers
 bool                                            Settings_Main.Service_ApprovalInvoice_To_Wage
 byte                                            Settings_Main.ServiceContract_DueLeadDays
+byte                                            Settings_Main.ServiceContract_DueLeadDaysForNotification
 short                                           Settings_Main.Standard_SupplierIndustryTypeId
 short                                           Settings_Main.StorageId
 short                                           Settings_Main.SupplierIndustryTypeId
