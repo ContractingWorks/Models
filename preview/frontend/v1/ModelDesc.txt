@@ -3103,33 +3103,20 @@ bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
 int                                             MapData.MapDataId
-string [MultilineText](500)                     MapData.Comment
 string [MultilineText](250)                     MapData.Description
 string (50)                                     MapData.EntityType
-string [MultilineText](250)                     MapData.ExternalDescription
-string (100)                                    MapData.ExternalId
-string (100)                                    MapData.ExternalNumber
 short                                           MapData.ExternalSystemId
-bool                                            MapData.IsCloseMatch
-bool                                            MapData.IsDeactivated
-bool                                            MapData.IsExactMatch
-bool                                            MapData.IsHistoric
-DateTime                                        MapData.LastUsageUTC
+string (100)                                    MapData.Map
 string (100)                                    MapData.NewNumber
 string (100)                                    MapData.Number
+string (100)                                    MapData.OldMap
 int                                             MapData.RowId
-bool                                            MapData.SkipForNow
-bool                                            MapData.Sys_AllowMapDataValueSelection
 bool                                            MapData.Sys_Deactivated
 bool                                            MapData.Sys_Historic
 bool                                            MapData.Sys_Incomplete
-int                                             MapData.UsageCount
-string (500)                                    MapData.UserVerificationNeededMessage
-bool                                            MapData.UserVerifiedOK
 int                                             MapDataUsage.MapDataUsageId
 string (50)                                     MapDataUsage.EntityType
 DateTime                                        MapDataUsage.LastUsageUTC
-string (100)                                    MapDataUsage.Number
 int                                             MapDataUsage.RowId
 bool                                            MapDataUsage.Sys_Deactivated
 bool                                            MapDataUsage.Sys_Historic
@@ -3140,7 +3127,7 @@ int                                             MapDataUsage.UsageCountDeactivat
 int                                             MapDataUsage.UsageCountHistoric
 int                                             MapDataUsage.UsageCountMigrated
 string (50)                                     MapDataUsage.UsageTable
-int                                             MapDataUsage.UsageToBeProcessed
+int                                             MapDataUsage.UsageToBeInvoiced
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
