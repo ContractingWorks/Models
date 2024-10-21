@@ -570,17 +570,37 @@ int                                             CompanyInfoAttachment.Attachment
 bool                                            CompanyInfoAttachment.Sys_Deactivated
 bool                                            CompanyInfoAttachment.Sys_Historic
 bool                                            CompanyInfoAttachment.Sys_Incomplete
-short                                           Competency.CompetencyId
+int                                             Competency.CompetencyId
+string (50)                                     Competency.Code
+int                                             Competency.CompetencyClassId
 byte                                            Competency.CompetencyGroupId
 string [MultilineText](450)                     Competency.Description
 string [Name](50)                               Competency.Name
 bool                                            Competency.Sys_Deactivated
 bool                                            Competency.Sys_Historic
 bool                                            Competency.Sys_Incomplete
+CompetencySourceEnum                            Competency.Enum_CompetencySourceId
+int                                             CompetencyClass.CompetencyClassId
+string [MultilineText](150)                     CompetencyClass.Description
+bool                                            CompetencyClass.Sys_Deactivated
+bool                                            CompetencyClass.Sys_Historic
+bool                                            CompetencyClass.Sys_Incomplete
+CompetencyClassTypeEnum                         CompetencyClass.Enum_CompetencyClassTypeId
+int                                             CompetencyCollection.CompetencyCollectionId
+string [MultilineText](150)                     CompetencyCollection.Description
+string [Name](50)                               CompetencyCollection.Name
+int                                             CompetencyCollection.Number
+bool                                            CompetencyCollection.Sys_Deactivated
+bool                                            CompetencyCollection.Sys_Historic
+bool                                            CompetencyCollection.Sys_Incomplete
+--> CompetencyCollectionCompetency[]            CompetencyCollection.CompetencyCollectionCompetencies
+int                                             CompetencyCollectionCompetency.CompetencyCollectionCompetencyId
+int                                             CompetencyCollectionCompetency.CompetencyId
+bool                                            CompetencyCollectionCompetency.Sys_Deactivated
+bool                                            CompetencyCollectionCompetency.Sys_Historic
+bool                                            CompetencyCollectionCompetency.Sys_Incomplete
 byte                                            CompetencyGroup.CompetencyGroupId
-string [MultilineText](4000)                    CompetencyGroup.Description
 string [Name](100)                              CompetencyGroup.Name
-byte                                            CompetencyGroup.ParentCompetencyGroupId
 bool                                            CompetencyGroup.Sys_Deactivated
 bool                                            CompetencyGroup.Sys_Historic
 bool                                            CompetencyGroup.Sys_Incomplete
@@ -994,16 +1014,9 @@ string                                          Employee.Ext_Out_Error_FixLink
 bool                                            Employee.Ext_Out_Error_SetOK
 DateTime                                        Employee.Ext_Out_LastSyncUTC
 --> Address                                     Employee.Default_Address
---> Employee_Competency[]                       Employee.Employee_Competencies
 --> Address[]                                   Employee.Addresses
 --> EmployeeAttachment[]                        Employee.EmployeeAttachments
 --> ExternalSystemEmployee[]                    Employee.ExternalSystemEmployees
-short                                           Employee_Competency.Employee_CompetencyId
-string                                          Employee_Competency.EmployeeIdExternal
-short                                           Employee_Competency.CompetencyId
-bool                                            Employee_Competency.Sys_Deactivated
-bool                                            Employee_Competency.Sys_Historic
-bool                                            Employee_Competency.Sys_Incomplete
 short                                           EmployeeAddress.EmployeeAddressId
 string                                          EmployeeAddress.AddressIdExternal
 string                                          EmployeeAddress.Owner_EmployeeIdExternal
@@ -1017,6 +1030,20 @@ int                                             EmployeeAttachment.AttachmentId
 bool                                            EmployeeAttachment.Sys_Deactivated
 bool                                            EmployeeAttachment.Sys_Historic
 bool                                            EmployeeAttachment.Sys_Incomplete
+int                                             EmployeeCompetency.EmployeeCompetencyId
+string                                          EmployeeCompetency.EmployeeIdExternal
+bool                                            EmployeeCompetency.Active
+int                                             EmployeeCompetency.CompetencyId
+int                                             EmployeeCompetency.EmployeeId
+DateTime                                        EmployeeCompetency.ExpiryDate
+string (150)                                    EmployeeCompetency.Institusion
+string (150)                                    EmployeeCompetency.Instructor
+DateTime                                        EmployeeCompetency.IssueDate
+string (150)                                    EmployeeCompetency.RegisteredBy
+string (150)                                    EmployeeCompetency.Source
+bool                                            EmployeeCompetency.Sys_Deactivated
+bool                                            EmployeeCompetency.Sys_Historic
+bool                                            EmployeeCompetency.Sys_Incomplete
 short                                           EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string                                          EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
 string [Name](200)                              EmployeeInvoiceCategory.Name
