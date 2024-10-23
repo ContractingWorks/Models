@@ -4062,7 +4062,7 @@ string [Name](100)                              ProductSeries.Name
 bool                                            ProductSeries.Sys_Deactivated
 bool                                            ProductSeries.Sys_Historic
 bool                                            ProductSeries.Sys_Incomplete
-int                                             ProductStructure.ProductStuctureId
+int                                             ProductStructure.ProductStructureId
 string                                          ProductStructure.ParentProductIdExternal
 string                                          ProductStructure.ProductIdExternal
 string                                          ProductStructure.ProductSearchIdExternal
@@ -4858,7 +4858,8 @@ int                                             Settings_Main.POS_ProductAgreeme
 bool                                            Settings_Main.PreserveGridSettingsLocally
 int                                             Settings_Main.ProductId
 bool                                            Settings_Main.ProductNote_CostPrice_Edit
-bool                                            Settings_Main.ProjectPeriod_AutoCreate
+byte                                            Settings_Main.ProjectPeriod_AutoCreateMonths
+byte                                            Settings_Main.ProjectPeriod_CreateLimitMonths
 int                                             Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                            Settings_Main.Require2FAForAllUsers
 bool                                            Settings_Main.Service_ApprovalInvoice_To_Wage
@@ -4962,6 +4963,7 @@ bool                                            Stock.Sys_Deactivated
 bool                                            Stock.Sys_Historic
 bool                                            Stock.Sys_Incomplete
 int                                             Stock.Sys_NextBatchSortOrder
+DateTime                                        Stock.Sys_ReportUntilUTC
 bool                                            Stock.Ext_Sys_Deactivated
 string                                          Stock.Ext_ExternalId
 string                                          Stock.Ext_In_Error_MsgNO
@@ -5536,7 +5538,6 @@ string [Email](100)                             User.Email
 int                                             User.EmployeeId
 short                                           User.ExternalSystemId
 string [Name](200)                              User.FirstName
-bool                                            User.IsClientAdmin
 bool                                            User.IsInactive
 bool                                            User.IsSystemUser
 string [Name](200)                              User.LastName
