@@ -2961,6 +2961,7 @@ string                                          InvoiceLineRule.Cost_ProjectAcco
 string                                          InvoiceLineRule.Income_ProjectAccountIdExternal
 string                                          InvoiceLineRule.Sale_VATFree_LedgerAccountIdExternal
 string                                          InvoiceLineRule.Sale_VATRequired_LedgerAccountIdExternal
+string                                          InvoiceLineRule.VATFree_VATRateIdExternal
 string                                          InvoiceLineRule.VATRateIdExternal
 string                                          InvoiceLineRule.WageCodeReportCategoryIdExternal
 int                                             InvoiceLineRule.Cost_ProjectAccountId
@@ -2981,6 +2982,7 @@ decimal                                         InvoiceLineRule.SurchargePercent
 bool                                            InvoiceLineRule.Sys_Deactivated
 bool                                            InvoiceLineRule.Sys_Historic
 bool                                            InvoiceLineRule.Sys_Incomplete
+byte                                            InvoiceLineRule.VATFree_VATRateId
 byte                                            InvoiceLineRule.VATRateId
 int                                             InvoiceLineRule.WageCodeReportCategoryId
 bool                                            InvoiceLineRule.WageType_CarExpenses
@@ -3385,6 +3387,28 @@ bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
+int                                             PosSale.PosSaleId
+string                                          PosSale.EmployeeIdExternal
+int                                             PosSale.EmployeeId
+string (50)                                     PosSale.EmployeeNumberTxt
+string (50)                                     PosSale.ReceiptNumber
+bool                                            PosSale.Sys_Deactivated
+bool                                            PosSale.Sys_Historic
+bool                                            PosSale.Sys_Incomplete
+--> PosSaleLine[]                               PosSale.PosSaleLines
+int                                             PosSaleLine.PosSaleLineId
+string                                          PosSaleLine.ProductIdExternal
+string                                          PosSaleLine.StorageIdExternal
+decimal                                         PosSaleLine.DiscountPercent
+int                                             PosSaleLine.ProductId
+string (50)                                     PosSaleLine.ProductNumberTxt
+decimal                                         PosSaleLine.Quantity
+decimal                                         PosSaleLine.SalesPrice
+short                                           PosSaleLine.StorageId
+string (50)                                     PosSaleLine.StorageNumberTxt
+bool                                            PosSaleLine.Sys_Deactivated
+bool                                            PosSaleLine.Sys_Historic
+bool                                            PosSaleLine.Sys_Incomplete
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
@@ -4042,6 +4066,7 @@ int                                             ProductSearchGroup.Default_Produ
 int                                             ProductSearchGroup.Default_ProductSeriesId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
+string (500)                                    ProductSearchGroup.ProductSeriesSortOrder
 int                                             ProductSearchGroup.SortOrder
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
