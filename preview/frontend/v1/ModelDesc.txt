@@ -3134,8 +3134,10 @@ bool                                            Manufacturer.Sys_Incomplete
 int                                             MapData.MapDataId
 string [MultilineText](250)                     MapData.Description
 string (50)                                     MapData.EntityType
+string [MultilineText](250)                     MapData.ExternalDescription
 short                                           MapData.ExternalSystemId
 string (100)                                    MapData.Map
+string (100)                                    MapData.NationalIdNumber
 string (100)                                    MapData.NewNumber
 string (100)                                    MapData.Number
 string (100)                                    MapData.OldMap
@@ -3152,11 +3154,8 @@ bool                                            MapDataUsage.Sys_Historic
 bool                                            MapDataUsage.Sys_Incomplete
 string (50)                                     MapDataUsage.UsageColumn
 int                                             MapDataUsage.UsageCount
-int                                             MapDataUsage.UsageCountDeactivated
-int                                             MapDataUsage.UsageCountHistoric
-int                                             MapDataUsage.UsageCountMigrated
+int                                             MapDataUsage.UsageCountOpen
 string (50)                                     MapDataUsage.UsageTable
-int                                             MapDataUsage.UsageToBeInvoiced
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
