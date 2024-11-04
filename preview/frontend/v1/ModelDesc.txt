@@ -3136,11 +3136,12 @@ string [MultilineText](250)                     MapData.Description
 string (50)                                     MapData.EntityType
 string [MultilineText](250)                     MapData.ExternalDescription
 short                                           MapData.ExternalSystemId
+string (100)                                    MapData.FormalId
 string (100)                                    MapData.Map
-string (100)                                    MapData.NationalIdNumber
 string (100)                                    MapData.NewNumber
 string (100)                                    MapData.Number
 string (100)                                    MapData.OldMap
+string (100)                                    MapData.OriginalNumber
 int                                             MapData.RowId
 bool                                            MapData.Sys_Deactivated
 bool                                            MapData.Sys_Historic
@@ -3163,10 +3164,10 @@ string [MultilineText](250)                     MapDataValue.DescriptionPart2
 string (50)                                     MapDataValue.EntityType
 string (100)                                    MapDataValue.ExternalId
 short                                           MapDataValue.ExternalSystemId
+string (100)                                    MapDataValue.FormalId
 string                                          MapDataValue.JsonFields
 string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
-bool                                            MapDataValue.Sys_HideInFrontend
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
 int                                             Note.NoteId
