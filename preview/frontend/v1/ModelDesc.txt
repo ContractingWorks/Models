@@ -579,6 +579,7 @@ string [Name](50)                               Competency.Name
 bool                                            Competency.Sys_Deactivated
 bool                                            Competency.Sys_Historic
 bool                                            Competency.Sys_Incomplete
+bool                                            Competency.UseInPlanner
 CompetencySourceEnum                            Competency.Enum_CompetencySourceId
 int                                             CompetencyClass.CompetencyClassId
 string [MultilineText](150)                     CompetencyClass.Description
@@ -1039,11 +1040,11 @@ DateTime                                        EmployeeCompetency.ExpiryDate
 string (150)                                    EmployeeCompetency.Institusion
 string (150)                                    EmployeeCompetency.Instructor
 DateTime                                        EmployeeCompetency.IssueDate
-string (150)                                    EmployeeCompetency.RegisteredBy
 string (150)                                    EmployeeCompetency.Source
 bool                                            EmployeeCompetency.Sys_Deactivated
 bool                                            EmployeeCompetency.Sys_Historic
 bool                                            EmployeeCompetency.Sys_Incomplete
+CompetencySourceEnum                            EmployeeCompetency.Enum_CompetencySourceId
 short                                           EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string                                          EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
 string [Name](200)                              EmployeeInvoiceCategory.Name
