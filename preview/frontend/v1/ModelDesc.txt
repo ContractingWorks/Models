@@ -5204,7 +5204,6 @@ DateTime                                        StorageTransfer.Ext_Out_LastSync
 --> ExternalSystemStorageTransfer[]             StorageTransfer.ExternalSystemStorageTransfers
 int                                             Supplier.SupplierId
 string                                          Supplier.SupplierIdExternal
-string                                          Supplier.PaymentTermIdExternal
 string (50)                                     Supplier.Bank_Giro
 string (50)                                     Supplier.Bank_Iban
 string (50)                                     Supplier.Bank_Swift
@@ -5213,7 +5212,6 @@ string [Email](150)                             Supplier.Email
 bool                                            Supplier.Inactive
 string [Phone](50)                              Supplier.Mobile
 string (50)                                     Supplier.OrganizationNumber
-byte                                            Supplier.PaymentTermId
 string [Phone](50)                              Supplier.Phone
 string [Name](50)                               Supplier.SupplierName
 int                                             Supplier.SupplierNumber
