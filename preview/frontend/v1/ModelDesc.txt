@@ -3132,32 +3132,6 @@ string [Name](100)                              Manufacturer.Name
 bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
-int                                             MapData.MapDataId
-string [MultilineText](250)                     MapData.Description
-string (50)                                     MapData.EntityType
-string [MultilineText](250)                     MapData.ExternalDescription
-short                                           MapData.ExternalSystemId
-string (100)                                    MapData.FormalId
-string (100)                                    MapData.Map
-string (100)                                    MapData.NewNumber
-string (100)                                    MapData.Number
-string (100)                                    MapData.OldMap
-string (100)                                    MapData.OriginalNumber
-int                                             MapData.RowId
-bool                                            MapData.Sys_Deactivated
-bool                                            MapData.Sys_Historic
-bool                                            MapData.Sys_Incomplete
-int                                             MapDataUsage.MapDataUsageId
-string (50)                                     MapDataUsage.EntityType
-DateTime                                        MapDataUsage.LastUsageUTC
-int                                             MapDataUsage.RowId
-bool                                            MapDataUsage.Sys_Deactivated
-bool                                            MapDataUsage.Sys_Historic
-bool                                            MapDataUsage.Sys_Incomplete
-string (50)                                     MapDataUsage.UsageColumn
-int                                             MapDataUsage.UsageCount
-int                                             MapDataUsage.UsageCountOpen
-string (50)                                     MapDataUsage.UsageTable
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
@@ -4942,13 +4916,6 @@ bool                                            Settings_ProductImport.Sys_Deact
 bool                                            Settings_ProductImport.Sys_Historic
 bool                                            Settings_ProductImport.Sys_Incomplete
 byte                                            Settings_ProductImport.VATRateId
-int                                             Settings_StartupValues.Settings_StartupValuesId
-string [Email](150)                             Settings_StartupValues.Fallback_VismaNet_InvoiceEmail
-int                                             Settings_StartupValues.ReplaceUnmapped_Casehandler_EmployeeId
-int                                             Settings_StartupValues.ReplaceUnmapped_JobResonsible_EmployeeId
-bool                                            Settings_StartupValues.Sys_Deactivated
-bool                                            Settings_StartupValues.Sys_Historic
-bool                                            Settings_StartupValues.Sys_Incomplete
 short                                           Settings_User.Settings_UserId
 int                                             Settings_User.CwUserId
 string (100)                                    Settings_User.Key
