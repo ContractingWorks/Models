@@ -7,6 +7,7 @@ string (100)                                    Address.Address2
 int                                             Address.CadastralUnitNumber
 string [MultilineText](100)                     Address.Comment
 string (2)                                      Address.CountryId
+int                                             Address.CountyId
 int                                             Address.EDokBuildingPlantId
 string (50)                                     Address.EDokNumber
 int                                             Address.EDokPlantId
@@ -19,12 +20,14 @@ decimal                                         Address.GPSPositionLatitude
 decimal                                         Address.GPSPositionLongitude
 byte                                            Address.GPSPositionSourceType
 int                                             Address.LeaseholdUnitNumber
-int                                             Address.MunicipalityNumber
+string (20)                                     Address.MunicipalityCode
+int                                             Address.MunicipalityId
 string [Name](100)                              Address.Name
 string [Name](100)                              Address.Name2
 int                                             Address.ParentAddressId
+string (10)                                     Address.PostalCode
 string (10)                                     Address.PostalNumber
-string (50)                                     Address.PostalPlace
+string (250)                                    Address.PostalPlace
 int                                             Address.PropertyUnitNumber
 int                                             Address.SectionUnitNumber
 string (50)                                     Address.SectionUnitText
@@ -671,6 +674,13 @@ string [Phone](10)                              Country.PhonePrefix
 bool                                            Country.Sys_Deactivated
 bool                                            Country.Sys_Historic
 bool                                            Country.Sys_Incomplete
+int                                             County.CountyId
+string (20)                                     County.Code
+string (2)                                      County.CountryId
+string [Name](250)                              County.Name
+bool                                            County.Sys_Deactivated
+bool                                            County.Sys_Historic
+bool                                            County.Sys_Incomplete
 int                                             Customer.CustomerId
 string                                          Customer.CustomerIdExternal
 string                                          Customer.AssignmentCategoryId_1External
@@ -3145,6 +3155,14 @@ string (100)                                    MapDataValue.Number
 bool                                            MapDataValue.Sys_Deactivated
 bool                                            MapDataValue.Sys_Historic
 bool                                            MapDataValue.Sys_Incomplete
+int                                             Municipality.MunicipalityId
+string (20)                                     Municipality.Code
+string (2)                                      Municipality.CountryId
+int                                             Municipality.CountyId
+string [Name](250)                              Municipality.Name
+bool                                            Municipality.Sys_Deactivated
+bool                                            Municipality.Sys_Historic
+bool                                            Municipality.Sys_Incomplete
 int                                             Note.NoteId
 string                                          Note.NoteIdExternal
 string                                          Note.AssignmentIdExternal
@@ -3384,6 +3402,20 @@ string (50)                                     PosSaleLine.StorageNumberTxt
 bool                                            PosSaleLine.Sys_Deactivated
 bool                                            PosSaleLine.Sys_Historic
 bool                                            PosSaleLine.Sys_Incomplete
+int                                             PostalCodePlaceMunicipality.PostalPlaceMunicipalityId
+bool                                            PostalCodePlaceMunicipality.IsPrimary
+int                                             PostalCodePlaceMunicipality.MunicipalityId
+int                                             PostalCodePlaceMunicipality.PostalPlaceId
+bool                                            PostalCodePlaceMunicipality.Sys_Deactivated
+bool                                            PostalCodePlaceMunicipality.Sys_Historic
+bool                                            PostalCodePlaceMunicipality.Sys_Incomplete
+int                                             PostalPlace.PostalPlaceId
+string (10)                                     PostalPlace.Code
+string (2)                                      PostalPlace.CountryId
+string [Name](250)                              PostalPlace.Name
+bool                                            PostalPlace.Sys_Deactivated
+bool                                            PostalPlace.Sys_Historic
+bool                                            PostalPlace.Sys_Incomplete
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
