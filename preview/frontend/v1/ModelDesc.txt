@@ -1047,7 +1047,7 @@ bool                                            EmployeeCompetency.Active
 int                                             EmployeeCompetency.CompetencyId
 int                                             EmployeeCompetency.EmployeeId
 DateTime                                        EmployeeCompetency.ExpiryDate
-string (150)                                    EmployeeCompetency.Institusion
+string (150)                                    EmployeeCompetency.Institution
 string (150)                                    EmployeeCompetency.Instructor
 DateTime                                        EmployeeCompetency.IssueDate
 string (150)                                    EmployeeCompetency.Source
@@ -4823,6 +4823,7 @@ bool                                            Settings_Assignment.BudgetNew_Ad
 bool                                            Settings_Assignment.CopyCategoryFromCustomer
 decimal                                         Settings_Assignment.CoverageRateFixedPrice
 decimal                                         Settings_Assignment.CoverageRateNotFixedPrice
+bool                                            Settings_Assignment.CustomerCommentOpenAsModal
 int                                             Settings_Assignment.Default_CasehandlerEmployeeId
 short                                           Settings_Assignment.Default_InvoiceTemplateId
 int                                             Settings_Assignment.Default_ProjectId
