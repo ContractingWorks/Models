@@ -2811,6 +2811,7 @@ bool                                            Invoice.Sys_Deactivated
 bool                                            Invoice.Sys_FinalPostProcessDone
 bool                                            Invoice.Sys_Historic
 bool                                            Invoice.Sys_Incomplete
+DateTime                                        Invoice.Sys_InvoiceDatePrevious
 bool                                            Invoice.Sys_PostProcessNeeded
 bool                                            Invoice.Sys_ResetSkipOnNextWhenInvoiced
 DateTime                                        Invoice.TransferredUTC
@@ -3402,13 +3403,6 @@ string (50)                                     PosSaleLine.StorageNumberTxt
 bool                                            PosSaleLine.Sys_Deactivated
 bool                                            PosSaleLine.Sys_Historic
 bool                                            PosSaleLine.Sys_Incomplete
-int                                             PostalCodePlaceMunicipality.PostalPlaceMunicipalityId
-bool                                            PostalCodePlaceMunicipality.IsPrimary
-int                                             PostalCodePlaceMunicipality.MunicipalityId
-int                                             PostalCodePlaceMunicipality.PostalPlaceId
-bool                                            PostalCodePlaceMunicipality.Sys_Deactivated
-bool                                            PostalCodePlaceMunicipality.Sys_Historic
-bool                                            PostalCodePlaceMunicipality.Sys_Incomplete
 int                                             PostalPlace.PostalPlaceId
 string (10)                                     PostalPlace.Code
 string (2)                                      PostalPlace.CountryId
@@ -3416,6 +3410,13 @@ string [Name](250)                              PostalPlace.Name
 bool                                            PostalPlace.Sys_Deactivated
 bool                                            PostalPlace.Sys_Historic
 bool                                            PostalPlace.Sys_Incomplete
+int                                             PostalPlaceMunicipality.PostalPlaceMunicipalityId
+bool                                            PostalPlaceMunicipality.IsPrimary
+int                                             PostalPlaceMunicipality.MunicipalityId
+int                                             PostalPlaceMunicipality.PostalPlaceId
+bool                                            PostalPlaceMunicipality.Sys_Deactivated
+bool                                            PostalPlaceMunicipality.Sys_Historic
+bool                                            PostalPlaceMunicipality.Sys_Incomplete
 int                                             Product.ProductId
 string                                          Product.ProductIdExternal
 string                                          Product.Cost_ProjectAccountIdExternal
