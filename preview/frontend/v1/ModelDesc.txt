@@ -4877,6 +4877,7 @@ int                                             Settings_Main.Appointment_Remind
 string (512)                                    Settings_Main.Appointment_ReminderMessage
 string (50)                                     Settings_Main.Branch
 string [Name](100)                              Settings_Main.ClientName
+string (2)                                      Settings_Main.CountryId
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
 string [Email](200)                             Settings_Main.Email
