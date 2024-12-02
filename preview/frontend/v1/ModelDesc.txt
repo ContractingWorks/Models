@@ -1080,8 +1080,17 @@ bool                                            EmployeeInvoiceCategory.Ext_Out_
 DateTime                                        EmployeeInvoiceCategory.Ext_Out_LastSyncUTC
 --> ExternalSystemEmployeeInvoiceCategory[]     EmployeeInvoiceCategory.ExternalSystemEmployeeInvoiceCategories
 short                                           ExternalSystem.ExternalSystemId
-string                                          ExternalSystem.IntegrationConfig
+string (500)                                    ExternalSystem.AutoFeatureList
+string [Name](50)                               ExternalSystem.DisplayName
+string (10)                                     ExternalSystem.ExternalIdPrefix
+bool                                            ExternalSystem.IsCwOwned
+bool                                            ExternalSystem.IsCwSystem
+bool                                            ExternalSystem.IsEnabled
+bool                                            ExternalSystem.IsERP
+bool                                            ExternalSystem.IsMobileDevice
+bool                                            ExternalSystem.IsPayroll
 string [Name](50)                               ExternalSystem.Name
+string [Name](10)                               ExternalSystem.ShortName
 bool                                            ExternalSystem.Sys_Deactivated
 bool                                            ExternalSystem.Sys_Historic
 bool                                            ExternalSystem.Sys_Incomplete
@@ -3143,6 +3152,12 @@ string [Name](100)                              Manufacturer.Name
 bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
+int                                             MapDataExtraData.MapDataExtraDataId
+string (50)                                     MapDataExtraData.Key
+bool                                            MapDataExtraData.Sys_Deactivated
+bool                                            MapDataExtraData.Sys_Historic
+bool                                            MapDataExtraData.Sys_Incomplete
+string (150)                                    MapDataExtraData.Value
 int                                             MapDataValue.MapDataValueId
 string [MultilineText](250)                     MapDataValue.Description
 string [MultilineText](250)                     MapDataValue.DescriptionPart1
