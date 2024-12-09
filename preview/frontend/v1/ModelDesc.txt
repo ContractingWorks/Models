@@ -4095,6 +4095,21 @@ bool                                            ProductSearchGroup.Sys_Deactivat
 bool                                            ProductSearchGroup.Sys_Historic
 bool                                            ProductSearchGroup.Sys_Incomplete
 IndustryTypeEnum                                ProductSearchGroup.Enum_IndustryTypeId
+int                                             ProductSearchGroupSeries.ProductSearchGroupSeriesId
+string                                          ProductSearchGroupSeries.ProductIdExternal
+string                                          ProductSearchGroupSeries.ProductSearchIdExternal
+string [MultilineText](250)                     ProductSearchGroupSeries.Comment
+bool                                            ProductSearchGroupSeries.IsCompatible
+bool                                            ProductSearchGroupSeries.IsRedundant
+int                                             ProductSearchGroupSeries.Priority
+int                                             ProductSearchGroupSeries.ProductId
+int                                             ProductSearchGroupSeries.ProductSearchGroupId
+int                                             ProductSearchGroupSeries.ProductSearchId
+int                                             ProductSearchGroupSeries.ProductSeriesId
+int                                             ProductSearchGroupSeries.ProductSeriesId_Origin
+bool                                            ProductSearchGroupSeries.Sys_Deactivated
+bool                                            ProductSearchGroupSeries.Sys_Historic
+bool                                            ProductSearchGroupSeries.Sys_Incomplete
 int                                             ProductSearchSeriesProduct.ProductSearchSeriesProductId
 string                                          ProductSearchSeriesProduct.ProductIdExternal
 string                                          ProductSearchSeriesProduct.ProductSearchIdExternal
@@ -5127,6 +5142,7 @@ decimal                                         StockTransaction.Sys_CostPriceNo
 bool                                            StockTransaction.Sys_Deactivated
 bool                                            StockTransaction.Sys_Historic
 bool                                            StockTransaction.Sys_Incomplete
+int                                             StockTransaction.Sys_PosSaleLineId
 int                                             StockTransaction.Sys_ProductNoteLineId
 decimal                                         StockTransaction.TotalStockQuantity
 StockTransactionOriginEnum                      StockTransaction.Enum_StockTransactionOriginId
