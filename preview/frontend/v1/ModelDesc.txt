@@ -3457,7 +3457,7 @@ bool                                            Product.InvoiceShowProductNumber
 bool                                            Product.IsFavorite
 bool                                            Product.IsInteresting
 bool                                            Product.IsPOS
-bool                                            Product.IsProductStucture
+bool                                            Product.IsProductStructure
 bool                                            Product.IsVarious
 int                                             Product.ManufacturerId
 string [MultilineText]                          Product.Note
