@@ -4089,7 +4089,7 @@ int                                             ProductSearchGroup.Default_Produ
 int                                             ProductSearchGroup.Default_ProductSeriesId
 string [Name](50)                               ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
-string (500)                                    ProductSearchGroup.ProductSeriesSortOrder
+string                                          ProductSearchGroup.ProductSeriesSortOrder
 int                                             ProductSearchGroup.SortOrder
 bool                                            ProductSearchGroup.Sys_Deactivated
 bool                                            ProductSearchGroup.Sys_Historic
