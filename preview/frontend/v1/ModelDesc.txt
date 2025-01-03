@@ -3363,7 +3363,7 @@ DateTime                                        OfferLine.Ext_Out_LastSyncUTC
 --> ExternalSystemOfferLine[]                   OfferLine.ExternalSystemOfferLines
 byte                                            PaymentTerm.PaymentTermId
 string                                          PaymentTerm.PaymentTermIdExternal
-string (5)                                      PaymentTerm.Code
+string (50)                                     PaymentTerm.Code
 short                                           PaymentTerm.Days
 bool                                            PaymentTerm.DaysStartNextMonth
 string [MultilineText](50)                      PaymentTerm.Description
@@ -5649,7 +5649,7 @@ DateTime                                        UserRole.Ext_Out_LastSyncUTC
 --> ExternalSystemUserRole[]                    UserRole.ExternalSystemUserRoles
 byte                                            VATRate.VATRateId
 string                                          VATRate.VATRateIdExternal
-string (10)                                     VATRate.Code
+string (50)                                     VATRate.Code
 int                                             VATRate.DefaultUnknown_ProductSupplierIndustryTypeId
 string [MultilineText](100)                     VATRate.Description
 decimal                                         VATRate.RatePercent
