@@ -4134,6 +4134,7 @@ int                                             ProductStructure.ParentProductId
 int                                             ProductStructure.ProductId
 int                                             ProductStructure.ProductSearchId
 decimal                                         ProductStructure.Quantity
+int                                             ProductStructure.SortOrder
 bool                                            ProductStructure.Sys_Deactivated
 bool                                            ProductStructure.Sys_Historic
 bool                                            ProductStructure.Sys_Incomplete
