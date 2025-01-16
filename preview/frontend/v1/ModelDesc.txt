@@ -4129,6 +4129,7 @@ int                                             ProductStructure.ProductStructur
 string                                          ProductStructure.ParentProductIdExternal
 string                                          ProductStructure.ProductIdExternal
 string                                          ProductStructure.ProductSearchIdExternal
+int                                             ProductStructure.Default_TariffId
 bool                                            ProductStructure.IsInteresting
 int                                             ProductStructure.ParentProductId
 int                                             ProductStructure.ProductId
