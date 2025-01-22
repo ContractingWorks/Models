@@ -4703,7 +4703,6 @@ string [Name](100)                              Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
 int                                             Service.WagePeriodId
 InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatusId
-WagePeriodStatusEnum                            Service.Enum_WagePeriodStatusId
 ApprovalStatusEnum                              Service.Invoice_Enum_ApprovalStatusId
 WageCodeTypeEnum                                Service.Sys_Enum_WageCodeTypeId
 ApprovalStatusEnum                              Service.Wage_Enum_ApprovalStatusId
