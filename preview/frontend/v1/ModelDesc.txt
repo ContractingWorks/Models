@@ -4875,6 +4875,7 @@ decimal                                         Settings_Assignment.MinimumCover
 bool                                            Settings_Assignment.NoChangeCustomerAfterTimeMatInv
 int                                             Settings_Assignment.ProductAgreementGroupId
 bool                                            Settings_Assignment.ProductNote_CostPrice_Edit
+bool                                            Settings_Assignment.SetCreatedByEmployeeAsCaseHandler
 bool                                            Settings_Assignment.Sys_Deactivated
 bool                                            Settings_Assignment.Sys_Historic
 bool                                            Settings_Assignment.Sys_Incomplete
