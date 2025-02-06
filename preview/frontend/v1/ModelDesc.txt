@@ -4739,7 +4739,7 @@ DateTime                                        Service.Ext_Out_LastSyncUTC
 short                                           ServiceAgreement.ServiceAgreementId
 string                                          ServiceAgreement.ServiceAgreementIdExternal
 string [MultilineText](50)                      ServiceAgreement.Description
-short                                           ServiceAgreement.Number
+int                                             ServiceAgreement.Number
 bool                                            ServiceAgreement.Sys_Deactivated
 bool                                            ServiceAgreement.Sys_Historic
 bool                                            ServiceAgreement.Sys_Incomplete
