@@ -489,19 +489,12 @@ bool                                            BudgetScenario.Ext_Out_Error_Set
 DateTime                                        BudgetScenario.Ext_Out_LastSyncUTC
 --> ExternalSystemBudgetScenario[]              BudgetScenario.ExternalSystemBudgetScenarios
 int                                             Calculation.CalculationId
-string                                          Calculation.AddressIdExternal
-string                                          Calculation.CaseHandler_EmployeeIdExternal
-string                                          Calculation.ContactIdExternal
-string                                          Calculation.CustomerIdExternal
-string                                          Calculation.ProjectIdExternal
+string                                          Calculation.OfferIdExternal
 string                                          Calculation.WageCodeReportCategoryIdExternal
-int                                             Calculation.AddressId
 int                                             Calculation.CalculationNumber
-int                                             Calculation.CaseHandler_EmployeeId
-int                                             Calculation.ContactId
-int                                             Calculation.CustomerId
 string [MultilineText](50)                      Calculation.Description
-int                                             Calculation.ProjectId
+bool                                            Calculation.IsDefault
+int                                             Calculation.OfferId
 bool                                            Calculation.Sys_Deactivated
 bool                                            Calculation.Sys_Historic
 bool                                            Calculation.Sys_Incomplete
@@ -527,6 +520,7 @@ bool                                            CalculationFolderTemplate.Sys_Hi
 bool                                            CalculationFolderTemplate.Sys_Incomplete
 int                                             CalculationLine.CalculationLineId
 string                                          CalculationLine.ProductIdExternal
+string                                          CalculationLine.ProductSearchIdExternal
 string                                          CalculationLine.ProductSupplierIndustryTypeIdExternal
 string                                          CalculationLine.SupplierIndustryTypeIdExternal
 string                                          CalculationLine.WageCodeReportCategoryIdExternal
@@ -536,14 +530,17 @@ int                                             CalculationLine.CalculationId
 string [MultilineText](1024)                    CalculationLine.Comment
 decimal                                         CalculationLine.CostPrice
 bool                                            CalculationLine.IsInteresting
+bool                                            CalculationLine.IsProductStructure
+int                                             CalculationLine.ParentCalculationLineId
 int                                             CalculationLine.ProductId
 string [Name]                                   CalculationLine.ProductName
 string (50)                                     CalculationLine.ProductNumber
+int                                             CalculationLine.ProductSearchId
+int                                             CalculationLine.ProductSeriesId
 int                                             CalculationLine.ProductSupplierIndustryTypeId
 decimal                                         CalculationLine.Quantity
 decimal                                         CalculationLine.SalesPrice
 decimal                                         CalculationLine.SalesPriceOverride
-int                                             CalculationLine.StructureParent_CalculationLineId
 short                                           CalculationLine.SupplierIndustryTypeId
 decimal                                         CalculationLine.SurchargePercent
 bool                                            CalculationLine.Sys_Deactivated
@@ -2450,7 +2447,7 @@ DateTime                                        ExternalSystemUserRole.Out_LastS
 string [MultilineText](50)                      ExternalSystemUserRole.StatusDescription
 bool                                            ExternalSystemUserRole.Sys_Deactivated
 SyncStatusEnum                                  ExternalSystemUserRole.Enum_SyncStatusId
-byte                                            ExternalSystemVATRate.ExternalSystemVATRateId
+int                                             ExternalSystemVATRate.ExternalSystemVATRateId
 string                                          ExternalSystemVATRate.VATRateIdExternal
 string (50)                                     ExternalSystemVATRate.ExternalId
 short                                           ExternalSystemVATRate.ExternalSystemId
@@ -2924,7 +2921,7 @@ int                                             InvoiceLine.Sys_ProjectPeriod
 bool                                            InvoiceLine.UpdateAssignmentCost
 bool                                            InvoiceLine.UpdateStock
 bool                                            InvoiceLine.VATFree
-byte                                            InvoiceLine.VATRateId
+int                                             InvoiceLine.VATRateId
 int                                             InvoiceLine.WageCodeReportCategoryId
 InvoiceLineTypeEnum                             InvoiceLine.Enum_InvoiceLineTypeId
 InvoiceLineRuleTypeDetailEnum                   InvoiceLine.Sys_Enum_InvoiceLineRuleTypeDetailId
@@ -2976,6 +2973,14 @@ bool                                            InvoiceLine_Session.UpdateAssign
 short                                           InvoiceLine_Session.UpdateStatus
 bool                                            InvoiceLine_Session.UpdateStock
 InvoiceLineRuleTypeDetailEnum                   InvoiceLine_Session.Enum_InvoiceLineRuleTypeDetailId
+int                                             InvoiceLineDimensionValue.InvoiceLineDimensionValueId
+string                                          InvoiceLineDimensionValue.DimensionValueIdExternal
+string                                          InvoiceLineDimensionValue.InvoiceLineIdExternal
+int                                             InvoiceLineDimensionValue.DimensionValueId
+int                                             InvoiceLineDimensionValue.InvoiceLineId
+bool                                            InvoiceLineDimensionValue.Sys_Deactivated
+bool                                            InvoiceLineDimensionValue.Sys_Historic
+bool                                            InvoiceLineDimensionValue.Sys_Incomplete
 short                                           InvoiceLineRule.InvoiceLineRuleId
 string                                          InvoiceLineRule.InvoiceLineRuleIdExternal
 string                                          InvoiceLineRule.Cost_ProjectAccountIdExternal
@@ -3003,8 +3008,8 @@ decimal                                         InvoiceLineRule.SurchargePercent
 bool                                            InvoiceLineRule.Sys_Deactivated
 bool                                            InvoiceLineRule.Sys_Historic
 bool                                            InvoiceLineRule.Sys_Incomplete
-byte                                            InvoiceLineRule.VATFree_VATRateId
-byte                                            InvoiceLineRule.VATRateId
+int                                             InvoiceLineRule.VATFree_VATRateId
+int                                             InvoiceLineRule.VATRateId
 int                                             InvoiceLineRule.WageCodeReportCategoryId
 bool                                            InvoiceLineRule.WageType_CarExpenses
 bool                                            InvoiceLineRule.WageType_Diet
@@ -3479,7 +3484,7 @@ bool                                            Product.Sys_Deactivated
 bool                                            Product.Sys_Historic
 bool                                            Product.Sys_Incomplete
 string (3)                                      Product.Unit
-byte                                            Product.VATRateId
+int                                             Product.VATRateId
 ProductSourceEnum                               Product.Enum_ProductSourceId
 bool                                            Product.Ext_Sys_Deactivated
 string                                          Product.Ext_ExternalId
@@ -4058,6 +4063,14 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 short                                           ProductNoteLineBatch.Sys_HistoricStorageId
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
+int                                             ProductNoteLineDimensionValue.ProductNoteLineDimensionValueId
+string                                          ProductNoteLineDimensionValue.DimensionValueIdExternal
+string                                          ProductNoteLineDimensionValue.ProductNoteLineIdExternal
+int                                             ProductNoteLineDimensionValue.DimensionValueId
+int                                             ProductNoteLineDimensionValue.ProductNoteLineId
+bool                                            ProductNoteLineDimensionValue.Sys_Deactivated
+bool                                            ProductNoteLineDimensionValue.Sys_Historic
+bool                                            ProductNoteLineDimensionValue.Sys_Incomplete
 int                                             ProductSearch.ProductSearchId
 string                                          ProductSearch.ProductSearchIdExternal
 string [Name](50)                               ProductSearch.Name
@@ -4760,6 +4773,8 @@ bool                                            ServiceAgreementDetail.Surcharge
 bool                                            ServiceAgreementDetail.Sys_Deactivated
 bool                                            ServiceAgreementDetail.Sys_Historic
 bool                                            ServiceAgreementDetail.Sys_Incomplete
+DateTime                                        ServiceAgreementDetail.ValidFromUTC
+DateTime                                        ServiceAgreementDetail.ValidToUTC
 decimal                                         ServiceAgreementDetail.Value
 short                                           ServiceAgreementDetail.WageCodeId
 ServiceAgreementDetailValueTypeEnum             ServiceAgreementDetail.Enum_ServiceAgreementDetailValueTypeId
@@ -4833,6 +4848,14 @@ string                                          ServiceContract.Ext_Out_Error_Fi
 bool                                            ServiceContract.Ext_Out_Error_SetOK
 DateTime                                        ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]             ServiceContract.ExternalSystemServiceContracts
+int                                             ServiceDimensionValue.ServiceDimensionValueId
+string                                          ServiceDimensionValue.DimensionValueIdExternal
+string                                          ServiceDimensionValue.ServiceIdExternal
+int                                             ServiceDimensionValue.DimensionValueId
+int                                             ServiceDimensionValue.ServiceId
+bool                                            ServiceDimensionValue.Sys_Deactivated
+bool                                            ServiceDimensionValue.Sys_Historic
+bool                                            ServiceDimensionValue.Sys_Incomplete
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.AssignmentCategoryId_1External
 string                                          Settings_Assignment.AssignmentCategoryId_2External
@@ -4944,8 +4967,8 @@ bool                                            Settings_Main.UseDepartments
 bool                                            Settings_Main.UseDimensions
 bool                                            Settings_Main.UseServiceApprovalInvoice
 bool                                            Settings_Main.UseServiceApprovalWage
-byte                                            Settings_Main.VATFree_Int_VATRateId
-byte                                            Settings_Main.VATFree_Nat_VATRateId
+int                                             Settings_Main.VATFree_Int_VATRateId
+int                                             Settings_Main.VATFree_Nat_VATRateId
 StorageModeEnum                                 Settings_Main.Enum_StorageModeId
 TimeZoneEnum                                    Settings_Main.Enum_TimeZoneId
 byte                                            Settings_Payroll.Settings_PayrollId
@@ -4982,7 +5005,7 @@ decimal                                         Settings_ProductImport.Surcharge
 bool                                            Settings_ProductImport.Sys_Deactivated
 bool                                            Settings_ProductImport.Sys_Historic
 bool                                            Settings_ProductImport.Sys_Incomplete
-byte                                            Settings_ProductImport.VATRateId
+int                                             Settings_ProductImport.VATRateId
 short                                           Settings_User.Settings_UserId
 int                                             Settings_User.CwUserId
 string (100)                                    Settings_User.Key
@@ -5448,7 +5471,7 @@ decimal                                         SupplierInvoiceLine.SurchargePer
 bool                                            SupplierInvoiceLine.Sys_Deactivated
 bool                                            SupplierInvoiceLine.Sys_Historic
 bool                                            SupplierInvoiceLine.Sys_Incomplete
-byte                                            SupplierInvoiceLine.VATRateId
+int                                             SupplierInvoiceLine.VATRateId
 string (50)                                     SupplierInvoiceLine.VatRateTxt
 bool                                            SupplierInvoiceLine.Ext_Sys_Deactivated
 string                                          SupplierInvoiceLine.Ext_ExternalId
@@ -5484,7 +5507,7 @@ bool                                            SupplierInvoiceProductMatch.Sys_
 bool                                            SupplierInvoiceProductMatch.Sys_Incomplete
 string [Name](100)                              SupplierInvoiceProductMatch.Target_ProductName
 int                                             SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
-byte                                            SupplierInvoiceProductMatch.VATRateId
+int                                             SupplierInvoiceProductMatch.VATRateId
 int                                             SystemMessage.SystemMessageId
 string (100)                                    SystemMessage.EditUrlTextId
 string (100)                                    SystemMessage.InternalErrorId
@@ -5649,7 +5672,7 @@ string                                          UserRole.Ext_Out_Error_FixLink
 bool                                            UserRole.Ext_Out_Error_SetOK
 DateTime                                        UserRole.Ext_Out_LastSyncUTC
 --> ExternalSystemUserRole[]                    UserRole.ExternalSystemUserRoles
-byte                                            VATRate.VATRateId
+int                                             VATRate.VATRateId
 string                                          VATRate.VATRateIdExternal
 string (50)                                     VATRate.Code
 int                                             VATRate.DefaultUnknown_ProductSupplierIndustryTypeId
