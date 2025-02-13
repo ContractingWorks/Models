@@ -2973,14 +2973,6 @@ bool                                            InvoiceLine_Session.UpdateAssign
 short                                           InvoiceLine_Session.UpdateStatus
 bool                                            InvoiceLine_Session.UpdateStock
 InvoiceLineRuleTypeDetailEnum                   InvoiceLine_Session.Enum_InvoiceLineRuleTypeDetailId
-int                                             InvoiceLineDimensionValue.InvoiceLineDimensionValueId
-string                                          InvoiceLineDimensionValue.DimensionValueIdExternal
-string                                          InvoiceLineDimensionValue.InvoiceLineIdExternal
-int                                             InvoiceLineDimensionValue.DimensionValueId
-int                                             InvoiceLineDimensionValue.InvoiceLineId
-bool                                            InvoiceLineDimensionValue.Sys_Deactivated
-bool                                            InvoiceLineDimensionValue.Sys_Historic
-bool                                            InvoiceLineDimensionValue.Sys_Incomplete
 short                                           InvoiceLineRule.InvoiceLineRuleId
 string                                          InvoiceLineRule.InvoiceLineRuleIdExternal
 string                                          InvoiceLineRule.Cost_ProjectAccountIdExternal
@@ -4063,14 +4055,6 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 short                                           ProductNoteLineBatch.Sys_HistoricStorageId
 bool                                            ProductNoteLineBatch.Sys_HistoricWorkaround
 bool                                            ProductNoteLineBatch.Sys_Incomplete
-int                                             ProductNoteLineDimensionValue.ProductNoteLineDimensionValueId
-string                                          ProductNoteLineDimensionValue.DimensionValueIdExternal
-string                                          ProductNoteLineDimensionValue.ProductNoteLineIdExternal
-int                                             ProductNoteLineDimensionValue.DimensionValueId
-int                                             ProductNoteLineDimensionValue.ProductNoteLineId
-bool                                            ProductNoteLineDimensionValue.Sys_Deactivated
-bool                                            ProductNoteLineDimensionValue.Sys_Historic
-bool                                            ProductNoteLineDimensionValue.Sys_Incomplete
 int                                             ProductSearch.ProductSearchId
 string                                          ProductSearch.ProductSearchIdExternal
 string [Name](50)                               ProductSearch.Name
@@ -4848,14 +4832,6 @@ string                                          ServiceContract.Ext_Out_Error_Fi
 bool                                            ServiceContract.Ext_Out_Error_SetOK
 DateTime                                        ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]             ServiceContract.ExternalSystemServiceContracts
-int                                             ServiceDimensionValue.ServiceDimensionValueId
-string                                          ServiceDimensionValue.DimensionValueIdExternal
-string                                          ServiceDimensionValue.ServiceIdExternal
-int                                             ServiceDimensionValue.DimensionValueId
-int                                             ServiceDimensionValue.ServiceId
-bool                                            ServiceDimensionValue.Sys_Deactivated
-bool                                            ServiceDimensionValue.Sys_Historic
-bool                                            ServiceDimensionValue.Sys_Incomplete
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.AssignmentCategoryId_1External
 string                                          Settings_Assignment.AssignmentCategoryId_2External
