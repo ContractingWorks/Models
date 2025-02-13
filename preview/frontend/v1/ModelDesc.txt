@@ -4892,6 +4892,9 @@ short                                           Settings_Assignment.Invoice_Over
 bool                                            Settings_Assignment.Invoice_SendImmediately
 bool                                            Settings_Assignment.MandatoryCaseHandler
 bool                                            Settings_Assignment.MandatoryCategory
+bool                                            Settings_Assignment.MandatoryCategory_1
+bool                                            Settings_Assignment.MandatoryCategory_2
+bool                                            Settings_Assignment.MandatoryCategory_3
 bool                                            Settings_Assignment.MandatoryHpcCategory
 bool                                            Settings_Assignment.MandatoryMatAgreement
 decimal                                         Settings_Assignment.MinimumCoveragePercent
