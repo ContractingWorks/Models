@@ -822,6 +822,17 @@ string                                          CustomerContact.Owner_CustomerId
 bool                                            CustomerContact.Sys_Deactivated
 bool                                            CustomerContact.Sys_Historic
 bool                                            CustomerContact.Sys_Incomplete
+int                                             Dashboard.DashboardId
+string                                          Dashboard.DepartmentIdExternal
+string                                          Dashboard.ConfigurationJson
+short                                           Dashboard.DepartmentId
+string                                          Dashboard.FilterJson
+string [Name](50)                               Dashboard.Name
+bool                                            Dashboard.Sys_Deactivated
+bool                                            Dashboard.Sys_Historic
+bool                                            Dashboard.Sys_Incomplete
+int                                             Dashboard.UserId
+DashboardTypeEnum                               Dashboard.Enum_DashboardTypeId
 int                                             DataGrid.DataGridId
 string                                          DataGrid.AgGridColumnState
 string                                          DataGrid.AgGridFilter
