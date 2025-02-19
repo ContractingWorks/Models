@@ -678,6 +678,19 @@ string [Name](250)                              County.Name
 bool                                            County.Sys_Deactivated
 bool                                            County.Sys_Historic
 bool                                            County.Sys_Incomplete
+int                                             CreditScore.CreditScoreId
+string                                          CreditScore.CustomerIdExternal
+string [Name](50)                               CreditScore.BureauName
+int                                             CreditScore.CustomerId
+string (500)                                    CreditScore.Details
+DateTime                                        CreditScore.EvaluationDate
+int                                             CreditScore.NumericScore
+bool                                            CreditScore.PaymentRemarks
+string (10)                                     CreditScore.Score
+bool                                            CreditScore.Sys_Deactivated
+bool                                            CreditScore.Sys_Historic
+bool                                            CreditScore.Sys_Incomplete
+CreditRiskEnum                                  CreditScore.Enum_CreditRiskId
 int                                             Customer.CustomerId
 string                                          Customer.CustomerIdExternal
 string                                          Customer.AssignmentCategoryId_1External
