@@ -3283,6 +3283,7 @@ string                                          Offer.OfferIdExternal
 string                                          Offer.AddressIdExternal
 string                                          Offer.AssignmentIdExternal
 string                                          Offer.CustomerIdExternal
+string                                          Offer.Default_ContactIdExternal
 string                                          Offer.DepartmentIdExternal
 string                                          Offer.ProductAgreementGroupIdExternal
 string                                          Offer.ProductAgreementIdExternal
@@ -3295,6 +3296,7 @@ int                                             Offer.AssignmentId
 DateTime                                        Offer.CompletedUTC
 int                                             Offer.CustomerId
 string (200)                                    Offer.CustomerReference
+int                                             Offer.Default_ContactId
 short                                           Offer.DepartmentId
 string [MultilineText](500)                     Offer.Description
 DateTime                                        Offer.EndDateTimeUTC
@@ -3337,6 +3339,7 @@ bool                                            Offer.Ext_Out_Error_SetOK
 DateTime                                        Offer.Ext_Out_LastSyncUTC
 --> ExternalSystemOffer[]                       Offer.ExternalSystemOffers
 --> OfferAttachment[]                           Offer.OfferAttachments
+--> Contact[]                                   Offer.Contacts
 --> OfferLine[]                                 Offer.OfferLines
 int                                             OfferAttachment.OfferAttachmentId
 string                                          OfferAttachment.AttachmentIdExternal
@@ -3345,6 +3348,12 @@ int                                             OfferAttachment.AttachmentId
 bool                                            OfferAttachment.Sys_Deactivated
 bool                                            OfferAttachment.Sys_Historic
 bool                                            OfferAttachment.Sys_Incomplete
+int                                             OfferContact.OfferContactId
+string                                          OfferContact.ContactIdExternal
+string                                          OfferContact.Owner_OfferIdExternal
+bool                                            OfferContact.Sys_Deactivated
+bool                                            OfferContact.Sys_Historic
+bool                                            OfferContact.Sys_Incomplete
 int                                             OfferLine.OfferLineId
 string                                          OfferLine.OfferLineIdExternal
 string                                          OfferLine.OfferIdExternal
