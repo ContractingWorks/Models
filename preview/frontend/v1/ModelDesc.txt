@@ -2651,6 +2651,7 @@ DateTime                                        ImportFile.ImportedDateTimeUTC
 string                                          ImportFile.ImportMessage
 string (50)                                     ImportFile.LocalHashCode
 byte                                            ImportFile.RemainingDownloadTryCount
+byte                                            ImportFile.RemainingFtpMetadataCheckTryCount
 byte                                            ImportFile.RemainingImportTryCount
 bool                                            ImportFile.SourceAutoDeleteAfterImport
 DateTime                                        ImportFile.SourceDeletedDateTimeUTC
@@ -5351,6 +5352,7 @@ string (200)                                    SupplierIndustryTypeFtpInfo.Dire
 string (50)                                     SupplierIndustryTypeFtpInfo.FileMask
 DateTime                                        SupplierIndustryTypeFtpInfo.FtpLastCheckedUTC
 byte                                            SupplierIndustryTypeFtpInfo.MaxDownloadTryCount
+byte                                            SupplierIndustryTypeFtpInfo.MaxFtpMetadataCheckTryCount
 byte                                            SupplierIndustryTypeFtpInfo.MaxImportTryCount
 string (250)                                    SupplierIndustryTypeFtpInfo.Password
 string (100)                                    SupplierIndustryTypeFtpInfo.Server
