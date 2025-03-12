@@ -5165,6 +5165,7 @@ decimal                                         StockTransaction.AverageCostPric
 decimal                                         StockTransaction.AverageCostPriceFIFO
 string [MultilineText](250)                     StockTransaction.Comment
 int                                             StockTransaction.CustomerId
+int                                             StockTransaction.ERPBatchNumber
 short                                           StockTransaction.MovedFromStorageId
 short                                           StockTransaction.MovedToStorageId
 int                                             StockTransaction.ProductBatchId
