@@ -4899,6 +4899,7 @@ bool                                            Settings_Assignment.Invoice_IsFi
 bool                                            Settings_Assignment.Invoice_IsFinalInvoice
 bool                                            Settings_Assignment.Invoice_NoteOpenAsModal
 short                                           Settings_Assignment.Invoice_OverdueNotificationDays
+bool                                            Settings_Assignment.Invoice_ReopenAssignment
 bool                                            Settings_Assignment.Invoice_SendImmediately
 bool                                            Settings_Assignment.MandatoryCaseHandler
 bool                                            Settings_Assignment.MandatoryCategory
