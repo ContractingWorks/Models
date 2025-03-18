@@ -605,6 +605,20 @@ string [Name](100)                              CompetencyGroup.Name
 bool                                            CompetencyGroup.Sys_Deactivated
 bool                                            CompetencyGroup.Sys_Historic
 bool                                            CompetencyGroup.Sys_Incomplete
+long                                            ConsumptionApi.ConsumptionApiId
+int                                             ConsumptionApi.ByteCount
+int                                             ConsumptionApi.EntityCount
+short                                           ConsumptionApi.ExternalSystemId
+bool                                            ConsumptionApi.IsWrite
+string                                          ConsumptionApi.RequestDetails
+string (50)                                     ConsumptionApi.RequestId
+int                                             ConsumptionApi.ResponseTimeMs
+bool                                            ConsumptionApi.Sys_Deactivated
+bool                                            ConsumptionApi.Sys_Historic
+bool                                            ConsumptionApi.Sys_Incomplete
+string [Name](50)                               ConsumptionApi.TableName
+int                                             ConsumptionApi.UserId
+ApiServiceEnum                                  ConsumptionApi.Enum_ApiServiceId
 int                                             Contact.ContactId
 string                                          Contact.ContactIdExternal
 string                                          Contact.ParentContactIdExternal
@@ -2651,7 +2665,6 @@ DateTime                                        ImportFile.ImportedDateTimeUTC
 string                                          ImportFile.ImportMessage
 string (50)                                     ImportFile.LocalHashCode
 byte                                            ImportFile.RemainingDownloadTryCount
-byte                                            ImportFile.RemainingFtpMetadataCheckTryCount
 byte                                            ImportFile.RemainingImportTryCount
 bool                                            ImportFile.SourceAutoDeleteAfterImport
 DateTime                                        ImportFile.SourceDeletedDateTimeUTC
@@ -5365,6 +5378,7 @@ byte                                            SupplierIndustryTypeFtpInfo.MaxD
 byte                                            SupplierIndustryTypeFtpInfo.MaxFtpMetadataCheckTryCount
 byte                                            SupplierIndustryTypeFtpInfo.MaxImportTryCount
 string (250)                                    SupplierIndustryTypeFtpInfo.Password
+byte                                            SupplierIndustryTypeFtpInfo.RemainingFtpMetadataCheckTryCount
 string (100)                                    SupplierIndustryTypeFtpInfo.Server
 short                                           SupplierIndustryTypeFtpInfo.SupplierIndustryTypeId
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Deactivated
