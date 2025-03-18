@@ -2745,13 +2745,6 @@ string                                          IndustryType.Ext_Out_Error_FixLi
 bool                                            IndustryType.Ext_Out_Error_SetOK
 DateTime                                        IndustryType.Ext_Out_LastSyncUTC
 --> ExternalSystemIndustryType[]                IndustryType.ExternalSystemIndustryTypes
-short                                           IntegratedSystemConfig.IntegratedSystemConfigId
-string (50)                                     IntegratedSystemConfig.Key
-bool                                            IntegratedSystemConfig.Sys_Deactivated
-bool                                            IntegratedSystemConfig.Sys_Historic
-bool                                            IntegratedSystemConfig.Sys_Incomplete
-string                                          IntegratedSystemConfig.Value
-IntegratedSystemTypeEnum                        IntegratedSystemConfig.Enum_IntegratedSystemTypeId
 int                                             IntegrationBlackList.IntegrationBlackListId
 long                                            IntegrationBlackList.EntityId
 DateTime                                        IntegrationBlackList.ExpiresUTC
