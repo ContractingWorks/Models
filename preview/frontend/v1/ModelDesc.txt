@@ -22,8 +22,8 @@ byte                                            Address.GPSPositionSourceType
 int                                             Address.LeaseholdUnitNumber
 string (20)                                     Address.MunicipalityCode
 int                                             Address.MunicipalityId
-string [Name](100)                              Address.Name
-string [Name](100)                              Address.Name2
+string (100)                                    Address.Name
+string (100)                                    Address.Name2
 int                                             Address.ParentAddressId
 string (10)                                     Address.PostalCode
 string (10)                                     Address.PostalNumber
@@ -504,7 +504,7 @@ int                                             CalculationFolder.CalculationFol
 string (50)                                     CalculationFolder.Code
 string [MultilineText](1024)                    CalculationFolder.Comment
 bool                                            CalculationFolder.Complete
-string [Name](100)                              CalculationFolder.Name
+string (100)                                    CalculationFolder.Name
 int                                             CalculationFolder.Parent_CalculationFolderId
 int                                             CalculationFolder.SortOrder
 bool                                            CalculationFolder.Sys_Deactivated
@@ -512,7 +512,7 @@ bool                                            CalculationFolder.Sys_Historic
 bool                                            CalculationFolder.Sys_Incomplete
 int                                             CalculationFolderTemplate.CalculationFolderTemplateId
 string (50)                                     CalculationFolderTemplate.Code
-string [Name](100)                              CalculationFolderTemplate.Name
+string (100)                                    CalculationFolderTemplate.Name
 int                                             CalculationFolderTemplate.Parent_CalculationFolderTemplateId
 int                                             CalculationFolderTemplate.SortOrder
 bool                                            CalculationFolderTemplate.Sys_Deactivated
@@ -533,7 +533,7 @@ bool                                            CalculationLine.IsInteresting
 bool                                            CalculationLine.IsProductStructure
 int                                             CalculationLine.ParentCalculationLineId
 int                                             CalculationLine.ProductId
-string [Name]                                   CalculationLine.ProductName
+string                                          CalculationLine.ProductName
 string (50)                                     CalculationLine.ProductNumber
 int                                             CalculationLine.ProductSearchId
 int                                             CalculationLine.ProductSeriesId
@@ -554,7 +554,7 @@ string                                          CompanyInfo.CompanyLogo_Attachme
 string (50)                                     CompanyInfo.Address1
 string (50)                                     CompanyInfo.Address2
 int                                             CompanyInfo.CompanyLogo_AttachmentId
-string [Name](100)                              CompanyInfo.CompanyName
+string (100)                                    CompanyInfo.CompanyName
 string [Email](200)                             CompanyInfo.Email
 string (50)                                     CompanyInfo.OrganizationNumber
 string [Phone](50)                              CompanyInfo.PhoneNumberForSMS
@@ -575,7 +575,7 @@ string (50)                                     Competency.Code
 int                                             Competency.CompetencyClassId
 byte                                            Competency.CompetencyGroupId
 string [MultilineText](450)                     Competency.Description
-string [Name](50)                               Competency.Name
+string (50)                                     Competency.Name
 bool                                            Competency.Sys_Deactivated
 bool                                            Competency.Sys_Historic
 bool                                            Competency.Sys_Incomplete
@@ -589,7 +589,7 @@ bool                                            CompetencyClass.Sys_Incomplete
 CompetencyClassTypeEnum                         CompetencyClass.Enum_CompetencyClassTypeId
 int                                             CompetencyCollection.CompetencyCollectionId
 string [MultilineText](150)                     CompetencyCollection.Description
-string [Name](50)                               CompetencyCollection.Name
+string (50)                                     CompetencyCollection.Name
 int                                             CompetencyCollection.Number
 bool                                            CompetencyCollection.Sys_Deactivated
 bool                                            CompetencyCollection.Sys_Historic
@@ -601,7 +601,7 @@ bool                                            CompetencyCollectionCompetency.S
 bool                                            CompetencyCollectionCompetency.Sys_Historic
 bool                                            CompetencyCollectionCompetency.Sys_Incomplete
 byte                                            CompetencyGroup.CompetencyGroupId
-string [Name](100)                              CompetencyGroup.Name
+string (100)                                    CompetencyGroup.Name
 bool                                            CompetencyGroup.Sys_Deactivated
 bool                                            CompetencyGroup.Sys_Historic
 bool                                            CompetencyGroup.Sys_Incomplete
@@ -616,7 +616,7 @@ int                                             ConsumptionApi.ResponseTimeMs
 bool                                            ConsumptionApi.Sys_Deactivated
 bool                                            ConsumptionApi.Sys_Historic
 bool                                            ConsumptionApi.Sys_Incomplete
-string [Name](50)                               ConsumptionApi.TableName
+string (50)                                     ConsumptionApi.TableName
 int                                             ConsumptionApi.UserId
 ApiServiceEnum                                  ConsumptionApi.Enum_ApiServiceId
 int                                             Contact.ContactId
@@ -626,8 +626,8 @@ string [Email](200)                             Contact.Email
 bool                                            Contact.InvoiceSendAttachment
 bool                                            Contact.InvoiceSendCopy
 string [Phone](50)                              Contact.Mobile
-string [Name](100)                              Contact.Name
-string [Name](100)                              Contact.Name2
+string (100)                                    Contact.Name
+string (100)                                    Contact.Name2
 int                                             Contact.ParentContactId
 string [Phone](50)                              Contact.Phone
 bool                                            Contact.Sys_Deactivated
@@ -680,7 +680,7 @@ int                                             ContactMessage.UserId
 MessageChannelEnum                              ContactMessage.Enum_MessageChannelId
 MessageDeliveryStatusEnum                       ContactMessage.Enum_MessageDeliveryStatusId
 string                                          Country.CountryId
-string [Name](100)                              Country.Name
+string (100)                                    Country.Name
 string [Phone](10)                              Country.PhonePrefix
 bool                                            Country.Sys_Deactivated
 bool                                            Country.Sys_Historic
@@ -688,13 +688,13 @@ bool                                            Country.Sys_Incomplete
 int                                             County.CountyId
 string (20)                                     County.Code
 string (2)                                      County.CountryId
-string [Name](250)                              County.Name
+string (250)                                    County.Name
 bool                                            County.Sys_Deactivated
 bool                                            County.Sys_Historic
 bool                                            County.Sys_Incomplete
 int                                             CreditScore.CreditScoreId
 string                                          CreditScore.CustomerIdExternal
-string [Name](50)                               CreditScore.BureauName
+string (50)                                     CreditScore.BureauName
 int                                             CreditScore.CustomerId
 string (500)                                    CreditScore.Details
 DateTime                                        CreditScore.EvaluationDate
@@ -745,8 +745,8 @@ bool                                            Customer.InvoiceReminder
 bool                                            Customer.InvoiceVAT
 string [Phone](50)                              Customer.Mobile
 string [Phone](50)                              Customer.Mobile2
-string [Name](100)                              Customer.Name
-string [Name](100)                              Customer.Name2
+string (100)                                    Customer.Name
+string (100)                                    Customer.Name2
 string (50)                                     Customer.OrganizationNumber
 byte                                            Customer.PaymentTermId
 string [Phone](50)                              Customer.Phone
@@ -819,7 +819,7 @@ bool                                            CustomerClass.InvoiceElectronic
 bool                                            CustomerClass.InvoiceReminder
 bool                                            CustomerClass.InvoiceVAT
 bool                                            CustomerClass.IsDefault
-string [Name](50)                               CustomerClass.Name
+string (50)                                     CustomerClass.Name
 byte                                            CustomerClass.PaymentTermId
 int                                             CustomerClass.ProductAgreementGroupId
 short                                           CustomerClass.ServiceAgreementId
@@ -854,7 +854,7 @@ string                                          Dashboard.DepartmentIdExternal
 string                                          Dashboard.ConfigurationJson
 short                                           Dashboard.DepartmentId
 string                                          Dashboard.FilterJson
-string [Name](50)                               Dashboard.Name
+string (50)                                     Dashboard.Name
 bool                                            Dashboard.Sys_Deactivated
 bool                                            Dashboard.Sys_Historic
 bool                                            Dashboard.Sys_Incomplete
@@ -866,7 +866,7 @@ string                                          DataGrid.AgGridFilter
 string (50)                                     DataGrid.DataGridKey
 string [MultilineText](200)                     DataGrid.Description
 bool                                            DataGrid.Editable
-string [Name](50)                               DataGrid.Name
+string (50)                                     DataGrid.Name
 bool                                            DataGrid.Sys_Deactivated
 bool                                            DataGrid.Sys_Historic
 bool                                            DataGrid.Sys_Incomplete
@@ -907,7 +907,7 @@ int                                             Dimension.DimensionId
 string                                          Dimension.DimensionIdExternal
 string (50)                                     Dimension.Code
 bool                                            Dimension.IsInvoiceable
-string [Name](100)                              Dimension.Name
+string (100)                                    Dimension.Name
 bool                                            Dimension.Sys_Deactivated
 bool                                            Dimension.Sys_Historic
 bool                                            Dimension.Sys_Incomplete
@@ -957,7 +957,7 @@ string                                          DimensionValue.DimensionIdExtern
 string                                          DimensionValue.ParentDimensionValueIdExternal
 string (50)                                     DimensionValue.Code
 string                                          DimensionValue.HierarchicalId
-string [Name](512)                              DimensionValue.Name
+string (512)                                    DimensionValue.Name
 int                                             DimensionValue.ParentDimensionValueId
 bool                                            DimensionValue.Selectable
 int                                             DimensionValue.SortOrder
@@ -1022,7 +1022,7 @@ string [Email](200)                             Employee.EmailWork
 short                                           Employee.EmployeeInvoiceCategoryId
 int                                             Employee.EmployeeNumber
 DateTime                                        Employee.EndDate
-string [Name](50)                               Employee.FirstName
+string (50)                                     Employee.FirstName
 bool                                            Employee.HasMobileDevice
 decimal                                         Employee.HoursPerWeek
 string (4000)                                   Employee.ImageUrl
@@ -1032,7 +1032,7 @@ DateTime                                        Employee.JobCategoryEndDate
 short                                           Employee.JobCategoryId
 DateTime                                        Employee.JobCategoryStartDate
 decimal                                         Employee.JobPercent
-string [Name](50)                               Employee.LastName
+string (50)                                     Employee.LastName
 string (50)                                     Employee.NationalIdNumber
 string [MultilineText]                          Employee.Note
 string [Phone](50)                              Employee.PhoneMobile
@@ -1092,7 +1092,7 @@ bool                                            EmployeeCompetency.Sys_Incomplet
 CompetencySourceEnum                            EmployeeCompetency.Enum_CompetencySourceId
 short                                           EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string                                          EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
-string [Name](200)                              EmployeeInvoiceCategory.Name
+string (200)                                    EmployeeInvoiceCategory.Name
 short                                           EmployeeInvoiceCategory.Number
 bool                                            EmployeeInvoiceCategory.Sys_Deactivated
 bool                                            EmployeeInvoiceCategory.Sys_Historic
@@ -1116,7 +1116,7 @@ DateTime                                        EmployeeInvoiceCategory.Ext_Out_
 --> ExternalSystemEmployeeInvoiceCategory[]     EmployeeInvoiceCategory.ExternalSystemEmployeeInvoiceCategories
 short                                           ExternalSystem.ExternalSystemId
 string (500)                                    ExternalSystem.AutoFeatureList
-string [Name](50)                               ExternalSystem.DisplayName
+string (50)                                     ExternalSystem.DisplayName
 string (10)                                     ExternalSystem.ExternalIdPrefix
 bool                                            ExternalSystem.IsCwOwned
 bool                                            ExternalSystem.IsCwSystem
@@ -1124,8 +1124,8 @@ bool                                            ExternalSystem.IsEnabled
 bool                                            ExternalSystem.IsERP
 bool                                            ExternalSystem.IsMobileDevice
 bool                                            ExternalSystem.IsPayroll
-string [Name](50)                               ExternalSystem.Name
-string [Name](10)                               ExternalSystem.ShortName
+string (50)                                     ExternalSystem.Name
+string (10)                                     ExternalSystem.ShortName
 bool                                            ExternalSystem.Sys_Deactivated
 bool                                            ExternalSystem.Sys_Historic
 bool                                            ExternalSystem.Sys_Incomplete
@@ -2752,7 +2752,7 @@ string                                          IntegrationBlackList.Message
 bool                                            IntegrationBlackList.Sys_Deactivated
 bool                                            IntegrationBlackList.Sys_Historic
 bool                                            IntegrationBlackList.Sys_Incomplete
-string [Name](50)                               IntegrationBlackList.TableName
+string (50)                                     IntegrationBlackList.TableName
 int                                             IntegrationStatus.IntegrationStatusId
 string                                          IntegrationStatus.AssignmentIdExternal
 int                                             IntegrationStatus.AssignmentId
@@ -2762,7 +2762,7 @@ string (200)                                    IntegrationStatus.ExternalEditUR
 string (50)                                     IntegrationStatus.ExternalId
 string (50)                                     IntegrationStatus.ExternalIdText
 string (100)                                    IntegrationStatus.ExternalTraceId
-string [Name](100)                              IntegrationStatus.FieldName
+string (100)                                    IntegrationStatus.FieldName
 string (50)                                     IntegrationStatus.GroupId
 string (200)                                    IntegrationStatus.InternalEditURL
 string (50)                                     IntegrationStatus.InternalIdText
@@ -2772,7 +2772,7 @@ bool                                            IntegrationStatus.RetryRequested
 long                                            IntegrationStatus.RowId
 long                                            IntegrationStatus.RowId2
 bool                                            IntegrationStatus.Sys_Historic
-string [Name](50)                               IntegrationStatus.TableName
+string (50)                                     IntegrationStatus.TableName
 string                                          IntegrationStatus.TechnicalMessage
 string (200)                                    IntegrationStatus.TextId
 string (100)                                    IntegrationStatus.TraceId
@@ -2786,7 +2786,7 @@ string (50)                                     IntegrationStatus_Incoming.Exter
 string (50)                                     IntegrationStatus_Incoming.ExternalIdText
 short                                           IntegrationStatus_Incoming.ExternalSystemId
 string (100)                                    IntegrationStatus_Incoming.ExternalTraceId
-string [Name](100)                              IntegrationStatus_Incoming.FieldName
+string (100)                                    IntegrationStatus_Incoming.FieldName
 string (50)                                     IntegrationStatus_Incoming.GroupId
 short                                           IntegrationStatus_Incoming.IntegratorId
 string (200)                                    IntegrationStatus_Incoming.InternalEditURL
@@ -2798,7 +2798,7 @@ long                                            IntegrationStatus_Incoming.RowId
 bool                                            IntegrationStatus_Incoming.Sys_Deactivated
 bool                                            IntegrationStatus_Incoming.Sys_Historic
 bool                                            IntegrationStatus_Incoming.Sys_Incomplete
-string [Name](50)                               IntegrationStatus_Incoming.TableName
+string (50)                                     IntegrationStatus_Incoming.TableName
 string                                          IntegrationStatus_Incoming.TechnicalMessage
 string (200)                                    IntegrationStatus_Incoming.TextId
 string (100)                                    IntegrationStatus_Incoming.TraceId
@@ -3125,7 +3125,7 @@ DateTime                                        InvoiceTemplateDetail.Ext_Out_La
 --> ExternalSystemInvoiceTemplateDetail[]       InvoiceTemplateDetail.ExternalSystemInvoiceTemplateDetails
 short                                           JobCategory.JobCategoryId
 string                                          JobCategory.JobCategoryIdExternal
-string [Name](200)                              JobCategory.Name
+string (200)                                    JobCategory.Name
 short                                           JobCategory.Number
 bool                                            JobCategory.Sys_Deactivated
 bool                                            JobCategory.Sys_Historic
@@ -3176,7 +3176,7 @@ bool                                            LedgerAccount.Ext_Out_Error_SetO
 DateTime                                        LedgerAccount.Ext_Out_LastSyncUTC
 --> ExternalSystemLedgerAccount[]               LedgerAccount.ExternalSystemLedgerAccounts
 int                                             Manufacturer.ManufacturerId
-string [Name](100)                              Manufacturer.Name
+string (100)                                    Manufacturer.Name
 bool                                            Manufacturer.Sys_Deactivated
 bool                                            Manufacturer.Sys_Historic
 bool                                            Manufacturer.Sys_Incomplete
@@ -3203,7 +3203,7 @@ int                                             Municipality.MunicipalityId
 string (20)                                     Municipality.Code
 string (2)                                      Municipality.CountryId
 int                                             Municipality.CountyId
-string [Name](250)                              Municipality.Name
+string (250)                                    Municipality.Name
 bool                                            Municipality.Sys_Deactivated
 bool                                            Municipality.Sys_Historic
 bool                                            Municipality.Sys_Incomplete
@@ -3312,7 +3312,7 @@ decimal                                         Offer.FixedPrice
 string (200)                                    Offer.InternalReference
 string [MultilineText]                          Offer.InvoiceComment
 string [MultilineText]                          Offer.Note
-string [Name](50)                               Offer.OfferName
+string (50)                                     Offer.OfferName
 int                                             Offer.OfferNumber
 int                                             Offer.ProductAgreementGroupId
 short                                           Offer.ProductAgreementId
@@ -3428,7 +3428,7 @@ short                                           Permission.PermissionId
 string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
-string [Name](100)                              Permission.Name
+string (100)                                    Permission.Name
 bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
@@ -3458,7 +3458,7 @@ bool                                            PosSaleLine.Sys_Incomplete
 int                                             PostalPlace.PostalPlaceId
 string (10)                                     PostalPlace.Code
 string (2)                                      PostalPlace.CountryId
-string [Name](250)                              PostalPlace.Name
+string (250)                                    PostalPlace.Name
 bool                                            PostalPlace.Sys_Deactivated
 bool                                            PostalPlace.Sys_Historic
 bool                                            PostalPlace.Sys_Incomplete
@@ -3503,7 +3503,7 @@ short                                           Product.POSPurchase_VATRequired_
 short                                           Product.POSSale_VATFree_LedgerAccountId
 short                                           Product.POSSale_VATRequired_LedgerAccountId
 bool                                            Product.PriceOnly
-string [Name](100)                              Product.ProductName
+string (100)                                    Product.ProductName
 string (50)                                     Product.ProductNumber
 int                                             Product.ProductSeriesId
 short                                           Product.Purchase_VATFree_LedgerAccountId
@@ -3865,7 +3865,7 @@ int                                             ProductImport2.ProductImport2Id
 string                                          ProductImport2.ProductImport2IdExternal
 string                                          ProductImport2.SupplierIndustryTypeIdExternal
 DateTime                                        ProductImport2.ImportedUTC
-string [Name](500)                              ProductImport2.Name
+string (500)                                    ProductImport2.Name
 short                                           ProductImport2.SupplierIndustryTypeId
 bool                                            ProductImport2.Sys_Deactivated
 bool                                            ProductImport2.Sys_Historic
@@ -3898,7 +3898,7 @@ bool                                            ProductImport2Line.IsInteresting
 bool                                            ProductImport2Line.IsVarious
 decimal                                         ProductImport2Line.ListPrice
 DateTime                                        ProductImport2Line.PriceDate
-string [Name](100)                              ProductImport2Line.ProductName
+string (100)                                    ProductImport2Line.ProductName
 string (50)                                     ProductImport2Line.ProductNumber
 bool                                            ProductImport2Line.Sys_Deactivated
 bool                                            ProductImport2Line.Sys_Historic
@@ -4030,7 +4030,7 @@ int                                             ProductNoteLine.Parent_ProductNo
 bool                                            ProductNoteLine.PriceOnly
 short                                           ProductNoteLine.ProductAgreementId
 int                                             ProductNoteLine.ProductId
-string [Name]                                   ProductNoteLine.ProductName
+string                                          ProductNoteLine.ProductName
 string (50)                                     ProductNoteLine.ProductNumber
 int                                             ProductNoteLine.ProductSupplierIndustryTypeId
 int                                             ProductNoteLine.ProjectPeriodId
@@ -4097,7 +4097,7 @@ bool                                            ProductNoteLineBatch.Sys_Histori
 bool                                            ProductNoteLineBatch.Sys_Incomplete
 int                                             ProductSearch.ProductSearchId
 string                                          ProductSearch.ProductSearchIdExternal
-string [Name](50)                               ProductSearch.Name
+string (50)                                     ProductSearch.Name
 int                                             ProductSearch.ProductClassId
 int                                             ProductSearch.ProductSearchGroupId
 int                                             ProductSearch.SortOrder
@@ -4124,7 +4124,7 @@ DateTime                                        ProductSearch.Ext_Out_LastSyncUT
 int                                             ProductSearchGroup.ProductSearchGroupId
 int                                             ProductSearchGroup.Default_ProductClassId
 int                                             ProductSearchGroup.Default_ProductSeriesId
-string [Name](50)                               ProductSearchGroup.Name
+string (50)                                     ProductSearchGroup.Name
 int                                             ProductSearchGroup.Parent_ProductSearchGroupId
 string                                          ProductSearchGroup.ProductSeriesSortOrder
 int                                             ProductSearchGroup.SortOrder
@@ -4158,7 +4158,7 @@ bool                                            ProductSearchSeriesProduct.Sys_H
 bool                                            ProductSearchSeriesProduct.Sys_Incomplete
 int                                             ProductSeries.ProductSeriesId
 int                                             ProductSeries.ManufacturerId
-string [Name](100)                              ProductSeries.Name
+string (100)                                    ProductSeries.Name
 bool                                            ProductSeries.Sys_Deactivated
 bool                                            ProductSeries.Sys_Historic
 bool                                            ProductSeries.Sys_Incomplete
@@ -4179,7 +4179,7 @@ bool                                            ProductStructure.Sys_Incomplete
 string (50)                                     ProductStructure.TariffFilter
 int                                             ProductStructureFolder.ProductStructureFolderId
 string                                          ProductStructureFolder.ProductIdExternal
-string [Name](250)                              ProductStructureFolder.Name
+string (250)                                    ProductStructureFolder.Name
 int                                             ProductStructureFolder.Parent_ProductStructureFolderId
 int                                             ProductStructureFolder.ProductId
 int                                             ProductStructureFolder.SortOrder
@@ -4198,7 +4198,7 @@ decimal                                         ProductSupplierIndustryType.List
 bool                                            ProductSupplierIndustryType.NormallyOnStock
 string [MultilineText]                          ProductSupplierIndustryType.Note
 int                                             ProductSupplierIndustryType.ProductId
-string [Name](100)                              ProductSupplierIndustryType.ProductName
+string (100)                                    ProductSupplierIndustryType.ProductName
 short                                           ProductSupplierIndustryType.SupplierIndustryTypeId
 string (50)                                     ProductSupplierIndustryType.SupplierProductNumber
 bool                                            ProductSupplierIndustryType.Sys_Deactivated
@@ -4281,7 +4281,7 @@ bool                                            Project.Internal
 int                                             Project.Invoice_CustomerId
 bool                                            Project.InvoiceReserveSumAllAssignment
 decimal                                         Project.MarginPercent
-string [Name](100)                              Project.Name
+string (100)                                    Project.Name
 string [MultilineText]                          Project.Note
 int                                             Project.ParentProjectId
 byte                                            Project.PaymentTermId
@@ -4380,7 +4380,7 @@ short                                           ProjectGroup.ProjectGroupId
 string                                          ProjectGroup.ProjectGroupIdExternal
 string (50)                                     ProjectGroup.Code
 byte                                            ProjectGroup.ColumnNo
-string [Name](100)                              ProjectGroup.Name
+string (100)                                    ProjectGroup.Name
 bool                                            ProjectGroup.Sys_Deactivated
 bool                                            ProjectGroup.Sys_Historic
 bool                                            ProjectGroup.Sys_Incomplete
@@ -4504,7 +4504,7 @@ DateTime                                        ProjectReportDetail.Ext_Out_Last
 byte                                            ProjectType.ProjectTypeId
 string                                          ProjectType.ProjectTypeIdExternal
 string (50)                                     ProjectType.Code
-string [Name](100)                              ProjectType.Name
+string (100)                                    ProjectType.Name
 bool                                            ProjectType.Sys_Deactivated
 bool                                            ProjectType.Sys_Historic
 bool                                            ProjectType.Sys_Incomplete
@@ -4558,7 +4558,7 @@ int                                             PurchaseOrder.AssignmentId
 DateTime                                        PurchaseOrder.CompletelyCheckedInDateUTC
 string (100)                                    PurchaseOrder.DeliveryAddress
 DateTime                                        PurchaseOrder.DeliveryDateTimeUTC
-string [Name](100)                              PurchaseOrder.DeliveryName
+string (100)                                    PurchaseOrder.DeliveryName
 string (50)                                     PurchaseOrder.DeliveryPostalNumber
 string (50)                                     PurchaseOrder.DeliveryPostalPlace
 string (250)                                    PurchaseOrder.Message
@@ -4593,7 +4593,7 @@ decimal                                         PurchaseOrderLine.LineAmount
 decimal                                         PurchaseOrderLine.LineAmountExpected
 int                                             PurchaseOrderLine.LineNumber
 int                                             PurchaseOrderLine.ProductId
-string [Name](250)                              PurchaseOrderLine.ProductName
+string (250)                                    PurchaseOrderLine.ProductName
 string (50)                                     PurchaseOrderLine.ProductNumber
 int                                             PurchaseOrderLine.ProductSupplierIndustryTypeId
 decimal                                         PurchaseOrderLine.Quantity
@@ -4608,7 +4608,7 @@ DeliveryStatusEnum                              PurchaseOrderLine.Enum_DeliveryS
 short                                           Role.RoleId
 string                                          Role.RoleIdExternal
 string [MultilineText](200)                     Role.Description
-string [Name](50)                               Role.Name
+string (50)                                     Role.Name
 bool                                            Role.Sys_Deactivated
 bool                                            Role.Sys_Historic
 bool                                            Role.Sys_Incomplete
@@ -4736,7 +4736,7 @@ byte                                            Service.Sys_ProjectAccountCatego
 int                                             Service.Sys_ProjectPeriod
 int                                             Service.Wage_ApprovalEmployeeId
 short                                           Service.WageCodeId
-string [Name](100)                              Service.WageCodeName
+string (100)                                    Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
 int                                             Service.WagePeriodId
 InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatusId
@@ -4951,7 +4951,7 @@ string (512)                                    Settings_Main.Appointment_OnCrea
 int                                             Settings_Main.Appointment_ReminderLeadHours
 string (512)                                    Settings_Main.Appointment_ReminderMessage
 string (50)                                     Settings_Main.Branch
-string [Name](100)                              Settings_Main.ClientName
+string (100)                                    Settings_Main.ClientName
 string (2)                                      Settings_Main.CountryId
 string (2)                                      Settings_Main.DefaultLanguage
 short                                           Settings_Main.DepartmentId
@@ -5291,7 +5291,7 @@ bool                                            Supplier.Inactive
 string [Phone](50)                              Supplier.Mobile
 string (50)                                     Supplier.OrganizationNumber
 string [Phone](50)                              Supplier.Phone
-string [Name](50)                               Supplier.SupplierName
+string (50)                                     Supplier.SupplierName
 int                                             Supplier.SupplierNumber
 bool                                            Supplier.Sys_Deactivated
 bool                                            Supplier.Sys_Historic
@@ -5329,7 +5329,7 @@ byte                                            SupplierIndustryType.IndustryTyp
 bool                                            SupplierIndustryType.IsCustom
 bool                                            SupplierIndustryType.IsDefaultForIndustryType
 decimal                                         SupplierIndustryType.MarkupForNewDiscountGroups
-string [Name](50)                               SupplierIndustryType.Name
+string (50)                                     SupplierIndustryType.Name
 short                                           SupplierIndustryType.Number
 string (50)                                     SupplierIndustryType.OrganizationNumber
 bool                                            SupplierIndustryType.PriceCalculationBase
@@ -5377,7 +5377,7 @@ short                                           SupplierIndustryTypeFtpInfo.Supp
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Deactivated
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Historic
 bool                                            SupplierIndustryTypeFtpInfo.Sys_Incomplete
-string [Name](250)                              SupplierIndustryTypeFtpInfo.UserName
+string (250)                                    SupplierIndustryTypeFtpInfo.UserName
 FileDownloadModeEnum                            SupplierIndustryTypeFtpInfo.Enum_FileDownloadModeId
 ImportFormatEnum                                SupplierIndustryTypeFtpInfo.Enum_ImportFormatId
 ImportTypeEnum                                  SupplierIndustryTypeFtpInfo.Enum_ImportTypeId
@@ -5412,7 +5412,7 @@ decimal                                         SupplierInvoice.Sum
 string (50)                                     SupplierInvoice.SupplierCustomerNumberTxt
 int                                             SupplierInvoice.SupplierId
 short                                           SupplierInvoice.SupplierIndustryTypeId
-string [Name](50)                               SupplierInvoice.SupplierIndustryTypeName
+string (50)                                     SupplierInvoice.SupplierIndustryTypeName
 string (50)                                     SupplierInvoice.SupplierIndustryTypeOrgNo
 string (50)                                     SupplierInvoice.SupplierNumberTxt
 bool                                            SupplierInvoice.SyncRetry
@@ -5480,7 +5480,7 @@ string (50)                                     SupplierInvoiceLine.LedgerAccoun
 decimal                                         SupplierInvoiceLine.LineAmount
 int                                             SupplierInvoiceLine.LineNumber
 int                                             SupplierInvoiceLine.ProductId
-string [Name](250)                              SupplierInvoiceLine.ProductName
+string (250)                                    SupplierInvoiceLine.ProductName
 string (50)                                     SupplierInvoiceLine.ProductNumberTxt
 int                                             SupplierInvoiceLine.ProductSupplierIndustryTypeId
 int                                             SupplierInvoiceLine.ProjectAccountId
@@ -5527,7 +5527,7 @@ short                                           SupplierInvoiceProductMatch.Supp
 bool                                            SupplierInvoiceProductMatch.Sys_Deactivated
 bool                                            SupplierInvoiceProductMatch.Sys_Historic
 bool                                            SupplierInvoiceProductMatch.Sys_Incomplete
-string [Name](100)                              SupplierInvoiceProductMatch.Target_ProductName
+string (100)                                    SupplierInvoiceProductMatch.Target_ProductName
 int                                             SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
 int                                             SupplierInvoiceProductMatch.VATRateId
 int                                             SystemMessage.SystemMessageId
@@ -5550,7 +5550,7 @@ long                                            SystemMessage.Summary_ProductNot
 bool                                            SystemMessage.Sys_Deactivated
 bool                                            SystemMessage.Sys_Historic
 bool                                            SystemMessage.Sys_Incomplete
-string [Name](50)                               SystemMessage.TableName
+string (50)                                     SystemMessage.TableName
 string (200)                                    SystemMessage.TextId
 RowStateEnum                                    SystemMessage.Enum_RowStateId
 SystemMessageSourceEnum                         SystemMessage.Enum_SystemMessageSourceId
@@ -5599,7 +5599,7 @@ int                                             TariffVersion.TariffVersionId
 decimal                                         TariffVersion.AmountFactorInSeconds
 string (50)                                     TariffVersion.CreatedBy
 bool                                            TariffVersion.IsDefaultForIndustryType
-string [Name](50)                               TariffVersion.Name
+string (50)                                     TariffVersion.Name
 bool                                            TariffVersion.Sys_Deactivated
 bool                                            TariffVersion.Sys_Historic
 bool                                            TariffVersion.Sys_Incomplete
@@ -5608,7 +5608,7 @@ IndustryTypeEnum                                TariffVersion.Enum_IndustryTypeI
 PublicationStatusEnum                           TariffVersion.Enum_PublicationStatusId
 --> Tariff[]                                    TariffVersion.Tariffs
 short                                           Team.TeamId
-string [Name](50)                               Team.Name
+string (50)                                     Team.Name
 bool                                            Team.Sys_Deactivated
 bool                                            Team.Sys_Historic
 bool                                            Team.Sys_Incomplete
@@ -5626,7 +5626,7 @@ long                                            Temp_WebhookMessage.RowId
 bool                                            Temp_WebhookMessage.Sys_Deactivated
 bool                                            Temp_WebhookMessage.Sys_Historic
 bool                                            Temp_WebhookMessage.Sys_Incomplete
-string [Name](50)                               Temp_WebhookMessage.TableName
+string (50)                                     Temp_WebhookMessage.TableName
 short                                           Temp_WebhookMessage.WebhookSubscriptionId
 short                                           Unit.UnitId
 string (8)                                      Unit.Code
@@ -5641,10 +5641,10 @@ string (2)                                      User.DefaultLanguage
 string [Email](100)                             User.Email
 int                                             User.EmployeeId
 short                                           User.ExternalSystemId
-string [Name](200)                              User.FirstName
+string (200)                                    User.FirstName
 bool                                            User.IsInactive
 bool                                            User.IsSystemUser
-string [Name](200)                              User.LastName
+string (200)                                    User.LastName
 string [Email](100)                             User.SecondaryEmail
 bool                                            User.Sys_Deactivated
 bool                                            User.Sys_Historic
@@ -5744,7 +5744,7 @@ decimal                                         WageCode.SurchargePercent
 bool                                            WageCode.Sys_Deactivated
 bool                                            WageCode.Sys_Historic
 bool                                            WageCode.Sys_Incomplete
-string [Name](100)                              WageCode.WageCodeName
+string (100)                                    WageCode.WageCodeName
 int                                             WageCode.WageCodeNumber
 int                                             WageCode.WageCodeReportCategoryId
 short                                           WageCode.WageGroupId
@@ -5826,7 +5826,7 @@ string                                          WageGroup.WageGroupIdExternal
 bool                                            WageGroup.Sys_Deactivated
 bool                                            WageGroup.Sys_Historic
 bool                                            WageGroup.Sys_Incomplete
-string [Name](200)                              WageGroup.WageGroupName
+string (200)                                    WageGroup.WageGroupName
 short                                           WageGroup.WageGroupNumber
 bool                                            WageGroup.Ext_Sys_Deactivated
 string                                          WageGroup.Ext_ExternalId
