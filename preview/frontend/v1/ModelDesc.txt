@@ -501,6 +501,7 @@ bool                                            Calculation.Sys_Incomplete
 int                                             Calculation.WageCodeReportCategoryId
 CalculationStatusEnum                           Calculation.Enum_CalculationStatusId
 int                                             CalculationFolder.CalculationFolderId
+int                                             CalculationFolder.CalculationId
 string (50)                                     CalculationFolder.Code
 string [MultilineText](1024)                    CalculationFolder.Comment
 bool                                            CalculationFolder.Complete
@@ -541,6 +542,7 @@ int                                             CalculationLine.ProductSupplierI
 decimal                                         CalculationLine.Quantity
 decimal                                         CalculationLine.SalesPrice
 decimal                                         CalculationLine.SalesPriceOverride
+int                                             CalculationLine.SortOrder
 short                                           CalculationLine.SupplierIndustryTypeId
 decimal                                         CalculationLine.SurchargePercent
 bool                                            CalculationLine.Sys_Deactivated
