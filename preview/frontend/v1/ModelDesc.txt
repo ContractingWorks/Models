@@ -682,6 +682,7 @@ int                                             ContactMessage.UserId
 MessageChannelEnum                              ContactMessage.Enum_MessageChannelId
 MessageDeliveryStatusEnum                       ContactMessage.Enum_MessageDeliveryStatusId
 string                                          Country.CountryId
+int                                             Country.Default_LanguageId
 string (100)                                    Country.Name
 string [Phone](10)                              Country.PhonePrefix
 bool                                            Country.Sys_Deactivated
@@ -3149,6 +3150,12 @@ string                                          JobCategory.Ext_Out_Error_FixLin
 bool                                            JobCategory.Ext_Out_Error_SetOK
 DateTime                                        JobCategory.Ext_Out_LastSyncUTC
 --> ExternalSystemJobCategory[]                 JobCategory.ExternalSystemJobCategories
+int                                             Language.LanguageId
+string (10)                                     Language.IsoCode
+string (50)                                     Language.Name
+bool                                            Language.Sys_Deactivated
+bool                                            Language.Sys_Historic
+bool                                            Language.Sys_Incomplete
 short                                           LedgerAccount.LedgerAccountId
 string                                          LedgerAccount.LedgerAccountIdExternal
 string                                          LedgerAccount.ParentLedgerAccountIdExternal
@@ -4932,6 +4939,16 @@ string                                          ServiceContract.Ext_Out_Error_Fi
 bool                                            ServiceContract.Ext_Out_Error_SetOK
 DateTime                                        ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]             ServiceContract.ExternalSystemServiceContracts
+int                                             Settings_AI.Settings_AIId
+int                                             Settings_AI.LanguageId
+int                                             Settings_AI.MaxCharacterLength
+int                                             Settings_AI.MinCharacterLength
+int                                             Settings_AI.NumberOfSuggestions
+string                                          Settings_AI.Prompt
+string (100)                                    Settings_AI.SourceField
+bool                                            Settings_AI.Sys_Deactivated
+bool                                            Settings_AI.Sys_Historic
+bool                                            Settings_AI.Sys_Incomplete
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.AssignmentCategoryId_1External
 string                                          Settings_Assignment.AssignmentCategoryId_2External
