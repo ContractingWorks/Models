@@ -3257,7 +3257,6 @@ bool                                            Notification.IsArchived
 bool                                            Notification.IsImportant
 string                                          Notification.Message
 int                                             Notification.NotificationTypeId
-DateTime                                        Notification.ScheduledUTC
 DateTime                                        Notification.ShowFromUTC
 DateTime                                        Notification.ShowToUTC
 bool                                            Notification.Sys_Deactivated
@@ -3284,9 +3283,9 @@ int                                             NotificationDelivery.UserId
 NotificationChannelEnum                         NotificationDelivery.Enum_NotificationChannelId
 NotificationDeliveryStatusEnum                  NotificationDelivery.Enum_NotificationDeliveryStatusId
 int                                             NotificationPreference.NotificationPreferenceId
-bool                                            NotificationPreference.IsEditable
 bool                                            NotificationPreference.IsEnabled
 bool                                            NotificationPreference.IsImportant
+bool                                            NotificationPreference.IsUserEditable
 int                                             NotificationPreference.NotificationTypeId
 bool                                            NotificationPreference.Sys_Deactivated
 bool                                            NotificationPreference.Sys_Historic
