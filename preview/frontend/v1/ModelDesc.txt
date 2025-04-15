@@ -5999,7 +5999,6 @@ decimal                                         WageRateEmployee.Rate
 bool                                            WageRateEmployee.Sys_Deactivated
 bool                                            WageRateEmployee.Sys_Historic
 bool                                            WageRateEmployee.Sys_Incomplete
-decimal                                         WageRateEmployee.View_WageRateClient
 short                                           WageRateEmployee.WageCodeId
 bool                                            WageRateEmployee.Ext_Sys_Deactivated
 string                                          WageRateEmployee.Ext_ExternalId
