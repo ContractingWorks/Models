@@ -540,6 +540,7 @@ int                                             CalculationLine.ProductSearchId
 int                                             CalculationLine.ProductSeriesId
 int                                             CalculationLine.ProductSupplierIndustryTypeId
 decimal                                         CalculationLine.Quantity
+decimal                                         CalculationLine.QuantityOverride
 decimal                                         CalculationLine.SalesPrice
 decimal                                         CalculationLine.SalesPriceOverride
 int                                             CalculationLine.SortOrder
@@ -548,6 +549,7 @@ decimal                                         CalculationLine.SurchargePercent
 bool                                            CalculationLine.Sys_Deactivated
 bool                                            CalculationLine.Sys_Historic
 bool                                            CalculationLine.Sys_Incomplete
+int                                             CalculationLine.TariffId
 int                                             CalculationLine.WageCodeReportCategoryId
 int                                             CalculationLine.WorkSeconds
 int                                             CalculationLine.WorkSecondsOverride
@@ -3253,6 +3255,7 @@ bool                                            Note.Ext_Out_Error_SetOK
 DateTime                                        Note.Ext_Out_LastSyncUTC
 --> ExternalSystemNote[]                        Note.ExternalSystemNotes
 int                                             Notification.NotificationId
+int                                             Notification.EntityId
 bool                                            Notification.IsArchived
 bool                                            Notification.IsImportant
 string                                          Notification.Message
@@ -3263,6 +3266,8 @@ bool                                            Notification.Sys_Deactivated
 bool                                            Notification.Sys_Historic
 bool                                            Notification.Sys_Incomplete
 string (100)                                    Notification.Title
+EntityEnum                                      Notification.Enum_EntityId
+SystemEventEnum                                 Notification.Enum_SystemEventId
 --> NotificationAttachment[]                    Notification.NotificationAttachments
 int                                             NotificationAttachment.NotificationAttachmentId
 string                                          NotificationAttachment.AttachmentIdExternal
