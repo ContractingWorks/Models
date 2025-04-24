@@ -5649,7 +5649,7 @@ bool                                            SystemNotification.Sys_Deactivat
 bool                                            SystemNotification.Sys_Historic
 bool                                            SystemNotification.Sys_Incomplete
 string (100)                                    SystemNotification.Title
-NotificationTypeEnum                            SystemNotification.Enum_NotificationTypeId
+NotificationType_OldEnum                        SystemNotification.Enum_NotificationType_OldId
 int                                             Tariff.TariffId
 string (1024)                                   Tariff.AdditionalInfo
 decimal                                         Tariff.Amount
