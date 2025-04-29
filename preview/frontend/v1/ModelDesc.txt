@@ -2662,6 +2662,22 @@ string (100)                                    Import_ETIM.Unit
 string (20)                                     Import_ETIM.UnitId
 string (100)                                    Import_ETIM.Value
 string (20)                                     Import_ETIM.ValueId
+int                                             Import_ETIM_Product.Import_ETIM_ProductId
+string (50)                                     Import_ETIM_Product.ETIM_ClassCode
+int                                             Import_ETIM_Product.FileId
+int                                             Import_ETIM_Product.NOBB_Number
+string (50)                                     Import_ETIM_Product.ProductNumber
+bool                                            Import_ETIM_Product.Sys_Deactivated
+bool                                            Import_ETIM_Product.Sys_Historic
+bool                                            Import_ETIM_Product.Sys_Incomplete
+--> Import_ETIM_ProductFeature[]                Import_ETIM_Product.Import_ETIM_ProductFeatures
+int                                             Import_ETIM_ProductFeature.Import_ETIM_ProductFeatureId
+string (50)                                     Import_ETIM_ProductFeature.ETIM_FeatureCode
+string (50)                                     Import_ETIM_ProductFeature.ETIM_ValueCode
+bool                                            Import_ETIM_ProductFeature.Sys_Deactivated
+bool                                            Import_ETIM_ProductFeature.Sys_Historic
+bool                                            Import_ETIM_ProductFeature.Sys_Incomplete
+string (255)                                    Import_ETIM_ProductFeature.Value
 short                                           ImportFile.ImportFileId
 bool                                            ImportFile.AutoImport
 string (255)                                    ImportFile.AzureBlobIdExt
