@@ -4965,10 +4965,11 @@ int                                             Settings_AI.MaxCharacterLength
 int                                             Settings_AI.MinCharacterLength
 int                                             Settings_AI.NumberOfSuggestions
 string                                          Settings_AI.Prompt
-string (100)                                    Settings_AI.SourceField
+string (50)                                     Settings_AI.SourceField
 bool                                            Settings_AI.Sys_Deactivated
 bool                                            Settings_AI.Sys_Historic
 bool                                            Settings_AI.Sys_Incomplete
+EntityEnum                                      Settings_AI.Enum_EntityId
 byte                                            Settings_Assignment.Settings_AssignmentId
 string                                          Settings_Assignment.AssignmentCategoryId_1External
 string                                          Settings_Assignment.AssignmentCategoryId_2External
