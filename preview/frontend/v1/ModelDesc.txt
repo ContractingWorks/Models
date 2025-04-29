@@ -3512,7 +3512,6 @@ bool                                            PaymentTerm.Ext_Out_Error_SetOK
 DateTime                                        PaymentTerm.Ext_Out_LastSyncUTC
 --> ExternalSystemPaymentTerm[]                 PaymentTerm.ExternalSystemPaymentTerms
 short                                           Permission.PermissionId
-string [MultilineText](200)                     Permission.Description
 bool                                            Permission.IsForBackend
 bool                                            Permission.IsForFrontend
 string (100)                                    Permission.Name
@@ -3520,6 +3519,8 @@ bool                                            Permission.ReportIfMissing
 bool                                            Permission.Sys_Deactivated
 bool                                            Permission.Sys_Historic
 bool                                            Permission.Sys_Incomplete
+string (200)                                    Permission.TextId
+PermissionGroupEnum                             Permission.Enum_PermissionGroupId
 int                                             PosSale.PosSaleId
 string                                          PosSale.EmployeeIdExternal
 int                                             PosSale.EmployeeId
