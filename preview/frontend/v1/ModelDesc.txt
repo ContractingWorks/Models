@@ -4261,6 +4261,7 @@ int                                             ProductStructure.ProductId
 int                                             ProductStructure.ProductSearchId
 decimal                                         ProductStructure.Quantity
 int                                             ProductStructure.SortOrder
+string (20)                                     ProductStructure.StandardCode
 bool                                            ProductStructure.Sys_Deactivated
 bool                                            ProductStructure.Sys_Historic
 bool                                            ProductStructure.Sys_Incomplete
@@ -5679,6 +5680,26 @@ bool                                            Tariff.Sys_Historic
 bool                                            Tariff.Sys_Incomplete
 int                                             Tariff.TariffGroupId
 short                                           Tariff.UnitId
+int                                             TariffAdjustment.TariffAdjustmentId
+string (20)                                     TariffAdjustment.Code
+string [MultilineText](100)                     TariffAdjustment.Description
+bool                                            TariffAdjustment.IsEditable
+decimal                                         TariffAdjustment.Percentage
+bool                                            TariffAdjustment.Sys_Deactivated
+bool                                            TariffAdjustment.Sys_Historic
+bool                                            TariffAdjustment.Sys_Incomplete
+int                                             TariffAdjustment.TariffAdjustmentGroupId
+int                                             TariffAdjustmentGroup.TariffAdjustmentGroupId
+bool                                            TariffAdjustmentGroup.AllowOnCalculation
+bool                                            TariffAdjustmentGroup.AllowOnCalculationFolder
+bool                                            TariffAdjustmentGroup.AllowOnCalculationLine
+string (20)                                     TariffAdjustmentGroup.Code
+string [MultilineText](100)                     TariffAdjustmentGroup.Description
+bool                                            TariffAdjustmentGroup.Sys_Deactivated
+bool                                            TariffAdjustmentGroup.Sys_Historic
+bool                                            TariffAdjustmentGroup.Sys_Incomplete
+IconEnum                                        TariffAdjustmentGroup.Enum_IconId
+IndustryTypeEnum                                TariffAdjustmentGroup.Enum_IndustryTypeId
 int                                             TariffGroup.TariffGroupId
 string (20)                                     TariffGroup.Code
 string [MultilineText](100)                     TariffGroup.Description
