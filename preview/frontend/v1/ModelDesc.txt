@@ -1047,6 +1047,7 @@ DateTime                                        Employee.StartDate
 bool                                            Employee.Sys_Deactivated
 bool                                            Employee.Sys_Historic
 bool                                            Employee.Sys_Incomplete
+bool                                            Employee.Sys_Mig_PayrollNeeded
 EmployeeStatusEnum                              Employee.Enum_EmployeeStatusId
 bool                                            Employee.Ext_Sys_Deactivated
 string                                          Employee.Ext_ExternalId
