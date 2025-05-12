@@ -5015,6 +5015,7 @@ bool                                            Settings_Assignment.MandatoryCat
 bool                                            Settings_Assignment.MandatoryCategory_3
 bool                                            Settings_Assignment.MandatoryHpcCategory
 bool                                            Settings_Assignment.MandatoryMatAgreement
+bool                                            Settings_Assignment.MandatoryStartDateTimeUTC
 decimal                                         Settings_Assignment.MinimumCoveragePercent
 bool                                            Settings_Assignment.NoChangeCustomerAfterTimeMatInv
 int                                             Settings_Assignment.ProductAgreementGroupId
