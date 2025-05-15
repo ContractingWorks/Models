@@ -511,6 +511,14 @@ int                                             CalculationFolder.SortOrder
 bool                                            CalculationFolder.Sys_Deactivated
 bool                                            CalculationFolder.Sys_Historic
 bool                                            CalculationFolder.Sys_Incomplete
+int                                             CalculationFolderLineTariffAdjustment.CalculationFolderLineTariffAdjustmentId
+int                                             CalculationFolderLineTariffAdjustment.CalculationFolderId
+int                                             CalculationFolderLineTariffAdjustment.CalculationLineId
+decimal                                         CalculationFolderLineTariffAdjustment.Percentage
+bool                                            CalculationFolderLineTariffAdjustment.Sys_Deactivated
+bool                                            CalculationFolderLineTariffAdjustment.Sys_Historic
+bool                                            CalculationFolderLineTariffAdjustment.Sys_Incomplete
+int                                             CalculationFolderLineTariffAdjustment.TariffAdjustmentId
 int                                             CalculationFolderTemplate.CalculationFolderTemplateId
 string (50)                                     CalculationFolderTemplate.Code
 string (100)                                    CalculationFolderTemplate.Name
@@ -528,6 +536,7 @@ string                                          CalculationLine.WageCodeReportCa
 decimal                                         CalculationLine.AdditionalCost
 int                                             CalculationLine.CalculationFolderId
 int                                             CalculationLine.CalculationId
+int                                             CalculationLine.ClassificationSystemItemId
 string [MultilineText](1024)                    CalculationLine.Comment
 decimal                                         CalculationLine.CostPrice
 bool                                            CalculationLine.IsInteresting
@@ -553,6 +562,22 @@ int                                             CalculationLine.TariffId
 int                                             CalculationLine.WageCodeReportCategoryId
 int                                             CalculationLine.WorkSeconds
 int                                             CalculationLine.WorkSecondsOverride
+int                                             ClassificationSystem.ClassificationSystemId
+string [MultilineText](500)                     ClassificationSystem.Description
+string (100)                                    ClassificationSystem.Name
+bool                                            ClassificationSystem.Sys_Deactivated
+bool                                            ClassificationSystem.Sys_Historic
+bool                                            ClassificationSystem.Sys_Incomplete
+int                                             ClassificationSystemItem.ClassificationSystemItemId
+int                                             ClassificationSystemItem.ClassificationSystemId
+string (50)                                     ClassificationSystemItem.Code
+string [MultilineText](500)                     ClassificationSystemItem.Comment
+string [MultilineText](500)                     ClassificationSystemItem.Description
+byte                                            ClassificationSystemItem.ItemLevel
+int                                             ClassificationSystemItem.Parent_ClassificationSystemItemId
+bool                                            ClassificationSystemItem.Sys_Deactivated
+bool                                            ClassificationSystemItem.Sys_Historic
+bool                                            ClassificationSystemItem.Sys_Incomplete
 int                                             CompanyInfo.CompanyInfoId
 string                                          CompanyInfo.CompanyLogo_AttachmentIdExternal
 string (50)                                     CompanyInfo.Address1
@@ -1135,6 +1160,7 @@ string (10)                                     ExternalSystem.ShortName
 bool                                            ExternalSystem.Sys_Deactivated
 bool                                            ExternalSystem.Sys_Historic
 bool                                            ExternalSystem.Sys_Incomplete
+OriginTypeServiceEnum                           ExternalSystem.Enum_OriginTypeServiceId
 --> ExternalSystemExtraData[]                   ExternalSystem.ExternalSystemExtraDatas
 int                                             ExternalSystemAddress.ExternalSystemAddressId
 string                                          ExternalSystemAddress.AddressIdExternal
@@ -4255,6 +4281,7 @@ int                                             ProductStructure.ProductStructur
 string                                          ProductStructure.ParentProductIdExternal
 string                                          ProductStructure.ProductIdExternal
 string                                          ProductStructure.ProductSearchIdExternal
+int                                             ProductStructure.ClassificationSystemItemId
 int                                             ProductStructure.Default_TariffId
 bool                                            ProductStructure.IsInteresting
 int                                             ProductStructure.ParentProductId
@@ -4830,6 +4857,7 @@ string (100)                                    Service.WageCodeName
 int                                             Service.WageCodeReportCategoryId
 int                                             Service.WagePeriodId
 InvoicingLineStatusEnum                         Service.Enum_InvoicingLineStatusId
+OriginTypeServiceEnum                           Service.Enum_OriginTypeServiceId
 ApprovalStatusEnum                              Service.Invoice_Enum_ApprovalStatusId
 WageCodeTypeEnum                                Service.Sys_Enum_WageCodeTypeId
 ApprovalStatusEnum                              Service.Wage_Enum_ApprovalStatusId
