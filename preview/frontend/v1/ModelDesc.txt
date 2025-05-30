@@ -304,6 +304,14 @@ short                                             AssignmentPurchaseAgreement.Pu
 bool                                              AssignmentPurchaseAgreement.Sys_Deactivated
 bool                                              AssignmentPurchaseAgreement.Sys_Historic
 bool                                              AssignmentPurchaseAgreement.Sys_Incomplete
+int                                               AssignmentServiceObject.AssignmentServiceObjectId
+string                                            AssignmentServiceObject.AssignmentIdExternal
+string                                            AssignmentServiceObject.ServiceObjectIdExternal
+int                                               AssignmentServiceObject.AssignmentId
+int                                               AssignmentServiceObject.ServiceObjectId
+bool                                              AssignmentServiceObject.Sys_Deactivated
+bool                                              AssignmentServiceObject.Sys_Historic
+bool                                              AssignmentServiceObject.Sys_Incomplete
 int                                               Attachment.AttachmentId
 string                                            Attachment.AttachmentIdExternal
 string                                            Attachment.ProductIdExternal
@@ -2346,6 +2354,44 @@ DateTime                                          ExternalSystemServiceContract.
 string [MultilineText](50)                        ExternalSystemServiceContract.StatusDescription
 bool                                              ExternalSystemServiceContract.Sys_Deactivated
 SyncStatusEnum                                    ExternalSystemServiceContract.Enum_SyncStatusId
+int                                               ExternalSystemServiceObject.ExternalSystemServiceObjectId
+string                                            ExternalSystemServiceObject.ServiceObjectIdExternal
+string (50)                                       ExternalSystemServiceObject.ExternalId
+short                                             ExternalSystemServiceObject.ExternalSystemId
+string (100)                                      ExternalSystemServiceObject.In_Error_FixLink
+string (250)                                      ExternalSystemServiceObject.In_Error_MsgEN
+string (250)                                      ExternalSystemServiceObject.In_Error_MsgNO
+string                                            ExternalSystemServiceObject.In_Error_TechDetail
+string (40)                                       ExternalSystemServiceObject.In_Error_TraceId
+DateTime                                          ExternalSystemServiceObject.In_LastSyncUTC
+string (100)                                      ExternalSystemServiceObject.Out_Error_FixLink
+string (250)                                      ExternalSystemServiceObject.Out_Error_MsgEN
+string (250)                                      ExternalSystemServiceObject.Out_Error_MsgNO
+string                                            ExternalSystemServiceObject.Out_Error_TechDetail
+string (40)                                       ExternalSystemServiceObject.Out_Error_TraceId
+DateTime                                          ExternalSystemServiceObject.Out_LastSyncUTC
+string [MultilineText](50)                        ExternalSystemServiceObject.StatusDescription
+bool                                              ExternalSystemServiceObject.Sys_Deactivated
+SyncStatusEnum                                    ExternalSystemServiceObject.Enum_SyncStatusId
+int                                               ExternalSystemServiceObjectType.ExternalSystemServiceObjectTypeId
+string                                            ExternalSystemServiceObjectType.ServiceObjectTypeIdExternal
+string (50)                                       ExternalSystemServiceObjectType.ExternalId
+short                                             ExternalSystemServiceObjectType.ExternalSystemId
+string (100)                                      ExternalSystemServiceObjectType.In_Error_FixLink
+string (250)                                      ExternalSystemServiceObjectType.In_Error_MsgEN
+string (250)                                      ExternalSystemServiceObjectType.In_Error_MsgNO
+string                                            ExternalSystemServiceObjectType.In_Error_TechDetail
+string (40)                                       ExternalSystemServiceObjectType.In_Error_TraceId
+DateTime                                          ExternalSystemServiceObjectType.In_LastSyncUTC
+string (100)                                      ExternalSystemServiceObjectType.Out_Error_FixLink
+string (250)                                      ExternalSystemServiceObjectType.Out_Error_MsgEN
+string (250)                                      ExternalSystemServiceObjectType.Out_Error_MsgNO
+string                                            ExternalSystemServiceObjectType.Out_Error_TechDetail
+string (40)                                       ExternalSystemServiceObjectType.Out_Error_TraceId
+DateTime                                          ExternalSystemServiceObjectType.Out_LastSyncUTC
+string [MultilineText](50)                        ExternalSystemServiceObjectType.StatusDescription
+bool                                              ExternalSystemServiceObjectType.Sys_Deactivated
+SyncStatusEnum                                    ExternalSystemServiceObjectType.Enum_SyncStatusId
 int                                               ExternalSystemStock.ExternalSystemStockId
 string                                            ExternalSystemStock.StockIdExternal
 string (50)                                       ExternalSystemStock.ExternalId
@@ -5070,6 +5116,66 @@ string                                            ServiceContract.Ext_Out_Error_
 bool                                              ServiceContract.Ext_Out_Error_SetOK
 DateTime                                          ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]               ServiceContract.ExternalSystemServiceContracts
+int                                               ServiceObject.ServiceObjectId
+string                                            ServiceObject.ServiceObjectIdExternal
+string                                            ServiceObject.AddressIdExternal
+string                                            ServiceObject.CustomerIdExternal
+string                                            ServiceObject.DepartmentIdExternal
+string                                            ServiceObject.ServiceObjectTypeIdExternal
+int                                               ServiceObject.AddressId
+string (50)                                       ServiceObject.Code
+int                                               ServiceObject.CustomerId
+short                                             ServiceObject.DepartmentId
+string [MultilineText](250)                       ServiceObject.Description
+SqlGeography                                      ServiceObject.Geolocation
+string (250)                                      ServiceObject.Location
+string (100)                                      ServiceObject.SerialNumber
+int                                               ServiceObject.ServiceObjectTypeId
+bool                                              ServiceObject.Sys_Deactivated
+bool                                              ServiceObject.Sys_Historic
+bool                                              ServiceObject.Sys_Incomplete
+bool                                              ServiceObject.Ext_Sys_Deactivated
+string                                            ServiceObject.Ext_ExternalId
+string                                            ServiceObject.Ext_In_Error_MsgNO
+string                                            ServiceObject.Ext_In_Error_MsgEN
+string                                            ServiceObject.Ext_In_Error_TraceId
+string                                            ServiceObject.Ext_In_Error_TechDetail
+string                                            ServiceObject.Ext_In_Error_FixLink
+bool                                              ServiceObject.Ext_In_Error_SetOK
+DateTime                                          ServiceObject.Ext_In_LastSyncUTC
+string                                            ServiceObject.Ext_Out_Error_MsgNO
+string                                            ServiceObject.Ext_Out_Error_MsgEN
+string                                            ServiceObject.Ext_Out_Error_TraceId
+string                                            ServiceObject.Ext_Out_Error_TechDetail
+string                                            ServiceObject.Ext_Out_Error_FixLink
+bool                                              ServiceObject.Ext_Out_Error_SetOK
+DateTime                                          ServiceObject.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceObject[]                 ServiceObject.ExternalSystemServiceObjects
+int                                               ServiceObjectType.ServiceObjectTypeId
+string                                            ServiceObjectType.ServiceObjectTypeIdExternal
+string (50)                                       ServiceObjectType.Code
+string [MultilineText](250)                       ServiceObjectType.Description
+string (100)                                      ServiceObjectType.Name
+bool                                              ServiceObjectType.Sys_Deactivated
+bool                                              ServiceObjectType.Sys_Historic
+bool                                              ServiceObjectType.Sys_Incomplete
+bool                                              ServiceObjectType.Ext_Sys_Deactivated
+string                                            ServiceObjectType.Ext_ExternalId
+string                                            ServiceObjectType.Ext_In_Error_MsgNO
+string                                            ServiceObjectType.Ext_In_Error_MsgEN
+string                                            ServiceObjectType.Ext_In_Error_TraceId
+string                                            ServiceObjectType.Ext_In_Error_TechDetail
+string                                            ServiceObjectType.Ext_In_Error_FixLink
+bool                                              ServiceObjectType.Ext_In_Error_SetOK
+DateTime                                          ServiceObjectType.Ext_In_LastSyncUTC
+string                                            ServiceObjectType.Ext_Out_Error_MsgNO
+string                                            ServiceObjectType.Ext_Out_Error_MsgEN
+string                                            ServiceObjectType.Ext_Out_Error_TraceId
+string                                            ServiceObjectType.Ext_Out_Error_TechDetail
+string                                            ServiceObjectType.Ext_Out_Error_FixLink
+bool                                              ServiceObjectType.Ext_Out_Error_SetOK
+DateTime                                          ServiceObjectType.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceObjectType[]             ServiceObjectType.ExternalSystemServiceObjectTypes
 int                                               Settings_AI.Settings_AIId
 int                                               Settings_AI.LanguageId
 int                                               Settings_AI.MaxCharacterLength
