@@ -5127,7 +5127,8 @@ string (50)                                       ServiceObject.Code
 int                                               ServiceObject.CustomerId
 short                                             ServiceObject.DepartmentId
 string [MultilineText](250)                       ServiceObject.Description
-SqlGeography                                      ServiceObject.Geolocation
+decimal                                           ServiceObject.GPSPositionLatitude
+decimal                                           ServiceObject.GPSPositionLongitude
 string (250)                                      ServiceObject.Location
 string (100)                                      ServiceObject.SerialNumber
 int                                               ServiceObject.ServiceObjectTypeId
