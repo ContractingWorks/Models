@@ -646,6 +646,7 @@ long                                              ConsumptionApi.ConsumptionApiI
 int                                               ConsumptionApi.ByteCount
 int                                               ConsumptionApi.EntityCount
 short                                             ConsumptionApi.ExternalSystemId
+string                                            ConsumptionApi.FieldList
 bool                                              ConsumptionApi.IsWrite
 string                                            ConsumptionApi.RequestDetails
 string (50)                                       ConsumptionApi.RequestId
@@ -653,9 +654,9 @@ int                                               ConsumptionApi.ResponseTimeMs
 bool                                              ConsumptionApi.Sys_Deactivated
 bool                                              ConsumptionApi.Sys_Historic
 bool                                              ConsumptionApi.Sys_Incomplete
-string (50)                                       ConsumptionApi.TableName
 int                                               ConsumptionApi.UserId
 ApiServiceEnum                                    ConsumptionApi.Enum_ApiServiceId
+EntityEnum                                        ConsumptionApi.Enum_EntityId
 int                                               Contact.ContactId
 string                                            Contact.ContactIdExternal
 string                                            Contact.ParentContactIdExternal
