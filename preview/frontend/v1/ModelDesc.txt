@@ -643,13 +643,14 @@ bool                                              CompetencyGroup.Sys_Deactivate
 bool                                              CompetencyGroup.Sys_Historic
 bool                                              CompetencyGroup.Sys_Incomplete
 long                                              ConsumptionApi.ConsumptionApiId
-int                                               ConsumptionApi.ByteCount
 int                                               ConsumptionApi.EntityCount
 short                                             ConsumptionApi.ExternalSystemId
 string                                            ConsumptionApi.FieldList
 bool                                              ConsumptionApi.IsWrite
+int                                               ConsumptionApi.RequestByteCount
 string                                            ConsumptionApi.RequestDetails
 string (50)                                       ConsumptionApi.RequestId
+int                                               ConsumptionApi.ResponseByteCount
 int                                               ConsumptionApi.ResponseTimeMs
 bool                                              ConsumptionApi.Sys_Deactivated
 bool                                              ConsumptionApi.Sys_Historic
