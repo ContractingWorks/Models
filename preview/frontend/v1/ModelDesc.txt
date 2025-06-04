@@ -3452,6 +3452,7 @@ DateTime                                          NotificationPreference.Ext_Out
 int                                               NotificationPreferenceChannel.NotificationPreferenceChannelId
 string                                            NotificationPreferenceChannel.NotificationPreferenceChannelIdExternal
 string                                            NotificationPreferenceChannel.NotificationPreferenceIdExternal
+bool                                              NotificationPreferenceChannel.IsEnabled
 bool                                              NotificationPreferenceChannel.Sys_Deactivated
 bool                                              NotificationPreferenceChannel.Sys_Historic
 bool                                              NotificationPreferenceChannel.Sys_Incomplete
