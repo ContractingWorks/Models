@@ -102,6 +102,7 @@ string                                            Assignment.CustomerIdExternal
 string                                            Assignment.Default_InvoiceTemplateIdExternal
 string                                            Assignment.DepartmentIdExternal
 string                                            Assignment.Invoice_CustomerIdExternal
+string                                            Assignment.InvoiceLayoutIdExternal
 string                                            Assignment.JobResponsible_EmployeeIdExternal
 string                                            Assignment.PaymentTermIdExternal
 string                                            Assignment.ProductAgreementGroupIdExternal
@@ -139,6 +140,7 @@ bool                                              Assignment.InternalOnly
 string (200)                                      Assignment.InternalReference
 int                                               Assignment.Invoice_CustomerId
 string [MultilineText]                            Assignment.InvoiceComment
+int                                               Assignment.InvoiceLayoutId
 int                                               Assignment.JobResponsible_EmployeeId
 bool                                              Assignment.JobResponsibleCompleted
 DateTime                                          Assignment.JobResponsibleCompletedUTC
@@ -754,6 +756,7 @@ string                                            Customer.AssignmentCategoryIdE
 string                                            Customer.CustomerClassIdExternal
 string                                            Customer.Default_InvoiceTemplateIdExternal
 string                                            Customer.Invoice_CustomerIdExternal
+string                                            Customer.InvoiceLayoutIdExternal
 string                                            Customer.PaymentTermIdExternal
 string                                            Customer.ProductAgreementGroupIdExternal
 string                                            Customer.ServiceAgreementIdExternal
@@ -781,6 +784,7 @@ bool                                              Customer.InvoiceConsolidate
 bool                                              Customer.InvoiceElectronic
 string [Email](200)                               Customer.InvoiceElectronicEmail
 string (50)                                       Customer.InvoiceElectronicTarget
+int                                               Customer.InvoiceLayoutId
 bool                                              Customer.InvoiceReminder
 bool                                              Customer.InvoiceVAT
 string [Phone](50)                                Customer.Mobile
@@ -1615,6 +1619,25 @@ DateTime                                          ExternalSystemInvoice.Out_Last
 string [MultilineText](50)                        ExternalSystemInvoice.StatusDescription
 bool                                              ExternalSystemInvoice.Sys_Deactivated
 SyncStatusEnum                                    ExternalSystemInvoice.Enum_SyncStatusId
+int                                               ExternalSystemInvoiceLayout.ExternalSystemInvoiceLayoutId
+string                                            ExternalSystemInvoiceLayout.InvoiceLayoutIdExternal
+string (50)                                       ExternalSystemInvoiceLayout.ExternalId
+short                                             ExternalSystemInvoiceLayout.ExternalSystemId
+string (100)                                      ExternalSystemInvoiceLayout.In_Error_FixLink
+string (250)                                      ExternalSystemInvoiceLayout.In_Error_MsgEN
+string (250)                                      ExternalSystemInvoiceLayout.In_Error_MsgNO
+string                                            ExternalSystemInvoiceLayout.In_Error_TechDetail
+string (40)                                       ExternalSystemInvoiceLayout.In_Error_TraceId
+DateTime                                          ExternalSystemInvoiceLayout.In_LastSyncUTC
+string (100)                                      ExternalSystemInvoiceLayout.Out_Error_FixLink
+string (250)                                      ExternalSystemInvoiceLayout.Out_Error_MsgEN
+string (250)                                      ExternalSystemInvoiceLayout.Out_Error_MsgNO
+string                                            ExternalSystemInvoiceLayout.Out_Error_TechDetail
+string (40)                                       ExternalSystemInvoiceLayout.Out_Error_TraceId
+DateTime                                          ExternalSystemInvoiceLayout.Out_LastSyncUTC
+string [MultilineText](50)                        ExternalSystemInvoiceLayout.StatusDescription
+bool                                              ExternalSystemInvoiceLayout.Sys_Deactivated
+SyncStatusEnum                                    ExternalSystemInvoiceLayout.Enum_SyncStatusId
 int                                               ExternalSystemInvoiceLine.ExternalSystemInvoiceLineId
 string                                            ExternalSystemInvoiceLine.InvoiceLineIdExternal
 string (50)                                       ExternalSystemInvoiceLine.ExternalId
@@ -2953,6 +2976,7 @@ string                                            Invoice.AssignmentIdExternal
 string                                            Invoice.CustomerIdExternal
 string                                            Invoice.DebtorCustomerIdExternal
 string                                            Invoice.DepartmentIdExternal
+string                                            Invoice.InvoiceLayoutIdExternal
 string                                            Invoice.MasterInvoiceIdExternal
 string                                            Invoice.ParentInvoiceIdExternal
 string                                            Invoice.PaymentTermIdExternal
@@ -2970,6 +2994,7 @@ string (200)                                      Invoice.InternalReference
 string [MultilineText]                            Invoice.InvoiceComment
 DateTime                                          Invoice.InvoiceDate
 DateTime                                          Invoice.InvoicedUTC
+int                                               Invoice.InvoiceLayoutId
 int                                               Invoice.InvoiceNumber
 bool                                              Invoice.IsCreditNote
 bool                                              Invoice.IsFinalInvoice
@@ -3019,6 +3044,30 @@ int                                               InvoiceAttachment.AttachmentId
 bool                                              InvoiceAttachment.Sys_Deactivated
 bool                                              InvoiceAttachment.Sys_Historic
 bool                                              InvoiceAttachment.Sys_Incomplete
+int                                               InvoiceLayout.InvoiceLayoutId
+string                                            InvoiceLayout.InvoiceLayoutIdExternal
+string [MultilineText](100)                       InvoiceLayout.Description
+short                                             InvoiceLayout.InvoiceLayoutNumber
+bool                                              InvoiceLayout.Sys_Deactivated
+bool                                              InvoiceLayout.Sys_Historic
+bool                                              InvoiceLayout.Sys_Incomplete
+bool                                              InvoiceLayout.Ext_Sys_Deactivated
+string                                            InvoiceLayout.Ext_ExternalId
+string                                            InvoiceLayout.Ext_In_Error_MsgNO
+string                                            InvoiceLayout.Ext_In_Error_MsgEN
+string                                            InvoiceLayout.Ext_In_Error_TraceId
+string                                            InvoiceLayout.Ext_In_Error_TechDetail
+string                                            InvoiceLayout.Ext_In_Error_FixLink
+bool                                              InvoiceLayout.Ext_In_Error_SetOK
+DateTime                                          InvoiceLayout.Ext_In_LastSyncUTC
+string                                            InvoiceLayout.Ext_Out_Error_MsgNO
+string                                            InvoiceLayout.Ext_Out_Error_MsgEN
+string                                            InvoiceLayout.Ext_Out_Error_TraceId
+string                                            InvoiceLayout.Ext_Out_Error_TechDetail
+string                                            InvoiceLayout.Ext_Out_Error_FixLink
+bool                                              InvoiceLayout.Ext_Out_Error_SetOK
+DateTime                                          InvoiceLayout.Ext_Out_LastSyncUTC
+--> ExternalSystemInvoiceLayout[]                 InvoiceLayout.ExternalSystemInvoiceLayouts
 int                                               InvoiceLine.InvoiceLineId
 string                                            InvoiceLine.InvoiceLineIdExternal
 string                                            InvoiceLine.Cost_LedgerAccountIdExternal
@@ -4499,6 +4548,7 @@ string                                            Project.CustomerIdExternal
 string                                            Project.Default_InvoiceTemplateIdExternal
 string                                            Project.DepartmentIdExternal
 string                                            Project.Invoice_CustomerIdExternal
+string                                            Project.InvoiceLayoutIdExternal
 string                                            Project.ParentProjectIdExternal
 string                                            Project.PaymentTermIdExternal
 string                                            Project.ProductAgreementGroupIdExternal
@@ -4525,6 +4575,7 @@ decimal                                           Project.EstimatedTotalHours
 decimal                                           Project.FixedPrice
 bool                                              Project.Internal
 int                                               Project.Invoice_CustomerId
+int                                               Project.InvoiceLayoutId
 bool                                              Project.InvoiceReserveSumAllAssignment
 decimal                                           Project.MarginPercent
 string (100)                                      Project.Name
@@ -5200,6 +5251,7 @@ string                                            Settings_Assignment.Default_Ca
 string                                            Settings_Assignment.Default_InvoiceTemplateIdExternal
 string                                            Settings_Assignment.Default_ProjectIdExternal
 string                                            Settings_Assignment.Default_ServiceAgreementIdExternal
+string                                            Settings_Assignment.InvoiceLayoutIdExternal
 string                                            Settings_Assignment.ProductAgreementGroupIdExternal
 bool                                              Settings_Assignment.AllowHpcTimeCorrection
 bool                                              Settings_Assignment.ApproveBeforeInvoicing
@@ -5226,6 +5278,7 @@ bool                                              Settings_Assignment.Invoice_No
 short                                             Settings_Assignment.Invoice_OverdueNotificationDays
 bool                                              Settings_Assignment.Invoice_ReopenAssignment
 bool                                              Settings_Assignment.Invoice_SendImmediately
+int                                               Settings_Assignment.InvoiceLayoutId
 bool                                              Settings_Assignment.MandatoryCaseHandler
 bool                                              Settings_Assignment.MandatoryCategory
 bool                                              Settings_Assignment.MandatoryCategory_1
