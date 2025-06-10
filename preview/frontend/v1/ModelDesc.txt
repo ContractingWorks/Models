@@ -515,10 +515,12 @@ int                                                 CalculationFolder.Calculatio
 string? (50)                                        CalculationFolder.Code
 string? [MultilineText](1024)                       CalculationFolder.Comment
 bool                                                CalculationFolder.Complete
+int?                                                CalculationFolder.HierarchyLevel
 string (100)                                        CalculationFolder.Name
 int?                                                CalculationFolder.Parent_CalculationFolderId
 int                                                 CalculationFolder.SortOrder
 bool                                                CalculationFolder.Sys_Deactivated
+SqlHierarchyId?                                     CalculationFolder.Sys_HierarchyId
 bool                                                CalculationFolder.Sys_Historic
 bool                                                CalculationFolder.Sys_Incomplete
 int                                                 CalculationFolderLineTariffAdjustment.CalculationFolderLineTariffAdjustmentId
@@ -549,6 +551,7 @@ int                                                 CalculationLine.CalculationI
 int?                                                CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                       CalculationLine.Comment
 decimal?                                            CalculationLine.CostPrice
+int?                                                CalculationLine.HierarchyLevel
 bool?                                               CalculationLine.IsInteresting
 bool                                                CalculationLine.IsProductStructure
 int?                                                CalculationLine.ParentCalculationLineId
@@ -566,6 +569,7 @@ int                                                 CalculationLine.SortOrder
 short?                                              CalculationLine.SupplierIndustryTypeId
 decimal?                                            CalculationLine.SurchargePercent
 bool                                                CalculationLine.Sys_Deactivated
+SqlHierarchyId?                                     CalculationLine.Sys_HierarchyId
 bool                                                CalculationLine.Sys_Historic
 bool                                                CalculationLine.Sys_Incomplete
 int?                                                CalculationLine.TariffId
