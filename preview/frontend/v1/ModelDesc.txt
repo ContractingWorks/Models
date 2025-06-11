@@ -515,7 +515,6 @@ int                                                 CalculationFolder.Calculatio
 string? (50)                                        CalculationFolder.Code
 string? [MultilineText](1024)                       CalculationFolder.Comment
 bool                                                CalculationFolder.Complete
-int?                                                CalculationFolder.HierarchyLevel
 string (100)                                        CalculationFolder.Name
 int?                                                CalculationFolder.Parent_CalculationFolderId
 int                                                 CalculationFolder.SortOrder
@@ -551,7 +550,6 @@ int                                                 CalculationLine.CalculationI
 int?                                                CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                       CalculationLine.Comment
 decimal?                                            CalculationLine.CostPrice
-int?                                                CalculationLine.HierarchyLevel
 bool?                                               CalculationLine.IsInteresting
 bool                                                CalculationLine.IsProductStructure
 int?                                                CalculationLine.ParentCalculationLineId
