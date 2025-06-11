@@ -2934,6 +2934,7 @@ string? (50)                                        Import_ETIM_Product.ProductN
 bool                                                Import_ETIM_Product.Sys_Deactivated
 bool                                                Import_ETIM_Product.Sys_Historic
 bool                                                Import_ETIM_Product.Sys_Incomplete
+IndustryTypeEnum?                                   Import_ETIM_Product.Enum_IndustryTypeId
 --> Import_ETIM_ProductFeature[]                    Import_ETIM_Product.Import_ETIM_ProductFeatures
 int                                                 Import_ETIM_ProductFeature.Import_ETIM_ProductFeatureId
 string? (50)                                        Import_ETIM_ProductFeature.ETIM_FeatureCode
