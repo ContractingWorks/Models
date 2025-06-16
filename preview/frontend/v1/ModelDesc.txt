@@ -3133,6 +3133,10 @@ byte?                                               Invoice.PaymentTermId
 int?                                                Invoice.ProjectId
 DateTime?                                           Invoice.RegisteredUTC
 decimal?                                            Invoice.RemainingAmount
+string?                                             Invoice.ROTApartmentNo
+string?                                             Invoice.ROTBrfOrgNo
+bool?                                               Invoice.ROTInvoice
+string?                                             Invoice.ROTPropertyNo
 DateTime?                                           Invoice.SentUTC
 bool                                                Invoice.Sys_Deactivated
 bool                                                Invoice.Sys_FinalPostProcessDone
@@ -3269,6 +3273,7 @@ bool                                                InvoiceLine.VATFree
 int?                                                InvoiceLine.VATRateId
 int?                                                InvoiceLine.WageCodeReportCategoryId
 InvoiceLineTypeEnum                                 InvoiceLine.Enum_InvoiceLineTypeId
+ROTCategoryEnum?                                    InvoiceLine.Enum_ROTCategoryId
 InvoiceLineRuleTypeDetailEnum?                      InvoiceLine.Sys_Enum_InvoiceLineRuleTypeDetailId
 bool                                                InvoiceLine.Ext_Sys_Deactivated
 string                                              InvoiceLine.Ext_ExternalId
@@ -5078,6 +5083,13 @@ string                                              RolePermission.Ext_Out_Error
 bool                                                RolePermission.Ext_Out_Error_SetOK
 DateTime                                            RolePermission.Ext_Out_LastSyncUTC
 --> ExternalSystemRolePermission[]                  RolePermission.ExternalSystemRolePermissions
+int                                                 ROTCustomerInformation.ROTCustomerInformationId
+string?                                             ROTCustomerInformation.InvoiceIdExternal
+int                                                 ROTCustomerInformation.InvoiceId
+string (20)                                         ROTCustomerInformation.NationalIdNumber
+bool                                                ROTCustomerInformation.Sys_Deactivated
+bool                                                ROTCustomerInformation.Sys_Historic
+bool                                                ROTCustomerInformation.Sys_Incomplete
 int                                                 Service.ServiceId
 string?                                             Service.ServiceIdExternal
 string?                                             Service.AssignmentIdExternal
@@ -5166,6 +5178,7 @@ int?                                                Service.WageCodeReportCatego
 int?                                                Service.WagePeriodId
 InvoicingLineStatusEnum                             Service.Enum_InvoicingLineStatusId
 OriginTypeServiceEnum?                              Service.Enum_OriginTypeServiceId
+ROTCategoryEnum?                                    Service.Enum_ROTCategoryId
 ApprovalStatusEnum                                  Service.Invoice_Enum_ApprovalStatusId
 WageCodeTypeEnum?                                   Service.Sys_Enum_WageCodeTypeId
 ApprovalStatusEnum                                  Service.Wage_Enum_ApprovalStatusId
@@ -5474,6 +5487,7 @@ byte?                                               Settings_Main.ProjectPeriod_
 byte                                                Settings_Main.ProjectPeriod_CreateLimitMonths
 int?                                                Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                                Settings_Main.Require2FAForAllUsers
+bool                                                Settings_Main.ROTEnabled
 bool                                                Settings_Main.Service_ApprovalInvoice_To_Wage
 byte?                                               Settings_Main.ServiceContract_DueLeadDays
 byte?                                               Settings_Main.ServiceContract_DueLeadDaysForNotification
@@ -6316,6 +6330,7 @@ int?                                                WageCode.WageCodeReportCateg
 short?                                              WageCode.WageGroupId
 decimal?                                            WageCode.WageRatePercent
 PieceworkTypeEnum                                   WageCode.Enum_PieceworkTypeId
+ROTCategoryEnum?                                    WageCode.Enum_ROTCategoryId
 WageCodeTypeEnum                                    WageCode.Enum_WageCodeTypeId
 bool                                                WageCode.Ext_Sys_Deactivated
 string                                              WageCode.Ext_ExternalId
