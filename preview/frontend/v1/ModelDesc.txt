@@ -5317,7 +5317,7 @@ string?                                             ServiceObject.CustomerIdExte
 string?                                             ServiceObject.DepartmentIdExternal
 string?                                             ServiceObject.ServiceObjectTypeIdExternal
 int?                                                ServiceObject.AddressId
-string (50)                                         ServiceObject.Code
+string? (50)                                        ServiceObject.Code
 int?                                                ServiceObject.CustomerId
 short?                                              ServiceObject.DepartmentId
 string? [MultilineText](250)                        ServiceObject.Description
