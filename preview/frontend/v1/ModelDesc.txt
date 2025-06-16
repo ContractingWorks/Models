@@ -4430,6 +4430,7 @@ string?                                             ProductNoteLine.SupplierInvo
 short?                                              ProductNoteLine.Cost_LedgerAccountId
 int?                                                ProductNoteLine.Cost_ProjectAccountId
 decimal?                                            ProductNoteLine.CostPrice
+decimal?                                            ProductNoteLine.CostPrice_FromMobileDevice
 decimal?                                            ProductNoteLine.CustomerPrice
 short?                                              ProductNoteLine.DepartmentId
 int?                                                ProductNoteLine.DimensionValueId_1
@@ -4438,8 +4439,6 @@ int?                                                ProductNoteLine.DimensionVal
 int?                                                ProductNoteLine.DimensionValueId_4
 int?                                                ProductNoteLine.DimensionValueId_5
 int?                                                ProductNoteLine.DimensionValueId_6
-decimal?                                            ProductNoteLine.IfVarious_CostPrice
-decimal?                                            ProductNoteLine.IfVarious_SalesPriceInvoice
 short?                                              ProductNoteLine.Income_LedgerAccountId
 int?                                                ProductNoteLine.Income_ProjectAccountId
 int?                                                ProductNoteLine.InvoiceId
