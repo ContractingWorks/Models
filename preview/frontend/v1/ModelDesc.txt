@@ -1191,7 +1191,7 @@ string                                              ERPBatch.Ext_Out_Error_TechD
 string                                              ERPBatch.Ext_Out_Error_FixLink
 bool                                                ERPBatch.Ext_Out_Error_SetOK
 DateTime                                            ERPBatch.Ext_Out_LastSyncUTC
---> ExternalSystemERPBatch[]                        ERPBatch.ExternalSystemERPBatchs
+--> ExternalSystemERPBatch[]                        ERPBatch.ExternalSystemERPBatches
 int                                                 ERPVoucher.ERPVoucherId
 string?                                             ERPVoucher.ERPVoucherIdExternal
 string?                                             ERPVoucher.CreditLedgerAccountIdExternal
