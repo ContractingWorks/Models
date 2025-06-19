@@ -3167,6 +3167,7 @@ DateTime                                            Invoice.Ext_Out_LastSyncUTC
 --> ExternalSystemInvoice[]                         Invoice.ExternalSystemInvoices
 --> InvoiceAttachment[]                             Invoice.InvoiceAttachments
 --> InvoiceLine[]                                   Invoice.InvoiceLines
+--> ROTCustomerInformation[]                        Invoice.ROTCustomerInformations
 int                                                 InvoiceAttachment.InvoiceAttachmentId
 string?                                             InvoiceAttachment.AttachmentIdExternal
 string?                                             InvoiceAttachment.InvoiceIdExternal
@@ -5084,7 +5085,6 @@ DateTime                                            RolePermission.Ext_Out_LastS
 --> ExternalSystemRolePermission[]                  RolePermission.ExternalSystemRolePermissions
 int                                                 ROTCustomerInformation.ROTCustomerInformationId
 string?                                             ROTCustomerInformation.InvoiceIdExternal
-int                                                 ROTCustomerInformation.InvoiceId
 string (20)                                         ROTCustomerInformation.NationalIdNumber
 bool                                                ROTCustomerInformation.Sys_Deactivated
 bool                                                ROTCustomerInformation.Sys_Historic
