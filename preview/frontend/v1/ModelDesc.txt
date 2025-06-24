@@ -6229,6 +6229,7 @@ bool                                                User.Sys_Deactivated
 bool                                                User.Sys_Historic
 bool                                                User.Sys_Incomplete
 bool                                                User.TwoFactorEnabled
+UserTypeEnum                                        User.Enum_UserTypeId
 short                                               UserCommand.UserCommandId
 string? (100)                                       UserCommand.Context
 int?                                                UserCommand.CwUserId
