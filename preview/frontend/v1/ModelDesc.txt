@@ -1811,6 +1811,44 @@ bool                                                 ExternalSystemExtraData.Sys
 bool                                                 ExternalSystemExtraData.Sys_Historic
 bool                                                 ExternalSystemExtraData.Sys_Incomplete
 string?                                              ExternalSystemExtraData.Value
+int                                                  ExternalSystemImport_ETIM_Product.ExternalSystemImport_ETIM_ProductId
+string?                                              ExternalSystemImport_ETIM_Product.Import_ETIM_ProductIdExternal
+string? (50)                                         ExternalSystemImport_ETIM_Product.ExternalId
+short                                                ExternalSystemImport_ETIM_Product.ExternalSystemId
+string? (100)                                        ExternalSystemImport_ETIM_Product.In_Error_FixLink
+string? (250)                                        ExternalSystemImport_ETIM_Product.In_Error_MsgEN
+string? (250)                                        ExternalSystemImport_ETIM_Product.In_Error_MsgNO
+string?                                              ExternalSystemImport_ETIM_Product.In_Error_TechDetail
+string? (40)                                         ExternalSystemImport_ETIM_Product.In_Error_TraceId
+DateTime?                                            ExternalSystemImport_ETIM_Product.In_LastSyncUTC
+string? (100)                                        ExternalSystemImport_ETIM_Product.Out_Error_FixLink
+string? (250)                                        ExternalSystemImport_ETIM_Product.Out_Error_MsgEN
+string? (250)                                        ExternalSystemImport_ETIM_Product.Out_Error_MsgNO
+string?                                              ExternalSystemImport_ETIM_Product.Out_Error_TechDetail
+string? (40)                                         ExternalSystemImport_ETIM_Product.Out_Error_TraceId
+DateTime?                                            ExternalSystemImport_ETIM_Product.Out_LastSyncUTC
+string? [MultilineText](50)                          ExternalSystemImport_ETIM_Product.StatusDescription
+bool                                                 ExternalSystemImport_ETIM_Product.Sys_Deactivated
+SyncStatusEnum                                       ExternalSystemImport_ETIM_Product.Enum_SyncStatusId
+int                                                  ExternalSystemImport_ETIM_ProductFeature.ExternalSystemImport_ETIM_ProductFeatureId
+string?                                              ExternalSystemImport_ETIM_ProductFeature.Import_ETIM_ProductFeatureIdExternal
+string? (50)                                         ExternalSystemImport_ETIM_ProductFeature.ExternalId
+short                                                ExternalSystemImport_ETIM_ProductFeature.ExternalSystemId
+string? (100)                                        ExternalSystemImport_ETIM_ProductFeature.In_Error_FixLink
+string? (250)                                        ExternalSystemImport_ETIM_ProductFeature.In_Error_MsgEN
+string? (250)                                        ExternalSystemImport_ETIM_ProductFeature.In_Error_MsgNO
+string?                                              ExternalSystemImport_ETIM_ProductFeature.In_Error_TechDetail
+string? (40)                                         ExternalSystemImport_ETIM_ProductFeature.In_Error_TraceId
+DateTime?                                            ExternalSystemImport_ETIM_ProductFeature.In_LastSyncUTC
+string? (100)                                        ExternalSystemImport_ETIM_ProductFeature.Out_Error_FixLink
+string? (250)                                        ExternalSystemImport_ETIM_ProductFeature.Out_Error_MsgEN
+string? (250)                                        ExternalSystemImport_ETIM_ProductFeature.Out_Error_MsgNO
+string?                                              ExternalSystemImport_ETIM_ProductFeature.Out_Error_TechDetail
+string? (40)                                         ExternalSystemImport_ETIM_ProductFeature.Out_Error_TraceId
+DateTime?                                            ExternalSystemImport_ETIM_ProductFeature.Out_LastSyncUTC
+string? [MultilineText](50)                          ExternalSystemImport_ETIM_ProductFeature.StatusDescription
+bool                                                 ExternalSystemImport_ETIM_ProductFeature.Sys_Deactivated
+SyncStatusEnum                                       ExternalSystemImport_ETIM_ProductFeature.Enum_SyncStatusId
 byte                                                 ExternalSystemIndexRateGroup.ExternalSystemIndexRateGroupId
 string?                                              ExternalSystemIndexRateGroup.IndexRateGroupIdExternal
 string? (50)                                         ExternalSystemIndexRateGroup.ExternalId
@@ -3086,6 +3124,7 @@ string? (20)                                         Import_ETIM.UnitId
 string? (100)                                        Import_ETIM.Value
 string? (20)                                         Import_ETIM.ValueId
 int                                                  Import_ETIM_Product.Import_ETIM_ProductId
+string?                                              Import_ETIM_Product.Import_ETIM_ProductIdExternal
 string? (50)                                         Import_ETIM_Product.ETIM_ClassCode
 string? (255)                                        Import_ETIM_Product.ETIM_ClassName
 int                                                  Import_ETIM_Product.FileId
@@ -3095,8 +3134,27 @@ bool                                                 Import_ETIM_Product.Sys_Dea
 bool                                                 Import_ETIM_Product.Sys_Historic
 bool                                                 Import_ETIM_Product.Sys_Incomplete
 IndustryTypeEnum?                                    Import_ETIM_Product.Enum_IndustryTypeId
+bool                                                 Import_ETIM_Product.Ext_Sys_Deactivated
+string                                               Import_ETIM_Product.Ext_ExternalId
+string                                               Import_ETIM_Product.Ext_In_Error_MsgNO
+string                                               Import_ETIM_Product.Ext_In_Error_MsgEN
+string                                               Import_ETIM_Product.Ext_In_Error_TraceId
+string                                               Import_ETIM_Product.Ext_In_Error_TechDetail
+string                                               Import_ETIM_Product.Ext_In_Error_FixLink
+bool                                                 Import_ETIM_Product.Ext_In_Error_SetOK
+DateTime                                             Import_ETIM_Product.Ext_In_LastSyncUTC
+string                                               Import_ETIM_Product.Ext_Out_Error_MsgNO
+string                                               Import_ETIM_Product.Ext_Out_Error_MsgEN
+string                                               Import_ETIM_Product.Ext_Out_Error_TraceId
+string                                               Import_ETIM_Product.Ext_Out_Error_TechDetail
+string                                               Import_ETIM_Product.Ext_Out_Error_FixLink
+bool                                                 Import_ETIM_Product.Ext_Out_Error_SetOK
+DateTime                                             Import_ETIM_Product.Ext_Out_LastSyncUTC
+--> ExternalSystemImport_ETIM_Product[]              Import_ETIM_Product.ExternalSystemImport_ETIM_Products
 --> Import_ETIM_ProductFeature[]                     Import_ETIM_Product.Import_ETIM_ProductFeatures
 int                                                  Import_ETIM_ProductFeature.Import_ETIM_ProductFeatureId
+string?                                              Import_ETIM_ProductFeature.Import_ETIM_ProductFeatureIdExternal
+string?                                              Import_ETIM_ProductFeature.Import_ETIM_ProductIdExternal
 string? (50)                                         Import_ETIM_ProductFeature.ETIM_FeatureCode
 string? (255)                                        Import_ETIM_ProductFeature.ETIM_FeatureName
 string? (50)                                         Import_ETIM_ProductFeature.ETIM_UnitCode
@@ -3107,6 +3165,23 @@ bool                                                 Import_ETIM_ProductFeature.
 string? (255)                                        Import_ETIM_ProductFeature.UnitText
 string? (255)                                        Import_ETIM_ProductFeature.Value
 string? (255)                                        Import_ETIM_ProductFeature.ValueText
+bool                                                 Import_ETIM_ProductFeature.Ext_Sys_Deactivated
+string                                               Import_ETIM_ProductFeature.Ext_ExternalId
+string                                               Import_ETIM_ProductFeature.Ext_In_Error_MsgNO
+string                                               Import_ETIM_ProductFeature.Ext_In_Error_MsgEN
+string                                               Import_ETIM_ProductFeature.Ext_In_Error_TraceId
+string                                               Import_ETIM_ProductFeature.Ext_In_Error_TechDetail
+string                                               Import_ETIM_ProductFeature.Ext_In_Error_FixLink
+bool                                                 Import_ETIM_ProductFeature.Ext_In_Error_SetOK
+DateTime                                             Import_ETIM_ProductFeature.Ext_In_LastSyncUTC
+string                                               Import_ETIM_ProductFeature.Ext_Out_Error_MsgNO
+string                                               Import_ETIM_ProductFeature.Ext_Out_Error_MsgEN
+string                                               Import_ETIM_ProductFeature.Ext_Out_Error_TraceId
+string                                               Import_ETIM_ProductFeature.Ext_Out_Error_TechDetail
+string                                               Import_ETIM_ProductFeature.Ext_Out_Error_FixLink
+bool                                                 Import_ETIM_ProductFeature.Ext_Out_Error_SetOK
+DateTime                                             Import_ETIM_ProductFeature.Ext_Out_LastSyncUTC
+--> ExternalSystemImport_ETIM_ProductFeature[]       Import_ETIM_ProductFeature.ExternalSystemImport_ETIM_ProductFeatures
 short                                                ImportFile.ImportFileId
 bool                                                 ImportFile.AutoImport
 string? (255)                                        ImportFile.AzureBlobIdExt
