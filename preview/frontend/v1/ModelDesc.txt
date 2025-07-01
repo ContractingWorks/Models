@@ -5549,11 +5549,9 @@ DateTime                                             ServiceContract.Ext_Out_Las
 --> ExternalSystemServiceContract[]                  ServiceContract.ExternalSystemServiceContracts
 int                                                  ServiceObject.ServiceObjectId
 string?                                              ServiceObject.ServiceObjectIdExternal
-string?                                              ServiceObject.AddressIdExternal
 string?                                              ServiceObject.CustomerIdExternal
 string?                                              ServiceObject.DepartmentIdExternal
 string?                                              ServiceObject.ServiceObjectTypeIdExternal
-int?                                                 ServiceObject.AddressId
 string? (50)                                         ServiceObject.Code
 int?                                                 ServiceObject.CustomerId
 short?                                               ServiceObject.DepartmentId
@@ -5582,6 +5580,7 @@ string                                               ServiceObject.Ext_Out_Error
 string                                               ServiceObject.Ext_Out_Error_FixLink
 bool                                                 ServiceObject.Ext_Out_Error_SetOK
 DateTime                                             ServiceObject.Ext_Out_LastSyncUTC
+--> Address                                          ServiceObject.Address
 --> ExternalSystemServiceObject[]                    ServiceObject.ExternalSystemServiceObjects
 int                                                  ServiceObjectType.ServiceObjectTypeId
 string?                                              ServiceObjectType.ServiceObjectTypeIdExternal
