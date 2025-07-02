@@ -4964,6 +4964,7 @@ short?                                               Project.StorageId
 bool                                                 Project.Sys_Deactivated
 bool                                                 Project.Sys_Historic
 bool                                                 Project.Sys_Incomplete
+bool                                                 Project.UseCustomerDefaultsFirst
 DateTime?                                            Project.WarrantyDateUTC
 ProjectAssessmentTypeEnum                            Project.Enum_ProjectAssessmentTypeId
 ProjectStatusEnum                                    Project.Enum_ProjectStatusId
@@ -6484,7 +6485,6 @@ int?                                                 User.EmployeeId
 short?                                               User.ExternalSystemId
 string? (200)                                        User.FirstName
 bool                                                 User.IsInactive
-bool                                                 User.IsSystemUser
 string? (200)                                        User.LastName
 string? [Email](100)                                 User.SecondaryEmail
 bool                                                 User.Sys_Deactivated
