@@ -117,7 +117,6 @@ int?                                                 Assignment.AssignmentCatego
 int?                                                 Assignment.AssignmentCategoryId_2
 int?                                                 Assignment.AssignmentCategoryId_3
 DateTime?                                            Assignment.AssignmentCompleteDateTimeUTC
-bool                                                 Assignment.AssignmentCompleteMobileDevice
 int?                                                 Assignment.AssignmentNumber
 int?                                                 Assignment.CaseHandler_EmployeeId
 decimal?                                             Assignment.CoverageRateFixedPrice
@@ -143,6 +142,7 @@ string? [MultilineText]                              Assignment.InvoiceComment
 int?                                                 Assignment.InvoiceLayoutId
 int?                                                 Assignment.JobResponsible_EmployeeId
 bool                                                 Assignment.JobResponsibleCompleted
+bool?                                                Assignment.JobResponsibleCompleted_FromCw
 DateTime?                                            Assignment.JobResponsibleCompletedUTC
 string? (200)                                        Assignment.KeyInformation
 int?                                                 Assignment.LinkedAssignmentId
