@@ -200,6 +200,7 @@ DateTime                                             Assignment.Ext_Out_LastSync
 --> Contact[]                                        Assignment.Contacts
 --> AssignmentParticipant[]                          Assignment.AssignmentParticipants
 --> AssignmentProductAgreement[]                     Assignment.AssignmentProductAgreements
+--> AssignmentServiceObject[]                        Assignment.AssignmentServiceObjects
 --> ExternalSystemAssignment[]                       Assignment.ExternalSystemAssignments
 int                                                  AssignmentAttachment.AssignmentAttachmentId
 string?                                              AssignmentAttachment.AssignmentIdExternal
@@ -309,8 +310,6 @@ bool                                                 AssignmentPurchaseAgreement
 int                                                  AssignmentServiceObject.AssignmentServiceObjectId
 string?                                              AssignmentServiceObject.AssignmentIdExternal
 string?                                              AssignmentServiceObject.ServiceObjectIdExternal
-int                                                  AssignmentServiceObject.AssignmentId
-int                                                  AssignmentServiceObject.ServiceObjectId
 bool                                                 AssignmentServiceObject.Sys_Deactivated
 bool                                                 AssignmentServiceObject.Sys_Historic
 bool                                                 AssignmentServiceObject.Sys_Incomplete
@@ -5582,6 +5581,7 @@ string                                               ServiceObject.Ext_Out_Error
 bool                                                 ServiceObject.Ext_Out_Error_SetOK
 DateTime                                             ServiceObject.Ext_Out_LastSyncUTC
 --> Address                                          ServiceObject.Address
+--> AssignmentServiceObject[]                        ServiceObject.AssignmentServiceObjects
 --> ExternalSystemServiceObject[]                    ServiceObject.ExternalSystemServiceObjects
 int                                                  ServiceObjectType.ServiceObjectTypeId
 string?                                              ServiceObjectType.ServiceObjectTypeIdExternal
