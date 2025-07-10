@@ -3345,6 +3345,7 @@ string?                                              Invoice.PaymentTermIdExtern
 string?                                              Invoice.ProjectIdExternal
 int?                                                 Invoice.AssignmentId
 bool                                                 Invoice.AttachServiceListAsPDF
+bool                                                 Invoice.AttachServiceListIsWorkTimeOnly
 int                                                  Invoice.CustomerId
 string? (200)                                        Invoice.CustomerReference
 int?                                                 Invoice.DebtorCustomerId
