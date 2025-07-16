@@ -4145,6 +4145,7 @@ string?                                              Product.Purchase_VATRequire
 string?                                              Product.Sale_VATFree_LedgerAccountIdExternal
 string?                                              Product.Sale_VATRequired_LedgerAccountIdExternal
 string?                                              Product.VATRateIdExternal
+int?                                                 Product.ClassificationSystemItemId
 int?                                                 Product.Cost_ProjectAccountId
 string? (2)                                          Product.CountryId
 long?                                                Product.GTIN
