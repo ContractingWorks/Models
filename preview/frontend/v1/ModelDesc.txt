@@ -5585,6 +5585,14 @@ DateTime                                             ServiceObject.Ext_Out_LastS
 --> Address                                          ServiceObject.Address
 --> AssignmentServiceObject[]                        ServiceObject.AssignmentServiceObjects
 --> ExternalSystemServiceObject[]                    ServiceObject.ExternalSystemServiceObjects
+--> ServiceObjectAttachment[]                        ServiceObject.ServiceObjectAttachments
+int                                                  ServiceObjectAttachment.ServiceObjectAttachmentId
+string?                                              ServiceObjectAttachment.AttachmentIdExternal
+string?                                              ServiceObjectAttachment.ServiceObjectIdExternal
+int                                                  ServiceObjectAttachment.AttachmentId
+bool                                                 ServiceObjectAttachment.Sys_Deactivated
+bool                                                 ServiceObjectAttachment.Sys_Historic
+bool                                                 ServiceObjectAttachment.Sys_Incomplete
 int                                                  ServiceObjectType.ServiceObjectTypeId
 string?                                              ServiceObjectType.ServiceObjectTypeIdExternal
 string (50)                                          ServiceObjectType.Code
