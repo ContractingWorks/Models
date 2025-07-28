@@ -2057,6 +2057,25 @@ DateTime?                                            ExternalSystemNote.Out_Last
 string? [MultilineText](50)                          ExternalSystemNote.StatusDescription
 bool                                                 ExternalSystemNote.Sys_Deactivated
 SyncStatusEnum                                       ExternalSystemNote.Enum_SyncStatusId
+int                                                  ExternalSystemNotificationDelivery.ExternalSystemNotificationDeliveryId
+string?                                              ExternalSystemNotificationDelivery.NotificationDeliveryIdExternal
+string? (50)                                         ExternalSystemNotificationDelivery.ExternalId
+short                                                ExternalSystemNotificationDelivery.ExternalSystemId
+string? (100)                                        ExternalSystemNotificationDelivery.In_Error_FixLink
+string? (250)                                        ExternalSystemNotificationDelivery.In_Error_MsgEN
+string? (250)                                        ExternalSystemNotificationDelivery.In_Error_MsgNO
+string?                                              ExternalSystemNotificationDelivery.In_Error_TechDetail
+string? (40)                                         ExternalSystemNotificationDelivery.In_Error_TraceId
+DateTime?                                            ExternalSystemNotificationDelivery.In_LastSyncUTC
+string? (100)                                        ExternalSystemNotificationDelivery.Out_Error_FixLink
+string? (250)                                        ExternalSystemNotificationDelivery.Out_Error_MsgEN
+string? (250)                                        ExternalSystemNotificationDelivery.Out_Error_MsgNO
+string?                                              ExternalSystemNotificationDelivery.Out_Error_TechDetail
+string? (40)                                         ExternalSystemNotificationDelivery.Out_Error_TraceId
+DateTime?                                            ExternalSystemNotificationDelivery.Out_LastSyncUTC
+string? [MultilineText](50)                          ExternalSystemNotificationDelivery.StatusDescription
+bool                                                 ExternalSystemNotificationDelivery.Sys_Deactivated
+SyncStatusEnum                                       ExternalSystemNotificationDelivery.Enum_SyncStatusId
 int                                                  ExternalSystemNotificationPreference.ExternalSystemNotificationPreferenceId
 string?                                              ExternalSystemNotificationPreference.NotificationPreferenceIdExternal
 string? (50)                                         ExternalSystemNotificationPreference.ExternalId
@@ -3828,6 +3847,7 @@ bool                                                 NotificationAttachment.Sys_
 bool                                                 NotificationAttachment.Sys_Historic
 bool                                                 NotificationAttachment.Sys_Incomplete
 int                                                  NotificationDelivery.NotificationDeliveryId
+string?                                              NotificationDelivery.NotificationDeliveryIdExternal
 string? (500)                                        NotificationDelivery.ErrorMessage
 bool                                                 NotificationDelivery.IsArchived
 bool                                                 NotificationDelivery.IsImportant
@@ -3839,6 +3859,23 @@ bool                                                 NotificationDelivery.Sys_In
 int?                                                 NotificationDelivery.UserId
 NotificationChannelEnum                              NotificationDelivery.Enum_NotificationChannelId
 NotificationDeliveryStatusEnum                       NotificationDelivery.Enum_NotificationDeliveryStatusId
+bool                                                 NotificationDelivery.Ext_Sys_Deactivated
+string                                               NotificationDelivery.Ext_ExternalId
+string                                               NotificationDelivery.Ext_In_Error_MsgNO
+string                                               NotificationDelivery.Ext_In_Error_MsgEN
+string                                               NotificationDelivery.Ext_In_Error_TraceId
+string                                               NotificationDelivery.Ext_In_Error_TechDetail
+string                                               NotificationDelivery.Ext_In_Error_FixLink
+bool                                                 NotificationDelivery.Ext_In_Error_SetOK
+DateTime                                             NotificationDelivery.Ext_In_LastSyncUTC
+string                                               NotificationDelivery.Ext_Out_Error_MsgNO
+string                                               NotificationDelivery.Ext_Out_Error_MsgEN
+string                                               NotificationDelivery.Ext_Out_Error_TraceId
+string                                               NotificationDelivery.Ext_Out_Error_TechDetail
+string                                               NotificationDelivery.Ext_Out_Error_FixLink
+bool                                                 NotificationDelivery.Ext_Out_Error_SetOK
+DateTime                                             NotificationDelivery.Ext_Out_LastSyncUTC
+--> ExternalSystemNotificationDelivery[]             NotificationDelivery.ExternalSystemNotificationDeliveries
 int                                                  NotificationPreference.NotificationPreferenceId
 string?                                              NotificationPreference.NotificationPreferenceIdExternal
 bool                                                 NotificationPreference.IsEnabled
