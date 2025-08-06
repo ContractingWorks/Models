@@ -3762,6 +3762,27 @@ string (100)                                         Manufacturer.Name
 bool                                                 Manufacturer.Sys_Deactivated
 bool                                                 Manufacturer.Sys_Historic
 bool                                                 Manufacturer.Sys_Incomplete
+int                                                  MapData.MapDataId
+string? (100)                                        MapData.Current_ExternalId
+bool                                                 MapData.Deactivated
+string? [MultilineText](250)                         MapData.Description
+string (50)                                          MapData.EntityType
+string? [MultilineText](250)                         MapData.ExternalDescription
+string? (100)                                        MapData.ExternalId
+short?                                               MapData.ExternalSystemId
+string? (100)                                        MapData.FormalId
+bool                                                 MapData.Historic
+DateTime?                                            MapData.LastUserMapUpdateUTC
+string? (100)                                        MapData.Map
+string? (100)                                        MapData.NewNumber
+string? (100)                                        MapData.Number
+string? (100)                                        MapData.OldMap
+string? (100)                                        MapData.OriginalNumber
+int?                                                 MapData.RowId
+bool                                                 MapData.Sys_Deactivated
+bool                                                 MapData.Sys_Historic
+bool                                                 MapData.Sys_Incomplete
+string? (250)                                        MapData.UserActionNeeded
 int                                                  MapDataExtraData.MapDataExtraDataId
 string (50)                                          MapDataExtraData.Key
 bool                                                 MapDataExtraData.Sys_Deactivated
