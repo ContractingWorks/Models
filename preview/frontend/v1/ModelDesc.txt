@@ -538,6 +538,7 @@ bool                                                 CalculationFolderTemplate.S
 bool                                                 CalculationFolderTemplate.Sys_Historic
 bool                                                 CalculationFolderTemplate.Sys_Incomplete
 int                                                  CalculationLine.CalculationLineId
+string?                                              CalculationLine.ClassificationSystemItemIdExternal
 string?                                              CalculationLine.ProductIdExternal
 string?                                              CalculationLine.ProductSearchIdExternal
 string?                                              CalculationLine.ProductSupplierIndustryTypeIdExternal
@@ -574,12 +575,33 @@ int?                                                 CalculationLine.WageCodeRep
 int?                                                 CalculationLine.WorkSeconds
 int?                                                 CalculationLine.WorkSecondsOverride
 int                                                  ClassificationSystem.ClassificationSystemId
+string?                                              ClassificationSystem.ClassificationSystemIdExternal
 string? [MultilineText](500)                         ClassificationSystem.Description
 string (100)                                         ClassificationSystem.Name
 bool                                                 ClassificationSystem.Sys_Deactivated
 bool                                                 ClassificationSystem.Sys_Historic
 bool                                                 ClassificationSystem.Sys_Incomplete
+bool                                                 ClassificationSystem.Ext_Sys_Deactivated
+string                                               ClassificationSystem.Ext_ExternalId
+string                                               ClassificationSystem.Ext_In_Error_MsgNO
+string                                               ClassificationSystem.Ext_In_Error_MsgEN
+string                                               ClassificationSystem.Ext_In_Error_TraceId
+string                                               ClassificationSystem.Ext_In_Error_TechDetail
+string                                               ClassificationSystem.Ext_In_Error_FixLink
+bool                                                 ClassificationSystem.Ext_In_Error_SetOK
+DateTime                                             ClassificationSystem.Ext_In_LastSyncUTC
+string                                               ClassificationSystem.Ext_Out_Error_MsgNO
+string                                               ClassificationSystem.Ext_Out_Error_MsgEN
+string                                               ClassificationSystem.Ext_Out_Error_TraceId
+string                                               ClassificationSystem.Ext_Out_Error_TechDetail
+string                                               ClassificationSystem.Ext_Out_Error_FixLink
+bool                                                 ClassificationSystem.Ext_Out_Error_SetOK
+DateTime                                             ClassificationSystem.Ext_Out_LastSyncUTC
+--> ExternalSystemClassificationSystem[]             ClassificationSystem.ExternalSystemClassificationSystems
 int                                                  ClassificationSystemItem.ClassificationSystemItemId
+string?                                              ClassificationSystemItem.ClassificationSystemItemIdExternal
+string?                                              ClassificationSystemItem.ClassificationSystemIdExternal
+string?                                              ClassificationSystemItem.Parent_ClassificationSystemItemIdExternal
 int                                                  ClassificationSystemItem.ClassificationSystemId
 string (50)                                          ClassificationSystemItem.Code
 string? [MultilineText](500)                         ClassificationSystemItem.Comment
@@ -589,6 +611,23 @@ int?                                                 ClassificationSystemItem.Pa
 bool                                                 ClassificationSystemItem.Sys_Deactivated
 bool                                                 ClassificationSystemItem.Sys_Historic
 bool                                                 ClassificationSystemItem.Sys_Incomplete
+bool                                                 ClassificationSystemItem.Ext_Sys_Deactivated
+string                                               ClassificationSystemItem.Ext_ExternalId
+string                                               ClassificationSystemItem.Ext_In_Error_MsgNO
+string                                               ClassificationSystemItem.Ext_In_Error_MsgEN
+string                                               ClassificationSystemItem.Ext_In_Error_TraceId
+string                                               ClassificationSystemItem.Ext_In_Error_TechDetail
+string                                               ClassificationSystemItem.Ext_In_Error_FixLink
+bool                                                 ClassificationSystemItem.Ext_In_Error_SetOK
+DateTime                                             ClassificationSystemItem.Ext_In_LastSyncUTC
+string                                               ClassificationSystemItem.Ext_Out_Error_MsgNO
+string                                               ClassificationSystemItem.Ext_Out_Error_MsgEN
+string                                               ClassificationSystemItem.Ext_Out_Error_TraceId
+string                                               ClassificationSystemItem.Ext_Out_Error_TechDetail
+string                                               ClassificationSystemItem.Ext_Out_Error_FixLink
+bool                                                 ClassificationSystemItem.Ext_Out_Error_SetOK
+DateTime                                             ClassificationSystemItem.Ext_Out_LastSyncUTC
+--> ExternalSystemClassificationSystemItem[]         ClassificationSystemItem.ExternalSystemClassificationSystemItems
 int                                                  CompanyInfo.CompanyInfoId
 string?                                              CompanyInfo.CompanyBanner_AttachmentIdExternal
 string?                                              CompanyInfo.CompanyLogo_AttachmentIdExternal
@@ -1519,6 +1558,44 @@ DateTime?                                            ExternalSystemBudgetScenari
 string? [MultilineText](50)                          ExternalSystemBudgetScenario.StatusDescription
 bool                                                 ExternalSystemBudgetScenario.Sys_Deactivated
 SyncStatusEnum                                       ExternalSystemBudgetScenario.Enum_SyncStatusId
+int                                                  ExternalSystemClassificationSystem.ExternalSystemClassificationSystemId
+string?                                              ExternalSystemClassificationSystem.ClassificationSystemIdExternal
+string? (50)                                         ExternalSystemClassificationSystem.ExternalId
+short                                                ExternalSystemClassificationSystem.ExternalSystemId
+string? (100)                                        ExternalSystemClassificationSystem.In_Error_FixLink
+string? (250)                                        ExternalSystemClassificationSystem.In_Error_MsgEN
+string? (250)                                        ExternalSystemClassificationSystem.In_Error_MsgNO
+string?                                              ExternalSystemClassificationSystem.In_Error_TechDetail
+string? (40)                                         ExternalSystemClassificationSystem.In_Error_TraceId
+DateTime?                                            ExternalSystemClassificationSystem.In_LastSyncUTC
+string? (100)                                        ExternalSystemClassificationSystem.Out_Error_FixLink
+string? (250)                                        ExternalSystemClassificationSystem.Out_Error_MsgEN
+string? (250)                                        ExternalSystemClassificationSystem.Out_Error_MsgNO
+string?                                              ExternalSystemClassificationSystem.Out_Error_TechDetail
+string? (40)                                         ExternalSystemClassificationSystem.Out_Error_TraceId
+DateTime?                                            ExternalSystemClassificationSystem.Out_LastSyncUTC
+string? [MultilineText](50)                          ExternalSystemClassificationSystem.StatusDescription
+bool                                                 ExternalSystemClassificationSystem.Sys_Deactivated
+SyncStatusEnum                                       ExternalSystemClassificationSystem.Enum_SyncStatusId
+int                                                  ExternalSystemClassificationSystemItem.ExternalSystemClassificationSystemItemId
+string?                                              ExternalSystemClassificationSystemItem.ClassificationSystemItemIdExternal
+string? (50)                                         ExternalSystemClassificationSystemItem.ExternalId
+short                                                ExternalSystemClassificationSystemItem.ExternalSystemId
+string? (100)                                        ExternalSystemClassificationSystemItem.In_Error_FixLink
+string? (250)                                        ExternalSystemClassificationSystemItem.In_Error_MsgEN
+string? (250)                                        ExternalSystemClassificationSystemItem.In_Error_MsgNO
+string?                                              ExternalSystemClassificationSystemItem.In_Error_TechDetail
+string? (40)                                         ExternalSystemClassificationSystemItem.In_Error_TraceId
+DateTime?                                            ExternalSystemClassificationSystemItem.In_LastSyncUTC
+string? (100)                                        ExternalSystemClassificationSystemItem.Out_Error_FixLink
+string? (250)                                        ExternalSystemClassificationSystemItem.Out_Error_MsgEN
+string? (250)                                        ExternalSystemClassificationSystemItem.Out_Error_MsgNO
+string?                                              ExternalSystemClassificationSystemItem.Out_Error_TechDetail
+string? (40)                                         ExternalSystemClassificationSystemItem.Out_Error_TraceId
+DateTime?                                            ExternalSystemClassificationSystemItem.Out_LastSyncUTC
+string? [MultilineText](50)                          ExternalSystemClassificationSystemItem.StatusDescription
+bool                                                 ExternalSystemClassificationSystemItem.Sys_Deactivated
+SyncStatusEnum                                       ExternalSystemClassificationSystemItem.Enum_SyncStatusId
 int                                                  ExternalSystemContact.ExternalSystemContactId
 string?                                              ExternalSystemContact.ContactIdExternal
 string? (50)                                         ExternalSystemContact.ExternalId
@@ -4191,6 +4268,7 @@ bool                                                 PostalPlaceMunicipality.Sys
 bool                                                 PostalPlaceMunicipality.Sys_Incomplete
 int                                                  Product.ProductId
 string?                                              Product.ProductIdExternal
+string?                                              Product.ClassificationSystemItemIdExternal
 string?                                              Product.Cost_ProjectAccountIdExternal
 string?                                              Product.Income_ProjectAccountIdExternal
 string?                                              Product.IndustryTypeIdExternal
@@ -4883,6 +4961,7 @@ bool                                                 ProductSeries.Sys_Deactivat
 bool                                                 ProductSeries.Sys_Historic
 bool                                                 ProductSeries.Sys_Incomplete
 int                                                  ProductStructure.ProductStructureId
+string?                                              ProductStructure.ClassificationSystemItemIdExternal
 string?                                              ProductStructure.ParentProductIdExternal
 string?                                              ProductStructure.ProductIdExternal
 string?                                              ProductStructure.ProductSearchIdExternal
