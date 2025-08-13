@@ -320,7 +320,9 @@ short?                                               Attachment.AttachmentCatego
 string? (500)                                        Attachment.AzureBlobId
 string [MultilineText](1024)                         Attachment.Description
 string? (64)                                         Attachment.FileChecksum
+DateTime?                                            Attachment.FileLastModifiedUTC
 string (250)                                         Attachment.FileName
+int?                                                 Attachment.FileSizeBytes
 bool                                                 Attachment.Internal
 int?                                                 Attachment.ProductId
 short                                                Attachment.RevisionNumber
@@ -333,6 +335,7 @@ bool                                                 Attachment.Sys_Historic
 bool                                                 Attachment.Sys_Incomplete
 string? (500)                                        Attachment.Uri
 bool                                                 Attachment.UseCommonBlobStore
+DateTime?                                            Attachment.WriteTokenValidUntilUTC
 IndustryTypeEnum                                     Attachment.Enum_IndustryTypeId
 MOM_TypeEnum?                                        Attachment.Enum_MOM_TypeId
 bool                                                 Attachment.Ext_Sys_Deactivated
@@ -785,6 +788,7 @@ DateTime                                             CreditScore.EvaluationDate
 int?                                                 CreditScore.NumericScore
 bool                                                 CreditScore.PaymentRemarks
 string? (10)                                         CreditScore.Score
+int?                                                 CreditScore.SustainabilityScore
 bool                                                 CreditScore.Sys_Deactivated
 bool                                                 CreditScore.Sys_Historic
 bool                                                 CreditScore.Sys_Incomplete
