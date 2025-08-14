@@ -5880,6 +5880,7 @@ string? (512)                                        Settings_Main.Appointment_O
 int?                                                 Settings_Main.Appointment_ReminderLeadHours
 string? (512)                                        Settings_Main.Appointment_ReminderMessage
 string? (50)                                         Settings_Main.Branch
+bool?                                                Settings_Main.ClassificationSystemId
 string? (100)                                        Settings_Main.ClientName
 string? (2)                                          Settings_Main.CountryId
 string? (2)                                          Settings_Main.DefaultLanguage
