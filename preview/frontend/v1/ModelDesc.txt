@@ -5319,7 +5319,7 @@ bool                                                  ProjectPurchaseAgreement.S
 short                                                 ProjectReport.ProjectReportId
 string?                                               ProjectReport.ProjectReportIdExternal
 string [MultilineText](100)                           ProjectReport.Description
-short                                                 ProjectReport.ProjectReportNumber
+short?                                                ProjectReport.ProjectReportNumber
 bool                                                  ProjectReport.Sys_Deactivated
 bool                                                  ProjectReport.Sys_Historic
 bool                                                  ProjectReport.Sys_Incomplete
