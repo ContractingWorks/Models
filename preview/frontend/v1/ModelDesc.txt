@@ -4147,6 +4147,7 @@ int                                                   Offer.OfferId
 string?                                               Offer.OfferIdExternal
 string?                                               Offer.AddressIdExternal
 string?                                               Offer.AssignmentIdExternal
+string?                                               Offer.ClassificationSystemIdExternal
 string?                                               Offer.CustomerIdExternal
 string?                                               Offer.Default_ContactIdExternal
 string?                                               Offer.DepartmentIdExternal
@@ -4158,6 +4159,7 @@ string?                                               Offer.ServiceAgreementIdEx
 int?                                                  Offer.AddressId
 DateTime?                                             Offer.ApprovedUTC
 int?                                                  Offer.AssignmentId
+int?                                                  Offer.ClassificationSystemId
 DateTime?                                             Offer.CompletedUTC
 int?                                                  Offer.CustomerId
 string? (200)                                         Offer.CustomerReference
@@ -4170,6 +4172,7 @@ string? (200)                                         Offer.ExternalReference
 decimal?                                              Offer.FixedPrice
 string? (200)                                         Offer.InternalReference
 string? [MultilineText]                               Offer.InvoiceComment
+bool                                                  Offer.IsCalculation
 string? [MultilineText]                               Offer.Note
 string? (50)                                          Offer.OfferName
 int?                                                  Offer.OfferNumber
@@ -6014,6 +6017,7 @@ bool                                                  Settings_Employee.Sys_Deac
 bool                                                  Settings_Employee.Sys_Historic
 bool                                                  Settings_Employee.Sys_Incomplete
 byte                                                  Settings_Main.Settings_MainId
+string?                                               Settings_Main.ClassificationSystemIdExternal
 string?                                               Settings_Main.DepartmentIdExternal
 string?                                               Settings_Main.IndustryTypeIdExternal
 string?                                               Settings_Main.InvoiceTemplateIdExternal
@@ -6029,7 +6033,7 @@ string? (512)                                         Settings_Main.Appointment_
 int?                                                  Settings_Main.Appointment_ReminderLeadHours
 string? (512)                                         Settings_Main.Appointment_ReminderMessage
 string? (50)                                          Settings_Main.Branch
-bool?                                                 Settings_Main.ClassificationSystemId
+int?                                                  Settings_Main.ClassificationSystemId
 string? (100)                                         Settings_Main.ClientName
 string? (2)                                           Settings_Main.CountryId
 string? (2)                                           Settings_Main.DefaultLanguage
