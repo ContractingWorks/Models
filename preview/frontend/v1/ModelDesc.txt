@@ -1105,6 +1105,7 @@ string?                                               Employee.EmployeeIdExterna
 string?                                               Employee.DepartmentIdExternal
 string?                                               Employee.EmployeeInvoiceCategoryIdExternal
 string?                                               Employee.JobCategoryIdExternal
+string?                                               Employee.Manager_EmployeeIdExternal
 bool?                                                 Employee.ApproveWageRequired
 bool                                                  Employee.CW_Owned
 DateTime?                                             Employee.DateOfBirth
@@ -1125,6 +1126,7 @@ short?                                                Employee.JobCategoryId
 DateTime?                                             Employee.JobCategoryStartDate
 decimal?                                              Employee.JobPercent
 string (50)                                           Employee.LastName
+int?                                                  Employee.Manager_EmployeeId
 string? (50)                                          Employee.NationalIdNumber
 string? [MultilineText]                               Employee.Note
 string? [Phone](50)                                   Employee.PhoneMobile
@@ -6056,7 +6058,9 @@ byte                                                  Settings_Main.ProjectPerio
 int?                                                  Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                                  Settings_Main.Require2FAForAllUsers
 bool                                                  Settings_Main.ROTEnabled
+bool                                                  Settings_Main.Service_ApprovalInvoice_By_CaseHandler
 bool                                                  Settings_Main.Service_ApprovalInvoice_To_Wage
+bool                                                  Settings_Main.Service_ApprovalWage_By_Manager
 byte?                                                 Settings_Main.ServiceContract_DueLeadDays
 byte?                                                 Settings_Main.ServiceContract_DueLeadDaysForNotification
 short?                                                Settings_Main.Standard_SupplierIndustryTypeId
