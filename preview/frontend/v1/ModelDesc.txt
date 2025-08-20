@@ -3722,6 +3722,7 @@ bool                                                  InvoiceLine_Session.Update
 short?                                                InvoiceLine_Session.UpdateStatus
 bool                                                  InvoiceLine_Session.UpdateStock
 InvoiceLineRuleTypeDetailEnum?                        InvoiceLine_Session.Enum_InvoiceLineRuleTypeDetailId
+ROTCategoryEnum?                                      InvoiceLine_Session.Enum_ROTCategoryId
 short                                                 InvoiceLineRule.InvoiceLineRuleId
 string?                                               InvoiceLineRule.InvoiceLineRuleIdExternal
 string?                                               InvoiceLineRule.Cost_ProjectAccountIdExternal
