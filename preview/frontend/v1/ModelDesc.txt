@@ -6714,7 +6714,7 @@ int?                                                  Tariff.TariffGroupId
 short?                                                Tariff.UnitId
 int                                                   TariffAdjustment.TariffAdjustmentId
 string (20)                                           TariffAdjustment.Code
-string [MultilineText](100)                           TariffAdjustment.Description
+string [MultilineText](250)                           TariffAdjustment.Description
 bool                                                  TariffAdjustment.IsEditable
 decimal                                               TariffAdjustment.Percentage
 bool                                                  TariffAdjustment.Sys_Deactivated
