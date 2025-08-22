@@ -546,6 +546,7 @@ int                                                   CalculationLine.Calculatio
 string?                                               CalculationLine.ClassificationSystemItemIdExternal
 string?                                               CalculationLine.ProductIdExternal
 string?                                               CalculationLine.ProductSearchIdExternal
+string?                                               CalculationLine.ProductSeriesIdExternal
 string?                                               CalculationLine.ProductSupplierIndustryTypeIdExternal
 string?                                               CalculationLine.SupplierIndustryTypeIdExternal
 string?                                               CalculationLine.WageCodeReportCategoryIdExternal
@@ -2370,6 +2371,120 @@ DateTime?                                             ExternalSystemProductAgree
 string? [MultilineText](50)                           ExternalSystemProductAgreementGroupLine.StatusDescription
 bool                                                  ExternalSystemProductAgreementGroupLine.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemProductAgreementGroupLine.Enum_SyncStatusId
+int                                                   ExternalSystemProductClass.ExternalSystemProductClassId
+string?                                               ExternalSystemProductClass.ProductClassIdExternal
+string? (50)                                          ExternalSystemProductClass.ExternalId
+short                                                 ExternalSystemProductClass.ExternalSystemId
+string? (100)                                         ExternalSystemProductClass.In_Error_FixLink
+string? (250)                                         ExternalSystemProductClass.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductClass.In_Error_MsgNO
+string?                                               ExternalSystemProductClass.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductClass.In_Error_TraceId
+DateTime?                                             ExternalSystemProductClass.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductClass.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductClass.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductClass.Out_Error_MsgNO
+string?                                               ExternalSystemProductClass.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductClass.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductClass.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductClass.StatusDescription
+bool                                                  ExternalSystemProductClass.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductClass.Enum_SyncStatusId
+int                                                   ExternalSystemProductClassFeature.ExternalSystemProductClassFeatureId
+string?                                               ExternalSystemProductClassFeature.ProductClassFeatureIdExternal
+string? (50)                                          ExternalSystemProductClassFeature.ExternalId
+short                                                 ExternalSystemProductClassFeature.ExternalSystemId
+string? (100)                                         ExternalSystemProductClassFeature.In_Error_FixLink
+string? (250)                                         ExternalSystemProductClassFeature.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassFeature.In_Error_MsgNO
+string?                                               ExternalSystemProductClassFeature.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassFeature.In_Error_TraceId
+DateTime?                                             ExternalSystemProductClassFeature.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductClassFeature.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductClassFeature.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassFeature.Out_Error_MsgNO
+string?                                               ExternalSystemProductClassFeature.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassFeature.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductClassFeature.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductClassFeature.StatusDescription
+bool                                                  ExternalSystemProductClassFeature.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductClassFeature.Enum_SyncStatusId
+int                                                   ExternalSystemProductClassFeatureListValueUse.ExternalSystemProductClassFeatureListValueUseId
+string?                                               ExternalSystemProductClassFeatureListValueUse.ProductClassFeatureListValueUseIdExternal
+string? (50)                                          ExternalSystemProductClassFeatureListValueUse.ExternalId
+short                                                 ExternalSystemProductClassFeatureListValueUse.ExternalSystemId
+string? (100)                                         ExternalSystemProductClassFeatureListValueUse.In_Error_FixLink
+string? (250)                                         ExternalSystemProductClassFeatureListValueUse.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassFeatureListValueUse.In_Error_MsgNO
+string?                                               ExternalSystemProductClassFeatureListValueUse.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassFeatureListValueUse.In_Error_TraceId
+DateTime?                                             ExternalSystemProductClassFeatureListValueUse.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductClassFeatureListValueUse.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductClassFeatureListValueUse.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassFeatureListValueUse.Out_Error_MsgNO
+string?                                               ExternalSystemProductClassFeatureListValueUse.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassFeatureListValueUse.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductClassFeatureListValueUse.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductClassFeatureListValueUse.StatusDescription
+bool                                                  ExternalSystemProductClassFeatureListValueUse.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductClassFeatureListValueUse.Enum_SyncStatusId
+short                                                 ExternalSystemProductClassType.ExternalSystemProductClassTypeId
+string?                                               ExternalSystemProductClassType.ProductClassTypeIdExternal
+string? (50)                                          ExternalSystemProductClassType.ExternalId
+short                                                 ExternalSystemProductClassType.ExternalSystemId
+string? (100)                                         ExternalSystemProductClassType.In_Error_FixLink
+string? (250)                                         ExternalSystemProductClassType.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassType.In_Error_MsgNO
+string?                                               ExternalSystemProductClassType.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassType.In_Error_TraceId
+DateTime?                                             ExternalSystemProductClassType.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductClassType.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductClassType.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassType.Out_Error_MsgNO
+string?                                               ExternalSystemProductClassType.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassType.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductClassType.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductClassType.StatusDescription
+bool                                                  ExternalSystemProductClassType.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductClassType.Enum_SyncStatusId
+int                                                   ExternalSystemProductClassUse.ExternalSystemProductClassUseId
+string?                                               ExternalSystemProductClassUse.ProductClassUseIdExternal
+string? (50)                                          ExternalSystemProductClassUse.ExternalId
+short                                                 ExternalSystemProductClassUse.ExternalSystemId
+string? (100)                                         ExternalSystemProductClassUse.In_Error_FixLink
+string? (250)                                         ExternalSystemProductClassUse.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassUse.In_Error_MsgNO
+string?                                               ExternalSystemProductClassUse.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassUse.In_Error_TraceId
+DateTime?                                             ExternalSystemProductClassUse.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductClassUse.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductClassUse.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductClassUse.Out_Error_MsgNO
+string?                                               ExternalSystemProductClassUse.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductClassUse.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductClassUse.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductClassUse.StatusDescription
+bool                                                  ExternalSystemProductClassUse.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductClassUse.Enum_SyncStatusId
+int                                                   ExternalSystemProductFeature.ExternalSystemProductFeatureId
+string?                                               ExternalSystemProductFeature.ProductFeatureIdExternal
+string? (50)                                          ExternalSystemProductFeature.ExternalId
+short                                                 ExternalSystemProductFeature.ExternalSystemId
+string? (100)                                         ExternalSystemProductFeature.In_Error_FixLink
+string? (250)                                         ExternalSystemProductFeature.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeature.In_Error_MsgNO
+string?                                               ExternalSystemProductFeature.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeature.In_Error_TraceId
+DateTime?                                             ExternalSystemProductFeature.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductFeature.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductFeature.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeature.Out_Error_MsgNO
+string?                                               ExternalSystemProductFeature.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeature.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductFeature.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductFeature.StatusDescription
+bool                                                  ExternalSystemProductFeature.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductFeature.Enum_SyncStatusId
 int                                                   ExternalSystemProductFeatureFilter.ExternalSystemProductFeatureFilterId
 string?                                               ExternalSystemProductFeatureFilter.ProductFeatureFilterIdExternal
 string? (50)                                          ExternalSystemProductFeatureFilter.ExternalId
@@ -2408,6 +2523,63 @@ DateTime?                                             ExternalSystemProductFeatu
 string? [MultilineText](50)                           ExternalSystemProductFeatureFilterValue.StatusDescription
 bool                                                  ExternalSystemProductFeatureFilterValue.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemProductFeatureFilterValue.Enum_SyncStatusId
+int                                                   ExternalSystemProductFeatureListValue.ExternalSystemProductFeatureListValueId
+string?                                               ExternalSystemProductFeatureListValue.ProductFeatureListValueIdExternal
+string? (50)                                          ExternalSystemProductFeatureListValue.ExternalId
+short                                                 ExternalSystemProductFeatureListValue.ExternalSystemId
+string? (100)                                         ExternalSystemProductFeatureListValue.In_Error_FixLink
+string? (250)                                         ExternalSystemProductFeatureListValue.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeatureListValue.In_Error_MsgNO
+string?                                               ExternalSystemProductFeatureListValue.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeatureListValue.In_Error_TraceId
+DateTime?                                             ExternalSystemProductFeatureListValue.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductFeatureListValue.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductFeatureListValue.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeatureListValue.Out_Error_MsgNO
+string?                                               ExternalSystemProductFeatureListValue.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeatureListValue.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductFeatureListValue.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductFeatureListValue.StatusDescription
+bool                                                  ExternalSystemProductFeatureListValue.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductFeatureListValue.Enum_SyncStatusId
+int                                                   ExternalSystemProductFeatureUse.ExternalSystemProductFeatureUseId
+string?                                               ExternalSystemProductFeatureUse.ProductFeatureUseIdExternal
+string? (50)                                          ExternalSystemProductFeatureUse.ExternalId
+short                                                 ExternalSystemProductFeatureUse.ExternalSystemId
+string? (100)                                         ExternalSystemProductFeatureUse.In_Error_FixLink
+string? (250)                                         ExternalSystemProductFeatureUse.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeatureUse.In_Error_MsgNO
+string?                                               ExternalSystemProductFeatureUse.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeatureUse.In_Error_TraceId
+DateTime?                                             ExternalSystemProductFeatureUse.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductFeatureUse.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductFeatureUse.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductFeatureUse.Out_Error_MsgNO
+string?                                               ExternalSystemProductFeatureUse.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductFeatureUse.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductFeatureUse.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductFeatureUse.StatusDescription
+bool                                                  ExternalSystemProductFeatureUse.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductFeatureUse.Enum_SyncStatusId
+int                                                   ExternalSystemProductGroup.ExternalSystemProductGroupId
+string?                                               ExternalSystemProductGroup.ProductGroupIdExternal
+string? (50)                                          ExternalSystemProductGroup.ExternalId
+short                                                 ExternalSystemProductGroup.ExternalSystemId
+string? (100)                                         ExternalSystemProductGroup.In_Error_FixLink
+string? (250)                                         ExternalSystemProductGroup.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductGroup.In_Error_MsgNO
+string?                                               ExternalSystemProductGroup.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductGroup.In_Error_TraceId
+DateTime?                                             ExternalSystemProductGroup.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductGroup.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductGroup.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductGroup.Out_Error_MsgNO
+string?                                               ExternalSystemProductGroup.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductGroup.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductGroup.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductGroup.StatusDescription
+bool                                                  ExternalSystemProductGroup.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductGroup.Enum_SyncStatusId
 int                                                   ExternalSystemProductImport2.ExternalSystemProductImport2Id
 string?                                               ExternalSystemProductImport2.ProductImport2IdExternal
 string? (50)                                          ExternalSystemProductImport2.ExternalId
@@ -2503,6 +2675,120 @@ DateTime?                                             ExternalSystemProductSearc
 string? [MultilineText](50)                           ExternalSystemProductSearch.StatusDescription
 bool                                                  ExternalSystemProductSearch.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemProductSearch.Enum_SyncStatusId
+int                                                   ExternalSystemProductSearchGroup.ExternalSystemProductSearchGroupId
+string?                                               ExternalSystemProductSearchGroup.ProductSearchGroupIdExternal
+string? (50)                                          ExternalSystemProductSearchGroup.ExternalId
+short                                                 ExternalSystemProductSearchGroup.ExternalSystemId
+string? (100)                                         ExternalSystemProductSearchGroup.In_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchGroup.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchGroup.In_Error_MsgNO
+string?                                               ExternalSystemProductSearchGroup.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchGroup.In_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchGroup.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductSearchGroup.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchGroup.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchGroup.Out_Error_MsgNO
+string?                                               ExternalSystemProductSearchGroup.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchGroup.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchGroup.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductSearchGroup.StatusDescription
+bool                                                  ExternalSystemProductSearchGroup.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductSearchGroup.Enum_SyncStatusId
+int                                                   ExternalSystemProductSearchGroupSeries.ExternalSystemProductSearchGroupSeriesId
+string?                                               ExternalSystemProductSearchGroupSeries.ProductSearchGroupSeriesIdExternal
+string? (50)                                          ExternalSystemProductSearchGroupSeries.ExternalId
+short                                                 ExternalSystemProductSearchGroupSeries.ExternalSystemId
+string? (100)                                         ExternalSystemProductSearchGroupSeries.In_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchGroupSeries.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchGroupSeries.In_Error_MsgNO
+string?                                               ExternalSystemProductSearchGroupSeries.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchGroupSeries.In_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchGroupSeries.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductSearchGroupSeries.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchGroupSeries.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchGroupSeries.Out_Error_MsgNO
+string?                                               ExternalSystemProductSearchGroupSeries.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchGroupSeries.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchGroupSeries.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductSearchGroupSeries.StatusDescription
+bool                                                  ExternalSystemProductSearchGroupSeries.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductSearchGroupSeries.Enum_SyncStatusId
+int                                                   ExternalSystemProductSearchSeriesProduct.ExternalSystemProductSearchSeriesProductId
+string?                                               ExternalSystemProductSearchSeriesProduct.ProductSearchSeriesProductIdExternal
+string? (50)                                          ExternalSystemProductSearchSeriesProduct.ExternalId
+short                                                 ExternalSystemProductSearchSeriesProduct.ExternalSystemId
+string? (100)                                         ExternalSystemProductSearchSeriesProduct.In_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchSeriesProduct.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchSeriesProduct.In_Error_MsgNO
+string?                                               ExternalSystemProductSearchSeriesProduct.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchSeriesProduct.In_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchSeriesProduct.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductSearchSeriesProduct.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductSearchSeriesProduct.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductSearchSeriesProduct.Out_Error_MsgNO
+string?                                               ExternalSystemProductSearchSeriesProduct.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductSearchSeriesProduct.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductSearchSeriesProduct.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductSearchSeriesProduct.StatusDescription
+bool                                                  ExternalSystemProductSearchSeriesProduct.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductSearchSeriesProduct.Enum_SyncStatusId
+int                                                   ExternalSystemProductSeries.ExternalSystemProductSeriesId
+string?                                               ExternalSystemProductSeries.ProductSeriesIdExternal
+string? (50)                                          ExternalSystemProductSeries.ExternalId
+short                                                 ExternalSystemProductSeries.ExternalSystemId
+string? (100)                                         ExternalSystemProductSeries.In_Error_FixLink
+string? (250)                                         ExternalSystemProductSeries.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductSeries.In_Error_MsgNO
+string?                                               ExternalSystemProductSeries.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductSeries.In_Error_TraceId
+DateTime?                                             ExternalSystemProductSeries.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductSeries.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductSeries.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductSeries.Out_Error_MsgNO
+string?                                               ExternalSystemProductSeries.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductSeries.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductSeries.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductSeries.StatusDescription
+bool                                                  ExternalSystemProductSeries.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductSeries.Enum_SyncStatusId
+int                                                   ExternalSystemProductStructure.ExternalSystemProductStructureId
+string?                                               ExternalSystemProductStructure.ProductStructureIdExternal
+string? (50)                                          ExternalSystemProductStructure.ExternalId
+short                                                 ExternalSystemProductStructure.ExternalSystemId
+string? (100)                                         ExternalSystemProductStructure.In_Error_FixLink
+string? (250)                                         ExternalSystemProductStructure.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductStructure.In_Error_MsgNO
+string?                                               ExternalSystemProductStructure.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductStructure.In_Error_TraceId
+DateTime?                                             ExternalSystemProductStructure.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductStructure.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductStructure.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductStructure.Out_Error_MsgNO
+string?                                               ExternalSystemProductStructure.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductStructure.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductStructure.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductStructure.StatusDescription
+bool                                                  ExternalSystemProductStructure.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductStructure.Enum_SyncStatusId
+int                                                   ExternalSystemProductStructureFolder.ExternalSystemProductStructureFolderId
+string?                                               ExternalSystemProductStructureFolder.ProductStructureFolderIdExternal
+string? (50)                                          ExternalSystemProductStructureFolder.ExternalId
+short                                                 ExternalSystemProductStructureFolder.ExternalSystemId
+string? (100)                                         ExternalSystemProductStructureFolder.In_Error_FixLink
+string? (250)                                         ExternalSystemProductStructureFolder.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductStructureFolder.In_Error_MsgNO
+string?                                               ExternalSystemProductStructureFolder.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductStructureFolder.In_Error_TraceId
+DateTime?                                             ExternalSystemProductStructureFolder.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductStructureFolder.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductStructureFolder.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductStructureFolder.Out_Error_MsgNO
+string?                                               ExternalSystemProductStructureFolder.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductStructureFolder.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductStructureFolder.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductStructureFolder.StatusDescription
+bool                                                  ExternalSystemProductStructureFolder.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductStructureFolder.Enum_SyncStatusId
 int                                                   ExternalSystemProductSupplierIndustryType.ExternalSystemProductSupplierIndustryTypeId
 string?                                               ExternalSystemProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string? (50)                                          ExternalSystemProductSupplierIndustryType.ExternalId
@@ -2522,6 +2808,25 @@ DateTime?                                             ExternalSystemProductSuppl
 string? [MultilineText](50)                           ExternalSystemProductSupplierIndustryType.StatusDescription
 bool                                                  ExternalSystemProductSupplierIndustryType.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemProductSupplierIndustryType.Enum_SyncStatusId
+int                                                   ExternalSystemProductSync.ExternalSystemProductSyncId
+string?                                               ExternalSystemProductSync.ProductSyncIdExternal
+string? (50)                                          ExternalSystemProductSync.ExternalId
+short                                                 ExternalSystemProductSync.ExternalSystemId
+string? (100)                                         ExternalSystemProductSync.In_Error_FixLink
+string? (250)                                         ExternalSystemProductSync.In_Error_MsgEN
+string? (250)                                         ExternalSystemProductSync.In_Error_MsgNO
+string?                                               ExternalSystemProductSync.In_Error_TechDetail
+string? (40)                                          ExternalSystemProductSync.In_Error_TraceId
+DateTime?                                             ExternalSystemProductSync.In_LastSyncUTC
+string? (100)                                         ExternalSystemProductSync.Out_Error_FixLink
+string? (250)                                         ExternalSystemProductSync.Out_Error_MsgEN
+string? (250)                                         ExternalSystemProductSync.Out_Error_MsgNO
+string?                                               ExternalSystemProductSync.Out_Error_TechDetail
+string? (40)                                          ExternalSystemProductSync.Out_Error_TraceId
+DateTime?                                             ExternalSystemProductSync.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemProductSync.StatusDescription
+bool                                                  ExternalSystemProductSync.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemProductSync.Enum_SyncStatusId
 int                                                   ExternalSystemProject.ExternalSystemProjectId
 string?                                               ExternalSystemProject.ProjectIdExternal
 string? (50)                                          ExternalSystemProject.ExternalId
@@ -3092,6 +3397,25 @@ DateTime?                                             ExternalSystemSupplierInvo
 string? [MultilineText](50)                           ExternalSystemSupplierInvoiceLine.StatusDescription
 bool                                                  ExternalSystemSupplierInvoiceLine.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemSupplierInvoiceLine.Enum_SyncStatusId
+short                                                 ExternalSystemUnit.ExternalSystemUnitId
+string?                                               ExternalSystemUnit.UnitIdExternal
+string? (50)                                          ExternalSystemUnit.ExternalId
+short                                                 ExternalSystemUnit.ExternalSystemId
+string? (100)                                         ExternalSystemUnit.In_Error_FixLink
+string? (250)                                         ExternalSystemUnit.In_Error_MsgEN
+string? (250)                                         ExternalSystemUnit.In_Error_MsgNO
+string?                                               ExternalSystemUnit.In_Error_TechDetail
+string? (40)                                          ExternalSystemUnit.In_Error_TraceId
+DateTime?                                             ExternalSystemUnit.In_LastSyncUTC
+string? (100)                                         ExternalSystemUnit.Out_Error_FixLink
+string? (250)                                         ExternalSystemUnit.Out_Error_MsgEN
+string? (250)                                         ExternalSystemUnit.Out_Error_MsgNO
+string?                                               ExternalSystemUnit.Out_Error_TechDetail
+string? (40)                                          ExternalSystemUnit.Out_Error_TraceId
+DateTime?                                             ExternalSystemUnit.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemUnit.StatusDescription
+bool                                                  ExternalSystemUnit.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemUnit.Enum_SyncStatusId
 int                                                   ExternalSystemUserRole.ExternalSystemUserRoleId
 string?                                               ExternalSystemUserRole.UserRoleIdExternal
 string? (50)                                          ExternalSystemUserRole.ExternalId
@@ -4345,6 +4669,7 @@ string?                                               Product.POSPurchase_VATFre
 string?                                               Product.POSPurchase_VATRequired_LedgerAccountIdExternal
 string?                                               Product.POSSale_VATFree_LedgerAccountIdExternal
 string?                                               Product.POSSale_VATRequired_LedgerAccountIdExternal
+string?                                               Product.ProductSeriesIdExternal
 string?                                               Product.Purchase_VATFree_LedgerAccountIdExternal
 string?                                               Product.Purchase_VATRequired_LedgerAccountIdExternal
 string?                                               Product.Sale_VATFree_LedgerAccountIdExternal
@@ -4553,6 +4878,9 @@ bool                                                  ProductCampaign.Sys_Deacti
 bool                                                  ProductCampaign.Sys_Historic
 bool                                                  ProductCampaign.Sys_Incomplete
 int                                                   ProductClass.ProductClassId
+string?                                               ProductClass.ProductClassIdExternal
+string?                                               ProductClass.ProductClassTypeIdExternal
+string?                                               ProductClass.ProductGroupIdExternal
 string? (20)                                          ProductClass.Code
 string [MultilineText](100)                           ProductClass.Description
 bool                                                  ProductClass.ETIM
@@ -4562,7 +4890,28 @@ bool                                                  ProductClass.Sys_Deactivat
 bool                                                  ProductClass.Sys_Historic
 bool                                                  ProductClass.Sys_Incomplete
 byte                                                  ProductClass.Version
+bool                                                  ProductClass.Ext_Sys_Deactivated
+string                                                ProductClass.Ext_ExternalId
+string                                                ProductClass.Ext_In_Error_MsgNO
+string                                                ProductClass.Ext_In_Error_MsgEN
+string                                                ProductClass.Ext_In_Error_TraceId
+string                                                ProductClass.Ext_In_Error_TechDetail
+string                                                ProductClass.Ext_In_Error_FixLink
+bool                                                  ProductClass.Ext_In_Error_SetOK
+DateTime                                              ProductClass.Ext_In_LastSyncUTC
+string                                                ProductClass.Ext_Out_Error_MsgNO
+string                                                ProductClass.Ext_Out_Error_MsgEN
+string                                                ProductClass.Ext_Out_Error_TraceId
+string                                                ProductClass.Ext_Out_Error_TechDetail
+string                                                ProductClass.Ext_Out_Error_FixLink
+bool                                                  ProductClass.Ext_Out_Error_SetOK
+DateTime                                              ProductClass.Ext_Out_LastSyncUTC
+--> ExternalSystemProductClass[]                      ProductClass.ExternalSystemProductClasses
 int                                                   ProductClassFeature.ProductClassFeatureId
+string?                                               ProductClassFeature.ProductClassFeatureIdExternal
+string?                                               ProductClassFeature.ProductClassIdExternal
+string?                                               ProductClassFeature.ProductFeatureIdExternal
+string?                                               ProductClassFeature.UnitIdExternal
 int                                                   ProductClassFeature.ProductClassId
 int                                                   ProductClassFeature.ProductFeatureId
 int                                                   ProductClassFeature.SortOrder
@@ -4571,20 +4920,77 @@ bool                                                  ProductClassFeature.Sys_Hi
 bool                                                  ProductClassFeature.Sys_Incomplete
 short?                                                ProductClassFeature.UnitId
 ValueTypeEnum                                         ProductClassFeature.Enum_ValueTypeId
+bool                                                  ProductClassFeature.Ext_Sys_Deactivated
+string                                                ProductClassFeature.Ext_ExternalId
+string                                                ProductClassFeature.Ext_In_Error_MsgNO
+string                                                ProductClassFeature.Ext_In_Error_MsgEN
+string                                                ProductClassFeature.Ext_In_Error_TraceId
+string                                                ProductClassFeature.Ext_In_Error_TechDetail
+string                                                ProductClassFeature.Ext_In_Error_FixLink
+bool                                                  ProductClassFeature.Ext_In_Error_SetOK
+DateTime                                              ProductClassFeature.Ext_In_LastSyncUTC
+string                                                ProductClassFeature.Ext_Out_Error_MsgNO
+string                                                ProductClassFeature.Ext_Out_Error_MsgEN
+string                                                ProductClassFeature.Ext_Out_Error_TraceId
+string                                                ProductClassFeature.Ext_Out_Error_TechDetail
+string                                                ProductClassFeature.Ext_Out_Error_FixLink
+bool                                                  ProductClassFeature.Ext_Out_Error_SetOK
+DateTime                                              ProductClassFeature.Ext_Out_LastSyncUTC
+--> ExternalSystemProductClassFeature[]               ProductClassFeature.ExternalSystemProductClassFeatures
 int                                                   ProductClassFeatureListValueUse.ProductClassFeatureListValueUseId
+string?                                               ProductClassFeatureListValueUse.ProductClassFeatureListValueUseIdExternal
+string?                                               ProductClassFeatureListValueUse.ProductClassFeatureIdExternal
+string?                                               ProductClassFeatureListValueUse.ProductFeatureListValueIdExternal
 int                                                   ProductClassFeatureListValueUse.ProductClassFeatureId
 int                                                   ProductClassFeatureListValueUse.ProductFeatureListValueId
 int                                                   ProductClassFeatureListValueUse.SortOrder
 bool                                                  ProductClassFeatureListValueUse.Sys_Deactivated
 bool                                                  ProductClassFeatureListValueUse.Sys_Historic
 bool                                                  ProductClassFeatureListValueUse.Sys_Incomplete
+bool                                                  ProductClassFeatureListValueUse.Ext_Sys_Deactivated
+string                                                ProductClassFeatureListValueUse.Ext_ExternalId
+string                                                ProductClassFeatureListValueUse.Ext_In_Error_MsgNO
+string                                                ProductClassFeatureListValueUse.Ext_In_Error_MsgEN
+string                                                ProductClassFeatureListValueUse.Ext_In_Error_TraceId
+string                                                ProductClassFeatureListValueUse.Ext_In_Error_TechDetail
+string                                                ProductClassFeatureListValueUse.Ext_In_Error_FixLink
+bool                                                  ProductClassFeatureListValueUse.Ext_In_Error_SetOK
+DateTime                                              ProductClassFeatureListValueUse.Ext_In_LastSyncUTC
+string                                                ProductClassFeatureListValueUse.Ext_Out_Error_MsgNO
+string                                                ProductClassFeatureListValueUse.Ext_Out_Error_MsgEN
+string                                                ProductClassFeatureListValueUse.Ext_Out_Error_TraceId
+string                                                ProductClassFeatureListValueUse.Ext_Out_Error_TechDetail
+string                                                ProductClassFeatureListValueUse.Ext_Out_Error_FixLink
+bool                                                  ProductClassFeatureListValueUse.Ext_Out_Error_SetOK
+DateTime                                              ProductClassFeatureListValueUse.Ext_Out_LastSyncUTC
+--> ExternalSystemProductClassFeatureListValueUse[]   ProductClassFeatureListValueUse.ExternalSystemProductClassFeatureListValueUses
 short                                                 ProductClassType.ProductClassTypeId
+string?                                               ProductClassType.ProductClassTypeIdExternal
 string [MultilineText](100)                           ProductClassType.Description
 bool                                                  ProductClassType.IsCustom
 bool                                                  ProductClassType.Sys_Deactivated
 bool                                                  ProductClassType.Sys_Historic
 bool                                                  ProductClassType.Sys_Incomplete
+bool                                                  ProductClassType.Ext_Sys_Deactivated
+string                                                ProductClassType.Ext_ExternalId
+string                                                ProductClassType.Ext_In_Error_MsgNO
+string                                                ProductClassType.Ext_In_Error_MsgEN
+string                                                ProductClassType.Ext_In_Error_TraceId
+string                                                ProductClassType.Ext_In_Error_TechDetail
+string                                                ProductClassType.Ext_In_Error_FixLink
+bool                                                  ProductClassType.Ext_In_Error_SetOK
+DateTime                                              ProductClassType.Ext_In_LastSyncUTC
+string                                                ProductClassType.Ext_Out_Error_MsgNO
+string                                                ProductClassType.Ext_Out_Error_MsgEN
+string                                                ProductClassType.Ext_Out_Error_TraceId
+string                                                ProductClassType.Ext_Out_Error_TechDetail
+string                                                ProductClassType.Ext_Out_Error_FixLink
+bool                                                  ProductClassType.Ext_Out_Error_SetOK
+DateTime                                              ProductClassType.Ext_Out_LastSyncUTC
+--> ExternalSystemProductClassType[]                  ProductClassType.ExternalSystemProductClassTypes
 int                                                   ProductClassUse.ProductClassUseId
+string?                                               ProductClassUse.ProductClassUseIdExternal
+string?                                               ProductClassUse.ProductClassIdExternal
 string?                                               ProductClassUse.ProductIdExternal
 bool?                                                 ProductClassUse.Inactive
 int                                                   ProductClassUse.ProductClassId
@@ -4592,6 +4998,23 @@ int                                                   ProductClassUse.ProductId
 bool                                                  ProductClassUse.Sys_Deactivated
 bool                                                  ProductClassUse.Sys_Historic
 bool                                                  ProductClassUse.Sys_Incomplete
+bool                                                  ProductClassUse.Ext_Sys_Deactivated
+string                                                ProductClassUse.Ext_ExternalId
+string                                                ProductClassUse.Ext_In_Error_MsgNO
+string                                                ProductClassUse.Ext_In_Error_MsgEN
+string                                                ProductClassUse.Ext_In_Error_TraceId
+string                                                ProductClassUse.Ext_In_Error_TechDetail
+string                                                ProductClassUse.Ext_In_Error_FixLink
+bool                                                  ProductClassUse.Ext_In_Error_SetOK
+DateTime                                              ProductClassUse.Ext_In_LastSyncUTC
+string                                                ProductClassUse.Ext_Out_Error_MsgNO
+string                                                ProductClassUse.Ext_Out_Error_MsgEN
+string                                                ProductClassUse.Ext_Out_Error_TraceId
+string                                                ProductClassUse.Ext_Out_Error_TechDetail
+string                                                ProductClassUse.Ext_Out_Error_FixLink
+bool                                                  ProductClassUse.Ext_Out_Error_SetOK
+DateTime                                              ProductClassUse.Ext_Out_LastSyncUTC
+--> ExternalSystemProductClassUse[]                   ProductClassUse.ExternalSystemProductClassUses
 int                                                   ProductDimensionValue.ProductDimensionValueId
 string?                                               ProductDimensionValue.DimensionValueIdExternal
 string?                                               ProductDimensionValue.ProductIdExternal
@@ -4608,14 +5031,34 @@ bool                                                  ProductExtendedInfo.Sys_In
 string (50)                                           ProductExtendedInfo.Type
 string                                                ProductExtendedInfo.Value
 int                                                   ProductFeature.ProductFeatureId
+string?                                               ProductFeature.ProductFeatureIdExternal
 string? (20)                                          ProductFeature.Code
 string [MultilineText](100)                           ProductFeature.Description
 bool                                                  ProductFeature.ETIM
 bool                                                  ProductFeature.Sys_Deactivated
 bool                                                  ProductFeature.Sys_Historic
 bool                                                  ProductFeature.Sys_Incomplete
+bool                                                  ProductFeature.Ext_Sys_Deactivated
+string                                                ProductFeature.Ext_ExternalId
+string                                                ProductFeature.Ext_In_Error_MsgNO
+string                                                ProductFeature.Ext_In_Error_MsgEN
+string                                                ProductFeature.Ext_In_Error_TraceId
+string                                                ProductFeature.Ext_In_Error_TechDetail
+string                                                ProductFeature.Ext_In_Error_FixLink
+bool                                                  ProductFeature.Ext_In_Error_SetOK
+DateTime                                              ProductFeature.Ext_In_LastSyncUTC
+string                                                ProductFeature.Ext_Out_Error_MsgNO
+string                                                ProductFeature.Ext_Out_Error_MsgEN
+string                                                ProductFeature.Ext_Out_Error_TraceId
+string                                                ProductFeature.Ext_Out_Error_TechDetail
+string                                                ProductFeature.Ext_Out_Error_FixLink
+bool                                                  ProductFeature.Ext_Out_Error_SetOK
+DateTime                                              ProductFeature.Ext_Out_LastSyncUTC
+--> ExternalSystemProductFeature[]                    ProductFeature.ExternalSystemProductFeatures
 int                                                   ProductFeatureFilter.ProductFeatureFilterId
 string?                                               ProductFeatureFilter.ProductFeatureFilterIdExternal
+string?                                               ProductFeatureFilter.ProductClassIdExternal
+string?                                               ProductFeatureFilter.ProductFeatureIdExternal
 string?                                               ProductFeatureFilter.ProductSearchIdExternal
 byte                                                  ProductFeatureFilter.FilterGroupNumber
 int?                                                  ProductFeatureFilter.ProductClassId
@@ -4647,6 +5090,7 @@ DateTime                                              ProductFeatureFilter.Ext_O
 int                                                   ProductFeatureFilterValue.ProductFeatureFilterValueId
 string?                                               ProductFeatureFilterValue.ProductFeatureFilterValueIdExternal
 string?                                               ProductFeatureFilterValue.ProductFeatureFilterIdExternal
+string?                                               ProductFeatureFilterValue.ProductFeatureListValueIdExternal
 int?                                                  ProductFeatureFilterValue.ProductFeatureListValueId
 string? (50)                                          ProductFeatureFilterValue.ProductNumber
 bool                                                  ProductFeatureFilterValue.Sys_Deactivated
@@ -4671,13 +5115,34 @@ bool                                                  ProductFeatureFilterValue.
 DateTime                                              ProductFeatureFilterValue.Ext_Out_LastSyncUTC
 --> ExternalSystemProductFeatureFilterValue[]         ProductFeatureFilterValue.ExternalSystemProductFeatureFilterValues
 int                                                   ProductFeatureListValue.ProductFeatureListValueId
+string?                                               ProductFeatureListValue.ProductFeatureListValueIdExternal
 string? (20)                                          ProductFeatureListValue.Code
 bool                                                  ProductFeatureListValue.ETIM
 bool                                                  ProductFeatureListValue.Sys_Deactivated
 bool                                                  ProductFeatureListValue.Sys_Historic
 bool                                                  ProductFeatureListValue.Sys_Incomplete
 string (100)                                          ProductFeatureListValue.Value
+bool                                                  ProductFeatureListValue.Ext_Sys_Deactivated
+string                                                ProductFeatureListValue.Ext_ExternalId
+string                                                ProductFeatureListValue.Ext_In_Error_MsgNO
+string                                                ProductFeatureListValue.Ext_In_Error_MsgEN
+string                                                ProductFeatureListValue.Ext_In_Error_TraceId
+string                                                ProductFeatureListValue.Ext_In_Error_TechDetail
+string                                                ProductFeatureListValue.Ext_In_Error_FixLink
+bool                                                  ProductFeatureListValue.Ext_In_Error_SetOK
+DateTime                                              ProductFeatureListValue.Ext_In_LastSyncUTC
+string                                                ProductFeatureListValue.Ext_Out_Error_MsgNO
+string                                                ProductFeatureListValue.Ext_Out_Error_MsgEN
+string                                                ProductFeatureListValue.Ext_Out_Error_TraceId
+string                                                ProductFeatureListValue.Ext_Out_Error_TechDetail
+string                                                ProductFeatureListValue.Ext_Out_Error_FixLink
+bool                                                  ProductFeatureListValue.Ext_Out_Error_SetOK
+DateTime                                              ProductFeatureListValue.Ext_Out_LastSyncUTC
+--> ExternalSystemProductFeatureListValue[]           ProductFeatureListValue.ExternalSystemProductFeatureListValues
 int                                                   ProductFeatureUse.ProductFeatureUseId
+string?                                               ProductFeatureUse.ProductFeatureUseIdExternal
+string?                                               ProductFeatureUse.ProductFeatureIdExternal
+string?                                               ProductFeatureUse.ProductFeatureListValueIdExternal
 string?                                               ProductFeatureUse.ProductIdExternal
 int                                                   ProductFeatureUse.ProductFeatureId
 int?                                                  ProductFeatureUse.ProductFeatureListValueId
@@ -4686,7 +5151,27 @@ bool                                                  ProductFeatureUse.Sys_Deac
 bool                                                  ProductFeatureUse.Sys_Historic
 bool                                                  ProductFeatureUse.Sys_Incomplete
 string? (100)                                         ProductFeatureUse.Value
+bool                                                  ProductFeatureUse.Ext_Sys_Deactivated
+string                                                ProductFeatureUse.Ext_ExternalId
+string                                                ProductFeatureUse.Ext_In_Error_MsgNO
+string                                                ProductFeatureUse.Ext_In_Error_MsgEN
+string                                                ProductFeatureUse.Ext_In_Error_TraceId
+string                                                ProductFeatureUse.Ext_In_Error_TechDetail
+string                                                ProductFeatureUse.Ext_In_Error_FixLink
+bool                                                  ProductFeatureUse.Ext_In_Error_SetOK
+DateTime                                              ProductFeatureUse.Ext_In_LastSyncUTC
+string                                                ProductFeatureUse.Ext_Out_Error_MsgNO
+string                                                ProductFeatureUse.Ext_Out_Error_MsgEN
+string                                                ProductFeatureUse.Ext_Out_Error_TraceId
+string                                                ProductFeatureUse.Ext_Out_Error_TechDetail
+string                                                ProductFeatureUse.Ext_Out_Error_FixLink
+bool                                                  ProductFeatureUse.Ext_Out_Error_SetOK
+DateTime                                              ProductFeatureUse.Ext_Out_LastSyncUTC
+--> ExternalSystemProductFeatureUse[]                 ProductFeatureUse.ExternalSystemProductFeatureUses
 int                                                   ProductGroup.ProductGroupId
+string?                                               ProductGroup.ProductGroupIdExternal
+string?                                               ProductGroup.Parent_ProductGroupIdExternal
+string?                                               ProductGroup.ProductClassTypeIdExternal
 string? (20)                                          ProductGroup.Code
 string [MultilineText](100)                           ProductGroup.Description
 bool                                                  ProductGroup.ETIM
@@ -4695,6 +5180,23 @@ short                                                 ProductGroup.ProductClassT
 bool                                                  ProductGroup.Sys_Deactivated
 bool                                                  ProductGroup.Sys_Historic
 bool                                                  ProductGroup.Sys_Incomplete
+bool                                                  ProductGroup.Ext_Sys_Deactivated
+string                                                ProductGroup.Ext_ExternalId
+string                                                ProductGroup.Ext_In_Error_MsgNO
+string                                                ProductGroup.Ext_In_Error_MsgEN
+string                                                ProductGroup.Ext_In_Error_TraceId
+string                                                ProductGroup.Ext_In_Error_TechDetail
+string                                                ProductGroup.Ext_In_Error_FixLink
+bool                                                  ProductGroup.Ext_In_Error_SetOK
+DateTime                                              ProductGroup.Ext_In_LastSyncUTC
+string                                                ProductGroup.Ext_Out_Error_MsgNO
+string                                                ProductGroup.Ext_Out_Error_MsgEN
+string                                                ProductGroup.Ext_Out_Error_TraceId
+string                                                ProductGroup.Ext_Out_Error_TechDetail
+string                                                ProductGroup.Ext_Out_Error_FixLink
+bool                                                  ProductGroup.Ext_Out_Error_SetOK
+DateTime                                              ProductGroup.Ext_Out_LastSyncUTC
+--> ExternalSystemProductGroup[]                      ProductGroup.ExternalSystemProductGroups
 int                                                   ProductImport.ProductImportId
 string?                                               ProductImport.SupplierIndustryTypeIdExternal
 string? (250)                                         ProductImport.FileName
@@ -4964,6 +5466,8 @@ bool                                                  ProductNoteLineBatch.Sys_H
 bool                                                  ProductNoteLineBatch.Sys_Incomplete
 int                                                   ProductSearch.ProductSearchId
 string?                                               ProductSearch.ProductSearchIdExternal
+string?                                               ProductSearch.ProductClassIdExternal
+string?                                               ProductSearch.ProductSearchGroupIdExternal
 string (50)                                           ProductSearch.Name
 int                                                   ProductSearch.ProductClassId
 int                                                   ProductSearch.ProductSearchGroupId
@@ -4989,6 +5493,10 @@ bool                                                  ProductSearch.Ext_Out_Erro
 DateTime                                              ProductSearch.Ext_Out_LastSyncUTC
 --> ExternalSystemProductSearch[]                     ProductSearch.ExternalSystemProductSearchs
 int                                                   ProductSearchGroup.ProductSearchGroupId
+string?                                               ProductSearchGroup.ProductSearchGroupIdExternal
+string?                                               ProductSearchGroup.Default_ProductClassIdExternal
+string?                                               ProductSearchGroup.Default_ProductSeriesIdExternal
+string?                                               ProductSearchGroup.Parent_ProductSearchGroupIdExternal
 int?                                                  ProductSearchGroup.Default_ProductClassId
 int?                                                  ProductSearchGroup.Default_ProductSeriesId
 string (50)                                           ProductSearchGroup.Name
@@ -4999,9 +5507,30 @@ bool                                                  ProductSearchGroup.Sys_Dea
 bool                                                  ProductSearchGroup.Sys_Historic
 bool                                                  ProductSearchGroup.Sys_Incomplete
 IndustryTypeEnum                                      ProductSearchGroup.Enum_IndustryTypeId
+bool                                                  ProductSearchGroup.Ext_Sys_Deactivated
+string                                                ProductSearchGroup.Ext_ExternalId
+string                                                ProductSearchGroup.Ext_In_Error_MsgNO
+string                                                ProductSearchGroup.Ext_In_Error_MsgEN
+string                                                ProductSearchGroup.Ext_In_Error_TraceId
+string                                                ProductSearchGroup.Ext_In_Error_TechDetail
+string                                                ProductSearchGroup.Ext_In_Error_FixLink
+bool                                                  ProductSearchGroup.Ext_In_Error_SetOK
+DateTime                                              ProductSearchGroup.Ext_In_LastSyncUTC
+string                                                ProductSearchGroup.Ext_Out_Error_MsgNO
+string                                                ProductSearchGroup.Ext_Out_Error_MsgEN
+string                                                ProductSearchGroup.Ext_Out_Error_TraceId
+string                                                ProductSearchGroup.Ext_Out_Error_TechDetail
+string                                                ProductSearchGroup.Ext_Out_Error_FixLink
+bool                                                  ProductSearchGroup.Ext_Out_Error_SetOK
+DateTime                                              ProductSearchGroup.Ext_Out_LastSyncUTC
+--> ExternalSystemProductSearchGroup[]                ProductSearchGroup.ExternalSystemProductSearchGroups
 int                                                   ProductSearchGroupSeries.ProductSearchGroupSeriesId
+string?                                               ProductSearchGroupSeries.ProductSearchGroupSeriesIdExternal
 string?                                               ProductSearchGroupSeries.ProductIdExternal
+string?                                               ProductSearchGroupSeries.ProductSearchGroupIdExternal
 string?                                               ProductSearchGroupSeries.ProductSearchIdExternal
+string?                                               ProductSearchGroupSeries.ProductSeriesId_OriginExternal
+string?                                               ProductSearchGroupSeries.ProductSeriesIdExternal
 string? [MultilineText](250)                          ProductSearchGroupSeries.Comment
 bool?                                                 ProductSearchGroupSeries.IsCompatible
 bool?                                                 ProductSearchGroupSeries.IsRedundant
@@ -5014,22 +5543,77 @@ int                                                   ProductSearchGroupSeries.P
 bool                                                  ProductSearchGroupSeries.Sys_Deactivated
 bool                                                  ProductSearchGroupSeries.Sys_Historic
 bool                                                  ProductSearchGroupSeries.Sys_Incomplete
+bool                                                  ProductSearchGroupSeries.Ext_Sys_Deactivated
+string                                                ProductSearchGroupSeries.Ext_ExternalId
+string                                                ProductSearchGroupSeries.Ext_In_Error_MsgNO
+string                                                ProductSearchGroupSeries.Ext_In_Error_MsgEN
+string                                                ProductSearchGroupSeries.Ext_In_Error_TraceId
+string                                                ProductSearchGroupSeries.Ext_In_Error_TechDetail
+string                                                ProductSearchGroupSeries.Ext_In_Error_FixLink
+bool                                                  ProductSearchGroupSeries.Ext_In_Error_SetOK
+DateTime                                              ProductSearchGroupSeries.Ext_In_LastSyncUTC
+string                                                ProductSearchGroupSeries.Ext_Out_Error_MsgNO
+string                                                ProductSearchGroupSeries.Ext_Out_Error_MsgEN
+string                                                ProductSearchGroupSeries.Ext_Out_Error_TraceId
+string                                                ProductSearchGroupSeries.Ext_Out_Error_TechDetail
+string                                                ProductSearchGroupSeries.Ext_Out_Error_FixLink
+bool                                                  ProductSearchGroupSeries.Ext_Out_Error_SetOK
+DateTime                                              ProductSearchGroupSeries.Ext_Out_LastSyncUTC
+--> ExternalSystemProductSearchGroupSeries[]          ProductSearchGroupSeries.ExternalSystemProductSearchGroupSeries
 int                                                   ProductSearchSeriesProduct.ProductSearchSeriesProductId
+string?                                               ProductSearchSeriesProduct.ProductSearchSeriesProductIdExternal
 string?                                               ProductSearchSeriesProduct.ProductIdExternal
 string?                                               ProductSearchSeriesProduct.ProductSearchIdExternal
+string?                                               ProductSearchSeriesProduct.ProductSeriesIdExternal
 int                                                   ProductSearchSeriesProduct.ProductId
 int                                                   ProductSearchSeriesProduct.ProductSearchId
 int                                                   ProductSearchSeriesProduct.ProductSeriesId
 bool                                                  ProductSearchSeriesProduct.Sys_Deactivated
 bool                                                  ProductSearchSeriesProduct.Sys_Historic
 bool                                                  ProductSearchSeriesProduct.Sys_Incomplete
+bool                                                  ProductSearchSeriesProduct.Ext_Sys_Deactivated
+string                                                ProductSearchSeriesProduct.Ext_ExternalId
+string                                                ProductSearchSeriesProduct.Ext_In_Error_MsgNO
+string                                                ProductSearchSeriesProduct.Ext_In_Error_MsgEN
+string                                                ProductSearchSeriesProduct.Ext_In_Error_TraceId
+string                                                ProductSearchSeriesProduct.Ext_In_Error_TechDetail
+string                                                ProductSearchSeriesProduct.Ext_In_Error_FixLink
+bool                                                  ProductSearchSeriesProduct.Ext_In_Error_SetOK
+DateTime                                              ProductSearchSeriesProduct.Ext_In_LastSyncUTC
+string                                                ProductSearchSeriesProduct.Ext_Out_Error_MsgNO
+string                                                ProductSearchSeriesProduct.Ext_Out_Error_MsgEN
+string                                                ProductSearchSeriesProduct.Ext_Out_Error_TraceId
+string                                                ProductSearchSeriesProduct.Ext_Out_Error_TechDetail
+string                                                ProductSearchSeriesProduct.Ext_Out_Error_FixLink
+bool                                                  ProductSearchSeriesProduct.Ext_Out_Error_SetOK
+DateTime                                              ProductSearchSeriesProduct.Ext_Out_LastSyncUTC
+--> ExternalSystemProductSearchSeriesProduct[]        ProductSearchSeriesProduct.ExternalSystemProductSearchSeriesProducts
 int                                                   ProductSeries.ProductSeriesId
+string?                                               ProductSeries.ProductSeriesIdExternal
 int?                                                  ProductSeries.ManufacturerId
 string (100)                                          ProductSeries.Name
 bool                                                  ProductSeries.Sys_Deactivated
 bool                                                  ProductSeries.Sys_Historic
 bool                                                  ProductSeries.Sys_Incomplete
+bool                                                  ProductSeries.Ext_Sys_Deactivated
+string                                                ProductSeries.Ext_ExternalId
+string                                                ProductSeries.Ext_In_Error_MsgNO
+string                                                ProductSeries.Ext_In_Error_MsgEN
+string                                                ProductSeries.Ext_In_Error_TraceId
+string                                                ProductSeries.Ext_In_Error_TechDetail
+string                                                ProductSeries.Ext_In_Error_FixLink
+bool                                                  ProductSeries.Ext_In_Error_SetOK
+DateTime                                              ProductSeries.Ext_In_LastSyncUTC
+string                                                ProductSeries.Ext_Out_Error_MsgNO
+string                                                ProductSeries.Ext_Out_Error_MsgEN
+string                                                ProductSeries.Ext_Out_Error_TraceId
+string                                                ProductSeries.Ext_Out_Error_TechDetail
+string                                                ProductSeries.Ext_Out_Error_FixLink
+bool                                                  ProductSeries.Ext_Out_Error_SetOK
+DateTime                                              ProductSeries.Ext_Out_LastSyncUTC
+--> ExternalSystemProductSeries[]                     ProductSeries.ExternalSystemProductSeries
 int                                                   ProductStructure.ProductStructureId
+string?                                               ProductStructure.ProductStructureIdExternal
 string?                                               ProductStructure.ClassificationSystemItemIdExternal
 string?                                               ProductStructure.ParentProductIdExternal
 string?                                               ProductStructure.ProductIdExternal
@@ -5047,7 +5631,26 @@ bool                                                  ProductStructure.Sys_Deact
 bool                                                  ProductStructure.Sys_Historic
 bool                                                  ProductStructure.Sys_Incomplete
 string? (50)                                          ProductStructure.TariffFilter
+bool                                                  ProductStructure.Ext_Sys_Deactivated
+string                                                ProductStructure.Ext_ExternalId
+string                                                ProductStructure.Ext_In_Error_MsgNO
+string                                                ProductStructure.Ext_In_Error_MsgEN
+string                                                ProductStructure.Ext_In_Error_TraceId
+string                                                ProductStructure.Ext_In_Error_TechDetail
+string                                                ProductStructure.Ext_In_Error_FixLink
+bool                                                  ProductStructure.Ext_In_Error_SetOK
+DateTime                                              ProductStructure.Ext_In_LastSyncUTC
+string                                                ProductStructure.Ext_Out_Error_MsgNO
+string                                                ProductStructure.Ext_Out_Error_MsgEN
+string                                                ProductStructure.Ext_Out_Error_TraceId
+string                                                ProductStructure.Ext_Out_Error_TechDetail
+string                                                ProductStructure.Ext_Out_Error_FixLink
+bool                                                  ProductStructure.Ext_Out_Error_SetOK
+DateTime                                              ProductStructure.Ext_Out_LastSyncUTC
+--> ExternalSystemProductStructure[]                  ProductStructure.ExternalSystemProductStructures
 int                                                   ProductStructureFolder.ProductStructureFolderId
+string?                                               ProductStructureFolder.ProductStructureFolderIdExternal
+string?                                               ProductStructureFolder.Parent_ProductStructureFolderIdExternal
 string?                                               ProductStructureFolder.ProductIdExternal
 string (250)                                          ProductStructureFolder.Name
 int?                                                  ProductStructureFolder.Parent_ProductStructureFolderId
@@ -5056,6 +5659,23 @@ int                                                   ProductStructureFolder.Sor
 bool                                                  ProductStructureFolder.Sys_Deactivated
 bool                                                  ProductStructureFolder.Sys_Historic
 bool                                                  ProductStructureFolder.Sys_Incomplete
+bool                                                  ProductStructureFolder.Ext_Sys_Deactivated
+string                                                ProductStructureFolder.Ext_ExternalId
+string                                                ProductStructureFolder.Ext_In_Error_MsgNO
+string                                                ProductStructureFolder.Ext_In_Error_MsgEN
+string                                                ProductStructureFolder.Ext_In_Error_TraceId
+string                                                ProductStructureFolder.Ext_In_Error_TechDetail
+string                                                ProductStructureFolder.Ext_In_Error_FixLink
+bool                                                  ProductStructureFolder.Ext_In_Error_SetOK
+DateTime                                              ProductStructureFolder.Ext_In_LastSyncUTC
+string                                                ProductStructureFolder.Ext_Out_Error_MsgNO
+string                                                ProductStructureFolder.Ext_Out_Error_MsgEN
+string                                                ProductStructureFolder.Ext_Out_Error_TraceId
+string                                                ProductStructureFolder.Ext_Out_Error_TechDetail
+string                                                ProductStructureFolder.Ext_Out_Error_FixLink
+bool                                                  ProductStructureFolder.Ext_Out_Error_SetOK
+DateTime                                              ProductStructureFolder.Ext_Out_LastSyncUTC
+--> ExternalSystemProductStructureFolder[]            ProductStructureFolder.ExternalSystemProductStructureFolders
 int                                                   ProductSupplierIndustryType.ProductSupplierIndustryTypeId
 string?                                               ProductSupplierIndustryType.ProductSupplierIndustryTypeIdExternal
 string?                                               ProductSupplierIndustryType.ProductIdExternal
@@ -5093,6 +5713,7 @@ bool                                                  ProductSupplierIndustryTyp
 DateTime                                              ProductSupplierIndustryType.Ext_Out_LastSyncUTC
 --> ExternalSystemProductSupplierIndustryType[]       ProductSupplierIndustryType.ExternalSystemProductSupplierIndustryTypes
 int                                                   ProductSync.ProductSyncId
+string?                                               ProductSync.ProductSyncIdExternal
 string?                                               ProductSync.SupplierIndustryTypeIdExternal
 bool                                                  ProductSync.AbortRequested
 string? [MultilineText](50)                           ProductSync.Description
@@ -5111,6 +5732,23 @@ bool                                                  ProductSync.Sys_Deactivate
 bool                                                  ProductSync.Sys_Historic
 bool                                                  ProductSync.Sys_Incomplete
 SyncStatusEnum?                                       ProductSync.Enum_SyncStatusId
+bool                                                  ProductSync.Ext_Sys_Deactivated
+string                                                ProductSync.Ext_ExternalId
+string                                                ProductSync.Ext_In_Error_MsgNO
+string                                                ProductSync.Ext_In_Error_MsgEN
+string                                                ProductSync.Ext_In_Error_TraceId
+string                                                ProductSync.Ext_In_Error_TechDetail
+string                                                ProductSync.Ext_In_Error_FixLink
+bool                                                  ProductSync.Ext_In_Error_SetOK
+DateTime                                              ProductSync.Ext_In_LastSyncUTC
+string                                                ProductSync.Ext_Out_Error_MsgNO
+string                                                ProductSync.Ext_Out_Error_MsgEN
+string                                                ProductSync.Ext_Out_Error_TraceId
+string                                                ProductSync.Ext_Out_Error_TechDetail
+string                                                ProductSync.Ext_Out_Error_FixLink
+bool                                                  ProductSync.Ext_Out_Error_SetOK
+DateTime                                              ProductSync.Ext_Out_LastSyncUTC
+--> ExternalSystemProductSync[]                       ProductSync.ExternalSystemProductSyncs
 int                                                   Project.ProjectId
 string?                                               Project.ProjectIdExternal
 string?                                               Project.AssignmentCategoryId_1External
@@ -5451,6 +6089,7 @@ PurchaseOrderCommStatusEnum                           PurchaseOrder.Enum_Purchas
 int                                                   PurchaseOrderLine.PurchaseOrderLineId
 string?                                               PurchaseOrderLine.ProductIdExternal
 string?                                               PurchaseOrderLine.ProductSupplierIndustryTypeIdExternal
+string?                                               PurchaseOrderLine.UnitIdExternal
 decimal?                                              PurchaseOrderLine.AlreadyCheckedInQuantity
 decimal?                                              PurchaseOrderLine.ChargeCost
 decimal?                                              PurchaseOrderLine.ChargeCostPercent
@@ -6703,6 +7342,7 @@ bool                                                  SystemNotification.Sys_Inc
 string? (100)                                         SystemNotification.Title
 NotificationType_OldEnum                              SystemNotification.Enum_NotificationType_OldId
 int                                                   Tariff.TariffId
+string?                                               Tariff.UnitIdExternal
 string? (1024)                                        Tariff.AdditionalInfo
 decimal                                               Tariff.Amount
 string (20)                                           Tariff.Code
@@ -6782,12 +7422,30 @@ bool                                                  Temp_WebhookMessage.Sys_In
 string? (50)                                          Temp_WebhookMessage.TableName
 short                                                 Temp_WebhookMessage.WebhookSubscriptionId
 short                                                 Unit.UnitId
+string?                                               Unit.UnitIdExternal
 string (8)                                            Unit.Code
 bool                                                  Unit.ETIM
 bool                                                  Unit.Sys_Deactivated
 bool                                                  Unit.Sys_Historic
 bool                                                  Unit.Sys_Incomplete
 string (20)                                           Unit.Text
+bool                                                  Unit.Ext_Sys_Deactivated
+string                                                Unit.Ext_ExternalId
+string                                                Unit.Ext_In_Error_MsgNO
+string                                                Unit.Ext_In_Error_MsgEN
+string                                                Unit.Ext_In_Error_TraceId
+string                                                Unit.Ext_In_Error_TechDetail
+string                                                Unit.Ext_In_Error_FixLink
+bool                                                  Unit.Ext_In_Error_SetOK
+DateTime                                              Unit.Ext_In_LastSyncUTC
+string                                                Unit.Ext_Out_Error_MsgNO
+string                                                Unit.Ext_Out_Error_MsgEN
+string                                                Unit.Ext_Out_Error_TraceId
+string                                                Unit.Ext_Out_Error_TechDetail
+string                                                Unit.Ext_Out_Error_FixLink
+bool                                                  Unit.Ext_Out_Error_SetOK
+DateTime                                              Unit.Ext_Out_LastSyncUTC
+--> ExternalSystemUnit[]                              Unit.ExternalSystemUnits
 int                                                   User.UserId
 string?                                               User.EmployeeIdExternal
 string? (2)                                           User.DefaultLanguage
