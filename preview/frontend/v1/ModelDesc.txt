@@ -6175,13 +6175,18 @@ bool                                                  ROTCustomerInformation.Sys
 bool                                                  ROTCustomerInformation.Sys_Incomplete
 int                                                   ScheduledTask.ScheduledTaskId
 string?                                               ScheduledTask.ScheduledTaskIdExternal
+string?                                               ScheduledTask.AssignmentIdExternal
 string?                                               ScheduledTask.ScheduledTaskDefIdExternal
+DateTime?                                             ScheduledTask.ActionDoneUTC
+int?                                                  ScheduledTask.ActionLeadDays
+int?                                                  ScheduledTask.AssignmentId
 DateTime                                              ScheduledTask.DueDate
+bool                                                  ScheduledTask.DueDateNotification
+DateTime?                                             ScheduledTask.DueDateNotificationDoneUTC
 bool                                                  ScheduledTask.IsAutomatic
-bool                                                  ScheduledTask.IsDone
-int                                                   ScheduledTask.LeadDaysForCreation
-int                                                   ScheduledTask.LeadDaysForNotification
-bool                                                  ScheduledTask.NotifyUser
+bool?                                                 ScheduledTask.IsDone
+DateTime?                                             ScheduledTask.NotificationDoneUTC
+int?                                                  ScheduledTask.NotificationLeadDays
 int?                                                  ScheduledTask.ScheduledTaskDefId
 bool                                                  ScheduledTask.Sys_Deactivated
 bool                                                  ScheduledTask.Sys_Historic
@@ -6206,13 +6211,13 @@ DateTime                                              ScheduledTask.Ext_Out_Last
 int                                                   ScheduledTaskDef.ScheduledTaskDefId
 string?                                               ScheduledTaskDef.ScheduledTaskDefIdExternal
 string?                                               ScheduledTaskDef.ServiceContractIdExternal
+int?                                                  ScheduledTaskDef.ActionLeadDays
 string [MultilineText](100)                           ScheduledTaskDef.Description
+bool                                                  ScheduledTaskDef.DueDateNotification
 DateTime?                                             ScheduledTaskDef.EndDate
 bool                                                  ScheduledTaskDef.IsActive
 bool                                                  ScheduledTaskDef.IsAutomatic
-int                                                   ScheduledTaskDef.LeadDaysForCreation
-int                                                   ScheduledTaskDef.LeadDaysForNotification
-bool                                                  ScheduledTaskDef.NotifyUser
+int?                                                  ScheduledTaskDef.NotificationLeadDays
 string? (1024)                                        ScheduledTaskDef.RecurrencePattern
 int?                                                  ScheduledTaskDef.ServiceContractId
 DateTime                                              ScheduledTaskDef.StartDate
@@ -6240,9 +6245,9 @@ DateTime                                              ScheduledTaskDef.Ext_Out_L
 int                                                   ScheduledTaskDefDimensionValueUse.ScheduledTaskDefDimensionValueUseId
 string?                                               ScheduledTaskDefDimensionValueUse.ScheduledTaskDefDimensionValueUseIdExternal
 string?                                               ScheduledTaskDefDimensionValueUse.DimensionValueUseIdExternal
-string?                                               ScheduledTaskDefDimensionValueUse.RecurrentTaskIdExternal
+string?                                               ScheduledTaskDefDimensionValueUse.ScheduledTaskDefIdExternal
 int                                                   ScheduledTaskDefDimensionValueUse.DimensionValueUseId
-int                                                   ScheduledTaskDefDimensionValueUse.RecurrentTaskId
+int                                                   ScheduledTaskDefDimensionValueUse.ScheduledTaskDefId
 bool                                                  ScheduledTaskDefDimensionValueUse.Sys_Deactivated
 bool                                                  ScheduledTaskDefDimensionValueUse.Sys_Historic
 bool                                                  ScheduledTaskDefDimensionValueUse.Sys_Incomplete
