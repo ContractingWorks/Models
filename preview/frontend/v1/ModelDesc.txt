@@ -6607,6 +6607,7 @@ string?                                               Settings_Assignment.Defaul
 string?                                               Settings_Assignment.Default_ServiceAgreementIdExternal
 string?                                               Settings_Assignment.InvoiceLayoutIdExternal
 string?                                               Settings_Assignment.ProductAgreementGroupIdExternal
+bool                                                  Settings_Assignment.AllowDepartmentChange
 bool?                                                 Settings_Assignment.AllowHpcTimeCorrection
 bool                                                  Settings_Assignment.ApproveBeforeInvoicing
 bool                                                  Settings_Assignment.ApproveHoursBeforeInvoicing
