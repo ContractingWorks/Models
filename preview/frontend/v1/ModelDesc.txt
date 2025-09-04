@@ -287,6 +287,40 @@ short                                                 AssignmentProductAgreement
 bool                                                  AssignmentProductAgreement.Sys_Deactivated
 bool                                                  AssignmentProductAgreement.Sys_Historic
 bool                                                  AssignmentProductAgreement.Sys_Incomplete
+int                                                   AssignmentProgress.AssignmentProgressId
+string?                                               AssignmentProgress.AssignmentProgressIdExternal
+string?                                               AssignmentProgress.AssignmentIdExternal
+string?                                               AssignmentProgress.DimensionValueIdExternal
+string?                                               AssignmentProgress.ProjectPeriodIdExternal
+int                                                   AssignmentProgress.AssignmentId
+int?                                                  AssignmentProgress.DimensionValueId
+decimal?                                              AssignmentProgress.ProgressAmount
+decimal?                                              AssignmentProgress.ProgressAmountMaterial
+decimal?                                              AssignmentProgress.ProgressAmountService
+decimal?                                              AssignmentProgress.ProgressPercentage
+decimal?                                              AssignmentProgress.ProgressPercentageMaterial
+decimal?                                              AssignmentProgress.ProgressPercentageService
+int                                                   AssignmentProgress.ProjectPeriodId
+bool                                                  AssignmentProgress.Sys_Deactivated
+bool                                                  AssignmentProgress.Sys_Historic
+bool                                                  AssignmentProgress.Sys_Incomplete
+bool                                                  AssignmentProgress.Ext_Sys_Deactivated
+string                                                AssignmentProgress.Ext_ExternalId
+string                                                AssignmentProgress.Ext_In_Error_MsgNO
+string                                                AssignmentProgress.Ext_In_Error_MsgEN
+string                                                AssignmentProgress.Ext_In_Error_TraceId
+string                                                AssignmentProgress.Ext_In_Error_TechDetail
+string                                                AssignmentProgress.Ext_In_Error_FixLink
+bool                                                  AssignmentProgress.Ext_In_Error_SetOK
+DateTime                                              AssignmentProgress.Ext_In_LastSyncUTC
+string                                                AssignmentProgress.Ext_Out_Error_MsgNO
+string                                                AssignmentProgress.Ext_Out_Error_MsgEN
+string                                                AssignmentProgress.Ext_Out_Error_TraceId
+string                                                AssignmentProgress.Ext_Out_Error_TechDetail
+string                                                AssignmentProgress.Ext_Out_Error_FixLink
+bool                                                  AssignmentProgress.Ext_Out_Error_SetOK
+DateTime                                              AssignmentProgress.Ext_Out_LastSyncUTC
+--> ExternalSystemAssignmentProgress[]                AssignmentProgress.ExternalSystemAssignmentProgresses
 int                                                   AssignmentProjectPeriodInvoiceReserve.AssignmentProjectPeriodInvoiceReserveId
 string?                                               AssignmentProjectPeriodInvoiceReserve.AssignmentIdExternal
 string?                                               AssignmentProjectPeriodInvoiceReserve.ProjectPeriodIdExternal
@@ -422,11 +456,13 @@ DateTime                                              Budget.Ext_Out_LastSyncUTC
 int                                                   BudgetLine.BudgetLineId
 string?                                               BudgetLine.BudgetLineIdExternal
 string?                                               BudgetLine.BudgetIdExternal
+string?                                               BudgetLine.DimensionValueIdExternal
 string?                                               BudgetLine.ProjectAccountIdExternal
 string?                                               BudgetLine.WageCodeReportCategoryIdExternal
 int                                                   BudgetLine.BudgetId
 decimal?                                              BudgetLine.BudgetValue
 string? [MultilineText](200)                          BudgetLine.Comment
+int?                                                  BudgetLine.DimensionValueId
 int?                                                  BudgetLine.ProjectAccountId
 bool                                                  BudgetLine.Sys_Deactivated
 bool                                                  BudgetLine.Sys_Historic
@@ -515,7 +551,9 @@ bool                                                  Calculation.Sys_Incomplete
 int?                                                  Calculation.WageCodeReportCategoryId
 CalculationStatusEnum                                 Calculation.Enum_CalculationStatusId
 int                                                   CalculationFolder.CalculationFolderId
+string?                                               CalculationFolder.ChangeRequestIdExternal
 int                                                   CalculationFolder.CalculationId
+int?                                                  CalculationFolder.ChangeRequestId
 string? (50)                                          CalculationFolder.Code
 string? [MultilineText](1024)                         CalculationFolder.Comment
 bool                                                  CalculationFolder.Complete
@@ -580,6 +618,35 @@ int?                                                  CalculationLine.TariffId
 int?                                                  CalculationLine.WageCodeReportCategoryId
 int?                                                  CalculationLine.WorkSeconds
 int?                                                  CalculationLine.WorkSecondsOverride
+int                                                   ChangeRequest.ChangeRequestId
+string?                                               ChangeRequest.ChangeRequestIdExternal
+string?                                               ChangeRequest.AssignmentIdExternal
+int                                                   ChangeRequest.AssignmentId
+string? (10)                                          ChangeRequest.Code
+string? [MultilineText](2048)                         ChangeRequest.Description
+string? (250)                                         ChangeRequest.Initiator
+bool                                                  ChangeRequest.Sys_Deactivated
+bool                                                  ChangeRequest.Sys_Historic
+bool                                                  ChangeRequest.Sys_Incomplete
+string (512)                                          ChangeRequest.Title
+ChangeRequestStatusEnum                               ChangeRequest.Enum_ChangeRequestStatusId
+bool                                                  ChangeRequest.Ext_Sys_Deactivated
+string                                                ChangeRequest.Ext_ExternalId
+string                                                ChangeRequest.Ext_In_Error_MsgNO
+string                                                ChangeRequest.Ext_In_Error_MsgEN
+string                                                ChangeRequest.Ext_In_Error_TraceId
+string                                                ChangeRequest.Ext_In_Error_TechDetail
+string                                                ChangeRequest.Ext_In_Error_FixLink
+bool                                                  ChangeRequest.Ext_In_Error_SetOK
+DateTime                                              ChangeRequest.Ext_In_LastSyncUTC
+string                                                ChangeRequest.Ext_Out_Error_MsgNO
+string                                                ChangeRequest.Ext_Out_Error_MsgEN
+string                                                ChangeRequest.Ext_Out_Error_TraceId
+string                                                ChangeRequest.Ext_Out_Error_TechDetail
+string                                                ChangeRequest.Ext_Out_Error_FixLink
+bool                                                  ChangeRequest.Ext_Out_Error_SetOK
+DateTime                                              ChangeRequest.Ext_Out_LastSyncUTC
+--> ExternalSystemChangeRequest[]                     ChangeRequest.ExternalSystemChangeRequests
 int                                                   ClassificationSystem.ClassificationSystemId
 string?                                               ClassificationSystem.ClassificationSystemIdExternal
 string? [MultilineText](500)                          ClassificationSystem.Description
@@ -1046,13 +1113,17 @@ DateTime                                              DimensionUse.Ext_Out_LastS
 --> ExternalSystemDimensionUse[]                      DimensionUse.ExternalSystemDimensionUses
 int                                                   DimensionValue.DimensionValueId
 string?                                               DimensionValue.DimensionValueIdExternal
+string?                                               DimensionValue.ChangeRequestIdExternal
 string?                                               DimensionValue.DimensionIdExternal
 string?                                               DimensionValue.ParentDimensionValueIdExternal
+int?                                                  DimensionValue.CalculationFolderId
+int?                                                  DimensionValue.ChangeRequestId
 string? (50)                                          DimensionValue.Code
 string?                                               DimensionValue.HierarchicalId
 string (512)                                          DimensionValue.Name
 int?                                                  DimensionValue.ParentDimensionValueId
 bool                                                  DimensionValue.Selectable
+bool                                                  DimensionValue.SingleAssignmentOnly
 int?                                                  DimensionValue.SortOrder
 bool                                                  DimensionValue.SyncToMobileDevice
 bool                                                  DimensionValue.Sys_Deactivated
@@ -1077,6 +1148,8 @@ DateTime                                              DimensionValue.Ext_Out_Las
 --> ExternalSystemDimensionValue[]                    DimensionValue.ExternalSystemDimensionValues
 int                                                   DimensionValueUse.DimensionValueUseId
 string?                                               DimensionValueUse.DimensionValueUseIdExternal
+string?                                               DimensionValueUse.Invoice_CustomerIdExternal
+int?                                                  DimensionValueUse.Invoice_CustomerId
 bool                                                  DimensionValueUse.Ext_Sys_Deactivated
 string                                                DimensionValueUse.Ext_ExternalId
 string                                                DimensionValueUse.Ext_In_Error_MsgNO
@@ -1472,6 +1545,25 @@ DateTime?                                             ExternalSystemAssignmentPa
 string? [MultilineText](50)                           ExternalSystemAssignmentParticipant.StatusDescription
 bool                                                  ExternalSystemAssignmentParticipant.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemAssignmentParticipant.Enum_SyncStatusId
+int                                                   ExternalSystemAssignmentProgress.ExternalSystemAssignmentProgressId
+string?                                               ExternalSystemAssignmentProgress.AssignmentProgressIdExternal
+string? (50)                                          ExternalSystemAssignmentProgress.ExternalId
+short                                                 ExternalSystemAssignmentProgress.ExternalSystemId
+string? (100)                                         ExternalSystemAssignmentProgress.In_Error_FixLink
+string? (250)                                         ExternalSystemAssignmentProgress.In_Error_MsgEN
+string? (250)                                         ExternalSystemAssignmentProgress.In_Error_MsgNO
+string?                                               ExternalSystemAssignmentProgress.In_Error_TechDetail
+string? (40)                                          ExternalSystemAssignmentProgress.In_Error_TraceId
+DateTime?                                             ExternalSystemAssignmentProgress.In_LastSyncUTC
+string? (100)                                         ExternalSystemAssignmentProgress.Out_Error_FixLink
+string? (250)                                         ExternalSystemAssignmentProgress.Out_Error_MsgEN
+string? (250)                                         ExternalSystemAssignmentProgress.Out_Error_MsgNO
+string?                                               ExternalSystemAssignmentProgress.Out_Error_TechDetail
+string? (40)                                          ExternalSystemAssignmentProgress.Out_Error_TraceId
+DateTime?                                             ExternalSystemAssignmentProgress.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemAssignmentProgress.StatusDescription
+bool                                                  ExternalSystemAssignmentProgress.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemAssignmentProgress.Enum_SyncStatusId
 int                                                   ExternalSystemAttachment.ExternalSystemAttachmentId
 string?                                               ExternalSystemAttachment.AttachmentIdExternal
 string? (50)                                          ExternalSystemAttachment.ExternalId
@@ -1567,6 +1659,25 @@ DateTime?                                             ExternalSystemBudgetScenar
 string? [MultilineText](50)                           ExternalSystemBudgetScenario.StatusDescription
 bool                                                  ExternalSystemBudgetScenario.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemBudgetScenario.Enum_SyncStatusId
+int                                                   ExternalSystemChangeRequest.ExternalSystemChangeRequestId
+string?                                               ExternalSystemChangeRequest.ChangeRequestIdExternal
+string? (50)                                          ExternalSystemChangeRequest.ExternalId
+short                                                 ExternalSystemChangeRequest.ExternalSystemId
+string? (100)                                         ExternalSystemChangeRequest.In_Error_FixLink
+string? (250)                                         ExternalSystemChangeRequest.In_Error_MsgEN
+string? (250)                                         ExternalSystemChangeRequest.In_Error_MsgNO
+string?                                               ExternalSystemChangeRequest.In_Error_TechDetail
+string? (40)                                          ExternalSystemChangeRequest.In_Error_TraceId
+DateTime?                                             ExternalSystemChangeRequest.In_LastSyncUTC
+string? (100)                                         ExternalSystemChangeRequest.Out_Error_FixLink
+string? (250)                                         ExternalSystemChangeRequest.Out_Error_MsgEN
+string? (250)                                         ExternalSystemChangeRequest.Out_Error_MsgNO
+string?                                               ExternalSystemChangeRequest.Out_Error_TechDetail
+string? (40)                                          ExternalSystemChangeRequest.Out_Error_TraceId
+DateTime?                                             ExternalSystemChangeRequest.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemChangeRequest.StatusDescription
+bool                                                  ExternalSystemChangeRequest.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemChangeRequest.Enum_SyncStatusId
 int                                                   ExternalSystemClassificationSystem.ExternalSystemClassificationSystemId
 string?                                               ExternalSystemClassificationSystem.ClassificationSystemIdExternal
 string? (50)                                          ExternalSystemClassificationSystem.ExternalId
