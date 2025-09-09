@@ -594,6 +594,7 @@ int                                                   CalculationLine.Calculatio
 int?                                                  CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                         CalculationLine.Comment
 decimal?                                              CalculationLine.CostPrice
+decimal?                                              CalculationLine.CostPriceOverride
 bool?                                                 CalculationLine.IsInteresting
 bool                                                  CalculationLine.IsProductStructure
 int?                                                  CalculationLine.ParentCalculationLineId
