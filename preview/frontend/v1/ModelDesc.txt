@@ -6299,7 +6299,6 @@ bool                                                  ScheduledTask.IsAutomatic
 bool?                                                 ScheduledTask.IsDone
 DateTime?                                             ScheduledTask.NotificationDoneUTC
 int?                                                  ScheduledTask.NotificationLeadDays
-int?                                                  ScheduledTask.ScheduledTaskDefId
 bool                                                  ScheduledTask.Sys_Deactivated
 bool                                                  ScheduledTask.Sys_Historic
 bool                                                  ScheduledTask.Sys_Incomplete
@@ -6354,6 +6353,7 @@ string                                                ScheduledTaskDef.Ext_Out_E
 bool                                                  ScheduledTaskDef.Ext_Out_Error_SetOK
 DateTime                                              ScheduledTaskDef.Ext_Out_LastSyncUTC
 --> ExternalSystemScheduledTaskDef[]                  ScheduledTaskDef.ExternalSystemScheduledTaskDefs
+--> ScheduledTask[]                                   ScheduledTaskDef.ScheduledTasks
 int                                                   ScheduledTaskDefDimensionValueUse.ScheduledTaskDefDimensionValueUseId
 string?                                               ScheduledTaskDefDimensionValueUse.ScheduledTaskDefDimensionValueUseIdExternal
 string?                                               ScheduledTaskDefDimensionValueUse.DimensionValueUseIdExternal
