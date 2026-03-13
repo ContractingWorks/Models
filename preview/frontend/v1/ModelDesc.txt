@@ -7203,6 +7203,8 @@ bool                                                  Settings_Main.Service_Appr
 bool                                                  Settings_Main.Service_ApprovalWage_By_Manager
 int                                                   Settings_Main.SharedUrl_MaxCount_Default
 bool                                                  Settings_Main.SharedUrl_PassPhrase_Required
+decimal                                               Settings_Main.SmartPlanning_DefaultRadiusKm
+decimal                                               Settings_Main.SmartPlanning_MaxSuggestionsPerGap
 short?                                                Settings_Main.Standard_SupplierIndustryTypeId
 short?                                                Settings_Main.StorageId
 short?                                                Settings_Main.SupplierIndustryTypeId
@@ -8030,6 +8032,8 @@ bool                                                  Team.Sys_Deactivated
 bool                                                  Team.Sys_Historic
 bool                                                  Team.Sys_Incomplete
 int?                                                  Team.TeamNumber
+TimeOnly?                                             Team.WorkTimeEnd
+TimeOnly?                                             Team.WorkTimeStart
 --> TeamEmployee[]                                    Team.TeamEmployees
 short                                                 TeamEmployee.TeamEmployeeId
 string?                                               TeamEmployee.EmployeeIdExternal
