@@ -4447,7 +4447,7 @@ int?                                                  InvoiceLine_Session.Invoic
 int?                                                  InvoiceLine_Session.InvoiceLineRuleId
 string?                                               InvoiceLine_Session.InvoiceLineText
 int?                                                  InvoiceLine_Session.InvoicingDimensionValueId
-bool                                                  InvoiceLine_Session.IsFixedPrice
+bool?                                                 InvoiceLine_Session.IsFixedPrice
 int?                                                  InvoiceLine_Session.ProductSupplierIndustryTypeId
 byte?                                                 InvoiceLine_Session.ProjectAccountCategoryId
 decimal?                                              InvoiceLine_Session.QuantityInvoice
@@ -4461,9 +4461,9 @@ decimal?                                              InvoiceLine_Session.Surcha
 bool                                                  InvoiceLine_Session.Sys_Deactivated
 bool                                                  InvoiceLine_Session.Sys_Historic
 bool                                                  InvoiceLine_Session.Sys_Incomplete
-bool                                                  InvoiceLine_Session.UpdateAssignmentCost
+bool?                                                 InvoiceLine_Session.UpdateAssignmentCost
 short?                                                InvoiceLine_Session.UpdateStatus
-bool                                                  InvoiceLine_Session.UpdateStock
+bool?                                                 InvoiceLine_Session.UpdateStock
 InvoiceLineCategoryEnum?                              InvoiceLine_Session.Enum_InvoiceLineCategoryId
 InvoiceLineRuleTypeDetailEnum?                        InvoiceLine_Session.Enum_InvoiceLineRuleTypeDetailId
 ROTCategoryEnum?                                      InvoiceLine_Session.Enum_ROTCategoryId
