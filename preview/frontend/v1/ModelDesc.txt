@@ -7148,6 +7148,13 @@ bool                                                  Settings_Calculation.Sys_H
 bool                                                  Settings_Calculation.Sys_Incomplete
 int?                                                  Settings_Calculation.WageCodeReportCategoryId
 PublicationStatusEnum                                 Settings_Calculation.Enum_PublicationStatusId
+byte                                                  Settings_Dashboard.Settings_DashboardId
+string?                                               Settings_Dashboard.VehicleUsage_WageCodeReportCategoryIdExternal
+short?                                                Settings_Dashboard.LabourWorkHoursYearTarget
+bool                                                  Settings_Dashboard.Sys_Deactivated
+bool                                                  Settings_Dashboard.Sys_Historic
+bool                                                  Settings_Dashboard.Sys_Incomplete
+int?                                                  Settings_Dashboard.VehicleUsage_WageCodeReportCategoryId
 byte                                                  Settings_Employee.Settings_EmployeeId
 bool                                                  Settings_Employee.ApproveWageRequired
 bool                                                  Settings_Employee.Sys_Deactivated
