@@ -4365,7 +4365,7 @@ bool                                                  InvoiceAttachment.Sys_Inco
 int                                                   InvoiceLayout.InvoiceLayoutId
 string?                                               InvoiceLayout.InvoiceLayoutIdExternal
 string [MultilineText](100)                           InvoiceLayout.Description
-short                                                 InvoiceLayout.InvoiceLayoutNumber
+int                                                   InvoiceLayout.InvoiceLayoutNumber
 bool                                                  InvoiceLayout.Sys_Deactivated
 bool                                                  InvoiceLayout.Sys_Historic
 bool                                                  InvoiceLayout.Sys_Incomplete
