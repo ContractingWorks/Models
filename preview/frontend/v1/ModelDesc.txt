@@ -4308,6 +4308,53 @@ DateTime?                                             Invoice.Ext_Out_LastSyncUT
 --> InvoiceAttachment[]                               Invoice.InvoiceAttachments
 --> InvoiceLine[]                                     Invoice.InvoiceLines
 --> ROTCustomerInformation[]                          Invoice.ROTCustomerInformations
+int                                                   Invoice_Session.Invoice_SessionId
+string?                                               Invoice_Session.InvoiceIdExternal
+int?                                                  Invoice_Session.AssignmentId
+bool?                                                 Invoice_Session.AttachServiceListAsPDF
+bool?                                                 Invoice_Session.AttachServiceListIsWorkTimeOnly
+short?                                                Invoice_Session.CurrencyId
+int?                                                  Invoice_Session.CustomerId
+string? (200)                                         Invoice_Session.CustomerReference
+int?                                                  Invoice_Session.DebtorCustomerId
+short?                                                Invoice_Session.DepartmentId
+DateOnly?                                             Invoice_Session.DueDate
+string? (200)                                         Invoice_Session.ExternalReference
+decimal?                                              Invoice_Session.GrossAmount
+bool?                                                 Invoice_Session.IncludeProductNumber
+string? (200)                                         Invoice_Session.InternalReference
+string? [MultilineText]                               Invoice_Session.InvoiceComment
+DateOnly?                                             Invoice_Session.InvoiceDate
+DateTime?                                             Invoice_Session.InvoicedUTC
+int?                                                  Invoice_Session.InvoiceId
+int?                                                  Invoice_Session.InvoiceLayoutId
+int?                                                  Invoice_Session.InvoiceNumber
+bool?                                                 Invoice_Session.IsCreditNote
+bool?                                                 Invoice_Session.IsFinalInvoice
+bool?                                                 Invoice_Session.IsMasterInvoice
+int?                                                  Invoice_Session.MasterInvoiceId
+int?                                                  Invoice_Session.MasterInvoiceSortOrder
+decimal?                                              Invoice_Session.NetAmount
+int?                                                  Invoice_Session.ParentInvoiceId
+byte?                                                 Invoice_Session.PaymentTermId
+int?                                                  Invoice_Session.ProjectId
+DateTime?                                             Invoice_Session.RegisteredUTC
+decimal?                                              Invoice_Session.RemainingAmount
+string?                                               Invoice_Session.ROTApartmentNo
+string?                                               Invoice_Session.ROTBrfOrgNo
+bool?                                                 Invoice_Session.ROTInvoice
+string?                                               Invoice_Session.ROTPropertyNo
+DateTime?                                             Invoice_Session.SentUTC
+bool                                                  Invoice_Session.Sys_Deactivated
+bool?                                                 Invoice_Session.Sys_FinalPostProcessDone
+bool                                                  Invoice_Session.Sys_Historic
+bool                                                  Invoice_Session.Sys_Incomplete
+DateOnly?                                             Invoice_Session.Sys_InvoiceDatePrevious
+bool?                                                 Invoice_Session.Sys_PostProcessNeeded
+bool?                                                 Invoice_Session.Sys_ResetSkipOnNextWhenInvoiced
+DateTime?                                             Invoice_Session.TransferredUTC
+bool?                                                 Invoice_Session.VATFree
+InvoiceStatusEnum?                                    Invoice_Session.Enum_InvoiceStatusId
 int                                                   InvoiceAttachment.InvoiceAttachmentId
 string?                                               InvoiceAttachment.AttachmentIdExternal
 string?                                               InvoiceAttachment.InvoiceIdExternal
@@ -4446,6 +4493,7 @@ string? (100)                                         InvoiceLine_Session.Invoic
 int?                                                  InvoiceLine_Session.InvoiceLineId
 int?                                                  InvoiceLine_Session.InvoiceLineRuleId
 string?                                               InvoiceLine_Session.InvoiceLineText
+int?                                                  InvoiceLine_Session.Invoice_SessionId
 int?                                                  InvoiceLine_Session.InvoicingDimensionValueId
 bool?                                                 InvoiceLine_Session.IsFixedPrice
 int?                                                  InvoiceLine_Session.ProductSupplierIndustryTypeId
