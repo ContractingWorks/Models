@@ -1543,6 +1543,9 @@ DateTime?                                             ERPVoucher.Ext_Out_LastSyn
 --> ExternalSystemERPVoucher[]                        ERPVoucher.ExternalSystemERPVouchers
 short                                                 ExternalSystem.ExternalSystemId
 string? (500)                                         ExternalSystem.AutoFeatureList
+DateTime?                                             ExternalSystem.ConnectionCheckedUTC
+string?                                               ExternalSystem.ConnectionCheckMessage
+bool?                                                 ExternalSystem.ConnectionIsOK
 string? (50)                                          ExternalSystem.DisplayName
 string? (10)                                          ExternalSystem.ExternalIdPrefix
 bool                                                  ExternalSystem.IsCwOwned
