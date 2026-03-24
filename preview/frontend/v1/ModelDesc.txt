@@ -6690,11 +6690,13 @@ decimal?                                              PurchaseOrderLine.UnitPric
 DeliveryStatusEnum                                    PurchaseOrderLine.Enum_DeliveryStatusId
 short                                                 Role.RoleId
 string?                                               Role.RoleIdExternal
+string?                                               Role.Template_RoleIdExternal
 string? [MultilineText](200)                          Role.Description
 string (50)                                           Role.Name
 bool                                                  Role.Sys_Deactivated
 bool                                                  Role.Sys_Historic
 bool                                                  Role.Sys_Incomplete
+short?                                                Role.Template_RoleId
 bool                                                  Role.UserEditable
 bool?                                                 Role.Ext_Sys_Deactivated
 string?                                               Role.Ext_ExternalId
