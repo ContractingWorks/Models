@@ -320,28 +320,6 @@ string?                                               AssignmentProgress.Ext_Out
 bool?                                                 AssignmentProgress.Ext_Out_Error_SetOK
 DateTime?                                             AssignmentProgress.Ext_Out_LastSyncUTC
 --> ExternalSystemAssignmentProgress[]                AssignmentProgress.ExternalSystemAssignmentProgresses
-int                                                   AssignmentProjectPeriodInvoiceReserve.AssignmentProjectPeriodInvoiceReserveId
-string?                                               AssignmentProjectPeriodInvoiceReserve.AssignmentIdExternal
-string?                                               AssignmentProjectPeriodInvoiceReserve.ProjectPeriodIdExternal
-int                                                   AssignmentProjectPeriodInvoiceReserve.AssignmentId
-decimal?                                              AssignmentProjectPeriodInvoiceReserve.CoverageRateFixedPrice
-decimal?                                              AssignmentProjectPeriodInvoiceReserve.CoverageRateNotFixedPrice
-decimal                                               AssignmentProjectPeriodInvoiceReserve.InvoiceReserveAdjustmentAmount
-string? [MultilineText](200)                          AssignmentProjectPeriodInvoiceReserve.InvoiceReserveAdjustmentComment
-int                                                   AssignmentProjectPeriodInvoiceReserve.ProjectPeriodId
-bool                                                  AssignmentProjectPeriodInvoiceReserve.Sys_Deactivated
-bool                                                  AssignmentProjectPeriodInvoiceReserve.Sys_Historic
-bool                                                  AssignmentProjectPeriodInvoiceReserve.Sys_Incomplete
-InvoiceReserveBilledPriceCalculationEnum?             AssignmentProjectPeriodInvoiceReserve.Enum_InvoiceReserveBilledPriceCalculationId
-InvoiceReserveFixedPriceCalculationEnum?              AssignmentProjectPeriodInvoiceReserve.Enum_InvoiceReserveFixedPriceCalculationId
-int                                                   AssignmentPurchaseAgreement.AssignmentPurchaseAgreementId
-string?                                               AssignmentPurchaseAgreement.AssignmentIdExternal
-int                                                   AssignmentPurchaseAgreement.AssignmentId
-byte                                                  AssignmentPurchaseAgreement.Priority
-short                                                 AssignmentPurchaseAgreement.PurchaseAgreementId
-bool                                                  AssignmentPurchaseAgreement.Sys_Deactivated
-bool                                                  AssignmentPurchaseAgreement.Sys_Historic
-bool                                                  AssignmentPurchaseAgreement.Sys_Incomplete
 int                                                   AssignmentServiceObject.AssignmentServiceObjectId
 string?                                               AssignmentServiceObject.AssignmentIdExternal
 string?                                               AssignmentServiceObject.ServiceObjectIdExternal
@@ -406,16 +384,6 @@ bool                                                  BoligmappaAttachment.Sys_I
 string (200)                                          BoligmappaAttachment.UploadedByBmUserId
 DateTime?                                             BoligmappaAttachment.UploadedUTC
 --> Attachment                                        BoligmappaAttachment.Attachment
-short                                                 BoligmappaTokens.BoligmappaTokensId
-string?                                               BoligmappaTokens.AccessToken
-DateTime?                                             BoligmappaTokens.AccessTokenExpiresUTC
-int                                                   BoligmappaTokens.CwUserId
-string?                                               BoligmappaTokens.RefreshToken
-DateTime?                                             BoligmappaTokens.RefreshTokenExpiresUTC
-bool                                                  BoligmappaTokens.Sys_Deactivated
-bool                                                  BoligmappaTokens.Sys_Historic
-bool                                                  BoligmappaTokens.Sys_Incomplete
-DateTime?                                             BoligmappaTokens.TokensLastRefreshedUTC
 int                                                   Budget.BudgetId
 string?                                               Budget.BudgetIdExternal
 string?                                               Budget.AssignmentIdExternal
@@ -854,20 +822,6 @@ bool                                                  ContactMessage.Sys_Incompl
 int?                                                  ContactMessage.UserId
 MessageChannelEnum                                    ContactMessage.Enum_MessageChannelId
 MessageDeliveryStatusEnum                             ContactMessage.Enum_MessageDeliveryStatusId
-string                                                Country.CountryId
-int?                                                  Country.Default_LanguageId
-string (100)                                          Country.Name
-string [Phone](10)                                    Country.PhonePrefix
-bool                                                  Country.Sys_Deactivated
-bool                                                  Country.Sys_Historic
-bool                                                  Country.Sys_Incomplete
-int                                                   County.CountyId
-string (20)                                           County.Code
-string (2)                                            County.CountryId
-string (250)                                          County.Name
-bool                                                  County.Sys_Deactivated
-bool                                                  County.Sys_Historic
-bool                                                  County.Sys_Incomplete
 int                                                   CreditScore.CreditScoreId
 string?                                               CreditScore.CustomerIdExternal
 string? (50)                                          CreditScore.BureauName
@@ -3999,26 +3953,6 @@ DateTime?                                             ExternalSystemWageRateEmpl
 string? [MultilineText](50)                           ExternalSystemWageRateEmployee.StatusDescription
 bool                                                  ExternalSystemWageRateEmployee.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemWageRateEmployee.Enum_SyncStatusId
-int                                                   Import_ETIM.Import_ETIMId
-string? (100)                                         Import_ETIM.Class
-string? (20)                                          Import_ETIM.ClassId
-byte?                                                 Import_ETIM.ClassVersion
-string? (100)                                         Import_ETIM.Feature
-string? (20)                                          Import_ETIM.FeatureId
-int                                                   Import_ETIM.FileId
-string? (100)                                         Import_ETIM.Group
-string? (20)                                          Import_ETIM.GroupId
-string (100)                                          Import_ETIM.ProductClassType
-byte?                                                 Import_ETIM.SortFeature
-byte?                                                 Import_ETIM.SortValue
-bool                                                  Import_ETIM.Sys_Deactivated
-bool                                                  Import_ETIM.Sys_Historic
-bool                                                  Import_ETIM.Sys_Incomplete
-string? (1)                                           Import_ETIM.Type
-string? (100)                                         Import_ETIM.Unit
-string? (20)                                          Import_ETIM.UnitId
-string? (100)                                         Import_ETIM.Value
-string? (20)                                          Import_ETIM.ValueId
 int                                                   Import_ETIM_Product.Import_ETIM_ProductId
 string?                                               Import_ETIM_Product.Import_ETIM_ProductIdExternal
 string? (50)                                          Import_ETIM_Product.ETIM_ClassCode
@@ -4115,21 +4049,6 @@ bool                                                  ImportFile2.Sys_Incomplete
 ImportFormatEnum                                      ImportFile2.Enum_ImportFormatId
 ImportStatusEnum                                      ImportFile2.Enum_ImportStatusId
 ImportTypeEnum                                        ImportFile2.Enum_ImportTypeId
-int                                                   ImportFormat.ImportFormatId
-string? [MultilineText](100)                          ImportFormat.Description_TextId
-string? (50)                                          ImportFormat.Name
-bool                                                  ImportFormat.Sys_Deactivated
-bool                                                  ImportFormat.Sys_Historic
-bool                                                  ImportFormat.Sys_Incomplete
-ImportFormatEnum?                                     ImportFormat.Enum_ImportFormatId
-int                                                   ImportFormatField.ImportFormatFieldId
-string (50)                                           ImportFormatField.DataType
-string (150)                                          ImportFormatField.FieldName
-int                                                   ImportFormatField.ImportFormatId
-short?                                                ImportFormatField.Length
-bool                                                  ImportFormatField.Sys_Deactivated
-bool                                                  ImportFormatField.Sys_Historic
-bool                                                  ImportFormatField.Sys_Incomplete
 int                                                   ImportFormatMap.ImportFormatMapId
 string? [MultilineText](500)                          ImportFormatMap.Description
 int                                                   ImportFormatMap.ImportFormatId
@@ -4196,14 +4115,6 @@ string?                                               IndustryType.Ext_Out_Error
 bool?                                                 IndustryType.Ext_Out_Error_SetOK
 DateTime?                                             IndustryType.Ext_Out_LastSyncUTC
 --> ExternalSystemIndustryType[]                      IndustryType.ExternalSystemIndustryTypes
-int                                                   IntegrationBlackList.IntegrationBlackListId
-long                                                  IntegrationBlackList.EntityId
-DateTime?                                             IntegrationBlackList.ExpiresUTC
-string?                                               IntegrationBlackList.Message
-bool                                                  IntegrationBlackList.Sys_Deactivated
-bool                                                  IntegrationBlackList.Sys_Historic
-bool                                                  IntegrationBlackList.Sys_Incomplete
-string (50)                                           IntegrationBlackList.TableName
 int                                                   IntegrationStatus.IntegrationStatusId
 string? [MultilineText](100)                          IntegrationStatus.UserComment
 bool                                                  IntegrationStatus.UserOk
@@ -4230,11 +4141,6 @@ string? (200)                                         IntegrationStatus_Incoming
 string? (100)                                         IntegrationStatus_Incoming.TraceId
 EntityEnum                                            IntegrationStatus_Incoming.Enum_EntityId
 RowStateEnum?                                         IntegrationStatus_Incoming.Next_Enum_RowStateId
-short                                                 Integrator.IntegratorId
-string (50)                                           Integrator.IntegratorIdText
-bool                                                  Integrator.Sys_Deactivated
-bool                                                  Integrator.Sys_Historic
-bool                                                  Integrator.Sys_Incomplete
 int                                                   Invoice.InvoiceId
 string?                                               Invoice.InvoiceIdExternal
 string?                                               Invoice.AssignmentIdExternal
@@ -4611,19 +4517,6 @@ string?                                               InvoiceLineRule.Ext_Out_Er
 bool?                                                 InvoiceLineRule.Ext_Out_Error_SetOK
 DateTime?                                             InvoiceLineRule.Ext_Out_LastSyncUTC
 --> ExternalSystemInvoiceLineRule[]                   InvoiceLineRule.ExternalSystemInvoiceLineRules
-byte                                                  InvoiceLineRuleTypeDetail.InvoiceLineRuleTypeDetailId
-bool                                                  InvoiceLineRuleTypeDetail.Sys_Deactivated
-bool                                                  InvoiceLineRuleTypeDetail.Sys_Historic
-bool                                                  InvoiceLineRuleTypeDetail.Sys_Incomplete
-InvoiceLineRuleTypeDetailEnum                         InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeDetailId
-InvoiceLineRuleTypeEnum                               InvoiceLineRuleTypeDetail.Enum_InvoiceLineRuleTypeId
-short                                                 InvoiceLineRuleWageCodeType.InvoiceLineRuleWageCodeTypeId
-string?                                               InvoiceLineRuleWageCodeType.InvoiceLineRuleIdExternal
-short                                                 InvoiceLineRuleWageCodeType.InvoiceLineRuleId
-bool                                                  InvoiceLineRuleWageCodeType.Sys_Deactivated
-bool                                                  InvoiceLineRuleWageCodeType.Sys_Historic
-bool                                                  InvoiceLineRuleWageCodeType.Sys_Incomplete
-WageCodeTypeEnum                                      InvoiceLineRuleWageCodeType.Enum_WageCodeTypeId
 short                                                 InvoiceTemplate.InvoiceTemplateId
 string?                                               InvoiceTemplate.InvoiceTemplateIdExternal
 string [MultilineText](100)                           InvoiceTemplate.Description
@@ -4699,12 +4592,6 @@ string?                                               JobCategory.Ext_Out_Error_
 bool?                                                 JobCategory.Ext_Out_Error_SetOK
 DateTime?                                             JobCategory.Ext_Out_LastSyncUTC
 --> ExternalSystemJobCategory[]                       JobCategory.ExternalSystemJobCategories
-int                                                   Language.LanguageId
-string (10)                                           Language.IsoCode
-string (50)                                           Language.Name
-bool                                                  Language.Sys_Deactivated
-bool                                                  Language.Sys_Historic
-bool                                                  Language.Sys_Incomplete
 short                                                 LedgerAccount.LedgerAccountId
 string?                                               LedgerAccount.LedgerAccountIdExternal
 string?                                               LedgerAccount.ParentLedgerAccountIdExternal
@@ -4756,33 +4643,6 @@ string?                                               Manufacturer.Ext_Out_Error
 bool?                                                 Manufacturer.Ext_Out_Error_SetOK
 DateTime?                                             Manufacturer.Ext_Out_LastSyncUTC
 --> ExternalSystemManufacturer[]                      Manufacturer.ExternalSystemManufacturers
-int                                                   MapData.MapDataId
-string? (100)                                         MapData.Current_ExternalId
-bool                                                  MapData.Deactivated
-string? [MultilineText](250)                          MapData.Description
-string (50)                                           MapData.EntityType
-string? [MultilineText](250)                          MapData.ExternalDescription
-string? (100)                                         MapData.ExternalId
-short?                                                MapData.ExternalSystemId
-string? (100)                                         MapData.FormalId
-bool                                                  MapData.Historic
-DateTime?                                             MapData.LastUserMapUpdateUTC
-string? (100)                                         MapData.Map
-string? (100)                                         MapData.NewNumber
-string? (100)                                         MapData.Number
-string? (100)                                         MapData.OldMap
-string? (100)                                         MapData.OriginalNumber
-int?                                                  MapData.RowId
-bool                                                  MapData.Sys_Deactivated
-bool                                                  MapData.Sys_Historic
-bool                                                  MapData.Sys_Incomplete
-string? (250)                                         MapData.UserActionNeeded
-int                                                   MapDataExtraData.MapDataExtraDataId
-string (50)                                           MapDataExtraData.Key
-bool                                                  MapDataExtraData.Sys_Deactivated
-bool                                                  MapDataExtraData.Sys_Historic
-bool                                                  MapDataExtraData.Sys_Incomplete
-string? (150)                                         MapDataExtraData.Value
 int                                                   MapDataValue.MapDataValueId
 string? [MultilineText](250)                          MapDataValue.Description
 string? [MultilineText](250)                          MapDataValue.DescriptionPart1
@@ -4796,14 +4656,6 @@ string? (100)                                         MapDataValue.Number
 bool                                                  MapDataValue.Sys_Deactivated
 bool                                                  MapDataValue.Sys_Historic
 bool                                                  MapDataValue.Sys_Incomplete
-int                                                   Municipality.MunicipalityId
-string (20)                                           Municipality.Code
-string (2)                                            Municipality.CountryId
-int                                                   Municipality.CountyId
-string (250)                                          Municipality.Name
-bool                                                  Municipality.Sys_Deactivated
-bool                                                  Municipality.Sys_Historic
-bool                                                  Municipality.Sys_Incomplete
 int                                                   Note.NoteId
 string?                                               Note.NoteIdExternal
 string?                                               Note.AssignmentIdExternal
@@ -4944,18 +4796,6 @@ string?                                               NotificationPreferenceChan
 bool?                                                 NotificationPreferenceChannel.Ext_Out_Error_SetOK
 DateTime?                                             NotificationPreferenceChannel.Ext_Out_LastSyncUTC
 --> ExternalSystemNotificationPreferenceChannel[]     NotificationPreferenceChannel.ExternalSystemNotificationPreferenceChannels
-int                                                   NotificationType.NotificationTypeId
-bool                                                  NotificationType.Sys_Deactivated
-bool                                                  NotificationType.Sys_Historic
-bool                                                  NotificationType.Sys_Incomplete
-NotificationTypeGroupEnum                             NotificationType.Enum_NotificationTypeGroupId
-NotificationTypeEnum                                  NotificationType.Enum_NotificationTypeId
-int                                                   NotificationTypeChannel.NotificationTypeChannelId
-int                                                   NotificationTypeChannel.NotificationTypeId
-bool                                                  NotificationTypeChannel.Sys_Deactivated
-bool                                                  NotificationTypeChannel.Sys_Historic
-bool                                                  NotificationTypeChannel.Sys_Incomplete
-NotificationChannelEnum                               NotificationTypeChannel.Enum_NotificationChannelId
 int                                                   NumberSeries.NumberSeriesId
 string?                                               NumberSeries.NumberSeriesIdExternal
 string?                                               NumberSeries.ValidFor_CustomerClassIdExternal
@@ -5149,16 +4989,6 @@ string?                                               PaymentTerm.Ext_Out_Error_
 bool?                                                 PaymentTerm.Ext_Out_Error_SetOK
 DateTime?                                             PaymentTerm.Ext_Out_LastSyncUTC
 --> ExternalSystemPaymentTerm[]                       PaymentTerm.ExternalSystemPaymentTerms
-short                                                 Permission.PermissionId
-bool                                                  Permission.IsForBackend
-bool                                                  Permission.IsForFrontend
-string (100)                                          Permission.Name
-bool                                                  Permission.ReportIfMissing
-bool                                                  Permission.Sys_Deactivated
-bool                                                  Permission.Sys_Historic
-bool                                                  Permission.Sys_Incomplete
-string (200)                                          Permission.TextId
-PermissionGroupEnum                                   Permission.Enum_PermissionGroupId
 int                                                   PosSale.PosSaleId
 string?                                               PosSale.EmployeeIdExternal
 int?                                                  PosSale.EmployeeId
@@ -5185,20 +5015,6 @@ short?                                                PosSaleLine.SupplierIndust
 bool                                                  PosSaleLine.Sys_Deactivated
 bool                                                  PosSaleLine.Sys_Historic
 bool                                                  PosSaleLine.Sys_Incomplete
-int                                                   PostalPlace.PostalPlaceId
-string (10)                                           PostalPlace.Code
-string (2)                                            PostalPlace.CountryId
-string (250)                                          PostalPlace.Name
-bool                                                  PostalPlace.Sys_Deactivated
-bool                                                  PostalPlace.Sys_Historic
-bool                                                  PostalPlace.Sys_Incomplete
-int                                                   PostalPlaceMunicipality.PostalPlaceMunicipalityId
-bool                                                  PostalPlaceMunicipality.IsPrimary
-int                                                   PostalPlaceMunicipality.MunicipalityId
-int                                                   PostalPlaceMunicipality.PostalPlaceId
-bool                                                  PostalPlaceMunicipality.Sys_Deactivated
-bool                                                  PostalPlaceMunicipality.Sys_Historic
-bool                                                  PostalPlaceMunicipality.Sys_Incomplete
 int                                                   Product.ProductId
 string?                                               Product.ProductIdExternal
 string?                                               Product.ClassificationSystemItemIdExternal
@@ -5396,29 +5212,6 @@ int                                                   ProductAttachment.Attachme
 bool                                                  ProductAttachment.Sys_Deactivated
 bool                                                  ProductAttachment.Sys_Historic
 bool                                                  ProductAttachment.Sys_Incomplete
-int                                                   ProductBatch.ProductBatchId
-string?                                               ProductBatch.ProductIdExternal
-string?                                               ProductBatch.StockIdExternal
-string?                                               ProductBatch.StorageIdExternal
-decimal?                                              ProductBatch.CostPrice
-int                                                   ProductBatch.ProductId
-decimal                                               ProductBatch.Quantity
-int?                                                  ProductBatch.SortOrder
-int                                                   ProductBatch.StockId
-short                                                 ProductBatch.StorageId
-bool                                                  ProductBatch.Sys_Deactivated
-bool                                                  ProductBatch.Sys_Historic
-bool                                                  ProductBatch.Sys_Incomplete
-short                                                 ProductCampaign.ProductCampaignId
-string?                                               ProductCampaign.ProductSupplierIndustryTypeIdExternal
-decimal?                                              ProductCampaign.CampaignQuantity
-DateTime?                                             ProductCampaign.EndDatetimeUTC
-int                                                   ProductCampaign.ProductSupplierIndustryTypeId
-decimal?                                              ProductCampaign.SalesPrice
-DateTime?                                             ProductCampaign.StartDatetimeUTC
-bool                                                  ProductCampaign.Sys_Deactivated
-bool                                                  ProductCampaign.Sys_Historic
-bool                                                  ProductCampaign.Sys_Incomplete
 int                                                   ProductClass.ProductClassId
 string?                                               ProductClass.ProductClassIdExternal
 string?                                               ProductClass.ProductClassTypeIdExternal
@@ -5557,14 +5350,6 @@ string?                                               ProductClassUse.Ext_Out_Er
 bool?                                                 ProductClassUse.Ext_Out_Error_SetOK
 DateTime?                                             ProductClassUse.Ext_Out_LastSyncUTC
 --> ExternalSystemProductClassUse[]                   ProductClassUse.ExternalSystemProductClassUses
-int                                                   ProductDimensionValue.ProductDimensionValueId
-string?                                               ProductDimensionValue.DimensionValueIdExternal
-string?                                               ProductDimensionValue.ProductIdExternal
-int                                                   ProductDimensionValue.DimensionValueId
-int                                                   ProductDimensionValue.ProductId
-bool                                                  ProductDimensionValue.Sys_Deactivated
-bool                                                  ProductDimensionValue.Sys_Historic
-bool                                                  ProductDimensionValue.Sys_Incomplete
 int                                                   ProductExtendedInfo.ProductExtendedInfoId
 string?                                               ProductExtendedInfo.ProductIdExternal
 bool                                                  ProductExtendedInfo.Sys_Deactivated
@@ -6019,16 +5804,6 @@ string?                                               ProductNoteLine.Ext_Out_Er
 bool?                                                 ProductNoteLine.Ext_Out_Error_SetOK
 DateTime?                                             ProductNoteLine.Ext_Out_LastSyncUTC
 --> ExternalSystemProductNoteLine[]                   ProductNoteLine.ExternalSystemProductNoteLines
-int                                                   ProductNoteLineBatch.ProductNoteLineBatchId
-string?                                               ProductNoteLineBatch.ProductNoteLineIdExternal
-int?                                                  ProductNoteLineBatch.ProductBatchId
-int                                                   ProductNoteLineBatch.ProductNoteLineId
-decimal                                               ProductNoteLineBatch.Quantity
-bool                                                  ProductNoteLineBatch.Sys_Deactivated
-bool                                                  ProductNoteLineBatch.Sys_Historic
-short?                                                ProductNoteLineBatch.Sys_HistoricStorageId
-bool                                                  ProductNoteLineBatch.Sys_HistoricWorkaround
-bool                                                  ProductNoteLineBatch.Sys_Incomplete
 int                                                   ProductSearch.ProductSearchId
 string?                                               ProductSearch.ProductSearchIdExternal
 string?                                               ProductSearch.ProductClassIdExternal
@@ -6510,24 +6285,6 @@ string?                                               ProjectPeriod.Ext_Out_Erro
 bool?                                                 ProjectPeriod.Ext_Out_Error_SetOK
 DateTime?                                             ProjectPeriod.Ext_Out_LastSyncUTC
 --> ExternalSystemProjectPeriod[]                     ProjectPeriod.ExternalSystemProjectPeriods
-short                                                 ProjectProductAgreement.ProjectProductAgreementId
-string?                                               ProjectProductAgreement.ProductAgreementIdExternal
-string?                                               ProjectProductAgreement.ProjectIdExternal
-short?                                                ProjectProductAgreement.Number
-byte                                                  ProjectProductAgreement.Priority
-short                                                 ProjectProductAgreement.ProductAgreementId
-int                                                   ProjectProductAgreement.ProjectId
-bool                                                  ProjectProductAgreement.Sys_Deactivated
-bool                                                  ProjectProductAgreement.Sys_Historic
-bool                                                  ProjectProductAgreement.Sys_Incomplete
-short                                                 ProjectPurchaseAgreement.ProjectPurchaseAgreementId
-string?                                               ProjectPurchaseAgreement.ProjectIdExternal
-byte                                                  ProjectPurchaseAgreement.Priority
-int                                                   ProjectPurchaseAgreement.ProjectId
-short                                                 ProjectPurchaseAgreement.PurchaseAgreementId
-bool                                                  ProjectPurchaseAgreement.Sys_Deactivated
-bool                                                  ProjectPurchaseAgreement.Sys_Historic
-bool                                                  ProjectPurchaseAgreement.Sys_Incomplete
 short                                                 ProjectReport.ProjectReportId
 string?                                               ProjectReport.ProjectReportIdExternal
 string [MultilineText](100)                           ProjectReport.Description
@@ -7621,12 +7378,6 @@ string?                                               StorageTransfer.Ext_Out_Er
 bool?                                                 StorageTransfer.Ext_Out_Error_SetOK
 DateTime?                                             StorageTransfer.Ext_Out_LastSyncUTC
 --> ExternalSystemStorageTransfer[]                   StorageTransfer.ExternalSystemStorageTransfers
-int                                                   StorageValueUpdate.StorageValueUpdateId
-DateOnly                                              StorageValueUpdate.FromDate
-bool                                                  StorageValueUpdate.Sys_Deactivated
-bool                                                  StorageValueUpdate.Sys_Historic
-bool                                                  StorageValueUpdate.Sys_Incomplete
-DateOnly                                              StorageValueUpdate.ToDate
 int                                                   StorageValueUpdateAccountConfig.StorageValueUpdateAccountConfigId
 string?                                               StorageValueUpdateAccountConfig.StorageValueUpdateAccountConfigIdExternal
 string?                                               StorageValueUpdateAccountConfig.DepartmentIdExternal
@@ -7912,29 +7663,6 @@ bool                                                  SupplierInvoiceProductMatc
 string? (100)                                         SupplierInvoiceProductMatch.Target_ProductName
 int                                                   SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
 int?                                                  SupplierInvoiceProductMatch.VATRateId
-int                                                   SystemMessage.SystemMessageId
-string? (100)                                         SystemMessage.EditUrlTextId
-bool                                                  SystemMessage.IsSummary
-string? (50)                                          SystemMessage.MergeField1
-string? (50)                                          SystemMessage.MergeField2
-string? (50)                                          SystemMessage.MergeField3
-string? (50)                                          SystemMessage.MergeField4
-string? (100)                                         SystemMessage.MergeValue1
-string? (100)                                         SystemMessage.MergeValue2
-string? (100)                                         SystemMessage.MergeValue3
-string? (100)                                         SystemMessage.MergeValue4
-string?                                               SystemMessage.RawMessage
-long                                                  SystemMessage.RowId
-long?                                                 SystemMessage.RowId2
-long?                                                 SystemMessage.Summary_AssignmentId
-long?                                                 SystemMessage.Summary_ProductNoteId
-bool                                                  SystemMessage.Sys_Deactivated
-bool                                                  SystemMessage.Sys_Historic
-bool                                                  SystemMessage.Sys_Incomplete
-string? (200)                                         SystemMessage.TextId
-EntityEnum                                            SystemMessage.Enum_EntityId
-RowStateEnum                                          SystemMessage.Enum_RowStateId
-SystemMessageSourceEnum                               SystemMessage.Enum_SystemMessageSourceId
 int                                                   SystemNotification.SystemNotificationId
 string? [MultilineText](500)                          SystemNotification.DetailDescriptionURL
 string? (500)                                         SystemNotification.EntityNavigationURL
@@ -8139,14 +7867,6 @@ int                                                   TeamEmployee.EmployeeId
 bool                                                  TeamEmployee.Sys_Deactivated
 bool                                                  TeamEmployee.Sys_Historic
 bool                                                  TeamEmployee.Sys_Incomplete
-int                                                   Temp_WebhookMessage.Temp_WebhookMessageId
-bool                                                  Temp_WebhookMessage.CreateOperation
-long?                                                 Temp_WebhookMessage.RowId
-bool                                                  Temp_WebhookMessage.Sys_Deactivated
-bool                                                  Temp_WebhookMessage.Sys_Historic
-bool                                                  Temp_WebhookMessage.Sys_Incomplete
-string? (50)                                          Temp_WebhookMessage.TableName
-short                                                 Temp_WebhookMessage.WebhookSubscriptionId
 short                                                 Unit.UnitId
 string?                                               Unit.UnitIdExternal
 string (8)                                            Unit.Code
@@ -8172,21 +7892,6 @@ string?                                               Unit.Ext_Out_Error_FixLink
 bool?                                                 Unit.Ext_Out_Error_SetOK
 DateTime?                                             Unit.Ext_Out_LastSyncUTC
 --> ExternalSystemUnit[]                              Unit.ExternalSystemUnits
-int                                                   User.UserId
-string?                                               User.EmployeeIdExternal
-string? (2)                                           User.DefaultLanguage
-string? [Email](100)                                  User.Email
-int?                                                  User.EmployeeId
-short?                                                User.ExternalSystemId
-string? (200)                                         User.FirstName
-bool                                                  User.IsInactive
-string? (200)                                         User.LastName
-string? [Email](100)                                  User.SecondaryEmail
-bool                                                  User.Sys_Deactivated
-bool                                                  User.Sys_Historic
-bool                                                  User.Sys_Incomplete
-bool                                                  User.TwoFactorEnabled
-UserTypeEnum                                          User.Enum_UserTypeId
 short                                                 UserCommand.UserCommandId
 string? (100)                                         UserCommand.Context
 int?                                                  UserCommand.CwUserId
@@ -8481,16 +8186,4 @@ string?                                               WageRateEmployee.Ext_Out_E
 bool?                                                 WageRateEmployee.Ext_Out_Error_SetOK
 DateTime?                                             WageRateEmployee.Ext_Out_LastSyncUTC
 --> ExternalSystemWageRateEmployee[]                  WageRateEmployee.ExternalSystemWageRateEmployees
-short                                                 WebhookSubscription.WebhookSubscriptionId
-string? [MultilineText](250)                          WebhookSubscription.Description
-bool                                                  WebhookSubscription.Enabled
-short?                                                WebhookSubscription.ExternalSystemId
-string?                                               WebhookSubscription.HttpAuthHeader
-short?                                                WebhookSubscription.IntegratorId
-string?                                               WebhookSubscription.SharedSecret
-bool                                                  WebhookSubscription.Sys_Deactivated
-bool                                                  WebhookSubscription.Sys_Historic
-bool                                                  WebhookSubscription.Sys_Incomplete
-string (50)                                           WebhookSubscription.WebhookId
-string?                                               WebhookSubscription.WebhookUrl
 
