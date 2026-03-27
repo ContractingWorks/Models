@@ -579,6 +579,8 @@ DateTime?                                             CalculationFolderTemplate.
 --> ExternalSystemCalculationFolderTemplate[]         CalculationFolderTemplate.ExternalSystemCalculationFolderTemplates
 int                                                   CalculationLine.CalculationLineId
 string?                                               CalculationLine.ClassificationSystemItemIdExternal
+string?                                               CalculationLine.Cost_ProjectAccountIdExternal
+string?                                               CalculationLine.Income_ProjectAccountIdExternal
 string?                                               CalculationLine.ProductIdExternal
 string?                                               CalculationLine.ProductSearchIdExternal
 string?                                               CalculationLine.ProductSeriesIdExternal
@@ -591,6 +593,8 @@ int?                                                  CalculationLine.Calculatio
 int                                                   CalculationLine.CalculationId
 int?                                                  CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                         CalculationLine.Comment
+int?                                                  CalculationLine.Cost_ProjectAccountId
+int?                                                  CalculationLine.Income_ProjectAccountId
 bool?                                                 CalculationLine.IsDefaultWithinSeries
 bool?                                                 CalculationLine.IsFromDefaultSeries
 bool?                                                 CalculationLine.IsInteresting
@@ -599,7 +603,7 @@ int?                                                  CalculationLine.ParentCalc
 decimal?                                              CalculationLine.ProductCostPrice
 decimal?                                              CalculationLine.ProductCostPriceOverride
 int?                                                  CalculationLine.ProductId
-string?                                               CalculationLine.ProductName
+string? (500)                                         CalculationLine.ProductName
 string? (50)                                          CalculationLine.ProductNumber
 decimal?                                              CalculationLine.ProductSalesPrice
 decimal?                                              CalculationLine.ProductSalesPriceOverride
@@ -5956,15 +5960,22 @@ DateTime?                                             ProductSeries.Ext_Out_Last
 int                                                   ProductStructure.ProductStructureId
 string?                                               ProductStructure.ProductStructureIdExternal
 string?                                               ProductStructure.ClassificationSystemItemIdExternal
+string?                                               ProductStructure.Cost_ProjectAccountIdExternal
 string?                                               ProductStructure.Default_TariffIdExternal
+string?                                               ProductStructure.Income_ProjectAccountIdExternal
 string?                                               ProductStructure.ParentProductIdExternal
 string?                                               ProductStructure.ProductIdExternal
 string?                                               ProductStructure.ProductSearchIdExternal
 int?                                                  ProductStructure.ClassificationSystemItemId
+int?                                                  ProductStructure.Cost_ProjectAccountId
 int?                                                  ProductStructure.Default_TariffId
+int?                                                  ProductStructure.Income_ProjectAccountId
 bool?                                                 ProductStructure.IsInteresting
 int                                                   ProductStructure.ParentProductId
+decimal?                                              ProductStructure.ProductCostPriceOverride
 int?                                                  ProductStructure.ProductId
+string? (500)                                         ProductStructure.ProductName
+decimal?                                              ProductStructure.ProductSalesPriceOverride
 int?                                                  ProductStructure.ProductSearchId
 decimal?                                              ProductStructure.Quantity
 int                                                   ProductStructure.SortOrder
@@ -5973,6 +5984,7 @@ bool                                                  ProductStructure.Sys_Deact
 bool                                                  ProductStructure.Sys_Historic
 bool                                                  ProductStructure.Sys_Incomplete
 string? (50)                                          ProductStructure.TariffFilter
+int?                                                  ProductStructure.WorkSeconds
 bool?                                                 ProductStructure.Ext_Sys_Deactivated
 string?                                               ProductStructure.Ext_ExternalId
 string?                                               ProductStructure.Ext_In_Error_MsgNO
