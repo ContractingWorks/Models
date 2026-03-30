@@ -4266,6 +4266,7 @@ bool?                                                 Invoice_Session.IsInvoiceH
 bool?                                                 Invoice_Session.IsInvoiceListReadOnly
 bool?                                                 Invoice_Session.IsInvoiceTextReadOnly
 bool?                                                 Invoice_Session.IsMasterInvoice
+bool?                                                 Invoice_Session.JobResponsibleCompleted
 string? (200)                                         Invoice_Session.MainContact
 int?                                                  Invoice_Session.MasterInvoiceId
 int?                                                  Invoice_Session.MasterInvoiceSortOrder
@@ -4285,6 +4286,7 @@ string?                                               Invoice_Session.ROTBrfOrgN
 bool?                                                 Invoice_Session.ROTInvoice
 string?                                               Invoice_Session.ROTPropertyNo
 DateTime?                                             Invoice_Session.SentUTC
+bool?                                                 Invoice_Session.ShowCustomerDeviationWarning
 bool                                                  Invoice_Session.Sys_Deactivated
 bool?                                                 Invoice_Session.Sys_FinalPostProcessDone
 bool                                                  Invoice_Session.Sys_Historic
