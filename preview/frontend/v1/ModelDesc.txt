@@ -4256,6 +4256,7 @@ string? [Email](200)                                  Invoice_Session.InvoiceEma
 int?                                                  Invoice_Session.InvoiceId
 int?                                                  Invoice_Session.InvoiceLayoutId
 int?                                                  Invoice_Session.InvoiceNumber
+string? [MultilineText](100)                          Invoice_Session.InvoiceTemplateDescription
 int?                                                  Invoice_Session.InvoiceTemplateId
 decimal?                                              Invoice_Session.InvoiceTotal
 decimal?                                              Invoice_Session.InvoiceTotalFromOtherInvoices
