@@ -7012,8 +7012,10 @@ bool                                                  Settings_Calculation.Sys_I
 int?                                                  Settings_Calculation.WageCodeReportCategoryId
 PublicationStatusEnum                                 Settings_Calculation.Enum_PublicationStatusId
 byte                                                  Settings_Dashboard.Settings_DashboardId
+string?                                               Settings_Dashboard.NonBillable_WageCodeReportCategoryIdExternal
 string?                                               Settings_Dashboard.VehicleUsage_WageCodeReportCategoryIdExternal
 short?                                                Settings_Dashboard.LabourWorkHoursYearTarget
+int?                                                  Settings_Dashboard.NonBillable_WageCodeReportCategoryId
 bool                                                  Settings_Dashboard.Sys_Deactivated
 bool                                                  Settings_Dashboard.Sys_Historic
 bool                                                  Settings_Dashboard.Sys_Incomplete
