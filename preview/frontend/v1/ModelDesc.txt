@@ -110,7 +110,6 @@ string?                                               Assignment.ScheduledTaskDe
 string?                                               Assignment.ServiceAgreementIdExternal
 string?                                               Assignment.ServiceContractIdExternal
 string?                                               Assignment.StorageIdExternal
-string?                                               Assignment.Sys_PreviousProductAgreementGroupIdExternal
 bool                                                  Assignment.Archived
 int?                                                  Assignment.AssignmentCategoryId
 int?                                                  Assignment.AssignmentCategoryId_1
@@ -168,7 +167,6 @@ bool                                                  Assignment.Sys_Historic
 bool                                                  Assignment.Sys_Incomplete
 bool                                                  Assignment.Sys_InitialPostProcessNeeded
 bool                                                  Assignment.Sys_IsServiceContract
-int?                                                  Assignment.Sys_PreviousProductAgreementGroupId
 bool                                                  Assignment.Sys_RowState_NoSyncToEconomySystem
 string? (255)                                         Assignment.Sys_Tags
 byte?                                                 Assignment.TimeSheetAttachmentsNumber
@@ -611,6 +609,7 @@ int?                                                  CalculationLine.ProductSea
 int?                                                  CalculationLine.ProductSeriesId
 int?                                                  CalculationLine.ProductSupplierIndustryTypeId
 decimal?                                              CalculationLine.ProductSurchargePercent
+decimal?                                              CalculationLine.ProductSurchargePercentOverride
 decimal?                                              CalculationLine.Quantity
 decimal?                                              CalculationLine.QuantityOverride
 int                                                   CalculationLine.SortOrder
@@ -1229,8 +1228,6 @@ bool                                                  DiscountGroup.Sys_Incomple
 int                                                   Employee.EmployeeId
 string?                                               Employee.EmployeeIdExternal
 string?                                               Employee.DepartmentIdExternal
-string?                                               Employee.EmployeeInvoiceCategoryIdExternal
-string?                                               Employee.JobCategoryIdExternal
 string?                                               Employee.Manager_EmployeeIdExternal
 bool                                                  Employee.ApproveWageRequired
 bool                                                  Employee.CW_Owned
@@ -1238,7 +1235,6 @@ DateOnly?                                             Employee.DateOfBirth
 short?                                                Employee.DepartmentId
 string? [Email](200)                                  Employee.EmailPrivate
 string? [Email](200)                                  Employee.EmailWork
-short?                                                Employee.EmployeeInvoiceCategoryId
 int?                                                  Employee.EmployeeNumber
 DateOnly?                                             Employee.EndDate
 string (50)                                           Employee.FirstName
@@ -1247,9 +1243,6 @@ decimal                                               Employee.HoursPerWeek
 string? (4000)                                        Employee.ImageUrl
 bool                                                  Employee.IsCaseHandler
 bool                                                  Employee.IsHired
-DateOnly?                                             Employee.JobCategoryEndDate
-short?                                                Employee.JobCategoryId
-DateOnly?                                             Employee.JobCategoryStartDate
 decimal?                                              Employee.JobPercent
 string (50)                                           Employee.LastName
 int?                                                  Employee.Manager_EmployeeId
@@ -1283,6 +1276,7 @@ DateTime?                                             Employee.Ext_Out_LastSyncU
 --> Address                                           Employee.Default_Address
 --> Address[]                                         Employee.Addresses
 --> EmployeeAttachment[]                              Employee.EmployeeAttachments
+--> Employment[]                                      Employee.Employments
 --> ExternalSystemEmployee[]                          Employee.ExternalSystemEmployees
 short                                                 EmployeeAddress.EmployeeAddressId
 string?                                               EmployeeAddress.AddressIdExternal
@@ -1340,7 +1334,6 @@ string?                                               Employment.EmployeeIdExter
 string?                                               Employment.EmployeeInvoiceCategoryIdExternal
 string?                                               Employment.JobCategoryIdExternal
 string? [MultilineText](1000)                         Employment.Comment
-int                                                   Employment.EmployeeId
 short?                                                Employment.EmployeeInvoiceCategoryId
 short?                                                Employment.JobCategoryId
 DateOnly?                                             Employment.NotificationDate
@@ -1349,6 +1342,7 @@ DateOnly?                                             Employment.StartDate
 bool                                                  Employment.Sys_Deactivated
 bool                                                  Employment.Sys_Historic
 bool                                                  Employment.Sys_Incomplete
+DateOnly?                                             Employment.Sys_StartDate
 short                                                 EntityExtension.EntityExtensionId
 string?                                               EntityExtension.EntityExtensionIdExternal
 string? (250)                                         EntityExtension.DefaultValue
@@ -5978,6 +5972,7 @@ int                                                   ProductStructure.ParentPro
 decimal?                                              ProductStructure.ProductCostPriceOverride
 int?                                                  ProductStructure.ProductId
 string? (500)                                         ProductStructure.ProductName
+string? (50)                                          ProductStructure.ProductNumber
 decimal?                                              ProductStructure.ProductSalesPriceOverride
 int?                                                  ProductStructure.ProductSearchId
 decimal?                                              ProductStructure.Quantity
