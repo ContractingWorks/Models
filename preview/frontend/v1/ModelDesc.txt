@@ -4447,6 +4447,7 @@ int?                                                  InvoiceLine_Session.SortOr
 string? [MultilineText]                               InvoiceLine_Session.SourceProductNoteLineIds
 string?                                               InvoiceLine_Session.SourceServiceIds
 int?                                                  InvoiceLine_Session.StorageId
+int?                                                  InvoiceLine_Session.SupplierIndustryTypeId
 decimal?                                              InvoiceLine_Session.SurchargePercentInvoice
 decimal?                                              InvoiceLine_Session.Sys_CostPrice
 bool                                                  InvoiceLine_Session.Sys_Deactivated
