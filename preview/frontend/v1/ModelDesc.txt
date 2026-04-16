@@ -909,6 +909,7 @@ string? [Phone](50)                                   Customer.Mobile
 string? [Phone](50)                                   Customer.Mobile2
 string? (100)                                         Customer.Name
 string? (100)                                         Customer.Name2
+string? (50)                                          Customer.NationalIdNumber
 string? (50)                                          Customer.OrganizationNumber
 byte?                                                 Customer.PaymentTermId
 string? [Phone](50)                                   Customer.Phone
