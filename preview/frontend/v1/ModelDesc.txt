@@ -1339,6 +1339,7 @@ short?                                                Employment.EmployeeInvoice
 short?                                                Employment.JobCategoryId
 DateOnly?                                             Employment.NotificationDate
 byte?                                                 Employment.NumberOfMonths
+int?                                                  Employment.SortOrder
 DateOnly?                                             Employment.StartDate
 bool                                                  Employment.Sys_Deactivated
 bool                                                  Employment.Sys_Historic
