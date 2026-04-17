@@ -344,6 +344,7 @@ bool                                                  Attachment.SyncToMobileDev
 bool                                                  Attachment.Sys_Deactivated
 bool                                                  Attachment.Sys_Historic
 bool                                                  Attachment.Sys_Incomplete
+DateTime?                                             Attachment.UploadVerifiedUTC
 string? (500)                                         Attachment.Uri
 bool                                                  Attachment.UseCommonBlobStore
 DateTime?                                             Attachment.WriteTokenValidUntilUTC
