@@ -7054,7 +7054,6 @@ byte?                                                 Settings_Main.IndustryType
 bool                                                  Settings_Main.InvoiceIncludeProductNumber
 short?                                                Settings_Main.InvoiceTemplateId
 bool                                                  Settings_Main.Invoice_KeepValuesForCreditNotes
-bool                                                  Settings_Main.Invoice_SendImmediately
 bool                                                  Settings_Main.LookupExternal_Customer
 byte?                                                 Settings_Main.PaymentTermId
 string? [Phone](50)                                   Settings_Main.PhoneNumberForSMS
