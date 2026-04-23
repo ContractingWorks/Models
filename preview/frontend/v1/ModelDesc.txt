@@ -2529,6 +2529,44 @@ DateTime?                                             ExternalSystemPaymentTerm.
 string? [MultilineText](50)                           ExternalSystemPaymentTerm.StatusDescription
 bool                                                  ExternalSystemPaymentTerm.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemPaymentTerm.Enum_SyncStatusId
+int                                                   ExternalSystemPosSale.ExternalSystemPosSaleId
+string?                                               ExternalSystemPosSale.PosSaleIdExternal
+string? (50)                                          ExternalSystemPosSale.ExternalId
+short                                                 ExternalSystemPosSale.ExternalSystemId
+string? (100)                                         ExternalSystemPosSale.In_Error_FixLink
+string? (250)                                         ExternalSystemPosSale.In_Error_MsgEN
+string? (250)                                         ExternalSystemPosSale.In_Error_MsgNO
+string?                                               ExternalSystemPosSale.In_Error_TechDetail
+string? (40)                                          ExternalSystemPosSale.In_Error_TraceId
+DateTime?                                             ExternalSystemPosSale.In_LastSyncUTC
+string? (100)                                         ExternalSystemPosSale.Out_Error_FixLink
+string? (250)                                         ExternalSystemPosSale.Out_Error_MsgEN
+string? (250)                                         ExternalSystemPosSale.Out_Error_MsgNO
+string?                                               ExternalSystemPosSale.Out_Error_TechDetail
+string? (40)                                          ExternalSystemPosSale.Out_Error_TraceId
+DateTime?                                             ExternalSystemPosSale.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemPosSale.StatusDescription
+bool                                                  ExternalSystemPosSale.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemPosSale.Enum_SyncStatusId
+int                                                   ExternalSystemPosSaleLine.ExternalSystemPosSaleLineId
+string?                                               ExternalSystemPosSaleLine.PosSaleLineIdExternal
+string? (50)                                          ExternalSystemPosSaleLine.ExternalId
+short                                                 ExternalSystemPosSaleLine.ExternalSystemId
+string? (100)                                         ExternalSystemPosSaleLine.In_Error_FixLink
+string? (250)                                         ExternalSystemPosSaleLine.In_Error_MsgEN
+string? (250)                                         ExternalSystemPosSaleLine.In_Error_MsgNO
+string?                                               ExternalSystemPosSaleLine.In_Error_TechDetail
+string? (40)                                          ExternalSystemPosSaleLine.In_Error_TraceId
+DateTime?                                             ExternalSystemPosSaleLine.In_LastSyncUTC
+string? (100)                                         ExternalSystemPosSaleLine.Out_Error_FixLink
+string? (250)                                         ExternalSystemPosSaleLine.Out_Error_MsgEN
+string? (250)                                         ExternalSystemPosSaleLine.Out_Error_MsgNO
+string?                                               ExternalSystemPosSaleLine.Out_Error_TechDetail
+string? (40)                                          ExternalSystemPosSaleLine.Out_Error_TraceId
+DateTime?                                             ExternalSystemPosSaleLine.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemPosSaleLine.StatusDescription
+bool                                                  ExternalSystemPosSaleLine.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemPosSaleLine.Enum_SyncStatusId
 int                                                   ExternalSystemProduct.ExternalSystemProductId
 string?                                               ExternalSystemProduct.ProductIdExternal
 string? (50)                                          ExternalSystemProduct.ExternalId
@@ -4995,6 +5033,7 @@ bool?                                                 PaymentTerm.Ext_Out_Error_
 DateTime?                                             PaymentTerm.Ext_Out_LastSyncUTC
 --> ExternalSystemPaymentTerm[]                       PaymentTerm.ExternalSystemPaymentTerms
 int                                                   PosSale.PosSaleId
+string?                                               PosSale.PosSaleIdExternal
 string?                                               PosSale.EmployeeIdExternal
 int?                                                  PosSale.EmployeeId
 string? (50)                                          PosSale.EmployeeNumberTxt
@@ -5002,8 +5041,27 @@ string? (50)                                          PosSale.ReceiptNumber
 bool                                                  PosSale.Sys_Deactivated
 bool                                                  PosSale.Sys_Historic
 bool                                                  PosSale.Sys_Incomplete
+bool?                                                 PosSale.Ext_Sys_Deactivated
+string?                                               PosSale.Ext_ExternalId
+string?                                               PosSale.Ext_In_Error_MsgNO
+string?                                               PosSale.Ext_In_Error_MsgEN
+string?                                               PosSale.Ext_In_Error_TraceId
+string?                                               PosSale.Ext_In_Error_TechDetail
+string?                                               PosSale.Ext_In_Error_FixLink
+bool?                                                 PosSale.Ext_In_Error_SetOK
+DateTime?                                             PosSale.Ext_In_LastSyncUTC
+string?                                               PosSale.Ext_Out_Error_MsgNO
+string?                                               PosSale.Ext_Out_Error_MsgEN
+string?                                               PosSale.Ext_Out_Error_TraceId
+string?                                               PosSale.Ext_Out_Error_TechDetail
+string?                                               PosSale.Ext_Out_Error_FixLink
+bool?                                                 PosSale.Ext_Out_Error_SetOK
+DateTime?                                             PosSale.Ext_Out_LastSyncUTC
+--> ExternalSystemPosSale[]                           PosSale.ExternalSystemPosSales
 --> PosSaleLine[]                                     PosSale.PosSaleLines
 int                                                   PosSaleLine.PosSaleLineId
+string?                                               PosSaleLine.PosSaleLineIdExternal
+string?                                               PosSaleLine.PosSaleIdExternal
 string?                                               PosSaleLine.ProductIdExternal
 string?                                               PosSaleLine.StorageIdExternal
 string?                                               PosSaleLine.SupplierIndustryTypeIdExternal
@@ -5020,6 +5078,23 @@ short?                                                PosSaleLine.SupplierIndust
 bool                                                  PosSaleLine.Sys_Deactivated
 bool                                                  PosSaleLine.Sys_Historic
 bool                                                  PosSaleLine.Sys_Incomplete
+bool?                                                 PosSaleLine.Ext_Sys_Deactivated
+string?                                               PosSaleLine.Ext_ExternalId
+string?                                               PosSaleLine.Ext_In_Error_MsgNO
+string?                                               PosSaleLine.Ext_In_Error_MsgEN
+string?                                               PosSaleLine.Ext_In_Error_TraceId
+string?                                               PosSaleLine.Ext_In_Error_TechDetail
+string?                                               PosSaleLine.Ext_In_Error_FixLink
+bool?                                                 PosSaleLine.Ext_In_Error_SetOK
+DateTime?                                             PosSaleLine.Ext_In_LastSyncUTC
+string?                                               PosSaleLine.Ext_Out_Error_MsgNO
+string?                                               PosSaleLine.Ext_Out_Error_MsgEN
+string?                                               PosSaleLine.Ext_Out_Error_TraceId
+string?                                               PosSaleLine.Ext_Out_Error_TechDetail
+string?                                               PosSaleLine.Ext_Out_Error_FixLink
+bool?                                                 PosSaleLine.Ext_Out_Error_SetOK
+DateTime?                                             PosSaleLine.Ext_Out_LastSyncUTC
+--> ExternalSystemPosSaleLine[]                       PosSaleLine.ExternalSystemPosSaleLines
 int                                                   Product.ProductId
 string?                                               Product.ProductIdExternal
 string?                                               Product.ClassificationSystemItemIdExternal
@@ -7277,6 +7352,7 @@ string?                                               StockTransaction.ProductId
 string?                                               StockTransaction.ProductSupplierIndustryTypeIdExternal
 string?                                               StockTransaction.RegisteredBy_EmployeeIdExternal
 string?                                               StockTransaction.StorageIdExternal
+string?                                               StockTransaction.Sys_PosSaleLineIdExternal
 string?                                               StockTransaction.Sys_ProductNoteLineIdExternal
 int?                                                  StockTransaction.AssignmentId
 decimal?                                              StockTransaction.AverageCostPrice
