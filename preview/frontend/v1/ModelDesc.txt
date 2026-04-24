@@ -514,6 +514,7 @@ int                                                   Calculation.OfferId
 bool                                                  Calculation.Sys_Deactivated
 bool                                                  Calculation.Sys_Historic
 bool                                                  Calculation.Sys_Incomplete
+int                                                   Calculation.Version
 int?                                                  Calculation.WageCodeReportCategoryId
 OfferStatusEnum                                       Calculation.Enum_OfferStatusId
 int                                                   CalculationFolder.CalculationFolderId
