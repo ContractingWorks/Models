@@ -3689,6 +3689,20 @@ DateTime?                                             ExternalSystemSupplierInvo
 string? [MultilineText](50)                           ExternalSystemSupplierInvoiceLine.StatusDescription
 bool                                                  ExternalSystemSupplierInvoiceLine.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemSupplierInvoiceLine.Enum_SyncStatusId
+int                                                   ExternalSystemSyncRetryQueue.ExternalSystemSyncRetryQueueId
+bool                                                  ExternalSystemSyncRetryQueue.DeactivateOnly
+string? (250)                                         ExternalSystemSyncRetryQueue.ErrorMessage
+string? (50)                                          ExternalSystemSyncRetryQueue.ExternalId
+short                                                 ExternalSystemSyncRetryQueue.ExternalSystemId
+bool                                                  ExternalSystemSyncRetryQueue.IsCompleted
+bool                                                  ExternalSystemSyncRetryQueue.IsIncoming
+int?                                                  ExternalSystemSyncRetryQueue.RowId
+short?                                                ExternalSystemSyncRetryQueue.SyncAttemptCount
+DateTime?                                             ExternalSystemSyncRetryQueue.SyncAttemptUTC
+bool                                                  ExternalSystemSyncRetryQueue.Sys_Deactivated
+bool                                                  ExternalSystemSyncRetryQueue.Sys_Historic
+bool                                                  ExternalSystemSyncRetryQueue.Sys_Incomplete
+EntityEnum                                            ExternalSystemSyncRetryQueue.Enum_EntityId
 int                                                   ExternalSystemTariff.ExternalSystemTariffId
 string?                                               ExternalSystemTariff.TariffIdExternal
 string? (50)                                          ExternalSystemTariff.ExternalId
