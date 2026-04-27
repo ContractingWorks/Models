@@ -1347,6 +1347,61 @@ bool                                                  Employment.Sys_Deactivated
 bool                                                  Employment.Sys_Historic
 bool                                                  Employment.Sys_Incomplete
 DateOnly?                                             Employment.Sys_StartDate
+int                                                   EmploymentTemplate.EmploymentTemplateId
+string?                                               EmploymentTemplate.EmploymentTemplateIdExternal
+string? [MultilineText](500)                          EmploymentTemplate.Description
+string (50)                                           EmploymentTemplate.Name
+bool                                                  EmploymentTemplate.Sys_Deactivated
+bool                                                  EmploymentTemplate.Sys_Historic
+bool                                                  EmploymentTemplate.Sys_Incomplete
+bool?                                                 EmploymentTemplate.Ext_Sys_Deactivated
+string?                                               EmploymentTemplate.Ext_ExternalId
+string?                                               EmploymentTemplate.Ext_In_Error_MsgNO
+string?                                               EmploymentTemplate.Ext_In_Error_MsgEN
+string?                                               EmploymentTemplate.Ext_In_Error_TraceId
+string?                                               EmploymentTemplate.Ext_In_Error_TechDetail
+string?                                               EmploymentTemplate.Ext_In_Error_FixLink
+bool?                                                 EmploymentTemplate.Ext_In_Error_SetOK
+DateTime?                                             EmploymentTemplate.Ext_In_LastSyncUTC
+string?                                               EmploymentTemplate.Ext_Out_Error_MsgNO
+string?                                               EmploymentTemplate.Ext_Out_Error_MsgEN
+string?                                               EmploymentTemplate.Ext_Out_Error_TraceId
+string?                                               EmploymentTemplate.Ext_Out_Error_TechDetail
+string?                                               EmploymentTemplate.Ext_Out_Error_FixLink
+bool?                                                 EmploymentTemplate.Ext_Out_Error_SetOK
+DateTime?                                             EmploymentTemplate.Ext_Out_LastSyncUTC
+--> EmploymentTemplateLine[]                          EmploymentTemplate.EmploymentTemplateLines
+--> ExternalSystemEmploymentTemplate[]                EmploymentTemplate.ExternalSystemEmploymentTemplates
+int                                                   EmploymentTemplateLine.EmploymentTemplateLineId
+string?                                               EmploymentTemplateLine.EmploymentTemplateLineIdExternal
+string?                                               EmploymentTemplateLine.EmployeeInvoiceCategoryIdExternal
+string?                                               EmploymentTemplateLine.EmploymentTemplateIdExternal
+string?                                               EmploymentTemplateLine.JobCategoryIdExternal
+string? [MultilineText](1000)                         EmploymentTemplateLine.Comment
+short?                                                EmploymentTemplateLine.EmployeeInvoiceCategoryId
+short?                                                EmploymentTemplateLine.JobCategoryId
+byte?                                                 EmploymentTemplateLine.NumberOfMonths
+int?                                                  EmploymentTemplateLine.SortOrder
+bool                                                  EmploymentTemplateLine.Sys_Deactivated
+bool                                                  EmploymentTemplateLine.Sys_Historic
+bool                                                  EmploymentTemplateLine.Sys_Incomplete
+bool?                                                 EmploymentTemplateLine.Ext_Sys_Deactivated
+string?                                               EmploymentTemplateLine.Ext_ExternalId
+string?                                               EmploymentTemplateLine.Ext_In_Error_MsgNO
+string?                                               EmploymentTemplateLine.Ext_In_Error_MsgEN
+string?                                               EmploymentTemplateLine.Ext_In_Error_TraceId
+string?                                               EmploymentTemplateLine.Ext_In_Error_TechDetail
+string?                                               EmploymentTemplateLine.Ext_In_Error_FixLink
+bool?                                                 EmploymentTemplateLine.Ext_In_Error_SetOK
+DateTime?                                             EmploymentTemplateLine.Ext_In_LastSyncUTC
+string?                                               EmploymentTemplateLine.Ext_Out_Error_MsgNO
+string?                                               EmploymentTemplateLine.Ext_Out_Error_MsgEN
+string?                                               EmploymentTemplateLine.Ext_Out_Error_TraceId
+string?                                               EmploymentTemplateLine.Ext_Out_Error_TechDetail
+string?                                               EmploymentTemplateLine.Ext_Out_Error_FixLink
+bool?                                                 EmploymentTemplateLine.Ext_Out_Error_SetOK
+DateTime?                                             EmploymentTemplateLine.Ext_Out_LastSyncUTC
+--> ExternalSystemEmploymentTemplateLine[]            EmploymentTemplateLine.ExternalSystemEmploymentTemplateLines
 short                                                 EntityExtension.EntityExtensionId
 string?                                               EntityExtension.EntityExtensionIdExternal
 string? (250)                                         EntityExtension.DefaultValue
@@ -2030,6 +2085,44 @@ DateTime?                                             ExternalSystemEmployeeInvo
 string? [MultilineText](50)                           ExternalSystemEmployeeInvoiceCategory.StatusDescription
 bool                                                  ExternalSystemEmployeeInvoiceCategory.Sys_Deactivated
 SyncStatusEnum                                        ExternalSystemEmployeeInvoiceCategory.Enum_SyncStatusId
+int                                                   ExternalSystemEmploymentTemplate.ExternalSystemEmploymentTemplateId
+string?                                               ExternalSystemEmploymentTemplate.EmploymentTemplateIdExternal
+string? (50)                                          ExternalSystemEmploymentTemplate.ExternalId
+short                                                 ExternalSystemEmploymentTemplate.ExternalSystemId
+string? (100)                                         ExternalSystemEmploymentTemplate.In_Error_FixLink
+string? (250)                                         ExternalSystemEmploymentTemplate.In_Error_MsgEN
+string? (250)                                         ExternalSystemEmploymentTemplate.In_Error_MsgNO
+string?                                               ExternalSystemEmploymentTemplate.In_Error_TechDetail
+string? (40)                                          ExternalSystemEmploymentTemplate.In_Error_TraceId
+DateTime?                                             ExternalSystemEmploymentTemplate.In_LastSyncUTC
+string? (100)                                         ExternalSystemEmploymentTemplate.Out_Error_FixLink
+string? (250)                                         ExternalSystemEmploymentTemplate.Out_Error_MsgEN
+string? (250)                                         ExternalSystemEmploymentTemplate.Out_Error_MsgNO
+string?                                               ExternalSystemEmploymentTemplate.Out_Error_TechDetail
+string? (40)                                          ExternalSystemEmploymentTemplate.Out_Error_TraceId
+DateTime?                                             ExternalSystemEmploymentTemplate.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemEmploymentTemplate.StatusDescription
+bool                                                  ExternalSystemEmploymentTemplate.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemEmploymentTemplate.Enum_SyncStatusId
+int                                                   ExternalSystemEmploymentTemplateLine.ExternalSystemEmploymentTemplateLineId
+string?                                               ExternalSystemEmploymentTemplateLine.EmploymentTemplateLineIdExternal
+string? (50)                                          ExternalSystemEmploymentTemplateLine.ExternalId
+short                                                 ExternalSystemEmploymentTemplateLine.ExternalSystemId
+string? (100)                                         ExternalSystemEmploymentTemplateLine.In_Error_FixLink
+string? (250)                                         ExternalSystemEmploymentTemplateLine.In_Error_MsgEN
+string? (250)                                         ExternalSystemEmploymentTemplateLine.In_Error_MsgNO
+string?                                               ExternalSystemEmploymentTemplateLine.In_Error_TechDetail
+string? (40)                                          ExternalSystemEmploymentTemplateLine.In_Error_TraceId
+DateTime?                                             ExternalSystemEmploymentTemplateLine.In_LastSyncUTC
+string? (100)                                         ExternalSystemEmploymentTemplateLine.Out_Error_FixLink
+string? (250)                                         ExternalSystemEmploymentTemplateLine.Out_Error_MsgEN
+string? (250)                                         ExternalSystemEmploymentTemplateLine.Out_Error_MsgNO
+string?                                               ExternalSystemEmploymentTemplateLine.Out_Error_TechDetail
+string? (40)                                          ExternalSystemEmploymentTemplateLine.Out_Error_TraceId
+DateTime?                                             ExternalSystemEmploymentTemplateLine.Out_LastSyncUTC
+string? [MultilineText](50)                           ExternalSystemEmploymentTemplateLine.StatusDescription
+bool                                                  ExternalSystemEmploymentTemplateLine.Sys_Deactivated
+SyncStatusEnum                                        ExternalSystemEmploymentTemplateLine.Enum_SyncStatusId
 short                                                 ExternalSystemEntityExtension.ExternalSystemEntityExtensionId
 string?                                               ExternalSystemEntityExtension.EntityExtensionIdExternal
 string? (50)                                          ExternalSystemEntityExtension.ExternalId
