@@ -108,7 +108,7 @@ string?                                                Assignment.ProductAgreeme
 string?                                                Assignment.ProjectIdExternal
 string?                                                Assignment.ServiceAgreementIdExternal
 string?                                                Assignment.ServiceContractIdExternal
-string?                                                Assignment.ServiceContractRecurranceIdExternal
+string?                                                Assignment.ServiceContractRecurrenceIdExternal
 string?                                                Assignment.StorageIdExternal
 bool                                                   Assignment.Archived
 int?                                                   Assignment.AssignmentCategoryId
@@ -155,7 +155,7 @@ int?                                                   Assignment.ProjectId
 bool                                                   Assignment.ReadyToInvoice
 short?                                                 Assignment.ServiceAgreementId
 int?                                                   Assignment.ServiceContractId
-int?                                                   Assignment.ServiceContractRecurranceId
+int?                                                   Assignment.ServiceContractRecurrenceId
 DateOnly?                                              Assignment.ServiceInvoiceLimitDate
 DateTime?                                              Assignment.SortDateUTC
 DateTime?                                              Assignment.StartDateTimeUTC
@@ -3459,44 +3459,44 @@ DateTime?                                              ExternalSystemServiceCont
 string? [MultilineText](50)                            ExternalSystemServiceContract.StatusDescription
 bool                                                   ExternalSystemServiceContract.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemServiceContract.Enum_SyncStatusId
-int                                                    ExternalSystemServiceContractRecurrance.ExternalSystemServiceContractRecurranceId
-string?                                                ExternalSystemServiceContractRecurrance.ServiceContractRecurranceIdExternal
-string? (50)                                           ExternalSystemServiceContractRecurrance.ExternalId
-short                                                  ExternalSystemServiceContractRecurrance.ExternalSystemId
-string? (100)                                          ExternalSystemServiceContractRecurrance.In_Error_FixLink
-string? (250)                                          ExternalSystemServiceContractRecurrance.In_Error_MsgEN
-string? (250)                                          ExternalSystemServiceContractRecurrance.In_Error_MsgNO
-string?                                                ExternalSystemServiceContractRecurrance.In_Error_TechDetail
-string? (40)                                           ExternalSystemServiceContractRecurrance.In_Error_TraceId
-DateTime?                                              ExternalSystemServiceContractRecurrance.In_LastSyncUTC
-string? (100)                                          ExternalSystemServiceContractRecurrance.Out_Error_FixLink
-string? (250)                                          ExternalSystemServiceContractRecurrance.Out_Error_MsgEN
-string? (250)                                          ExternalSystemServiceContractRecurrance.Out_Error_MsgNO
-string?                                                ExternalSystemServiceContractRecurrance.Out_Error_TechDetail
-string? (40)                                           ExternalSystemServiceContractRecurrance.Out_Error_TraceId
-DateTime?                                              ExternalSystemServiceContractRecurrance.Out_LastSyncUTC
-string? [MultilineText](50)                            ExternalSystemServiceContractRecurrance.StatusDescription
-bool                                                   ExternalSystemServiceContractRecurrance.Sys_Deactivated
-SyncStatusEnum                                         ExternalSystemServiceContractRecurrance.Enum_SyncStatusId
-int                                                    ExternalSystemServiceContractRecurranceDimValUse.ExternalSystemServiceContractRecurranceDimValUseId
-string?                                                ExternalSystemServiceContractRecurranceDimValUse.ServiceContractRecurranceDimValUseIdExternal
-string? (50)                                           ExternalSystemServiceContractRecurranceDimValUse.ExternalId
-short                                                  ExternalSystemServiceContractRecurranceDimValUse.ExternalSystemId
-string? (100)                                          ExternalSystemServiceContractRecurranceDimValUse.In_Error_FixLink
-string? (250)                                          ExternalSystemServiceContractRecurranceDimValUse.In_Error_MsgEN
-string? (250)                                          ExternalSystemServiceContractRecurranceDimValUse.In_Error_MsgNO
-string?                                                ExternalSystemServiceContractRecurranceDimValUse.In_Error_TechDetail
-string? (40)                                           ExternalSystemServiceContractRecurranceDimValUse.In_Error_TraceId
-DateTime?                                              ExternalSystemServiceContractRecurranceDimValUse.In_LastSyncUTC
-string? (100)                                          ExternalSystemServiceContractRecurranceDimValUse.Out_Error_FixLink
-string? (250)                                          ExternalSystemServiceContractRecurranceDimValUse.Out_Error_MsgEN
-string? (250)                                          ExternalSystemServiceContractRecurranceDimValUse.Out_Error_MsgNO
-string?                                                ExternalSystemServiceContractRecurranceDimValUse.Out_Error_TechDetail
-string? (40)                                           ExternalSystemServiceContractRecurranceDimValUse.Out_Error_TraceId
-DateTime?                                              ExternalSystemServiceContractRecurranceDimValUse.Out_LastSyncUTC
-string? [MultilineText](50)                            ExternalSystemServiceContractRecurranceDimValUse.StatusDescription
-bool                                                   ExternalSystemServiceContractRecurranceDimValUse.Sys_Deactivated
-SyncStatusEnum                                         ExternalSystemServiceContractRecurranceDimValUse.Enum_SyncStatusId
+int                                                    ExternalSystemServiceContractRecurrence.ExternalSystemServiceContractRecurrenceId
+string?                                                ExternalSystemServiceContractRecurrence.ServiceContractRecurrenceIdExternal
+string? (50)                                           ExternalSystemServiceContractRecurrence.ExternalId
+short                                                  ExternalSystemServiceContractRecurrence.ExternalSystemId
+string? (100)                                          ExternalSystemServiceContractRecurrence.In_Error_FixLink
+string? (250)                                          ExternalSystemServiceContractRecurrence.In_Error_MsgEN
+string? (250)                                          ExternalSystemServiceContractRecurrence.In_Error_MsgNO
+string?                                                ExternalSystemServiceContractRecurrence.In_Error_TechDetail
+string? (40)                                           ExternalSystemServiceContractRecurrence.In_Error_TraceId
+DateTime?                                              ExternalSystemServiceContractRecurrence.In_LastSyncUTC
+string? (100)                                          ExternalSystemServiceContractRecurrence.Out_Error_FixLink
+string? (250)                                          ExternalSystemServiceContractRecurrence.Out_Error_MsgEN
+string? (250)                                          ExternalSystemServiceContractRecurrence.Out_Error_MsgNO
+string?                                                ExternalSystemServiceContractRecurrence.Out_Error_TechDetail
+string? (40)                                           ExternalSystemServiceContractRecurrence.Out_Error_TraceId
+DateTime?                                              ExternalSystemServiceContractRecurrence.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemServiceContractRecurrence.StatusDescription
+bool                                                   ExternalSystemServiceContractRecurrence.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemServiceContractRecurrence.Enum_SyncStatusId
+int                                                    ExternalSystemServiceContractRecurrenceDimValUse.ExternalSystemServiceContractRecurrenceDimValUseId
+string?                                                ExternalSystemServiceContractRecurrenceDimValUse.ServiceContractRecurrenceDimValUseIdExternal
+string? (50)                                           ExternalSystemServiceContractRecurrenceDimValUse.ExternalId
+short                                                  ExternalSystemServiceContractRecurrenceDimValUse.ExternalSystemId
+string? (100)                                          ExternalSystemServiceContractRecurrenceDimValUse.In_Error_FixLink
+string? (250)                                          ExternalSystemServiceContractRecurrenceDimValUse.In_Error_MsgEN
+string? (250)                                          ExternalSystemServiceContractRecurrenceDimValUse.In_Error_MsgNO
+string?                                                ExternalSystemServiceContractRecurrenceDimValUse.In_Error_TechDetail
+string? (40)                                           ExternalSystemServiceContractRecurrenceDimValUse.In_Error_TraceId
+DateTime?                                              ExternalSystemServiceContractRecurrenceDimValUse.In_LastSyncUTC
+string? (100)                                          ExternalSystemServiceContractRecurrenceDimValUse.Out_Error_FixLink
+string? (250)                                          ExternalSystemServiceContractRecurrenceDimValUse.Out_Error_MsgEN
+string? (250)                                          ExternalSystemServiceContractRecurrenceDimValUse.Out_Error_MsgNO
+string?                                                ExternalSystemServiceContractRecurrenceDimValUse.Out_Error_TechDetail
+string? (40)                                           ExternalSystemServiceContractRecurrenceDimValUse.Out_Error_TraceId
+DateTime?                                              ExternalSystemServiceContractRecurrenceDimValUse.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemServiceContractRecurrenceDimValUse.StatusDescription
+bool                                                   ExternalSystemServiceContractRecurrenceDimValUse.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemServiceContractRecurrenceDimValUse.Enum_SyncStatusId
 int                                                    ExternalSystemServiceContractTask.ExternalSystemServiceContractTaskId
 string?                                                ExternalSystemServiceContractTask.ServiceContractTaskIdExternal
 string? (50)                                           ExternalSystemServiceContractTask.ExternalId
@@ -6923,78 +6923,78 @@ string?                                                ServiceContract.Ext_Out_E
 bool?                                                  ServiceContract.Ext_Out_Error_SetOK
 DateTime?                                              ServiceContract.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContract[]                    ServiceContract.ExternalSystemServiceContracts
-int                                                    ServiceContractRecurrance.ServiceContractRecurranceId
-string?                                                ServiceContractRecurrance.ServiceContractRecurranceIdExternal
-string?                                                ServiceContractRecurrance.Default_InvoiceTemplateIdExternal
-string?                                                ServiceContractRecurrance.JobResponsible_EmployeeIdExternal
-string?                                                ServiceContractRecurrance.ServiceContractIdExternal
-int?                                                   ServiceContractRecurrance.ActionLeadDays
-short?                                                 ServiceContractRecurrance.Default_InvoiceTemplateId
-string [MultilineText](100)                            ServiceContractRecurrance.Description
-bool                                                   ServiceContractRecurrance.DueDateNotification
-DateOnly?                                              ServiceContractRecurrance.EndDate
-string? (200)                                          ServiceContractRecurrance.InternalReference
-string? [MultilineText]                                ServiceContractRecurrance.InvoiceComment
-bool                                                   ServiceContractRecurrance.IsActive
-bool                                                   ServiceContractRecurrance.IsAutomatic
-bool                                                   ServiceContractRecurrance.IsInvoiceRecurrance
-int?                                                   ServiceContractRecurrance.JobResponsible_EmployeeId
-int?                                                   ServiceContractRecurrance.NotificationLeadDays
-DateOnly?                                              ServiceContractRecurrance.ProcessedUntilDate
-string? (1024)                                         ServiceContractRecurrance.RecurrencePattern
-int?                                                   ServiceContractRecurrance.ServiceContractId
-DateOnly                                               ServiceContractRecurrance.StartDate
-bool                                                   ServiceContractRecurrance.Sys_Deactivated
-bool                                                   ServiceContractRecurrance.Sys_Historic
-bool                                                   ServiceContractRecurrance.Sys_Incomplete
-bool?                                                  ServiceContractRecurrance.Ext_Sys_Deactivated
-string?                                                ServiceContractRecurrance.Ext_ExternalId
-string?                                                ServiceContractRecurrance.Ext_In_Error_MsgNO
-string?                                                ServiceContractRecurrance.Ext_In_Error_MsgEN
-string?                                                ServiceContractRecurrance.Ext_In_Error_TraceId
-string?                                                ServiceContractRecurrance.Ext_In_Error_TechDetail
-string?                                                ServiceContractRecurrance.Ext_In_Error_FixLink
-bool?                                                  ServiceContractRecurrance.Ext_In_Error_SetOK
-DateTime?                                              ServiceContractRecurrance.Ext_In_LastSyncUTC
-string?                                                ServiceContractRecurrance.Ext_Out_Error_MsgNO
-string?                                                ServiceContractRecurrance.Ext_Out_Error_MsgEN
-string?                                                ServiceContractRecurrance.Ext_Out_Error_TraceId
-string?                                                ServiceContractRecurrance.Ext_Out_Error_TechDetail
-string?                                                ServiceContractRecurrance.Ext_Out_Error_FixLink
-bool?                                                  ServiceContractRecurrance.Ext_Out_Error_SetOK
-DateTime?                                              ServiceContractRecurrance.Ext_Out_LastSyncUTC
---> ExternalSystemServiceContractRecurrance[]          ServiceContractRecurrance.ExternalSystemServiceContractRecurrances
---> ServiceContractRecurranceDimValUse[]               ServiceContractRecurrance.ServiceContractRecurranceDimValUses
---> ServiceContractTask[]                              ServiceContractRecurrance.ServiceContractTasks
-int                                                    ServiceContractRecurranceDimValUse.ServiceContractRecurranceDimValUseId
-string?                                                ServiceContractRecurranceDimValUse.ServiceContractRecurranceDimValUseIdExternal
-string?                                                ServiceContractRecurranceDimValUse.DimensionValueUseIdExternal
-string?                                                ServiceContractRecurranceDimValUse.ServiceContractRecurranceIdExternal
-int                                                    ServiceContractRecurranceDimValUse.DimensionValueUseId
-bool                                                   ServiceContractRecurranceDimValUse.Sys_Deactivated
-bool                                                   ServiceContractRecurranceDimValUse.Sys_Historic
-bool                                                   ServiceContractRecurranceDimValUse.Sys_Incomplete
-bool?                                                  ServiceContractRecurranceDimValUse.Ext_Sys_Deactivated
-string?                                                ServiceContractRecurranceDimValUse.Ext_ExternalId
-string?                                                ServiceContractRecurranceDimValUse.Ext_In_Error_MsgNO
-string?                                                ServiceContractRecurranceDimValUse.Ext_In_Error_MsgEN
-string?                                                ServiceContractRecurranceDimValUse.Ext_In_Error_TraceId
-string?                                                ServiceContractRecurranceDimValUse.Ext_In_Error_TechDetail
-string?                                                ServiceContractRecurranceDimValUse.Ext_In_Error_FixLink
-bool?                                                  ServiceContractRecurranceDimValUse.Ext_In_Error_SetOK
-DateTime?                                              ServiceContractRecurranceDimValUse.Ext_In_LastSyncUTC
-string?                                                ServiceContractRecurranceDimValUse.Ext_Out_Error_MsgNO
-string?                                                ServiceContractRecurranceDimValUse.Ext_Out_Error_MsgEN
-string?                                                ServiceContractRecurranceDimValUse.Ext_Out_Error_TraceId
-string?                                                ServiceContractRecurranceDimValUse.Ext_Out_Error_TechDetail
-string?                                                ServiceContractRecurranceDimValUse.Ext_Out_Error_FixLink
-bool?                                                  ServiceContractRecurranceDimValUse.Ext_Out_Error_SetOK
-DateTime?                                              ServiceContractRecurranceDimValUse.Ext_Out_LastSyncUTC
---> ExternalSystemServiceContractRecurranceDimValUse[] ServiceContractRecurranceDimValUse.ExternalSystemServiceContractRecurranceDimValUses
+int                                                    ServiceContractRecurrence.ServiceContractRecurrenceId
+string?                                                ServiceContractRecurrence.ServiceContractRecurrenceIdExternal
+string?                                                ServiceContractRecurrence.Default_InvoiceTemplateIdExternal
+string?                                                ServiceContractRecurrence.JobResponsible_EmployeeIdExternal
+string?                                                ServiceContractRecurrence.ServiceContractIdExternal
+int?                                                   ServiceContractRecurrence.ActionLeadDays
+short?                                                 ServiceContractRecurrence.Default_InvoiceTemplateId
+string [MultilineText](100)                            ServiceContractRecurrence.Description
+bool                                                   ServiceContractRecurrence.DueDateNotification
+DateOnly?                                              ServiceContractRecurrence.EndDate
+string? (200)                                          ServiceContractRecurrence.InternalReference
+string? [MultilineText]                                ServiceContractRecurrence.InvoiceComment
+bool                                                   ServiceContractRecurrence.IsActive
+bool                                                   ServiceContractRecurrence.IsAutomatic
+bool                                                   ServiceContractRecurrence.IsInvoiceRecurrence
+int?                                                   ServiceContractRecurrence.JobResponsible_EmployeeId
+int?                                                   ServiceContractRecurrence.NotificationLeadDays
+DateOnly?                                              ServiceContractRecurrence.ProcessedUntilDate
+string? (1024)                                         ServiceContractRecurrence.RecurrencePattern
+int?                                                   ServiceContractRecurrence.ServiceContractId
+DateOnly                                               ServiceContractRecurrence.StartDate
+bool                                                   ServiceContractRecurrence.Sys_Deactivated
+bool                                                   ServiceContractRecurrence.Sys_Historic
+bool                                                   ServiceContractRecurrence.Sys_Incomplete
+bool?                                                  ServiceContractRecurrence.Ext_Sys_Deactivated
+string?                                                ServiceContractRecurrence.Ext_ExternalId
+string?                                                ServiceContractRecurrence.Ext_In_Error_MsgNO
+string?                                                ServiceContractRecurrence.Ext_In_Error_MsgEN
+string?                                                ServiceContractRecurrence.Ext_In_Error_TraceId
+string?                                                ServiceContractRecurrence.Ext_In_Error_TechDetail
+string?                                                ServiceContractRecurrence.Ext_In_Error_FixLink
+bool?                                                  ServiceContractRecurrence.Ext_In_Error_SetOK
+DateTime?                                              ServiceContractRecurrence.Ext_In_LastSyncUTC
+string?                                                ServiceContractRecurrence.Ext_Out_Error_MsgNO
+string?                                                ServiceContractRecurrence.Ext_Out_Error_MsgEN
+string?                                                ServiceContractRecurrence.Ext_Out_Error_TraceId
+string?                                                ServiceContractRecurrence.Ext_Out_Error_TechDetail
+string?                                                ServiceContractRecurrence.Ext_Out_Error_FixLink
+bool?                                                  ServiceContractRecurrence.Ext_Out_Error_SetOK
+DateTime?                                              ServiceContractRecurrence.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceContractRecurrence[]          ServiceContractRecurrence.ExternalSystemServiceContractRecurrences
+--> ServiceContractRecurrenceDimValUse[]               ServiceContractRecurrence.ServiceContractRecurrenceDimValUses
+--> ServiceContractTask[]                              ServiceContractRecurrence.ServiceContractTasks
+int                                                    ServiceContractRecurrenceDimValUse.ServiceContractRecurrenceDimValUseId
+string?                                                ServiceContractRecurrenceDimValUse.ServiceContractRecurrenceDimValUseIdExternal
+string?                                                ServiceContractRecurrenceDimValUse.DimensionValueUseIdExternal
+string?                                                ServiceContractRecurrenceDimValUse.ServiceContractRecurrenceIdExternal
+int                                                    ServiceContractRecurrenceDimValUse.DimensionValueUseId
+bool                                                   ServiceContractRecurrenceDimValUse.Sys_Deactivated
+bool                                                   ServiceContractRecurrenceDimValUse.Sys_Historic
+bool                                                   ServiceContractRecurrenceDimValUse.Sys_Incomplete
+bool?                                                  ServiceContractRecurrenceDimValUse.Ext_Sys_Deactivated
+string?                                                ServiceContractRecurrenceDimValUse.Ext_ExternalId
+string?                                                ServiceContractRecurrenceDimValUse.Ext_In_Error_MsgNO
+string?                                                ServiceContractRecurrenceDimValUse.Ext_In_Error_MsgEN
+string?                                                ServiceContractRecurrenceDimValUse.Ext_In_Error_TraceId
+string?                                                ServiceContractRecurrenceDimValUse.Ext_In_Error_TechDetail
+string?                                                ServiceContractRecurrenceDimValUse.Ext_In_Error_FixLink
+bool?                                                  ServiceContractRecurrenceDimValUse.Ext_In_Error_SetOK
+DateTime?                                              ServiceContractRecurrenceDimValUse.Ext_In_LastSyncUTC
+string?                                                ServiceContractRecurrenceDimValUse.Ext_Out_Error_MsgNO
+string?                                                ServiceContractRecurrenceDimValUse.Ext_Out_Error_MsgEN
+string?                                                ServiceContractRecurrenceDimValUse.Ext_Out_Error_TraceId
+string?                                                ServiceContractRecurrenceDimValUse.Ext_Out_Error_TechDetail
+string?                                                ServiceContractRecurrenceDimValUse.Ext_Out_Error_FixLink
+bool?                                                  ServiceContractRecurrenceDimValUse.Ext_Out_Error_SetOK
+DateTime?                                              ServiceContractRecurrenceDimValUse.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceContractRecurrenceDimValUse[] ServiceContractRecurrenceDimValUse.ExternalSystemServiceContractRecurrenceDimValUses
 int                                                    ServiceContractTask.ServiceContractTaskId
 string?                                                ServiceContractTask.ServiceContractTaskIdExternal
 string?                                                ServiceContractTask.AssignmentIdExternal
-string?                                                ServiceContractTask.ServiceContractRecurranceIdExternal
+string?                                                ServiceContractTask.ServiceContractRecurrenceIdExternal
 DateTime?                                              ServiceContractTask.ActionDoneUTC
 int?                                                   ServiceContractTask.ActionLeadDays
 int?                                                   ServiceContractTask.AssignmentId
