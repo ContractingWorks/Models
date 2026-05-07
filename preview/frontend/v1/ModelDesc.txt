@@ -4603,6 +4603,7 @@ string? [MultilineText]                                InvoiceLine_Session.Sourc
 string?                                                InvoiceLine_Session.SourceServiceIds
 int?                                                   InvoiceLine_Session.StorageId
 int?                                                   InvoiceLine_Session.SupplierIndustryTypeId
+string? (50)                                           InvoiceLine_Session.SupplierIndustryType_Name
 decimal?                                               InvoiceLine_Session.SurchargePercentInvoice
 decimal?                                               InvoiceLine_Session.Sys_CostPrice
 bool                                                   InvoiceLine_Session.Sys_Deactivated
