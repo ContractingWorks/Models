@@ -4452,6 +4452,12 @@ int                                                    InvoiceAttachment.Attachm
 bool                                                   InvoiceAttachment.Sys_Deactivated
 bool                                                   InvoiceAttachment.Sys_Historic
 bool                                                   InvoiceAttachment.Sys_Incomplete
+int                                                    InvoiceAttachment_Session.InvoiceAttachment_SessionId
+int                                                    InvoiceAttachment_Session.AttachmentId
+int                                                    InvoiceAttachment_Session.Invoice_SessionId
+bool                                                   InvoiceAttachment_Session.Sys_Deactivated
+bool                                                   InvoiceAttachment_Session.Sys_Historic
+bool                                                   InvoiceAttachment_Session.Sys_Incomplete
 int                                                    InvoiceLayout.InvoiceLayoutId
 string?                                                InvoiceLayout.InvoiceLayoutIdExternal
 string [MultilineText](100)                            InvoiceLayout.Description
