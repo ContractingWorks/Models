@@ -6945,6 +6945,7 @@ string? [MultilineText]                                ServiceContractRecurrence
 bool                                                   ServiceContractRecurrence.IsActive
 bool                                                   ServiceContractRecurrence.IsAutomatic
 bool                                                   ServiceContractRecurrence.IsInvoiceRecurrence
+string? [MultilineText]                                ServiceContractRecurrence.JobDescription
 int?                                                   ServiceContractRecurrence.JobResponsible_EmployeeId
 int?                                                   ServiceContractRecurrence.NotificationLeadDays
 DateOnly?                                              ServiceContractRecurrence.ProcessedUntilDate
@@ -7251,6 +7252,7 @@ bool                                                   Settings_Main.InvoiceIncl
 short?                                                 Settings_Main.InvoiceTemplateId
 bool                                                   Settings_Main.Invoice_KeepValuesForCreditNotes
 bool                                                   Settings_Main.LookupExternal_Customer
+short?                                                 Settings_Main.MultiRecurrence_FutureTaskLimit
 byte?                                                  Settings_Main.PaymentTermId
 string? [Phone](50)                                    Settings_Main.PhoneNumberForSMS
 int?                                                   Settings_Main.POS_ProductAgreementGroupId
