@@ -620,8 +620,6 @@ bool                                                   CalculationLine.Sys_Deact
 SqlHierarchyId?                                        CalculationLine.Sys_HierarchyId
 bool                                                   CalculationLine.Sys_Historic
 bool                                                   CalculationLine.Sys_Incomplete
-string?                                                CalculationLine.Sys_TariffAdjustmentsJSON
-decimal?                                               CalculationLine.Sys_TariffAdjustmentsPercentageProduct
 int?                                                   CalculationLine.TariffId
 int?                                                   CalculationLine.WageCodeReportCategoryId
 int?                                                   CalculationLine.WorkSeconds
