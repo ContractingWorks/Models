@@ -4600,6 +4600,7 @@ int?                                                   InvoiceLine_Session.SortO
 string? [MultilineText]                                InvoiceLine_Session.SourceProductNoteLineIds
 string?                                                InvoiceLine_Session.SourceServiceIds
 int?                                                   InvoiceLine_Session.StorageId
+string? [MultilineText](200)                           InvoiceLine_Session.Storage_Description
 int?                                                   InvoiceLine_Session.SupplierIndustryTypeId
 string? (50)                                           InvoiceLine_Session.SupplierIndustryType_Name
 decimal?                                               InvoiceLine_Session.SurchargePercentInvoice
