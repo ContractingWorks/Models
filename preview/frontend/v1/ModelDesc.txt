@@ -2355,6 +2355,25 @@ DateTime?                                              ExternalSystemInvoiceLine
 string? [MultilineText](50)                            ExternalSystemInvoiceLine.StatusDescription
 bool                                                   ExternalSystemInvoiceLine.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemInvoiceLine.Enum_SyncStatusId
+int                                                    ExternalSystemInvoiceLineDimensionValue.ExternalSystemInvoiceLineDimensionValueId
+string?                                                ExternalSystemInvoiceLineDimensionValue.InvoiceLineDimensionValueIdExternal
+string? (50)                                           ExternalSystemInvoiceLineDimensionValue.ExternalId
+short                                                  ExternalSystemInvoiceLineDimensionValue.ExternalSystemId
+string? (100)                                          ExternalSystemInvoiceLineDimensionValue.In_Error_FixLink
+string? (250)                                          ExternalSystemInvoiceLineDimensionValue.In_Error_MsgEN
+string? (250)                                          ExternalSystemInvoiceLineDimensionValue.In_Error_MsgNO
+string?                                                ExternalSystemInvoiceLineDimensionValue.In_Error_TechDetail
+string? (40)                                           ExternalSystemInvoiceLineDimensionValue.In_Error_TraceId
+DateTime?                                              ExternalSystemInvoiceLineDimensionValue.In_LastSyncUTC
+string? (100)                                          ExternalSystemInvoiceLineDimensionValue.Out_Error_FixLink
+string? (250)                                          ExternalSystemInvoiceLineDimensionValue.Out_Error_MsgEN
+string? (250)                                          ExternalSystemInvoiceLineDimensionValue.Out_Error_MsgNO
+string?                                                ExternalSystemInvoiceLineDimensionValue.Out_Error_TechDetail
+string? (40)                                           ExternalSystemInvoiceLineDimensionValue.Out_Error_TraceId
+DateTime?                                              ExternalSystemInvoiceLineDimensionValue.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemInvoiceLineDimensionValue.StatusDescription
+bool                                                   ExternalSystemInvoiceLineDimensionValue.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemInvoiceLineDimensionValue.Enum_SyncStatusId
 short                                                  ExternalSystemInvoiceLineRule.ExternalSystemInvoiceLineRuleId
 string?                                                ExternalSystemInvoiceLineRule.InvoiceLineRuleIdExternal
 string? (50)                                           ExternalSystemInvoiceLineRule.ExternalId
@@ -3039,6 +3058,25 @@ DateTime?                                              ExternalSystemProductNote
 string? [MultilineText](50)                            ExternalSystemProductNoteLine.StatusDescription
 bool                                                   ExternalSystemProductNoteLine.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemProductNoteLine.Enum_SyncStatusId
+int                                                    ExternalSystemProductNoteLineDimensionValue.ExternalSystemProductNoteLineDimensionValueId
+string?                                                ExternalSystemProductNoteLineDimensionValue.ProductNoteLineDimensionValueIdExternal
+string? (50)                                           ExternalSystemProductNoteLineDimensionValue.ExternalId
+short                                                  ExternalSystemProductNoteLineDimensionValue.ExternalSystemId
+string? (100)                                          ExternalSystemProductNoteLineDimensionValue.In_Error_FixLink
+string? (250)                                          ExternalSystemProductNoteLineDimensionValue.In_Error_MsgEN
+string? (250)                                          ExternalSystemProductNoteLineDimensionValue.In_Error_MsgNO
+string?                                                ExternalSystemProductNoteLineDimensionValue.In_Error_TechDetail
+string? (40)                                           ExternalSystemProductNoteLineDimensionValue.In_Error_TraceId
+DateTime?                                              ExternalSystemProductNoteLineDimensionValue.In_LastSyncUTC
+string? (100)                                          ExternalSystemProductNoteLineDimensionValue.Out_Error_FixLink
+string? (250)                                          ExternalSystemProductNoteLineDimensionValue.Out_Error_MsgEN
+string? (250)                                          ExternalSystemProductNoteLineDimensionValue.Out_Error_MsgNO
+string?                                                ExternalSystemProductNoteLineDimensionValue.Out_Error_TechDetail
+string? (40)                                           ExternalSystemProductNoteLineDimensionValue.Out_Error_TraceId
+DateTime?                                              ExternalSystemProductNoteLineDimensionValue.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemProductNoteLineDimensionValue.StatusDescription
+bool                                                   ExternalSystemProductNoteLineDimensionValue.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemProductNoteLineDimensionValue.Enum_SyncStatusId
 int                                                    ExternalSystemProductSearch.ExternalSystemProductSearchId
 string?                                                ExternalSystemProductSearch.ProductSearchIdExternal
 string? (50)                                           ExternalSystemProductSearch.ExternalId
@@ -3514,6 +3552,25 @@ DateTime?                                              ExternalSystemServiceCont
 string? [MultilineText](50)                            ExternalSystemServiceContractTask.StatusDescription
 bool                                                   ExternalSystemServiceContractTask.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemServiceContractTask.Enum_SyncStatusId
+int                                                    ExternalSystemServiceDimensionValue.ExternalSystemServiceDimensionValueId
+string?                                                ExternalSystemServiceDimensionValue.ServiceDimensionValueIdExternal
+string? (50)                                           ExternalSystemServiceDimensionValue.ExternalId
+short                                                  ExternalSystemServiceDimensionValue.ExternalSystemId
+string? (100)                                          ExternalSystemServiceDimensionValue.In_Error_FixLink
+string? (250)                                          ExternalSystemServiceDimensionValue.In_Error_MsgEN
+string? (250)                                          ExternalSystemServiceDimensionValue.In_Error_MsgNO
+string?                                                ExternalSystemServiceDimensionValue.In_Error_TechDetail
+string? (40)                                           ExternalSystemServiceDimensionValue.In_Error_TraceId
+DateTime?                                              ExternalSystemServiceDimensionValue.In_LastSyncUTC
+string? (100)                                          ExternalSystemServiceDimensionValue.Out_Error_FixLink
+string? (250)                                          ExternalSystemServiceDimensionValue.Out_Error_MsgEN
+string? (250)                                          ExternalSystemServiceDimensionValue.Out_Error_MsgNO
+string?                                                ExternalSystemServiceDimensionValue.Out_Error_TechDetail
+string? (40)                                           ExternalSystemServiceDimensionValue.Out_Error_TraceId
+DateTime?                                              ExternalSystemServiceDimensionValue.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemServiceDimensionValue.StatusDescription
+bool                                                   ExternalSystemServiceDimensionValue.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemServiceDimensionValue.Enum_SyncStatusId
 int                                                    ExternalSystemServiceObject.ExternalSystemServiceObjectId
 string?                                                ExternalSystemServiceObject.ServiceObjectIdExternal
 string? (50)                                           ExternalSystemServiceObject.ExternalId
@@ -4575,6 +4632,7 @@ string?                                                InvoiceLine.Ext_Out_Error
 bool?                                                  InvoiceLine.Ext_Out_Error_SetOK
 DateTime?                                              InvoiceLine.Ext_Out_LastSyncUTC
 --> ExternalSystemInvoiceLine[]                        InvoiceLine.ExternalSystemInvoiceLines
+--> InvoiceLineDimensionValue[]                        InvoiceLine.InvoiceLineDimensionValues
 int                                                    InvoiceLine_Session.InvoiceLineSessionId
 decimal?                                               InvoiceLine_Session.Amount
 int?                                                   InvoiceLine_Session.AssignmentId
@@ -4619,6 +4677,36 @@ bool?                                                  InvoiceLine_Session.Updat
 InvoiceLineCategoryEnum?                               InvoiceLine_Session.Enum_InvoiceLineCategoryId
 InvoiceLineRuleTypeDetailEnum?                         InvoiceLine_Session.Enum_InvoiceLineRuleTypeDetailId
 ROTCategoryEnum?                                       InvoiceLine_Session.Enum_ROTCategoryId
+int                                                    InvoiceLineDimensionValue.InvoiceLineDimensionValueId
+string?                                                InvoiceLineDimensionValue.InvoiceLineDimensionValueIdExternal
+string?                                                InvoiceLineDimensionValue.DimensionIdExternal
+string?                                                InvoiceLineDimensionValue.DimensionValueIdExternal
+string?                                                InvoiceLineDimensionValue.DimensionValueUseIdExternal
+string?                                                InvoiceLineDimensionValue.InvoiceLineIdExternal
+int                                                    InvoiceLineDimensionValue.DimensionId
+int                                                    InvoiceLineDimensionValue.DimensionValueId
+int?                                                   InvoiceLineDimensionValue.DimensionValueUseId
+bool                                                   InvoiceLineDimensionValue.Sys_Deactivated
+bool                                                   InvoiceLineDimensionValue.Sys_Historic
+bool                                                   InvoiceLineDimensionValue.Sys_Incomplete
+bool?                                                  InvoiceLineDimensionValue.Sys_OrphanOnCreate
+bool?                                                  InvoiceLineDimensionValue.Ext_Sys_Deactivated
+string?                                                InvoiceLineDimensionValue.Ext_ExternalId
+string?                                                InvoiceLineDimensionValue.Ext_In_Error_MsgNO
+string?                                                InvoiceLineDimensionValue.Ext_In_Error_MsgEN
+string?                                                InvoiceLineDimensionValue.Ext_In_Error_TraceId
+string?                                                InvoiceLineDimensionValue.Ext_In_Error_TechDetail
+string?                                                InvoiceLineDimensionValue.Ext_In_Error_FixLink
+bool?                                                  InvoiceLineDimensionValue.Ext_In_Error_SetOK
+DateTime?                                              InvoiceLineDimensionValue.Ext_In_LastSyncUTC
+string?                                                InvoiceLineDimensionValue.Ext_Out_Error_MsgNO
+string?                                                InvoiceLineDimensionValue.Ext_Out_Error_MsgEN
+string?                                                InvoiceLineDimensionValue.Ext_Out_Error_TraceId
+string?                                                InvoiceLineDimensionValue.Ext_Out_Error_TechDetail
+string?                                                InvoiceLineDimensionValue.Ext_Out_Error_FixLink
+bool?                                                  InvoiceLineDimensionValue.Ext_Out_Error_SetOK
+DateTime?                                              InvoiceLineDimensionValue.Ext_Out_LastSyncUTC
+--> ExternalSystemInvoiceLineDimensionValue[]          InvoiceLineDimensionValue.ExternalSystemInvoiceLineDimensionValues
 short                                                  InvoiceLineRule.InvoiceLineRuleId
 string?                                                InvoiceLineRule.InvoiceLineRuleIdExternal
 string?                                                InvoiceLineRule.Cost_ProjectAccountIdExternal
@@ -5998,6 +6086,37 @@ string?                                                ProductNoteLine.Ext_Out_E
 bool?                                                  ProductNoteLine.Ext_Out_Error_SetOK
 DateTime?                                              ProductNoteLine.Ext_Out_LastSyncUTC
 --> ExternalSystemProductNoteLine[]                    ProductNoteLine.ExternalSystemProductNoteLines
+--> ProductNoteLineDimensionValue[]                    ProductNoteLine.ProductNoteLineDimensionValues
+int                                                    ProductNoteLineDimensionValue.ProductNoteLineDimensionValueId
+string?                                                ProductNoteLineDimensionValue.ProductNoteLineDimensionValueIdExternal
+string?                                                ProductNoteLineDimensionValue.DimensionIdExternal
+string?                                                ProductNoteLineDimensionValue.DimensionValueIdExternal
+string?                                                ProductNoteLineDimensionValue.DimensionValueUseIdExternal
+string?                                                ProductNoteLineDimensionValue.ProductNoteLineIdExternal
+int                                                    ProductNoteLineDimensionValue.DimensionId
+int                                                    ProductNoteLineDimensionValue.DimensionValueId
+int?                                                   ProductNoteLineDimensionValue.DimensionValueUseId
+bool                                                   ProductNoteLineDimensionValue.Sys_Deactivated
+bool                                                   ProductNoteLineDimensionValue.Sys_Historic
+bool                                                   ProductNoteLineDimensionValue.Sys_Incomplete
+bool?                                                  ProductNoteLineDimensionValue.Sys_OrphanOnCreate
+bool?                                                  ProductNoteLineDimensionValue.Ext_Sys_Deactivated
+string?                                                ProductNoteLineDimensionValue.Ext_ExternalId
+string?                                                ProductNoteLineDimensionValue.Ext_In_Error_MsgNO
+string?                                                ProductNoteLineDimensionValue.Ext_In_Error_MsgEN
+string?                                                ProductNoteLineDimensionValue.Ext_In_Error_TraceId
+string?                                                ProductNoteLineDimensionValue.Ext_In_Error_TechDetail
+string?                                                ProductNoteLineDimensionValue.Ext_In_Error_FixLink
+bool?                                                  ProductNoteLineDimensionValue.Ext_In_Error_SetOK
+DateTime?                                              ProductNoteLineDimensionValue.Ext_In_LastSyncUTC
+string?                                                ProductNoteLineDimensionValue.Ext_Out_Error_MsgNO
+string?                                                ProductNoteLineDimensionValue.Ext_Out_Error_MsgEN
+string?                                                ProductNoteLineDimensionValue.Ext_Out_Error_TraceId
+string?                                                ProductNoteLineDimensionValue.Ext_Out_Error_TechDetail
+string?                                                ProductNoteLineDimensionValue.Ext_Out_Error_FixLink
+bool?                                                  ProductNoteLineDimensionValue.Ext_Out_Error_SetOK
+DateTime?                                              ProductNoteLineDimensionValue.Ext_Out_LastSyncUTC
+--> ExternalSystemProductNoteLineDimensionValue[]      ProductNoteLineDimensionValue.ExternalSystemProductNoteLineDimensionValues
 int                                                    ProductSearch.ProductSearchId
 string?                                                ProductSearch.ProductSearchIdExternal
 string?                                                ProductSearch.ProductClassIdExternal
@@ -6817,6 +6936,7 @@ string?                                                Service.Ext_Out_Error_Fix
 bool?                                                  Service.Ext_Out_Error_SetOK
 DateTime?                                              Service.Ext_Out_LastSyncUTC
 --> ExternalSystemService[]                            Service.ExternalSystemServices
+--> ServiceDimensionValue[]                            Service.ServiceDimensionValues
 short                                                  ServiceAgreement.ServiceAgreementId
 string?                                                ServiceAgreement.ServiceAgreementIdExternal
 string [MultilineText](50)                             ServiceAgreement.Description
@@ -7032,6 +7152,36 @@ string?                                                ServiceContractTask.Ext_O
 bool?                                                  ServiceContractTask.Ext_Out_Error_SetOK
 DateTime?                                              ServiceContractTask.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceContractTask[]                ServiceContractTask.ExternalSystemServiceContractTasks
+int                                                    ServiceDimensionValue.ServiceDimensionValueId
+string?                                                ServiceDimensionValue.ServiceDimensionValueIdExternal
+string?                                                ServiceDimensionValue.DimensionIdExternal
+string?                                                ServiceDimensionValue.DimensionValueIdExternal
+string?                                                ServiceDimensionValue.DimensionValueUseIdExternal
+string?                                                ServiceDimensionValue.ServiceIdExternal
+int                                                    ServiceDimensionValue.DimensionId
+int                                                    ServiceDimensionValue.DimensionValueId
+int?                                                   ServiceDimensionValue.DimensionValueUseId
+bool                                                   ServiceDimensionValue.Sys_Deactivated
+bool                                                   ServiceDimensionValue.Sys_Historic
+bool                                                   ServiceDimensionValue.Sys_Incomplete
+bool?                                                  ServiceDimensionValue.Sys_OrphanOnCreate
+bool?                                                  ServiceDimensionValue.Ext_Sys_Deactivated
+string?                                                ServiceDimensionValue.Ext_ExternalId
+string?                                                ServiceDimensionValue.Ext_In_Error_MsgNO
+string?                                                ServiceDimensionValue.Ext_In_Error_MsgEN
+string?                                                ServiceDimensionValue.Ext_In_Error_TraceId
+string?                                                ServiceDimensionValue.Ext_In_Error_TechDetail
+string?                                                ServiceDimensionValue.Ext_In_Error_FixLink
+bool?                                                  ServiceDimensionValue.Ext_In_Error_SetOK
+DateTime?                                              ServiceDimensionValue.Ext_In_LastSyncUTC
+string?                                                ServiceDimensionValue.Ext_Out_Error_MsgNO
+string?                                                ServiceDimensionValue.Ext_Out_Error_MsgEN
+string?                                                ServiceDimensionValue.Ext_Out_Error_TraceId
+string?                                                ServiceDimensionValue.Ext_Out_Error_TechDetail
+string?                                                ServiceDimensionValue.Ext_Out_Error_FixLink
+bool?                                                  ServiceDimensionValue.Ext_Out_Error_SetOK
+DateTime?                                              ServiceDimensionValue.Ext_Out_LastSyncUTC
+--> ExternalSystemServiceDimensionValue[]              ServiceDimensionValue.ExternalSystemServiceDimensionValues
 int                                                    ServiceObject.ServiceObjectId
 string?                                                ServiceObject.ServiceObjectIdExternal
 string?                                                ServiceObject.CustomerIdExternal
