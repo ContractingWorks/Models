@@ -1230,6 +1230,7 @@ int                                                    Employee.EmployeeId
 string?                                                Employee.EmployeeIdExternal
 string?                                                Employee.DepartmentIdExternal
 string?                                                Employee.Manager_EmployeeIdExternal
+string?                                                Employee.WorkDayStart_AddressIdExternal
 bool                                                   Employee.ApproveWageRequired
 bool                                                   Employee.CW_Owned
 DateOnly?                                              Employee.DateOfBirth
@@ -1257,6 +1258,7 @@ bool                                                   Employee.Sys_Deactivated
 bool                                                   Employee.Sys_Historic
 bool                                                   Employee.Sys_Incomplete
 bool?                                                  Employee.Sys_Mig_PayrollNeeded
+int?                                                   Employee.WorkDayStart_AddressId
 EmployeeStatusEnum                                     Employee.Enum_EmployeeStatusId
 bool?                                                  Employee.Ext_Sys_Deactivated
 string?                                                Employee.Ext_ExternalId
@@ -8216,6 +8218,8 @@ DateTime?                                              TariffVersion.Ext_Out_Las
 --> ExternalSystemTariffVersion[]                      TariffVersion.ExternalSystemTariffVersions
 --> Tariff[]                                           TariffVersion.Tariffs
 short                                                  Team.TeamId
+string?                                                Team.AddressIdExternal
+int?                                                   Team.AddressId
 string (50)                                            Team.Name
 bool                                                   Team.Sys_Deactivated
 bool                                                   Team.Sys_Historic
