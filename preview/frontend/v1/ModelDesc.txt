@@ -1557,6 +1557,7 @@ string? (500)                                          ExternalSystem.AutoFeatur
 DateTime?                                              ExternalSystem.ConnectionCheckedUTC
 string?                                                ExternalSystem.ConnectionCheckMessage
 bool?                                                  ExternalSystem.ConnectionIsOK
+string? (128)                                          ExternalSystem.CwParentDataSourceName
 string? (50)                                           ExternalSystem.DisplayName
 string? (10)                                           ExternalSystem.ExternalIdPrefix
 bool                                                   ExternalSystem.IsCwOwned
