@@ -7947,6 +7947,7 @@ bool                                                   SupplierInvoiceAttachment
 int                                                    SupplierInvoiceLine.SupplierInvoiceLineId
 string?                                                SupplierInvoiceLine.SupplierInvoiceLineIdExternal
 string?                                                SupplierInvoiceLine.AssignmentIdExternal
+string?                                                SupplierInvoiceLine.Assignment_DimensionValueIdExternal
 string?                                                SupplierInvoiceLine.CustomerIdExternal
 string?                                                SupplierInvoiceLine.DepartmentIdExternal
 string?                                                SupplierInvoiceLine.DimensionValueId_1External
@@ -7954,11 +7955,14 @@ string?                                                SupplierInvoiceLine.Globa
 string?                                                SupplierInvoiceLine.LedgerAccountIdExternal
 string?                                                SupplierInvoiceLine.ProductIdExternal
 string?                                                SupplierInvoiceLine.ProductSupplierIndustryTypeIdExternal
+string?                                                SupplierInvoiceLine.Project_DimensionValueIdExternal
 string?                                                SupplierInvoiceLine.StorageIdExternal
 string?                                                SupplierInvoiceLine.SupplierInvoiceIdExternal
 string?                                                SupplierInvoiceLine.VATRateIdExternal
 int?                                                   SupplierInvoiceLine.AssignmentId
 string? (50)                                           SupplierInvoiceLine.AssignmentNumberTxt
+int?                                                   SupplierInvoiceLine.Assignment_DimensionValueId
+string? (500)                                          SupplierInvoiceLine.Assignment_DimensionValueTxt
 string? [MultilineText](250)                           SupplierInvoiceLine.Comment
 decimal?                                               SupplierInvoiceLine.CostPrice
 decimal?                                               SupplierInvoiceLine.CostPricePurchaseAgreement
@@ -7983,6 +7987,8 @@ string? (50)                                           SupplierInvoiceLine.Produ
 int?                                                   SupplierInvoiceLine.ProductSupplierIndustryTypeId
 int?                                                   SupplierInvoiceLine.ProjectAccountId
 string? (50)                                           SupplierInvoiceLine.ProjectAccountNumberTxt
+int?                                                   SupplierInvoiceLine.Project_DimensionValueId
+string? (500)                                          SupplierInvoiceLine.Project_DimensionValueTxt
 decimal?                                               SupplierInvoiceLine.Quantity
 int?                                                   SupplierInvoiceLine.SortOrder
 short?                                                 SupplierInvoiceLine.StorageId
