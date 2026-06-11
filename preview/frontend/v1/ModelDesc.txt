@@ -1014,6 +1014,7 @@ bool                                                   CustomerContact.Sys_Deact
 bool                                                   CustomerContact.Sys_Historic
 bool                                                   CustomerContact.Sys_Incomplete
 int                                                    Dashboard.DashboardId
+string?                                                Dashboard.DashboardIdExternal
 string?                                                Dashboard.DepartmentIdExternal
 string                                                 Dashboard.ConfigurationJson
 short?                                                 Dashboard.DepartmentId
@@ -1026,7 +1027,25 @@ bool                                                   Dashboard.Sys_Incomplete
 int?                                                   Dashboard.UserId
 ClientLevelEnum                                        Dashboard.Enum_ClientLevelId
 DashboardTypeEnum                                      Dashboard.Enum_DashboardTypeId
+bool?                                                  Dashboard.Ext_Sys_Deactivated
+string?                                                Dashboard.Ext_ExternalId
+string?                                                Dashboard.Ext_In_Error_MsgNO
+string?                                                Dashboard.Ext_In_Error_MsgEN
+string?                                                Dashboard.Ext_In_Error_TraceId
+string?                                                Dashboard.Ext_In_Error_TechDetail
+string?                                                Dashboard.Ext_In_Error_FixLink
+bool?                                                  Dashboard.Ext_In_Error_SetOK
+DateTime?                                              Dashboard.Ext_In_LastSyncUTC
+string?                                                Dashboard.Ext_Out_Error_MsgNO
+string?                                                Dashboard.Ext_Out_Error_MsgEN
+string?                                                Dashboard.Ext_Out_Error_TraceId
+string?                                                Dashboard.Ext_Out_Error_TechDetail
+string?                                                Dashboard.Ext_Out_Error_FixLink
+bool?                                                  Dashboard.Ext_Out_Error_SetOK
+DateTime?                                              Dashboard.Ext_Out_LastSyncUTC
+--> ExternalSystemDashboard[]                          Dashboard.ExternalSystemDashboards
 int                                                    DashboardPreference.DashboardPreferenceId
+string?                                                DashboardPreference.DashboardIdExternal
 string?                                                DashboardPreference.DepartmentIdExternal
 int?                                                   DashboardPreference.DashboardId
 short?                                                 DashboardPreference.DepartmentId
@@ -1038,6 +1057,7 @@ bool                                                   DashboardPreference.Sys_H
 bool                                                   DashboardPreference.Sys_Incomplete
 int?                                                   DashboardPreference.UserId
 int                                                    DashboardShareRequest.DashboardShareRequestId
+string?                                                DashboardShareRequest.DashboardIdExternal
 int                                                    DashboardShareRequest.DashboardId
 bool?                                                  DashboardShareRequest.IsActive
 int                                                    DashboardShareRequest.SharedToUserId
@@ -1934,6 +1954,25 @@ DateTime?                                              ExternalSystemCustomerCla
 string? [MultilineText](50)                            ExternalSystemCustomerClass.StatusDescription
 bool                                                   ExternalSystemCustomerClass.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemCustomerClass.Enum_SyncStatusId
+int                                                    ExternalSystemDashboard.ExternalSystemDashboardId
+string?                                                ExternalSystemDashboard.DashboardIdExternal
+string? (50)                                           ExternalSystemDashboard.ExternalId
+short                                                  ExternalSystemDashboard.ExternalSystemId
+string? (100)                                          ExternalSystemDashboard.In_Error_FixLink
+string? (250)                                          ExternalSystemDashboard.In_Error_MsgEN
+string? (250)                                          ExternalSystemDashboard.In_Error_MsgNO
+string?                                                ExternalSystemDashboard.In_Error_TechDetail
+string? (40)                                           ExternalSystemDashboard.In_Error_TraceId
+DateTime?                                              ExternalSystemDashboard.In_LastSyncUTC
+string? (100)                                          ExternalSystemDashboard.Out_Error_FixLink
+string? (250)                                          ExternalSystemDashboard.Out_Error_MsgEN
+string? (250)                                          ExternalSystemDashboard.Out_Error_MsgNO
+string?                                                ExternalSystemDashboard.Out_Error_TechDetail
+string? (40)                                           ExternalSystemDashboard.Out_Error_TraceId
+DateTime?                                              ExternalSystemDashboard.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemDashboard.StatusDescription
+bool                                                   ExternalSystemDashboard.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemDashboard.Enum_SyncStatusId
 int                                                    ExternalSystemDataGridState.ExternalSystemDataGridStateId
 string?                                                ExternalSystemDataGridState.DataGridStateIdExternal
 string? (50)                                           ExternalSystemDataGridState.ExternalId
