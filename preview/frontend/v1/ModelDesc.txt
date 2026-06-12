@@ -153,6 +153,7 @@ int?                                                   Assignment.PieceworkNumbe
 int?                                                   Assignment.ProductAgreementGroupId
 int?                                                   Assignment.ProjectId
 bool                                                   Assignment.ReadyToInvoice
+DateOnly?                                              Assignment.ScheduledInvoiceDate
 short?                                                 Assignment.ServiceAgreementId
 int?                                                   Assignment.ServiceContractId
 int?                                                   Assignment.ServiceContractRecurrenceId
