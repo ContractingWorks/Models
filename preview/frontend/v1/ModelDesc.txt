@@ -7344,6 +7344,7 @@ string?                                                Settings_Assignment.Invoi
 string?                                                Settings_Assignment.ProductAgreementGroupIdExternal
 bool                                                   Settings_Assignment.AllowDepartmentChange
 bool?                                                  Settings_Assignment.AllowHpcTimeCorrection
+bool                                                   Settings_Assignment.AlternativeAssignmentView
 bool                                                   Settings_Assignment.ApproveBeforeInvoicing
 bool                                                   Settings_Assignment.ApproveHoursBeforeInvoicing
 int?                                                   Settings_Assignment.AssignmentCategoryId
@@ -7400,6 +7401,7 @@ int?                                                   Settings_Calculation.Wage
 PublicationStatusEnum                                  Settings_Calculation.Enum_PublicationStatusId
 byte                                                   Settings_Dashboard.Settings_DashboardId
 string?                                                Settings_Dashboard.VehicleUsage_WageCodeReportCategoryIdExternal
+decimal?                                               Settings_Dashboard.InvoiceReserveMaxThreshold
 short?                                                 Settings_Dashboard.LabourWorkHoursYearTarget
 string? (1024)                                         Settings_Dashboard.NonBillable_WageCodeReportCategoryIdList
 bool                                                   Settings_Dashboard.Sys_Deactivated
