@@ -1251,7 +1251,6 @@ int                                                    Employee.EmployeeId
 string?                                                Employee.EmployeeIdExternal
 string?                                                Employee.DepartmentIdExternal
 string?                                                Employee.Manager_EmployeeIdExternal
-string?                                                Employee.WorkDayStart_AddressIdExternal
 bool                                                   Employee.ApproveWageRequired
 bool                                                   Employee.CW_Owned
 DateOnly?                                              Employee.DateOfBirth
@@ -1279,7 +1278,6 @@ bool                                                   Employee.Sys_Deactivated
 bool                                                   Employee.Sys_Historic
 bool                                                   Employee.Sys_Incomplete
 bool?                                                  Employee.Sys_Mig_PayrollNeeded
-int?                                                   Employee.WorkDayStart_AddressId
 EmployeeStatusEnum                                     Employee.Enum_EmployeeStatusId
 bool?                                                  Employee.Ext_Sys_Deactivated
 string?                                                Employee.Ext_ExternalId
@@ -1298,6 +1296,7 @@ string?                                                Employee.Ext_Out_Error_Fi
 bool?                                                  Employee.Ext_Out_Error_SetOK
 DateTime?                                              Employee.Ext_Out_LastSyncUTC
 --> Address                                            Employee.Default_Address
+--> Address                                            Employee.WorkDayStart_Address
 --> Address[]                                          Employee.Addresses
 --> EmployeeAttachment[]                               Employee.EmployeeAttachments
 --> Employment[]                                       Employee.Employments
@@ -8266,8 +8265,6 @@ DateTime?                                              TariffVersion.Ext_Out_Las
 --> ExternalSystemTariffVersion[]                      TariffVersion.ExternalSystemTariffVersions
 --> Tariff[]                                           TariffVersion.Tariffs
 short                                                  Team.TeamId
-string?                                                Team.AddressIdExternal
-int?                                                   Team.AddressId
 string (50)                                            Team.Name
 bool                                                   Team.Sys_Deactivated
 bool                                                   Team.Sys_Historic
@@ -8275,6 +8272,7 @@ bool                                                   Team.Sys_Incomplete
 int?                                                   Team.TeamNumber
 TimeOnly?                                              Team.WorkTimeEnd
 TimeOnly?                                              Team.WorkTimeStart
+--> Address                                            Team.Address
 --> TeamEmployee[]                                     Team.TeamEmployees
 short                                                  TeamEmployee.TeamEmployeeId
 string?                                                TeamEmployee.EmployeeIdExternal
