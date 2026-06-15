@@ -120,6 +120,7 @@ int?                                                   Assignment.AssignmentNumb
 int?                                                   Assignment.CaseHandler_EmployeeId
 decimal?                                               Assignment.CoverageRateFixedPrice
 decimal?                                               Assignment.CoverageRateNotFixedPrice
+string? (200)                                          Assignment.CustomerContractReference
 int?                                                   Assignment.CustomerId
 string? (200)                                          Assignment.CustomerReference
 short?                                                 Assignment.Default_InvoiceTemplateId
@@ -4401,6 +4402,7 @@ int?                                                   Invoice.AssignmentId
 bool                                                   Invoice.AttachServiceListAsPDF
 bool                                                   Invoice.AttachServiceListIsWorkTimeOnly
 short?                                                 Invoice.CurrencyId
+string? (200)                                          Invoice.CustomerContractReference
 int                                                    Invoice.CustomerId
 string? (200)                                          Invoice.CustomerReference
 int?                                                   Invoice.DebtorCustomerId
@@ -6487,6 +6489,7 @@ int?                                                   Project.AssignmentCategor
 int?                                                   Project.Budget_DimensionId
 int?                                                   Project.CaseHandler_EmployeeId
 string? (50)                                           Project.Code
+string? (200)                                          Project.CustomerContractReference
 int?                                                   Project.CustomerId
 string? (50)                                           Project.CustomersReference
 short?                                                 Project.Default_InvoiceTemplateId
