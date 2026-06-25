@@ -3291,6 +3291,25 @@ DateTime?                                              ExternalSystemProductSync
 string? [MultilineText](50)                            ExternalSystemProductSync.StatusDescription
 bool                                                   ExternalSystemProductSync.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemProductSync.Enum_SyncStatusId
+int                                                    ExternalSystemProgressAssessment.ExternalSystemProgressAssessmentId
+string?                                                ExternalSystemProgressAssessment.ProgressAssessmentIdExternal
+string? (50)                                           ExternalSystemProgressAssessment.ExternalId
+short                                                  ExternalSystemProgressAssessment.ExternalSystemId
+string? (100)                                          ExternalSystemProgressAssessment.In_Error_FixLink
+string? (250)                                          ExternalSystemProgressAssessment.In_Error_MsgEN
+string? (250)                                          ExternalSystemProgressAssessment.In_Error_MsgNO
+string?                                                ExternalSystemProgressAssessment.In_Error_TechDetail
+string? (40)                                           ExternalSystemProgressAssessment.In_Error_TraceId
+DateTime?                                              ExternalSystemProgressAssessment.In_LastSyncUTC
+string? (100)                                          ExternalSystemProgressAssessment.Out_Error_FixLink
+string? (250)                                          ExternalSystemProgressAssessment.Out_Error_MsgEN
+string? (250)                                          ExternalSystemProgressAssessment.Out_Error_MsgNO
+string?                                                ExternalSystemProgressAssessment.Out_Error_TechDetail
+string? (40)                                           ExternalSystemProgressAssessment.Out_Error_TraceId
+DateTime?                                              ExternalSystemProgressAssessment.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemProgressAssessment.StatusDescription
+bool                                                   ExternalSystemProgressAssessment.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemProgressAssessment.Enum_SyncStatusId
 int                                                    ExternalSystemProject.ExternalSystemProjectId
 string?                                                ExternalSystemProject.ProjectIdExternal
 string? (50)                                           ExternalSystemProject.ExternalId
@@ -6461,6 +6480,41 @@ string?                                                ProductSync.Ext_Out_Error
 bool?                                                  ProductSync.Ext_Out_Error_SetOK
 DateTime?                                              ProductSync.Ext_Out_LastSyncUTC
 --> ExternalSystemProductSync[]                        ProductSync.ExternalSystemProductSyncs
+int                                                    ProgressAssessment.ProgressAssessmentId
+string?                                                ProgressAssessment.ProgressAssessmentIdExternal
+string?                                                ProgressAssessment.AssignmentIdExternal
+string?                                                ProgressAssessment.DimensionValueIdExternal
+string?                                                ProgressAssessment.Parent_ProgressAssessmentIdExternal
+string?                                                ProgressAssessment.ProjectIdExternal
+string?                                                ProgressAssessment.ProjectPeriodIdExternal
+decimal?                                               ProgressAssessment.AssessmentValue
+int?                                                   ProgressAssessment.AssignmentId
+int?                                                   ProgressAssessment.DimensionValueId
+int?                                                   ProgressAssessment.Parent_ProgressAssessmentId
+byte?                                                  ProgressAssessment.ProjectAccountCategoryId
+int?                                                   ProgressAssessment.ProjectId
+int?                                                   ProgressAssessment.ProjectPeriodId
+bool                                                   ProgressAssessment.Sys_Deactivated
+bool                                                   ProgressAssessment.Sys_Historic
+bool                                                   ProgressAssessment.Sys_Incomplete
+AssessmentValueTypeEnum?                               ProgressAssessment.Enum_AssessmentValueTypeId
+bool?                                                  ProgressAssessment.Ext_Sys_Deactivated
+string?                                                ProgressAssessment.Ext_ExternalId
+string?                                                ProgressAssessment.Ext_In_Error_MsgNO
+string?                                                ProgressAssessment.Ext_In_Error_MsgEN
+string?                                                ProgressAssessment.Ext_In_Error_TraceId
+string?                                                ProgressAssessment.Ext_In_Error_TechDetail
+string?                                                ProgressAssessment.Ext_In_Error_FixLink
+bool?                                                  ProgressAssessment.Ext_In_Error_SetOK
+DateTime?                                              ProgressAssessment.Ext_In_LastSyncUTC
+string?                                                ProgressAssessment.Ext_Out_Error_MsgNO
+string?                                                ProgressAssessment.Ext_Out_Error_MsgEN
+string?                                                ProgressAssessment.Ext_Out_Error_TraceId
+string?                                                ProgressAssessment.Ext_Out_Error_TechDetail
+string?                                                ProgressAssessment.Ext_Out_Error_FixLink
+bool?                                                  ProgressAssessment.Ext_Out_Error_SetOK
+DateTime?                                              ProgressAssessment.Ext_Out_LastSyncUTC
+--> ExternalSystemProgressAssessment[]                 ProgressAssessment.ExternalSystemProgressAssessments
 int                                                    Project.ProjectId
 string?                                                Project.ProjectIdExternal
 string?                                                Project.AssignmentCategoryIdExternal
@@ -6495,6 +6549,7 @@ string? (50)                                           Project.CustomersReferenc
 short?                                                 Project.Default_InvoiceTemplateId
 short?                                                 Project.DepartmentId
 string? [MultilineText](500)                           Project.Description
+bool                                                   Project.EnableProgressAssessment
 DateOnly?                                              Project.EndDate
 decimal?                                               Project.EstimatedCompletionPercentage
 decimal?                                               Project.EstimatedTotalHours
