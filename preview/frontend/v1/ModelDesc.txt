@@ -286,40 +286,6 @@ short                                                  AssignmentProductAgreemen
 bool                                                   AssignmentProductAgreement.Sys_Deactivated
 bool                                                   AssignmentProductAgreement.Sys_Historic
 bool                                                   AssignmentProductAgreement.Sys_Incomplete
-int                                                    AssignmentProgress.AssignmentProgressId
-string?                                                AssignmentProgress.AssignmentProgressIdExternal
-string?                                                AssignmentProgress.AssignmentIdExternal
-string?                                                AssignmentProgress.DimensionValueIdExternal
-string?                                                AssignmentProgress.ProjectPeriodIdExternal
-int                                                    AssignmentProgress.AssignmentId
-int?                                                   AssignmentProgress.DimensionValueId
-decimal?                                               AssignmentProgress.ProgressAmount
-decimal?                                               AssignmentProgress.ProgressAmountMaterial
-decimal?                                               AssignmentProgress.ProgressAmountService
-decimal?                                               AssignmentProgress.ProgressPercentage
-decimal?                                               AssignmentProgress.ProgressPercentageMaterial
-decimal?                                               AssignmentProgress.ProgressPercentageService
-int                                                    AssignmentProgress.ProjectPeriodId
-bool                                                   AssignmentProgress.Sys_Deactivated
-bool                                                   AssignmentProgress.Sys_Historic
-bool                                                   AssignmentProgress.Sys_Incomplete
-bool?                                                  AssignmentProgress.Ext_Sys_Deactivated
-string?                                                AssignmentProgress.Ext_ExternalId
-string?                                                AssignmentProgress.Ext_In_Error_MsgNO
-string?                                                AssignmentProgress.Ext_In_Error_MsgEN
-string?                                                AssignmentProgress.Ext_In_Error_TraceId
-string?                                                AssignmentProgress.Ext_In_Error_TechDetail
-string?                                                AssignmentProgress.Ext_In_Error_FixLink
-bool?                                                  AssignmentProgress.Ext_In_Error_SetOK
-DateTime?                                              AssignmentProgress.Ext_In_LastSyncUTC
-string?                                                AssignmentProgress.Ext_Out_Error_MsgNO
-string?                                                AssignmentProgress.Ext_Out_Error_MsgEN
-string?                                                AssignmentProgress.Ext_Out_Error_TraceId
-string?                                                AssignmentProgress.Ext_Out_Error_TechDetail
-string?                                                AssignmentProgress.Ext_Out_Error_FixLink
-bool?                                                  AssignmentProgress.Ext_Out_Error_SetOK
-DateTime?                                              AssignmentProgress.Ext_Out_LastSyncUTC
---> ExternalSystemAssignmentProgress[]                 AssignmentProgress.ExternalSystemAssignmentProgresses
 int                                                    AssignmentServiceObject.AssignmentServiceObjectId
 string?                                                AssignmentServiceObject.AssignmentIdExternal
 string?                                                AssignmentServiceObject.ServiceObjectIdExternal
@@ -1689,25 +1655,6 @@ DateTime?                                              ExternalSystemAssignmentP
 string? [MultilineText](50)                            ExternalSystemAssignmentParticipant.StatusDescription
 bool                                                   ExternalSystemAssignmentParticipant.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemAssignmentParticipant.Enum_SyncStatusId
-int                                                    ExternalSystemAssignmentProgress.ExternalSystemAssignmentProgressId
-string?                                                ExternalSystemAssignmentProgress.AssignmentProgressIdExternal
-string? (50)                                           ExternalSystemAssignmentProgress.ExternalId
-short                                                  ExternalSystemAssignmentProgress.ExternalSystemId
-string? (100)                                          ExternalSystemAssignmentProgress.In_Error_FixLink
-string? (250)                                          ExternalSystemAssignmentProgress.In_Error_MsgEN
-string? (250)                                          ExternalSystemAssignmentProgress.In_Error_MsgNO
-string?                                                ExternalSystemAssignmentProgress.In_Error_TechDetail
-string? (40)                                           ExternalSystemAssignmentProgress.In_Error_TraceId
-DateTime?                                              ExternalSystemAssignmentProgress.In_LastSyncUTC
-string? (100)                                          ExternalSystemAssignmentProgress.Out_Error_FixLink
-string? (250)                                          ExternalSystemAssignmentProgress.Out_Error_MsgEN
-string? (250)                                          ExternalSystemAssignmentProgress.Out_Error_MsgNO
-string?                                                ExternalSystemAssignmentProgress.Out_Error_TechDetail
-string? (40)                                           ExternalSystemAssignmentProgress.Out_Error_TraceId
-DateTime?                                              ExternalSystemAssignmentProgress.Out_LastSyncUTC
-string? [MultilineText](50)                            ExternalSystemAssignmentProgress.StatusDescription
-bool                                                   ExternalSystemAssignmentProgress.Sys_Deactivated
-SyncStatusEnum                                         ExternalSystemAssignmentProgress.Enum_SyncStatusId
 int                                                    ExternalSystemAttachment.ExternalSystemAttachmentId
 string?                                                ExternalSystemAttachment.AttachmentIdExternal
 string? (60)                                           ExternalSystemAttachment.ExternalId
