@@ -6947,7 +6947,7 @@ bool                                                   Service.Sys_Incomplete
 bool                                                   Service.Sys_InitialPostProcessNeeded
 int?                                                   Service.Sys_InvoicedProjectPeriod
 int?                                                   Service.Sys_InvoicedProjectPeriodId
-bool                                                   Service.Sys_IsSensitive
+bool?                                                  Service.Sys_IsSensitive
 bool?                                                  Service.Sys_IsWorkTime
 string? (50)                                           Service.Sys_LastChangeOrigin
 bool                                                   Service.Sys_NextWageCodeProcessed
