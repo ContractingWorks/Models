@@ -6753,6 +6753,7 @@ int                                                    PurchaseAgreementDiscount
 string?                                                PurchaseAgreementDiscountProduct.ProductSupplierIndustryTypeIdExternal
 decimal?                                               PurchaseAgreementDiscountProduct.FixedCostPrice
 decimal?                                               PurchaseAgreementDiscountProduct.ListPriceDiscountPercent
+string? (50)                                           PurchaseAgreementDiscountProduct.ProductNumber
 int?                                                   PurchaseAgreementDiscountProduct.ProductSupplierIndustryTypeId
 decimal?                                               PurchaseAgreementDiscountProduct.SurchargePercent
 bool                                                   PurchaseAgreementDiscountProduct.Sys_Deactivated
