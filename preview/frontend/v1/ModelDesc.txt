@@ -1103,6 +1103,11 @@ DateTime?                                              Department.Ext_Out_LastSy
 --> ExternalSystemDepartment[]                         Department.ExternalSystemDepartments
 int                                                    Dimension.DimensionId
 string?                                                Dimension.DimensionIdExternal
+string?                                                Dimension.CalculationFolderTemplateIdExternal
+string?                                                Dimension.ClassificationSystemIdExternal
+int?                                                   Dimension.CalculationFolderTemplateId
+int?                                                   Dimension.CalculationId
+int?                                                   Dimension.ClassificationSystemId
 string? (50)                                           Dimension.Code
 bool                                                   Dimension.IsInvoiceable
 string (100)                                           Dimension.Name
@@ -6435,8 +6440,11 @@ string?                                                ProgressAssessment.Parent
 string?                                                ProgressAssessment.ProjectIdExternal
 string?                                                ProgressAssessment.ProjectPeriodIdExternal
 decimal?                                               ProgressAssessment.AssessmentValue
+string? [MultilineText](200)                           ProgressAssessment.AssessmentValueComment
 int?                                                   ProgressAssessment.AssignmentId
 int?                                                   ProgressAssessment.DimensionValueId
+decimal?                                               ProgressAssessment.InvoiceReserveAdjustment
+string? [MultilineText](200)                           ProgressAssessment.InvoiceReserveAdjustmentComment
 int?                                                   ProgressAssessment.Parent_ProgressAssessmentId
 byte?                                                  ProgressAssessment.ProjectAccountCategoryId
 int?                                                   ProgressAssessment.ProjectId
