@@ -1158,11 +1158,15 @@ DateTime?                                              DimensionUse.Ext_Out_Last
 --> ExternalSystemDimensionUse[]                       DimensionUse.ExternalSystemDimensionUses
 int                                                    DimensionValue.DimensionValueId
 string?                                                DimensionValue.DimensionValueIdExternal
+string?                                                DimensionValue.CalculationFolderTemplateIdExternal
 string?                                                DimensionValue.ChangeRequestIdExternal
+string?                                                DimensionValue.ClassificationSystemItemIdExternal
 string?                                                DimensionValue.DimensionIdExternal
 string?                                                DimensionValue.ParentDimensionValueIdExternal
 int?                                                   DimensionValue.CalculationFolderId
+int?                                                   DimensionValue.CalculationFolderTemplateId
 int?                                                   DimensionValue.ChangeRequestId
+int?                                                   DimensionValue.ClassificationSystemItemId
 string? (50)                                           DimensionValue.Code
 string?                                                DimensionValue.HierarchicalId
 string (512)                                           DimensionValue.Name
@@ -4405,7 +4409,6 @@ bool?                                                  Invoice.ROTInvoice
 string?                                                Invoice.ROTPropertyNo
 DateTime?                                              Invoice.SentUTC
 bool                                                   Invoice.Sys_Deactivated
-bool                                                   Invoice.Sys_FinalPostProcessDone
 bool                                                   Invoice.Sys_Historic
 bool                                                   Invoice.Sys_Incomplete
 DateOnly?                                              Invoice.Sys_InvoiceDatePrevious
@@ -4445,6 +4448,7 @@ string? (200)                                          Invoice_Session.Assignmen
 string? (200)                                          Invoice_Session.Assignment_InternalReference
 bool?                                                  Invoice_Session.AttachServiceListAsPDF
 bool?                                                  Invoice_Session.AttachServiceListIsWorkTimeOnly
+bool                                                   Invoice_Session.CloseAssignmentInSpeedyCraft
 decimal?                                               Invoice_Session.Coverage
 short?                                                 Invoice_Session.CurrencyId
 string? [MultilineText]                                Invoice_Session.CustomerComment
@@ -4499,7 +4503,9 @@ string?                                                Invoice_Session.ROTApartm
 string?                                                Invoice_Session.ROTBrfOrgNo
 bool?                                                  Invoice_Session.ROTInvoice
 string?                                                Invoice_Session.ROTPropertyNo
+bool                                                   Invoice_Session.SendInvoice
 DateTime?                                              Invoice_Session.SentUTC
+bool                                                   Invoice_Session.SetAssignmentReadyToInvoice
 bool?                                                  Invoice_Session.ShowCustomerDeviationWarning
 bool                                                   Invoice_Session.Sys_Deactivated
 bool?                                                  Invoice_Session.Sys_FinalPostProcessDone
@@ -4514,6 +4520,7 @@ DateTime?                                              Invoice_Session.Transferr
 int?                                                   Invoice_Session.UseDimensions
 bool?                                                  Invoice_Session.VATFree
 int?                                                   Invoice_Session.WeekNumber
+ContractTypeEnum?                                      Invoice_Session.Assignment_Enum_ContractTypeId
 InvoiceStatusEnum?                                     Invoice_Session.Enum_InvoiceStatusId
 int                                                    InvoiceAttachment.InvoiceAttachmentId
 string?                                                InvoiceAttachment.AttachmentIdExternal
@@ -6446,12 +6453,29 @@ int?                                                   ProgressAssessment.Dimens
 decimal?                                               ProgressAssessment.InvoiceReserveAdjustment
 string? [MultilineText](200)                           ProgressAssessment.InvoiceReserveAdjustmentComment
 int?                                                   ProgressAssessment.Parent_ProgressAssessmentId
+string?                                                ProgressAssessment.ProjectAccountCategoryAssessedJSON
 byte?                                                  ProgressAssessment.ProjectAccountCategoryId
 int?                                                   ProgressAssessment.ProjectId
-int?                                                   ProgressAssessment.ProjectPeriodId
+int                                                    ProgressAssessment.ProjectPeriodId
+decimal?                                               ProgressAssessment.Sys_CalculatedIncome
+decimal?                                               ProgressAssessment.Sys_CalculatedInvoiceReserve
+decimal?                                               ProgressAssessment.Sys_CostAmount
+decimal?                                               ProgressAssessment.Sys_CostEAC
+decimal?                                               ProgressAssessment.Sys_Coverage
+decimal?                                               ProgressAssessment.Sys_CoverageEAC
 bool                                                   ProgressAssessment.Sys_Deactivated
+decimal?                                               ProgressAssessment.Sys_FixedPrice
+decimal?                                               ProgressAssessment.Sys_GrossMargin
+decimal?                                               ProgressAssessment.Sys_GrossMarginEAC
 bool                                                   ProgressAssessment.Sys_Historic
+decimal?                                               ProgressAssessment.Sys_HoursWorked
 bool                                                   ProgressAssessment.Sys_Incomplete
+decimal?                                               ProgressAssessment.Sys_InvoicedAmount
+decimal?                                               ProgressAssessment.Sys_InvoicedCoverage
+decimal?                                               ProgressAssessment.Sys_InvoicedGrossMargin
+string?                                                ProgressAssessment.Sys_ProjectAccountCategoryCostJSON
+decimal?                                               ProgressAssessment.Sys_Revenue
+decimal?                                               ProgressAssessment.Sys_RevenueEAC
 AssessmentValueTypeEnum?                               ProgressAssessment.Enum_AssessmentValueTypeId
 bool?                                                  ProgressAssessment.Ext_Sys_Deactivated
 string?                                                ProgressAssessment.Ext_ExternalId
@@ -7466,7 +7490,6 @@ bool                                                   Settings_Main.PreserveGri
 int?                                                   Settings_Main.ProductId
 bool                                                   Settings_Main.ProductNote_CostPrice_Edit
 byte?                                                  Settings_Main.ProjectPeriod_AutoCreateMonths
-byte                                                   Settings_Main.ProjectPeriod_CreateLimitMonths
 int?                                                   Settings_Main.ProjectPeriod_LastClosedYYYYPP
 bool                                                   Settings_Main.Require2FAForAllUsers
 bool                                                   Settings_Main.ROTEnabled
@@ -8595,6 +8618,8 @@ decimal?                                               WageRateEmployee.Rate
 bool                                                   WageRateEmployee.Sys_Deactivated
 bool                                                   WageRateEmployee.Sys_Historic
 bool                                                   WageRateEmployee.Sys_Incomplete
+DateOnly?                                              WageRateEmployee.ValidFromDate
+DateOnly?                                              WageRateEmployee.ValidToDate
 short                                                  WageRateEmployee.WageCodeId
 bool?                                                  WageRateEmployee.Ext_Sys_Deactivated
 string?                                                WageRateEmployee.Ext_ExternalId
