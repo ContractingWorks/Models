@@ -3855,6 +3855,48 @@ DateTime?                                              ExternalSystemSupplierInv
 string? [MultilineText](50)                            ExternalSystemSupplierInvoiceLine.StatusDescription
 bool                                                   ExternalSystemSupplierInvoiceLine.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemSupplierInvoiceLine.Enum_SyncStatusId
+int                                                    ExternalSystemSync.ExternalSystemSyncId
+long?                                                  ExternalSystemSync.AllTimeSyncCount
+long?                                                  ExternalSystemSync.AllTimeSyncMilliseconds
+short?                                                 ExternalSystemSync.BatchSize
+string? (200)                                          ExternalSystemSync.DataSourceName
+string? [MultilineText](500)                           ExternalSystemSync.Description
+short                                                  ExternalSystemSync.ExternalSystemId
+int?                                                   ExternalSystemSync.ExternalSystemSyncGroupId
+bool                                                   ExternalSystemSync.IsEnabled
+bool                                                   ExternalSystemSync.IsIncoming
+string? (50)                                           ExternalSystemSync.LastSyncedToId
+long?                                                  ExternalSystemSync.LastSyncedToRowVersion
+DateTime?                                              ExternalSystemSync.LastSyncedToUTC
+int?                                                   ExternalSystemSync.LastSyncMilliseconds
+int?                                                   ExternalSystemSync.LastSyncRowCount
+string?                                                ExternalSystemSync.LastSyncRunError
+int?                                                   ExternalSystemSync.LastSyncRunNumber
+int?                                                   ExternalSystemSync.MaxBatchesInRun
+int?                                                   ExternalSystemSync.ParentCountToSync
+int?                                                   ExternalSystemSync.ParentCountTotal
+int?                                                   ExternalSystemSync.RunSortOrder
+string? (50)                                           ExternalSystemSync.SourceClientId
+byte                                                   ExternalSystemSync.SourceClientLevel
+string (50)                                            ExternalSystemSync.SyncType
+bool                                                   ExternalSystemSync.Sys_Deactivated
+bool                                                   ExternalSystemSync.Sys_Historic
+bool                                                   ExternalSystemSync.Sys_Incomplete
+EntityEnum                                             ExternalSystemSync.Enum_EntityId
+int                                                    ExternalSystemSyncGroup.ExternalSystemSyncGroupId
+long?                                                  ExternalSystemSyncGroup.EstimatedMillisecondsLeft
+bool                                                   ExternalSystemSyncGroup.IsEnabled
+short?                                                 ExternalSystemSyncGroup.LastSyncCompletedSyncCount
+DateTime?                                              ExternalSystemSyncGroup.LastSyncDoneUTC
+short?                                                 ExternalSystemSyncGroup.LastSyncEnabledSyncCount
+int?                                                   ExternalSystemSyncGroup.LastSyncMilliseconds
+int?                                                   ExternalSystemSyncGroup.LastSyncRowCount
+bool                                                   ExternalSystemSyncGroup.SyncInProgress
+DateTime?                                              ExternalSystemSyncGroup.SyncRequestedUTC
+bool                                                   ExternalSystemSyncGroup.Sys_Deactivated
+bool                                                   ExternalSystemSyncGroup.Sys_Historic
+bool                                                   ExternalSystemSyncGroup.Sys_Incomplete
+string (100)                                           ExternalSystemSyncGroup.TextId
 int                                                    ExternalSystemSyncRetryQueue.ExternalSystemSyncRetryQueueId
 bool                                                   ExternalSystemSyncRetryQueue.DeactivateOnly
 string? (250)                                          ExternalSystemSyncRetryQueue.ErrorMessage
