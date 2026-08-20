@@ -6418,6 +6418,7 @@ bool?                                                  ProductSupplierIndustryTy
 string? [MultilineText]                                ProductSupplierIndustryType.Note
 int?                                                   ProductSupplierIndustryType.ProductId
 string? (100)                                          ProductSupplierIndustryType.ProductName
+DateOnly?                                              ProductSupplierIndustryType.ProductStatus_ChangeDate
 short?                                                 ProductSupplierIndustryType.SupplierIndustryTypeId
 string? (50)                                           ProductSupplierIndustryType.SupplierProductNumber
 decimal?                                               ProductSupplierIndustryType.SupplierSalesPrice
@@ -6427,6 +6428,7 @@ bool                                                   ProductSupplierIndustryTy
 bool?                                                  ProductSupplierIndustryType.Sys_IsVarious
 string? (50)                                           ProductSupplierIndustryType.Sys_ProductNumber
 ProductSourceEnum?                                     ProductSupplierIndustryType.Enum_ProductSourceId
+ProductStatusEnum?                                     ProductSupplierIndustryType.Enum_ProductStatusId
 bool?                                                  ProductSupplierIndustryType.Ext_Sys_Deactivated
 string?                                                ProductSupplierIndustryType.Ext_ExternalId
 string?                                                ProductSupplierIndustryType.Ext_In_Error_MsgNO
@@ -7978,6 +7980,7 @@ DateTime?                                              SupplierIndustryType.Ext_
 --> PurchaseAgreement[]                                SupplierIndustryType.PurchaseAgreements
 short                                                  SupplierIndustryTypeFtpInfo.SupplierIndustryTypeFtpInfoId
 string?                                                SupplierIndustryTypeFtpInfo.SupplierIndustryTypeIdExternal
+bool                                                   SupplierIndustryTypeFtpInfo.AutoDiscontinue
 bool                                                   SupplierIndustryTypeFtpInfo.AutoImport
 string? (200)                                          SupplierIndustryTypeFtpInfo.DirectoryPath
 string? (50)                                           SupplierIndustryTypeFtpInfo.FileMask
