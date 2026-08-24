@@ -3885,6 +3885,7 @@ bool                                                   ExternalSystemSync.Sys_In
 EntityEnum                                             ExternalSystemSync.Enum_EntityId
 int                                                    ExternalSystemSyncGroup.ExternalSystemSyncGroupId
 long?                                                  ExternalSystemSyncGroup.EstimatedMillisecondsLeft
+short                                                  ExternalSystemSyncGroup.ExternalSystemId
 bool                                                   ExternalSystemSyncGroup.IsEnabled
 short?                                                 ExternalSystemSyncGroup.LastSyncCompletedSyncCount
 DateTime?                                              ExternalSystemSyncGroup.LastSyncDoneUTC
