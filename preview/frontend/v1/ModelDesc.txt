@@ -5404,6 +5404,7 @@ bool                                                   Product.PriceOnly
 string? (100)                                          Product.ProductName
 string (50)                                            Product.ProductNumber
 int?                                                   Product.ProductSeriesId
+DateOnly?                                              Product.ProductStatus_ChangeDate
 short?                                                 Product.ProductUnitId
 short?                                                 Product.Purchase_VATFree_LedgerAccountId
 short?                                                 Product.Purchase_VATRequired_LedgerAccountId
@@ -5417,6 +5418,7 @@ bool                                                   Product.Sys_Incomplete
 string? (3)                                            Product.Unit
 int?                                                   Product.VATRateId
 ProductSourceEnum?                                     Product.Enum_ProductSourceId
+ProductStatusEnum?                                     Product.Enum_ProductStatusId
 ROTCategoryEnum?                                       Product.Enum_ROTCategoryId
 bool?                                                  Product.Ext_Sys_Deactivated
 string?                                                Product.Ext_ExternalId
