@@ -7752,6 +7752,7 @@ string?                                                StockTransaction.DebitERP
 string?                                                StockTransaction.ProductIdExternal
 string?                                                StockTransaction.ProductSupplierIndustryTypeIdExternal
 string?                                                StockTransaction.RegisteredBy_EmployeeIdExternal
+string?                                                StockTransaction.StockCountIdExternal
 string?                                                StockTransaction.StorageIdExternal
 string?                                                StockTransaction.Sys_PosSaleLineIdExternal
 string?                                                StockTransaction.Sys_ProductNoteLineIdExternal
@@ -7770,6 +7771,7 @@ int?                                                   StockTransaction.ProductS
 decimal                                                StockTransaction.Quantity
 int?                                                   StockTransaction.RegisteredBy_EmployeeId
 int?                                                   StockTransaction.SequenceNumber
+int?                                                   StockTransaction.StockCountId
 decimal?                                               StockTransaction.Sys_CostPriceFIFO
 decimal?                                               StockTransaction.Sys_CostPriceIncoming
 decimal?                                               StockTransaction.Sys_CostPriceNotFIFO
