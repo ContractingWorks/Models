@@ -6197,6 +6197,7 @@ int                                                    ProductSearch.SortOrder
 bool                                                   ProductSearch.Sys_Deactivated
 bool                                                   ProductSearch.Sys_Historic
 bool                                                   ProductSearch.Sys_Incomplete
+PublicationStatusEnum                                  ProductSearch.Enum_PublicationStatusId
 bool?                                                  ProductSearch.Ext_Sys_Deactivated
 string?                                                ProductSearch.Ext_ExternalId
 string?                                                ProductSearch.Ext_In_Error_MsgNO
@@ -6364,6 +6365,7 @@ bool                                                   ProductStructure.Sys_Hist
 bool                                                   ProductStructure.Sys_Incomplete
 string? (50)                                           ProductStructure.TariffFilter
 int?                                                   ProductStructure.WorkSeconds
+PublicationStatusEnum                                  ProductStructure.Enum_PublicationStatusId
 bool?                                                  ProductStructure.Ext_Sys_Deactivated
 string?                                                ProductStructure.Ext_ExternalId
 string?                                                ProductStructure.Ext_In_Error_MsgNO
@@ -6392,6 +6394,7 @@ int                                                    ProductStructureFolder.So
 bool                                                   ProductStructureFolder.Sys_Deactivated
 bool                                                   ProductStructureFolder.Sys_Historic
 bool                                                   ProductStructureFolder.Sys_Incomplete
+PublicationStatusEnum                                  ProductStructureFolder.Enum_PublicationStatusId
 bool?                                                  ProductStructureFolder.Ext_Sys_Deactivated
 string?                                                ProductStructureFolder.Ext_ExternalId
 string?                                                ProductStructureFolder.Ext_In_Error_MsgNO
