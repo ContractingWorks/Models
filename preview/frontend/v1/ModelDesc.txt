@@ -7579,6 +7579,15 @@ bool                                                   Settings_Payroll.Sys_Deac
 bool                                                   Settings_Payroll.Sys_Historic
 bool                                                   Settings_Payroll.Sys_Incomplete
 PayrollFormatEnum                                      Settings_Payroll.Enum_PayrollFormatId
+int                                                    Settings_Planner.Settings_PlannerId
+string? (512)                                          Settings_Planner.Appointment_OnCreateMessage
+int?                                                   Settings_Planner.Appointment_ReminderLeadHours
+string? (512)                                          Settings_Planner.Appointment_ReminderMessage
+decimal                                                Settings_Planner.SmartPlanning_DefaultRadiusKm
+decimal                                                Settings_Planner.SmartPlanning_MaxSuggestionsPerGap
+bool                                                   Settings_Planner.Sys_Deactivated
+bool                                                   Settings_Planner.Sys_Historic
+bool                                                   Settings_Planner.Sys_Incomplete
 byte                                                   Settings_ProductImport.Settings_ProductImportId
 string?                                                Settings_ProductImport.Cost_ProjectAccountIdExternal
 string?                                                Settings_ProductImport.Income_ProjectAccountIdExternal
