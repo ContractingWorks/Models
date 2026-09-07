@@ -4495,6 +4495,7 @@ bool                                                   Invoice_Session.CloseAssi
 decimal?                                               Invoice_Session.Coverage
 short?                                                 Invoice_Session.CurrencyId
 string? [MultilineText]                                Invoice_Session.CustomerComment
+string? (200)                                          Invoice_Session.CustomerContractReference
 int?                                                   Invoice_Session.CustomerId
 string? (200)                                          Invoice_Session.CustomerReference
 bool?                                                  Invoice_Session.Customer_IsPrivate
