@@ -6513,7 +6513,9 @@ int                                                    ProgressAssessment.Projec
 decimal?                                               ProgressAssessment.Sys_CalculatedIncome
 decimal?                                               ProgressAssessment.Sys_CalculatedInvoiceReserve
 decimal?                                               ProgressAssessment.Sys_CostAmount
+decimal?                                               ProgressAssessment.Sys_CostAssessed
 decimal?                                               ProgressAssessment.Sys_CostEAC
+decimal?                                               ProgressAssessment.Sys_CostEAC_Assessed_Diff
 decimal?                                               ProgressAssessment.Sys_Coverage
 decimal?                                               ProgressAssessment.Sys_CoverageEAC
 bool                                                   ProgressAssessment.Sys_Deactivated
