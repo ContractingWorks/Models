@@ -55,6 +55,7 @@ int                                                    Appointment.AppointmentId
 string?                                                Appointment.AppointmentIdExternal
 string?                                                Appointment.ContactIdExternal
 string?                                                Appointment.EmployeeIdExternal
+string?                                                Appointment.Parent_AppointmentIdExternal
 string? [MultilineText]                                Appointment.Comment
 int?                                                   Appointment.ContactId
 string? [MultilineText](255)                           Appointment.Description
@@ -63,6 +64,7 @@ DateTime                                               Appointment.EndDateTimeUT
 int?                                                   Appointment.OnCreate_ContactMessageId
 bool                                                   Appointment.OnCreate_IsActive
 string? (512)                                          Appointment.OnCreate_Message
+int?                                                   Appointment.Parent_AppointmentId
 int?                                                   Appointment.Reminder_ContactMessageId
 bool                                                   Appointment.Reminder_IsActive
 int?                                                   Appointment.Reminder_LeadHours
