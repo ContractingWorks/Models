@@ -1331,6 +1331,7 @@ bool?                                                  EmployeeInvoiceCategory.E
 DateTime?                                              EmployeeInvoiceCategory.Ext_Out_LastSyncUTC
 --> ExternalSystemEmployeeInvoiceCategory[]            EmployeeInvoiceCategory.ExternalSystemEmployeeInvoiceCategories
 int                                                    Employment.EmploymentId
+string?                                                Employment.EmploymentIdExternal
 string?                                                Employment.EmployeeIdExternal
 string?                                                Employment.EmployeeInvoiceCategoryIdExternal
 string?                                                Employment.JobCategoryIdExternal
@@ -1345,6 +1346,23 @@ bool                                                   Employment.Sys_Deactivate
 bool                                                   Employment.Sys_Historic
 bool                                                   Employment.Sys_Incomplete
 DateOnly?                                              Employment.Sys_StartDate
+bool?                                                  Employment.Ext_Sys_Deactivated
+string?                                                Employment.Ext_ExternalId
+string?                                                Employment.Ext_In_Error_MsgNO
+string?                                                Employment.Ext_In_Error_MsgEN
+string?                                                Employment.Ext_In_Error_TraceId
+string?                                                Employment.Ext_In_Error_TechDetail
+string?                                                Employment.Ext_In_Error_FixLink
+bool?                                                  Employment.Ext_In_Error_SetOK
+DateTime?                                              Employment.Ext_In_LastSyncUTC
+string?                                                Employment.Ext_Out_Error_MsgNO
+string?                                                Employment.Ext_Out_Error_MsgEN
+string?                                                Employment.Ext_Out_Error_TraceId
+string?                                                Employment.Ext_Out_Error_TechDetail
+string?                                                Employment.Ext_Out_Error_FixLink
+bool?                                                  Employment.Ext_Out_Error_SetOK
+DateTime?                                              Employment.Ext_Out_LastSyncUTC
+--> ExternalSystemEmployment[]                         Employment.ExternalSystemEmployments
 int                                                    EmploymentTemplate.EmploymentTemplateId
 string?                                                EmploymentTemplate.EmploymentTemplateIdExternal
 string? [MultilineText](500)                           EmploymentTemplate.Description
@@ -2084,6 +2102,25 @@ DateTime?                                              ExternalSystemEmployeeInv
 string? [MultilineText](50)                            ExternalSystemEmployeeInvoiceCategory.StatusDescription
 bool                                                   ExternalSystemEmployeeInvoiceCategory.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemEmployeeInvoiceCategory.Enum_SyncStatusId
+int                                                    ExternalSystemEmployment.ExternalSystemEmploymentId
+string?                                                ExternalSystemEmployment.EmploymentIdExternal
+string? (50)                                           ExternalSystemEmployment.ExternalId
+short                                                  ExternalSystemEmployment.ExternalSystemId
+string? (100)                                          ExternalSystemEmployment.In_Error_FixLink
+string? (250)                                          ExternalSystemEmployment.In_Error_MsgEN
+string? (250)                                          ExternalSystemEmployment.In_Error_MsgNO
+string?                                                ExternalSystemEmployment.In_Error_TechDetail
+string? (40)                                           ExternalSystemEmployment.In_Error_TraceId
+DateTime?                                              ExternalSystemEmployment.In_LastSyncUTC
+string? (100)                                          ExternalSystemEmployment.Out_Error_FixLink
+string? (250)                                          ExternalSystemEmployment.Out_Error_MsgEN
+string? (250)                                          ExternalSystemEmployment.Out_Error_MsgNO
+string?                                                ExternalSystemEmployment.Out_Error_TechDetail
+string? (40)                                           ExternalSystemEmployment.Out_Error_TraceId
+DateTime?                                              ExternalSystemEmployment.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemEmployment.StatusDescription
+bool                                                   ExternalSystemEmployment.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemEmployment.Enum_SyncStatusId
 int                                                    ExternalSystemEmploymentTemplate.ExternalSystemEmploymentTemplateId
 string?                                                ExternalSystemEmploymentTemplate.EmploymentTemplateIdExternal
 string? (50)                                           ExternalSystemEmploymentTemplate.ExternalId
@@ -6501,6 +6538,7 @@ string?                                                ProgressAssessment.Dimens
 string?                                                ProgressAssessment.Parent_ProgressAssessmentIdExternal
 string?                                                ProgressAssessment.ProjectIdExternal
 string?                                                ProgressAssessment.ProjectPeriodIdExternal
+bool?                                                  ProgressAssessment.AssessmentIsFixedPrice
 decimal?                                               ProgressAssessment.AssessmentValue
 string? [MultilineText](200)                           ProgressAssessment.AssessmentValueComment
 int?                                                   ProgressAssessment.AssignmentId
