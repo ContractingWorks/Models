@@ -6617,6 +6617,8 @@ int?                                                   Project.AssignmentCategor
 int?                                                   Project.Budget_DimensionId
 int?                                                   Project.CaseHandler_EmployeeId
 string? (50)                                           Project.Code
+decimal?                                               Project.CoverageRateFixedPrice
+decimal?                                               Project.CoverageRateNotFixedPrice
 string? (200)                                          Project.CustomerContractReference
 int?                                                   Project.CustomerId
 string? (50)                                           Project.CustomersReference
@@ -6653,6 +6655,8 @@ bool                                                   Project.Sys_Historic
 bool                                                   Project.Sys_Incomplete
 bool                                                   Project.UseCustomerDefaultsFirst
 DateOnly?                                              Project.WarrantyDate
+InvoiceReserveBilledPriceCalculationEnum               Project.Enum_InvoiceReserveBilledPriceCalculationId
+InvoiceReserveFixedPriceCalculationEnum                Project.Enum_InvoiceReserveFixedPriceCalculationId
 ProjectAssessmentTypeEnum                              Project.Enum_ProjectAssessmentTypeId
 ProjectStatusEnum                                      Project.Enum_ProjectStatusId
 bool?                                                  Project.Ext_Sys_Deactivated
@@ -8428,7 +8432,7 @@ short                                                  Unit.UnitId
 string?                                                Unit.UnitIdExternal
 string (8)                                             Unit.Code
 bool                                                   Unit.ETIM
-string? (10)                                           Unit.Nelfo4Code
+bool                                                   Unit.IsNelfo4Code
 bool                                                   Unit.Sys_Deactivated
 bool                                                   Unit.Sys_Historic
 bool                                                   Unit.Sys_Incomplete
