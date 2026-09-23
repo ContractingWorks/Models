@@ -561,6 +561,7 @@ string?                                                CalculationLine.WageCodeR
 decimal?                                               CalculationLine.AdditionalCost
 int?                                                   CalculationLine.CalculationFolderId
 int                                                    CalculationLine.CalculationId
+int?                                                   CalculationLine.CalculationLineManualTypeId
 int?                                                   CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                          CalculationLine.Comment
 int?                                                   CalculationLine.Cost_ProjectAccountId
