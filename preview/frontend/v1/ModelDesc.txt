@@ -6110,6 +6110,7 @@ string?                                                ProductNoteLine.ProductId
 string?                                                ProductNoteLine.ProductNoteIdExternal
 string?                                                ProductNoteLine.ProductSupplierIndustryTypeIdExternal
 string?                                                ProductNoteLine.ProjectPeriodIdExternal
+string?                                                ProductNoteLine.ReversalOf_ProductNoteLineIdExternal
 string?                                                ProductNoteLine.StorageIdExternal
 string?                                                ProductNoteLine.StructureParent_ProductNoteLineIdExternal
 string?                                                ProductNoteLine.SupplierIndustryTypeIdExternal
@@ -6147,6 +6148,7 @@ int?                                                   ProductNoteLine.ProjectPe
 decimal?                                               ProductNoteLine.Quantity
 decimal?                                               ProductNoteLine.QuantityInvoice
 DateTime?                                              ProductNoteLine.RegisteredDateTimeUTC
+int?                                                   ProductNoteLine.ReversalOf_ProductNoteLineId
 decimal?                                               ProductNoteLine.SalesPrice
 decimal?                                               ProductNoteLine.SalesPriceInvoice
 bool                                                   ProductNoteLine.SalesPriceModified
@@ -7028,6 +7030,7 @@ string?                                                Service.JobCategoryIdExte
 string?                                                Service.MovedFromAssignmentIdExternal
 string?                                                Service.MovedToAssignmentIdExternal
 string?                                                Service.ProjectPeriodIdExternal
+string?                                                Service.ReversalOf_ServiceIdExternal
 string?                                                Service.WageCodeIdExternal
 string?                                                Service.WageCodeReportCategoryIdExternal
 string?                                                Service.WagePeriodIdExternal
@@ -7064,6 +7067,7 @@ int?                                                   Service.PieceworkNumber
 int?                                                   Service.ProjectPeriodId
 decimal                                                Service.Quantity
 decimal?                                               Service.QuantityInvoice
+int?                                                   Service.ReversalOf_ServiceId
 decimal?                                               Service.SalesPrice
 decimal?                                               Service.SalesPriceInvoice
 bool?                                                  Service.SalesPriceModified
