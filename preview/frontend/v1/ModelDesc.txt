@@ -595,6 +595,20 @@ int?                                                   CalculationLine.TariffId
 int?                                                   CalculationLine.WageCodeReportCategoryId
 int?                                                   CalculationLine.WorkSeconds
 int?                                                   CalculationLine.WorkSecondsOverride
+int                                                    CalculationLineManualType.CalculationLineManualTypeId
+string?                                                CalculationLineManualType.ClassificationSystemIdExternal
+string?                                                CalculationLineManualType.Cost_ProjectAccountIdExternal
+string?                                                CalculationLineManualType.Income_ProjectAccountIdExternal
+int?                                                   CalculationLineManualType.ClassificationSystemId
+int?                                                   CalculationLineManualType.Cost_ProjectAccountId
+string? [MultilineText](500)                           CalculationLineManualType.Description
+string? (50)                                           CalculationLineManualType.Icon
+int?                                                   CalculationLineManualType.Income_ProjectAccountId
+int                                                    CalculationLineManualType.Number
+bool                                                   CalculationLineManualType.Sys_Deactivated
+bool                                                   CalculationLineManualType.Sys_Historic
+bool                                                   CalculationLineManualType.Sys_Incomplete
+CalculationLineManualTypeEnum                          CalculationLineManualType.Enum_CalculationLineManualTypeId
 int                                                    ChangeRequest.ChangeRequestId
 string?                                                ChangeRequest.ChangeRequestIdExternal
 string?                                                ChangeRequest.AssignmentIdExternal
