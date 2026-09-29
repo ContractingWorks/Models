@@ -489,11 +489,13 @@ int?                                                   Calculation.WageCodeRepor
 OfferStatusEnum                                        Calculation.Enum_OfferStatusId
 int                                                    CalculationFolder.CalculationFolderId
 string?                                                CalculationFolder.ChangeRequestIdExternal
+string?                                                CalculationFolder.EmployeeInvoiceCategoryWageCodeIdExternal
 int                                                    CalculationFolder.CalculationId
 int?                                                   CalculationFolder.ChangeRequestId
 string? (50)                                           CalculationFolder.Code
 string? [MultilineText](1024)                          CalculationFolder.Comment
 bool                                                   CalculationFolder.Complete
+int?                                                   CalculationFolder.EmployeeInvoiceCategoryWageCodeId
 string (100)                                           CalculationFolder.Name
 int?                                                   CalculationFolder.Parent_CalculationFolderId
 int                                                    CalculationFolder.SortOrder
@@ -548,8 +550,10 @@ bool?                                                  CalculationFolderTemplate
 DateTime?                                              CalculationFolderTemplate.Ext_Out_LastSyncUTC
 --> ExternalSystemCalculationFolderTemplate[]          CalculationFolderTemplate.ExternalSystemCalculationFolderTemplates
 int                                                    CalculationLine.CalculationLineId
+string?                                                CalculationLine.CalculationLineManualTypeIdExternal
 string?                                                CalculationLine.ClassificationSystemItemIdExternal
 string?                                                CalculationLine.Cost_ProjectAccountIdExternal
+string?                                                CalculationLine.EmployeeInvoiceCategoryWageCodeIdExternal
 string?                                                CalculationLine.Income_ProjectAccountIdExternal
 string?                                                CalculationLine.ProductIdExternal
 string?                                                CalculationLine.ProductSearchIdExternal
@@ -565,6 +569,7 @@ int?                                                   CalculationLine.Calculati
 int?                                                   CalculationLine.ClassificationSystemItemId
 string? [MultilineText](1024)                          CalculationLine.Comment
 int?                                                   CalculationLine.Cost_ProjectAccountId
+int?                                                   CalculationLine.EmployeeInvoiceCategoryWageCodeId
 int?                                                   CalculationLine.Income_ProjectAccountId
 bool?                                                  CalculationLine.IsDefaultWithinSeries
 bool?                                                  CalculationLine.IsFromDefaultSeries
@@ -596,19 +601,37 @@ int?                                                   CalculationLine.WageCodeR
 int?                                                   CalculationLine.WorkSeconds
 int?                                                   CalculationLine.WorkSecondsOverride
 int                                                    CalculationLineManualType.CalculationLineManualTypeId
+string?                                                CalculationLineManualType.CalculationLineManualTypeIdExternal
 string?                                                CalculationLineManualType.ClassificationSystemIdExternal
 string?                                                CalculationLineManualType.Cost_ProjectAccountIdExternal
 string?                                                CalculationLineManualType.Income_ProjectAccountIdExternal
 int?                                                   CalculationLineManualType.ClassificationSystemId
 int?                                                   CalculationLineManualType.Cost_ProjectAccountId
 string? [MultilineText](500)                           CalculationLineManualType.Description
-string? (50)                                           CalculationLineManualType.Icon
 int?                                                   CalculationLineManualType.Income_ProjectAccountId
 int                                                    CalculationLineManualType.Number
 bool                                                   CalculationLineManualType.Sys_Deactivated
 bool                                                   CalculationLineManualType.Sys_Historic
 bool                                                   CalculationLineManualType.Sys_Incomplete
 CalculationLineManualTypeEnum                          CalculationLineManualType.Enum_CalculationLineManualTypeId
+IconEnum?                                              CalculationLineManualType.Enum_IconId
+bool?                                                  CalculationLineManualType.Ext_Sys_Deactivated
+string?                                                CalculationLineManualType.Ext_ExternalId
+string?                                                CalculationLineManualType.Ext_In_Error_MsgNO
+string?                                                CalculationLineManualType.Ext_In_Error_MsgEN
+string?                                                CalculationLineManualType.Ext_In_Error_TraceId
+string?                                                CalculationLineManualType.Ext_In_Error_TechDetail
+string?                                                CalculationLineManualType.Ext_In_Error_FixLink
+bool?                                                  CalculationLineManualType.Ext_In_Error_SetOK
+DateTime?                                              CalculationLineManualType.Ext_In_LastSyncUTC
+string?                                                CalculationLineManualType.Ext_Out_Error_MsgNO
+string?                                                CalculationLineManualType.Ext_Out_Error_MsgEN
+string?                                                CalculationLineManualType.Ext_Out_Error_TraceId
+string?                                                CalculationLineManualType.Ext_Out_Error_TechDetail
+string?                                                CalculationLineManualType.Ext_Out_Error_FixLink
+bool?                                                  CalculationLineManualType.Ext_Out_Error_SetOK
+DateTime?                                              CalculationLineManualType.Ext_Out_LastSyncUTC
+--> ExternalSystemCalculationLineManualType[]          CalculationLineManualType.ExternalSystemCalculationLineManualTypes
 int                                                    ChangeRequest.ChangeRequestId
 string?                                                ChangeRequest.ChangeRequestIdExternal
 string?                                                ChangeRequest.AssignmentIdExternal
@@ -1323,11 +1346,13 @@ bool                                                   EmployeeCompetency.Sys_In
 CompetencySourceEnum                                   EmployeeCompetency.Enum_CompetencySourceId
 short                                                  EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string?                                                EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
+bool                                                   EmployeeInvoiceCategory.IsDefaultForCalculation
 string (200)                                           EmployeeInvoiceCategory.Name
 short?                                                 EmployeeInvoiceCategory.Number
 bool                                                   EmployeeInvoiceCategory.Sys_Deactivated
 bool                                                   EmployeeInvoiceCategory.Sys_Historic
 bool                                                   EmployeeInvoiceCategory.Sys_Incomplete
+bool                                                   EmployeeInvoiceCategory.UseInCalculation
 bool?                                                  EmployeeInvoiceCategory.Ext_Sys_Deactivated
 string?                                                EmployeeInvoiceCategory.Ext_ExternalId
 string?                                                EmployeeInvoiceCategory.Ext_In_Error_MsgNO
@@ -1345,6 +1370,59 @@ string?                                                EmployeeInvoiceCategory.E
 bool?                                                  EmployeeInvoiceCategory.Ext_Out_Error_SetOK
 DateTime?                                              EmployeeInvoiceCategory.Ext_Out_LastSyncUTC
 --> ExternalSystemEmployeeInvoiceCategory[]            EmployeeInvoiceCategory.ExternalSystemEmployeeInvoiceCategories
+int                                                    EmployeeInvoiceCategoryJobCategory.EmployeeInvoiceCategoryJobCategoryId
+string?                                                EmployeeInvoiceCategoryJobCategory.EmployeeInvoiceCategoryJobCategoryIdExternal
+string?                                                EmployeeInvoiceCategoryJobCategory.EmployeeInvoiceCategoryIdExternal
+string?                                                EmployeeInvoiceCategoryJobCategory.JobCategoryIdExternal
+short                                                  EmployeeInvoiceCategoryJobCategory.EmployeeInvoiceCategoryId
+short                                                  EmployeeInvoiceCategoryJobCategory.JobCategoryId
+bool                                                   EmployeeInvoiceCategoryJobCategory.Sys_Deactivated
+bool                                                   EmployeeInvoiceCategoryJobCategory.Sys_Historic
+bool                                                   EmployeeInvoiceCategoryJobCategory.Sys_Incomplete
+bool?                                                  EmployeeInvoiceCategoryJobCategory.Ext_Sys_Deactivated
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_ExternalId
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_In_Error_MsgNO
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_In_Error_MsgEN
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_In_Error_TraceId
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_In_Error_TechDetail
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_In_Error_FixLink
+bool?                                                  EmployeeInvoiceCategoryJobCategory.Ext_In_Error_SetOK
+DateTime?                                              EmployeeInvoiceCategoryJobCategory.Ext_In_LastSyncUTC
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_MsgNO
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_MsgEN
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_TraceId
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_TechDetail
+string?                                                EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_FixLink
+bool?                                                  EmployeeInvoiceCategoryJobCategory.Ext_Out_Error_SetOK
+DateTime?                                              EmployeeInvoiceCategoryJobCategory.Ext_Out_LastSyncUTC
+--> ExternalSystemEmployeeInvoiceCategoryJobCategory[] EmployeeInvoiceCategoryJobCategory.ExternalSystemEmployeeInvoiceCategoryJobCategories
+int                                                    EmployeeInvoiceCategoryWageCode.EmployeeInvoiceCategoryWageCodeId
+string?                                                EmployeeInvoiceCategoryWageCode.EmployeeInvoiceCategoryWageCodeIdExternal
+string?                                                EmployeeInvoiceCategoryWageCode.EmployeeInvoiceCategoryIdExternal
+string?                                                EmployeeInvoiceCategoryWageCode.WageCodeIdExternal
+short                                                  EmployeeInvoiceCategoryWageCode.EmployeeInvoiceCategoryId
+bool                                                   EmployeeInvoiceCategoryWageCode.IsDefault
+bool                                                   EmployeeInvoiceCategoryWageCode.Sys_Deactivated
+bool                                                   EmployeeInvoiceCategoryWageCode.Sys_Historic
+bool                                                   EmployeeInvoiceCategoryWageCode.Sys_Incomplete
+short                                                  EmployeeInvoiceCategoryWageCode.WageCodeId
+bool?                                                  EmployeeInvoiceCategoryWageCode.Ext_Sys_Deactivated
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_ExternalId
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_In_Error_MsgNO
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_In_Error_MsgEN
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_In_Error_TraceId
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_In_Error_TechDetail
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_In_Error_FixLink
+bool?                                                  EmployeeInvoiceCategoryWageCode.Ext_In_Error_SetOK
+DateTime?                                              EmployeeInvoiceCategoryWageCode.Ext_In_LastSyncUTC
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_Out_Error_MsgNO
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_Out_Error_MsgEN
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_Out_Error_TraceId
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_Out_Error_TechDetail
+string?                                                EmployeeInvoiceCategoryWageCode.Ext_Out_Error_FixLink
+bool?                                                  EmployeeInvoiceCategoryWageCode.Ext_Out_Error_SetOK
+DateTime?                                              EmployeeInvoiceCategoryWageCode.Ext_Out_LastSyncUTC
+--> ExternalSystemEmployeeInvoiceCategoryWageCode[]    EmployeeInvoiceCategoryWageCode.ExternalSystemEmployeeInvoiceCategoryWageCodes
 int                                                    Employment.EmploymentId
 string?                                                Employment.EmploymentIdExternal
 string?                                                Employment.EmployeeIdExternal
@@ -1813,6 +1891,25 @@ DateTime?                                              ExternalSystemCalculation
 string? [MultilineText](50)                            ExternalSystemCalculationFolderTemplate.StatusDescription
 bool                                                   ExternalSystemCalculationFolderTemplate.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemCalculationFolderTemplate.Enum_SyncStatusId
+int                                                    ExternalSystemCalculationLineManualType.ExternalSystemCalculationLineManualTypeId
+string?                                                ExternalSystemCalculationLineManualType.CalculationLineManualTypeIdExternal
+string? (50)                                           ExternalSystemCalculationLineManualType.ExternalId
+short                                                  ExternalSystemCalculationLineManualType.ExternalSystemId
+string? (100)                                          ExternalSystemCalculationLineManualType.In_Error_FixLink
+string? (250)                                          ExternalSystemCalculationLineManualType.In_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationLineManualType.In_Error_MsgNO
+string?                                                ExternalSystemCalculationLineManualType.In_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationLineManualType.In_Error_TraceId
+DateTime?                                              ExternalSystemCalculationLineManualType.In_LastSyncUTC
+string? (100)                                          ExternalSystemCalculationLineManualType.Out_Error_FixLink
+string? (250)                                          ExternalSystemCalculationLineManualType.Out_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationLineManualType.Out_Error_MsgNO
+string?                                                ExternalSystemCalculationLineManualType.Out_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationLineManualType.Out_Error_TraceId
+DateTime?                                              ExternalSystemCalculationLineManualType.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemCalculationLineManualType.StatusDescription
+bool                                                   ExternalSystemCalculationLineManualType.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemCalculationLineManualType.Enum_SyncStatusId
 int                                                    ExternalSystemChangeRequest.ExternalSystemChangeRequestId
 string?                                                ExternalSystemChangeRequest.ChangeRequestIdExternal
 string? (50)                                           ExternalSystemChangeRequest.ExternalId
@@ -2117,6 +2214,44 @@ DateTime?                                              ExternalSystemEmployeeInv
 string? [MultilineText](50)                            ExternalSystemEmployeeInvoiceCategory.StatusDescription
 bool                                                   ExternalSystemEmployeeInvoiceCategory.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemEmployeeInvoiceCategory.Enum_SyncStatusId
+int                                                    ExternalSystemEmployeeInvoiceCategoryJobCategory.ExternalSystemEmployeeInvoiceCategoryJobCategoryId
+string?                                                ExternalSystemEmployeeInvoiceCategoryJobCategory.EmployeeInvoiceCategoryJobCategoryIdExternal
+string? (50)                                           ExternalSystemEmployeeInvoiceCategoryJobCategory.ExternalId
+short                                                  ExternalSystemEmployeeInvoiceCategoryJobCategory.ExternalSystemId
+string? (100)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.In_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.In_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.In_Error_MsgNO
+string?                                                ExternalSystemEmployeeInvoiceCategoryJobCategory.In_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeInvoiceCategoryJobCategory.In_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeInvoiceCategoryJobCategory.In_LastSyncUTC
+string? (100)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_Error_MsgNO
+string?                                                ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeInvoiceCategoryJobCategory.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemEmployeeInvoiceCategoryJobCategory.StatusDescription
+bool                                                   ExternalSystemEmployeeInvoiceCategoryJobCategory.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemEmployeeInvoiceCategoryJobCategory.Enum_SyncStatusId
+int                                                    ExternalSystemEmployeeInvoiceCategoryWageCode.ExternalSystemEmployeeInvoiceCategoryWageCodeId
+string?                                                ExternalSystemEmployeeInvoiceCategoryWageCode.EmployeeInvoiceCategoryWageCodeIdExternal
+string? (50)                                           ExternalSystemEmployeeInvoiceCategoryWageCode.ExternalId
+short                                                  ExternalSystemEmployeeInvoiceCategoryWageCode.ExternalSystemId
+string? (100)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.In_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.In_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.In_Error_MsgNO
+string?                                                ExternalSystemEmployeeInvoiceCategoryWageCode.In_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeInvoiceCategoryWageCode.In_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeInvoiceCategoryWageCode.In_LastSyncUTC
+string? (100)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.Out_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.Out_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeInvoiceCategoryWageCode.Out_Error_MsgNO
+string?                                                ExternalSystemEmployeeInvoiceCategoryWageCode.Out_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeInvoiceCategoryWageCode.Out_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeInvoiceCategoryWageCode.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemEmployeeInvoiceCategoryWageCode.StatusDescription
+bool                                                   ExternalSystemEmployeeInvoiceCategoryWageCode.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemEmployeeInvoiceCategoryWageCode.Enum_SyncStatusId
 int                                                    ExternalSystemEmployment.ExternalSystemEmploymentId
 string?                                                ExternalSystemEmployment.EmploymentIdExternal
 string? (50)                                           ExternalSystemEmployment.ExternalId
