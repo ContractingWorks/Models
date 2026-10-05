@@ -6264,6 +6264,7 @@ string?                                                ProductNoteLine.StorageId
 string?                                                ProductNoteLine.StructureParent_ProductNoteLineIdExternal
 string?                                                ProductNoteLine.SupplierIndustryTypeIdExternal
 string?                                                ProductNoteLine.SupplierInvoiceLineIdExternal
+string?                                                ProductNoteLine.Sys_ProductUnitIdExternal
 decimal?                                               ProductNoteLine.CostPrice
 decimal?                                               ProductNoteLine.CostPrice_FromMobileDevice
 short?                                                 ProductNoteLine.Cost_LedgerAccountId
@@ -6321,6 +6322,7 @@ bool                                                   ProductNoteLine.Sys_Initi
 int?                                                   ProductNoteLine.Sys_InvoicedProjectPeriod
 int?                                                   ProductNoteLine.Sys_InvoicedProjectPeriodId
 string? (50)                                           ProductNoteLine.Sys_LastChangeOrigin
+short?                                                 ProductNoteLine.Sys_ProductUnitId
 byte?                                                  ProductNoteLine.Sys_ProjectAccountCategoryId
 int?                                                   ProductNoteLine.Sys_ProjectPeriod
 short?                                                 ProductNoteLine.Sys_PurchaseAgreementId
