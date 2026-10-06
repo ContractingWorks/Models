@@ -498,6 +498,8 @@ bool                                                   CalculationFolder.Complet
 int?                                                   CalculationFolder.EmployeeInvoiceCategoryWageCodeId
 string (100)                                           CalculationFolder.Name
 int?                                                   CalculationFolder.Parent_CalculationFolderId
+decimal?                                               CalculationFolder.ServiceSalesPrice
+decimal?                                               CalculationFolder.ServiceSalesPriceOverride
 int                                                    CalculationFolder.SortOrder
 bool                                                   CalculationFolder.Sys_Deactivated
 SqlHierarchyId?                                        CalculationFolder.Sys_HierarchyId
@@ -590,6 +592,8 @@ decimal?                                               CalculationLine.ProductSu
 decimal?                                               CalculationLine.ProductSurchargePercentOverride
 decimal?                                               CalculationLine.Quantity
 decimal?                                               CalculationLine.QuantityOverride
+decimal?                                               CalculationLine.ServiceSalesPrice
+decimal?                                               CalculationLine.ServiceSalesPriceOverride
 int                                                    CalculationLine.SortOrder
 short?                                                 CalculationLine.SupplierIndustryTypeId
 bool                                                   CalculationLine.Sys_Deactivated
@@ -5346,6 +5350,7 @@ string?                                                Offer.ClassificationSyste
 string?                                                Offer.CustomerIdExternal
 string?                                                Offer.Default_ContactIdExternal
 string?                                                Offer.DepartmentIdExternal
+string?                                                Offer.EmployeeInvoiceCategoryWageCodeIdExternal
 string?                                                Offer.ProductAgreementGroupIdExternal
 string?                                                Offer.ProjectIdExternal
 string?                                                Offer.SelectedGenPDF_AttachmentIdExternal
@@ -5362,6 +5367,7 @@ string? (200)                                          Offer.CustomerReference
 int?                                                   Offer.Default_ContactId
 short?                                                 Offer.DepartmentId
 string? [MultilineText](500)                           Offer.Description
+int?                                                   Offer.EmployeeInvoiceCategoryWageCodeId
 DateTime?                                              Offer.EndDateTimeUTC
 DateOnly?                                              Offer.ExpiryDate
 string? (200)                                          Offer.ExternalReference
