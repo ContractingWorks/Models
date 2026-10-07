@@ -551,6 +551,39 @@ string?                                                CalculationFolderTemplate
 bool?                                                  CalculationFolderTemplate.Ext_Out_Error_SetOK
 DateTime?                                              CalculationFolderTemplate.Ext_Out_LastSyncUTC
 --> ExternalSystemCalculationFolderTemplate[]          CalculationFolderTemplate.ExternalSystemCalculationFolderTemplates
+int                                                    CalculationLetterTemplate.CalculationLetterTemplateId
+string?                                                CalculationLetterTemplate.CalculationLetterTemplateIdExternal
+string? (500)                                          CalculationLetterTemplate.DefaultSignOffText
+string? [MultilineText](500)                           CalculationLetterTemplate.Description
+int                                                    CalculationLetterTemplate.ExpiryDateOffsetDays
+bool                                                   CalculationLetterTemplate.IsActive
+bool                                                   CalculationLetterTemplate.IsFooterCompanyInfoEnabled
+bool                                                   CalculationLetterTemplate.IsFooterLogoEnabled
+bool                                                   CalculationLetterTemplate.IsHeaderLogoEnabled
+string (200)                                           CalculationLetterTemplate.Name
+string? (1000)                                         CalculationLetterTemplate.ReportBodyText
+string? (1000)                                         CalculationLetterTemplate.ReportDisclaimerText
+bool                                                   CalculationLetterTemplate.Sys_Deactivated
+bool                                                   CalculationLetterTemplate.Sys_Historic
+bool                                                   CalculationLetterTemplate.Sys_Incomplete
+int                                                    CalculationLetterTemplate.TemplateNumber
+bool?                                                  CalculationLetterTemplate.Ext_Sys_Deactivated
+string?                                                CalculationLetterTemplate.Ext_ExternalId
+string?                                                CalculationLetterTemplate.Ext_In_Error_MsgNO
+string?                                                CalculationLetterTemplate.Ext_In_Error_MsgEN
+string?                                                CalculationLetterTemplate.Ext_In_Error_TraceId
+string?                                                CalculationLetterTemplate.Ext_In_Error_TechDetail
+string?                                                CalculationLetterTemplate.Ext_In_Error_FixLink
+bool?                                                  CalculationLetterTemplate.Ext_In_Error_SetOK
+DateTime?                                              CalculationLetterTemplate.Ext_In_LastSyncUTC
+string?                                                CalculationLetterTemplate.Ext_Out_Error_MsgNO
+string?                                                CalculationLetterTemplate.Ext_Out_Error_MsgEN
+string?                                                CalculationLetterTemplate.Ext_Out_Error_TraceId
+string?                                                CalculationLetterTemplate.Ext_Out_Error_TechDetail
+string?                                                CalculationLetterTemplate.Ext_Out_Error_FixLink
+bool?                                                  CalculationLetterTemplate.Ext_Out_Error_SetOK
+DateTime?                                              CalculationLetterTemplate.Ext_Out_LastSyncUTC
+--> ExternalSystemCalculationLetterTemplate[]          CalculationLetterTemplate.ExternalSystemCalculationLetterTemplates
 int                                                    CalculationLine.CalculationLineId
 string?                                                CalculationLine.CalculationLineManualTypeIdExternal
 string?                                                CalculationLine.ClassificationSystemItemIdExternal
@@ -636,6 +669,86 @@ string?                                                CalculationLineManualType
 bool?                                                  CalculationLineManualType.Ext_Out_Error_SetOK
 DateTime?                                              CalculationLineManualType.Ext_Out_LastSyncUTC
 --> ExternalSystemCalculationLineManualType[]          CalculationLineManualType.ExternalSystemCalculationLineManualTypes
+int                                                    CalculationReportLineState.CalculationReportLineStateId
+string?                                                CalculationReportLineState.CalculationReportLineStateIdExternal
+string?                                                CalculationReportLineState.CalculationReportStateIdExternal
+int                                                    CalculationReportLineState.CalculationReportStateId
+bool                                                   CalculationReportLineState.IsHidden
+string? [MultilineText](200)                           CalculationReportLineState.Note
+string (16)                                            CalculationReportLineState.RowUniqueKey
+bool                                                   CalculationReportLineState.Sys_Deactivated
+bool                                                   CalculationReportLineState.Sys_Historic
+bool                                                   CalculationReportLineState.Sys_Incomplete
+bool?                                                  CalculationReportLineState.Ext_Sys_Deactivated
+string?                                                CalculationReportLineState.Ext_ExternalId
+string?                                                CalculationReportLineState.Ext_In_Error_MsgNO
+string?                                                CalculationReportLineState.Ext_In_Error_MsgEN
+string?                                                CalculationReportLineState.Ext_In_Error_TraceId
+string?                                                CalculationReportLineState.Ext_In_Error_TechDetail
+string?                                                CalculationReportLineState.Ext_In_Error_FixLink
+bool?                                                  CalculationReportLineState.Ext_In_Error_SetOK
+DateTime?                                              CalculationReportLineState.Ext_In_LastSyncUTC
+string?                                                CalculationReportLineState.Ext_Out_Error_MsgNO
+string?                                                CalculationReportLineState.Ext_Out_Error_MsgEN
+string?                                                CalculationReportLineState.Ext_Out_Error_TraceId
+string?                                                CalculationReportLineState.Ext_Out_Error_TechDetail
+string?                                                CalculationReportLineState.Ext_Out_Error_FixLink
+bool?                                                  CalculationReportLineState.Ext_Out_Error_SetOK
+DateTime?                                              CalculationReportLineState.Ext_Out_LastSyncUTC
+--> ExternalSystemCalculationReportLineState[]         CalculationReportLineState.ExternalSystemCalculationReportLineStates
+int                                                    CalculationReportState.CalculationReportStateId
+string?                                                CalculationReportState.CalculationReportStateIdExternal
+string?                                                CalculationReportState.CalculationLetterTemplateIdExternal
+string?                                                CalculationReportState.CustomerIdExternal
+string? (1000)                                         CalculationReportState.BodyText
+int                                                    CalculationReportState.CalculationId
+int?                                                   CalculationReportState.CalculationLetterTemplateId
+int?                                                   CalculationReportState.CustomerId
+string? (200)                                          CalculationReportState.CustomerReference
+string? (1000)                                         CalculationReportState.DisclaimerText
+DateOnly?                                              CalculationReportState.ExpirationDate
+bool                                                   CalculationReportState.Folder_IncludeVat
+bool                                                   CalculationReportState.Folder_ShowFolder
+bool                                                   CalculationReportState.Folder_ShowOnlyGrandTotal
+bool                                                   CalculationReportState.Folder_SumSubFolders
+bool                                                   CalculationReportState.Folder_SumTopFolder
+bool                                                   CalculationReportState.HeaderLogoEnabled
+string? (200)                                          CalculationReportState.InternalReference
+bool                                                   CalculationReportState.IsManuallyEdited
+DateOnly?                                              CalculationReportState.IssueDate
+bool                                                   CalculationReportState.Line_ShowLine
+bool                                                   CalculationReportState.Line_ShowProductNumber
+bool                                                   CalculationReportState.Line_ShowQuantity
+bool                                                   CalculationReportState.Line_ShowSum
+int?                                                   CalculationReportState.OfferNumber
+bool                                                   CalculationReportState.Package_ShowPackage
+bool                                                   CalculationReportState.Package_ShowQuantity
+bool                                                   CalculationReportState.Package_ShowSum
+bool                                                   CalculationReportState.ProductImage_Attachment
+bool                                                   CalculationReportState.ProductImage_Inline
+string? (250)                                          CalculationReportState.SignatureText
+string? (500)                                          CalculationReportState.SignOffText
+string? (100)                                          CalculationReportState.SubjectText
+bool                                                   CalculationReportState.Sys_Deactivated
+bool                                                   CalculationReportState.Sys_Historic
+bool                                                   CalculationReportState.Sys_Incomplete
+bool?                                                  CalculationReportState.Ext_Sys_Deactivated
+string?                                                CalculationReportState.Ext_ExternalId
+string?                                                CalculationReportState.Ext_In_Error_MsgNO
+string?                                                CalculationReportState.Ext_In_Error_MsgEN
+string?                                                CalculationReportState.Ext_In_Error_TraceId
+string?                                                CalculationReportState.Ext_In_Error_TechDetail
+string?                                                CalculationReportState.Ext_In_Error_FixLink
+bool?                                                  CalculationReportState.Ext_In_Error_SetOK
+DateTime?                                              CalculationReportState.Ext_In_LastSyncUTC
+string?                                                CalculationReportState.Ext_Out_Error_MsgNO
+string?                                                CalculationReportState.Ext_Out_Error_MsgEN
+string?                                                CalculationReportState.Ext_Out_Error_TraceId
+string?                                                CalculationReportState.Ext_Out_Error_TechDetail
+string?                                                CalculationReportState.Ext_Out_Error_FixLink
+bool?                                                  CalculationReportState.Ext_Out_Error_SetOK
+DateTime?                                              CalculationReportState.Ext_Out_LastSyncUTC
+--> ExternalSystemCalculationReportState[]             CalculationReportState.ExternalSystemCalculationReportStates
 int                                                    ChangeRequest.ChangeRequestId
 string?                                                ChangeRequest.ChangeRequestIdExternal
 string?                                                ChangeRequest.AssignmentIdExternal
@@ -1895,6 +2008,25 @@ DateTime?                                              ExternalSystemCalculation
 string? [MultilineText](50)                            ExternalSystemCalculationFolderTemplate.StatusDescription
 bool                                                   ExternalSystemCalculationFolderTemplate.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemCalculationFolderTemplate.Enum_SyncStatusId
+int                                                    ExternalSystemCalculationLetterTemplate.ExternalSystemCalculationLetterTemplateId
+string?                                                ExternalSystemCalculationLetterTemplate.CalculationLetterTemplateIdExternal
+string? (50)                                           ExternalSystemCalculationLetterTemplate.ExternalId
+short                                                  ExternalSystemCalculationLetterTemplate.ExternalSystemId
+string? (100)                                          ExternalSystemCalculationLetterTemplate.In_Error_FixLink
+string? (250)                                          ExternalSystemCalculationLetterTemplate.In_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationLetterTemplate.In_Error_MsgNO
+string?                                                ExternalSystemCalculationLetterTemplate.In_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationLetterTemplate.In_Error_TraceId
+DateTime?                                              ExternalSystemCalculationLetterTemplate.In_LastSyncUTC
+string? (100)                                          ExternalSystemCalculationLetterTemplate.Out_Error_FixLink
+string? (250)                                          ExternalSystemCalculationLetterTemplate.Out_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationLetterTemplate.Out_Error_MsgNO
+string?                                                ExternalSystemCalculationLetterTemplate.Out_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationLetterTemplate.Out_Error_TraceId
+DateTime?                                              ExternalSystemCalculationLetterTemplate.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemCalculationLetterTemplate.StatusDescription
+bool                                                   ExternalSystemCalculationLetterTemplate.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemCalculationLetterTemplate.Enum_SyncStatusId
 int                                                    ExternalSystemCalculationLineManualType.ExternalSystemCalculationLineManualTypeId
 string?                                                ExternalSystemCalculationLineManualType.CalculationLineManualTypeIdExternal
 string? (50)                                           ExternalSystemCalculationLineManualType.ExternalId
@@ -1914,6 +2046,44 @@ DateTime?                                              ExternalSystemCalculation
 string? [MultilineText](50)                            ExternalSystemCalculationLineManualType.StatusDescription
 bool                                                   ExternalSystemCalculationLineManualType.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemCalculationLineManualType.Enum_SyncStatusId
+int                                                    ExternalSystemCalculationReportLineState.ExternalSystemCalculationReportLineStateId
+string?                                                ExternalSystemCalculationReportLineState.CalculationReportLineStateIdExternal
+string? (50)                                           ExternalSystemCalculationReportLineState.ExternalId
+short                                                  ExternalSystemCalculationReportLineState.ExternalSystemId
+string? (100)                                          ExternalSystemCalculationReportLineState.In_Error_FixLink
+string? (250)                                          ExternalSystemCalculationReportLineState.In_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationReportLineState.In_Error_MsgNO
+string?                                                ExternalSystemCalculationReportLineState.In_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationReportLineState.In_Error_TraceId
+DateTime?                                              ExternalSystemCalculationReportLineState.In_LastSyncUTC
+string? (100)                                          ExternalSystemCalculationReportLineState.Out_Error_FixLink
+string? (250)                                          ExternalSystemCalculationReportLineState.Out_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationReportLineState.Out_Error_MsgNO
+string?                                                ExternalSystemCalculationReportLineState.Out_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationReportLineState.Out_Error_TraceId
+DateTime?                                              ExternalSystemCalculationReportLineState.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemCalculationReportLineState.StatusDescription
+bool                                                   ExternalSystemCalculationReportLineState.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemCalculationReportLineState.Enum_SyncStatusId
+int                                                    ExternalSystemCalculationReportState.ExternalSystemCalculationReportStateId
+string?                                                ExternalSystemCalculationReportState.CalculationReportStateIdExternal
+string? (50)                                           ExternalSystemCalculationReportState.ExternalId
+short                                                  ExternalSystemCalculationReportState.ExternalSystemId
+string? (100)                                          ExternalSystemCalculationReportState.In_Error_FixLink
+string? (250)                                          ExternalSystemCalculationReportState.In_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationReportState.In_Error_MsgNO
+string?                                                ExternalSystemCalculationReportState.In_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationReportState.In_Error_TraceId
+DateTime?                                              ExternalSystemCalculationReportState.In_LastSyncUTC
+string? (100)                                          ExternalSystemCalculationReportState.Out_Error_FixLink
+string? (250)                                          ExternalSystemCalculationReportState.Out_Error_MsgEN
+string? (250)                                          ExternalSystemCalculationReportState.Out_Error_MsgNO
+string?                                                ExternalSystemCalculationReportState.Out_Error_TechDetail
+string? (40)                                           ExternalSystemCalculationReportState.Out_Error_TraceId
+DateTime?                                              ExternalSystemCalculationReportState.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemCalculationReportState.StatusDescription
+bool                                                   ExternalSystemCalculationReportState.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemCalculationReportState.Enum_SyncStatusId
 int                                                    ExternalSystemChangeRequest.ExternalSystemChangeRequestId
 string?                                                ExternalSystemChangeRequest.ChangeRequestIdExternal
 string? (50)                                           ExternalSystemChangeRequest.ExternalId
