@@ -6709,6 +6709,7 @@ DateTime?                                              ProductSeries.Ext_Out_Las
 --> ExternalSystemProductSeries[]                      ProductSeries.ExternalSystemProductSeries
 int                                                    ProductStructure.ProductStructureId
 string?                                                ProductStructure.ProductStructureIdExternal
+string?                                                ProductStructure.CalculationLineManualTypeIdExternal
 string?                                                ProductStructure.ClassificationSystemItemIdExternal
 string?                                                ProductStructure.Cost_ProjectAccountIdExternal
 string?                                                ProductStructure.Default_TariffIdExternal
@@ -6716,6 +6717,7 @@ string?                                                ProductStructure.Income_P
 string?                                                ProductStructure.ParentProductIdExternal
 string?                                                ProductStructure.ProductIdExternal
 string?                                                ProductStructure.ProductSearchIdExternal
+int?                                                   ProductStructure.CalculationLineManualTypeId
 int?                                                   ProductStructure.ClassificationSystemItemId
 int?                                                   ProductStructure.Cost_ProjectAccountId
 int?                                                   ProductStructure.Default_TariffId
