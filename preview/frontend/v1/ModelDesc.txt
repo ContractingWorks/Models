@@ -4261,6 +4261,16 @@ bool                                                   ExternalSystemSyncGroup.S
 bool                                                   ExternalSystemSyncGroup.Sys_Historic
 bool                                                   ExternalSystemSyncGroup.Sys_Incomplete
 string (100)                                           ExternalSystemSyncGroup.TextId
+int                                                    ExternalSystemSyncMap.ExternalSystemSyncMapId
+string? (50)                                           ExternalSystemSyncMap.Code
+string? [MultilineText](500)                           ExternalSystemSyncMap.Description
+int?                                                   ExternalSystemSyncMap.EntityId
+short                                                  ExternalSystemSyncMap.ExternalSystemId
+string? (150)                                          ExternalSystemSyncMap.Name
+bool                                                   ExternalSystemSyncMap.Sys_Deactivated
+bool                                                   ExternalSystemSyncMap.Sys_Historic
+bool                                                   ExternalSystemSyncMap.Sys_Incomplete
+EntityEnum                                             ExternalSystemSyncMap.Enum_EntityId
 int                                                    ExternalSystemSyncRetryQueue.ExternalSystemSyncRetryQueueId
 bool                                                   ExternalSystemSyncRetryQueue.DeactivateOnly
 string? (250)                                          ExternalSystemSyncRetryQueue.ErrorMessage
