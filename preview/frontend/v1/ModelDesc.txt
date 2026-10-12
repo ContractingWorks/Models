@@ -566,7 +566,7 @@ string? (1000)                                         CalculationLetterTemplate
 bool                                                   CalculationLetterTemplate.Sys_Deactivated
 bool                                                   CalculationLetterTemplate.Sys_Historic
 bool                                                   CalculationLetterTemplate.Sys_Incomplete
-int                                                    CalculationLetterTemplate.TemplateNumber
+int?                                                   CalculationLetterTemplate.TemplateNumber
 bool?                                                  CalculationLetterTemplate.Ext_Sys_Deactivated
 string?                                                CalculationLetterTemplate.Ext_ExternalId
 string?                                                CalculationLetterTemplate.Ext_In_Error_MsgNO
@@ -5555,7 +5555,9 @@ int?                                                   Offer.SelectedGenPDF_Atta
 DateTime?                                              Offer.SentUTC
 short?                                                 Offer.ServiceAgreementId
 decimal?                                               Offer.ServiceCostPrice
+decimal?                                               Offer.ServiceCostPriceOverride
 decimal?                                               Offer.ServiceSalesPrice
+decimal?                                               Offer.ServiceSalesPriceOverride
 DateTime?                                              Offer.StartDateTimeUTC
 bool                                                   Offer.Sys_Deactivated
 bool                                                   Offer.Sys_Historic
