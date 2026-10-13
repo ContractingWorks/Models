@@ -625,6 +625,8 @@ decimal?                                               CalculationLine.ProductSu
 decimal?                                               CalculationLine.ProductSurchargePercentOverride
 decimal?                                               CalculationLine.Quantity
 decimal?                                               CalculationLine.QuantityOverride
+decimal?                                               CalculationLine.ServiceCostPrice
+decimal?                                               CalculationLine.ServiceCostPriceOverride
 decimal?                                               CalculationLine.ServiceSalesPrice
 decimal?                                               CalculationLine.ServiceSalesPriceOverride
 int                                                    CalculationLine.SortOrder
