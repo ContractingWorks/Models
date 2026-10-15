@@ -296,6 +296,7 @@ bool                                                   AssignmentServiceObject.S
 bool                                                   AssignmentServiceObject.Sys_Incomplete
 int                                                    Attachment.AttachmentId
 string?                                                Attachment.AttachmentIdExternal
+string?                                                Attachment.AttachmentCategoryIdExternal
 string?                                                Attachment.ProductIdExternal
 short?                                                 Attachment.AttachmentCategoryId
 string? (500)                                          Attachment.AzureBlobId
@@ -339,11 +340,29 @@ DateTime?                                              Attachment.Ext_Out_LastSy
 --> AssignmentAttachment[]                             Attachment.AssignmentAttachments
 --> ExternalSystemAttachment[]                         Attachment.ExternalSystemAttachments
 short                                                  AttachmentCategory.AttachmentCategoryId
+string?                                                AttachmentCategory.AttachmentCategoryIdExternal
 string [MultilineText](100)                            AttachmentCategory.Description
 bool                                                   AttachmentCategory.Sys_Deactivated
 bool                                                   AttachmentCategory.Sys_Historic
 bool                                                   AttachmentCategory.Sys_Incomplete
 AttachmentCategoryEnum                                 AttachmentCategory.Enum_AttachmentCategoryId
+bool?                                                  AttachmentCategory.Ext_Sys_Deactivated
+string?                                                AttachmentCategory.Ext_ExternalId
+string?                                                AttachmentCategory.Ext_In_Error_MsgNO
+string?                                                AttachmentCategory.Ext_In_Error_MsgEN
+string?                                                AttachmentCategory.Ext_In_Error_TraceId
+string?                                                AttachmentCategory.Ext_In_Error_TechDetail
+string?                                                AttachmentCategory.Ext_In_Error_FixLink
+bool?                                                  AttachmentCategory.Ext_In_Error_SetOK
+DateTime?                                              AttachmentCategory.Ext_In_LastSyncUTC
+string?                                                AttachmentCategory.Ext_Out_Error_MsgNO
+string?                                                AttachmentCategory.Ext_Out_Error_MsgEN
+string?                                                AttachmentCategory.Ext_Out_Error_TraceId
+string?                                                AttachmentCategory.Ext_Out_Error_TechDetail
+string?                                                AttachmentCategory.Ext_Out_Error_FixLink
+bool?                                                  AttachmentCategory.Ext_Out_Error_SetOK
+DateTime?                                              AttachmentCategory.Ext_Out_LastSyncUTC
+--> ExternalSystemAttachmentCategory[]                 AttachmentCategory.ExternalSystemAttachmentCategories
 int                                                    BoligmappaAttachment.BoligmappaAttachmentId
 int?                                                   BoligmappaAttachment.BoligmappaFileId
 string (50)                                            BoligmappaAttachment.BoligmappaNumber
@@ -1915,6 +1934,25 @@ DateTime?                                              ExternalSystemAttachment.
 string? [MultilineText](50)                            ExternalSystemAttachment.StatusDescription
 bool                                                   ExternalSystemAttachment.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemAttachment.Enum_SyncStatusId
+short                                                  ExternalSystemAttachmentCategory.ExternalSystemAttachmentCategoryId
+string?                                                ExternalSystemAttachmentCategory.AttachmentCategoryIdExternal
+string? (50)                                           ExternalSystemAttachmentCategory.ExternalId
+short                                                  ExternalSystemAttachmentCategory.ExternalSystemId
+string? (100)                                          ExternalSystemAttachmentCategory.In_Error_FixLink
+string? (250)                                          ExternalSystemAttachmentCategory.In_Error_MsgEN
+string? (250)                                          ExternalSystemAttachmentCategory.In_Error_MsgNO
+string?                                                ExternalSystemAttachmentCategory.In_Error_TechDetail
+string? (40)                                           ExternalSystemAttachmentCategory.In_Error_TraceId
+DateTime?                                              ExternalSystemAttachmentCategory.In_LastSyncUTC
+string? (100)                                          ExternalSystemAttachmentCategory.Out_Error_FixLink
+string? (250)                                          ExternalSystemAttachmentCategory.Out_Error_MsgEN
+string? (250)                                          ExternalSystemAttachmentCategory.Out_Error_MsgNO
+string?                                                ExternalSystemAttachmentCategory.Out_Error_TechDetail
+string? (40)                                           ExternalSystemAttachmentCategory.Out_Error_TraceId
+DateTime?                                              ExternalSystemAttachmentCategory.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemAttachmentCategory.StatusDescription
+bool                                                   ExternalSystemAttachmentCategory.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemAttachmentCategory.Enum_SyncStatusId
 int                                                    ExternalSystemBudget.ExternalSystemBudgetId
 string?                                                ExternalSystemBudget.BudgetIdExternal
 string? (50)                                           ExternalSystemBudget.ExternalId
