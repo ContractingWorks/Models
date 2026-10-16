@@ -8043,6 +8043,7 @@ int?                                                   Settings_Main.VATFree_Int
 int?                                                   Settings_Main.VATFree_Nat_VATRateId
 TimeOnly?                                              Settings_Main.WorkTimeEnd
 TimeOnly?                                              Settings_Main.WorkTimeStart
+DateFormatEnum?                                        Settings_Main.Enum_DateFormatId
 MessageChannelEnum                                     Settings_Main.Enum_MessageChannelId
 StorageModeEnum                                        Settings_Main.Enum_StorageModeId
 TimeZoneEnum                                           Settings_Main.Enum_TimeZoneId
