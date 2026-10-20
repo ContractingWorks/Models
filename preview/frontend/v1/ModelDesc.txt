@@ -667,7 +667,7 @@ int?                                                   CalculationLineManualType
 int?                                                   CalculationLineManualType.Cost_ProjectAccountId
 string? [MultilineText](500)                           CalculationLineManualType.Description
 int?                                                   CalculationLineManualType.Income_ProjectAccountId
-int                                                    CalculationLineManualType.Number
+int?                                                   CalculationLineManualType.Number
 bool                                                   CalculationLineManualType.Sys_Deactivated
 bool                                                   CalculationLineManualType.Sys_Historic
 bool                                                   CalculationLineManualType.Sys_Incomplete
@@ -1119,7 +1119,7 @@ int?                                                   CustomerClass.AssignmentC
 int?                                                   CustomerClass.AssignmentCategoryId_1
 int?                                                   CustomerClass.AssignmentCategoryId_2
 int?                                                   CustomerClass.AssignmentCategoryId_3
-string (5)                                             CustomerClass.Code
+string? (5)                                            CustomerClass.Code
 int?                                                   CustomerClass.CreditLimit
 short?                                                 CustomerClass.Default_InvoiceTemplateId
 string? [MultilineText](500)                           CustomerClass.Description
@@ -5264,7 +5264,7 @@ DateTime?                                              InvoiceLineRule.Ext_Out_L
 short                                                  InvoiceTemplate.InvoiceTemplateId
 string?                                                InvoiceTemplate.InvoiceTemplateIdExternal
 string [MultilineText](100)                            InvoiceTemplate.Description
-short                                                  InvoiceTemplate.InvoiceTemplateNumber
+short?                                                 InvoiceTemplate.InvoiceTemplateNumber
 bool                                                   InvoiceTemplate.Sys_Deactivated
 bool                                                   InvoiceTemplate.Sys_Historic
 bool                                                   InvoiceTemplate.Sys_Incomplete
@@ -7157,7 +7157,7 @@ bool                                                   ProjectAttachment.Sys_His
 bool                                                   ProjectAttachment.Sys_Incomplete
 short                                                  ProjectGroup.ProjectGroupId
 string?                                                ProjectGroup.ProjectGroupIdExternal
-string (50)                                            ProjectGroup.Code
+string? (50)                                           ProjectGroup.Code
 byte                                                   ProjectGroup.ColumnNo
 string (100)                                           ProjectGroup.Name
 bool                                                   ProjectGroup.Sys_Deactivated
@@ -7264,7 +7264,7 @@ DateTime?                                              ProjectReportDetail.Ext_O
 --> ExternalSystemProjectReportDetail[]                ProjectReportDetail.ExternalSystemProjectReportDetails
 byte                                                   ProjectType.ProjectTypeId
 string?                                                ProjectType.ProjectTypeIdExternal
-string (50)                                            ProjectType.Code
+string? (50)                                           ProjectType.Code
 string (100)                                           ProjectType.Name
 bool                                                   ProjectType.Sys_Deactivated
 bool                                                   ProjectType.Sys_Historic
@@ -8978,7 +8978,7 @@ bool                                                   WageCode.Sys_Historic
 bool                                                   WageCode.Sys_Incomplete
 string? (10)                                           WageCode.TimeCode
 string (100)                                           WageCode.WageCodeName
-int                                                    WageCode.WageCodeNumber
+int?                                                   WageCode.WageCodeNumber
 int?                                                   WageCode.WageCodeReportCategoryId
 short?                                                 WageCode.WageGroupId
 decimal?                                               WageCode.WageRatePercent
