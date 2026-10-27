@@ -2668,6 +2668,25 @@ bool                                                   ExternalSystemExtraData.S
 bool                                                   ExternalSystemExtraData.Sys_Historic
 bool                                                   ExternalSystemExtraData.Sys_Incomplete
 string?                                                ExternalSystemExtraData.Value
+int                                                    ExternalSystemFrontendExtension.ExternalSystemFrontendExtensionId
+string?                                                ExternalSystemFrontendExtension.FrontendExtensionIdExternal
+string? (50)                                           ExternalSystemFrontendExtension.ExternalId
+short                                                  ExternalSystemFrontendExtension.ExternalSystemId
+string? (100)                                          ExternalSystemFrontendExtension.In_Error_FixLink
+string? (250)                                          ExternalSystemFrontendExtension.In_Error_MsgEN
+string? (250)                                          ExternalSystemFrontendExtension.In_Error_MsgNO
+string?                                                ExternalSystemFrontendExtension.In_Error_TechDetail
+string? (40)                                           ExternalSystemFrontendExtension.In_Error_TraceId
+DateTime?                                              ExternalSystemFrontendExtension.In_LastSyncUTC
+string? (100)                                          ExternalSystemFrontendExtension.Out_Error_FixLink
+string? (250)                                          ExternalSystemFrontendExtension.Out_Error_MsgEN
+string? (250)                                          ExternalSystemFrontendExtension.Out_Error_MsgNO
+string?                                                ExternalSystemFrontendExtension.Out_Error_TechDetail
+string? (40)                                           ExternalSystemFrontendExtension.Out_Error_TraceId
+DateTime?                                              ExternalSystemFrontendExtension.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemFrontendExtension.StatusDescription
+bool                                                   ExternalSystemFrontendExtension.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemFrontendExtension.Enum_SyncStatusId
 int                                                    ExternalSystemImport_ETIM_Product.ExternalSystemImport_ETIM_ProductId
 string?                                                ExternalSystemImport_ETIM_Product.Import_ETIM_ProductIdExternal
 string? (50)                                           ExternalSystemImport_ETIM_Product.ExternalId
@@ -4692,6 +4711,33 @@ DateTime?                                              ExternalSystemWageRateEmp
 string? [MultilineText](50)                            ExternalSystemWageRateEmployee.StatusDescription
 bool                                                   ExternalSystemWageRateEmployee.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemWageRateEmployee.Enum_SyncStatusId
+int                                                    FrontendExtension.FrontendExtensionId
+string?                                                FrontendExtension.FrontendExtensionIdExternal
+string? (100)                                          FrontendExtension.ContextParameterName
+bool                                                   FrontendExtension.IsActive
+string (50)                                            FrontendExtension.Label
+bool                                                   FrontendExtension.Sys_Deactivated
+bool                                                   FrontendExtension.Sys_Historic
+bool                                                   FrontendExtension.Sys_Incomplete
+string (500)                                           FrontendExtension.TargetURL
+FrontendExtensionLocationEnum                          FrontendExtension.Enum_FrontendExtensionLocationId
+bool?                                                  FrontendExtension.Ext_Sys_Deactivated
+string?                                                FrontendExtension.Ext_ExternalId
+string?                                                FrontendExtension.Ext_In_Error_MsgNO
+string?                                                FrontendExtension.Ext_In_Error_MsgEN
+string?                                                FrontendExtension.Ext_In_Error_TraceId
+string?                                                FrontendExtension.Ext_In_Error_TechDetail
+string?                                                FrontendExtension.Ext_In_Error_FixLink
+bool?                                                  FrontendExtension.Ext_In_Error_SetOK
+DateTime?                                              FrontendExtension.Ext_In_LastSyncUTC
+string?                                                FrontendExtension.Ext_Out_Error_MsgNO
+string?                                                FrontendExtension.Ext_Out_Error_MsgEN
+string?                                                FrontendExtension.Ext_Out_Error_TraceId
+string?                                                FrontendExtension.Ext_Out_Error_TechDetail
+string?                                                FrontendExtension.Ext_Out_Error_FixLink
+bool?                                                  FrontendExtension.Ext_Out_Error_SetOK
+DateTime?                                              FrontendExtension.Ext_Out_LastSyncUTC
+--> ExternalSystemFrontendExtension[]                  FrontendExtension.ExternalSystemFrontendExtensions
 int                                                    Import_ETIM_Product.Import_ETIM_ProductId
 string?                                                Import_ETIM_Product.Import_ETIM_ProductIdExternal
 string? (50)                                           Import_ETIM_Product.ETIM_ClassCode
