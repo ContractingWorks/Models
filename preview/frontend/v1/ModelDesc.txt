@@ -1482,6 +1482,31 @@ bool                                                   EmployeeCompetency.Sys_De
 bool                                                   EmployeeCompetency.Sys_Historic
 bool                                                   EmployeeCompetency.Sys_Incomplete
 CompetencySourceEnum                                   EmployeeCompetency.Enum_CompetencySourceId
+--> EmployeeCompetencyAttachment[]                     EmployeeCompetency.EmployeeCompetencyAttachments
+int                                                    EmployeeCompetencyAttachment.EmployeeCompetencyAttachmentId
+string?                                                EmployeeCompetencyAttachment.EmployeeCompetencyAttachmentIdExternal
+string?                                                EmployeeCompetencyAttachment.AttachmentIdExternal
+int                                                    EmployeeCompetencyAttachment.AttachmentId
+bool                                                   EmployeeCompetencyAttachment.Sys_Deactivated
+bool                                                   EmployeeCompetencyAttachment.Sys_Historic
+bool                                                   EmployeeCompetencyAttachment.Sys_Incomplete
+bool?                                                  EmployeeCompetencyAttachment.Ext_Sys_Deactivated
+string?                                                EmployeeCompetencyAttachment.Ext_ExternalId
+string?                                                EmployeeCompetencyAttachment.Ext_In_Error_MsgNO
+string?                                                EmployeeCompetencyAttachment.Ext_In_Error_MsgEN
+string?                                                EmployeeCompetencyAttachment.Ext_In_Error_TraceId
+string?                                                EmployeeCompetencyAttachment.Ext_In_Error_TechDetail
+string?                                                EmployeeCompetencyAttachment.Ext_In_Error_FixLink
+bool?                                                  EmployeeCompetencyAttachment.Ext_In_Error_SetOK
+DateTime?                                              EmployeeCompetencyAttachment.Ext_In_LastSyncUTC
+string?                                                EmployeeCompetencyAttachment.Ext_Out_Error_MsgNO
+string?                                                EmployeeCompetencyAttachment.Ext_Out_Error_MsgEN
+string?                                                EmployeeCompetencyAttachment.Ext_Out_Error_TraceId
+string?                                                EmployeeCompetencyAttachment.Ext_Out_Error_TechDetail
+string?                                                EmployeeCompetencyAttachment.Ext_Out_Error_FixLink
+bool?                                                  EmployeeCompetencyAttachment.Ext_Out_Error_SetOK
+DateTime?                                              EmployeeCompetencyAttachment.Ext_Out_LastSyncUTC
+--> ExternalSystemEmployeeCompetencyAttachment[]       EmployeeCompetencyAttachment.ExternalSystemEmployeeCompetencyAttachments
 short                                                  EmployeeInvoiceCategory.EmployeeInvoiceCategoryId
 string?                                                EmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
 bool                                                   EmployeeInvoiceCategory.IsDefaultForCalculation
@@ -2409,6 +2434,25 @@ DateTime?                                              ExternalSystemEmployee.Ou
 string? [MultilineText](50)                            ExternalSystemEmployee.StatusDescription
 bool                                                   ExternalSystemEmployee.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemEmployee.Enum_SyncStatusId
+int                                                    ExternalSystemEmployeeCompetencyAttachment.ExternalSystemEmployeeCompetencyAttachmentId
+string?                                                ExternalSystemEmployeeCompetencyAttachment.EmployeeCompetencyAttachmentIdExternal
+string? (50)                                           ExternalSystemEmployeeCompetencyAttachment.ExternalId
+short                                                  ExternalSystemEmployeeCompetencyAttachment.ExternalSystemId
+string? (100)                                          ExternalSystemEmployeeCompetencyAttachment.In_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeCompetencyAttachment.In_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeCompetencyAttachment.In_Error_MsgNO
+string?                                                ExternalSystemEmployeeCompetencyAttachment.In_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeCompetencyAttachment.In_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeCompetencyAttachment.In_LastSyncUTC
+string? (100)                                          ExternalSystemEmployeeCompetencyAttachment.Out_Error_FixLink
+string? (250)                                          ExternalSystemEmployeeCompetencyAttachment.Out_Error_MsgEN
+string? (250)                                          ExternalSystemEmployeeCompetencyAttachment.Out_Error_MsgNO
+string?                                                ExternalSystemEmployeeCompetencyAttachment.Out_Error_TechDetail
+string? (40)                                           ExternalSystemEmployeeCompetencyAttachment.Out_Error_TraceId
+DateTime?                                              ExternalSystemEmployeeCompetencyAttachment.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemEmployeeCompetencyAttachment.StatusDescription
+bool                                                   ExternalSystemEmployeeCompetencyAttachment.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemEmployeeCompetencyAttachment.Enum_SyncStatusId
 short                                                  ExternalSystemEmployeeInvoiceCategory.ExternalSystemEmployeeInvoiceCategoryId
 string?                                                ExternalSystemEmployeeInvoiceCategory.EmployeeInvoiceCategoryIdExternal
 string? (50)                                           ExternalSystemEmployeeInvoiceCategory.ExternalId
