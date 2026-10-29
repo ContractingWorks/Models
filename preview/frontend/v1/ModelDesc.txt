@@ -5074,6 +5074,7 @@ bool                                                   Invoice_Session.SendInvoi
 DateTime?                                              Invoice_Session.SentUTC
 bool                                                   Invoice_Session.SetAssignmentReadyToInvoice
 bool?                                                  Invoice_Session.ShowCustomerDeviationWarning
+bool?                                                  Invoice_Session.ShowInvoiceableDimensionWarning
 bool                                                   Invoice_Session.Sys_Deactivated
 bool?                                                  Invoice_Session.Sys_FinalPostProcessDone
 bool                                                   Invoice_Session.Sys_Historic
