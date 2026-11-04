@@ -7467,6 +7467,13 @@ bool                                                   PurchaseOrderLine.Sys_Inc
 short?                                                 PurchaseOrderLine.UnitId
 decimal?                                               PurchaseOrderLine.UnitPrice
 DeliveryStatusEnum                                     PurchaseOrderLine.Enum_DeliveryStatusId
+int                                                    QuerySettings.QuerySettingsId
+bool?                                                  QuerySettings.GetRows_UsePreFilterCTE
+string (50)                                            QuerySettings.QueryId
+bool                                                   QuerySettings.Sys_Deactivated
+bool                                                   QuerySettings.Sys_Historic
+bool                                                   QuerySettings.Sys_Incomplete
+ApiServiceEnum                                         QuerySettings.Enum_ApiServiceId
 short                                                  Role.RoleId
 string?                                                Role.RoleIdExternal
 string?                                                Role.Template_RoleIdExternal
