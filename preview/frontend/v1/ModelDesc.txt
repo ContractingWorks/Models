@@ -5949,6 +5949,7 @@ decimal?                                               Product.SalesPrice
 short?                                                 Product.Sale_VATFree_LedgerAccountId
 short?                                                 Product.Sale_VATRequired_LedgerAccountId
 bool                                                   Product.StatisticsInclude
+int?                                                   Product.Sys_CopiedFrom_ProductId
 bool                                                   Product.Sys_Deactivated
 bool                                                   Product.Sys_Historic
 bool                                                   Product.Sys_Incomplete
@@ -7285,6 +7286,7 @@ string? [MultilineText](200)                           ProjectPeriod.Description
 DateOnly                                               ProjectPeriod.EndDate
 byte                                                   ProjectPeriod.PeriodNumber
 short                                                  ProjectPeriod.PeriodYear
+bool                                                   ProjectPeriod.ProjectAssessmentComplete
 DateOnly?                                              ProjectPeriod.StartDate
 bool                                                   ProjectPeriod.Sys_Deactivated
 bool                                                   ProjectPeriod.Sys_Historic
@@ -8742,7 +8744,9 @@ int                                                    SupplierInvoiceProductMat
 string?                                                SupplierInvoiceProductMatch.IndustryTypeIdExternal
 string?                                                SupplierInvoiceProductMatch.SupplierIdExternal
 string?                                                SupplierInvoiceProductMatch.SupplierIndustryTypeIdExternal
+string?                                                SupplierInvoiceProductMatch.Target_EmployeeIdExternal
 string?                                                SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeIdExternal
+string?                                                SupplierInvoiceProductMatch.Target_WageCodeIdExternal
 string?                                                SupplierInvoiceProductMatch.VATRateIdExternal
 string? [MultilineText](100)                           SupplierInvoiceProductMatch.Description
 bool                                                   SupplierInvoiceProductMatch.DoNotForwardInvoice
@@ -8753,8 +8757,10 @@ short?                                                 SupplierInvoiceProductMat
 bool                                                   SupplierInvoiceProductMatch.Sys_Deactivated
 bool                                                   SupplierInvoiceProductMatch.Sys_Historic
 bool                                                   SupplierInvoiceProductMatch.Sys_Incomplete
+int?                                                   SupplierInvoiceProductMatch.Target_EmployeeId
 string? (100)                                          SupplierInvoiceProductMatch.Target_ProductName
 int                                                    SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
+short?                                                 SupplierInvoiceProductMatch.Target_WageCodeId
 int?                                                   SupplierInvoiceProductMatch.VATRateId
 int                                                    SystemNotification.SystemNotificationId
 string? [MultilineText](500)                           SystemNotification.DetailDescriptionURL
