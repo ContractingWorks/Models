@@ -4826,6 +4826,7 @@ string? (50)                                           ImportFile2.LocalHashCode
 string? (255)                                          ImportFile2.SourceFileName
 long?                                                  ImportFile2.SourceFileSize
 bool                                                   ImportFile2.SourceFromLocalDisk
+DateTime?                                              ImportFile2.SourceLastUpdatedUTC
 string?                                                ImportFile2.StatusMessage
 short                                                  ImportFile2.SupplierIndustryTypeId
 bool                                                   ImportFile2.Sys_Deactivated
