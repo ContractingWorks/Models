@@ -7559,6 +7559,7 @@ string?                                                Service.MovedFromAssignme
 string?                                                Service.MovedToAssignmentIdExternal
 string?                                                Service.ProjectPeriodIdExternal
 string?                                                Service.ReversalOf_ServiceIdExternal
+string?                                                Service.SupplierInvoiceLineIdExternal
 string?                                                Service.WageCodeIdExternal
 string?                                                Service.WageCodeReportCategoryIdExternal
 string?                                                Service.WagePeriodIdExternal
@@ -7603,6 +7604,7 @@ string? [MultilineText](500)                           Service.ServiceComment
 DateOnly?                                              Service.ServiceDate
 TimeOnly?                                              Service.ServiceTimeEnd
 TimeOnly?                                              Service.ServiceTimeStart
+int?                                                   Service.SupplierInvoiceLineId
 decimal?                                               Service.SurchargePercentInvoice
 bool                                                   Service.SyncToMobileDevice
 bool                                                   Service.Sys_ApprovalInvoiceUpdated
@@ -8722,6 +8724,7 @@ decimal?                                               SupplierInvoiceLine.Surch
 bool                                                   SupplierInvoiceLine.Sys_Deactivated
 bool                                                   SupplierInvoiceLine.Sys_Historic
 bool                                                   SupplierInvoiceLine.Sys_Incomplete
+int?                                                   SupplierInvoiceLine.Sys_SupplierInvoiceProductMatchId
 int?                                                   SupplierInvoiceLine.VATRateId
 string? (50)                                           SupplierInvoiceLine.VatRateTxt
 bool?                                                  SupplierInvoiceLine.Ext_Sys_Deactivated
@@ -8745,9 +8748,9 @@ int                                                    SupplierInvoiceProductMat
 string?                                                SupplierInvoiceProductMatch.IndustryTypeIdExternal
 string?                                                SupplierInvoiceProductMatch.SupplierIdExternal
 string?                                                SupplierInvoiceProductMatch.SupplierIndustryTypeIdExternal
-string?                                                SupplierInvoiceProductMatch.Target_EmployeeIdExternal
 string?                                                SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeIdExternal
-string?                                                SupplierInvoiceProductMatch.Target_WageCodeIdExternal
+string?                                                SupplierInvoiceProductMatch.Target_Service_EmployeeIdExternal
+string?                                                SupplierInvoiceProductMatch.Target_Service_WageCodeIdExternal
 string?                                                SupplierInvoiceProductMatch.VATRateIdExternal
 string? [MultilineText](100)                           SupplierInvoiceProductMatch.Description
 bool                                                   SupplierInvoiceProductMatch.DoNotForwardInvoice
@@ -8758,10 +8761,10 @@ short?                                                 SupplierInvoiceProductMat
 bool                                                   SupplierInvoiceProductMatch.Sys_Deactivated
 bool                                                   SupplierInvoiceProductMatch.Sys_Historic
 bool                                                   SupplierInvoiceProductMatch.Sys_Incomplete
-int?                                                   SupplierInvoiceProductMatch.Target_EmployeeId
 string? (100)                                          SupplierInvoiceProductMatch.Target_ProductName
-int                                                    SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
-short?                                                 SupplierInvoiceProductMatch.Target_WageCodeId
+int?                                                   SupplierInvoiceProductMatch.Target_ProductSupplierIndustryTypeId
+int?                                                   SupplierInvoiceProductMatch.Target_Service_EmployeeId
+short?                                                 SupplierInvoiceProductMatch.Target_Service_WageCodeId
 int?                                                   SupplierInvoiceProductMatch.VATRateId
 int                                                    SystemNotification.SystemNotificationId
 string? [MultilineText](500)                           SystemNotification.DetailDescriptionURL
