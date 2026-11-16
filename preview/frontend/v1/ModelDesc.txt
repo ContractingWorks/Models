@@ -4302,6 +4302,25 @@ DateTime?                                              ExternalSystemSupplierInd
 string? [MultilineText](50)                            ExternalSystemSupplierIndustryType.StatusDescription
 bool                                                   ExternalSystemSupplierIndustryType.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemSupplierIndustryType.Enum_SyncStatusId
+short                                                  ExternalSystemSupplierIndustryTypeFtpInfo.ExternalSystemSupplierIndustryTypeFtpInfoId
+string?                                                ExternalSystemSupplierIndustryTypeFtpInfo.SupplierIndustryTypeFtpInfoIdExternal
+string? (50)                                           ExternalSystemSupplierIndustryTypeFtpInfo.ExternalId
+short                                                  ExternalSystemSupplierIndustryTypeFtpInfo.ExternalSystemId
+string? (100)                                          ExternalSystemSupplierIndustryTypeFtpInfo.In_Error_FixLink
+string? (250)                                          ExternalSystemSupplierIndustryTypeFtpInfo.In_Error_MsgEN
+string? (250)                                          ExternalSystemSupplierIndustryTypeFtpInfo.In_Error_MsgNO
+string?                                                ExternalSystemSupplierIndustryTypeFtpInfo.In_Error_TechDetail
+string? (40)                                           ExternalSystemSupplierIndustryTypeFtpInfo.In_Error_TraceId
+DateTime?                                              ExternalSystemSupplierIndustryTypeFtpInfo.In_LastSyncUTC
+string? (100)                                          ExternalSystemSupplierIndustryTypeFtpInfo.Out_Error_FixLink
+string? (250)                                          ExternalSystemSupplierIndustryTypeFtpInfo.Out_Error_MsgEN
+string? (250)                                          ExternalSystemSupplierIndustryTypeFtpInfo.Out_Error_MsgNO
+string?                                                ExternalSystemSupplierIndustryTypeFtpInfo.Out_Error_TechDetail
+string? (40)                                           ExternalSystemSupplierIndustryTypeFtpInfo.Out_Error_TraceId
+DateTime?                                              ExternalSystemSupplierIndustryTypeFtpInfo.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemSupplierIndustryTypeFtpInfo.StatusDescription
+bool                                                   ExternalSystemSupplierIndustryTypeFtpInfo.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemSupplierIndustryTypeFtpInfo.Enum_SyncStatusId
 int                                                    ExternalSystemSupplierInvoice.ExternalSystemSupplierInvoiceId
 string?                                                ExternalSystemSupplierInvoice.SupplierInvoiceIdExternal
 string? (50)                                           ExternalSystemSupplierInvoice.ExternalId
@@ -4798,6 +4817,7 @@ bool?                                                  Import_ETIM_ProductFeatur
 DateTime?                                              Import_ETIM_ProductFeature.Ext_Out_LastSyncUTC
 --> ExternalSystemImport_ETIM_ProductFeature[]         Import_ETIM_ProductFeature.ExternalSystemImport_ETIM_ProductFeatures
 short                                                  ImportFile.ImportFileId
+string?                                                ImportFile.SupplierIndustryTypeFtpInfoIdExternal
 bool                                                   ImportFile.AutoImport
 string? (255)                                          ImportFile.AzureBlobIdExt
 DateTime?                                              ImportFile.DownloadedDateTimeUTC
@@ -8583,6 +8603,7 @@ DateTime?                                              SupplierIndustryType.Ext_
 --> ExternalSystemSupplierIndustryType[]               SupplierIndustryType.ExternalSystemSupplierIndustryTypes
 --> PurchaseAgreement[]                                SupplierIndustryType.PurchaseAgreements
 short                                                  SupplierIndustryTypeFtpInfo.SupplierIndustryTypeFtpInfoId
+string?                                                SupplierIndustryTypeFtpInfo.SupplierIndustryTypeFtpInfoIdExternal
 string?                                                SupplierIndustryTypeFtpInfo.SupplierIndustryTypeIdExternal
 bool                                                   SupplierIndustryTypeFtpInfo.AutoDiscontinue
 bool                                                   SupplierIndustryTypeFtpInfo.AutoImport
@@ -8603,6 +8624,23 @@ string? (250)                                          SupplierIndustryTypeFtpIn
 FileDownloadModeEnum                                   SupplierIndustryTypeFtpInfo.Enum_FileDownloadModeId
 ImportFormatEnum                                       SupplierIndustryTypeFtpInfo.Enum_ImportFormatId
 ImportTypeEnum                                         SupplierIndustryTypeFtpInfo.Enum_ImportTypeId
+bool?                                                  SupplierIndustryTypeFtpInfo.Ext_Sys_Deactivated
+string?                                                SupplierIndustryTypeFtpInfo.Ext_ExternalId
+string?                                                SupplierIndustryTypeFtpInfo.Ext_In_Error_MsgNO
+string?                                                SupplierIndustryTypeFtpInfo.Ext_In_Error_MsgEN
+string?                                                SupplierIndustryTypeFtpInfo.Ext_In_Error_TraceId
+string?                                                SupplierIndustryTypeFtpInfo.Ext_In_Error_TechDetail
+string?                                                SupplierIndustryTypeFtpInfo.Ext_In_Error_FixLink
+bool?                                                  SupplierIndustryTypeFtpInfo.Ext_In_Error_SetOK
+DateTime?                                              SupplierIndustryTypeFtpInfo.Ext_In_LastSyncUTC
+string?                                                SupplierIndustryTypeFtpInfo.Ext_Out_Error_MsgNO
+string?                                                SupplierIndustryTypeFtpInfo.Ext_Out_Error_MsgEN
+string?                                                SupplierIndustryTypeFtpInfo.Ext_Out_Error_TraceId
+string?                                                SupplierIndustryTypeFtpInfo.Ext_Out_Error_TechDetail
+string?                                                SupplierIndustryTypeFtpInfo.Ext_Out_Error_FixLink
+bool?                                                  SupplierIndustryTypeFtpInfo.Ext_Out_Error_SetOK
+DateTime?                                              SupplierIndustryTypeFtpInfo.Ext_Out_LastSyncUTC
+--> ExternalSystemSupplierIndustryTypeFtpInfo[]        SupplierIndustryTypeFtpInfo.ExternalSystemSupplierIndustryTypeFtpInfos
 short                                                  SupplierIndustryTypePurchaseAgreement.SupplierIndustryTypePurchaseAgreementId
 string?                                                SupplierIndustryTypePurchaseAgreement.Owner_SupplierIndustryTypeIdExternal
 bool                                                   SupplierIndustryTypePurchaseAgreement.Sys_Deactivated
