@@ -51,6 +51,32 @@ string?                                                Address.Ext_Out_Error_Fix
 bool?                                                  Address.Ext_Out_Error_SetOK
 DateTime?                                              Address.Ext_Out_LastSyncUTC
 --> ExternalSystemAddress[]                            Address.ExternalSystemAddresses
+int                                                    AgaAddress.AgaAddressId
+string?                                                AgaAddress.AgaAddressIdExternal
+string?                                                AgaAddress.AddressIdExternal
+int?                                                   AgaAddress.AddressId
+string (5)                                             AgaAddress.AgaCode
+bool                                                   AgaAddress.Sys_Deactivated
+bool                                                   AgaAddress.Sys_Historic
+bool                                                   AgaAddress.Sys_Incomplete
+short                                                  AgaAddress.Year
+bool?                                                  AgaAddress.Ext_Sys_Deactivated
+string?                                                AgaAddress.Ext_ExternalId
+string?                                                AgaAddress.Ext_In_Error_MsgNO
+string?                                                AgaAddress.Ext_In_Error_MsgEN
+string?                                                AgaAddress.Ext_In_Error_TraceId
+string?                                                AgaAddress.Ext_In_Error_TechDetail
+string?                                                AgaAddress.Ext_In_Error_FixLink
+bool?                                                  AgaAddress.Ext_In_Error_SetOK
+DateTime?                                              AgaAddress.Ext_In_LastSyncUTC
+string?                                                AgaAddress.Ext_Out_Error_MsgNO
+string?                                                AgaAddress.Ext_Out_Error_MsgEN
+string?                                                AgaAddress.Ext_Out_Error_TraceId
+string?                                                AgaAddress.Ext_Out_Error_TechDetail
+string?                                                AgaAddress.Ext_Out_Error_FixLink
+bool?                                                  AgaAddress.Ext_Out_Error_SetOK
+DateTime?                                              AgaAddress.Ext_Out_LastSyncUTC
+--> ExternalSystemAgaAddress[]                         AgaAddress.ExternalSystemAgaAddresses
 int                                                    Appointment.AppointmentId
 string?                                                Appointment.AppointmentIdExternal
 string?                                                Appointment.ContactIdExternal
@@ -1864,6 +1890,25 @@ DateTime?                                              ExternalSystemAddress.Out
 string? [MultilineText](50)                            ExternalSystemAddress.StatusDescription
 bool                                                   ExternalSystemAddress.Sys_Deactivated
 SyncStatusEnum                                         ExternalSystemAddress.Enum_SyncStatusId
+int                                                    ExternalSystemAgaAddress.ExternalSystemAgaAddressId
+string?                                                ExternalSystemAgaAddress.AgaAddressIdExternal
+string? (50)                                           ExternalSystemAgaAddress.ExternalId
+short                                                  ExternalSystemAgaAddress.ExternalSystemId
+string? (100)                                          ExternalSystemAgaAddress.In_Error_FixLink
+string? (250)                                          ExternalSystemAgaAddress.In_Error_MsgEN
+string? (250)                                          ExternalSystemAgaAddress.In_Error_MsgNO
+string?                                                ExternalSystemAgaAddress.In_Error_TechDetail
+string? (40)                                           ExternalSystemAgaAddress.In_Error_TraceId
+DateTime?                                              ExternalSystemAgaAddress.In_LastSyncUTC
+string? (100)                                          ExternalSystemAgaAddress.Out_Error_FixLink
+string? (250)                                          ExternalSystemAgaAddress.Out_Error_MsgEN
+string? (250)                                          ExternalSystemAgaAddress.Out_Error_MsgNO
+string?                                                ExternalSystemAgaAddress.Out_Error_TechDetail
+string? (40)                                           ExternalSystemAgaAddress.Out_Error_TraceId
+DateTime?                                              ExternalSystemAgaAddress.Out_LastSyncUTC
+string? [MultilineText](50)                            ExternalSystemAgaAddress.StatusDescription
+bool                                                   ExternalSystemAgaAddress.Sys_Deactivated
+SyncStatusEnum                                         ExternalSystemAgaAddress.Enum_SyncStatusId
 int                                                    ExternalSystemAppointment.ExternalSystemAppointmentId
 string?                                                ExternalSystemAppointment.AppointmentIdExternal
 string? (50)                                           ExternalSystemAppointment.ExternalId

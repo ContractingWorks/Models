@@ -13,6 +13,8 @@
 
 export enum EntityTableName {
   Address                                            = 'Address'                                           ,
+  AgaAddress                                         = 'AgaAddress'                                        ,
+  AgaMunicipality                                    = 'AgaMunicipality'                                   ,
   Appointment                                        = 'Appointment'                                       ,
   Assignment                                         = 'Assignment'                                        ,
   AssignmentAttachment                               = 'AssignmentAttachment'                              ,
@@ -182,6 +184,8 @@ export enum EntityTableName {
   ERPVoucher                                         = 'ERPVoucher'                                        ,
   ExternalSystem                                     = 'ExternalSystem'                                    ,
   ExternalSystemAddress                              = 'ExternalSystemAddress'                             ,
+  ExternalSystemAgaAddress                           = 'ExternalSystemAgaAddress'                          ,
+  ExternalSystemAgaMunicipality                      = 'ExternalSystemAgaMunicipality'                     ,
   ExternalSystemAppointment                          = 'ExternalSystemAppointment'                         ,
   ExternalSystemAssignment                           = 'ExternalSystemAssignment'                          ,
   ExternalSystemAssignmentCategory                   = 'ExternalSystemAssignmentCategory'                  ,
@@ -601,6 +605,8 @@ export enum EntityTableName {
 
 export enum EntityGraphQlName {
   Address                                            = 'addresses'                                          ,
+  AgaAddress                                         = 'agaAddresses'                                       ,
+  AgaMunicipality                                    = 'agaMunicipalities'                                  ,
   Appointment                                        = 'appointments'                                       ,
   Assignment                                         = 'assignments'                                        ,
   AssignmentAttachment                               = 'assignmentAttachments'                              ,
@@ -770,6 +776,8 @@ export enum EntityGraphQlName {
   ERPVoucher                                         = 'eRPVouchers'                                        ,
   ExternalSystem                                     = 'externalSystems'                                    ,
   ExternalSystemAddress                              = 'externalSystemAddresses'                            ,
+  ExternalSystemAgaAddress                           = 'externalSystemAgaAddresses'                         ,
+  ExternalSystemAgaMunicipality                      = 'externalSystemAgaMunicipalities'                    ,
   ExternalSystemAppointment                          = 'externalSystemAppointments'                         ,
   ExternalSystemAssignment                           = 'externalSystemAssignments'                          ,
   ExternalSystemAssignmentCategory                   = 'externalSystemAssignmentCategories'                 ,
