@@ -8622,6 +8622,7 @@ DateOnly?                                              SupplierIndustryType.Pric
 int?                                                   SupplierIndustryType.SupplierId
 bool                                                   SupplierIndustryType.SupplierInvoiceAutoCreateProduct
 bool                                                   SupplierIndustryType.SyncProductCatalogFromParent
+bool                                                   SupplierIndustryType.SyncProductCatalogPsitFromParent
 bool                                                   SupplierIndustryType.Sys_Deactivated
 bool                                                   SupplierIndustryType.Sys_Historic
 bool                                                   SupplierIndustryType.Sys_Incomplete
