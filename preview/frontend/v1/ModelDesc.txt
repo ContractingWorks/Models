@@ -1,6 +1,9 @@
 ﻿Type [validation category](max length)                 TableName.ColumnName
 int                                                    Address.AddressId
 string?                                                Address.AddressIdExternal
+string?                                                Address.CountryIdExternal
+string?                                                Address.CountyIdExternal
+string?                                                Address.MunicipalityIdExternal
 string?                                                Address.ParentAddressIdExternal
 string? (100)                                          Address.Address1
 string? (100)                                          Address.Address2
@@ -1040,6 +1043,7 @@ string?                                                Customer.AssignmentCatego
 string?                                                Customer.AssignmentCategoryId_1External
 string?                                                Customer.AssignmentCategoryId_2External
 string?                                                Customer.AssignmentCategoryId_3External
+string?                                                Customer.CountryIdExternal
 string?                                                Customer.CurrencyIdExternal
 string?                                                Customer.CustomerClassIdExternal
 string?                                                Customer.Default_InvoiceTemplateIdExternal
@@ -5969,6 +5973,7 @@ int                                                    Product.ProductId
 string?                                                Product.ProductIdExternal
 string?                                                Product.ClassificationSystemItemIdExternal
 string?                                                Product.Cost_ProjectAccountIdExternal
+string?                                                Product.CountryIdExternal
 string?                                                Product.Income_ProjectAccountIdExternal
 string?                                                Product.IndustryTypeIdExternal
 string?                                                Product.ManufacturerIdExternal
@@ -8154,6 +8159,7 @@ bool                                                   Settings_Employee.Sys_His
 bool                                                   Settings_Employee.Sys_Incomplete
 byte                                                   Settings_Main.Settings_MainId
 string?                                                Settings_Main.ClassificationSystemIdExternal
+string?                                                Settings_Main.CountryIdExternal
 string?                                                Settings_Main.CurrencyIdExternal
 string?                                                Settings_Main.DepartmentIdExternal
 string?                                                Settings_Main.IndustryTypeIdExternal
@@ -8567,6 +8573,7 @@ DateTime?                                              StorageValueUpdateAccount
 --> ExternalSystemStorageValueUpdateAccountConfig[]    StorageValueUpdateAccountConfig.ExternalSystemStorageValueUpdateAccountConfigs
 int                                                    Supplier.SupplierId
 string?                                                Supplier.SupplierIdExternal
+string?                                                Supplier.CountryIdExternal
 string? (50)                                           Supplier.Bank_Giro
 string? (50)                                           Supplier.Bank_Iban
 string? (50)                                           Supplier.Bank_Swift
