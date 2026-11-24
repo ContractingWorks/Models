@@ -8065,6 +8065,7 @@ bool?                                                  ServiceObjectTypeEntityEx
 DateTime?                                              ServiceObjectTypeEntityExtension.Ext_Out_LastSyncUTC
 --> ExternalSystemServiceObjectTypeEntityExtension[]   ServiceObjectTypeEntityExtension.ExternalSystemServiceObjectTypeEntityExtensions
 int                                                    Settings_AI.Settings_AIId
+string?                                                Settings_AI.LanguageIdExternal
 int                                                    Settings_AI.LanguageId
 int                                                    Settings_AI.MaxCharacterLength
 int                                                    Settings_AI.MinCharacterLength
